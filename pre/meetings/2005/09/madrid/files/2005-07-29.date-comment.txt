@@ -1,0 +1,49 @@
+------------------------------------------------------------------------
+From: "Childress,Eric" <childree@oclc.org>
+Date: Fri, 29 Jul 2005 10:46:56 -0400
+------------------------------------------------------------------------
+
+To: Thomas Baker, Chair, DC Usage Board
+From: Eric Childress, Chair, DC Date Working Group
+
+I'm pleased to report that the DC Date Working Group has
+completed work on a matter referred to it by the DC Usage
+Board.
+
+Per recent deliberations and an 11-0 vote, the DC Date WG
+recommends that the following text supplant the extant text
+in the comment associated with the official Dublin Core
+definition of the DC Date element:
+
+    Typically, Date will be associated with the creation or
+    availability of the resource. A date value may be a single date
+    or a date range. Date values may express temporal information
+    at any level of granularity (including time). Recommended
+    best practice for encoding the date value is to supply an
+    unambiguous representation of the single date or date range
+    using a widely-recognized syntax (e.g., YYYY-MM-DD for a single
+    date; YYYY-MM-DD/YYYY-MM-DD for a date range; YYYY-MM-DDTHH:MM
+    to specify a single date and time down to the minute).
+
+The suggested change in content of the text of  the DC Date
+comment addresses an issue identified by the UB, namely that
+the existing definition and comment failed to explicitly
+communicate that the DC Date element value could be a date
+range -- this has always been understood to be permitted by
+most parties active in Dublin Core standards work, but the
+UB and members of the DC Date WG have had indications that
+some readers of the extant text have on occasion been led to
+conclude date range values were not permitted. Changing the
+text of the comment rather than altering the definition of DC
+Date was recommended in Shanghai by DC Date WG member, Douglas
+Campbell, and the tactic agreed to by the UB and DC Date WG.
+
+The revised text above clarifies that date range is permitted.
+Additional stylistic and substantial changes have been
+made to enhance readability and clarify that various levels
+of granularity (e.g., time) are permitted. Also, explicit
+references to particular encoding schemes have been removed in
+favor of some simple ISO 8601-compliant patterns as examples
+of possible syntax for representing commonly used categories
+of date and time.
+

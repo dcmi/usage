@@ -1,0 +1,18 @@
+Title:         Changes to terms of the DCTERMS namespace
+Identifier:    http://stage.dublincore.org/usage/meetings/2007/08/singapore/.html/dcterms-changes.html
+Created:       2007-07-19
+
+Changes to terms of the DCTERMS namespace (Diane)
+
+   "Revisions to DCMI Metadata Terms" were published for
+   Public Comment on Monday, 2 July [1].  These will be discussed
+   and finalized in Singapore.  Sources were:
+
+   -- Barcelona decisions [2]
+   -- Changes made between DCTERMS-2006 [6] and NISO Z39-85-2007 [5]
+
+   [1] http://dublincore.org/usage/public-comment/2007/07/dcterms-changes/
+   [2] http://dublincore.org/usageboardwiki/DCTermsChangesActions
+   [3] http://dublincore.org/usage/meetings/2007/03/barcelona/2007-03-16.ub-agenda-barcelona.pdf
+   [4] http://www.niso.org/standards/resources/Z39-85-2007.pdf
+   [5] http://dublincore.org/documents/2006/12/18/dcmi-terms/

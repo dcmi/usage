@@ -1,0 +1,27 @@
+Title:         Potential profiles to review
+Identifier:    http://dublincore.org/usage/meetings/2008/09/berlin/review-planning/.index.html
+Source:        http://dublincore.org/usage/meetings/2008/09/berlin/review-planning/index.txt
+Directory:     http://dublincore.org/usage/meetings/2008/09/berlin/review-planning/
+Created:       2008-09-17
+
+Kernel Application Profile (latest version linked to wiki dates from February 2008)
+-- http://dublincore.org/kernelwiki
+   http://dublincore.org/kernelwiki/FrontPage?action=AttachFile&do=get&target=KernelMetadataERCApplicationProfiles1_4a.htm
+
+UKOLN Geospatial application profile
+-- http://www.ukoln.ac.uk/repositories/digirep/images/e/ef/Geospatial_Application_Profile.doc
+
+Collections Application profile
+-- http://dublincore.org/usage/reviews/2007/collections-ap/
+
+Library Application profile
+-- http://dublincore.org/documents/2004/09/10/library-application-profile/
+
+Images Application Profile
+-- http://www.ukoln.ac.uk/repositories/digirep/index/Images_Application_Profile
+
+OLAC (Gary Simons)
+-- http://www.language-archives.org/OLAC/metadata.html
+   http://olac.wiki.sourceforge.net/
+   http://dublincore.org/usage/meetings/2008/09/berlin/review-planning/2008-03-07.olac.html
+

@@ -1,0 +1,813 @@
+Title:               DCMI Elements and Qualifiers
+Maintainer:          Thomas Baker, Usage Board Chair
+Identifier:          http://dublincore.org/usage/terms/2002/04/29/elements-qualifiers/
+Replaces:            http://dublincore.org/documents/dcmes-qualifiers/
+Replaces:            http://dublincore.org/documents/dces/
+Latest version:      http://dublincore.org/usage/terms/elements-qualifiers/
+Installed as:        http://dublincore.org/usage/terms/elements-qualifiers/index.shtml
+Status of document:  After a final review by the Usage Board, this draft
+                     document will replace all other documents as the 
+                     definitive expression of DCMI element and qualifier 
+                     definitions. Its status will be that of a DCMI 
+                     Recommendation.
+Date Last Modified:  2002-04-29 (Note: must agree with date-stamp in Identifier.)
+Description:         This document is a consolidated and updated
+                     representation of all elements and qualifiers
+                     recommended by DCMI as of the Date Last Modified.
+
+Contents
+
+Introduction
+I.   Elements of the 1999 Dublin Core (identified by
+     the namespace URI http://purl.org/dc/elements/1.1/)
+II.  Other Elements
+III. Element Refinements
+IV.  Encoding Schemes
+References
+
+
+Introduction
+
+This document is a consolidated representation of metadata terms
+recommended by DCMI as of the Date Last Modified in the document
+header information.  Specifically, this includes all of the
+terms defined in the Dublin Core Element Set version 1.1 of 2
+July 1999 [DCMES], the Dublin Core Qualifiers of 11 July 2000
+[DCQ], and three additional terms approved on 21 May 2001 by the
+Usage Board [DECISION2001.01] -- in short, all of the terms
+recommended by DCMI to date except for those of the DCMI Type
+Vocabulary, which is described in a separate document [DCT1].
+
+This consolidated document replaces the earlier documents as the
+authoritative representation of DCMI metadata terms.  As of
+April 2002 it is expected that this document will eventually be
+replaced by a terminological database, or Vocabulary Management
+System (VMS), which will become the definitive repository of the
+definitions and related versioning information for DCMI metadata
+terms (see [DC-REGISTRY]).
+
+After extensive discussions on DCMI mailing lists and in
+accordance with a decision of the Usage Board [DECISION2001.02],
+this document describes metadata terms with the attributes used
+in the Dublin Core Qualifiers recommendation of July 2000
+{DCQ] rather than those used for the Dublin Core Metadata
+Element Set, version 1.1, of July 1999 [DCMES], which were based
+more closely on the ISO/IEC 11179 standard [ISO11179].
+
+The DCMI terms represented here are described with the following
+attributes, of which URI of Term, Name, Label, Definition, Term
+Type, and Decision are obligatory:
+
+   Name:              The unique token assigned to the term.
+   URI:               The unique identifier of a term (see [TERMS]).
+   Label:             The human-readable label assigned to
+                      the term.
+   Definition:        A statement that represents the concept
+                      and essential nature of the term.
+   Comment:           Additional information about the
+                      term or its application.
+   See Also:          A link to more information about the term, 
+                      such as supporting documentation for the 
+                      original proposal to the Usage Board.
+   Term Type:         Element, Element Refinement, or Encoding Scheme
+                      (see [PRINCIPLES]).
+   Terms Qualified:   If a "qualifier" (Element Refinement or Encoding
+                      Scheme), name(s) of the Element(s) qualified.
+   Status:            Status assigned to term by Usage Board 
+                      (see [TERMS] and [PROCESS]).
+   Decision:          Number of Usage Board decision (see [DECISIONS]).
+   VMS note:          Additional information of relevance to the
+                      planned Vocabulary Management System.
+
+References for Introduction
+
+[DC-REGISTRY] http://dublincore.org/groups/registry/
+[DCMES] http://dublincore.org/documents/1999/07/02/dces/
+[DCT1] http://dublincore.org/documents/dcmi-type-vocabulary/
+[DCQ] http://dublincore.org/documents/2000/07/11/dcmes-qualifiers/
+[DECISIONS] http://dublincore.org/usage/decisions/index.shtml
+[DECISION2001.01] http://dublincore.org/usage/decisions/index.shtml#2001.01
+[DECISION2001.02] http://dublincore.org/usage/decisions/index.shtml#2001.02
+[ISO11179] ftp://sdct-sunsrv1.ncsl.nist.gov/x3l8/11179/
+[PRINCIPLES] http://dublincore.org/usage/documents/mission/
+[PROCESS] http://dublincore.org/usage/documents/process/
+[TERMS] http://dublincore.org/usage/terms/
+
+
+---------------------------------------------------------------------------
+I. Elements of the 1999 Dublin Core
+---------------------------------------------------------------------------
+
+<a name=title>
+    Name:        title
+    URI:         http://purl.org/dc/elements/1.1/title
+    Label:       Title
+    Definition:  A name given to the resource.
+    Comment:     Typically, a Title will be a name by which the resource is
+                 formally known.
+    Term Type:   Element
+    Decision:    http://dublincore.org/usage/decisions/index.shtml#1999.01
+
+<a name=creator>
+    Name:        creator
+    URI:         http://purl.org/dc/elements/1.1/creator
+    Label:       Creator
+    Definition:  An entity primarily responsible for making the content of
+                 the resource.
+    Comment:     Examples of a Creator include a person, an organisation,
+                 or a service.
+                 Typically, the name of a Creator should be used to
+                 indicate the entity.
+    Term Type:   Element
+    Decision:    http://dublincore.org/usage/decisions/index.shtml#1999.01
+
+<a name=subject>
+    Name:        subject
+    URI:         http://purl.org/dc/elements/1.1/subject
+    Label:       Subject and Keywords
+    Definition:  The topic of the content of the resource.
+    Comment:     Typically, a Subject will be expressed as keywords,
+                 key phrases or classification codes that describe a topic
+                 of the resource.
+                 Recommended best practice is to select a value from a
+                 controlled vocabulary or formal classification scheme.
+    Term Type:   Element
+    Decision:    http://dublincore.org/usage/decisions/index.shtml#1999.01
+
+<a name=description>
+    Name:        description
+    URI:         http://purl.org/dc/elements/1.1/description
+    Label:       Description
+    Definition:  An account of the content of the resource.
+    Comment:     Description may include but is not limited to: an abstract,
+                 table of contents, reference to a graphical representation
+                 of content or a free-text account of the content.
+    Term Type:   Element
+    Decision:    http://dublincore.org/usage/decisions/index.shtml#1999.01
+
+<a name=publisher>
+    Name:        publisher
+    URI:         http://purl.org/dc/elements/1.1/publisher
+    Label:       Publisher
+    Definition:  An entity responsible for making the resource available
+    Comment:     Examples of a Publisher include a person, an organisation,
+                 or a service.
+                 Typically, the name of a Publisher should be used to
+                 indicate the entity.
+    Term Type:   Element
+    Decision:    http://dublincore.org/usage/decisions/index.shtml#1999.01
+
+<a name=contributor>
+    Name:        contributor
+    URI:         http://purl.org/dc/elements/1.1/contributor
+    Label:       Contributor
+    Definition:  An entity responsible for making contributions to the
+                 content of the resource.
+    Comment:     Examples of a Contributor include a person, an organisation,
+                 or a service.
+                 Typically, the name of a Contributor should be used to
+                 indicate the entity.
+    Term Type:   Element
+    Decision:    http://dublincore.org/usage/decisions/index.shtml#1999.01
+
+<a name=date>
+    Name:        date
+    URI:         http://purl.org/dc/elements/1.1/date
+    Label:       Date
+    Definition:  A date associated with an event in the life cycle of the
+                 resource.
+    Comment:     Typically, Date will be associated with the creation or
+                 availability of the resource.  Recommended best practice
+                 for encoding the date value is defined in a profile of
+                 ISO 8601 [W3CDTF] and follows the YYYY-MM-DD format.
+    Term Type:   Element
+    Decision:    http://dublincore.org/usage/decisions/index.shtml#1999.01
+
+<a name=type>
+    Name:        type
+    URI:         http://purl.org/dc/elements/1.1/type
+    Label:       Resource Type
+    Definition:  The nature or genre of the content of the resource.
+    Comment:     Type includes terms describing general categories, functions,
+                 genres, or aggregation levels for content. Recommended best
+                 practice is to select a value from a controlled vocabulary
+                 (for example, the working draft list of Dublin Core Types
+                 [DCT1]). To describe the physical or digital manifestation
+                 of the resource, use the FORMAT element.
+    Term Type:   Element
+    Decision:    http://dublincore.org/usage/decisions/index.shtml#1999.01
+
+<a name=format>
+    Name:        format
+    URI:         http://purl.org/dc/elements/1.1/format
+    Label:       Format
+    Definition:  The physical or digital manifestation of the resource.
+    Comment:     Typically, Format may include the media-type or dimensions of
+                 the resource. Format may be used to determine the software,
+                 hardware or other equipment needed to display or operate the
+                 resource. Examples of dimensions include size and duration.
+                 Recommended best practice is to select a value from a
+                 controlled vocabulary (for example, the list of Internet Media
+                 Types [MIME] defining computer media formats).
+    Term Type:   Element
+    Decision:    http://dublincore.org/usage/decisions/index.shtml#1999.01
+
+<a name=identifier>
+    Name:        identifier
+    URI:         http://purl.org/dc/elements/1.1/identifier
+    Label:       Resource Identifier
+    Definition:  An unambiguous reference to the resource within a given context.
+    Comment:     Recommended best practice is to identify the resource by means
+                 of a string or number conforming to a formal identification
+                 system.
+                 Example formal identification systems include the Uniform
+                 Resource Identifier (URI) (including the Uniform Resource
+                 Locator (URL)), the Digital Object Identifier (DOI) and the
+                 International Standard Book Number (ISBN).
+    Term Type:   Element
+    Decision:    http://dublincore.org/usage/decisions/index.shtml#1999.01
+
+<a name=source>
+    Name:        source
+    URI:         http://purl.org/dc/elements/1.1/source
+    Label:       Source
+    Definition:  A reference to a resource from which the present resource
+                 is derived.
+    Comment:     The present resource may be derived from the Source resource
+                 in whole or in part.  Recommended best practice is to reference
+                 the resource by means of a string or number conforming to a
+                 formal identification system.
+    Term Type:   Element
+    Decision:    http://dublincore.org/usage/decisions/index.shtml#1999.01
+
+<a name=language>
+    Name:        language
+    URI:         http://purl.org/dc/elements/1.1/language
+    Label:       Language
+    Definition:  A language of the intellectual content of the resource.
+    Comment:     Recommended best practice is to use RFC 3066 [RFC3066],
+                 which, in conjunction with ISO 639 [ISO639], defines two-
+                 and three-letter primary language tags with optional
+                 subtags.  Examples include "en" or "eng" for English,
+                 "akk" for Akkadian, and "en-GB" for English used in the
+                 United Kingdom.
+    Term Type:   Element
+    Decision:    http://dublincore.org/usage/decisions/index.shtml#1999.01
+    Decision:    http://dublincore.org/usage/decisions/index.shtml#2001.04
+
+<a name=relation>
+    Name:        relation
+    URI:         http://purl.org/dc/elements/1.1/relation
+    Label:       Relation
+    Definition:  A reference to a related resource.
+    Comment:     Recommended best practice is to reference the resource by means
+                 of a string or number conforming to a formal identification
+                 system.
+    Term Type:   Element
+    Decision:    http://dublincore.org/usage/decisions/index.shtml#1999.01
+
+<a name=coverage>
+    Name:        coverage
+    URI:         http://purl.org/dc/elements/1.1/coverage
+    Label:       Coverage
+    Definition:  The extent or scope of the content of the resource.
+    Comment:     Coverage will typically include spatial location (a place name
+                 or geographic coordinates), temporal period (a period label,
+                 date, or date range) or jurisdiction (such as a named
+                 administrative entity).
+                 Recommended best practice is to select a value from a
+                 controlled vocabulary (for example, the Thesaurus of Geographic
+                 Names [TGN]) and that, where appropriate, named places or time
+                 periods be used in preference to numeric identifiers such as
+                 sets of coordinates or date ranges.
+    Term Type:   Element
+    Decision:    http://dublincore.org/usage/decisions/index.shtml#1999.01
+
+<a name=rights>
+    Name:        rights
+    URI:         http://purl.org/dc/elements/1.1/rights
+    Label:       Rights Management  
+    Definition:  Information about rights held in and over the resource.
+    Comment:     Typically, a Rights element will contain a rights
+                 management statement for the resource, or reference
+                 a service providing such information. Rights information
+                 often encompasses Intellectual Property Rights (IPR),
+                 Copyright, and various Property Rights.
+                 If the Rights element is absent, no assumptions can be made
+                 about the status of these and other rights with respect to
+                 the resource.
+    Term Type:   Element
+    Decision:    http://dublincore.org/usage/decisions/index.shtml#1999.01
+
+---------------------------------------------------------------------------
+II.  Other Elements
+---------------------------------------------------------------------------
+
+<a name=audience>
+    Name:       audience
+    URI:        http://purl.org/dc/terms/audience
+    Label:      Audience
+    Definition: A class of entity for whom the resource is intended or useful.
+    Comment:    A class of entity may be determined by the creator or the 
+                publisher or by a third party.
+    Term Type:  Element
+    Status:     Domain-Specific
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2001.01
+
+---------------------------------------------------------------------------
+III. Element Refinements
+---------------------------------------------------------------------------
+
+<a name=alternative>
+    Name:       alternative
+    URI:        http://purl.org/dc/terms/alternative
+    Label:      Alternative
+    Definition: Any form of the title used as a substitute or alternative 
+                to the formal title of the resource.
+    Comment:    This qualifier can include Title abbreviations as well 
+                as translations.
+    Term Type:  Element Refinement
+    Terms Qlfd: Title
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=tableOfContents>
+    Name:       tableOfContents
+    URI:        http://purl.org/dc/terms/tableOfContents
+    Label:      Table Of Contents
+    Definition: A list of subunits of the content of the resource.
+    Term Type:  Element Refinement
+    Terms Qlfd: Description
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=abstract>
+    Name:       abstract
+    URI:        http://purl.org/dc/terms/abstract
+    Label:      Abstract
+    Definition: A summary of the content of the resource.
+    Term Type:  Element Refinement
+    Terms Qlfd: Description
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=created>
+    Name:       created
+    URI:        http://purl.org/dc/terms/created
+    Label:      Created
+    Definition: Date of creation of the resource.
+    Term Type:  Element Refinement
+    Terms Qlfd: Date
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=valid>
+    Name:       valid
+    URI:        http://purl.org/dc/terms/valid
+    Label:      Valid
+    Definition: Date (often a range) of validity of a resource.
+    Term Type:  Element Refinement
+    Terms Qlfd: Date
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=available>
+    Name:       available
+    URI:        http://purl.org/dc/terms/available
+    Label:      Available
+    Definition: Date (often a range) that the resource will become or did 
+                become available.
+    Term Type:  Element Refinement
+    Terms Qlfd: Date
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=issued>
+    Name:       issued
+    URI:        http://purl.org/dc/terms/issued
+    Label:      Issued
+    Definition: Date of formal issuance (e.g., publication) of the resource.
+    Term Type:  Element Refinement
+    Terms Qlfd: Date
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=modified>
+    Name:       modified
+    URI:        http://purl.org/dc/terms/modified
+    Label:      Modified
+    Definition: Date on which the resource was changed.
+    Term Type:  Element Refinement
+    Terms Qlfd: Date
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=extent>
+    Name:       extent
+    URI:        http://purl.org/dc/terms/extent
+    Label:      Extent
+    Definition: The size or duration of the resource.
+    Term Type:  Element Refinement
+    Terms Qlfd: Format
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=medium>
+    Name:       medium
+    URI:        http://purl.org/dc/terms/medium
+    Label:      Medium
+    Definition: The material or physical carrier of the resource.
+    Term Type:  Element Refinement
+    Terms Qlfd: Format
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=isVersionOf>
+    Name:       isVersionOf
+    URI:        http://purl.org/dc/terms/isVersionOf
+    Label:      Is Version Of
+    Definition: The described resource is a version, edition, or adaptation 
+                of the referenced resource. Changes in version imply substantive 
+                changes in content rather than differences in format.
+    Term Type:  Element Refinement
+    Terms Qlfd: Relation
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=hasVersion>
+    Name:       hasVersion
+    URI:        http://purl.org/dc/terms/hasVersion
+    Label:      Has Version
+    Definition: The described resource has a version, edition, or adaptation, 
+                namely, the referenced resource.
+    Term Type:  Element Refinement
+    Terms Qlfd: Relation
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=isReplacedBy>
+    Name:       isReplacedBy
+    URI:        http://purl.org/dc/terms/isReplacedBy
+    Label:      Is Replaced By
+    Definition: The described resource is supplanted, displaced, or 
+                superceded by the referenced resource.
+    Term Type:  Element Refinement
+    Terms Qlfd: Relation
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=replaces>
+    Name:       replaces
+    URI:        http://purl.org/dc/terms/replaces
+    Label:      Replaces
+    Definition: The described resource supplants, displaces, or supersedes 
+                the referenced resource.
+    Term Type:  Element Refinement
+    Terms Qlfd: Relation
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=isRequiredBy>
+    Name:       isRequiredBy
+    URI:        http://purl.org/dc/terms/isRequiredBy
+    Label:      Is Required By
+    Definition: The described resource is required by the referenced resource, 
+                either physically or logically.
+    Term Type:  Element Refinement
+    Terms Qlfd: Relation
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=requires>
+    Name:       requires
+    URI:        http://purl.org/dc/terms/requires
+    Label:      Requires
+    Definition: The described resource requires the referenced resource to 
+                support its function, delivery, or coherence of content.
+    Term Type:  Element Refinement
+    Terms Qlfd: Relation
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=isPartOf>
+    Name:       isPartOf
+    URI:        http://purl.org/dc/terms/isPartOf
+    Label:      Is Part Of
+    Definition: The described resource is a physical or logical part of the 
+                referenced resource.
+    Term Type:  Element Refinement
+    Terms Qlfd: Relation
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=hasPart>
+    Name:       hasPart
+    URI:        http://purl.org/dc/terms/hasPart
+    Label:      Has Part
+    Definition: The described resource includes the referenced resource either 
+                physically or logically.
+    Term Type:  Element Refinement
+    Terms Qlfd: Relation
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=isReferencedBy>
+    Name:       isReferencedBy
+    URI:        http://purl.org/dc/terms/isReferencedBy
+    Label:      Is Referenced By
+    Definition: The described resource is referenced, cited, or otherwise 
+                pointed to by the referenced resource.
+    Term Type:  Element Refinement
+    Terms Qlfd: Relation
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=references>
+    Name:       references
+    URI:        http://purl.org/dc/terms/references
+    Label:      References
+    Definition: The described resource references, cites, or otherwise points 
+                to the referenced resource.
+    Term Type:  Element Refinement
+    Terms Qlfd: Relation
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=isFormatOf>
+    Name:       isFormatOf
+    URI:        http://purl.org/dc/terms/isFormatOf
+    Label:      Is Format Of
+    Definition: The described resource is the same intellectual content of 
+                the referenced resource, but presented in another format.
+    Term Type:  Element Refinement
+    Terms Qlfd: Relation
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=hasFormat>
+    Name:       hasFormat
+    URI:        http://purl.org/dc/terms/hasFormat
+    Label:      Has Format
+    Definition: The described resource pre-existed the referenced resource, 
+                which is essentially the same intellectual content presented 
+                in another format.
+    Term Type:  Element Refinement
+    Terms Qlfd: Relation
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=conformsTo>
+    Name:       conformsTo
+    URI:        http://purl.org/dc/terms/conformsTo
+    Label:      ConformsTo
+    Definition: A reference to an established standard to which the resource conforms.
+    Term Type:  Element Refinement
+    Terms Qlfd: Relation
+    Status:     Domain-Specific
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2001.01
+
+<a name=spatial>
+    Name:       spatial
+    URI:        http://purl.org/dc/terms/spatial
+    Label:      Spatial
+    Definition: Spatial characteristics of the intellectual content of the resoure.
+    Term Type:  Element Refinement
+    Terms Qlfd: Coverage
+
+<a name=temporal>
+    Name:       temporal
+    URI:        http://purl.org/dc/terms/temporal
+    Label:      Temporal
+    Definition: Temporal characteristics of the intellectual content of the resource.
+    Term Type:  Element Refinement
+    Terms Qlfd: Coverage
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=mediator>
+    Name:       mediator
+    URI:        http://purl.org/dc/terms/mediator
+    Label:      Mediator
+    Definition: A class of entity that mediates access to the
+                resource and for whom the resource is intended or useful.
+    Comment:    The audience for a resource in the education/training
+                domain are of two basic classes: (1) an ultimate beneficiary of
+                the resource (usually a student or trainee), and (2) frequently,
+                an entity that mediates access to the resource (usually a
+                teacher or trainer).  The mediator element refinement represents
+                the second of these two classes.
+    Term Type:  Element Refinement
+    Terms Qlfd: Audience
+    Status:     Domain-Specific
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2001.01
+
+---------------------------------------------------------------------------
+IV.  Encoding Schemes
+---------------------------------------------------------------------------
+
+<a name=LCSH>
+    Name:       LCSH
+    URI:        http://purl.org/dc/terms/LCSH
+    Label:      LCSH
+    Definition: Library of Congress Subject Headings
+    Term Type:  Encoding Scheme
+    Terms Qlfd: Subject
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=MESH>
+    Name:       MESH
+    URI:        http://purl.org/dc/terms/MESH
+    Label:      MeSH
+    Definition: Medical Subject Headings
+    See also:   http://www.nlm.nih.gov/mesh/meshhome.html
+    Term Type:  Encoding Scheme
+    Terms Qlfd: Subject
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=DDC>
+    Name:       DDC
+    URI:        http://purl.org/dc/terms/DDC
+    Label:      DDC
+    Definition: Dewey Decimal Classification
+    See also:   http://www.oclc.org/dewey/index.htm
+    Term Type:  Encoding Scheme
+    Terms Qlfd: Subject
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=LCC>
+    Name:       LCC
+    URI:        http://purl.org/dc/terms/LCC
+    Label:      LCC
+    Definition: Library of Congress Classification 
+    See also:   http://lcweb.loc.gov/catdir/cpso/lcco/lcco.html
+    Term Type:  Encoding Scheme
+    Terms Qlfd: Subject
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=UDC>
+    Name:       UDC
+    URI:        http://purl.org/dc/terms/UDC
+    Label:      UDC
+    Definition: Universal Decimal Classification 
+    See also:   http://www.udcc.org/
+    Term Type:  Encoding Scheme
+    Terms Qlfd: Subject
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=Period>
+    Name:       Period
+    URI:        http://purl.org/dc/terms/Period
+    Label:      DCMI Period
+    Definition: A specification of the limits of a time interval.
+    See also:   http://dublincore.org/documents/dcmi-period/
+    Term Type:  Encoding Scheme
+    Terms Qlfd: Date
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=W3CDTF>
+    Name:       W3CDTF
+    URI:        http://purl.org/dc/terms/W3CDTF
+    Label:      W3C-DTF
+    Definition: W3C Encoding rules for dates and times - a profile based on ISO 8601
+    See also:   http://www.w3.org/TR/NOTE-datetime
+    Term Type:  Encoding Scheme
+    Terms Qlfd: Date
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=DCMIType>
+    Name:       DCMIType
+    URI:        http://purl.org/dc/terms/DCMIType
+    Label:      DCMI Type Vocabulary
+    Definition: A list of types used to categorize the nature or genre 
+                of the content of the resource.
+    See also:   http://dublincore.org/documents/dcmi-type-vocabulary/
+    Term Type:  Encoding Scheme
+    Terms Qlfd: Type
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=IMT>
+    Name:       IMT
+    URI:        http://purl.org/dc/terms/IMT
+    Label:      IMT
+    Definition: The Internet media type of the resource.
+    See also:   http://www.isi.edu/in-notes/iana/assignments/media-types/media-types
+    Term Type:  Encoding Schemes
+    Terms Qlfd: Format
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=URI>
+    Name:       URI
+    URI:        http://purl.org/dc/terms/URI
+    Label:      URI
+    Definition: A URI Uniform Resource Identifier
+    See also:   http://www.ietf.org/rfc/rfc2396.txt
+    Term Type:  Encoding Scheme
+    Terms Qlfd: Identifier
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=ISO639-2>
+    Name:       ISO639-2
+    URI:        http://purl.org/dc/terms/ISO639-2
+    Label:      ISO 639-2
+    Definition: ISO 639-2: Codes for the representation of names of languages.
+    See also:   http://lcweb.loc.gov/standards/iso639-2/langhome.html
+    Term Type:  Encoding Scheme
+    Terms Qlfd: Language
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=RFC1766>
+    Name:       RFC1766
+    URI:        http://purl.org/dc/terms/RFC1766
+    Label:      RFC 1766
+    Definition: Internet RFC 1766 'Tags for the identification of Language' 
+                specifies a two letter code taken from ISO 639, followed 
+                optionally by a two letter country code taken from ISO 3166.
+    See Also:   http://www.ietf.org/rfc/rfc1766.txt
+    Term Type:  Encoding Scheme
+    Terms Qlfd: Language
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=URI>
+    Name:       URI
+    URI:        http://purl.org/dc/terms/URI
+    Label:      URI
+    Definition: A URI Uniform Resource Identifier
+    See also:   http://www.ietf.org/rfc/rfc2396.txt
+    Term Type:  Encoding Scheme
+    Terms Qlfd: Relation
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=URI>
+    Name:       URI
+    URI:        http://purl.org/dc/terms/URI
+    Label:      URI
+    Definition: A URI Uniform Resource Identifier
+    See also:   http://www.ietf.org/rfc/rfc2396.txt
+    Term Type:  Encoding Scheme
+    Terms Qlfd: Source
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2001.03
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=Point>
+    Name:       Point
+    URI:        http://purl.org/dc/terms/Point
+    Label:      DCMI Point
+    Definition: The DCMI Point identifies a point in space using its geographic coordinates.
+    See also:   http://dublincore.org/documents/dcmi-point/
+    Term Type:  Encoding Scheme
+    Terms Qlfd: Coverage/Spatial
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=ISO3166>
+    Name:       ISO3166
+    URI:        http://purl.org/dc/terms/ISO3166
+    Label:      ISO 3166
+    Definition: ISO 3166 Codes for the representation of names of countries
+    See also:   http://www.din.de/gremien/nas/nabd/iso3166ma/codlstp1/index.html
+    Term Type:  Encoding Scheme
+    Terms Qlfd: Coverage/Spatial
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=Box>
+    Name:       Box
+    URI:        http://purl.org/dc/terms/Box
+    Label:      DCMI Box
+    Definition: The DCMI Box identifies a region of space using its geographic limits.
+    See also:   http://dublincore.org/documents/dcmi-box/
+    Term Type:  Encoding Scheme
+    Terms Qlfd: Coverage/Spatial
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=TGN>
+    Name:       TGN
+    URI:        http://purl.org/dc/terms/TGN
+    Label:      TGN
+    Definition: The Getty Thesaurus of Geographic Names
+    See also:   http://shiva.pub.getty.edu/tgn_browser/
+    Term Type:  Encoding Scheme
+    Terms Qlfd: Coverage/Spatial
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=Period>
+    Name:       Period
+    URI:        http://purl.org/dc/terms/Period
+    Label:      DCMI Period
+    Definition: A specification of the limits of a time interval.
+    See also:   http://dublincore.org/documents/dcmi-period/
+    Term Type:  Encoding Scheme
+    Terms Qlfd: Coverage/Temporal
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+<a name=W3CDTF>
+    Name:       W3CDTF
+    URI:        http://purl.org/dc/terms/W3CDTF
+    Label:      W3C-DTF
+    Definition: W3C Encoding rules for dates and times - a profile based on ISO 8601
+    See also:   http://www.w3.org/TR/NOTE-datetime
+    Term Type:  Encoding Scheme
+    Terms Qlfd: Coverage/Temporal
+    Decision:   http://dublincore.org/usage/decisions/index.shtml#2000.01
+
+---------------------------------------------------------------------------
+References
+---------------------------------------------------------------------------
+
+[DCT1] Type Vocabulary.
+<http://dublincore.org/documents/dcmi-type-vocabulary/>
+
+[ISO639] ISO 639 - Codes for the representation of names of languages.
+<http://www.loc.gov/standards/iso639-2/>
+
+[ISO3166] ISO 3166 - Codes for the representation of names of countries.
+<http://www.iso.org/iso/en/prods-services/iso3166ma/02iso-3166-code-lists/index.html>
+
+[MIME] Internet Media Types.
+<http://www.isi.edu/in-notes/iana/assignments/media-types/media-types>
+
+[RFC3066] RFC 3066 - Tags for the identification of Languages.
+<http://www.ietf.org/rfc/rfc3066.txt>
+
+[TGN] Getty Thesaurus of Geographic Names.
+<http://shiva.pub.getty.edu/tgn_browser/>
+
+[W3CDTF] Date and Time Formats, W3C Note.
+<http://www.w3.org/TR/NOTE-datetime>
+
+

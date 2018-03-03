@@ -1,0 +1,99 @@
+Title:         Usage Board meeting - Barcelona - 16-17 March 2007
+Identifier:    http://dublincore.org/usage/meetings/2007/03/barcelona/html/index.html
+Source:        http://dublincore.org/usage/meetings/2007/03/barcelona/index.txt
+Directory:     http://dublincore.org/usage/meetings/2007/03/barcelona/
+Created:       2007-03-13
+
+Meeting packets: http://dublincore.org/usage/meetings/2007/03/barcelona/2007-03-16.ub-agenda-barcelona.pdf
+                 http://dublincore.org/usage/meetings/2007/03/barcelona/2007-03-17.barcelona-cdap.pdf
+
+----------------------------------------------------------------------
+Friday, 16 March 10:00-14:00, 15:00-19:00
+
+-- Outstanding actions (Tom)
+   http://dublincore.org/usage/meetings/2007/03/barcelona/2007-03-12.outstanding-actions.txt
+
+-- Domains and Ranges (Andy)
+
+   -- Summary of issues raised in Public Comment (Andy)
+      http://dublincore.org/usage/meetings/2007/03/barcelona/domain-range-comments.txt
+
+   -- Proposed Vocabulary of Domains and Ranges
+      http://dublincore.org/documents/2007/02/05/domain-range/ 
+
+   -- Digest of postings about range during Public Comment
+      http://dublincore.org/usage/meetings/2007/03/barcelona/2007-02-26.ranges-digest.txt
+
+-- DCTERMS definitions and comments (Tom)
+
+   -- Proposal for changes to DCTERMS
+      http://dublincore.org/usage/meetings/2007/03/barcelona/DCTermsChanges.pdf
+
+   -- Undeclared legacy DCTERMS classes
+      http://dublincore.org/usage/meetings/2007/03/barcelona/SubjectScheme.txt
+
+   -- Term type of existing encoding schemes
+      http://dublincore.org/usage/meetings/2007/03/barcelona/Encoding-schemes.txt
+
+----------------------------------------------------------------------
+Saturday, 17 March 10:00-14:00, 15:00-18:00
+
+-- DCMES finalization (Akira)
+ 
+   -- Topic page
+      http://dublincore.org/usage/meetings/2007/03/barcelona/Topic-nisoballot.txt
+
+   -- Summary of NISO ballot comments
+      http://dublincore.org/usage/meetings/2007/03/barcelona/Z39-85_Ballot_comment_responses.pdf
+
+-- Collection Description Application Profile (Joe)
+
+   -- Topic page
+      http://dublincore.org/usage/meetings/2007/03/barcelona/Topic-cdap.txt
+
+   -- Revised CDAP
+      see separate meeting packet 2007-03-17.barcelona-cdap.pdf
+
+   -- Usage Board feedback, December 2006
+      http://dublincore.org/usage/meetings/2007/03/barcelona/CdapFeedback.pdf
+
+   -- Table showing response to feedback
+      http://dublincore.org/usage/meetings/2007/03/barcelona/ComparisonRubric.pdf
+
+   -- Usage Board review - draft
+      http://dublincore.org/usage/meetings/2007/03/barcelona/CdapReview.pdf
+
+-- Review of Application Profiles
+
+   -- DCAM Profile Model (Andy, Tom) 
+      Report and discussion on formal model for Application Profiles under 
+      discussion as an extension of DCAM
+
+   -- Review guidelines (Stuart)
+      http://dublincore.org/usage/meetings/2007/03/barcelona/ProfileReviewCriteria.pdf
+
+   -- Registration of application profiles - NSDL approach (Diane)
+
+-- Usage Board process
+
+   -- Current process document
+      http://dublincore.org/usage/documents/process/
+
+   -- Notes from Stuart
+      http://dublincore.org/usage/meetings/2007/03/barcelona/Process_Doc_Revisions.txt
+
+   -- Proposal from Makx
+      http://dublincore.org/usage/meetings/2007/03/barcelona/2007-02-14.dcdir-process-makx.txt
+
+-- Work Plan
+   http://dublincore.org/usage/meetings/2007/03/barcelona/FrontPage.pdf
+
+-- RDA (Diane)
+
+   -- Discussion paper by Diane et al
+      http://dublincore.org/usage/meetings/2007/03/barcelona/Framework_20070311.pdf
+
+-- AOB
+   
+   -- Next meeting: Sat-Sun 25-26 August 2007 in Singapore
+

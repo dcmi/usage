@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US"
+xml:lang="en-US">
+  <head>
+    <meta name="generator" content="HTML Tidy, see www.w3.org" />
+
+    <title>DCMI Basic Page Template</title>
+    <meta http-equiv="Content-Type"
+    content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href="/css/default.css"
+    type="text/css" />
+<script src="/js/default.js" type="text/javascript">
+</script>
+    
+  </head>
+
+  <body>
+<p>Date: Mon, 17 Sep 2001 22:13:30 +0100<br>
+  Reply-To: A mailing list for the Dublin Core Metadata Initiative's Usage<br>
+  Working Grou &lt;DC-USAGE@JISCMAIL.AC.UK&gt;<br>
+  Sender: A mailing list for the Dublin Core Metadata Initiative's Usage<br>
+  Working Grou &lt;DC-USAGE@JISCMAIL.AC.UK&gt;<br>
+  From: Andy Powell &lt;a.powell@UKOLN.AC.UK&gt;<br>
+  Subject: Re: Encoding schemes for dc:identifier<br>
+  In-Reply-To: &lt;Pine.GSO.4.10.10109171751470.23399-100000@twister.gmd.de&gt;<br>
+  Content-Type: TEXT/PLAIN; charset=US-ASCII<br>
+  On Mon, 17 Sep 2001, Thomas Baker wrote:</p>
+<p>&gt; Dear all,<br>
+  &gt;<br>
+  &gt; In the context of our fast-track discussion in Tokyo, could someone<br>
+  &gt; please volunteer to discuss the issue below (encoding schemes for<br>
+  &gt; dc:identifier)?<br>
+  &gt;<br>
+  &gt; Note that in follow-up discussion, Stu felt that DCMI should register<br>
+  &gt; such schemes as they come to our attention, whereas Thomas Krichel and<br>
+  &gt; Ray Denenberg referred to the RFC2288 proposal to encode conventional<br>
+  &gt; bibliographic identifiers as URNs [1]. The status of such proposals is<br>
+  &gt; apparently tracked at [2].<br>
+  &gt;<br>
+  &gt; It would be very useful if someone could summarize this issue for our<br>
+  &gt; consideration and suggest some guidelines we could follow.</p>
+<p>The list of registered URI schemes is at:</p>
+<p> http://www.iana.org/assignments/uri-schemes</p>
+<p>The list of URN NIDs is at</p>
+<p> http://www.uri.net/urn-nid-status.html</p>
+<p>DOI doesn't appear in either. ISBN, ISSN and SICI appear in the URN NID<br>
+  list.</p>
+<p>doi:10.1000/182 is a perfectly good URI. It just isn't registered.</p>
+<p>It is perfectly valid to encode</p>
+<p>&lt;dc:identifier scheme=&quot;URI&quot;&gt;doi:10.1000/182&lt;/dc:identifier&gt;</p>
+<p>in XML (or whatever). I don't know why DOI haven't tried to register<br>
+  'doi' as a valid URI scheme. Clearly, having it registered would be<br>
+  preferable.</p>
+<p>My gut feeling goes against DCMI becoming a registry of identifier<br>
+  schemes - I think we could do without the maintenance overhead. People<br>
+  already have two places to register their schemes - as a<br>
+  URI scheme and/or as a URN NID. Also, there may be some syntactic<br>
+  advantages (particularly in RDF) in having *all* identifiers as URIs.</p>
+<p>On the other hand, I guess that many 'users' of DC metadata will find</p>
+<p>&lt;meta name=&quot;DC.Identifier&quot; scheme=&quot;ISBN&quot; content=&quot;1234-5678&quot;&gt;</p>
+<p>much more intuitive than</p>
+<p>&lt;meta name=&quot;DC.Identifier&quot; scheme=&quot;URI&quot; content=&quot;urn:isbn:1234-5678&quot;&gt;</p>
+<p>I presume we could use our 'fast track' process for registering these<br>
+  things? Registering a URI scheme or a URN NID is more formal and long<br>
+  winded - but this may not be a bad thing as it will encourage people to<br>
+  think about what they are doing. The URI and URN registration processes<br>
+  are outside of our control - so there may be an issue if a scheme that DC<br>
+  people want to use is refused registration for some reason.</p>
+<p>Note that, I assume, all valid schemes for Identifier are also valid for<br>
+  Relation and Source. During the original discussion of qualifiers I'm<br>
+  pretty certain that I proposed an initial list of schemes that would have<br>
+  included</p>
+<p>URI<br>
+  DOI<br>
+  ISBN<br>
+  ISSN<br>
+  SICI</p>
+<p>Priscilla also proposed</p>
+<p>Handle<br>
+  URL</p>
+<p>Ann Apps and I have since proposed</p>
+<p>OpenURL</p>
+<p>in http://www.ariadne.ac.uk/issue27/metadata/</p>
+<p>As I say, my gut feeling is to stick with URI and force people to register<br>
+  schemes externally to DCMI, either as new URI schemes or as URN NIDs or<br>
+  both. But its not a very strongly held view and I wouldn't object to<br>
+  registering stuff within DCMI.</p>
+<p>Andy.</p>
+<p>&gt; Tom<br>
+  &gt;<br>
+  &gt; [1] http://www.ietf.org/rfc/rfc2288.txt<br>
+  &gt; [2] http://www.uri.net/urn-nid-status.html<br>
+  &gt;<br>
+  &gt;<br>
+  &gt; ---------- Forwarded message ----------<br>
+  &gt; Date: Mon, 20 Aug 2001 12:08:54 GMT1BST<br>
+  &gt; From: Ann Apps &lt;ann.apps@MAN.AC.UK&gt;<br>
+  &gt; To: DC-GENERAL@JISCMAIL.AC.UK<br>
+  &gt; Subject: Encoding schemes for resource identifier<br>
+  &gt;<br>
+  &gt; Dear All,<br>
+  &gt;<br>
+  &gt; Currently the only endorsed encoding scheme for dc:identifier is<br>
+  &gt; 'URI', and also for dc:relation and dc:source. It seems to me that<br>
+  &gt; you should be able to use other global standard identifiers as<br>
+  &gt; encoding schemes for these elements.<br>
+  &gt;<br>
+  &gt; Within the bibliographic citation area it seems natural to use<br>
+  &gt; identifiers like ISSN, DOI, SICI, OpenURL (possibly DOI is a URI?).<br>
+  &gt; In fact, people are already using these even though they are not<br>
+  &gt; endorsed by DCMI.<br>
+  &gt;<br>
+  &gt; I am sending this to dc-general, because I'm not sure which<br>
+  &gt; working group would consider it. It may fall into the domain of dc-<br>
+  &gt; citation. But I suspect there are other global identifiers in other<br>
+  &gt; domains.<br>
+  &gt;<br>
+  &gt; Interestingly, DOI and ISBN are given as examples of identifiers in<br>
+  &gt; the definition of dc:identifier in the DCMES, but are not given as<br>
+  &gt; qualifer encoding schemes.<br>
+  &gt;<br>
+  &gt; Should there be a list of recommended global standard encoding<br>
+  &gt; schemes, or should there be a more generic endorsement of any<br>
+  &gt; global standard? Having a fixed list means it will need extension<br>
+  &gt; when other standards are developed.<br>
+  &gt;<br>
+  &gt; Best wishes,<br>
+  &gt; Ann<br>
+  &gt;<br>
+  &gt; --------------------------------------------------------------------------<br>
+  &gt; Mrs. Ann Apps. Senior Analyst - Research &amp; Development, MIMAS,<br>
+  &gt; University of Manchester, Oxford Road, Manchester, M13 9PL, UK<br>
+  &gt; Tel: +44 (0) 161 275 6039 Fax: +44 (0) 0161 275 6040<br>
+  &gt; Email: ann.apps@man.ac.uk WWW: http://epub.mimas.ac.uk/ann.html<br>
+  &gt; --------------------------------------------------------------------------<br>
+  &gt;</p>
+<p>Andy<br>
+  --<br>
+  Distributed Systems and Services<br>
+  UKOLN, University of Bath, Bath, BA2 7AY, UK a.powell@ukoln.ac.uk<br>
+  http://www.ukoln.ac.uk/ukoln/staff/a.powell Voice: +44 1225 323933<br>
+  Resource Discovery Network http://www.rdn.ac.uk/ Fax: +44 1225 826838</p>
+<hr>
+
+
+    <!--#include virtual="/ssi/footer.shtml" -->
+  </body>
+</html>
+

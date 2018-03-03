@@ -1,0 +1,73 @@
+Title:               DCMI Metadata Terms - an Overview
+Maintainer:          Thomas Baker, Usage Board Chair
+Identifier:          http://dublincore.org/usage/terms/
+Latest version:      http://dublincore.org/usage/terms/
+Installed as:        http://dublincore.org/usage/terms/index.shtml
+Date Last Modified:  2002-04-27
+
+
+The DCMI Usage Board currently maintains two sets of metadata
+terms:
+
+-- DCMI Elements and Qualifiers
+   http://dublincore.org/usage/terms/elements-qualifiers/
+
+-- DCMI Type Vocabulary
+   http://dublincore.org/documents/dcmi-type-vocabulary/
+
+The Usage Board is responsible for maintaining these term sets
+from a "semantic" point of view.  The policies and processes
+governing such maintenance are described in a Namespace Policy
+[NAMESPACE], the Usage Board's Mission and Principles
+[PRINCIPLES], Usage Board Administrative Processes [PROCESS].
+
+DCMI -- the words we use
+
+These foundation documents cited above use a particular jargon:
+"DCMI terms" are elements, qualifiers, or terms in controlled
+vocabularies maintained by DCMI. Each DCMI term is defined in a
+DCMI recommendation and is uniquely identified by a Uniform
+Resource Identifier (URI) within a DCMI namespace.  A "DCMI
+recommendation" is a human-readable document that may define one
+or more DCMI terms.  A "DCMI namespace" is a collection of DCMI
+terms, where each namespace is identified by a URI and each term
+is identified by a URI formed from the "name" of a term (e.g.,
+title) prefixed by the URI of a DCMI namespace, as in
+http://purl.org/dc/elements/1.1/title and
+http://purl.org/dc/terms/audience.
+
+A "DCMI term declaration" is the machine-processable
+representation of one or more DCMI terms, expressed in a schema
+language.  The technical specifications of such representations
+are within the scope of Usage Board control only to the extent
+that alternative machine-processable encodings may have
+different semantic implications.  As of April 2002, the goal of
+DCMI is to make its metadata semantics available for machine
+processing in a wide range of XML and Semantic Web applications.
+
+Dublin Core has Elements and Qualifiers.  A Dublin Core
+"Element" is a property of a resource.  A "Qualifier" can be
+either an Element Refinement or an Encoding Scheme.  An "Element
+Refinement" is a term with a narrower meaning with respect to a
+particular Element.  An "Encoding Scheme" is a pointer to
+contextual information that aids in the interpretation of an
+element value.  A value expressed using an encoding scheme is
+usually a term selected from a controlled vocabulary (e.g., a
+classification system or set of subject headings) or a string
+formatted in accordance with a formal notation (e.g.,
+"2000-01-01" as a template for dates).
+
+The DCMI Type Vocabulary provides a general, cross-domain list
+of approved terms that may be used as values for the Resource
+Type element to identify the genre of a resource.  It is
+currently the only controlled vocabulary of values maintained by
+DCMI.
+
+References
+
+[NAMESPACE] http://dublincore.org/documents/dcmi-namespace/
+[PRINCIPLES] http://dublincore.org/usage/documents/mission/
+[PROCESS] http://dublincore.org/usage/documents/process/
+
+
+

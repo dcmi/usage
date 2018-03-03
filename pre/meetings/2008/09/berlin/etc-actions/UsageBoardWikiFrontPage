@@ -1,0 +1,154 @@
+#acl TomBaker:read,write,delete,admin All:read
+##language:en
+#pragma section-numbers off
+
+||<)tablewidth="100%"tablebgcolor="#ffffcc">'''Chair''':    ||Tom Baker, DCMI||
+||<)>'''Members''':  ||Diane Hillmann, Cornell University, USA||
+||<)> ||Akira Miyazawa, NII, Japan||
+||<)> ||Julie Allinson, University of York, UK||
+||<)> ||Andrew Wilson, National Archives of Australia, Australia||
+||<)> ||Stefanie Ruehle, Goettingen State and University Library, Germany||
+||<)> ||Joe Tennis, University of British Columbia, Canada||
+||<)> ||Pete Johnston, Eduserv Foundation, UK||
+||<)> ||DCMI Directorate, ex officio||
+||<)>'''Established''':     ||2001-05-21||
+||<^)>'''Mission''':     ||The mission of the Usage Board is to ensure an orderly evolution of the metadata terms maintained by the Dublin Core Metadata Initiative. The Usage Board evaluates proposals for new terms (or changes to existing terms) in light of grammatical principle, semantic clarity, usefulness, and overlap with existing terms. To proposals that are accepted, it assigns a specific status. The Usage Board also evaluates constructs that use DCMI terms, such as Application Profiles.||
+
+Quick links: [#Telecons Telecons] | [#Actions Actions] | [#Profiles Application Profiles] | [#Issues Issues] | [#About About this wiki]
+
+[[Anchor(Links)]]
+== Links ==
+
+ * [http://dublincore.org/architecturewiki/SingaporeFramework Singapore Framework]
+ * [http://dublincore.org/architecturewiki/DescriptionSetProfile Description Set Profile]
+ * [http://dublincore.org/usageboard/log/index.html Usage Board meetings and telecons]
+ * [http://www.jiscmail.ac.uk/lists/dc-usage-bc.html Internal dc-usage-bc JISCMAIL mailing list]
+ * [http://www.jiscmail.ac.uk/lists/dc-usage.html Public dc-usage JISCMAIL mailing list]
+ * [http://dublincore.org/usage/reviews/ Review of Application Profiles]
+ * [http://dublincore.org/usage/documents/process/ Usage Board Process]
+ * [http://dublincore.org/usage/decisions/ Usage Board Decisions]
+ * test2
+
+[[Anchor(Telecons)]]
+== Telecons ==
+
+ * 2008-04-27. [http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0804&L=dc-usage&P=1647 agenda] - [http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0804&L=dc-usage&P=1861 report]
+ * 2008-03-26.  [http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0803&L=dc-usage&P=2293 agenda] - [http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0803&L=dc-usage&P=3946 report]
+ * 2008-02-20. [http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0803&L=dc-usage&P=165 report]
+ * DialingInstructions
+
+ * Agenda:
+   * http://dublincore.org/usageboardwiki/ProfileReviewCriteriaNew (Joe)
+   * http://dublincore.org/usageboardwiki/IntroToProfiles (Diane)
+   * http://dublincore.org/usageboardwiki/TermDecisionTree (Andrew)
+
+[[Anchor(Profiles)]]
+== Application Profiles ==
+
+ * Related to Profile Review (see [http://dublincore.org/usage/reviews/index.shtml Usage Board Reviews]
+
+   * ACTION 2007-08-25: Tom to add to the criteria in the wiki http://dublincore.org/usageboardwiki/ProfileReviewCriteriaNew a section called "Organizational Context": evaluation questions to be asked about who has stewardship of a proposed AP.
+
+   * ACTION 2007-12-12: Joe to edit Profile Review Criteria - http://dublincore.org/usageboardwiki/ProfileReviewCriteriaNew - for discussion in late January.  
+
+   * ACTION 2007-12-12: Diane to outline an approach to presenting documentation on application profiles for non-technical users.  (Tom has created the page http://dublincore.org/usageboardwiki/IntroToProfiles starting with links to legacy documents of interest.)
+
+   * ACTION 2008-03-26: Andrew to edit Term Decision Tree - http://colab.mpdl.mpg.de/mediawiki/ApplicationProfiles/TermDecisionTree, proposing a more appropriate title.
+
+   * ACTION 2008-03-26: Andrew to write up criteria for differentiating Vocabulary and Syntax Encoding Schemes (http://dublincore.org/usageboardwiki/SesAndVes).
+
+[[Anchor(Actions)]]
+== Ongoing actions ==
+
+ * ACTION 2007-08-26: Pete and Mikael to investigate the usefulness of defining a class of 'non-literal' and assess what the consequences of this would be for machine processability.  (Usage Board should track issues involved in the notion of a range of 'non-literal'.)
+
+ * ACTION 2007-11-23: Joe and Andrew to edit a discussion of issues with the element Coverage http://dublincore.org/usageboardwiki/IssuesWithCoverage for discussion on a future telecon.  (Note: 'spatial' and 'temporal' are "correct" but 'coverage' is too broad -- it allows for topic and this is in conflict with 'subject' [TK] -- this is an Application Profile issue [TB].)  (This issue is on the back burner for now.)
+
+ * ACTION 2007-08-26: Tom and Mikael to create a draft "Simple Dublin Core" AP using the 1.1 namespace and which models everything as literals. Document the legacy functional requirements and the organizational context for this AP.  See discussion at [http://dublincore.org/usageboardwiki/SimpleDcDiscussion SimpleDcDiscussion].
+
+ * ACTION 2007-08-26: Andrew, Tom, and Dan B, in context of Agents TG, to finish the assessment of FOAF against the functional requirements. Include context describing kinds of places where FOAF would be useful and where it wouldn't be useful.  Following this assessment, the TG to propose/recommend a course of action to DCMI Directorate.  See http://dublincore.org/agentswiki/FoafReview.  Update 2007-12-12: Andrew to progress in January.
+
+ * ACTION 2007-03-17: Joe to draft a document discussing issues related to principles and purpose of UB decision-making.  (The context was the decision to define ISO639-2 as a set of codes.) Update 2008-01-23: will flow out of profile review criteria.
+
+== TERMS documentation ==
+
+ * HTML documentation
+   * http://dublincore.org/documents/2008/01/14/dces/
+   * http://dublincore.org/documents/2008/01/14/dcmi-terms/
+   * http://dublincore.org/documents/2008/01/14/dcmi-type-vocabulary/
+   * http://dublincore.org/usage/terms/history/2008/01/14/
+   * Revised 2008-01-14 on basis of:
+     * http://dublincore.org/documents/2008/01/14/domain-range/
+     * http://dublincore.org/usage/decisions/2008/dcterms-changes/
+     * http://dublincore.org/usage/decisions/#Decision-2008-01
+
+ * RDF schemas
+   * http://dublincore.org/2008/01/18/dcam.rdf 
+   * http://dublincore.org/2008/01/18/dcelements.rdf 
+   * http://dublincore.org/2008/01/18/dcterms.rdf 
+   * http://dublincore.org/2008/01/18/dctype.rdf
+
+[[Anchor(DocumentationIssues)]]
+== Other issues ("unopened or unassigned actions") ==
+
+ * Issues with TERMS documentation
+
+   * 2007-12-22 (Tom). Definitions of attributes in document [http://dublincore.org/documents/2008/01/14/dcmi-terms/index.shtml DCMI Metadata Terms] -- see (compare) http://dublincore.org/usageboardwiki/TermDescriptionAttributes.
+
+   * 2008-01-10 (Tom). Consider simply omitting Name (Term Name) from the term descriptions in DCMI Metadata Terms (see http://dublincore.org/documents/dcmi-terms/).
+
+   * 2007-01-15 (Tom). DCAM terms and DCMI Type Vocabulary not clickable in Introduction
+
+   * 2007-01-15 (Tom). http://purl.org/dc/dcam/memberOf should have a range of http://purl.org/dc/dcam/VocabularyEncodingScheme
+
+   * 2008-02-28 (Pete). The four namespace documents in RDF published in January use the new dcterms:publisher property with a literal value; there are three possible ways to correct this (see [http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0802&L=dc-usage&P=2654 Pete's posting]).
+
+[[Anchor(Issues)]]
+== Other issues ("unopened or unassigned actions") ==
+
+ * 2007-12-22 (Tom). Need Application Profile Guidelines to replace [http://dublincore.org/usage/documents/2005/09/03/profile-guidelines/ legacy guidelines from September 2005].
+
+ * 2007-12-22 (Tom). There were several cases in which we could have given classes names that differed from property names only in terms of case (e.g., given dcterms:accrualMethod: dcterms:AccrualMethod instead of dcterms:MethodOfAccrual; given dcterms:extent: dcterms:Extent instead of dcterms:SizeOrDuration).   (The other cases were dcterms:instructionalMethod, dcterms:language, dcterms:license, dcterms:Period.)  Should the naming policy specifically address this issue?
+ 
+ * 2007-12-22 (Tom). Several pages on usageboardwiki may need to be archived, e.g.:
+   * http://dublincore.org/usageboardwiki/RangesIssues (cited in July 2007 Public Comment)
+ 
+ * 2007-12-22 (Pete and Tom). The [http://dublincore.org/documents/naming-policy/ Naming Policy] says that "applications are well advised to normalize case when parsing terms for identity comparisons. Prudence mitigates against the use of case to distinguish between alternative identities of related terms in any namespace, and it is DCMI policy that such distinctions not be made within its own namespaces, so it is unlikely that errors would be introduced by normalizing case."  This is at odds with how DCMI currently treats "names" and URIs: While we can say that _DCMI_ won't assign two term URIs that differ only in case, we can't say that other term creators won't do that (and they are perfectly within their rights to do so.)  Moreover, we should be encouraging people building applications which create or consume DC metadata to take care to _respect_ case in URIs, _not_ to ignore it.
+ 
+ * 2007-12-11 (Tom).  The meeting notes are currently available only on stage - see [http://dublincore.org/usageboard/log/index.html Usage Board meetings and telecons].
+
+ * 2007-12-22 (Tom). When we get around to implementing content negotiation, we will need separate HTML documents for each separate "namespace" (so will need to modify the transforms again)
+
+ * 2007-12-22 (Tom). In RDF schemas: dcterms:modified "2008-01-14"^^xsd:date - add xsd:date.
+
+ * 2007-01-15 (Tom). Drop "name" from /dcmi-terms/ and related documentation?  Read: http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0712&L=dc-usage&P=5376
+
+ * 2007-01-15 (Tom). DCAM terms and DCMI Type Vocabulary not clickable in Introduction to http://dublincore.org/documents/dcmi-terms/
+
+ * 2007-01-15 (Tom). http://purl.org/dc/dcam/memberOf should have a range of http://purl.org/dc/dcam/ VocabularyEncodingScheme
+
+ * 2007-12-22 (Tom). Definitions of attributes in document http://dublincore.org/documents/2008/01/14/dcmi-terms/ -- see (compare) http://dublincore.org/usageboardwiki/TermDescriptionAttributes.  
+
+ * 2008-01-10 (Tom). The document DCMI Metadata Terms now defines "Name" as: "A token appended to the URI of a DCMI namespace to create the URI of the term." (see http://dublincore.org/documents/dcmi-terms/).  The glossary of DCMI Namespace Policy should perhaps be updated with this definition.
+
+ * 2008-02-06 (Tom). Add a note to [http://dublincore.org/usage/documents/2003/05/15/vocabulary-guidelines/ Vocabulary Guidelines] -- which turns up as the second result in a search for "encoding schemes" -- or create a new version of it, to indicate that that content does not reflect current procedures.  Also update list of references on [http://dublincore.org/usage/documents/ Usage Board Documents].
+
+ * 2008-02-08 (Tom). Do we need to provide documentation on the "undeclared" terms such as SubjectScheme (see [http://dublincore.org/usage/decisions/2008/dcterms-changes/ Revisions to DCMI Metadata Terms] and [http://dublincore.org/documents/2002/05/15/dcq-rdf-xml/ Expressing Qualified Dublin Core in RDF/XML])?
+
+[[Anchor(ProfilesToTrack)]]
+== Profiles to track ==
+
+ * [http://dublincore.org/kernelwiki Kernel wiki]
+   * 2008-01-24. [http://dublincore.org/kernelwiki/FrontPage?
+   action=AttachFile&do=get&target=KernelMetadataERCApplicationProfiles1_3.htm Kernel Application Profile, Version 1.3]
+ * [http://dublincore.org/educationwiki/DC_2dEducation_20Application_20Profile Education Application Profile]
+ * [http://knowware.nada.kth.se/DCWiki/EprintsApplicationProfile Eprints Application Profile]
+ * [http://www.ukoln.ac.uk/repositories/digirep/images/e/ef/Geospatial_Application_Profile.doc UKOLN Geospatial profile]
+
+[[Anchor(About)]]
+== About this wiki ==
+
+ * This Wiki supports the work of the [http://dublincore.org/usage/ DCMI Usage Board].
+ * This Wiki is intended to be used to work on draft copies of documents. Finished documents will be published, in a persistent and citable form, on the [http://dublincore.org/ DCMI Web site] (or elsewhere in some cases).  Do '''not''' cite materials in this Wiki other than for the purposes of collaborating on document creation. 
+ * See also [http://dublincore.org/architecturewiki/ DCMI Architecture Forum wiki].
+

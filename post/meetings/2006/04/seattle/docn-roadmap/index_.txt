@@ -1,0 +1,19 @@
+Title:         DCMI Documentation Roadmap
+Identifier:    e:/admin/admin/www/usage/meetings/2006/04/seattle/docn-roadmap/index.shtml
+Source:        e:/admin/admin/www/usage/meetings/2006/04/seattle/docn-roadmap/index.txt
+
+Discussion leader: Tom
+
+[1] http://stage.dublincore.org/usage/meetings/2006/04/seattle/docn-roadmap/2006-03-31.roadmap.pdf
+
+Tom originally prepared this Documentation Roadmap for
+discussion with the DCMI Board of Trustees in Madrid.
+It will be revised in light of ongoing progress for the
+Trustee meeting in Mexico.  It could not be discussed by the
+Usage Board in Madrid because the UB met before the Trustees.
+
+In Seattle, I would like for us all to take a critical look
+at the Roadmap.  Are there major items missing?  Or have
+some work items become unnecessary?  Does it identify the
+right priorities?
+

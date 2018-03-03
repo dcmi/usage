@@ -1,0 +1,7 @@
+<?xml version="1.0"?> <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+
+	 xmlns:dc = "http://purl.org/dc/elements/1.1/"> <rdf:Description about="http://dublincore.org/usage/meetings/2002/05/meetings.html"> 
+<dc:title>DCMI Usage Board - Meeting Agenda</dc:title> <dc:description>Information for the Usage Board meeting in May 2002 in Bath, England.</dc:description> 
+<dc:date>2002-04-25</dc:date> <dc:creator>Tom Baker</dc:creator> <dc:format>text/html</dc:format> <dc:language>en</dc:language> 
+<dc:publisher> Dublin Core Metadata Initiative</dc:publisher> </rdf:Description> 
+</rdf:RDF> 

@@ -1,0 +1,21 @@
+Usage Board reviews Scholarly Works Application Profile and term proposals
+
+2008-12-08.  At its face-to-face meeting in Berlin [1], the
+DCMI Usage Board reviewed the Scholarly Works Application
+Profile [2] and found it to be in conformance with its current
+review criteria, pending minor revisions.  In response
+to a proposal from the DCMI Libraries Community for a new
+property "holding location", the Usage Board suggested the use
+of the existing property "availability" in the AGLS Metadata
+Terms [3] maintained by the National Archives of Australia;
+suggestions regarding proposals for properties "date captured"
+and "version" were forwarded to the DCMI Libraries Community
+for further discussion.  The Usage Board resolved to work
+with the AGLS Working Group on finalizing a DCMI property
+and related AGLS vocabulary encoding scheme for describing
+characteristics related to the accessibility of resources.
+
+[1] http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0812&L=dc-usage&P=1068
+[2] http://dublincore.org/usage/meetings/2008/09/berlin/ProfileReviewCriteria-20080917.html
+[3] http://www.agls.gov.au/documents/aglsterms/
+

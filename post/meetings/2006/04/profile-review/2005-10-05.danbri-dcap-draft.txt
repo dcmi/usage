@@ -1,0 +1,381 @@
+----------------------------------------------------------------------
+Date: Wed, 5 Oct 2005 11:47:57 +0200
+From: Thomas Baker <tbaker@tbaker.de>
+To: Dublin Core Advisory Board <dc-ab@jiscmail.ac.uk>
+Cc: Dan Brickley <danbri@W3.ORG>
+Subject: Re: drafting a proposal on DC App Profiles
+----------------------------------------------------------------------
+
+On Fri, Sep 16, 2005 at 09:51:40AM -0400, Dan Brickley wrote:
+> I started writing something earlier today, in an attempt to flesh out
+> a common understanding of what 'application profiles' might mean, and
+> how they relate to the technicalities of the Abstract Model and its
+> bindings, as well as to various technical components such as schema
+> languages,
+> query languages, and transformation technologies such as GRDDL.
+> 
+> Posted it initially to the DC-Arch RDF taskforce list,
+> http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0509&L=DC-RDF-TASKFORCE&P=R2034&I=-3
+> 
+> Here it is in initial rough form below, comments welcomed... (will move to
+> public fora after the conference). I'm motivate by interest in finding out
+> how I might propose an app profile that draws together DC, FOAF and other
+> vocabs to address DC Agent (draft) requirements.
+...
+> A Proposal for Dublin Core Application Profiles
+> 
+> Dan Brickley
+
+All,
+
+To put this into context, the Usage Board is focusing over
+the coming year on testing and refining the criteria and
+methods used to evaluate application profiles -- the example
+currently on the table is the Collection Description profile
+-- and the expected deliverable of that process is a revised
+suite of documents for supporting that process.
+
+Foundational documents underlying the review process
+include the DCMI Abstract Model [1], the DCMI Namespace
+Policy [2], Procedure for Approval of DCMI Metadata Terms
+and Recommendations [3], DCMI Policy on Naming Terms [4],
+and some draft Guidelines for Assigning Identifiers to
+Metadata Terms [5], along with explanatory discussions about
+Element Refinement in Dublin Core Metadata [6] and about
+differences between XML elements and RDF properties which
+are relevant to the construction of application profiles [7].
+These explanations are reflected in a draft Mixing and Matching
+FAQ [8].
+
+As practical guides to the evaluation of application profiles,
+there are working drafts for Dublin Core Application Profile
+Guidelines [9], which specify the form and content of an
+application profile, and a DCMI-compliant Term Decision Tree
+[10], which provides a step-by-step method for checking each
+term in an application profile against the Abstract Model.
+
+In Madrid, the Usage Board decided to revise [9] to reflect
+improvements in format devised for the presentation of the
+Collection Description Application Profile [11,12] and to
+tighten the requirement for using URIs [see Footnote 1].
+
+In this context, Dan's draft (below) proposes some very useful
+additions to the types of guidance provided to developers
+of application profiles.  The existing draft Guidelines [9]
+specify the form and content of a DCAP.  Dan's draft suggests
+additional guidelines on:
+
+-- DCAM bindings and encodings of a DCAP
+
+    > 1. DCAM Binding Type
+    > 
+    > A DCAM profile MAY restrict itself to a subset of the possible
+    > DC Abstract Model bindings.
+    ...
+    > 2. Document Exemplars
+    > 
+    > DCAM documentation MAY include 1 or more examplar instance documents
+    > indicating typical expected usage.
+    ...
+    > 3. Document Instance Syntactic Restrictions (eg. DTDs)
+    > 
+    > For DCAM bindings that specify a textual notation (typically but
+    > not always XML based), any relevant syntactic profiling mechanisms
+    > MAY be used.
+
+-- Queries supported by a DCAP
+
+    > 5. Use Case Query Patterns
+    > 
+    > An Application Profile MAY characterise the descriptive patterns
+    > important in some community of practice by expressing use cases
+    > in terms of a query language (or other data access mechnism)
+    > for some DCAM binding.
+    > 
+    > 5a. Syntactic query patterns
+    ...
+    > 5b. Abstract query patterns
+
+Whether as stand-alone documents or an integrated whole,
+guidance on describing applications from their model and
+content through bindings and encodings to supported queries
+would be very useful to provide.
+
+Since these additional issues involve the Abstract Model,
+syntax, and binding, I agree that it makes sense to continue
+discussion either in the RDF Task Force (where it originated)
+or in DC-Architecture.
+
+Tom
+
+FOOTNOTES
+
+[1] Note that this implies setting the bar somewhat higher
+    than suggested by Dan in his draft:
+
+    > 4. Namespace and Term Enumeration
+    > 
+    > A simple technique for indicating an Application Profile is to list
+    > the namespaces that are typically used in instance data.
+    > The profile SHOULD indicate these namespaces using URIs.
+
+REFERENCES
+
+[1] http://dublincore.org/documents/abstract-model/ 
+[2] http://dublincore.org/documents/dcmi-namespace/
+[3] http://dublincore.org/usage/documents/approval/
+[4] http://dublincore.org/documents/naming-policy/
+[5] http://www.ukoln.ac.uk/metadata/dcmi/term-identifier-guidelines/
+[6] http://dublincore.org/documents/dc-elem-refine/
+[7] http://www.ukoln.ac.uk/metadata/dcmi/dc-elem-prop/
+[8] http://www.ukoln.ac.uk/metadata/dcmi/mixing-matching-faq/
+[9] http://stage.dublincore.org/usage/documents/2005/09/03/profile-guidelines/
+[10] http://www.ukoln.ac.uk/metadata/dcmi/term-decision-tree/
+[11] http://www.ukoln.ac.uk/metadata/dcmi/collection-ap-summary/2005-08-25/
+[12] http://www.ukoln.ac.uk/metadata/dcmi/collection-application-profile/2005-08-25/
+
+
+[[
+A Proposal for Dublin Core Application Profiles
+
+Dan Brickley
+
+
+Dublin Core Application Profiles are collections of descriptive patterns,
+community conventions and multi-vocabulary metadata structures
+used by members of the Dublin Core community.
+
+A variety of descriptive techniques are available to the community
+in support of this, combining human oriented and mechanical
+approaches depending on the level of formality, precision and machine
+checkability appropriate. Application Profiles are grounded in real world
+metadata practice, user needs and local priorities. As such they
+typically express constraints and information needs that simultaneously
+extend and restrict global vocabulary standards such as those maintained
+by DC itself.
+
+A DCAM community serves as a forum for ongoing documentation of
+these restrictions and extensions, relying on the DC Abstract Model
+(and associated formalisms such as RDF) to ensure that a consistent
+approach to description is taken by all Application Profiles. In the
+simplest case, a DC Application Profile characterises the shared
+description interests of some community of interest. This can be
+achieved using natural language and other human-oriented
+materials (eg. case studies, online discussion fora, etc).
+
+In addition to human-centric documentation, Application Profiles can
+often usefully be described with various machine-readable techniques.
+
+The applicability of such techniques will vary depending on the degree
+of consensus and commonality of interest in the relevant community. Such
+techniques can improve the multilingual accessibility of the profile's
+documentation, eg. by allowing human-oriented summaries to be
+automatically generated in a variety of natural languages. The remainder
+of this document outlines some technical approaches that can be used
+when documenting an application profile.
+
+A DC Abstract Model
+
+There are various machine-readable ways in which we can
+represent the  descriptive patterns, community conventions and
+vocabulary-mixing scenarios relevant to some DC community of interest.
+
+These techniques are usually grounded in tools and software via some
+specific binding of the Dublin Core Abstract Model, and MAY be grounded
+via a syntax-neutral abstract binding such as RDF's (ie. a concrete grounding
+that itself supports multiple DCAM-compatible notations).
+
+1. DCAM Binding Type
+
+A DCAM profile MAY restrict itself to a subset of the possible
+DC Abstract Model bindings.
+
+For example, it may specify that compliant instance data be
+expressed using a specific named binding (such as DC-in-XHTML).
+
+Restrictions on binding type SHOULD specify the specific version of
+a DCAM concrete binding.
+
+
+2. Document Exemplars
+
+DCAM documentation MAY include 1 or more examplar instance documents
+indicating typical expected usage.
+
+Exemplar instances MUST be relative to named DCAM bindings, ie. if
+sample RDF/XML is shown, some version of a DC-in-RDF Abstract Model
+binding would be named.
+
+Notes: Examplar document instances can be useful for user-facing
+documentation, since actual examples are often more accessible and
+understandable than schema-level abstractions.
+
+3. Document Instance Syntactic Restrictions (eg. DTDs)
+
+For DCAM bindings that specify a textual notation (typically but
+not always XML based), any relevant syntactic profiling mechanisms
+MAY be used.
+
+For example, XML DTDs, Relax-NG or W3C XML Schemas, or Schematron
+schemas could all be used to express restrictions and extensions
+for an application profile, indicated in terms of XML-validatable
+rules, can be used.
+
+Notes:
+The expression of syntactic restrictions in XML, although relative
+to a specific textual notation, provide a powerful and industrially
+accepted mechanism for expression information needs, shared expectations etc.
+
+This technique can be used against RDF/XML and non-RDF XML instance
+formats.
+
+For non-XML RDF formats, techniques such as W3C's GRDDL can be used
+to indicate transformation technques (eg. using XSLT) that can
+convert instances into DCAM-compatible abstractions and hence into
+other formats. These transformations can ensure that instance data
+can be converted into other DCAM bindings; however there is no known
+mechanism for translating syntactic-binding level constraints into
+their equivalent in other bindings.
+
+RSS 1.0 is an example of a document format that has additional
+non-RDF syntactic constraints (XML nesting structures, required element
+patterns etc.). These conventions can be captured to varying degrees
+using various XML schema languages.
+
+Note also that RDF-based profiles need not necessarily using DC terms
+in their instances data, since mappings to DC terms can be expressed
+within schemas using RDFS/OWL technology.
+
+4. Namespace and Term Enumeration
+
+A simple technique for indicating an Application Profile is to list
+the namespaces that are typically used in instance data.
+The profile SHOULD indicate these namespaces using URIs.
+
+DCAPs SHOULD indicate the status of any enumerated list of namespaces,
+ie. whether the list is closed, open/extensible, mandatory, etc.
+
+At a finer granularity, profiles MAY list metadata terms that
+are typically used in instance data. The profile SHOULD indicate
+these terms using URIs.
+
+TODO: @@pointers to Schemas project etc proposals
+
+
+5. Use Case Query Patterns
+
+An Application Profile MAY characterise the descriptive patterns
+important in some community of practice by expressing use cases
+in terms of a query language (or other data access mechnism)
+for some DCAM binding.
+
+5a. Syntactic query patterns
+
+For profiles presented in terms of a concrete syntactic binding
+(techniques (2) and (3)), syntax-specific data matching and query
+languages (eg. XPath, XSLT, XQuery)  MAY be used to document 1 or
+more common query structures. The Schematron language provides a
+suitable high level approach for using XPath to document metadata
+expectations in this way.
+
+5b. Abstract query patterns
+
+Profiles MAY document expected use cases in terms of abstract
+query patterns, ie. structured in terms of abtract metadata
+statements, properties and URIs rather than in terms of a
+textual binding of the DCAM.
+
+Given the close relationship between DCAM and RDF, any RDF
+query language or data access formalism will be applicable to
+this task. W3C's SPARQL language offers particular facilities
+(such as datatyping and optional patterns) that make it a good
+choice here.
+
+An Application Profile is not itself a collection of such queries.
+Rather, an Application Profile's documentation MAY be augmented with
+1 or more indicative queries, provided as a way of linking
+application requirements, usage scenarios, user-needs with
+formally represented patterns of properties and metadata statements.
+
+For example, the following query indicates a pattern for using
+Dublin Core, FOAF and SKOS vocabularies together for the purpose
+of finding the interests of colleagues of some specified Agent.
+Note that this is a highly task-centric pattern, and not an
+general abstract pattern. Profile documentation MAY present a
+range of indicative queries, illustrating both specific scenarios
+and more general vocabulary combination patterns.
+
+(@@todo: fix SKOS stuff to be accurate!)
+
+eg. 1: AP Use Case - "combining DC, FOAF + SKOS for
+	locating colleague subject interests"
+
+ PREFIX dc: <http://purl.org/dc/elements/1.1/>
+ PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+ PREFIX skos: <http://www.w3.org/2002/skos-namespace-@@@/>
+ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+ SELECT ?ilabel ?iblurb ?wphp ?name
+
+ WHERE
+ {
+    [ rdf:type foaf:Agent;
+      foaf:name ?name;
+      foaf:workplaceHomepage ?wphp;
+      foaf:homepage [ dc:subject [ skos:label ?ilabel; skos:scopeNote ] ]
+    ]
+ }
+
+
+
+This says, in effect,
+
+"Find us values for ?ilabel, ?iblurb, ?wphp, ?name where
+there is something with a name we call ?name
+that is of type Agent, that has a workplace homepage
+that is ?wphp, and find us SKOS labels and scopenotes for the dc:subject
+of that page".
+
+Note that this:
+
+ - combines multiple vocabulary namespaces
+ - describes exact patterns for some (but not all!) ways in which
+   such namespaces can be combined
+ - binds to the DC Abstract Model via RDF
+ - and hence binds to any concrete DCAM syntax
+ - corresponds directly to machine-usable queries, for any data that
+   can be transformed into RDF metadata statements (eg. via GRDDL
+   per (3) above, for non-RDF/XML notations).
+
+
+The results of such a query are sets of variable-value associations,
+for example some results of this query above might be:
+
+	ilabel: Carpentry
+	iblurb: Making things with wood
+	name: Eric Miller
+	wphp: http://www.w3.org/
+
+	ilabel: Photography
+	iblurb: Taking blurry photos
+	name: Dan Brickley
+	wphp: http://www.w3.org/
+
+
+...assuming a dataset in which SKOS, DC and FOAF were combined
+appropriately, ie. FOAF for people stuff, DC for 'subject' (we could
+also have asked for titles, descriptions etc of the agent's homepage),
+and SKOS to elaborate on the details of the subject of the homepage).
+(the simplistic scenario assumption here is that people are
+interested in the topics their homepages cover...).
+
+
+]]
+
+-- 
+Dr. Thomas Baker                      baker@sub.uni-goettingen.de
+SUB - Goettingen State                            +49-551-39-3883
+and University Library                           +49-30-8109-9027
+Papendiek 14, 37073 Göttingen
+
+

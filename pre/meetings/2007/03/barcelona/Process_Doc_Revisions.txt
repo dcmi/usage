@@ -1,0 +1,59 @@
+REVIEW OF PROCESS DOCUMENT (http://dublincore.org/usage/documents/process/) 
+Stuart Sutton
+
+2007-03-12
+
+SECTION 6.1.  Application Profiles Subject to Review
+
+    We still do not have a definitive definition of a "DCMI
+    Strategic Activity."  It is framed as the primary mechanism
+    for determining which initiatives will be bringing application
+    profiles to the Usage Board.
+
+SECTION 6.2.  Documentation of Application Profiles
+
+    The section states that the applicant must include
+    "an identifier of the element set where [the term] is
+    defined, ideally in the form of URIs for individual terms."
+    Since the terms have to conform to the Abstract Model,
+    don't we require "URIs for the individual terms"?
+
+SECTIONS 6.4 through 6.8 are numbered incorrectly.  There is no section 6.3.
+
+SECTION 6.5.  Evaluation of terms in Application Profiles.  
+
+    The section speaks of the "use of terms related to Dublin
+    Core ... will be evaluated from the standpoint of semantic
+    conformance, grammatical principle (eg, 'dumb-down'),
+    clarity, and good practice."  Doesn't this mean "terms
+    related to Dublin Core" and not "use of terms related to
+    Dublin Core"?
+
+SECTION 6.8.  Persistent identifiers for reviewed Application Profiles.
+
+    The section states: "Review represents a form of
+    recognition, and its URL will be persistent for purposes
+    of citation."  Which URL?  The Application Profile or
+    the Usage Board review?
+
+SECTION 7.2.  Assignment of DCMI term URIs and status.
+
+    This section states: "New terms deemed in compliance
+    with the DCMI Abstract Model may be given URIs in DCMI
+    namespaces and assigned a status of conforming."  Does this
+    really mean "may be given," or is it "will be given."
+    If it is "may be given," what's the criteria for being in?
+
+SECTION 8.  Proposals for endorsement of terms in other namespaces for use within Application Profiles.
+
+    This section says that terms from other name spaces in
+    application profiles need to be reviewed for conformance
+    to the Abstract Model.  The section actually does not say
+    anything about assigning a status to those terms; BUT, the
+    section title speaks of "endorsement" which seems wrong
+    to me.  Endorsement (as defined in section 3) speaks of
+    endorsing "assertions" by another that a term conforms
+    (e.g., the LOC relators) and not that the term itself
+    conforms.  It seems to me that what we are talking about
+    here in this section is "conforming" and not "endorsed."
+

@@ -1,0 +1,862 @@
+----------------------------------------------------------------------
+2006-03-10
+
+On 10/03/2006, at 6:23 PM, Andy Powell wrote:
+
+I completely agree that the use of controlled vocabs is fine
+and to be encouraged.  But I'm suggesting that they are used
+with a small number of properties (perhaps 4) rather than
+with one single uber-property.
+
+So instead of having one property (a4a:adaptability) with
+one big controlled vocab (or 4 smaller controlled vocabs)
+as I think you are currently suggesting, we should instead
+have 4 properties (along the lines of a4a:perceptionMode,
+a4a:controlMode, a4a:structuralFeatures, a4a:functionalFeatures
+but note that I don't understand this space well enough to
+know if these are correctly named), each with an associated
+controlled vocabulary.
+
+Is that clearer?
+
+----------------------------------------------------------------------
+2006-03-10  From Liddy
+
+Sent: 10 March 2006 23:56
+To: DC-ACCESSIBILITY@JISCMAIL.AC.UK
+Subject: Re: Liddy's comments in the wiki (long and techie comments)
+
+Andy
+
+I think it is a matter of style, usability, etc ....
+
+If we look at what happens with subject, we find huge vocab 
+lists. In the case of adaptability, IMHO, there is work going 
+on in many places and some of the things that might need to 
+be included in metadata now will either be transmitted 
+automatically in other ways later, some new things will 
+arise, etc. I personally think they are all just adaptability 
+attributes. In putting the a4a before them, in a sense I 
+think you are saying the same thing.
+
+You are saying, I think, that these should be part of an 
+application profile. I think how one understands the role and 
+value of application profiles might well be a matter for 
+debate. More and more elements being useful is not what I am 
+hearing where I work - people do not want to complete massive 
+long questionnaires to add a bit of metadata and if there are 
+4 or more additional elements, I suspect they will not be used.
+
+As for processing - your original objection. If looking for 
+and finding values for attributes in one or four places makes 
+the difference, --- I cannot comment on that.  I do know that 
+those who have already implemented this stuff are using a 
+single element with structured values so they musty be 
+processing the values somehow?
+
+I would like whatever to be as simple as possible for those 
+being asked to add metadata, so long as that does not cause 
+problems for those trying to implement it. I am willing to be 
+guided on that balance but do want to take account of what I 
+hear from people who will be writing this metadata.
+
+Re your choice of categories - we have worked with 3 dimensions:  
+control, display (presentation) and content choice. These are 
+the dimensions for adaptation for accessibility, as we see 
+it. So we'd have to think from the beginning again to come up 
+with the categories you suggest (very hypothetically). I did 
+group the attributes, as you know, so they would easily be 
+remembered etc - which is what, in fact, I think of as the 
+actual role for the groupings of DC elements for me.
+
+Let's hope to hear from others - is it better to be choosing 
+from one list or four is the question??? Does it have any 
+implications for implementers that should be noted?
+
+
+----------------------------------------------------------------------
+2006-03-11 From Andy Powell
+
+Liddy,
+I think you are mixing up the usability of metadata tools with the
+underlying structure of the metadata.  (Actually, I think we all tend to
+do this at the moment because the quality of metadata user-interfaces
+tends to be rather poor in many tools).  Just because we choose 3
+properties in the underlying metadata doesn't mean that tools have to
+present 3 boxes to the end-user.  Tools can choose to present a single
+list as part of the user-interface, but then partition the end-user
+selections into 3 metadata fields as necessary.
+
+This cuts both ways of course.  As I mentioned, dc:format covers at
+least three very distinct concepts (file format, physical media and
+dimensions).  So a user-interface designer might choose to present 3
+boxes to the end-user, but place all the resulting information into one
+metadata field.
+
+As an aside, I would argue that dc:format is a good example of poor
+metadata design - i.e. its not a property that we want to copy!
+
+So the question is *not*:
+
+Is it better to be choosing from one list or four?
+
+because that is a user-interface design question.  We are intersted in
+the underlying structure of the metadata description.  The question is
+more like:
+
+Is it better to structure our metadata using a single very general
+property with 1 (or 3) vocabularies OR using 3 more specific properties
+each with a single vocabulary?
+
+I agree that this is a design choice, and as such there are no clear-cut
+answers.
+
+But I would argue that DCMI tends to lean towards the latter route (more
+specific properties).  For example, DCMI has separated out spatial
+coverage ("it's about the 15th century") and temporal coverage ("it's
+about Mexico") from other kinds of topics ("it's about Chemistry") by
+creating several properties, rather than by simply using dc:subject with
+several controlled vocabularies (which would have been the alternative
+approach).
+
+The justifaction for this approach is not easy to document - and as far
+as I know, DCMI has never tried to write down guidance on where to draw
+the line between using properties and vocabularies.  Two points are
+worth noting though.  Firstly, where applications choose not to use
+controlled vocabularies, it helps to have used more specific properties
+rather than very general ones (in order that some sense can be made of
+the resulting values by remote metadata systems).  Secondly, where
+applications choose to define their own vocabularies, the relationship
+between any term in the vocabulary and the described resource is clearer
+(to remote metadata systems that don't know the vocabulary) if more
+specific properties have been used.
+
+But, as I said above, it's a design choice, and there are arguments in
+both directions.
+
+I still have a gut-feeling preference for something like
+
+<meta name="a4a:controlMode"
+      scheme="a4a:ControlCharacteristic"
+      content="KeyboardOnlyControl" />
+<meta name="a4a:displayMode"
+      scheme="a4a:DisplayCharacteristic"
+      content="Braille" />
+
+rather than
+
+<meta name="a4a:adaptability"
+      scheme="a4a:AdaptabilityCharacteristic"
+      content="KeyboardOnlyControl" />
+<meta name="a4a:adaptability"
+      scheme="a4a:AdaptabilityCharacteristic"
+      content="Braille" />
+
+which is what I think you are suggesting??  But as you can see from the
+above, I admit that I'm struggling to put that gut-feeling into a
+coherent argument! :-(
+
+----------------------------------------------------------------------
+2006-03-12
+
+From: Thomas Baker <tbaker@tbaker.de>
+To: Andy Powell <andy.powell@EDUSERV.ORG.UK>
+Cc: DCMI Usage Board <dc-usage@jiscmail.ac.uk>
+Subject: [DC-USAGE] Semantic specificity options
+
+> The justifaction for this approach is not easy to document - and as far
+> as I know, DCMI has never tried to write down guidance on where to draw
+> the line between using properties and vocabularies.
+
+All,
+
+Andy's posting to dc-accessibility about "where to draw the
+line between using properties and vocabularies" addresses a
+design issue we have acknowledged and discussed several times
+before, but I also do not recall that we ever wrote down or
+even ever articulated the problem more clearly than here.
+
+Maybe it would help to give this issue a handle, like "Semantic
+specificity options".  For completeness, those options would
+need to distinguish between term declarations and application
+profiles.  The options might look something like the following:
+
+1. Instead of using one broader property, use multiple,
+   semantically more specific properties (i.e., declared
+   in term declarations).
+
+2. Use a broad property and specify its values with
+   vocabulary encoding schemes (i.e., declared in term
+   declarations).
+
+3. Use a broad property but restrict its definition, domain,
+   range, or use in an application profile.
+
+Listing the options and discussing advantages and drawbacks of
+each -- discussing data design versus user-interface design,
+uncontrolled values versus use of controlled vocabularies --
+would be a useful addition to the suite of documents DCMI
+offers to designers of application profiles.
+
+Tom
+
+----------------------------------------------------------------------
+Date: Sun, 12 Mar 2006 14:26:24 +0000
+Reply-To: A mailing list for the Dublin Core Metadata Initiative's Usage Board <DC-USAGE@JISCMAIL.AC.UK>
+Sender: A mailing list for the Dublin Core Metadata Initiative's Usage Board <DC-USAGE@JISCMAIL.AC.UK>
+From: Pete Johnston <p.johnston@UKOLN.AC.UK>
+Subject: Re: Semantic specificity options
+To: DC-USAGE@JISCMAIL.AC.UK
+
+Thomas Baker wrote:
+
+> 3. Use a broad property but restrict its definition, domain,
+>    range, or use in an application profile.
+
+I understand what you mean, but I think we're going to have to be a bit 
+careful with terminology here: in RDFS statements about the domain and 
+range of a property are always global in scope. OWL introduces some 
+constructs for doing restrictions on a per-class basis [1].
+
+This is one of the areas where I think we need a properly worked-out 
+model of a DCAP before we can nail down the guidelines.
+
+Pete
+
+[1] http://www.w3.org/TR/owl-guide/#PropertyRestrictions
+
+----------------------------------------------------------------------
+Date: Sun, 12 Mar 2006 13:44:26 -0500
+Reply-To: A mailing list for the Dublin Core Metadata Initiative's Usage Board <DC-USAGE@JISCMAIL.AC.UK>
+Sender: A mailing list for the Dublin Core Metadata Initiative's Usage Board <DC-USAGE@JISCMAIL.AC.UK>
+From: "Diane I. Hillmann" <dih1@CORNELL.EDU>
+Subject: Re: Semantic specificity options
+To: DC-USAGE@JISCMAIL.AC.UK
+
+All:
+
+Well, yes, we did attempt to write this down.  In
+the "old" version of the process document was a
+decision tree that asked the following of those
+considering a proposal for a new element:
+
+1. Can the need be solved with a vocabulary
+encoding scheme for an existing DCMI Element or
+Element Refinement?=8A
+2.  Can the need be solved through an application
+profile that references an element or element
+refinement from an existing and recognized
+non-DCMI namespace?
+3: Can the need be solved with a new refinement for an existing DCMI element
+?
+4: Create a new DCMI Element (and, if necessary,
+Element and Vocabulary Encoding Scheme) to meet
+the need
+
+I have to admit that when I teach, I express this
+as the "Big Bucket" approach: generalized
+elements, specific vocabularies. It's an approach
+that is far more interoperable than the
+proliferation of more and more specific elements,
+and pushes implementors into more investment into
+controlled vocabularies that can be more
+responsive to changing needs without the overhead
+of change at the element/refinement level.
+
+I have to admit that as I'm following the accessibililty
+discussions it is an approach that suggests itself as I hear
+the problems defined.  =46or instance, if there are several
+categories of accessibility statements or criteria, one could
+envision a separate vocabulary for each, which could all be
+used within the same element.  The fact that the vocabularies
+are separate gives you, to a great extent, the "structured"
+piece that many are looking for in DCSV, but again, without
+the overhead or potential for creating messes.
+
+I'm all for writing this down in some way that's useful, but
+I'd go further and suggest that we recommend, and even STRONGLY
+recommend, the general buckets, specific vocabularies strategy.
+
+----------------------------------------------------------------------
+Date: Sun, 12 Mar 2006 19:18:51 +0000
+Reply-To: A mailing list for the Dublin Core Metadata Initiative's Usage Board <DC-USAGE@JISCMAIL.AC.UK>
+Sender: A mailing list for the Dublin Core Metadata Initiative's Usage Board <DC-USAGE@JISCMAIL.AC.UK>
+From: Pete Johnston <p.johnston@UKOLN.AC.UK>
+Subject: Re: Semantic specificity options
+To: DC-USAGE@JISCMAIL.AC.UK
+
+Diane I. Hillmann wrote:
+
+> I have to admit that when I teach, I express this as the "Big Bucket" 
+> approach: generalized elements, specific vocabularies. It's an approach 
+> that is far more interoperable than the proliferation of more and more 
+> specific elements, and pushes implementors into more investment into 
+> controlled vocabularies that can be more responsive to changing needs 
+> without the overhead of change at the element/refinement level.
+> 
+> I have to admit that as I'm following the accessibililty discussions it 
+> is an approach that suggests itself as I hear the problems defined. For 
+> instance, if there are several categories of accessibility statements or 
+> criteria, one could envision a separate vocabulary for each, which could 
+> all be used within the same element.  The fact that the vocabularies are 
+> separate gives you, to a great extent, the "structured" piece that many 
+> are looking for in DCSV, but again, without the overhead or potential 
+> for creating messes.
+> 
+> I'm all for writing this down in some way that's useful, but I'd go 
+> further and suggest that we recommend, and even STRONGLY recommend, the 
+> general buckets, specific vocabularies strategy.
+
+But within the DC model, elements are _not_ buckets: they are 
+properties, which express types of relationships betweeen resources.
+
+I agree it's fine to use a single property to express the _same_ type of 
+relationship between one resource and two other resources (values) of 
+quite different types
+
+e.g. if I want to talk about a concept being the subject of a book, and 
+a person being the subject of a book, then it is fine to use
+
+book:B has-subject concept:C
+
+book:B has-subject person:P
+
+Yes, I agree we don't want to go coining new properties for 
+person-as-subject, physical-object-as-subject - well, assuming that the 
+definition of our has-subject property permits this range of values: for 
+some properties, the "range" of the property is indeed constrained by 
+the owner, and if our value is outside that range then in that case we 
+may need to define a new property.
+
+But (it seems to me) the accessibility example shows a case where not 
+only are the values of widely different types, but the relationships 
+between the subject and those values are also of different types.
+
+See Liddy's example here
+
+http://dublincore.org/architecturewiki/MoreCarefullyThought
+
+where the single proposed property a4a:adaptability is used with the 
+following different value strings (I think Liddy's first statement with 
+a4a:adaptability should be five separate ones)
+
+visual
+auditory
+keyboardOnly
+structuredPresentation
+peerInteraction
+textual
+replacesVisual
+
+As I said here
+
+http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0603&L=dc-accessibility&P=2167
+
+we have to think in terms of simple statements, and I can not envisage a 
+coherent definition for a single property which could be used to form 
+statements in which all of those values are used, apart from one which 
+says something like:
+
+resource:r 
+is-related-in-some-undefined-manner-something-to-do-with-adaptability-to
+value:v
+
+And I can't understand what use that property is to anyone. If we want 
+to say something so vague, we could just use dc:relation ;-)
+
+----------------------------------------------------------------------
+Date: Sun, 12 Mar 2006 21:19:29 +0000
+Reply-To: A mailing list for the Dublin Core Metadata Initiative's Usage Board <DC-USAGE@JISCMAIL.AC.UK>
+Sender: A mailing list for the Dublin Core Metadata Initiative's Usage Board <DC-USAGE@JISCMAIL.AC.UK>
+From: Pete Johnston <p.johnston@UKOLN.AC.UK>
+Subject: Re: Semantic specificity options
+To: DC-USAGE@JISCMAIL.AC.UK
+
+Pete Johnston wrote:
+
+> But within the DC model, elements are _not_ buckets: they are 
+> properties, which express types of relationships betweeen resources.
+
+Also the conversation a few months back about dc:coverage and the 
+confusion over whether it merged together "about-ness" and 
+"applicability" (at least on the "spatial" side) highlighted the 
+problems which arise if the broad bucket approach is applied loosely.
+
+A statement using the dc:coverage property and having a place as value 
+is more or less useless because I don't know if it means the resource is 
+"about" the place or "applicable to" the place.
+
+----------------------------------------------------------------------
+Date: Sun, 12 Mar 2006 17:09:53 -0500
+Reply-To: A mailing list for the Dublin Core Metadata Initiative's Usage Board <DC-USAGE@JISCMAIL.AC.UK>
+Sender: A mailing list for the Dublin Core Metadata Initiative's Usage Board <DC-USAGE@JISCMAIL.AC.UK>
+From: "Diane I. Hillmann" <dih1@CORNELL.EDU>
+Subject: Re: Semantic specificity options
+To: DC-USAGE@JISCMAIL.AC.UK
+
+>Pete Johnston wrote:
+>
+>>But within the DC model, elements are _not_ buckets: they are 
+>>properties, which express types of relationships betweeen resources.
+
+Yes, I understand that, but for most people the notion of 
+"properties" is not particularly helpful in a training context. In my 
+experience, it's important to deal with where folks are, not where 
+you wish they were, particularly when attempting to teach them to do 
+something new.
+
+>Also the conversation a few months back about dc:coverage and the 
+>confusion over whether it merged together "about-ness" and 
+>"applicability" (at least on the "spatial" side) highlighted the 
+>problems which arise if the broad bucket approach is applied loosely.
+
+But this implies that we are entirely in control about how people 
+understand and use metadata definitions, which we certainly aren't. 
+This is not to say that we shouldn't try to clarify some of the 
+ambiguity of the past (and avoid it in future), but we do need to be 
+realistic about what to expect from that exercise. Even if we had 
+gone the other way on that decision, I don't think it would have 
+materially changed what people did with the element.
+
+>A statement using the dc:coverage property and having a place as 
+>value is more or less useless because I don't know if it means the 
+>resource is "about" the place or "applicable to" the place.
+
+It is only useless if you require and expect the metadata you receive 
+from others to be entirely predictable and consistent. My experience 
+is that it's usually neither, so I've adjusted my expectations 
+accordingly. I'd be happy if all the providers I worked with managed 
+to put place names in Coverage (bonus if they spell them correctly!) 
+and used an identifier that could get me to the resource.
+
+Your mileage may vary, of course ... ;-)
+
+----------------------------------------------------------------------
+Date: Mon, 13 Mar 2006 07:36:41 +0000
+Reply-To: A mailing list for the Dublin Core Metadata Initiative's Usage Board <DC-USAGE@JISCMAIL.AC.UK>
+Sender: A mailing list for the Dublin Core Metadata Initiative's Usage Board <DC-USAGE@JISCMAIL.AC.UK>
+From: Pete Johnston <p.johnston@UKOLN.AC.UK>
+Subject: Re: Semantic specificity options
+Comments: To: "Diane I. Hillmann" <dih1@cornell.edu>
+To: DC-USAGE@JISCMAIL.AC.UK
+
+Quoting "Diane I. Hillmann" <dih1@cornell.edu>:
+
+> Yes, I understand that, but for most people the notion of 
+> "properties" is not particularly helpful in a training context. In my 
+> experience, it's important to deal with where folks are, not where 
+> you wish they were, particularly when attempting to teach them to do 
+> something new.
+>
+>> Also the conversation a few months back about dc:coverage and the 
+>> confusion over whether it merged together "about-ness" and 
+>> "applicability" (at least on the "spatial" side) highlighted the 
+>> problems which arise if the broad bucket approach is applied loosely.
+>
+> But this implies that we are entirely in control about how people 
+> understand and use metadata definitions, which we certainly aren't.
+
+The issue here isn't - in the first instance - how implementers 
+(mis)use "our" terms: it's the principles "we" (the UB, WGs, other 
+designers of DCAPs) ourselves apply to constructing/creating/defining 
+them. At this point we _do_ have control.
+
+> This is not to say that we shouldn't try to clarify some of the 
+> ambiguity of the past (and avoid it in future), but we do need to be 
+> realistic about what to expect from that exercise. Even if we had 
+> gone the other way on that decision, I don't think it would have 
+> materially changed what people did with the element.
+
+I can only guess! But if there had been two properties that separated 
+out notions of "aboutness" and "applicability/validity", supported by 
+clear documentation and examples, and appropriate machine-processable 
+descriptions, it seems to me that there is a chance that they would 
+have been used as intended. And - the bottom line - my consuming 
+application would have been able to distinguish a course about Bristol 
+from a course that is applicable/available only to residents of Bristol.
+
+>> A statement using the dc:coverage property and having a place as 
+>> value is more or less useless because I don't know if it means the 
+>> resource is "about" the place or "applicable to" the place.
+>
+> It is only useless if you require and expect the metadata you receive 
+> from others to be entirely predictable and consistent. My experience 
+> is that it's usually neither, so I've adjusted my expectations 
+> accordingly. I'd be happy if all the providers I worked with managed 
+> to put place names in Coverage (bonus if they spell them correctly!) 
+> and used an identifier that could get me to the resource.
+
+OK, but we have to start from the position of defining properties that 
+we believe are
+
+(a) formulated in a way which is consistent with the DCAM; and
+(b) as fully, clearly and unambiguously defined as possible (both in 
+terms of human-readable documentation and machine-processable 
+assertions about relationships with other terms) (c) useful for the 
+"functional requirements" they set out to address
+
+I accept that in practice people will use DCMI terms in ways we hadn't 
+predicted, and ways that result in nonsensical inferences. But I don't 
+think we should treat that as a design consideration (except as 
+something we have to do our best to avoid).
+
+I don't understand an approach that places so much emphasis on not 
+defining new properties because it's bad for interoperability. If an 
+application needs to model a relationship type that is not covered 
+adequately by an existing property, they need a new property. In terms 
+of interoperability, that is a _better_ solution than "stretching" an 
+existing property in ways that were never intended in the name of 
+"reuse". It seems to me that it's the latter approach which is giving 
+metadata consumers so many problems and damaging interoperability.
+
+A consuming application encountering statements using an "unknown" 
+property can then choose either to ignore statements or to make use of 
+information about that property to infer other statements, which may 
+result in "useful" data, referencing "known" properties. That is a 
+better position for the consumer than having to deal only a small set 
+of "known" properties, but having to grapple with the fact that they 
+have been used in unpredictable and inconsistent ways.
+
+> Your mileage may vary, of course ... ;-)
+
+Going back to Andy's initial point, I do agree that the design choice 
+between single propery/multiple vocab encoding schemes & multiple 
+properties isn't clear cut at all.
+
+_However_ given the vocab encoding schemes currently proposed for the 
+adaptability property, I can see no useful single property that can be 
+defined to describe relationships between a resource and instances of 
+_all_ those classes.
+
+With a different set of vocabulary encoding schemes - derived from a 
+different approach to modelling the problem space - that situation 
+might be different. But the choice of which properties/classes required 
+should be based on a modelling of the problem space which meets the 
+functional requirements of the application, not on a principle of 
+trying to "squeeeze everything in to" a single property.
+
+----------------------------------------------------------------------
+Date: Sun, 12 Mar 2006 11:21:41 +0000
+Reply-To: DCMI Accessibility Group <DC-ACCESSIBILITY@JISCMAIL.AC.UK>
+Sender: DCMI Accessibility Group <DC-ACCESSIBILITY@JISCMAIL.AC.UK>
+From: Pete Johnston <p.johnston@UKOLN.AC.UK>
+Subject: Re: Liddy's comments in the wiki (long and techie comments)
+Comments: To: Andy Powell <andy.powell@eduserv.org.uk>
+To: DC-ACCESSIBILITY@JISCMAIL.AC.UK
+
+Quoting Andy Powell <andy.powell@eduserv.org.uk>:
+
+> I think you are mixing up the usability of metadata tools with the
+> underlying structure of the metadata.  (Actually, I think we all tend to
+> do this at the moment because the quality of metadata user-interfaces
+> tends to be rather poor in many tools).  Just because we choose 3
+> properties in the underlying metadata doesn't mean that tools have to
+> present 3 boxes to the end-user.  Tools can choose to present a single
+> list as part of the user-interface, but then partition the end-user
+> selections into 3 metadata fields as necessary.
+
+I strongly agree with this: designing a DCAP is not the same thing as 
+designing a user interface.
+
+[snip]
+
+> Is it better to structure our metadata using a single very general
+> property with 1 (or 3) vocabularies OR using 3 more specific properties
+> each with a single vocabulary?
+>
+> I agree that this is a design choice, and as such there are no clear-cut
+> answers.
+
+[snip]
+
+> But, as I said above, it's a design choice, and there are arguments in
+> both directions.
+>
+> I still have a gut-feeling preference for something like
+>
+> <meta name="a4a:controlMode"
+>      scheme="a4a:ControlCharacteristic"
+>      content="KeyboardOnlyControl" />
+> <meta name="a4a:displayMode"
+>      scheme="a4a:DisplayCharacteristic"
+>      content="Braille" />
+>
+> rather than
+>
+> <meta name="a4a:adaptability"
+>      scheme="a4a:AdaptabilityCharacteristic"
+>      content="KeyboardOnlyControl" />
+> <meta name="a4a:adaptability"
+>      scheme="a4a:AdaptabilityCharacteristic"
+>      content="Braille" />
+>
+> which is what I think you are suggesting??  But as you can see from the
+> above, I admit that I'm struggling to put that gut-feeling into a
+> coherent argument! :-(
+
+I dunno if this helps or not, but I think we need to remember that the 
+reason we coin properties is to use those properties to make statements 
+about things "out there in the world". Each of those statements says
+
+resource-1 is-related-in-some-specified-way-to resource-2
+
+So in the examples above, we have three resources:
+
+(a) the document, (b) the concept of control only by keyboard, (c) the 
+Braille format
+
+We want to make statements relating (a) to (b) and relating (a) to (c).
+
+Whar is the relationship between (a) and (b)? What statement do I want 
+to make with (a) as subject and (b) as object value? What is the 
+"verb"? Something like "can be controlled using"?
+
+Similarly, what is the relationship between (a) and (c)? What statement 
+do I want to make with (a) as subject and (c) as object value? What is 
+the "verb"? I don't think it is the same as for (a) and (b). I think it 
+is something like "can be displayed using"?
+
+Now sure, we can coin a property that captures both ("can be dsplayed 
+or controlled using"), but the more different relationships we try to 
+collapse into one property  ("can be displayed or controlled using or 
+has a supporting tool", "can be displayed or controlled using or has a 
+supporting tool or (some other factor related to adaptability)"), the 
+more general and imprecise the property becomes.
+
+In any one particular use of the property I can't tell whether the 
+statement is intended to convey a "can be displayed using" or "can be 
+controlled using" relationship. I'm left to guess from the type of the 
+value what the type of the relationship is. (Ah, the value is a class 
+of tool, so the realtionship must be "has supporting tool", not "is 
+controlled using" etc). (As Andy says, we have exactly this problem 
+with dc:format, and probably also with dc:coverage)
+
+As you collapse more different relationships into a single property, 
+you eventually end up with something not far from dc:relation - which 
+says only that there is some unspecified relationship - here something 
+to do with adaptability - between (a) and (b). And (it seems to me) 
+people very rarely want to say only that: they want to express a 
+specific type of relationship.
+
+----------------------------------------------------------------------
+Subject: RE: [DC-USAGE] Semantic specificity options
+Date: Mon, 13 Mar 2006 15:50:13 -0000
+From: "Andy Powell" <andy.powell@eduserv.org.uk>
+To: "Thomas Baker" <tbaker@tbaker.de>
+Cc: "DCMI Usage Board" <dc-usage@jiscmail.ac.uk>
+
+> 3. Use a broad property but restrict its definition, domain,
+>    range, or use in an application profile.
+
+3 is an area where we need to be careful.  I don't think we should ever
+talk about restricting a property definition as part of an application
+profile.  We can talk about annotating the wording of the definition to
+make its usage clearer in the context of an application - but we should
+not talk about changing the definition.
+
+Essentially, we should think of an application profile as adding an
+additional application-specific comment.
+
+----------------------------------------------------------------------
+Date: Mon, 13 Mar 2006 11:13:23 -0500
+From: "Diane I. Hillmann" <dih1@CORNELL.EDU>
+Subject: Re: Semantic specificity options
+To: DC-USAGE@JISCMAIL.AC.UK
+
+Andy:
+
+I think you're right on this.  I've noted that some people setting up 
+APs have a tendency to change the wording in definitions from 
+"resource" to "something-else-that-they're-interested-in" which has 
+the effect of restricting the definition.  I've tried to convince the 
+ones I've worked with to leave the defs as is and add a comment that 
+accomplishes essentially the same thing.
+
+----------------------------------------------------------------------
+Date: Mon, 13 Mar 2006 16:18:12 -0000
+From: Andy Powell <andy.powell@EDUSERV.ORG.UK>
+Subject: Re: Semantic specificity options
+To: DC-USAGE@JISCMAIL.AC.UK
+
+> Well, yes, we did attempt to write this down.  In the "old"
+> version of the process document was a decision tree that
+> asked the following of those considering a proposal for a new element:
+>
+> 1. Can the need be solved with a vocabulary encoding scheme
+> for an existing DCMI Element or Element Refinement?=A9 2.  Can
+> the need be solved through an application profile that
+> references an element or element refinement from an existing
+> and recognized non-DCMI namespace?
+> 3: Can the need be solved with a new refinement for an
+> existing DCMI element?
+> 4: Create a new DCMI Element (and, if necessary, Element and
+> Vocabulary Encoding Scheme) to meet the need
+
+Points 1 and 2 of these guidelines help in those cases where a WG is 
+adding something that is closely related to stuff that already exists in 
+DC.  But they don't help much where WGs are moving into semantically new 
+areas.  In such cases one just falls thru to 4, which doesn't provide 
+guidance on the 'property' vs. 'vocab' balance.
+
+> I have to admit that when I teach, I express this as the "Big
+> Bucket" approach: generalized elements, specific
+> vocabularies.
+
+Hmmm... interesting.  That's pretty much the opposite of what I've been 
+arguing on the dc-accessibility list :-(
+
+On the other hand, I think we have a sliding scale here...  what does 
+"generalised elements" mean in practice.  One logical conclusion of your 
+argument is that we should only have one "general element", 
+dc:description, and do everything else with "specific vocabularies".  
+But we don't do this... and the reason we don't is because not 
+everything can be expressed thru controlled vocabularies.  If we just 
+had
+
+dc:description = text
+dc:description = plumbing
+dc:description = bath
+dc:description = bristol
+
+we've lost a significant part of the information carried by
+
+dc:type = text
+dc:subject = plumbing
+dc:coverage = bath
+dc:coverage = bristol
+
+So, we do choose appropriately narrow elements - the question is, what 
+is appropriately narrow!? :-)  I think part of the answer lies in how 
+far we can reasonably expect the values of any newly proposed property 
+to come from a controlled concept space (a controlled vocab) and how far 
+we expect the values to be less structured statements.
+
+Very braod buckets, with unstructured statements as values do not lead 
+to any interoperability.
+
+There's a tension in the adaptability proposal because the new element 
+is defined as "a statement ..." but all the examples provided tend to 
+look like controlled vocabs.  Part of the difficulty with the proposal 
+as it stands is that the extent to which the expected values are 
+statements is not very clear.
+
+> I'm all for writing this down in some way that's useful, but
+> I'd go further and suggest that we recommend, and even
+> STRONGLY recommend, the general buckets, specific
+> vocabularies strategy.
+
+Yes, I think I probably agree with this.  But only
+
+- where controlled vocabs are a possibility
+
+- where the norm is that values will be taken from vocabs
+
+- where any proposal for a general property is accompanied by a 
+reasonably full set of proposed vocabs
+
+- where the relationship between the resource being described and *all* 
+the suggested vocab terms can be expressed in a reasonable way
+
+----------------------------------------------------------------------
+Date: Mon, 13 Mar 2006 17:19:09 +0000
+Reply-To: A mailing list for the Dublin Core Metadata Initiative's Usage Board <DC-USAGE@JISCMAIL.AC.UK>
+Sender: A mailing list for the Dublin Core Metadata Initiative's Usage Board <DC-USAGE@JISCMAIL.AC.UK>
+From: Pete Johnston <p.johnston@UKOLN.AC.UK>
+Subject: Re: Semantic specificity options
+
+Quoting "Diane I. Hillmann" <dih1@cornell.edu>:
+> I think you're right on this.  I've noted that some people setting up 
+> APs have a tendency to change the wording in definitions from 
+> "resource" to "something-else-that-they're-interested-in" which has 
+> the effect of restricting the definition.  I've tried to convince the 
+> ones I've worked with to leave the defs as is and add a comment that 
+> accomplishes essentially the same thing.
+
+I think it's fine for a DCAP to include a literal where "resource" is 
+replaced by "something-else-that-they're-interested-in". The fact that 
+it looks like what DCMI calls a "definition" rather than a "comment" 
+doesn't matter: it is still just an application-specific 
+comment/annotation, and doesn't change the "global" DCMI-provided 
+definition.
+
+----------------------------------------------------------------------
+Date: Mon, 13 Mar 2006 17:17:24 +0100
+From: Thomas Baker <tbaker@tbaker.de>
+To: Andy Powell <andy.powell@eduserv.org.uk>
+Cc: Thomas Baker <tbaker@tbaker.de>,
+	DCMI Usage Board <dc-usage@jiscmail.ac.uk>
+Subject: Re: [DC-USAGE] Semantic specificity options
+
+On Mon, Mar 13, 2006 at 03:50:13PM -0000, Andy Powell wrote:
+> > 3. Use a broad property but restrict its definition, domain,
+> >    range, or use in an application profile.
+> 
+> 3 is an area where we need to be careful.  I don't think we should ever
+> talk about restricting a property definition as part of an application
+> profile.  We can talk about annotating the wording of the definition to
+> make its usage clearer in the context of an application - but we should
+> not talk about changing the definition.
+> 
+> Essentially, we should think of an application profile as adding an
+> additional application-specific comment.
+
+If the definitions are owned by DCMI, then arguably, nobody can
+really "change the definition" (except DCMI).  But "annotation"
+is what I meant so I'm happy to refer to it only as annotation
+if we think this will avoid confusion.
+
+"Use a broad property but restrict the semantic scope of
+its application in a particular context by annotating its
+definition in an application profile."  Is that better?
+
+----------------------------------------------------------------------
+Date: Mon, 13 Mar 2006 17:03:19 +0000
+From: Pete Johnston <p.johnston@ukoln.ac.uk>
+To: A mailing list for the Dublin Core Metadata Initiative's Usage Board <DC-USAGE@jiscmail.ac.uk>,
+	Thomas Baker <tbaker@tbaker.de>
+Cc: DC-USAGE@jiscmail.ac.uk
+Subject: Re: Semantic specificity options
+
+Quoting Thomas Baker <tbaker@tbaker.de>:
+
+> On Mon, Mar 13, 2006 at 03:50:13PM -0000, Andy Powell wrote:
+>> > 3. Use a broad property but restrict its definition, domain,
+>> >    range, or use in an application profile.
+>>
+>> 3 is an area where we need to be careful.  I don't think we should ever
+>> talk about restricting a property definition as part of an application
+>> profile.  We can talk about annotating the wording of the definition to
+>> make its usage clearer in the context of an application - but we should
+>> not talk about changing the definition.
+>>
+>> Essentially, we should think of an application profile as adding an
+>> additional application-specific comment.
+
+That is the approach I argued for at some point on DC collections.
+
+In the DC CD AP, we are currently using "DC CD AP Usage" (rather than 
+"DC CD AP Definition"). We do have both a "DC CD AP Usage" and a "DC CD 
+AP comment", though I regard both as supplementing/annotating the DCMI 
+definition.
+
+> If the definitions are owned by DCMI, then arguably, nobody can
+> really "change the definition" (except DCMI).
+
+This is what I _want_ to be true, and I've tried to approach DCAPs as 
+if this is the case.... but I do seem to recall a conversation with Dan 
+and Charles on top of a skyscraper in Shanghai in which they argued 
+that "definitions" and "meaning" were _always_ "social" and shifting 
+and context-sensitive.
+
+At that point I covered my ears and started singing loudly to myself 
+and clutched my security blanket tightly, least my carefully 
+constructed world fall apart around me.
+
+>  But "annotation"
+> is what I meant so I'm happy to refer to it only as annotation
+> if we think this will avoid confusion.
+>
+> "Use a broad property but restrict the semantic scope of
+> its application in a particular context by annotating its
+> definition in an application profile."  Is that better?
+

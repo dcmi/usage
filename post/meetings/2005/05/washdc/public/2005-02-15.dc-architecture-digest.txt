@@ -1,0 +1,1275 @@
+------------------------------------------------------------------------
+Date: 2005-02-09 15:43:14 - 01
+From: Ann Apps <ann.apps@MANCHESTER.AC.UK>
+Subject: XML schema
+To: DC-LIBRARIES@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+At the DC-Library meeting in Shanghai I agreed to produce an XML
+schema for the DCMI Library Application Profile (DCLibAP).
+
+There is a first draft at:
+
+http://epub.mimas.ac.uk/DC/dc-lib/xsd/dclib.xsd
+...
+
+Issues using MODS terms:
+
+There are 3 MODS terms in the DCLibAP: location, edition and
+dateCaptured.
+
+edition and dateCaptured are sub-elements of mods:originInfo.
+Thus I've included mods:originInfo in the XML schema and
+commented out edition and dateCaptured. This means that
+potentially you could use any other of the sub-elements from
+originInfo as well even though they are not in the AP.
+
+The way of encoding these MODS terms is different from, and not
+really consistent with, DC practice to date. They have to include
+nested elements, eg:
+
+<mods:location>
+  <mods:url>http://example.org/myurl</mods:url>
+<mods:location>
+
+<mods:originInfo>
+  <mods:edition>Version 1</mods:edition>
+</mods:originInfo>
+
+<mods:originInfo>
+  <mods:dateCaptured>2005-02-09<mods:dateCaptured>
+<mods:originInfo>
+
+Also mods:dateCaptured cannnot have an attribute
+'xsi:type="dcterms:W3CDTF"'.
+
+------------------------------------------------------------------------
+Date: 2005-02-09 23:59:49 - 02
+From: Andy Powell <a.powell@ukoln.ac.uk>
+Reply-To: DC-Libraries Working Group <DC-LIBRARIES@jiscmail.ac.uk>
+To: DC-LIBRARIES@jiscmail.ac.uk
+Subject: Re: XML schema
+------------------------------------------------------------------------
+
+On Wed, 9 Feb 2005, Ray Denenberg, Library of Congress wrote:
+> From: "Ann Apps" <ann.apps@MANCHESTER.AC.UK>
+>> The way of encoding these MODS terms is different from, and not
+>> really consistent with, DC practice to date. They have to include
+>> nested elements, eg:
+>>
+>> <mods:location>
+>>   <mods:url>http://example.org/myurl</mods:url>
+>> <mods:location>
+>
+>  Hi Ann,
+>
+> I'm not really up-to-date with dc so I don't know what  dc practice you're
+> referring to,
+
+The fundamental problem here is that the XML encoding of DC is a
+representation of the underlying DC 'model' (the DCMI Abstract Model)
+which essentially is the same 'resource, property, value' triple model
+found in RDF.  MODS (in common with many other XML-based languages, e.g.
+LOM, METS, etc.) does not share that same underlying model.
+
+This is not a critisism of any of these other XML-based languages BTW -
+just a statement of fact.
+
+It is therefore not possible to simply squish together DC 'elements' and
+MODS 'elements' in any kind of meangingful way.
+
+Even if, as you suggest below, there is a way to make mods:url look
+superficially like a DC 'element' (i.e. to use it without the nesting),
+unless it really is a DC-compatible property, then what is being attempted
+here simply does *not* work.
+
+By "DC-compatible property" I mean that the URI
+http://www.loc.gov/mods/v3url (*)  identifies a 'property' (as defined in
+section 7 of the DCMI Abstract Model) that is intended to be used in the
+context of the DC Abstract Model and/or RDF.  And, as a rule of thumb, I'd
+suggest this means that the semantics of this property should be declared
+using RDFS (as per all the current DC terms).
+
+(*) Note the rather odd URI here caused by the mods namespace URI not
+ending in either a slash or a hash - I hope I've got this right.   If not,
+apologies.
+
+Andy.
+
+> but it you want to be able to use
+> <mods:url>http://example.org/myurl</mods:url>
+> without wrapping it in <mods:location>, there's an easy way.
+>
+> The mads schema has the same problem, so we've created a "mods-for-mads"
+> schema. It's totally compatible with the current mods (they produce
+> identical instance sets) but a number of new data types have been created
+> (url one of them) so that they can be directly referenced.
+>
+> Take a look at
+> http://www.loc.gov/standards/mads/mads-preliminary-draft-2-dec-17.xsd
+>
+> It references mods url as:
+> <xsd:element name="url" type="mods:urlType" .....
+>
+> And look at
+> http://www.loc.gov/standards/mads/mods-for-mads.xsd
+>
+> It declares element <url> within <location> as
+> <xsd:element name="url" type="urlType" minOccurs="0" maxOccurs="unbounded"
+> />
+> and creates a new definition urlType.
+>
+> So you could reference it as mods:url,   You'd just need to change the
+> schema location:
+> <xsd:import namespace="http://www.loc.gov/mods/v3"
+> schemaLocation="http://www.loc.gov/standards/mads/mods-for-mads.xsd" />
+>
+> Mads is still a draft.  Our intention is to issue a new mods version (3.1)
+> that includes these definitions, sometime after (or when) we release the
+> first version of mads.
+>
+> We would be happy to include any other similar definitions in mods 3.1, if
+> it makes sense to. (It was once suggested that we should treat every mods
+> subelement in this fashion.  I'm fairly sure we don't want to do that,
+> because (1) it doesn't make sense in every case, and (2) it would create a
+> much-less-readable schema.)  For example, edition and dateCaptured of
+> originInfo.  If you'd like I'll change mods-for-mads so that these can be
+> referenced (even though mads doesn't reference them currently) or any
+> others.
+>
+> --Ray
+
+------------------------------------------------------------------------
+Date: 2005-02-10 10:25:54 - 03
+Reply-To: DCMI Architecture Group <DC-ARCHITECTURE@JISCMAIL.AC.UK>
+Sender: DCMI Architecture Group <DC-ARCHITECTURE@JISCMAIL.AC.UK>
+From: Andy Powell <a.powell@UKOLN.AC.UK>
+Subject: Mixing and matching - not always! (was Re: XML schema (fwd))
+To: DC-ARCHITECTURE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+I'm forwarding a message from the dc-libraries list here, since it touches
+on an important architectural principle - namely, that you can not simply
+take an 'element' from an existing XML-based language like MODS or LOM and
+expect to be able to use it in a DC description.  The fact that something
+exists as an XML Qname is not sufficient for it to be used as a property
+in DC.
+
+Owners of such terms have to explicitly acknowledge that the terms are RDF
+properties (or at least declare them in such a way that they are able to
+be treated as RDF properties) before they can be used in DC application
+profiles.  In practice, I suggest that this means that the semantics of
+these terms should be declared using RDFS.
+
+Pete Johnston sent a follow-up to my message which explains this
+further...
+
+--- cut ---
+Yes. The real underlying problem is with the DC Libraries Application
+Profile.
+
+It references DC "elements" and MODS "elements" as if they are the same
+type of thing, when in fact they are fundamentally different because (as
+Andy says) they are defined in the context of two different data models:
+DC "elements" are properties, and are defined in terms of the
+statement/triple-based DC Abstract Model and RDF data model; MODS
+"elements" are components in a hierarchical data structure, and their
+interpretation is defined in terms of that hierarchical data structure.
+
+(And so it follows for example, that concepts like element containment
+("sub-element", "child element"), which makes perfect sense in the
+hierarchical model, have no meaning in the DCAM/RDF models; and conversely
+notions like element refinement (subproperty) which is well defined in the
+DC/RDF models, have no place in the hierarchical model).
+
+Any DC Application Profile has to be based on a single underlying data
+model, i.e. on the DC Abstract Model. The "mixing and matching" has to
+take place within the context of that framework, and this sort of
+"cross-model" hybridisation can not work.
+--- cut ---
+
+As an example of how this can work I would cite the MARC relator terms -
+where the Library of Congress have taken (are taking?) the time to
+explicitly re-declare an existing set of terms as RDF properties.
+Because this has been done, it is now (or very soon will be) possible to
+use the MARC relator terms in a DC application profile and for that usage
+to be maningful in terms of the DCMI Abstract Model.
+
+------------------------------------------------------------------------
+Date: 2005-02-10 12:40:40 - 05
+From: Rachel Heery <r.heery@UKOLN.AC.UK>
+Subject: Re: Mixing and matching - not always! (was Re: XML schema (fwd)
+Comments: cc: dc-libraries@jiscmail.ac.uk
+To: DC-ARCHITECTURE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+(sorry for X-posting, can WG chairs indicate on which list this discussion
+is best placed?)
+
+On Thu, 10 Feb 2005, Andy Powell wrote:
+> Owners of such terms have to explicitly acknowledge that the terms are RDF
+> properties (or at least declare them in such a way that they are able to
+> be treated as RDF properties) before they can be used in DC application
+> profiles.  In practice, I suggest that this means that the semantics of
+> these terms should be declared using RDFS.
+
+I think your bracketed statement needs more explanation... it would be
+helpful to be clear as to how terms can be 'declared in such a way' that
+they can be used as RDF properties. Even allowing for the constraints of
+the DC data model, there seems to me some wriggle room to enable mixing
+and matching where 'owners' of terms are willing to co-operate.
+
+As I understand it the process for re-use of MARC relator terms was an
+initial agreement that (some of) the relator terms would be useful within
+DC records, then going through the formality of 'declaring' such terms as
+RDF properties - not trying to match the MARC data model to DC data model.
+.....
+
+> As an example of how this can work I would cite the MARC relator terms -
+> where the Library of Congress have taken (are taking?) the time to
+> explicitly re-declare an existing set of terms as RDF properties.
+> Because this has been done, it is now (or very soon will be) possible to
+> use the MARC relator terms in a DC application profile and for that usage
+> to be maningful in terms of the DCMI Abstract Model.
+
+I think it is the fact that the owner is willing to declare these
+terms 'outside' the rest of the MARC data model, as RDF properties that
+makes it ok to mix and match? within the MARC data model and MARC records
+the relator terms do not act as 'properties' as I understand it - the
+terms have a different role in MARC records than within DC records.
+
+This seems to make declaring terms as RDF properties something of a
+formality - as long as the maintainer or 'owner' of data element sets is
+willing to declare a particular sub-set of terms as RDF properties then
+that is ok...
+
+In my view the criteria for re-use of terms should be something like:
+
+"First, are the semantics and context of a term in one metadata format
+sufficiently similar to the semantics and context of the property I want
+to express in a DC description? if so can this term be usefully used in
+'isolation' within a DC description out of the context of its original
+format?
+
+Second, are the 'owners' of the terms willing to co-operate?"
+
+If the answer to both of the above is yes, then declaring those terms as
+RDF properties may well be achievable. Especially if, as I understand has
+happened with MARC relator terms, just the sub-set of terms required from
+the 'other' format based on a different data model need to be declared??
+
+Maybe worth thinking about that old saying 'everything can be solved by a
+level of indirection'.... not knowing much about MODS, but could a sub-set
+of MODS terms be 'separated out' of MODS and declared as RDF properties?
+
+In my view we should be looking for solutions to help us meet requirements
+of several user communities, and to move forward as regards the evolution
+of data element sets by allowing re-use of data elements. If this can be
+done by declaring sets of terms in RDFS then good....
+
+------------------------------------------------------------------------
+Date: 2005-02-10 13:30:57 - 06
+Reply-To: DCMI Architecture Group <DC-ARCHITECTURE@JISCMAIL.AC.UK>
+Sender: DCMI Architecture Group <DC-ARCHITECTURE@JISCMAIL.AC.UK>
+From: Andy Powell <a.powell@UKOLN.AC.UK>
+Subject: Re: Mixing and matching - not always! (was Re: XML schema (fwd)
+------------------------------------------------------------------------
+
+On Thu, 10 Feb 2005, Rachel Heery wrote:
+
+> (sorry for X-posting, can WG chairs indicate on which list this discussion
+> is best placed?)
+
+Errr... I'm not sure to be honest.
+
+> On Thu, 10 Feb 2005, Andy Powell wrote:
+>
+>>
+>> Owners of such terms have to explicitly acknowledge that the terms are RDF
+>> properties (or at least declare them in such a way that they are able to
+>> be treated as RDF properties) before they can be used in DC application
+>> profiles.  In practice, I suggest that this means that the semantics of
+>> these terms should be declared using RDFS.
+>
+> I think your bracketed statement needs more explanation... it would be
+> helpful to be clear as to how terms can be 'declared in such a way' that
+> they can be used as RDF properties. Even allowing for the constraints of
+> the DC data model, there seems to me some wriggle room to enable mixing
+> and matching where 'owners' of terms are willing to co-operate.
+>
+> As I understand it the process for re-use of MARC relator terms was an
+> initial agreement that (some of) the relator terms would be useful within
+> DC records, then going through the formality of 'declaring' such terms as
+> RDF properties
+
+That's correct - and is exactly what I am suggesting needs to happen in
+every case where we want to re-use existing 'elements'.
+
+> I think it is the fact that the owner is willing to declare these
+> terms 'outside' the rest of the MARC data model, as RDF properties that
+> makes it ok to mix and match?
+
+Yes.
+
+> within the MARC data model and MARC records
+> the relator terms do not act as 'properties' as I understand it - the
+> terms have a different role in MARC records than within DC records.
+
+I think that perhaps 'different role' is open to an interpretation that is
+too strong - but basically I agree with what you are saying here.
+marc:artist has essentially the same semantics whether it is used in MARC
+or in DC but it is being used in the context of different underlying
+models.
+
+> This seems to make declaring terms as RDF properties something of a
+> formality - as long as the maintainer or 'owner' of data element sets is
+> willing to declare a particular sub-set of terms as RDF properties then
+> that is ok...
+>
+> In my view the criteria for re-use of terms should be something like:
+>
+> "First, are the semantics and context of a term in one metadata format
+> sufficiently similar to the semantics and context of the property I want
+> to express in a DC description? if so can this term be usefully used in
+> 'isolation' within a DC description out of the context of its original
+> format?
+>
+> Second, are the 'owners' of the terms willing to co-operate?"
+
+Agreed on both counts - this is what I meant by 'explicitly acknowledge'
+above.
+
+> If the answer to both of the above is yes, then declaring those terms as
+> RDF properties may well be achievable. Especially if, as I understand has
+> happened with MARC relator terms, just the sub-set of terms required from
+> the 'other' format based on a different data model need to be declared??
+
+I think that all the MARC relator terms have been declared.  But it
+doesn't really matter - there would be no problem with only declaring a
+sub-set.
+
+> Maybe worth thinking about that old saying 'everything can be solved by a
+> level of indirection'.... not knowing much about MODS, but could a sub-set
+> of MODS terms be 'separated out' of MODS and declared as RDF properties?
+
+Yes, that could happen.  By 'separated out' I assume that you mean
+assigned URIs that are different to the current MODS namespace URI?
+
+One of the 'best-practice' issues that we need to think about is whether
+the namespace URI associated with the mods:url used in MODS/XML should be
+the same as the namespace URI associated with mods:url used in DC/XML (and
+DC/RDF/XML)?
+
+As an example, what I think Mikael has done with his RDF version of LOM is
+to re-declare the LOM 'elements' as RDF properties using a different
+namespace URI.  These LOM/RDF properties become usable in DC descriptions
+in a way that the original XML Qnames used in LOM/XML instances are not.
+
+> In my view we should be looking for solutions to help us meet requirements
+> of several user communities, and to move forward as regards the evolution
+> of data element sets by allowing re-use of data elements. If this can be
+> done by declaring sets of terms in RDFS then good....
+
+Agreed.
+
+------------------------------------------------------------------------
+Date: 2005-02-10 14:43:37 - 07
+Reply-To: DCMI Architecture Group <DC-ARCHITECTURE@JISCMAIL.AC.UK>
+Sender: DCMI Architecture Group <DC-ARCHITECTURE@JISCMAIL.AC.UK>
+From: Pete Johnston <p.johnston@UKOLN.AC.UK>
+Subject: Re: Mixing and matching - not always! (was Re: XML schema (fwd)
+------------------------------------------------------------------------
+
+Quoting Rachel Heery <r.heery@ukoln.ac.uk>:
+
+> within the MARC data model and MARC records
+> the relator terms do not act as 'properties' as I understand it - the
+> terms have a different role in MARC records than within DC records.
+
+Yes.
+
+> This seems to make declaring terms as RDF properties something of a
+> formality - as long as the maintainer or 'owner' of data element sets is
+> willing to declare a particular sub-set of terms as RDF properties then
+> that is ok...
+
+I think it is much more than a "formality", and personally I think it is
+dangerous to think in terms of "(re)declaring" a (sub-)set of existing "terms"
+as properties. If a "term" is a component in a hierarchical data structure then
+that is what it is; that same "term" can not also be a property. e.g. an XML
+element is not an RDF property (not even in RDF/XML).
+
+I think this is what you are getting at in the first of your criteria below, but
+I guess I just want to stress that it is problematic to go in search of
+similarity where there are fundamental differences.
+
+The work that has to be done is to consider how the _information_ represented
+within the hierarchical data structure is to be represented within a
+triple/statement-based model. There may be no simple one-to-one correspondence
+between the components of the hierarchical data structure and the components of
+the statement-based model.
+
+Mikael Nilsson's paper(s) on the LOM RDF binding e.g.
+
+http://rubens.cs.kuleuven.ac.be:8989/ariadne/CONF2003/papers/MIK2003.pdf
+
+give an excellent account of this process for the case of the LOM. And
+emphasises that the translation must be done by looking at each component of
+the hierarchical model in turn
+
+===
+The container-based metamodel used by LOM is thus
+not compatible with the metamodel used by Dublin
+Core. When does this matter? Binding LOM to RDF is
+the obvious example in this context, as the metamodel
+of RDF is based on a property-value model and not containment.
+In general, it leads to difficulties when trying
+to combine terms from two metadata standards into the
+same system. When the metamodels are compatible,
+such a combination or mapping can be realized by simply
+translating the metamodel contructs. If the metamodels
+are incompatible, the translation must be done
+on an idiosyncratic, element-by-element basis.
+===
+
+In Mikael's mapping, some LOM data elements are modelled as RDF properties - but
+the property and the LOM data element are still two different types of thing. In
+some cases two different LOM data elements are modelled using the same RDF
+property (describing two different resources). In other cases what are data
+element _values_ in LOM are modelled as RDF properties (e.g. the case of LOM
+Relation.Role); in other cases, there is quite substantial re-modeling required
+(e.g. the case of LOM Classification)
+
+> In my view the criteria for re-use of terms should be something like:
+>
+> "First, are the semantics and context of a term in one metadata format
+> sufficiently similar to the semantics and context of the property I want
+> to express in a DC description? if so can this term be usefully used in
+> 'isolation' within a DC description out of the context of its original
+> format?
+>
+> Second, are the 'owners' of the terms willing to co-operate?"
+>
+> If the answer to both of the above is yes, then declaring those terms as
+> RDF properties may well be achievable. Especially if, as I understand has
+> happened with MARC relator terms, just the sub-set of terms required from
+> the 'other' format based on a different data model need to be declared??
+>
+> Maybe worth thinking about that old saying 'everything can be solved by a
+> level of indirection'.... not knowing much about MODS, but could a sub-set
+> of MODS terms be 'separated out' of MODS and declared as RDF properties?
+
+If MODS terms are components in a hierarchical data model, then those terms can
+not also be properties, IMHO. What has to happen is the sort of mapping between
+the models which Mikael describes for the LOM, and that can only be done by
+looking at the information represented by MODS data structures.
+
+In effect this is the process that has taken place for the MARC relator codes,
+but it was a fairly trivial case, as by definition they represent types of
+relationship (between a resource and an agent) and fit neatly into the binary
+relation model of RDF. It's still taken an awfully long time though!
+
+> In my view we should be looking for solutions to help us meet requirements
+> of several user communities, and to move forward as regards the evolution
+> of data element sets by allowing re-use of data elements. If this can be
+> done by declaring sets of terms in RDFS then good....
+
+But reuse has to happen within a consistent, coherent framework. The analogy I
+think I used at one point was Meccano parts and Lego bricks: I can build nice
+things with Meccano and I can build nice things with Lego.
+
+But no matter how desperately I might want to reuse my nice funky bit of my
+Meccano spaceship in my Lego submarine, it wasn't designed to fit. If we try to
+encourage reuse regardless we'll end up with our submarines leaking and the nose
+cones falling off our spaceships.
+
+Having said all this, and at the risk of sowing vile heresy....
+
+... increasingly I do have more fundamental misgivings about the way we in DC
+have tended to approach this notion of "reuse".
+
+In the RDF/DC triple/statement based model, properties and classes are defined
+as more or less independent stand-alone entities. Yes, we assert relationships
+between resources (subproperty, subclass etc) but I can use a URIref like
+http://purl.org/dc/elements/1.1/title to denote the concept of "having a title"
+quite independently from that of having a subject, identifier etc etc etc.
+
+However, in XML-based applications like MODS, the component parts of the data
+structure do not have the same sort of independence/free-standing nature. MODS
+is an XML language or format, and the way individual components (XML elements,
+XML attributes) within MODS are interpreted is conditioned by their structural
+relationships with other components (containment relations, element/attribute
+relations etc) as defined by the rules of that XML language.
+
+Now yes, if MODS had been developed as an RDF application, using a triple-based
+model, or if a full MODS RDF mapping was developed in the way that the LOM RDF
+mapping was developed, then the classes and properties would be available for
+use in DC metadata descriptions, and we could establish useful relations
+between DC properties and MODS properties and so on.
+
+But the approach of "cherry-picking" particular parts of MODS and mapping only
+those particular bits to the RDF model, just because those particular bits of
+MODS _appear_ to be similar to something we might want to express in a DC
+description, and because we have the notion that reuse is an absolute, seems...
+well... it all starts to seem a bit bizarre, really!
+
+What are we really achieving by doing this?
+
+In the absence of a MODS RDF binding, what is anyone gaining by asking LoC to
+define two or three RDF properties called
+
+http://www.loc.gov/mods/location
+
+(and the other two or three things needed for the DC Lib AP - I've just guessed
+the URIrefs) picked pretty much from random parts of the MODS data structure.
+
+It provides _no_ interoperability whatsoever between DC and MODS XML because
+we've just picked out some tiny part of the MODS data structure.
+
+Why are we _insisting_ on "reuse" in this rather odd piecemeal sort of way,
+instead of simply declaring the properties required within DCMI vocabularies?
+
+------------------------------------------------------------------------
+Date: 2005-02-10 15:03:17 - 08
+Reply-To: DCMI Architecture Group <DC-ARCHITECTURE@JISCMAIL.AC.UK>
+Sender: DCMI Architecture Group <DC-ARCHITECTURE@JISCMAIL.AC.UK>
+From: Pete Johnston <p.johnston@UKOLN.AC.UK>
+Subject: Re: Mixing and matching - not always! (was Re: XML schema (fwd)
+Comments: To: Mikael Nilsson <mini@nada.kth.se>
+------------------------------------------------------------------------
+
+Hi Mikael,
+
+(Sorry, my last post crossed with yours and Andy's)
+
+Quoting Mikael Nilsson <mini@nada.kth.se>:
+
+> On Thu, 2005-02-10 at 13:30 +0000, Andy Powell wrote:
+>
+> > As an example, what I think Mikael has done with his RDF version of LOM is
+> > to re-declare the LOM 'elements' as RDF properties using a different
+> > namespace URI.  These LOM/RDF properties become usable in DC descriptions
+> > in a way that the original XML Qnames used in LOM/XML instances are not.
+>
+> Yes, this is what I did. In the original version I even mentioned that
+> the binding was "dc-compatible", i.e. compatible with the then
+> non-existent DCAM :-)
+
+I guess I still think that process is rather more than "re-declaring" though -
+there is actually quite a lot of "re-modelling" involved in the LOM RDF
+mapping, looking at what information the LOM tree represents in terms of
+relations between resources, rather than the tree structure itself (e.g. the
+whole MetaMetadata thing, Relation.Role, Classification etc).
+
+There is no necessary one-to-one mapping between an XML element in an XML tree-
+structure and an RDF property. You have to look beyond the tree-structure at
+the information which is being represented by that structure - unless you just
+want to create an RDF representation of the XML Infoset, (element-1 is-child-of
+element-2 and so on) which might be a satisfying academic exercise but doesn't
+get us very far ;-)
+
+> Note that to use the URIs defined in the RDF version of LOM in an XML
+> DCAP would be strange, to say the least, as it would be in conflict with
+> the LOM XML binding. Unfortunately there is currently no solution to
+> this conflict.
+
+Yes. That's what I meant when I was saying XML elements and RDF properties are
+different things.
+
+> I think the lesson here is that the DCAM is pretty useful, or indeed
+> absolutely essential, and that the corresponding AMs of METS and LOM
+> (the hierarchical models) are actually not as useful.
+>
+> An external entity that defines its terms so that they comply with the
+> DCAM *OR* RDFS are actually on the safe side, METS and LOM do
+> neither :-(
+
+Right. Nor does MODS. :-(
+
+------------------------------------------------------------------------
+Date: 2005-02-10 15:40:59 - 09
+Reply-To: DCMI Architecture Group <DC-ARCHITECTURE@JISCMAIL.AC.UK>
+Sender: DCMI Architecture Group <DC-ARCHITECTURE@JISCMAIL.AC.UK>
+From: Mikael Nilsson <mini@NADA.KTH.SE>
+Subject: Re: Mixing and matching - not always! (was Re: XML schema (fwd)
+------------------------------------------------------------------------
+
+On Thu, 2005-02-10 at 13:30 +0000, Andy Powell wrote:
+
+> As an example, what I think Mikael has done with his RDF version of LOM is
+> to re-declare the LOM 'elements' as RDF properties using a different
+> namespace URI.  These LOM/RDF properties become usable in DC descriptions
+> in a way that the original XML Qnames used in LOM/XML instances are not.
+
+Yes, this is what I did. In the original version I even mentioned that
+the binding was "dc-compatible", i.e. compatible with the then
+non-existent DCAM :-)
+
+Note that to use the URIs defined in the RDF version of LOM in an XML
+DCAP would be strange, to say the least, as it would be in conflict with
+the LOM XML binding. Unfortunately there is currently no solution to
+this conflict.
+
+I think the lesson here is that the DCAM is pretty useful, or indeed
+absolutely essential, and that the corresponding AMs of METS and LOM
+(the hierarchical models) are actually not as useful.
+
+An external entity that defines its terms so that they comply with the
+DCAM *OR* RDFS are actually on the safe side, METS and LOM do
+neither :-(
+
+------------------------------------------------------------------------
+Date: 2005-02-10 16:07:54 - 10
+Reply-To: DCMI Architecture Group <DC-ARCHITECTURE@JISCMAIL.AC.UK>
+Sender: DCMI Architecture Group <DC-ARCHITECTURE@JISCMAIL.AC.UK>
+From: Rachel Heery <r.heery@UKOLN.AC.UK>
+Subject: Re: Mixing and matching - not always! (was Re: XML schema (fwd)
+------------------------------------------------------------------------
+
+On Thu, 10 Feb 2005, Pete Johnston wrote:
+> In effect this is the process that has taken place for the MARC relator codes,
+> but it was a fairly trivial case, as by definition they represent types of
+> relationship (between a resource and an agent) and fit neatly into the binary
+> relation model of RDF. It's still taken an awfully long time though!
+
+Looking at MARC relator codes they ca be used in various ways in MARC
+records, not necessarily in relation to an 'agent', they can be used with
+'subjects' of a resource too e.g. with
+
+600 $4 (Subject Added Entry -- Personal Name / Relator code)
+610 $4 (Subject Added Entry -- Corporate Name / Relator code)
+611 $4 (Subject Added Entry -- Meeting Name / Relator code)
+
+see http://www.loc.gov/marc/relators/relators.html
+
+I just mention this as it seems a point of difference in the way these
+'properties' are use in DC as opposed to MARC. And I would say by re-using
+MARC relator codes DC is 'cherry-picking' from MARC, which you denigrate
+wrt re-use of MODS?
+
+> But reuse has to happen within a consistent, coherent framework. The analogy I
+> think I used at one point was Meccano parts and Lego bricks: I can build nice
+> things with Meccano and I can build nice things with Lego.
+>
+> But no matter how desperately I might want to reuse my nice funky bit of my
+> Meccano spaceship in my Lego submarine, it wasn't designed to fit. If we try to
+> encourage reuse regardless we'll end up with our submarines leaking and the nose
+> cones falling off our spaceships.
+>
+
+Nice analogy, but I don't think anyone is saying we encourage re-use
+'regardless' of differences in formats, informed people are saying we
+think these particular terms are equivalent in the way they are used, can
+we do something about it??.
+
+And taking your analogy a little further away from the well ordered
+playroom where kids put their Meccano in one box and their Lego in
+another... In digital library world metadata created using different
+standards/models is exchanged between applications, and to do this is
+converted more or less effectively. So just like little kids out there
+bashing their toys together, throwing them into the wrong box and often
+breaking them, conversions can be more or less 'lossy'. Toys are being
+broken now, data is already getting lost on conversion.
+
+The benefit of re-use is that the metadata creator, the owners of the
+metadata formats and the world in general buy into an agreement 'we agree
+these 2 data elements as more or less equivalent, we think you should do
+the same'. This is as opposed to creating more and more conversion
+programmes mapping between different data elements.
+
+I would say piecemeal re-use is a step towards interoperability...
+
+------------------------------------------------------------------------
+Date: 2005-02-10 16:20:43 - 11
+Reply-To: DCMI Architecture Group <DC-ARCHITECTURE@JISCMAIL.AC.UK>
+Sender: DCMI Architecture Group <DC-ARCHITECTURE@JISCMAIL.AC.UK>
+From: Mikael Nilsson <mini@NADA.KTH.SE>
+Subject: Re: Mixing and matching - not always! (was Re: XML schema (fwd)
+------------------------------------------------------------------------
+
+On Thu, 2005-02-10 at 14:43 +0000, Pete Johnston wrote:
+
+> ... increasingly I do have more fundamental misgivings about the way we in DC
+> have tended to approach this notion of "reuse".
+>
+> In the RDF/DC triple/statement based model, properties and classes are defined
+> as more or less independent stand-alone entities. Yes, we assert relationships
+> between resources (subproperty, subclass etc) but I can use a URIref like
+> http://purl.org/dc/elements/1.1/title to denote the concept of "having a title"
+> quite independently from that of having a subject, identifier etc etc etc.
+>
+> However, in XML-based applications like MODS, the component parts of the data
+> structure do not have the same sort of independence/free-standing nature. MODS
+> is an XML language or format, and the way individual components (XML elements,
+> XML attributes) within MODS are interpreted is conditioned by their structural
+> relationships with other components (containment relations, element/attribute
+> relations etc) as defined by the rules of that XML language.
+
+This is very true. When I have worked on formalizing the LOM RDF binding
+I have used the trick of trying to bring the *whole* context into the
+definition of each RDF property, to make sure I don't loose any of the
+semantics.
+
+For example, there is an element Language in LOM, used in three places:
+In the General category, in the Metametadata category, and in the
+Educational category. Now if I had done the mapping naively, this would
+be just one URI. But in reality it is two:
+
+* dc:language is used for the General and Metametadata occurences, as
+the semantics matches dc:language precisely, even though it describes
+the language for two different resources (the learning object and its
+metadata, respectively)
+* lom_edu:language is used in the Educational category, as the element
+means a slightly different thing (the intended primary language of the
+user).
+
+This is a simple example, but in general when mapping from hierarchical
+models to RDF, one must be certain that all semantics hidden in the
+context (in this case, the categories above the element) is brought into
+the property definition.
+
+In theory, this could lead to properties of the form:
+
+lom_annotation:entity_name
+
+if that were any different than for example:
+
+lom_lifecycle:contribute_entity_name
+
+It so happens that the semantics are identical, but the properties are
+applied to different resources (the learning object and the annotation,
+respectively), so only one URI is needed...
+
+It goes to show that the mapping must indeed be done on an
+element-by-element basis, and with _thorough_ knowledge of the semantics
+of _each_ element/category.
+
+------------------------------------------------------------------------
+Date: 2005-02-10 16:47:12 - 13
+Reply-To: DC-Libraries Working Group <DC-LIBRARIES@JISCMAIL.AC.UK>
+Sender: DC-Libraries Working Group <DC-LIBRARIES@JISCMAIL.AC.UK>
+From: "Rebecca S. Guenther" <rgue@LOC.GOV>
+Subject: Re: Mixing and matching - not always! (was Re: XML schema (fwd)
+------------------------------------------------------------------------
+
+Some comments below.
+
+On Thu, 10 Feb 2005, Rachel Heery wrote:
+
+> (sorry for X-posting, can WG chairs indicate on which list this discussion
+> is best placed?)
+>
+> On Thu, 10 Feb 2005, Andy Powell wrote:
+>
+> >
+> > Owners of such terms have to explicitly acknowledge that the terms are RDF
+> > properties (or at least declare them in such a way that they are able to
+> > be treated as RDF properties) before they can be used in DC application
+> > profiles.  In practice, I suggest that this means that the semantics of
+> > these terms should be declared using RDFS.
+>
+> I think your bracketed statement needs more explanation... it would be
+> helpful to be clear as to how terms can be 'declared in such a way' that
+> they can be used as RDF properties. Even allowing for the constraints of
+> the DC data model, there seems to me some wriggle room to enable mixing
+> and matching where 'owners' of terms are willing to co-operate.
+
+Pete and Andy had agreed (as part of Usage Board work) to put together a
+paper explaining better what this means, why MODS elements cannot be used
+as RDF properties, and what needs to be done to be able to reuse MODS
+elements. After all, those that are referenced in the DC-LAP are exactly
+the semantics that were needed for the given element. I still don't
+understand this completely.
+
+> As I understand it the process for re-use of MARC relator terms was an
+> initial agreement that (some of) the relator terms would be useful within
+> DC records, then going through the formality of 'declaring' such terms as
+> RDF properties - not trying to match the MARC data model to DC data model.
+>
+> ......
+> .....
+>
+> > As an example of how this can work I would cite the MARC relator terms -
+> > where the Library of Congress have taken (are taking?) the time to
+> > explicitly re-declare an existing set of terms as RDF properties.
+> > Because this has been done, it is now (or very soon will be) possible to
+> > use the MARC relator terms in a DC application profile and for that usage
+> > to be maningful in terms of the DCMI Abstract Model.
+> >
+
+And this was possible because we spent some time fitting our descriptions
+of relator terms/codes into a form acceptable to UB members-- just
+figuring out what to call the various elements that describe these
+terms/codes (e.g. rdfs:label, rdfs:comment, etc.). Now our RDF expression
+of relators is generated on the fly from our official documentation by
+using stylesheets. It's a fairly mechanical process. And we didn't change
+the list that we've been using for 30 or so years.
+
+> I think it is the fact that the owner is willing to declare these
+> terms 'outside' the rest of the MARC data model, as RDF properties that
+> makes it ok to mix and match? within the MARC data model and MARC records
+> the relator terms do not act as 'properties' as I understand it - the
+> terms have a different role in MARC records than within DC records.
+>
+> This seems to make declaring terms as RDF properties something of a
+> formality - as long as the maintainer or 'owner' of data element sets is
+> willing to declare a particular sub-set of terms as RDF properties then
+> that is ok...
+>
+> In my view the criteria for re-use of terms should be something like:
+>
+> "First, are the semantics and context of a term in one metadata format
+> sufficiently similar to the semantics and context of the property I want
+> to express in a DC description? if so can this term be usefully used in
+> 'isolation' within a DC description out of the context of its original
+> format?
+>
+> Second, are the 'owners' of the terms willing to co-operate?"
+
+I would think in the case of these MODS elements the answer to both of
+these is yes.
+
+> If the answer to both of the above is yes, then declaring those terms as
+> RDF properties may well be achievable. Especially if, as I understand has
+> happened with MARC relator terms, just the sub-set of terms required from
+> the 'other' format based on a different data model need to be declared??
+>
+> Maybe worth thinking about that old saying 'everything can be solved by a
+> level of indirection'.... not knowing much about MODS, but could a sub-set
+> of MODS terms be 'separated out' of MODS and declared as RDF properties?
+
+Some of the MODS elements have equivalent DC elements. I suppose any such
+subset would be those that are needed by an application profile?
+
+In the case of Relators, we have an RDF expression of the whole list (as I
+said above, generated on the fly) and only a subset has the statement that
+it refines dc:contributor. We would need some guidance on how to do
+this. Or perhaps there are tools to convert an XML schema to an RDF
+one?
+
+> In my view we should be looking for solutions to help us meet requirements
+> of several user communities, and to move forward as regards the evolution
+> of data element sets by allowing re-use of data elements. If this can be
+> done by declaring sets of terms in RDFS then good....
+
+Right, and this was the basis I think of Rachel's famous paper about
+mixing and matching elements in different metadata schemas. Why redefine
+something that has the same semantics if there's a way of just cooperating
+instead?
+
+------------------------------------------------------------------------
+Date: 2005-02-10 17:20:11 - 14
+Reply-To: DCMI Architecture Group <DC-ARCHITECTURE@JISCMAIL.AC.UK>
+Sender: DCMI Architecture Group <DC-ARCHITECTURE@JISCMAIL.AC.UK>
+From: Pete Johnston <p.johnston@UKOLN.AC.UK>
+------------------------------------------------------------------------
+
+Quoting Rachel Heery <r.heery@ukoln.ac.uk>:
+
+> I just mention this as it seems a point of difference in the way these
+> 'properties' are use in DC as opposed to MARC. And I would say by re-using
+> MARC relator codes DC is 'cherry-picking' from MARC, which you denigrate
+> wrt re-use of MODS?
+
+Hehe heh, you read my mind - yes, in my first draft of that message, I was going
+to include that case too! ;-)
+
+The only real reason (IMHO) that the MARC relator properties have LoC URIs is
+because they are "owned"/managed/administered by LoC, not by DCMI.
+
+Also I think there is a difference between selecting the MARC relators and
+selecting two/three of the many components of MODS, because - if they are
+considered only as relations between resources and agents (and that is the ony
+facet of their use that has been modelled in RDF) - the MARC relators _do_ form
+a "self-contained" set in a way that the components of the MODS hierarchy do not
+(because of their interdependence with other components).
+
+But yes, you are correct - LoC/DCMI has chosen to model only that one facet of
+the way the MARC relator codes are used in MARC.
+
+> Nice analogy, but I don't think anyone is saying we encourage re-use
+> 'regardless' of differences in formats, informed people are saying we
+> think these particular terms are equivalent in the way they are used, can
+> we do something about it??.
+>
+> And taking your analogy a little further away from the well ordered
+> playroom where kids put their Meccano in one box and their Lego in
+> another... In digital library world metadata created using different
+> standards/models is exchanged between applications, and to do this is
+> converted more or less effectively. So just like little kids out there
+> bashing their toys together, throwing them into the wrong box and often
+> breaking them, conversions can be more or less 'lossy'. Toys are being
+> broken now, data is already getting lost on conversion.
+>
+> The benefit of re-use is that the metadata creator, the owners of the
+> metadata formats and the world in general buy into an agreement 'we agree
+> these 2 data elements as more or less equivalent, we think you should do
+> the same'. This is as opposed to creating more and more conversion
+> programmes mapping between different data elements.
+>
+> I would say piecemeal re-use is a step towards interoperability...
+
+As long as our standards adopt different meta-models, then there is no
+alternative to this conversion. There _is_ no option for reuse.
+
+A Lego brick can never be (re)used in a Meccano construction, and vice versa. I
+have to design the equivalent of my Lego nose cone using Meccano, and it will
+require me to start using Meccano parts and nuts and bolts (which I wouldn't use
+in Lego).
+
+Similarly, the component in the hierarchical model can never be (re)used
+directly in the triple model. Rather, I have to analyse the information that is
+represented by a structure based on model A, and then create new components that
+can represent that same information in a structure based on model B - and as
+Mikael's examples from the LOM show, with hierarchical models, that analysis has
+to consider the entire data structure, not just one part of it.
+
+Just to be clear - I'm not in principle objecting to having a property called
+
+http://www.loc.gov/mods/location
+
+owned and managed by LoC, and referenced by the DC Libraries Application
+Profile. I really don't care what URIs things have or who coins them, as long
+as they are persistent and I know what they denote so that I know how I should
+deploy them.
+
+I'm just highlighting that the fact that that single property has a LoC/MODS
+URIref does not signify that it has anything to do with a component used within
+MODS XML. It is _not_ a "reuse" of the mods:location XML element defined within
+MODS XML; it is a property, a completely new thing, quite separate from the
+existing XML element. And the fact that it has that name does not create any
+sort of "interoperability" between DC Lib AP and the MODS XML format.
+
+That "interoperability" would come from the development of an RDF
+mapping/binding for MODS (which might use MODS properties, MARC properties, DC
+properties, LOM properties, FOAF properties, etc etc etc).
+
+So given that no RDF binding for MODS exists, (IMHO) the only reason for
+choosing to create a new property called
+
+http://www.loc.gov/mods/location
+
+rather than choosing to create a new property called
+
+http://purl.org/dc/terms/location
+
+is that presumably it would be "owned"/managed by LoC rather than by DCMI - and
+I have to admit it seems slightly odd (to me!) that we are considering asking
+LoC to do this - to coin a handful of properties, representing only two or
+three (fairly arbitrary) facets of the MODS information model.
+
+
+------------------------------------------------------------------------
+Date: 2005-02-10 23:01:51 - 15
+Reply-To: DC-Libraries Working Group <DC-LIBRARIES@JISCMAIL.AC.UK>
+Sender: DC-Libraries Working Group <DC-LIBRARIES@JISCMAIL.AC.UK>
+From: Pete Johnston <p.johnston@UKOLN.AC.UK>
+Subject: Re: Mixing and matching - not always! (was Re: XML schema (fwd)
+------------------------------------------------------------------------
+
+Quoting "Rebecca S. Guenther" <rgue@loc.gov>:
+
+> Pete and Andy had agreed (as part of Usage Board work) to put together a
+> paper explaining better what this means, why MODS elements cannot be used
+> as RDF properties, and what needs to be done to be able to reuse MODS
+> elements. After all, those that are referenced in the DC-LAP are exactly
+> the semantics that were needed for the given element. I still don't
+> understand this completely.
+
+Yes, and my apologies that I haven't done this. I said to Andy and Ann that I'd
+try to get something done over the weekend and circulate it next week.
+
+[snip]
+
+> Some of the MODS elements have equivalent DC elements. I suppose any such
+> subset would be those that are needed by an application profile?
+>
+> In the case of Relators, we have an RDF expression of the whole list (as I
+> said above, generated on the fly) and only a subset has the statement that
+> it refines dc:contributor. We would need some guidance on how to do
+> this. Or perhaps there are tools to convert an XML schema to an RDF
+> one?
+
+No, this can't be done, or at least not in any generally useful way.
+
+An XML Schema describes the structural constraints on a class of XML documents -
+it describes the XML tree structure, the "content models" for XML elements and
+XML attributes, which XML elements can be contained within which other XML
+elements and so on.
+
+An "RDF Schema" (there's a camp that argues we shouldn't even use that
+terminology because of the confusion it causes ;-)) describes classes and
+properties and relationships between them.
+
+They aren't alternative representations of thesame information - they are
+completely different things
+
+As I was trying to say in my message last night, XML works with a hierarchical,
+container-based model - so in MODS, elements have attributes and
+child/sub-elements - but RDF is based on triples, simple "statements" asserting
+relationships between resources.
+
+As Andy said, both models are good and useful, but they _are_ different, and the
+"components" in an XML document are completely different things from the
+"components" in an RDF graph.
+
+> > In my view we should be looking for solutions to help us meet requirements
+> > of several user communities, and to move forward as regards the evolution
+> > of data element sets by allowing re-use of data elements. If this can be
+> > done by declaring sets of terms in RDFS then good....
+>
+> Right, and this was the basis I think of Rachel's famous paper about
+> mixing and matching elements in different metadata schemas. Why redefine
+> something that has the same semantics if there's a way of just cooperating
+> instead?
+
+Yes, "mixing and matching" is a Good Thing _if_ the things which are mixed and
+matched are appropriate for "mixing and matching" ;-)
+
+But trying to mix and match things which are in fact very different (because
+they have been defined/created in the context of different models/frameworks)
+simply doesn't work. (Over on dc-architecture, I used the analogy of Lego
+bricks and Meccano parts - both good and useful in their own context, but if I
+try to use them together, it doesn't work - my Meccano parts won't click and my
+Lego bricks can't be bolted).
+
+Unfortunately our rather loose use of terminology - particularly words like
+"element" - has (IMHO) tended to encourage us to see similarities between
+things which are in fact very different. (The work on the Abstract Model is one
+means of trying to clarify this - we can now use that as a point of reference.)
+
+In many cases it is better - indeed, absolutely necessary! - to define _new_
+components which are appropriate for the different context of use - as indeed
+has been done in the case of the RDF properties that represent the MARC relator
+codes.
+
+------------------------------------------------------------------------
+Date: 2005-02-11 09:24:43 - 16
+Reply-To: DC-Libraries Working Group <DC-LIBRARIES@JISCMAIL.AC.UK>
+Sender: DC-Libraries Working Group <DC-LIBRARIES@JISCMAIL.AC.UK>
+From: "Rebecca S. Guenther" <rgue@LOC.GOV>
+Subject: Re: Mixing and matching - not always! (was Re: XML schema (fwd)
+------------------------------------------------------------------------
+
+At the time that mods:location was added to DC-LAP, we were in MODS
+version 2.1 and there were no subelements under <location>. In version 3.0
+we decided to make the distinction in MODS between an identifier and a URL
+(electronic location), so we redefined location with 2 subelements: <url>
+and <physicalLocation>. The latter is equivalent to the previous version's
+<location>, i.e. it is for a repository that holds the resource. The
+location is DC-LAP is intended for the repository, so we had intended to
+make <physicalLocation> a global element. Developers of DC-LAP wanted to
+specify the institution that held the resource. There was no plan to use
+it for a URL.
+
+When the Usage Board first considered the DC-LAP, the decision was made to
+include MODS elements because of the general guidelines that DCMI was
+following about reuse of metadata elements that already existed. Initially
+this discussion about XML elements vs. RDF properties didn't come up. So
+DC-LAP has included the MODS elements for quite some time. When the
+Collection Description proposal for IsAvailableAt came up, this is when
+the Usage Board started discussing the issue of using MODS elements, since
+it was clear that the proposed isAvailableAt had essentially the same
+semantics as mods:location. And it has been discussed a few times since
+then.
+
+On a historical note, edition/version was almost included in the initial
+DC element set in 1995, but was thrown out because it was considered by
+some not to be "cross-domain, resource discovery" and too library centric.
+Since those criteria seem to be no longer the requirements to define a DC
+element, who knows if edition/version may creep in.
+
+On Fri, 11 Feb 2005, Ann Apps wrote:
+> Apologies for not explaining what I meant by MODS terms not
+> being consistent with DC practice. But I think others have
+> explained it for me :)
+>
+> Another (more simplistic) point about using the MODS terms, in
+> particular mods:location.
+>
+> Looking at the MODS XML schema, mods:location has 2 sub-
+> elements, according to the hierarchical XML model:
+> physicalLocation and url. They are both optional and can occur
+> many times (though physicalLocations must precede urls). Thus if
+> the sub-elements were promoted to 'first class' elements (ie could
+> be used without the surrounding <mods:location> tags) (and
+> assuming it were possible to sort out the definition in RDF terms)
+> you would end up with 2 location properties rather than a single
+> one.
+>
+> I understood that mods:location was included in the DC-Lib AP so
+> that either a physical location or a digital location (or both) could be
+> captured within the same property, not to have separate properties.
+>
+> The situation at the moment is that you need to write:
+> <mods:location>
+>   <mods:physicalLocation>My Library</mods:physicalLocation>
+> </mods:location>
+> for a physical location and:
+> <mods:location>
+>   <mods:url>http://example.com/mylibrary.</mods:url>
+> </mosd:location>
+> for a digital location
+> [<mods:location>My Library</mods:location> is wrong according
+> to the schema.]
+>
+> Whereas if there were a DCMI property for location, like all DC
+> properties, it's value could be represented by either a URL or a text
+> string.
+>
+> It also seems to me that a location property must bear some
+> similarity to that needed but not yet decided by the Collection
+> Description AP (isAvailableAt, isLocatedAt?).
+>
+> As for 'edition', this sounds akin to my long-lamented 'version'
+> property :). But, joking aside, I do think there is a general need for
+> a DCMI edition/version property (I seem to remember a question on
+> askDCMI not long ago).
+
+
+------------------------------------------------------------------------
+Date: 2005-02-11 13:50:54 - 17
+From: Ann Apps <ann.apps@MANCHESTER.AC.UK>
+Subject: Re: Mixing and matching - not always! (was Re: XML schema (fwd)
+To: DC-LIBRARIES@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+Apologies for not explaining what I meant by MODS terms not
+being consistent with DC practice. But I think others have
+explained it for me :)
+
+Another (more simplistic) point about using the MODS terms, in
+particular mods:location.
+
+Looking at the MODS XML schema, mods:location has 2 sub-
+elements, according to the hierarchical XML model:
+physicalLocation and url. They are both optional and can occur
+many times (though physicalLocations must precede urls). Thus if
+the sub-elements were promoted to 'first class' elements (ie could
+be used without the surrounding <mods:location> tags) (and
+assuming it were possible to sort out the definition in RDF terms)
+you would end up with 2 location properties rather than a single
+one.
+
+I understood that mods:location was included in the DC-Lib AP so
+that either a physical location or a digital location (or both) could be
+captured within the same property, not to have separate properties.
+
+The situation at the moment is that you need to write:
+<mods:location>
+  <mods:physicalLocation>My Library</mods:physicalLocation>
+</mods:location>
+for a physical location and:
+<mods:location>
+  <mods:url>http://example.com/mylibrary.</mods:url>
+</mosd:location>
+for a digital location
+[<mods:location>My Library</mods:location> is wrong according
+to the schema.]
+
+Whereas if there were a DCMI property for location, like all DC
+properties, it's value could be represented by either a URL or a text
+string.
+
+It also seems to me that a location property must bear some
+similarity to that needed but not yet decided by the Collection
+Description AP (isAvailableAt, isLocatedAt?).
+
+As for 'edition', this sounds akin to my long-lamented 'version'
+property :). But, joking aside, I do think there is a general need for
+a DCMI edition/version property (I seem to remember a question on
+askDCMI not long ago).
+
+------------------------------------------------------------------------
+Date: 2005-02-15 09:33:46 - 18
+Reply-To: DCMI Architecture Group <DC-ARCHITECTURE@JISCMAIL.AC.UK>
+Sender: DCMI Architecture Group <DC-ARCHITECTURE@JISCMAIL.AC.UK>
+From: Andy Powell <a.powell@UKOLN.AC.UK>
+------------------------------------------------------------------------
+
+On Thu, 10 Feb 2005, Pete Johnston wrote:
+
+> What are we really achieving by doing this?
+>
+> In the absence of a MODS RDF binding, what is anyone gaining by asking LoC to
+> define two or three RDF properties called
+>
+> http://www.loc.gov/mods/location
+>
+> (and the other two or three things needed for the DC Lib AP - I've just guessed
+> the URIrefs) picked pretty much from random parts of the MODS data structure.
+>
+> It provides _no_ interoperability whatsoever between DC and MODS XML because
+> we've just picked out some tiny part of the MODS data structure.
+>
+> Why are we _insisting_ on "reuse" in this rather odd piecemeal sort of way,
+> instead of simply declaring the properties required within DCMI vocabularies?
+
+...and then later...
+
+> So given that no RDF binding for MODS exists, (IMHO) the only reason for
+> choosing to create a new property called
+>
+> http://www.loc.gov/mods/location
+>
+> rather than choosing to create a new property called
+>
+> http://purl.org/dc/terms/location
+>
+> is that presumably it would be "owned"/managed by LoC rather than by
+> DCMI - and I have to admit it seems slightly odd (to me!) that we are
+> considering asking LoC to do this - to coin a handful of properties,
+> representing only two or three (fairly arbitrary) facets of the MODS
+> information model.
+
+At a technical level, I agree with you - it doesn't really matter whether
+a new term is assigned a DC URI or a MODS/LoC URI.  And there are
+certainly some advantages (simplicity being the prime one) in favour of
+taking the terms we are interested in and plonking them into a DC
+namespace (i.e. assigning them a DC URI).
+
+But, IMHO, the reasons for promoting the use of LoC, LOM and other URIs
+for existing terms has to do with the fuzzier social and political
+benefits this brings in terms of ownership, buy-in by the community and so
+on. I don't think we'll get buy-in to the DCMI approach by effectively
+saying to those communities, "We liked your XML element so much, we've
+taken a copy of it and added it to a DCMI namespace"!?
+
+Instead, we need to find ways of explaining to them the benefits of the
+semantic Web approach.  We've got to explain why we need an agreed
+underlying model (such as that provided by RDF) before we can mix and
+match metadata terms in the way we want.  We've got to explain why an
+approach based on simply merging together lots of XML fragments doesn't
+scale beyond very limited cases where you've got explicit agreement of all
+the parties.  We need to convince these other communities that it is worth
+their while re-casting the semantics of their metadata terms in an RDF
+context.
+
+My guess is that other communities will want to feel ownership of the
+metadata terms that they create (just as we feel most comfortable with
+dc:title being dc:title and not being redeclared as somethingelse:title).
+And they'll only feel comfortable with DCMI if they think we are giving
+more than we are taking.  In any case, I don't see that DCMI particularly
+wants to lumber itself with maintaining a whole set of metadata terms that
+are already defined and used by other communities.
+
+All in all, I think we (primarily the Architecture WG and the Usage Board)
+need to explain not only the 'Whys' above, but also the 'Hows'.  How do I
+declare my XML element as a property in RDF?  How do I assign a URI to my
+term?  How do I declare my controlled vocabulary as a DCMI encoding
+scheme? Etc, etc.  I know that Pete is already working on some of the
+documentation that will help to do this.
+
+None of which is easy on a shoestring! :-(
+
+However, I do agree with you that the metadata 'application profile'
+notion of mixing and matching has tended to be interpretted much too
+simplisticly - and outside of its original context of the semantic Web -
+to mean "as long as it's in XML it must be OK" pretty much!  But next time
+someone says to me that they've got an XML element that they're going to
+use as a DCMI property, rather than saying "you can't do that" (which is
+probably what it sounded like I said this time!) I'm going to try saying,
+"OK, but in order to do that, you need to do the following...".
+
+Well, maybe... :-)
+

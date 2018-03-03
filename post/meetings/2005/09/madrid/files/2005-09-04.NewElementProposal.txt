@@ -1,0 +1,88 @@
+------------------------------------------------------------------------
+Accessibility Working Group 
+NewElementProposal 
+Converted from the text at: http://dublincore.org/accessibilitywiki/NewElementProposal
+------------------------------------------------------------------------
+
+Contributions to this document are very welcome,
+however significant changes should be first discussed
+on the dc-accessibility mailing list. To join or
+leave the dc-accessibility mailing list, please visit
+http://www.jiscmail.ac.uk/lists/dc-accessibility.html.
+
+Adaptation Term Proposal 
+
+Adaptation Requirements Table 
+Name       http://purl.org/dc/terms/adaptation 
+Label      Adaptation 
+Definition A statement describing characteristics of the resource that affect 
+           how it can be sensed, understood, or interacted with by users or agents. 
+Comment    An Adaptation description might be used to match a (digital or physical) 
+           resource to a description of user or user agent needs and preferences. 
+Examples   Adaptation="Closed captions" 
+           Adaptation="Extended audio descriptions" 
+           Adaptation="Contains video and text transcript of action" 
+Type of Term Element 
+Term qualified None 
+Why needed The availability of an Adaptation term will allow for more precise 
+           descriptions of resources: many governments and
+           communities mandate the accessibility of resources
+           and services. A means of describing the relevant
+           accessibility characteristics of resources is
+           currently not available in DCMI metadata terms. The
+           addition of an Adaptation term will enable this.
+           Working Group support There has been significant
+           online and face-to-face discussion of the proposed
+           new element. A couple of people commented on the
+           DC-Accessibility mailing list that they were not
+           sure about it being an adaptation element, but
+           there has been a lot of informal discussion in the
+           accessibility community in general and within the
+           task group and there is general consensus that a
+           narrow scope adaptation term is what is needed.
+
+           This element and the background AccessForAll work
+           has been undertaken in collaboration with a number
+           of other bodies in the hope that interoperability
+           and industry adoption can flow more easily
+           across communities. This has meant consensus in
+           a far wider community than just the DC community
+           although that has been a priority. All the work
+           has been exposed (via the website and email list)
+           on the DC-Accessibility Wiki for some time and
+           it has been presented in major fora such as the
+           W3C annual conference, accessibility conferences
+           in Europe, north America, Asia, and considered
+           by standards and specifications organisations
+           including ISO JTC1 SC36, CEN ISSS LTSC, CEN ISS
+           MMI-DC and IMS Global Consortium.
+
+Proposed status Recommended 
+Related DCMI terms The conformsTo element refinement is a reference to an 
+          established standard to which the resource
+          conforms. The standards referenced might be
+          accessibility standards. There may be overlap in
+          that conformance to an accessibility standard may
+          imply certain adaptation properties but the explicit
+          statement of the exact adaptation properties is
+          achievable only through the Adaptation term.
+
+Related non-DCMI terms - IMS AccessForAll Metadata Specification (AccMD) Version 
+          1.0: The requirements of the Adaptation term
+          proposal, specifically its ability to match
+          resources to the accessibility preferences of
+          a user, are highly influenced by the IMS AccMD
+          specification. The AccMD specification documents are
+          located at the IMS Accessibility Web site. A brief
+          technical explanation of the key concepts behind the
+          AccMD can be found in the AccessForAllFramework.  -
+          ISO JTC1 SC36 AccessForAll Metadata Personal Needs
+          and Preferences and Digital Resouce Descriptions
+
+Impact on applications Minimal. Current DC-based applications provide no 
+conflicting means of identifying adaptation characteristics of resources. 
+About the proposers http://dublincore.org/groups/access/ 
+
+RefreshCache for this page (cached 2005-09-02 06:01:10)
+
+EditText of this page (last edited 2005-09-01 17:01:33 by Liddy Nevile) 

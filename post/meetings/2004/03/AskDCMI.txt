@@ -1,0 +1,302 @@
+------------------------------------------------------------------------
+Date:         Fri, 20 Feb 2004 16:42:45 +0100
+From: Thomas Baker <thomas.baker@BI.FHG.DE>
+Subject: An analysis of questions on AskDCMI
+To: DC-USAGE@JISCMAIL.AC.UK
+
+Note: This file, 
+http://www.bi.fhg.de/People/Thomas.Baker/ISSUES/CACHE/AskDCMI-questions.txt,
+to be archived as
+http://dublincore.org/usage/meetings/2004/03/AskDCMI-questions.txt.
+------------------------------------------------------------------------
+
+Dear all,
+
+I took two hours to go through all of the categories on AskDCMI
+to see what has been happening, and here are some quick notes
+on the 136 questions asked there to date which I submit as
+a contribution to the discussion in Bath (see below; this
+analysis will also be archived in the directory of materials
+for the Bath meeting and will appear at the next build).
+
+The official DCMI FAQ, on the other hand, currently has 31
+questions, and some of these are very obviously out of date
+(e.g., "What is the Warwick Framework?" is not a frequently
+asked question, though one person on AskDCMI did in fact
+ask it).
+
+My gut feeling is that we could come up with perhaps 15
+broad questions which cover everything in the scope both
+of the current FAQ and of the AskDCMI corpus of questions.
+I have some ideas how this could be done.
+
+I was also noticing that each of the questions in the current
+DCMI FAQ has, in effect, a citable URL, such as:
+
+    http://dublincore.org/resources/faq/#whatismetadata
+    http://dublincore.org/resources/faq/#dcmetadata
+
+I'm thinking that if we had a fifteen-question FAQ in which
+each question were citable in the manner above, the AskDCMI
+experts could answer alot of the questions simply by pointing
+people to the URL anchor of the corresponding question in
+the FAQ.
+
+I am also thinking that such a FAQ could become the focus
+of ongoing Usage Board attention -- an eight-page document
+that every Usage Board member is expected to re-read before
+every meeting and which then gets explicitly re-approved by
+the UB at every meeting.
+
+Tom
+
+---
+
+Home - About DCMI
+    Which countries use it?
+    Does DC replace AACR2?
+    What is CEN?
+    Do search engines index it?
+
+Home - About DCMI - Administration
+    What is the IP of DCMI documentation?
+
+Home - About DCMI - Conferences
+    None.
+
+Home - About DCMI - Boards/Committees/Working Groups
+    What ever happened to Admin Core?
+
+Home - About DCMI - Documentation
+    What is the URL for the NISO standard?
+    (Garbled question.)
+    How do I use DC for photograph collections?
+    Does it cost money to use DC?
+    Can you recommend an article about people's names?
+    What are refinements?
+
+Home - Implementation
+    To embed or not?
+    How can I use DC for content management and search in the newspaper industry?
+    How do I implement DC in MS-Access?
+    Do DCMI documents tell you how to generate tags on the fly?
+    Is there a classification scheme for still photos?
+    Is there a tool to convert USMARC to DC?
+    Can I use DCMI's "document status" element?
+    How can I put centuries and ranges into dc:date?
+    Is there a (DCMI) standard for keywords?
+    Where can I find translations of Dublin Core?
+    How can I describe geographic information?
+    How can dc:source be used to reference old books?
+    Was Creator.Personalname.Address approved somewhere?
+    Could we register the European Music Navigator vocabulary?
+    Is there a list of documentation types for software?
+    How do we describe conference proceedings with DC?
+    Four questions on search engines, tags, and databases.
+    How can I use DC to describe a collection of photographs?
+    What ever happened to DC.Creator.CorporateAddress?
+
+Home - Implementation - Metadata in general
+    What is the difference between a thesaurus and a classification?
+    What is the difference between a thesaurus and a taxonomy?
+    How is metadata used in bibliographic networks?
+    Where can I take a course on DC?
+    Must we pay DCMI if we provide a drop-down menu for dc:subject?
+    "WHAT IS METADATA IN VIDEO?" by JOACHIN
+    Why do search engines have trouble with my XML tags?
+    Does Google index DC?
+    What does CODEN stand for?
+    What is the history of metadata?
+    Which search engines use DC in HTML headers?
+    Does DC have to go on every Web page?
+    Are there any enterprise metadata warehouse applications?
+    "Metadata framework implementation" - How do I analyse the structure of a resource?
+    Where can I find the education extensions for DC?
+    In "isVersionOf", why are the words run together?
+    Whatever became of the Warwick Framework?
+
+Home - Implementation - Maintenance
+
+Home - Implementation - Other issues
+    Is Audience the 16th element?
+    How can I use DC to search for photographs?
+    What is the relationship between the CORES Project and DCMI?
+    What is the difference between DC and SCORM?
+    How can I use DC for spatial metadata?
+    Do DCMI documents tell you how to generate tags on the fly?
+    Should I translate the tag "creator" into Vietnamese?
+    Where can I take classes on DC, XML, and RDF?
+    Where can I find a standard approach to versioning documents?
+    What is the relationship between DC and FRBR?
+
+Home - Implementation - Storage
+    How can I store metadata separately and link?
+    How could DC be implemented in RDBMS?
+
+Home - Terms
+    Could DC help us describe art-history slides?
+    Is Audience the 16th element?
+    What is the relationship between DCMI and the IEEE/LOM community?
+    Is there a difference between a sub-element and a refinement?
+    What is the semantics of Title?
+    What is the difference between a Term and an Element?
+    Can I add a field to an RSS feed?
+    What are sub-elements?
+
+Home - Terms - Application Profiles
+    Does the creator of an AP decide what should be mandatory?
+
+Home - Terms - Encoding Schemes
+    Disappearing angle brackets: http://askdcmi.askvrd.org/index.asp?id=5239
+    How do I register an encoding scheme?
+    I'm confused about the example in the DCSV recommendation.
+
+Home - Terms - Encoding Schemes - Syntax Encoding Schemes
+    Very specific question about DCMI Point
+
+Home - Terms - Encoding Schemes - Vocabulary Encoding Schemes
+    Will DCMI register additional vocabulary schemas?
+    Disappearing angle brackets: http://askdcmi.askvrd.org/index.asp?id=5239
+    How can I register a vocabulary?
+    Is there a standard markup language for controlled vocabularies?
+    Must we pay DCMI if we provide a drop-down menu for dc:subject?
+    Which of the DCMI types would I use for cataloging a Website?
+    I am looking for subject taxonomies for eGovernment.
+
+Home - Terms - Encoding Schemes - Vocabulary Terms
+    Where do I put video track information?
+    What are sub-elements?
+
+Home - Terms - Elements
+    Can I use dc:identifier for ISSNs?
+    Distinction creator/publisher.
+    Is Audience the 16th element?
+    Where do I put the name of the person submitting the material?
+    Four different questions about dc:relation.
+    Someone told me there are 16 elements.
+    Where do I put the location of the creator?
+    Where do I put the location of the publisher? (different person)
+    How does DC relate to RSS?
+    A follow-up email on the four questions about dc:relation.
+    What is the semantics of Title?
+    How do I use DC with SCORM and DMSO/HLA?
+    Are all elements repeatable?
+    Which elements are mandatory?
+    How can I add an element?
+    What equivalencies exist between DC, IEEE/LOM, and SCORM?
+    Can I repeat dc:identifier?
+    What is the difference between "term" and "element"?
+    Should I use "isPartOf" or "isReferencedBy"?
+    Is Dublin Core extensible?
+    Please give me examples of Contributor.
+    How can I say something is a Press Release?
+    Should I repeat dc:publisher and distinguish between the two types?
+    How can I implement name authority?
+    How do I describe Sponsors and Partners of a project in RDF?
+    How do I indicate the source of a classification code?
+
+Home - Terms - Refinements
+    What is the difference between sub-elements and refinements?
+    Can I create my own refinements?
+    What are sub-elements? (someone else)
+    Are multi-element tags like "Date.Created.Digital" interoperable?
+    How can I extend Creator to put in birthdates?
+    How can I extend Creator to distinguish first name from family name?
+    How can I use XSLT to create multi-element DCSVs?
+    Can I put number of pages into Format?
+
+Home - Syntaxes
+    Where can I find the xsd files that work together?
+    Which is better, HTML or XML?
+    Which is better, XML or HTML?
+    Which is better, XML or RDF?
+    How do I use DC for geographic information?
+
+Home - Syntaxes - HTML
+    What is the semantics of Title?
+    Are keywords case-sensitive?
+    Should it be "creator" or "Creator"?
+
+Home - Syntaxes - RDF
+    How do I add a field to an RSS feed?
+    What is the correct RDF syntax for "isPartOf"?
+    Which of these two syntaxes is correct?
+    Can the value of dc:subject be a URI representing a person?
+
+Home - Syntaxes - Other
+    What are the intended cardinalities?
+    Disappearing angle brackets: http://askdcmi.askvrd.org/index.asp?id=5239
+    Can one specify a minimum length of 1?
+    Where can I find the xsd files that work together?
+    Can DC in XML have qualifiers?
+    Should we translate the tags into Marathi?
+
+Home - Syntaxes - XML
+    Are the XML schemas "official" and stabile?
+    How can I dumb down Dc.creator.contact?
+
+------------------------------------------------------------------------
+Date: Tue, 10 Feb 2004 10:55:04 +0100
+From: Thomas Baker <thomas.baker@bi.fhg.de>
+Subject: AskDCMI on the Bath agenda?
+------------------------------------------------------------------------
+
+I see the questions building up on AskDCMI again and am feeling
+uncomfortable about the model here, so I'm thinking we should
+perhaps give this issue some time in Bath.
+
+Some of what is making me uncomfortable:
+
+-- When questions come into my mailbox but not answers,
+   I cannot know which ones have been answered without going
+   to the Web, nor can I accumulate my own archive of answers,
+   meaning I have to search the database on the Web to know
+   whether a similar question has been answered.
+
+-- Not being able to get an overview of what has been written,
+   I am uneasy with the notion of a growing set of overlapping
+   answers to overlapping questions, and that some of these
+   answers may in fact be controversial, or out-of-date,
+   or at any rate need to be maintained.
+
+-- It is not clear to me whether the goal is to accumulate a
+   body of best practice and use that corpus to refine and
+   improve our collective sense of best practice over time.
+
+   If the goal is not to accumulate knowledge, then the AskDCMI
+   work feels like a relentless servicing of user requests.
+
+   If the goal is to learn from the process, then it is not
+   clear to me how we can capture that learning.  For example,
+   if the answers were being cited and summarized in a
+   single, growing FAQ file that we could periodically
+   download and keep on hand, then one could presumably
+   answer alot of the new questions simply by pointing to
+   a specific section of the FAQ.  This would also have
+   the welcome side effect of improving the quality of
+   http://dublincore.org/resources/faq/, which does indeed
+   need to be revised.
+
+-- If the answers are not being captured or summarized in such
+   a central document, it is not clear to me what longer- term
+   responsibility is being implicitly assumed (and by whom)
+   for reviewing and maintaining the many separate answers.
+   In principle, does an answer have an expiration date?
+
+-- It is not clear to me how AskDCMI relates to DCMI's
+   open mailing lists, where asking the same question might
+   lead to a discussion instead of a straightforward (but
+   possibly simplistic or misleading) answer.
+
+I pose this concerns in a constructive spirit because I would
+very much like to see this service work.  On the other hand,
+AskDCMI is not a service of the Usage Board, so I am uncertain
+how far this discussion should go.  In Bath, we could perhaps
+consider the following:
+
+-- A printout (if such can be generated) of the entire corpus
+   of answers and rough analysis of questions by type.
+
+-- A general discussion of current plans and future
+   developments in light of the comments above.
+

@@ -1,0 +1,292 @@
+------------------------------------------------------------------------
+Date:         Mon, 8 Mar 2004 16:32:52 -0500
+From: Diane Hillmann <dih1@CORNELL.EDU>
+Subject: Some comments on Tom's AskDCMI issues
+To: DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+Diane's comments on Tom's AskDCMI concerns:
+
+> -- When questions come into my mailbox but not answers,
+> I cannot know which ones have been answered without going
+> to the Web, nor can I accumulate my own archive of answers,
+> meaning I have to search the database on the Web to know
+> whether a similar question has been answered.
+
+Not sure whether this is a generalized need or a "Tom-need"?
+In fact, someone (the Administrator) does know what questions
+have been answered, and is tasked to keep track of that.
+I don't think the writers of the software ever considered
+that someone might want to do what you suggest, Tom. ;-)
+But though it may sometimes be useful to search the corpus to
+see if a question has been answered, I suspect most experts
+don't do that.
+
+The process of turning these answers into FAQs is not trivial.
+I did a project at work where I had someone go through and
+characterize email based answers and do some initial editing
+to create a FAQ, and though it worked it was a lot of effort.
+We could do it, but it would need a considerable investment of
+time on someone's part. Generally each question has a specific
+context and to be turned into a general FAQ would require some
+(if not considerable) editing.
+
+> -- Not being able to get an overview of what has been written,
+> I am uneasy with the notion of a growing set of overlapping
+> answers to overlapping questions, and that some of these
+> answers may in fact be controversial, or out-of-date,
+> or at any rate need to be maintained.
+
+Right now there are only a few experts that can answer
+questions without being reviewed by the Administrator.  These
+are not people who write controversial answers.  Because of the
+"experts" the answers are probably less controversial than
+answers gleaned through questions on DC-General.  They are
+not easily maintained, it's true, but to a certain extent
+how "easy" depends on your definition of "maintenance."
+Out-dated answers could simply be deleted, for instance.
+
+Although there are indeed some overlapping questions and
+answers, I don't think that the problem is particularly bad,
+yet, primarily because of the "context" mentioned above.
+
+> -- It is not clear to me whether the goal is to accumulate a
+> body of best practice and use that corpus to refine and
+> improve our collective sense of best practice over time.
+> If the goal is not to accumulate knowledge, then the AskDCMI
+> work feels like a relentless servicing of user requests.
+> If the goal is to learn from the process, then it is not
+> clear to me how we can capture that learning.  For example,
+> if the answers were being cited and summarized in a
+> single, growing FAQ file that we could periodically
+> download and keep on hand, then one could presumably
+> answer alot of the new questions simply by pointing to
+> a specific section of the FAQ.  This would also have
+> the welcome side effect of improving the quality of
+> http://dublincore.org/resources/faq/, which does indeed
+> need to be revised.
+
+The DCMI Official FAQ is clearly outdated and should be
+re-written, or deleted. I had hoped to incorporate some of
+that into the AskDCMI knowledgebase but haven't had the time to
+do it.  If someone were to write the sort of FAQ Tom suggests,
+the DCMI experts would not need to be answering the "repeat"
+questions, probably the administrator could refer questioners
+to the FAQ without the questions even appearing for experts.
+However, the trick is to get that FAQ written.
+
+I think there are several goals, not the least of which
+is a servicing of user requests. At the very basic level,
+the questions asked let US know where the holes in our
+documentation are, and what implementers still don't
+understand.  The fact that we often don't respond quickly or
+well to that information is another issue.  We are capable
+of generating lots of good ideas on how to improve things,
+but haven't been as good on figuring out where to expend our
+limited resources.
+
+> -- If the answers are not being captured or summarized in such
+> a central document, it is not clear to me what longer- term
+> responsibility is being implicitly assumed (and by whom)
+> for reviewing and maintaining the many separate answers.
+> In principle, does an answer have an expiration date?
+
+Well, I'm not at all sure we could have even stated the
+question last year, so in some ways asking how we will maintain
+this is progress.  I don't know that answers explicitly have
+an expiration date, but date might be one way to focus review.
+
+> -- It is not clear to me how AskDCMI relates to DCMI's
+> open mailing lists, where asking the same question might
+> lead to a discussion instead of a straightforward (but
+> possibly simplistic or misleading) answer.
+
+I think they serve quite different purposes. Although sometimes
+good discussion comes from a question asked, just as often
+the result is a clueless answer being given that then needs
+to be diplomatically refuted--thereby confusing folks even
+more. When what is needed is a broad range of opinion on
+an issue that is not a "best practice" question, then the
+mailing lists are great.  When the question is, how can I do
+it right?--the mailing lists may not be the best resource,
+mostly because we have no way of defining for new implementers
+who is competent to speak.  I have more than once steered
+AskDCMI questioners to the list, when they ask the sort of
+question that should be asked on lists.
+
+> I pose this concerns in a constructive spirit because I would
+> very much like to see this service work.  On the other hand,
+> AskDCMI is not a service of the Usage Board, so I am uncertain
+> how far this discussion should go.  In Bath, we could perhaps
+> consider the following:
+
+>   -- A printout (if such can be generated) of the entire corpus
+> of answers and rough analysis of questions by type.
+
+Not sure what kind of type you're referring to here.  I suspect
+we each would characterize them differently (a common problem,
+as we know). I'd suggest that we need a better feel for our
+goal and priorities before anyone proceeds with this task.
+
+> -- A general discussion of current plans and future
+> developments in light of the comments above.
+
+Stuart has agreed to discuss future plans for the software
+at the meeting.  I think your question about whether AskDCMI
+is a service of the UB is an important one.  To some extent,
+I think one of our problems is that we have not managed to
+garner the participation of the larger Advisory Board in this
+effort. I think AskDCMI is much better conceptually understood
+at that level.
+
+------------------------------------------------------------------------
+Date: Wed, 10 Mar 2004 06:47:26 +0100
+From: Thomas Baker <thomas.baker@bi.fhg.de>
+Subject: Re: Some comments on Tom's AskDCMI issues
+------------------------------------------------------------------------
+
+Diane wrote:
+> Not sure whether this is a generalized need or a "Tom-need"?
+> In fact, someone (the Administrator) does know what questions
+> have been answered, and is tasked to keep track of that.
+> I don't think the writers of the software ever considered
+> that someone might want to do what you suggest, Tom. ;-)
+
+The questions appear in the mailbox when they are asked,
+but the answers do not.  If the answer could appear in my
+mailbox as a reply to the question, I would see "Aha, it has
+been answered, I don't need to do it then."  I would also
+see the text of the answer (and possibly learn something,
+or even disagree) without having to look on the Web.
+
+> The process of turning these answers into FAQs is not trivial.
+> I did a project at work where I had someone go through and
+> characterize email based answers and do some initial editing
+> to create a FAQ, and though it worked it was a lot of effort.
+> We could do it, but it would need a considerable investment of
+> time on someone's part. Generally each question has a specific
+> context and to be turned into a general FAQ would require some
+> (if not considerable) editing.
+
+I propose the following:
+
+1) We reduce the FAQ to 10-20 broad questions.
+
+2) We then determine who should be responsible for maintaining
+   the answer to each question.  Two obvious candidates are:
+
+   -- the Directorate, for questions related to DCMI as an
+      organization;
+
+   -- the Usage Board, for questions related to DCMI metadata
+      terms (the bulk of the questions);
+
+   It is not clear to me who would best take the questions
+   related to syntax or software tools.
+
+3) Supposing the questions were found to fall neatly into three
+   categories -- e.g.: Semantic, Organizational, and
+   Implementational -- then the FAQ could perhaps be divided
+   into three parts and assigned to three jurisdictions:
+   Usage Board, Directorate, and [Other].
+
+4) To each question in the Usage Board area, the head of
+   the UB would assign a shepherd.  Each UB shepherd of a FAQ
+   question would be responsible for reviewing the FAQ's answer
+   for freshness and currency before each UB meeting.  Each UB
+   member would be responsible for reading (i.e., re-reading)
+   the entire UB section of the FAQ before each meeting.
+   At each meeting, a vote would be held to explicitly approve
+   the UB section of the FAQ.
+
+5) For the purposes of citation, each question in the FAQ will
+   have a "handle" (e.g.,
+   http://dublincore.org/faq/#whatarequalifiers or
+   http://dublincore.org/faq/whatarequalifiers/).  This handle
+   would serve both as a resolvible pointer to the answer
+   for a question and as an Identifier citable, for example,
+   in answers to queries on AskDCMI.  To adopt this approach
+   one would need to consider the following:
+
+   a) The http://dublincore.org/faq/#whatarequalifiers style
+      of identifier implies that the FAQ is a single document
+      with HTML anchors.  Advantage: Click on the FAQ and
+      send the whole thing to the printer.  Disadvantage:
+      the Webmasters need to cut-and-paste updated text into
+      a master document (unless one were to use "includes" 
+      to "pull in" the answers from an external file?).
+
+   b) The http://dublincore.org/faq/whatarequalifiers/ style
+      of identifier implies a directory structure in which
+      each answer is a separate file in a separate directory.
+      Advantage: the shepherd edits a single file which is
+      simply dropped into the directory structure.
+
+> Out-dated answers could simply be deleted, for instance.
+
+It is not clear to me what function "old answers" have in
+AskDCMI.  Ideally, one would copy the answer written by an
+AskDCMI expert to the shepherd of a DCMI FAQ question and
+that work would lead to the improvement in the DCMI FAQ.
+If that were the case, we would want to explicitly encourage
+people to consult the DCMI FAQ instead of searching through
+old answers on AskDCMI.
+
+As for pruning out-dated answers, it seems to me that
+determining the freshness of an answer on a case-by-case
+basis would require significant effort on the part of AskDCMI
+administrators.  It would seem more efficient simply to give
+AskDCMI answers a fixed expiration date, after which they would
+either become unavailable or move to an explicitly "archival"
+section of AskDCMI.
+
+> If someone were to write the sort of FAQ Tom suggests,
+> the DCMI experts would not need to be answering the "repeat"
+> questions, probably the administrator could refer questioners
+> to the FAQ without the questions even appearing for experts.
+> However, the trick is to get that FAQ written.
+
+I think the answer lies in partitioning responsibility for
+the FAQ and assigning shepherds.
+
+> I think there are several goals, not the least of which
+> is a servicing of user requests. At the very basic level,
+> the questions asked let US know where the holes in our
+> documentation are, and what implementers still don't
+> understand.  
+
+Agreed.
+
+> Well, I'm not at all sure we could have even stated the
+> question last year, so in some ways asking how we will maintain
+> this is progress.  
+
+Yes.
+
+> >   -- A printout (if such can be generated) of the entire corpus
+> > of answers and rough analysis of questions by type.
+> 
+> Not sure what kind of type you're referring to here.  I suspect
+> we each would characterize them differently (a common problem,
+> as we know). I'd suggest that we need a better feel for our
+> goal and priorities before anyone proceeds with this task.
+
+http://www.bi.fhg.de/People/Thomas.Baker/ISSUES/CACHE/AskDCMI.txt
+is perhaps good enough as a basis for discussion.  By my
+reading of the questions, I should think that a good FAQ should
+be able to provide answers to "85%" of the AskDCMI questions,
+so that on AskDCMI an expert could in many cases answer an
+question with just one or two sentences plus a pointer to a
+specific answer in the DCMI FAQ.
+
+> To some extent,
+> I think one of our problems is that we have not managed to
+> garner the participation of the larger Advisory Board in this
+> effort. I think AskDCMI is much better conceptually understood
+> at that level.
+
+Conceptually, I think the way forward lies in solving the
+problem of maintaining an excellent FAQ.  The FAQ is something
+for which we can reasonably expect an AB member to read and
+provide feedback.
+

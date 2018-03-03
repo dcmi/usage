@@ -1,0 +1,49 @@
+Title:         Term proposals from DCMI Libraries Community
+Identifier:    http://dublincore.org/usage/meetings/2008/09/berlin/terms-dclib/.index.html
+Source:        http://dublincore.org/usage/meetings/2008/09/berlin/terms-dclib/index.txt
+Directory:     http://dublincore.org/usage/meetings/2008/09/berlin/terms-dclib/
+Created:       2008-09-16
+
+======================================================================
+Required reading
+
+-- Proposal submitted from Robina Clayphan, July 2008
+   http://dublincore.org/usage/meetings/2008/09/berlin/terms-dclib/robina-request.pdf
+
+-- Proposal for term "Date captured"
+   http://dublincore.org/usage/meetings/2008/09/berlin/terms-dclib/date-captured.pdf
+
+-- Proposal for term "Holding location"
+   http://dublincore.org/usage/meetings/2008/09/berlin/terms-dclib/holding-location.pdf
+
+-- Proposal for term "Version"
+   http://dublincore.org/usage/meetings/2008/09/berlin/terms-dclib/version.pdf
+
+-- 2006 report from Robina: "Proposal to remove the three MODS elements from DC-Lib"
+   http://dublincore.org/usage/meetings/2008/09/berlin/terms-dclib/MODS_terms_in_DC-Lib_Proposal.pdf
+
+======================================================================
+Background reading
+
+Context: 
+-- Library Application Profile
+   http://dublincore.org/documents/2004/09/10/library-application-profile/ 
+
+----------------------------------------------------------------------
+2002 proposals
+-- "Date captured"
+    http://dublincore.org/usage/meetings/2002/05/captured-date_prop.html - 2002 proposal
+    http://dublincore.org/usage/decisions/2002/2002-02.captured.shtml - 2002 decision
+
+-- "Version"
+    http://dublincore.org/usage/meetings/2002/05/description-version_prop.html - 2002 proposal
+    http://dublincore.org/usage/decisions/2002/2002-02.version.shtml - 2002 decision
+
+-- "holdingLocation" 
+    http://dublincore.org/usage/meetings/2002/05/holding-location_prop.html - 2002 proposal
+    http://dublincore.org/usage/decisions/2002/2002-02.holdingLocation.shtml - 2002 decision
+
+----------------------------------------------------------------------
+2005 draft XML schema
+-- http://epub.mimas.ac.uk/DC/dc-lib/xsd/dclib.xsd
+

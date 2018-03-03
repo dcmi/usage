@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description rdf:about="http://dublincore.org/usage/meetings/2004/10/Meeting-summary.shtml">
+<dc:title>Summary of DC Usage Board Meeting in Shanghai, October 2004</dc:title>
+<dc:description>This brief summary captures the main decisions made at the Usage Board meeting held at Shanghai Library on 9-10 October 2004.</dc:description>
+<dc:date>2004-11-11</dc:date>
+<dc:format>text/html</dc:format>
+<dc:language>en</dc:language>
+<dc:publisher>Dublin Core Metadata Initiative</dc:publisher>
+</rdf:Description>
+</rdf:RDF>

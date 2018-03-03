@@ -1,0 +1,59 @@
+Current Issues with DC Collection Description Application
+Profile, May 2005
+
+Pete Johnston, 2005-05-11
+
+1. Clarifying the distinction between the isLocatedAt
+(Collection-Location) and isAccessedVia (Collection-Service)
+relationships
+
+Mike Heaney (who developed the Entity-Relation Model on which
+the RSLP CD schema and the DC CD AP is based) is currently
+working on an extension to the model to address this. We
+(some UKOLN-folk) have seen a draft, and the final document
+is due within the next couple of weeks. This document will
+be circulated to the DC CD WG and the definitions of the
+properties may be amended as a result.
+
+2. One-to-One rule concerns
+
+It was suggested that a functional requirement for the DC CD
+AP was that it should support the discovery of collections
+according to the media-type of the items within the collection
+e.g. a collection containing (a significant proportion of)
+items of mp3 format etc.
+
+The WG has not resolved how to express this information,
+within the constraints of the one-to-one rule (the format
+of an item is not the format of acollection). And there have
+been some suggestions that it may not be a requirement.
+
+This issue is currently under discussion on the WG mailing list
+[1].
+
+3. Date Formats
+
+Finalising the DC CD AP depends on DC Date WG and/or Usage
+Board finalising work on date encoding schemes which support
+date ranges and approximate dates. The DC CD WG would welcome
+an update on progress.
+
+4. Identifiers for terms
+
+The development of the DC CD AP has resulted in the creation of
+several new metadata terms not currently available in other
+vocabularies. Although (in most cases, at least), the WG
+has agreed on the definitions of these terms, they have not
+yet been assigned persistent URIs because a suitable naming
+authority and/or maintenanace authority has not been found.
+
+A proposal has been made that the DC CD WG, or an agency
+acting on its behalf, should obtain a PURL top-level domain
+and assign some suitable PURLs for these terms now, with the
+intention of seeking an organisation to take over the longer
+term maintenanace of the terms [2].
+
+[1] http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0505&L=dc-collections&T=0&F=&S=&P=55
+[2] http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0504&L=dc-collections&T=0&F=&S=&P=562
+
+ 

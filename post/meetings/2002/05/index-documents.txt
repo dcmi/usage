@@ -1,0 +1,104 @@
+Title:               DCMI Usage Board documentation
+Maintainer:          Thomas Baker, Usage Board Chair
+Identifier:          http://dublincore.org/usage/documents/
+Latest version:      http://dublincore.org/usage/documents/
+Installed as:        http://dublincore.org/usage/documents/index.shtml
+Date Last Modified:  2002-04-27
+Description:
+
+   This page, periodically updated, provides annotated links
+   to process and policy documentation produced by or relevant
+   to the DCMI Usage Board.  Documentation of DCMI metadata
+   terms -- the DCMI Type Vocabulary, the Dublin Core Metadata
+   Element Set version 1.1, plus all elements and qualifiers
+   approved since DCMES 1.1 -- is in the process of being
+   significantly overhauled and will be available at
+   http://dublincore.org/usage/terms/.
+
+
+== Mission and Principles
+   http://dublincore.org/usage/documents/mission/
+
+   This document describes the scope and mission of the DCMI Usage Board,
+   summarizing the principles of "grammar" according to which it maintains
+   the metadata vocabularies of the Dublin Core Metadata Initiative.  This
+   description complements that of the DCMI Namespace Policy (see below), 
+   which also defines terms of reference.
+
+   Previous versions:
+   2001-06-28: http://dublincore.org/usage/documents/2001/06/28/mission/
+   2001-06-12: http://dublincore.org/usage/meetings/2001/05/mission.html
+   2001-05-07: http://dublincore.org/usage/meetings/2001/05/DCMI-Usage_mission.htm
+
+   Related links:
+   2001-05-07: http://www.dlib.org/dlib/october00/baker/10baker.html
+    
+== Usage Board Administrative Process
+   http://dublincore.org/usage/documents/process/
+
+   Previous versions:
+   2002-03-18: http://128.253.121.110/DC-UB/DC-UBprocess8.html
+   2001-12-22: http://www.ischool.washington.edu/sasutton/dcmi/DC-UBprocess7.html
+   2001-12-08: http://www.ischool.washington.edu/sasutton/dcmi/DC-UBprocess6.html
+   2001-12-01: http://128.253.121.110/DC-UB/DC-UBprocess5.html
+   2001-11-05: http://128.253.121.110/DC-UB/DC-UBprocess4.html
+   2001-06-27: http://dublincore.org/usage/documents/2001/06/27/process/
+   2001-06-12: http://dublincore.org/usage/documents/2001/06/12/criteria/
+   2001-05-02: http://128.253.121.110/DC-UB/DC-UBprocess.html
+
+== Procedure for Approval of DCMI Metadata Terms and Recommendations
+
+   This document complements the Usage Board Administrative
+   Process (above) by providing a table and diagram summarizing
+   the administrative steps for moving proposals.
+
+   Previous versions:
+   2001-06-27: http://dublincore.org/usage/documents/2001/06/27/approval/
+
+== Namespace Policy for the Dublin Core Metadata Initiative (DCMI)
+   http://dublincore.org/documents/dcmi-namespace/
+
+   An XML namespace is a collection of names, identified by a
+   URI reference, that are used in XML documents as element
+   types and attribute names.  The use of XML namespaces to
+   uniquely identify metadata terms allows those terms to be
+   unambiguously used across applications, promoting the
+   possibility of shared semantics.  DCMI adopts this mechanism
+   for the identification of all DCMI terms.  This document
+   specifies the conventions used for identifying current and
+   future DCMI namespaces.  All DCMI recommendations that make
+   use of namespaces will conform to this recommendation.
+
+   Previous versions:
+   2001-10-26: http://dublincore.org/documents/2001/10/26/dcmi-namespace/
+   2001-09-17: http://dublincore.org/documents/2001/09/17/dcmi-namespace/
+   2001-03-09: http://dublincore.org/documents/2001/03/09/dcmi-namespace/
+    
+== DCMI Publication Policy
+   http://dublincore.org/usage/documents/publications/
+
+   This document provides an overview of the types of publications
+   produced by the Dublin Core Metadata Initiative, with a summary
+   of persistence policies and copyright.
+
+   Previous versions:
+   2001-07-03: http://dublincore.org/usage/documents/2001/07/03/publications/
+    
+== Guidelines for Vocabulary and Encoding Scheme Qualifiers
+   http://dublincore.org/usage/documents/vocabulary-guidelines/
+
+   Previous versions:
+   2002-03-23: http://www.lub.lu.se/~traugott/drafts/vocab-guide3.html
+   2001-10-08: http://dublincore.org/usage/documents/2001/10/08/vocabulary-guidelines/
+   2001-10-01: http://www.lub.lu.se/~traugott/drafts/vocab-guide2.html
+   2001-05-01: http://dublincore.org/usage/meetings/2001/05/vocabulary-guidelines.htm
+
+== DCMI Usage Board mailing-list discussion
+   http://www.jiscmail.ac.uk/lists/dc-usage.html
+
+   Membership in the mailing list is limited to members of the
+   Usage Board, however all postings to this list are publicly
+   accessible, with a lag of several hours, at the JISCMAIL Web
+   site.
+
+

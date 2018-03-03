@@ -1,0 +1,189 @@
+DCMI Usage Board teleconference
+
+    Date:                     Tuesday, September 28, 2010
+    Start Time [1]:           1000 Eastern Daylight Time
+                              0700 West coast
+                              1500 UK
+                              2300 Japan
+    Dial-in Number:           +1-218-936-4141
+    Participant Access Code:  334034
+
+    [1] http://www.timeanddate.com/worldclock/fixedtime.html?month=09&day=28&year=2010&hour=14&min=00&sec=0&p1=0
+
+Expected: Tom, Julie, Stefanie, Joe, Akira, Pete
+
+Attached to this posting:
+       dcam.rdf         
+       dcelements.rdf   
+       dcterms.rdf      
+       dctype.rdf      
+
+1. Future of the Usage Board
+
+   Position to be presented to the Oversight Committee in Pittsburgh on
+   19 October.
+
+   https://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=DC-USAGE-BC;c6aee0c0.1009
+
+2. Revision of DCMI Metadata Terms for publication on 11 October
+
+   Some points require confirmation on the call (see below).
+   See decision document:
+
+       http://dublincore.org/usage/decisions/2010/dcterms-changes/index.shtml
+
+   The revised documents and Web pages will be:
+
+       http://dublincore.org/usage/decisions/2010/dcterms-changes/
+       http://dublincore.org/documents/2010/10/11/dces/
+       http://dublincore.org/documents/2010/10/11/dcmi-terms/ - temporarily removed from stage
+       http://dublincore.org/documents/2010/10/11/dcmi-type-vocabulary/
+       http://dublincore.org/documents/dces/
+       http://dublincore.org/documents/dcmi-terms/       
+       http://dublincore.org/documents/dcmi-type-vocabulary/
+       http://dublincore.org/usage/terms/history/2010/10/11/
+       http://dublincore.org/2010/10/11/dcam.rdf         - temporarily removed from stage
+       http://dublincore.org/2010/10/11/dcelements.rdf   - temporarily removed from stage
+       http://dublincore.org/2010/10/11/dcterms.rdf      - temporarily removed from stage
+       http://dublincore.org/2010/10/11/dctype.rdf       - temporarily removed from stage
+       http://dublincore.org/schemas/rdfs/
+       http://dublincore.org/usage/xml/
+       http://dublincore.org/usage/minutes/
+       http://dublincore.org/usage/decisions/
+
+   The main documents and schemas can be seen and downloaded at:
+
+       http://dublincore.org/usageboardwiki/Build20101011
+
+   Specific questions
+
+   -- Title of dcterms.rdf:
+
+        DCMI Metadata Terms in the /terms/ Namespace
+
+   -- Expression of owl:equivalentProperty
+
+3. AOB
+
+
+
+
+======================================================================
+Changes in DCMI Metadata Terms
+
+--  Akira noticed that Pete's rationale for changes to the comments 
+    for dcterms:contributor, dcterms:creator, and dcterms:publisher,
+    which was copied verbatim into the decision document, contained
+    a sentence -- "See [1] for an example of this confusion" -- with
+    no reference for "[1]".  To compound the confusion, the JISCMAIL URIs
+    appear to have changed, so that Pete's original posting is no longer
+    where Akira found it [*], but at [**].  Solution: removed sentence
+    with the missing reference from [***]
+    
+    [*] https://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0903&L=DC-USAGE&P=982
+    [**] https://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0903&L=DC-USAGE&P=1111
+    [***] http://dublincore.org/usage/decisions/2010/dcterms-changes/index.shtml
+
+--  As per Akira's suggestion, changed wording in rationale for dcterms:title
+    range from
+
+         ".. be be rendered in more than one writing system."
+
+    to the less controversial
+
+         ".. be be rendered in more than one script."
+
+    in http://dublincore.org/usage/decisions/2010/dcterms-changes/.
+
+--  Corrected references to ISO 15836 [1] and ANSI/NISO Z39.85 [2].
+    These were already corrected by hand, with an errata note, in the
+    stand-alone DCES document [3], which will now be re-published (without
+    the errata note) as [4].
+
+    I have corrected these references in the xsl source used to generate
+    the updated DCMI Metadata Terms [5].
+
+    [1] http://www.iso.org/iso/search.htm?qt=15836&searchSubmit=Search&sort=rel&type=simple&published=on
+    [2] http://www.niso.org/standards/z39-85-2007/
+    [3] http://dublincore.org/documents/2008/01/14/dces/
+    [4] http://dublincore.org/documents/2010/10/11/dces/
+    [5] http://dublincore.org/usage/decisions/2010/dcterms-changes/
+
+--  Jacco van Ossenbruggen noticed that the non-existent class
+    dcterms:Collection was used as a domain for accrualPolicy,
+    accrualPeriodicity, and accrualMethod, I have corrected this
+    to dcmitype:Collection (http://purl.org/dc/dcmitype/Collection)
+    in the source file [1], so the changes will show up in [2].
+    This change is documented in [3].
+
+    [1] http://dublincore.org/usage/xml/dcterms-properties.xml
+    [3] http://dublincore.org/usage/decisions/2010/dcterms-changes/
+
+--  New Syntax Encoding Scheme for RFC 5646.
+    As decided in the June call, created the datatype http://purl.org/dc/terms/RFC5646
+    following the precedents of dcterms:RFC1766, dcterms:RFC3066, and dcterms:RFC4646.
+
+--  Added range of dcam:memberOf:
+
+         dcam:memberOf rdfs:range dcam:VocabularyEncodingScheme
+
+--  Asserted the equivalence of dcterms:creator and foaf:maker
+    Added to the Decision document:
+
+        RESOLVED: That in agreement with the maintainers of the 
+        FOAF vocabulary, which have added to FOAF the assertion
+
+             foaf:maker owl:equivalentProperty dcterms:creator
+
+        DCMI will assert:
+
+             dcterms:creator owl:equivalentProperty foaf:maker 
+
+    The URIs are:
+        http://xmlns.com/foaf/0.1/maker
+        http://purl.org/dc/terms/creator
+
+    -- NOTE: Added a new tag <EquivalentProperty> to XML source
+       of term description, dcterms-properties.xml.  Will add the
+       information both to the Web pages and the RDF schemas by
+       hand for now.
+
+    -- The introductory text of DCMI Metadata Terms was
+       edited to add "Equivalent Property".
+
+======================================================================
+Changes in RDF schemas
+
+--  ** PENDING USAGE BOARD APPROVAL **
+    Changed titles of RDF schemas.  Having just drafted a
+    glossary entry [1] about DCMI usage of the concept "DCMI
+    Namespace", I couldn't help noticing that the titles of
+    the RDF schemas use "DCMI Namespace" in a way that is
+    arguably wrong...
+
+    --  Changed from:
+        DCMI Namespace for metadata terms related to the DCMI Abstract Model
+        DCMI Namespace for the Dublin Core Metadata Element Set, Version 1.1
+        DCMI Namespace for metadata terms in the http://purl.org/dc/terms/ namespace
+        DCMI Namespace for metadata terms of the DCMI Type Vocabulary
+   
+    --  To:
+        Metadata terms related to the DCMI Abstract Model
+        Dublin Core Metadata Element Set, Version 1.1
+        DCMI Metadata Terms in the /terms/ Namespace
+        DCMI Type Vocabulary
+
+    [1] https://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind1009&L=DC-GLOSSARY&P=6753
+
+--  With dcterms:publisher, used "http://purl.org/dc/aboutdcmi#DCMI" 
+    instead of the value string "The Dublin Core Metadata Initiative".
+
+--  Corrected an error in generating the RDF representation
+    of dcterms:title, the definition of which was presented
+    using dcterms:description instead of rdfs:comment, as the
+    other properties.
+
+-- 
+Thomas Baker <tbaker@tbaker.de>
+
+

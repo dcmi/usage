@@ -1,0 +1,95 @@
+<PRE>
+Title:         Range of dcterms:title
+Identifier:    <a href="http://dublincore.org/usage/meetings/2008/09/berlin/terms-titlerange/.index.html">MEETINGS:/2008/09/berlin/terms-titlerange/.index.html</a>
+Source:        <a href="http://dublincore.org/usage/meetings/2008/09/berlin/terms-titlerange/index.txt">MEETINGS:/2008/09/berlin/terms-titlerange/index.txt</a>
+Directory:     <a href="http://dublincore.org/usage/meetings/2008/09/berlin/terms-titlerange/">MEETINGS:/2008/09/berlin/terms-titlerange/</a>
+Created:       2008-09-17
+
+Shepherd: Tom
+
+A bit of unfinished business.  I would like to have a brief
+discussion about what should go into the decision document,
+then take a formal decision.
+
+ACTION 2008-05-28: Tom to propose literal range for
+dcterms:title for finalization on the list.
+
+----------------------------------------------------------------------
+2008-05-28 Range of dcterms:title and new term proposal (dcterms:titleAsText)
+
+Proposal for new term dcterms:titleAsText (Akira)
+-- <a href="http://dublincore.org/usageboardwiki/TitleProposal">http://dublincore.org/usageboardwiki/TitleProposal</a>
+   <a href="http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0805&L=dc-usage&P=1467">http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0805&L=dc-usage&P=1467</a>
+
+Options discussed:
+
+1) dc:title remains without range.
+   dcterms:title remains without range.
+   No new parallel property.
+   Pro: Same property for both literal and "sequence of words".
+   Con: Providers must choose between literal value and
+        non-literal value. Complex for consumers, OWL-DL problems.
+
+2) dc:title remains without range.
+   dcterms:title gets literal range.
+   dcterms:titleAsSequenceOfWords gets range dcterms:SequenceOfWords (two new terms)
+   Pro: Clear (one property per pattern, with dc:title ambiguous).
+        No complexity-of-processing or OWL-DL problems.
+   Con: Providers must choose.
+
+3) dc:title remains without range.
+   dcterms:title gets literal range.
+   No new parallel property.
+   Pro: Simple for consumers and providers, no OWL-DL problems
+   Con: Transliteration case must be handled with dc:title or with 
+        a newly coined, non-DCMI property.
+
+4) dc:title remains without range.
+   dcterms:title gets range dcterms:SequenceOfWords (one new term)
+   Pro: Straightforward, no OWL-DL problems.
+   Con: Makes use of dcterms:title with literal value invalid.
+
+Resolved: to postpone consideration of the proposed new term and
+to de-couple the creation of a new parallel property from the issue
+of a literal range for dcterms:title.
+
+ACTION 2008-05-28: Tom to propose literal range for
+dcterms:title for finalization on the list.
+
+Discussion:
+
+-- The proposal would actually require the creation of two
+   new terms (an additional proposal for the range class
+   dcterms:SequenceOfWords).
+
+-- The proposed approach would not cover the case of a single
+   title with translations.  The more general requirement
+   seems to be that of treating the title as a resource.
+   But we have already seen that this requirement can come up
+   not just for titles, but for just about any property with
+   a literal range - at any rate, for those properties that
+   are typically used with sequences of words.  This seems
+   like a general issue requiring a general solution.
+
+-- The explanatory overhead would be particularly high for
+   this proposal, in part simply because it is a parallel
+   property (which needs to be explained) and in part because
+   the approach is more specific than simply treating title
+   as resource (which would accommodate the case of a title
+   with multiple translations or a title that needs to be
+   annotated in other ways).
+
+In the meantime, the requirement of multiple lexical forms
+for transliterations can currently be handled using dc:title,
+with its unspecified range.  It is true that this is a complex
+range, but it is no worse in this respect than the cases of the
+SKOS "note" properties or dcterms:description, which also 
+currently have no assigned ranges.
+
+----------------------------------------------------------------------
+Relevant discussion on lists
+
+   <a href="http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0803&L=dc-usage&P=1204">http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0803&L=dc-usage&P=1204</a>
+   <a href="http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0712&L=dc-architecture&P=3679">http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0712&L=dc-architecture&P=3679</a>
+   <a href="http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0702&L=DC-ARCHITECTURE&P=R4809">http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0702&L=DC-ARCHITECTURE&P=R4809</a>
+

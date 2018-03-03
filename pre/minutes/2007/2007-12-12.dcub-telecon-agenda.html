@@ -1,0 +1,321 @@
+<PRE>
+DCMI Usage Board - Wednesday, 2007-12-12 2100 UTC telecon - agenda
+
+This agenda:  <a href="http://dublincore.org/usage/minutes/2007/2007-12-12.dcub-telecon-agenda.html">http://dublincore.org/usage/minutes/2007/2007-12-12.dcub-telecon-agenda.html</a>
+Meeting log:  <a href="http://dublincore.org/usage/minutes/">http://dublincore.org/usage/minutes/</a>
+Jiscmail:     <a href="http://www.jiscmail.ac.uk/lists/dc-usage.html">http://www.jiscmail.ac.uk/lists/dc-usage.html</a>
+Wiki:         <a href="http://dublincore.org/usageboardwiki/">http://dublincore.org/usageboardwiki/</a>
+
+Time: 1300 Seattle / 1600 New York / 2100 London (UTC) / 2200 Berlin / 0600 Tokyo+ / 0800 Sydney+
+See dialing instructions below.
+
+Note: as decided on 2007-11-23, this may be a longer call
+(90") in order to finish Domains and Ranges and start
+discussing Profile Review.
+
+Expected: Tom, Diane, Julie, Joe, Pete, Akira, Andrew
+
+======================================================================
+TELECONS
+-- Previous telecon - 2007-11-23
+   <a href="http://dublincore.org/usage/minutes/2007/2007-11-23.dcub-telecon-agenda.html">http://dublincore.org/usage/minutes/2007/2007-11-23.dcub-telecon-agenda.html</a>
+   <a href="http://dublincore.org/usage/minutes/2007/2007-11-23.dcub-telecon-report.html">http://dublincore.org/usage/minutes/2007/2007-11-23.dcub-telecon-report.html</a>
+
+-- Next telecon
+   Time-slot alternatives are:
+   1. 0600 Seattle / 0900 New York / 1400 London (UTC) / 1500 Berlin / 2300 Tokyo  / 0100 Sydney
+   2. 1300 Seattle / 1600 New York / 2100 London (UTC) / 2200 Berlin / 0600 Tokyo+ / 0800 Sydney+
+
+======================================================================
+NEXT BUILD - goals for 14 January build:
+-- finalize "Revisions to DCMI Metadata Terms" as a UB decision document (see below)
+-- finalize "Domains and Ranges" (see below)
+-- <a href="http://stage.dublincore.org/usage/decisions/#Decision-2008-01">http://stage.dublincore.org/usage/decisions/#Decision-2008-01</a>
+
+======================================================================
+DCTERMS-CHANGES
+-- <a href="http://stage.dublincore.org/usage/decisions/2008/dcterms-changes/index.shtml">http://stage.dublincore.org/usage/decisions/2008/dcterms-changes/index.shtml</a>
+   "Revisions to DCMI Metadata Terms" 
+   To be finalized as a Usage Board decision document
+
+ACTION 2007-11-23: Tom to correct wordings for
+dcterms:LCSH, dcterms:MESH, dcterms:DDC, dcterms:LCC,
+and dcterms:UDC, adding the word "the" as in:
+    specified by the Library of Congress Subject Headings
+    specified by the Medical Subject Headings
+    specified by the Dewey Decimal Classification
+    specified by the Library of Congress Classification
+    specified by the Universal Decimal Classification
+-- DONE - both in source data and in decision documents
+
+ACTION 2007-11-23: Julie to compare the diff of changes between
+the July version and December draft of "Revisions to DCMI Metadata
+Terms", as posted to to DC-USAGE [1], with the draft meeting notes [2].
+[1] <a href="http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0711&L=dc-usage&P=2660">http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0711&L=dc-usage&P=2660</a>
+[2] <a href="http://dublincore.org/usage/minutes/2007/2007-08-26.dcub-meeting-notes.html">http://dublincore.org/usage/minutes/2007/2007-08-26.dcub-meeting-notes.html</a>
+-- DONE
+
+ACTION 2007-11-23: Tom to put full names at top of meeting notes.
+-- DONE - see [MEETING-NOTES]
+
+ACTION 2007-11-23: Tom to get Akira and Andrew votes for
+dcterms:ISO639-3 (UB approval was contingent on approval by at 
+least one of them).
+-- DONE - also approved by Akira and Andrew
+
+ACTION 2007-11-23: Pete to propose sentence in 
+<a href="http://stage.dublincore.org/usage/decisions/2008/dcterms-changes/index.shtml">http://stage.dublincore.org/usage/decisions/2008/dcterms-changes/index.shtml</a>
+to the effect that DCAM introduces a property ("member of") to express the
+relation between a resource and vocabulary of which it is a member.  
+-- PENDING - this is being addressed in the section 
+   "Member terms of the DCMI Type Vocabulary"
+
+ACTION 2007-08-25: Tom to add a note to the terms changes
+document explaining change to the type of the terms in the
+Type Vocabulary.
+-- PENDING - this is being addressed in the section 
+   "Member terms of the DCMI Type Vocabulary"
+
+======================================================================
+DOMAINS-RANGES
+-- <a href="http://stage.dublincore.org/documents/2008/01/14/domain-range/">http://stage.dublincore.org/documents/2008/01/14/domain-range/</a>
+
+ACTION 2007-08-16: Tom to edit "Domains and ranges":  in
+cases where the domain is not specified add '[unspecified]'.
+-- DONE
+
+ACTION 2007-11-23: Tom to clarify with
+Makx the status of Domains and Ranges document
+(<a href="http://stage.dublincore.org/documents/2008/01/14/domain-range/">http://stage.dublincore.org/documents/2008/01/14/domain-range/</a>).
+Maybe use "Notes for DC in RDF" as model
+(<a href="http://dublincore.org/documents/dc-rdf-notes/index.shtml">http://dublincore.org/documents/dc-rdf-notes/index.shtml</a>).
+
+ACTION 2007-08-26: Pete to propose new definition for 
+the proposed class SizeOrDuration.
+-- PENDING - see <a href="http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0712&L=dc-usage&P=161">http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0712&L=dc-usage&P=161</a>
+
+ACTION 2007-08-26: Tom to add a note to the terms documentation
+for each term that has an approved range of rdfs:resource,
+except for 'description' and its sub-properties 'abstract' and
+'tableOfContents', to the effect that the intention is that
+these terms are to be used with non-literal values, with a
+pointer to the AM. The Usage Board is currently investigating
+a model for expressing this intention formally.
+
+ACTION 2007-08-26: Tom to add a note to the documentation for
+'title' saying the intention is that while the Usage Board
+recognises that title is used in practice primarily with
+literal values we also recognise that important uses of
+'title' with non-literal values and so the Usage Board is
+investigating the options for expressing this.
+
+ACTION 2007-08-26: Pete and Mikael to investigate the
+usefulness of defining a class of 'non-literal' and assess what
+the consequences of this would be for machine processability.
+(Usage Board should track issues involved in the notion of
+a range of 'non-literal'.)
+
+ACTION 2007-12-04: Pete to update class diagrams in 
+<a href="http://stage.dublincore.org/documents/2008/01/14/domain-range/">http://stage.dublincore.org/documents/2008/01/14/domain-range/</a>.
+
+======================================================================
+DCTERMS DOCUMENTATION
+
+ACTION 2007-08-25: Tom to add clarification to Introduction
+of <a href="http://dublincore.org/documents/dcmi-terms/">http://dublincore.org/documents/dcmi-terms/</a> -- for example
+rationale for replicating 1.1 terms in the TERMS namespace,
+recommendations on what people should be using by preference,
+and any other -- will circulate to AB for advice on anything
+else that should be in that introduction.
+
+ACTION 2007-08-25: Tom to prepare TERMS document structured
+as follows:
+    DCTERMS first
+    Then 15 1.1 ns -
+    VES
+    SES
+    DCMITYPE
+    DCAM
+
+As of 2007-12-06, the working outline is:
+    Table of Contents
+    Section 1: Introduction and Definitions
+    Section 2: Properties in the /terms/ namespace
+    Section 3: Properties in the legacy /elements/1.1/ namespace
+    Section 4: Vocabulary Encoding Schemes
+    Section 5: Syntax Encoding Schemes
+    Section 6: Classes
+    Section 7: DCMI Type Vocabulary
+    Section 8: Terms related to the DCMI Abstract Model
+
+Issue: Will a user find it disorienting not to find "the Dublin
+Core" (the 15) at the top?  How can we address this?
+
+ACTION 2007-11-23: Tom to use explanation of "member of" (and
+other paragraphs from dcterms-changes) in the introduction
+to the DCTERMS document.
+
+======================================================================
+PROFILE REVIEW
+-- <a href="http://stage.dublincore.org/usage/reviews/index.shtml">http://stage.dublincore.org/usage/reviews/index.shtml</a>
+
+ACTION 2007-08-25: Tom to add to the criteria in the wiki
+<a href="http://dublincore.org/usageboardwiki/ProfileReviewCriteriaNew">http://dublincore.org/usageboardwiki/ProfileReviewCriteriaNew</a>
+a section called "Organizational Context": evaluation questions
+to be asked about who has stewardship of a proposed AP.
+
+ACTION 2007-11-23: Tom to post pointers to descriptions of
+Singapore Framework for use in preparing December 12 discussion
+of Profile review.
+-- DONE - see following...:
+
+-- Joe revised the Profile Review Criteria [1] for the Singapore 
+   meeting in light of the discusson in Barcelona of the Collections
+   Profile review [2].  In Singapore, we noted that the criteria would
+   need to be revised in light of the Singapore Framework [3].
+
+   [1] <a href="http://dublincore.org/usageboardwiki/ProfileReviewCriteriaNew">http://dublincore.org/usageboardwiki/ProfileReviewCriteriaNew</a>
+   [2] <a href="http://dublincore.org/usageboardwiki/CollectionsProfileReviewNotes">http://dublincore.org/usageboardwiki/CollectionsProfileReviewNotes</a>
+
+-- There was an action to revise the Term Decision Tree (which still 
+   dates from March 2006) with regard to Vocabulary versus Syntax 
+   Encoding Schemes [1].  
+
+       ACTION 2007-03-17: Stuart and Joe revise Term Decision Tree:
+       <a href="http://dublincore.org/architecturewiki/TermDecisionTree">http://dublincore.org/architecturewiki/TermDecisionTree</a>.
+       (Note: the difference is basically String vs. Thing.)
+
+   If we continue to see the Term Decision Tree as an important
+   part of profile evaluation, we should pick this up again.
+
+   [1] <a href="http://dublincore.org/architecturewiki/TermDecisionTree">http://dublincore.org/architecturewiki/TermDecisionTree</a>
+
+-- Stuart and Joe have prepared a one-page explanation differentiating
+   VES and SES [1].  From Barcelona:
+
+   Agreed: We need a deeper level of description and
+   differentiation between VES and SES, including definitions.
+   If you have a something already, how do you tell if it is
+   VES or SES.  If an Encoding Scheme tells you what a value
+   string it it's a SES.  If Encoding Scheme defines a class
+   of values, then it is a VES (e.g., concepts).  For example,
+   if you develop a list of educational levels, and if you
+   define a list of strings, then you're defining an SES.
+   If you define a set of concepts and assign URIs to them (as
+   best practice), then you're defining a VES.  Best practice
+   in this scenario is to define a set of concepts with URIs
+   rather than a set of strings.  Agreed that DC-Education
+   is a great test-bed for these concepts.  SES is a datatype
+   in RDF.  VES is like conceptScheme in SKOS, only not limited
+   to concepts.  For discussion: VES is a set of concepts that,
+   once in metadata, allows editors to handle assertion by
+   adding things to it.  SES is a set of strings.
+   
+   [1] <a href="http://dublincore.org/usageboardwiki/SESandVES">http://dublincore.org/usageboardwiki/SESandVES</a>
+
+-- Singapore Framework
+
+   The diagram we used in Singapore is posted at:
+   -- <a href="http://dublincore.org/architecturewiki/SingaporeFramework">http://dublincore.org/architecturewiki/SingaporeFramework</a>
+      (I plan to turn this diagram into a static Web page on dublincore.org.)
+
+   -- Description Set Profile
+      <a href="http://dublincore.org/architecturewiki/DescriptionSetProfile">http://dublincore.org/architecturewiki/DescriptionSetProfile</a>
+    
+   -- Eprints, converted into the Wiki format
+      <a href="http://knowware.nada.kth.se/DCWiki/EprintsApplicationProfile">http://knowware.nada.kth.se/DCWiki/EprintsApplicationProfile</a>
+    
+    Guidelines for application profiles, developed by the CEN
+    workshop in 2004, which will need to be updated in light of the
+    DSP model:
+    
+    -- Dublin Core Application Profile Guidelines 
+       <a href="http://dublincore.org/usage/documents/2005/09/03/profile-guidelines/">http://dublincore.org/usage/documents/2005/09/03/profile-guidelines/</a>
+    
+    Process documents
+    
+    -- Procedure for approval of proposals by DCMI
+       <a href="http://dublincore.org/documents/approval/">http://dublincore.org/documents/approval/</a> (updated August 2007)
+    
+    -- DCMI Usage Board Administrative Process
+       <a href="http://dublincore.org/usage/documents/process/">http://dublincore.org/usage/documents/process/</a>
+    
+    Other relevant links
+    
+    -- DCMI Abstract Model
+       <a href="http://dublincore.org/documents/abstract-model/">http://dublincore.org/documents/abstract-model/</a>
+    -- Mixing and Matching FAQ ("why can't I just re-use my XML 
+       element", Andy, 2005)
+       <a href="http://www.ukoln.ac.uk/metadata/dcmi/mixing-matching-faq/">http://www.ukoln.ac.uk/metadata/dcmi/mixing-matching-faq/</a>
+    -- DCMI Policy on Naming Terms (uppercase for classes, lowercase
+       for properties, etc, Tom and Stu, 2004)
+       <a href="http://dublincore.org/documents/naming-policy/">http://dublincore.org/documents/naming-policy/</a>
+    -- XML, RDF, and DCAPs (differences between an XML element and
+       an RDF property, Pete, 2005)
+       <a href="http://www.ukoln.ac.uk/metadata/dcmi/dc-elem-prop/">http://www.ukoln.ac.uk/metadata/dcmi/dc-elem-prop/</a>
+    -- Element Refinement in Dublin Core Metadata (discussion by Pete 
+       of semantic refinement, 2005)
+       <a href="http://dublincore.org/documents/dc-elem-refine/">http://dublincore.org/documents/dc-elem-refine/</a>
+    -- Guidelines for Assigning Identifiers to Metadata Terms (Andy
+       suggestions re: purl.org, info, xmlns.com, myproject.org, 2004)
+       <a href="http://www.ukoln.ac.uk/metadata/dcmi/term-identifier-guidelines/">http://www.ukoln.ac.uk/metadata/dcmi/term-identifier-guidelines/</a>
+    -- Guidelines for using resource identifiers in Dublin Core metadata
+       (a more recent version of the 2004 guidelines?)
+       <a href="http://dublincore.org/architecturewiki/ResourceIdentifierGuidelines">http://dublincore.org/architecturewiki/ResourceIdentifierGuidelines</a>
+    -- DC-TEXT
+       <a href="http://www.ukoln.ac.uk/metadata/dcmi/dc-text/">http://www.ukoln.ac.uk/metadata/dcmi/dc-text/</a>
+    -- Guidelines for machine-processable representation of Dublin Core 
+       Application Profiles (CEN-workshop paper on representing 
+       application profiles in RDF, 2004)
+       <a href="ftp://ftp.cenorm.be/public/ws-mmi-dc/mmidc144.pdf">ftp://ftp.cenorm.be/public/ws-mmi-dc/mmidc144.pdf</a>
+    -- Legacy (2003) Usage Board definition of "application profile"
+       <a href="http://dublincore.org/usage/documents/profiles/index.shtml">http://dublincore.org/usage/documents/profiles/index.shtml</a>
+    
+
+======================================================================
+OTHER ISSUES
+
+ACTION 2007-11-23: Joe to own the issue
+<a href="http://dublincore.org/usageboardwiki/IssuesWithCoverage">http://dublincore.org/usageboardwiki/IssuesWithCoverage</a>
+for discussion on a future telecon.  (Note: 'spatial' and
+'temporal' are "correct" but 'coverage' is too broad --
+it allows for topic and this is in conflict with 'subject'
+[TK] -- this is an Application Profile issue [TB].)
+
+ACTION 2007-08-26: Tom and Mikael to create a draft "Simple
+Dublin Core" AP using the 1.1 namespace and which models
+everything as literals. Document the legacy functional
+requirements and the organizational context for this AP.
+
+ACTION 2007-08-26: Andrew, Tom, and Dan B, in context of Agents
+TG, to finish the assessment of FOAF against the functional
+requirements. Include context describing kinds of places
+where FOAF would be useful and where it wouldn't be useful.
+Following this assessment, the TG to propose/recommend a
+course of action to DCMI Directorate.
+
+ACTION 2007-03-17: Joe to draft a document discussing
+issues related to principles and purpose of UB decision-making.
+(The context was the decision to define ISO639-2 as a set of codes.)
+Joe will work with Stuart on this (2007-06-08).
+
+======================================================================
+Dialing instructions 
+(<a href="http://dublincore.org/usageboardwiki/DialingInstructions">http://dublincore.org/usageboardwiki/DialingInstructions</a>):
+     1) Dial: local country number
+        -- UK        0800-032-0634
+        -- Germany   0800-181-2311
+        -- Australia 1800-006-458
+        -- Sweden    020-792-635
+        -- Japan     00531-13-0842 "KDD Only"
+        -- US        skip this step...
+     2) You hear: "Welcome... Please enter your 10-digit..."
+        Type: 888-448-7101#
+     3) You hear: "Please enter..."
+        Type:     764-6081#
+
+     Time-slot alternatives are:
+     1. 0600 Seattle / 0900 New York / 1400 London (UTC) / 1500 Berlin / 2300 Tokyo  / 0100 Sydney
+     2. 1300 Seattle / 1600 New York / 2100 London (UTC) / 2200 Berlin / 0600 Tokyo+ / 0800 Sydney+
+</PRE>
+2009-01-29: Changed usageboard/log URIs to usage/minutes URIs.

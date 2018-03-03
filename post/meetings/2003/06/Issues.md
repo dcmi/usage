@@ -1,0 +1,248 @@
+---
+title: 
+date: '2017-09-01T16:21:09+01:00'
+description: 
+draft: false
+creators: []
+contributors: []
+publisher: 
+tags: []
+aliases:
+- "/usage/meetings/2003/06/Issues.html"
+---
+
+<pre>
+Title: Miscellaneous issues for possible consideration in future
+Date: 2003-06-11
+Description: This is the file where I simply "dump" issues which (at
+             the time of dumping) seem like they may some day need to
+             be addressed.
+
+== Naming for Element Refinements. Now that we use
+    stand-alone names for Element Refinements, we have an
+    awkward legacy of eight Element Refinement names that
+    do not stand well on their own -- alternative, created,
+    valid, available, issued, modified, spatial, and temporal.
+    We decided at the Bath meeting to leave them alone for now
+    and to switch to using stand-alone names in the future.
+    However, we could consider whether to create a redundant
+    set of names (e.g., dcq:alternativeTitle) with equivalency
+    relationships to the existing names. If we were to
+    do so, this move would need to be accompanied by an
+    "environmental impact" analysis pointing out practical
+    implications for implementors and for DCMI-maintained
+    implementation recommendations (DC-in-RDF, DC-in-HTML,
+    etc). We would also need to evaluate whether HTML
+    guidelines should be modified to use Element Refinements
+    in a stand-alone manner, as is currently recommended for
+    XML usage (e.g. meta name="DCQ.created" scheme="W3CDTF"
+    content="2001-06-15"). Alternatively, and perhaps
+    more easily, we might consider merely changing the
+    human-readable labels (e.g., "Alternative Title").
+
+== Definition of dc:title. The definition of "title" should
+    be reworded to eliminate an inherent assumption that a
+    resource must have a well-defined, unique, formal title.
+    (Roland, Oct 2001)
+
+== Qualification of dc:format. As proposed in 1999, the
+    Format qualifier "medium" is only applicable to physical
+    resources and "IMT" is only applicable to virtual
+    resources. Do we need to revise the official definitions
+    to clarify something like the following? (Andy, Feb 25
+    2002) :
+    1) genre - the representational class of the resource
+       (DC.Type)
+    2) medium - the physical carrier of the information
+       (DC.Format/medium)
+    3) encoding - the way in which the data is encoded on the
+       medium (DC.Format/IMT)
+
+== RDDL Core. RDDL in effect defines its own core element
+    set for resource discovery -- one that overlaps in awkward
+    ways with Dublin Core. See <a href="http://www.openhealth.org/RDDL/">http://www.openhealth.org/RDDL/</a>
+    and <a href="http://www.openhealth.org/RDDL/rddl.rdfs">http://www.openhealth.org/RDDL/rddl.rdfs</a>. Is this
+    a problem? (Oct 2001).
+
+== Use of Dublin Core for non-DLO resources. Is it acceptable
+    to use DC metadata to describe non-DLOs (such as people,
+    organisations, museum artefacts, events, hurricanes,
+    species)? Or: does DCMI want to say that it is *not*
+    acceptable to describe these kinds of things using DC
+    metadata? (Andy, Jan 2002; Liddy Nevile in Dec 2002)
+    Diane thinks it's useful to have a consensus on this, but we
+    might want to have someone write a discussion starter couple
+    of pages on this before we meet; there's a lot of history
+    to this one.
+
+== DCMI Type Vocabulary and Dublin Core scope. If DCMI
+    wants to say that it is *not* acceptable to describe
+    non-DLOs using DC metadata, do we need to indicate
+    somehwere that the current DCMI Type list is _not_ intended
+    to be an exhaustive list of the kinds of resources that DC
+    can be used to describe? To what extent is the current
+    list of types in the DCMIType list an exhaustive list
+    of the kinds of resources that can be described using
+    DC metadata? (Andy, Jan 2002)
+
+== Guidelines on using Dublin Core for non-DLO resources.
+    If it is acceptable to describe non-DLOs using DC metadata,
+    does DCMI want to provide any best-practice guidelines for
+    how to do it in specific instances, such as for people?
+    If so, what DCMI WGs would do this? (Andy, Jan 2002)
+
+== Encoding commonly used identifiers as URIs. Andy has
+    drafted some guidelines about encoding various
+    commonly used identifiers as URIs in DC metadata.
+    See <a href="http://www.ukoln.ac.uk/metadata/dcmi/dc-identifiers/">http://www.ukoln.ac.uk/metadata/dcmi/dc-identifiers/</a>
+
+== Encoding schemes for dc:relation and dc:source. Should all
+    encoding schemes for Identifier hold also for Relation and
+    Source? Do we need to capture this in our documentation?
+    Diane thinks we should first agree whether we want to do
+    something similar to the creator/contributor thing as a
+    precursor to considering this question.
+
+== Encoding scheme "URI" for Description and Rights (Rebecca,
+    Oct 12 2001)
+
+== Guidelines on using URIs as values. For example,
+    in Identifier, Relation and Source, the use of 'URI' as an
+    encoding scheme means "here is the value and it is a URI".
+    In Rights and Description, the use of 'URI' as an encoding
+    scheme would mean "the value can be found at the following
+    URI". These two things are not the same and therefore
+    shouldn't be encoded using the same mechanism. (Andy,
+    Oct 14 2001). This issue was discussed in Florence, where
+    it was not really resolved, though for this particular
+    case it was noted that URI had never been voted on as an
+    encoding scheme for dc:description and that therefore
+    it is not currently permissible to use it in this way.
+    Do we need to cover this issue in our documentation?
+
+== Best practice for dc:date. The "best practice" with date
+    doesn't fit with the "best practice" of the Qualifiers
+    recommendation (Roland, Oct 2002)
+
+== Scope of dc:language. Language should not be restricted
+    to natural languages. Languages in the sense of computer
+    science can carry intellectual content, but the "best
+    practice" assertion seems to exclude that (Roland,
+    Oct 2002).
+
+== Comment for dc:subject. The Comment for dc:subject could
+    be read as condoning usage such as
+    "&lt;dc:subject&gt;252&lt;/dc:subject&gt;". Roland strongly disagrees
+    with this and thinks it needs clarification (Roland,
+    Oct 2002). The comment currently reads:
+
+       Typically, a Subject will be expressed as keywords,
+       key phrases or classification codes that describe
+       a topic of the resource. Recommended best practice
+       is to select a value from a controlled vocabulary or
+       formal classification scheme.
+
+== Applicability of encoding schemes to Element
+    Refinements. According to the term declaration, W3CDTF and
+    Period only apply to Date, not any of the Date refinements.
+    Should they apply to Date AND all its refinements (both
+    recommended and conforming)? Diane points out that this 
+    is really the same question as in Source and Relation.
+
+== Capturing informal usage advice. In response to a question
+    from Chris Croome on 7 August, there were
+    helpful postings from Andy Powell and Jon Hanna,
+    after which Chris asked whether we have any way to
+    capture and make available clarifications of this kind.
+    <a href="http://www.jiscmail.ac.uk/cgi-bin/wa.exe?A2=ind0208&amp;L=dc-general&amp;T=0&amp;O=A&amp;P=2886">http://www.jiscmail.ac.uk/cgi-bin/wa.exe?A2=ind0208&amp;L=dc-general&amp;T=0&amp;O=A&amp;P=2886</a>
+    Where could we put such information? How would this
+    relate to the User Guide activity? AskDCMI is a recent
+    and very relevant development in this regard.
+
+== 2002-11-05: Relationship between
+    <a href="http://www.jiscmail.ac.uk/cgi-bin/wa.exe?A2=ind0211&amp;L=dc-usage&amp;T=0&amp;F=&amp;S=&amp;P=54">http://www.jiscmail.ac.uk/cgi-bin/wa.exe?A2=ind0211&amp;L=dc-usage&amp;T=0&amp;F=&amp;S=&amp;P=54</a>
+    btw dc:contributor/1.0 and dc:contributor/1.1
+
+== Should DCMI use the term 'application profile' to describe
+    sub-sets of its vocabulary? Arguments "contra": An
+    application profile 'uses' standard terms in an optimised
+    way for a particular application; there are an infinite
+    variety of application profiles that could be constructed.
+    DCMI has said it is not in the business of 'approving'
+    an unlimited number of application profiles. DCMI
+    recommendations need to advise on 'generic' use of DCMI
+    terms. Should we 'approve' particular application profiles
+    which may well emerge in a fairly arbitrary way? How will
+    DCMI distinguish between application profiles it wants
+    to consider in the approval process and those it does not??
+
+== 2002-07-10: Element name case. Directorate will soon
+    issue a policy statement about this that will clarify
+    recommendations about retaining element name case
+    as specified in existing schemas (lower case initial
+    characters). This policy statement will need to be
+    reflected in existing documents (notably, a change in the
+    DCMI Namespace Policy document) and alerts to the issue
+    should probably appear elsewhere (the RDF Specification,
+    for example). At such time as can be done, this [policy
+    should be reflected in future revisions of basic semantic
+    declarations (the RFCs, Z39.85, and future ISO documents).
+
+== The OASIS DocBook Candidate Release
+    makes a point of being compatible with Dublin Core _1.0_:
+    <a href="http://www.oasis-open.org/committees/docbook/docbook-4.2-CR1.html">http://www.oasis-open.org/committees/docbook/docbook-4.2-CR1.html</a>.
+
+== DCMI Publication Policy
+    <a href="http://dublincore.org/usage/documents/2001/07/03/publications/">http://dublincore.org/usage/documents/2001/07/03/publications/</a>
+    This document was an attempt to restructure the DCMI Web
+    site - we need to look at this in the context of Web site
+    redesign. No action required at this moment.
+
+== Potential role of UB in oversight of schemas (RDF and XML
+    encodings) used in the DCMI registry or published on the Web
+    for use in Semantic Web applications.
+
+== In approving new term proposals, what weight should UB give
+    to working-group process, buy-in, and proven implementation
+    experience. To what extent is UB in job of a
+    priori/posteriori. How strict? If nobody complains, is
+    that sufficient proof to the UB that there are no adverse
+    effects?
+
+== On whose judgement and with whose approval can the UB revise
+    and evolve its own process? Currently, there is a
+    placeholder in the process document (Stuart Dec 12 2001)
+
+== "Related to this, I know the IMT encoding scheme is only valid
+    for the Format element and not the medium element refinement
+    [1]. Do we have a similar issue with W3CDTF - the schema
+    makes it valid only for Date and temporal, but not any of the
+    Date element refinements (created, et. al.). I guess this is
+    a reflection of how the usage of W3CDTF is defined in the DC
+    Terms documents. Though, looking back at the DC Qualifiers
+    document, it wasn't clear whether an encoding scheme valid
+    for an element is also valid for its element refinements -
+    as discussed [1] IMT isn't intended for use in medium but
+    surely W3CDTF is intended for use in created, modified, etc.?
+
+== Carol van Nuys of the Norwegian Nasjonalbiblioteket, copied
+   to this message, is having trouble translating the comment
+   for Alternative (Title), which reads: "This qualifier
+   can include Title abbreviations as well as translations."
+   She assumes that it is the *value* of the qualifier which
+   can include Title abbreviations, but the wording is a
+   bit imprecise and, to some people, seems to actually say
+   something else.
+
+== Status and documentation of DCMES 1.0 elements:
+   <a href="http://www.w3.org/Search/9605-Indexing-Workshop/ReportOutcomes/S6Group2.html">http://www.w3.org/Search/9605-Indexing-Workshop/ReportOutcomes/S6Group2.html</a>:
+   Shows identifier as being <a href="http://purl.org/metadata/dublin_core_elements#title">http://purl.org/metadata/dublin_core_elements#title</a>,
+   which does in fact resolve to DCMES 1.0 document.
+   Also, the DCMI Metadata Terms document
+   <a href="http://dublincore.org/documents/dcmi-terms/">http://dublincore.org/documents/dcmi-terms/</a> does not show
+   1.0 terms (but neither did current-elements document).
+   Term-History (not yet available) shows 1.1 elements replacing 1.0.
+   Likewise, <a href="http://dublincore.org/documents/1999/07/02/dces/">http://dublincore.org/documents/1999/07/02/dces/</a> "replaces"
+   (actually supersedes) <a href="http://dublincore.org/documents/1998/09/dces/">http://dublincore.org/documents/1998/09/dces/</a>.
+
+</pre>

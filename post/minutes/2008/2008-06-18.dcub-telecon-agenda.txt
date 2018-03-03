@@ -1,0 +1,95 @@
+Agenda - telecon 2008-06-18 2100 UTC
+
+This agenda:  http://dublincore.org/usage/minutes/2008/2008-06-18.dcub-telecon-agenda.html
+UB meetings:  http://dublincore.org/usage/minutes/
+UB mail list: http://www.jiscmail.ac.uk/lists/dc-usage.html
+UB wiki:      http://dublincore.org/usageboardwiki/
+              http://dublincore.org/usageboardwiki/#Issues - where long-term issues are tracked
+
+Time: 2100 UTC - 1400 Seattle / 1700 New York / 2200 London / 2300 Berlin / 0600 Tokyo+ / 0700 Sydney+
+
+Expected: Tom, Diane, Julie, Pete, Andrew, Stefanie, Akira
+Regrets: Joe 
+
+----------------------------------------------------------------------
+May 28 telecon
+
+----------------------------------------------------------------------
+Karen Coyle's Application Profile guidelines
+
+-- http://www.kcoyle.net/temp/dcap/
+
+----------------------------------------------------------------------
+Use of dc:source in SKOS primer
+-- http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0806&L=dc-usage&P=1727
+   http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0806&L=dc-usage&P=1980
+
+----------------------------------------------------------------------
+Review of Eprints/SWAP
+
+Goal: to complete a first-run review of Eprints/SWAP [1]
+by late July.
+
+Rationale: we assume that doing the review will reveal places
+where the Review Criteria [2] need to be tightened, expanded,
+or otherwise edited (especially in light of the Description
+Set Profile specification [3]).  Having draft reviews by
+July will allow us time for revisions and a second round of
+reviews if necessary.
+
+Method: Given five task areas, assign two reviewers per area.
+Provisional assignments (pending agreement from Andrew and
+Akira):
+
+-- Objectives and Scope, Functional Requirements, Domain Model
+   Andrew and Akira
+
+-- DSP templates and constraints
+   Joe and Pete
+
+-- DSP metadata terms referenced
+   Diane and Julie
+
+-- Syntax guidelines
+   Tom and Stefanie
+
+[1] http://dublincore.org/usageboardwiki/EprintsProfileReview
+[2] http://colab.mpdl.mpg.de/mediawiki/ApplicationProfiles/ProfileReviewCriteriaDe
+[3] http://dublincore.org/documents/2008/03/31/dc-dsp/
+
+----------------------------------------------------------------------
+Major goals by September meeting:
+-- Review of Eprints/SWAP
+-- Review of Karen Coyle's Guidelines for Application Profiles
+-- Profile Review Criteria
+-- Other issues and actions as listed on http://dublincore.org/usageboardwiki/
+
+======================================================================
+Telecons -- http://freeconference.com/
+
+-- 2008-07-30 Wed 1300 UTC (time slot 1) - no regrets! - see http://www.doodle.ch/8cevds5txqsb2rzs
+-- 2008-08-20 Wed 1300 UTC (time slot 1) - regrets: Joe
+-- 2008-09-03 Wed 1300 UTC (time slot 1) - regrets: Joe
+
+Telecon time-slot alternatives are:
+     1. 1300 UTC - 0600 Seattle / 0900 New York / 1400 London / 1500 Berlin / 2200 Tokyo  / 2300 Canberra
+        http://www.timeanddate.com/worldclock/fixedtime.html?month=07&day=30&year=2008&hour=13&min=00&sec=0&p1=0
+     2. 2100 UTC - 1400 Seattle / 1700 New York / 2200 London / 2300 Berlin / 0600 Tokyo+ / 0700 Sydney+
+        http://www.timeanddate.com/worldclock/fixedtime.html?month=07&day=30&year=2008&hour=21&min=00&sec=0&p1=0
+
+======================================================================
+DIALING INSTRUCTIONS 
+(http://dublincore.org/usageboardwiki/DialingInstructions):
+     1) Dial: local country number
+        -- UK        0800-032-0634
+        -- Germany   0800-181-2311
+        -- Australia 1800-006-458
+        -- Sweden    020-792-635
+        -- Japan     00531-13-0842 "KDD Only"
+        -- US        skip this step...
+     2) You hear: "Welcome... Please enter your 10-digit..."
+        Type: 888-448-7101#
+     3) You hear: "Please enter..."
+        Type:     764-6081#
+
+2009-01-29: Changed usageboard/log URIs to usage/minutes URIs.

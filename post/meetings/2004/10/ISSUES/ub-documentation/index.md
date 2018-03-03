@@ -1,0 +1,56 @@
+---
+title: 
+date: '2017-09-01T16:21:09+01:00'
+description: 
+draft: false
+creators: []
+contributors: []
+publisher: 
+tags: []
+---
+
+<pre>
+Title: Preservation policy for UB documentation
+Identifier: <a href="/usage/meetings/2004/10/ISSUES/ub-documentation/">http://dublincore.org/usage/meetings/2004/10/ISSUES/ub-documentation/</a>
+See also: <a href="/usage/meetings/2004/10/ISSUES/">http://dublincore.org/usage/meetings/2004/10/ISSUES/</a>
+Created: 2004-09-14
+Agenda frozen: 2004-10-02 07:25, Saturday
+Archived: 2004-11-10
+Maintainer: Tom Baker
+Note: If any of the links below are broken, please refer to 
+                   the meeting packet
+                   (<a href="/usage/meetings/2004/10/Meeting-packet.pdf">http://dublincore.org/usage/meetings/2004/10/Meeting-packet.pdf</a>) 
+                   for copies of the key documents discussed at the meeting.
+
+As of September 2004, the UB Process document (Point 2.3.2) says: 
+
+    All materials pointed to in the agenda are archived at
+    <a href="/usage/meetings/">http://dublincore.org/usage/meetings/</a> after the final
+    pre-meeting version of the agenda has been distributed. After
+    the meeting, the archive version of the agenda is edited to
+    point to these archive copies.
+
+The best example of this is the tree of materials under:
+
+    <a href="/usage/meetings/2004/03/ISSUES/">http://dublincore.org/usage/meetings/2004/03/ISSUES/</a>
+
+all of which are archived on the DCMI Web site and thus citable
+using DCMI URLs. This ensures that copies of all relevant
+materials, "frozen" in time, will be available in future.
+
+However, archiving all of those materials at
+<a href="http://dublincore.org/">http://dublincore.org</a> and editing all those URLs to point to
+DCMI-archived materials is alot of work. The alternative is
+to let the PDF meeting packet -- which holds copies of all
+documents relevant to a given meeting -- fulfill the function
+of preservation, e.g.:
+
+    <a href="/usage/meetings/2004/03/Bath-meeting-packet.final.pdf">http://dublincore.org/usage/meetings/2004/03/Bath-meeting-packet.final.pdf</a>
+
+In Shanghai, I would like to hear the opinion of the UB
+on whether the extra work involved in archiving everything
+locally is worth it in the case of UB meeting materials --
+or whether it would suffice to let the PDF packet serve this 
+function.
+
+</pre>

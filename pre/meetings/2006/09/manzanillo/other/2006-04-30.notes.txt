@@ -1,0 +1,28 @@
+----------------------------------------------------------------------
+2006-04-30 - Discussed "Alternative Paths to Semantic Specificity" 
+
+Decision Tree - this is good when things are clear, but
+perhaps not when things are unclear.  When do you define
+multiple properties and when do you define a single property
+with multiple encoding schemes?  AND is this something about
+which the UB can make a decision on?
+
+AGREED: UB should make a statement about this.  Where would
+this be stated?  In Application Profiles.  This relates to
+best practices for creating good descriptions.
+
+ISSUE: We may not be in conformance with our own decision
+on this.  This needs to be addressed in a concrete way.
+The word "or" is a problem.  Therefore defining domains and
+ranges is very important.
+
+There is also a measure of closeness -- in properties to
+resources.  This should be done in Guidelines to Creating
+Application Profiles.
+
+CAPTURED: In defining a range to a proposed property if the
+word "or" comes up you potentially have a problem.  How many
+words different in the proposed definition?  How similar
+are the semantics of the resource to the vocabulary encoding
+schemes?
+

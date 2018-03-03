@@ -1,0 +1,235 @@
+<PRE>
+----------------------------------------------------------------------
+On 2005-06-03, Pete Johnston wrote:
+
+Just to bump this point I raised a while ago:
+
+On Fri, 11 Mar 2005 17:46:08 -0000, Pete Johnston &lt;p.johnston@UKOLN.AC.UK&gt;
+wrote:
+
+&gt;OK... if the intent is that the value of dcterms:educationLevel really
+&gt;_is_ a class of entity e.g. a group of learners (which was what I
+&gt;half-suspected, and which _would_ make sense of the subproperty
+&gt;relation), then
+&gt;
+&gt;(a) the current name/label are slightly confusing ("education level"
+&gt;implies (to me, at least) an abstract notion rather than a group of
+&gt;learners)
+&gt;(b) the current definition literal is wrong
+&gt;
+&gt;Also, I suspect (though I'm guessing!) implementers have been using this
+&gt;property with values that are "statements" (as the current definition
+&gt;states) or "levels" of some sort (e.g. "qualification levels") (as the
+&gt;current name/label suggest), both of which are different things from
+&gt;"classes of entity", and neither of which are compatible with the
+&gt;subproperty assertion. :-(
+
+I had a message from Thomas Fischer at Goettingen a couple of
+days ago (part of which I forward here with his permission),
+in which he made exactly the same point:
+
+&lt;quote&gt;
+1.
+Audience: A class of entity for whom the resource is intended or useful.
+
+educationLevel: A general statement describing the education or training
+context. Alternatively, a more specific statement of the location of the
+audience in terms of its progression through an education or training context.
+
+I don't understand "class of entity", but doubt that "A general statement
+describing the education or training context." fits this description.
+&lt;/quote&gt;
+
+I can't remember if this was one of the things covered under the general
+clean up of labels/definitions but I think it probably wasn't? And I'm not
+sure whether fixing this can be done in a way that would still qualify as
+"editorial errata"?
+
+----------------------------------------------------------------------
+Date: Wed, 21 Sep 2005 07:58:39 -0700
+From: Stuart Sutton &lt;sasutton@U.WASHINGTON.EDU&gt;
+Subject: Re: [DC-USAGE] Is dcterms:educationLevel a subproperty of dcterms:audience?
+To: DC-USAGE@JISCMAIL.AC.UK
+
+Well, I continue to assert that the values of educationLevel are
+"classes of entities" and that when I assert an instance of the property
+to be "grade 5", I am meaning the category of students (AgentGroup) that
+are situated (in the US and Canada) at a certain point in their
+progressing through the "system".  That is why it was conceived as a
+subproperty of audience and not some new property.  However, I am afraid
+that changing the definition will probably not help at all in changing
+practice in the real world.
+
+----------------------------------------------------------------------
+Date: Wed, 21 Sep 2005 15:44:40 +0100
+From: Pete Johnston &lt;p.johnston@UKOLN.AC.UK&gt;
+Subject: Re: [DC-USAGE] Is dcterms:educationLevel a subproperty of dcterms:audience?
+To: DC-USAGE@JISCMAIL.AC.UK
+----------------------------------------------------------------------
+
+I'm not sure where to put this just now, but seeing as I started the
+thread here a while ago....
+
+I think the work of the DC-RDF-Taskforce looking at property ranges and
+domains
+
+<a href="http://www.ukoln.ac.uk/twiki/bin/view/Metadata/DCPropertyDomainsRanges">http://www.ukoln.ac.uk/twiki/bin/view/Metadata/DCPropertyDomainsRanges</a>
+
+highlights this problem quite clearly.
+
+Andy has tentatively assigned an rdfs:range of some:AgentGroup to the
+property dcterms:audience
+
+  dcterms:audience rdfs:range some:AgentGroup .
+
+which seems quite reasonable, and this implies that whenever I find
+
+  resource:X dcterms:audience _:x .
+
+I can conclude that
+
+  _:x rdf:type some:AgentGroup .
+
+or: the value is an AgentGroup (an instance of the class
+some:AgentGroup).
+
+I note we haven't yet suggested a range for dcterms:educationLevel, but
+the current definition 
+
+"A general statement describing the education or training context.
+Alternatively, a more specific statement of the location of the audience
+in terms of its progression through an education or training context."
+
+suggests that the range should be the class of Statements of some sort
+(cf dc:rights, which has a range of some:RightsStatement)
+
+So for the sake of argument let's say
+
+  dcterms:educationLevel rdfs:range some:EdLevelStatement .
+
+This implies that whenever I find
+
+  resource:X dcterms:educationLevel _:x .
+
+I can conclude that
+
+  _:x rdf:type some:EdLevelStatement .
+
+But also from the subproperty relation, 
+
+  dcterms:educationLevel rdfs:subPropertyOf dcterms:audience .
+
+I can conclude
+
+  resource:X dcterms:audience _:x .
+
+and so
+
+  _:x rdf:type some:AgentGroup .
+
+i.e. the value is both an AgentGroup and an Education Levels Statement.
+I find it hard to imagine a case where that makes sense :-( 
+
+So I think either 
+
+(a) the subproperty assertion is wrong and should be withdrawn or 
+(b) the definition of educationLevel needs to be amended so that its
+values are "classes of entity....", which Stuart suggested was the
+intent [1]
+
+However as I said back at [2] I suspect that current use of
+dcterms:educationLevel probably includes values that are either
+"statements" or "levels" and not just "classes of entity..." :-(
+
+Pete
+
+[1] <a href="http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0503&L=dc-usage&P=5801">http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0503&L=dc-usage&P=5801</a>
+[2] <a href="http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0503&L=dc-usage&P=6068">http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0503&L=dc-usage&P=6068</a>
+
+----------------------------------------------------------------------
+Date:         Fri, 11 Mar 2005 11:09:21 -0000
+From:         Pete Johnston &lt;p.johnston@UKOLN.AC.UK&gt;
+Subject:      Is dcterms:educationLevel a subproperty of dcterms:audience?
+
+Having had a few queries about element refinements recently
+(partly as a result of the document currently out for review
+on the AB list), I've been looking at some of the current
+DCMI subproperty assertions, and I've ended up asking myself:
+
+Is it correct to describe dcterms:educationLevel as a
+subproperty/refinement of dcterms:audience (N.B. as both of
+these properties are currently defined) ?
+
+dcterms:educationLevel 
+====================== 
+
+Definition : A general statement describing the education or
+training context. Alternatively, a more specific statement
+of the location of the audience in terms of its progression
+through an education or training context.
+
+dcterms:audience 
+================ 
+
+Definition: A class of entity for whom the resource is intended
+or useful.
+
+Comment: A class of entity may be determined by the creator
+or the publisher or by a third party.
+
+Is it the case that: 
+
+for every statement (1) x dcterms:educationLevel y 
+
+it is also true that (2) x dcterms:audience y 
+
+? 
+
+I really don't think it _is_ the case, and I'm really
+uneasy about that subproperty assertion. If the value
+in statement (1) is a "general statement...." or a "more
+specific statement...." (which is what the definition of
+dcterms:educationLevel says it should be), I can not see how
+that value can also be "a class of entity...".
+
+For example, I think the definition of dcterms:educationLevel
+permits me to say
+
+x dcterms:educationLevel "This resource is for beginner
+guitarists."
+
+The subproperty assertion then allows me to infer 
+
+x dcterms:audience "This resource is for beginner guitarists." 
+
+But that value is not "a class of entity...."; it's a
+statement. 
+
+Now, yes, it may be a statement which includes
+some information _about_ a class of entity, but that is
+not the same thing. I know, I know, that must seem like the
+most awful nit-picking, and a human reader might manage the
+distinction, but subproperty assertions are designed to be
+used by software applications, and an application which is
+expecting the value to be "A class of entity" will _not_
+manage that inferred statement correctly. 
+
+(And in fact, the decision _not_ to assert that
+dcterms:rightsHolder was a subproperty of dc:rights was taken
+precisely to avoid ending up with the reverse situation,
+and supporting inferences that an entity - a value of
+dcterms:rightsHolder - was "information about rights held...",
+which is what dc:rights says its values should be.) 
+
+Now then, it may be that the intent with dcterms:educationLevel
+really was/is that values are "classes of entity" and
+indeed the examples in the term proposal [1] ("Grade 5" =
+the class of students at that Grade; "Preschool" = the class
+of preschool children) do seem to hint this is the case. 
+
+But (IMHO) the current definitions of the properties do make
+the subproperty assertion problematic. :-( 
+
+(Sorry!)
+
+</PRE>

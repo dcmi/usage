@@ -1,0 +1,105 @@
+Title:        Namespace Registration Issues
+Author:       Stu Weibel
+Date:         2004-03-12
+
+
+I. Introduction
+
+Registration and maintenance of terminology namespaces is
+a key requirement for effective deployment of vocabularies
+on the Web, for metadata in particular and for Semantic Web
+activities in general.
+
+This requirement has been recognized within the DCMI community
+for a number of years, and this recognition has motivated
+the development of a namespace registration facility within
+our community, to the point of the development of actual
+software and procedures to support namespace registration.
+We have not deployed this infrastructure to date
+
+II. Impediments to namespace registration:
+
+The fact that DCMI has not deployed this infrastructure is
+the result of the following factors:
+
+1. Launching, testing, and operating this infrastructure
+has required a significant amount of focussed attention on
+the part of DCMI administrators, developers, and Usage Board
+members to assure that the technology, the policy, and the
+administrative apparatus is in place and working as intended.
+The coordinated effort necessary to achieve this has not
+been available, though significant effort has been expended
+at various times toward meeting each of the three facets.
+
+2. Partly as a result of the efforts that *have* been made,
+it has become apparent that the problem is more difficult
+than was first imagined.  I think it is significant that
+DCMI is perhaps the first Web initiative that has tried to
+cope with these issues in a systematic way.  That we have
+backed away from full deployment on a couple of occasions
+reflects an appropriate degree of conservatism and caution (as
+well as the vagaries of coordinating a distributed effort of
+great complexity).  Once begun, this task cannot be abondoned
+without significant penalty for users who adopt it.
+
+3. It has become evident that DCMI's problem is a subset of
+a larger problem of the incompleteness of the "architecture
+of identity" in Web architecture.  My belief is that it is
+a risky and ill advised for DCMI to deploy a local solution
+to a more global problem.  Still, the need is there, and the
+question remains as to how to meet it.
+
+Possible solutions:
+
+1. Deploy the namespace registration facility that DCMI
+has developed.
+
+This is risky, but we're pioneers, and we've taken greater
+risks.  The more important factor that mitigates against
+it is that we cannot resource the activity with confidence,
+and there is no imminent likelihood that this will improve.
+If I am wrong about this, at this point in the discussion
+someone will be stepping forward with assured resources and
+committment to manage the task.
+
+2. Adopt the "info" URI registration mechanism for namespace
+registration
+
+This path has the virtue of associating our problem with
+others who share it, and hence with greater likelihood that a
+broader community and institutional committment will emerge
+to support it.  The prototype is in place and available,
+and a number of namespaces have been registered in it to date.
+
+Still, prototypes are not production systems, and success is
+not assured.  There has been substantial pushback from within
+the URI community on the prospects for "info" as an endorsed
+part of the URI architecture, and my own best guess at this
+time is that it will not become an IETF standard.  It is,
+however, part of the OpenURL standard, and enthusiasm from
+a number of other potential adopters may render the lack of
+IETF adoption less important.
+
+It is unclear as to whether "info" functionality is as closely
+tailored to the functional requirements for the management
+of terminology as we would like it.  It is probably as good
+as we would achieve in a first round of our own registration
+protocol, but we won't have as much control over change.
+
+3. Develop (or participate in the development of)
+terminology-specific identity schemes that help to fill in the
+missing components of the Web "Identity Architecture".  This is
+a substantial challenge and will require a lot of IETF and
+W3C politicing. It is a middle term, not a short term, path.
+I expect to be involved in some such effort, possibly as part
+of a grant proposal, irrespective of the course DCMI takes.
+
+4. Do nothing beyond encouraging namespace managers to declare
+and maintain namespaces for their terminologies in a way that
+is likely to be consistent.  This is actually a respectable
+position -- low risk, and a suitable policy white paper on
+the subject might have significant effect.
+
+Hybrids of the above solutions are also possible.
+
+

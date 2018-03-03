@@ -1,0 +1,74 @@
+---
+title: 
+date: '2017-09-01T16:21:09+01:00'
+description: 
+draft: false
+creators: []
+contributors: []
+publisher: 
+tags: []
+---
+
+<pre>
+Topic: Encoding Scheme Types
+Identifier: <a href="/usage/meetings/2005/05/washdc/topic-encoding-scheme-types/">http://dublincore.org/usage/meetings/2005/05/washdc/topic-encoding-scheme-types/</a>
+See also: <a href="/usage/meetings/2005/05/washdc/">http://dublincore.org/usage/meetings/2005/05/washdc/</a>
+Created: 2005-05-12
+Modified: 2005-05-16 17:28, Monday
+Maintainer: Tom Baker
+
+For each of the currently recommended encoding schemes we
+need to determine if it is a Syntax Encoding Scheme or a
+Vocabulary Encoding Scheme.
+
+In the DCMI Abstract Model, these are defined as follows:
+
+    Each resource may be a member of one or more classes.
+    Note that where the resource is a value, the class is
+    referred to as a vocabulary encoding scheme.
+
+    Syntax encoding schemes are also known as 'datatypes'
+    in some contexts.
+
+In Washington, we need to decide on the following:
+
+1) Whether we accept Andy's criteria for deciding on the
+   type of encoding scheme and his interpretation of the
+   existing encoding schemes in light of those criteria [1].
+
+   [1] <a href="/usage/meetings/2005/05/washdc/public/2005-05-12.encoding-scheme-types.txt">http://dublincore.org/usage/meetings/2005/05/washdc/public/2005-05-12.encoding-scheme-types.txt</a>
+
+2) How a decision to declare these types should be reflected
+   in DCMI documentation. Specifically, the "Type of Term"
+   is currently shown in the Terms source data (which is used
+   to generate Web pages and RDF schemas) for each encoding
+   scheme as:
+
+       http: //dublincore.org/usage/documents/principles/#encoding-scheme
+
+   Do we want to change each of those into one of the following:
+
+       http: //dublincore.org/usage/documents/principles/#vocabulary-encoding-scheme
+       http: //dublincore.org/usage/documents/principles/#syntax-encoding-scheme
+
+   In
+
+       http: //dublincore.org/usage/xml/terms.xml
+
+   Which is used to generate:
+
+       http: //dublincore.org/usage/terms/history/
+       http: //dublincore.org/documents/dcmi-terms/
+       http: //purl.org/dc/terms/
+
+   Note that this change would trigger the creation of a new
+   historical version for each encoding scheme (but with no
+   consequences for term URIs).
+
+3) Decide whether this difference needs to be further
+   emphasized in DCMI documentation -- e.g., by splitting
+   the section "Encoding Schemes" in the DCMI Terms document
+   into separate sections on "Syntax Encoding Schemes" and
+   "Vocabulary Encoding Schemes".
+
+</pre>

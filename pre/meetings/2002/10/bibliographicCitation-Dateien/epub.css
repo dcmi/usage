@@ -1,0 +1,60 @@
+BODY {
+	BACKGROUND: white; COLOR: black; FONT-FAMILY: arial, helvetica, sans-serif
+}
+P {
+	FONT-FAMILY: arial,helvetica,sans-serif
+}
+H1 {
+	FONT-FAMILY: arial,helvetica,sans-serif
+}
+H2 {
+	FONT-FAMILY: arial,helvetica,sans-serif
+}
+H3 {
+	FONT-FAMILY: arial,helvetica,sans-serif
+}
+TR {
+	FONT-FAMILY: arial,helvetica,sans-serif
+}
+TH {
+	FONT-FAMILY: arial,helvetica,sans-serif
+}
+TD {
+	FONT-FAMILY: arial,helvetica,sans-serif
+}
+LI {
+	FONT-FAMILY: arial,helvetica,sans-serif
+}
+UL {
+	FONT-FAMILY: arial,helvetica,sans-serif
+}
+OL {
+	FONT-FAMILY: arial,helvetica,sans-serif
+}
+DL {
+	FONT-FAMILY: arial,helvetica,sans-serif
+}
+DT {
+	FONT-FAMILY: arial,helvetica,sans-serif
+}
+DD {
+	FONT-FAMILY: arial,helvetica,sans-serif
+}
+INPUT {
+	FONT-FAMILY: arial,helvetica,sans-serif
+}
+H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 140%
+}
+H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 120%
+}
+H3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 110%
+}
+PRE {
+	FONT-FAMILY: courier, courier new, monospace
+}
+BLOCKQUOTE {
+	FONT-FAMILY: courier, courier new, monospace
+}

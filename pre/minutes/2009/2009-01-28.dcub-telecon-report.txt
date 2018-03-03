@@ -1,0 +1,118 @@
+Usage Board telecon report - Wednesday 28 January 2009 - 2100 UTC
+
+This report:  http://dublincore.org/usage/minutes/2009/2009-01-28.dcub-telecon-report.html
+Agenda was:   http://dublincore.org/usage/minutes/2009/2009-01-28.dcub-telecon-agenda.html
+
+Present: Tom Baker, Julie Allinson, Pete Johnston,
+         Akira Miyazawa, Stefanie Ruehle, Joe Tennis
+Regrets: Andrew Wilson
+
+Mailing list:    http://www.jiscmail.ac.uk/lists/dc-usage.html 
+Wiki:            http://dublincore.org/usageboardwiki
+Archive:         http://dublincore.org/usage/minutes/
+
+----------------------------------------------------------------------
+Review of DCMI Libraries properties
+
+We discussed Stefanie's draft note to Mary Woodley and Corey
+Harper.  Stefanie will send after incorporating comments
+from Tom.
+
+ACTION 2009-01-28: Tom to send comments to dc-usage.
+-- DONE - see [2]
+
+[1] http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0901&L=dc-usage&P=6437
+[2] https://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0901&L=DC-USAGE&P=9460
+
+----------------------------------------------------------------------
+Review of Accessibility properties
+
+Andrew to report on progress with AGLS in the February call.
+
+----------------------------------------------------------------------
+Review of Scholarly Works Application Profile (SWAP)
+
+Discussed draft review [1].  Noted that Julie has been making
+corrections at [2] and will convert the AP into a HTML document
+we can archive as a snapshot.
+
+Accepted Julie's addition about the kev:ctx format as a
+datatype, under "Metadata Terms Referenced".
+
+Discussed the issue raised by Pete of two STs
+(Expression/Entity Type and Expression/Type) with the same
+property list constraint (a list of one member, dc:type) [3].
+
+Noted that the DSP spec [4] on which the review criteria is
+based is work in progress.  Nonetheless, the consensus on
+the call was that the discrepancy between the current DSP
+specification and the review criteria is awkward.  It would
+be problematic to say the profile "conforms" if we need to
+qualify that judgement by explaining a point on which it does
+not conform.  Rather, we should be in a position to say that
+it either conforms with the draft DSP spec or does not.
+
+There was agreement that we should publish the review with an
+explanation of the problem uncovered and send this as input
+to the SWAP and Architecture communities.  Several possible
+courses of action seem possible (see thread at [3]):
+
+-- the DSP spec could be modified to remove the cause of the 
+   discrepancy, as Mikael Nilsson has suggested [5]
+
+-- the two STs in question could be collapsed into one single
+   "weaker" ST [6]
+
+-- the SWAP community could change the profile to not use
+   the same property list constraint in the two STs (e.g., by
+   using rdf:type for one of the two).
+
+Pete noted a deeper issue in the DSP spec with regard to
+possible overlap of sub-property list constraints, though
+that is not an issue with SWAP.
+
+ACTION 2009-01-28: Pete to draft a simple explanation of the 
+issue for inclusion in the review, citing discussion on the list.
+
+[1] http://dublincore.org/usage/reviews/2009/swap/
+[2] http://dublincore.org/scholarwiki/SWAPDSP 
+[3] http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0901&L=DC-USAGE&T=0&O=D&P=339
+[4] http://dublincore.org/documents/2008/03/31/dc-dsp/
+[5] https://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0901&L=DC-USAGE&P=4493
+[6] https://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0901&L=DC-USAGE&P=3903
+
+----------------------------------------------------------------------
+Profile Review Criteria
+
+Discussed [1].  Agreed that the text should read:
+
+    These tables may include the following information:
+    * [OPTIONAL] Minimum and maximum numbers of times...
+    * [OPTIONAL] The type of value surrogate...
+    These tables must include one of the following property constraints:
+    * [OPTIONAL] Property List Constraint...
+    * [OPTIONAL] Sub-Property Constraint...
+
+ACTION 2009-01-29: Tom to propose
+corrections to the profile review criteria
+http://dublincore.org/documents/2009/01/05/profile-review-criteria/
+for discussion on the next call -- probably as an erratum of the
+current version instead of a completely new version.
+
+[1] http://dublincore.org/documents/2009/01/05/profile-review-criteria/
+[2] http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0901&L=DC-USAGE&P=7010
+
+----------------------------------------------------------------------
+Next telecon - sometime between 9 - 20 February
+
+    See poll at http://doodle.com/fzs7e4qm3c4vqtrc
+
+    Agenda:
+    -- Libraries terms (Stefanie)
+    -- Accessibility properties (Andrew)
+    -- SWAP
+       -- Revised profile (Julie)
+       -- Revised criteria (Tom)
+       -- Reviewed review
+          -- Description of DSP/SWAP discrepancy (Pete)
+

@@ -1,0 +1,33 @@
+#!/bin/bash
+
+today=$(date +%Y-%m-%d.%H%M)
+
+explore() {
+	cygstart --explore ${1:-.}
+}
+
+BASEDIR="$PWD"
+
+#for INDEX in rda-review/index.txt ./index.txt
+for INDEX in $(find . -name index.txt | egrep -v \.svn)
+do
+    DIR=$(dirname $INDEX)
+    cd $DIR
+    ls -d $BASEDIR/$DIR
+    mv -i index.shtml $today.index.shtml 2>/dev/null
+    echo '<PRE>' >>index.shtml
+    sed '
+        s/>/\&gt;/g
+        s/</\&lt;/g
+    ' index.txt | /cygdrive/e/u/bin/urlify  | sed '
+                                              s=http://stage.dublincore.org==g
+                                              s=http://dublincore.org==g
+                                              s=/usageboardwiki=http://dublincore.org/usageboardwiki=
+                                              s=/architecturewiki=http://dublincore.org/architecturewiki=
+                                              ' >>index.shtml
+    echo '</PRE>' >>index.shtml 
+    ls $BASEDIR/$DIR/$today.index.shtml 2>/dev/null
+    ls $BASEDIR/$DIR/index.shtml 
+    ls $BASEDIR/$DIR/index.txt 
+    cd $BASEDIR
+done

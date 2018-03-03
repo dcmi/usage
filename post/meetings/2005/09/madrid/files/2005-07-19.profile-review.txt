@@ -1,0 +1,210 @@
+------------------------------------------------------------------------
+2005-07-19: Review of Application Profiles - excerpts from
+notes of May 19 (Washington) meeting
+------------------------------------------------------------------------
+
+    Agreed that general shift in focus from individual terms to
+    application profiles is a good thing.
+
+    However, several questions/issues:
+
+    * Need to clarify what "approving an application profile"
+      means.
+
+    * What does adding a term to an extension namespace mean --
+      I.e. what is DCMI saying by doing this?
+
+    * What value is there in short term commitment to maintenance?
+
+    * What is the current DCTERMS namespace for if we move
+      to extension namespaces?
+
+    * The bulk of UB work is in considering new terms - what will
+      UB do less of once we have extension namespaces?
+
+    * DCMI WGs have a requirement for creating and managing
+      vocabularies -- how do extension namespaces help?
+
+    * What do we want to say about application profiles and their
+      component terms?
+
+    * What is a "Strategic activity"?
+
+    * Are there legal and social issues with DCMI assigning URIs
+      to terms (particularly encoding schemes) that refer to
+      things owned by other people?
+
+    Note that "conforming" currently means "conforms to grammatical
+    principles" and the UB process (section 4.0) also says that
+    conforming terms "do not conflict with or create ambiguity with
+    existing terms" and that they are not both "cross domain" and
+    "resource discovery" -- we have no current way of saying that
+    a term simply "conforms to the AM".  "Recommended" currently
+    means "conforming" and "cross domain" and "resource discovery".
+
+    Could possibly revise the meanings of our statuses to be:
+
+    * Conforming = conforms with AM
+
+    * Recommended = conforming plus no overlaps with existing terms
+
+    Whether a term is "cross-domain" or not is orthogonal to this.
+
+    Need to define what "conforms to the AM" means -- need a
+    decision tree.  Action: Andy
+
+    Need to define other statuses (e.g. "Recommended") and what
+    they mean -- need decision tree(s).  Action: Diane, Stuart
+
+    These statuses and decision trees need to be able to be
+    applied to individual elements, element refinements and
+    encoding schemes and to application profiles.
+
+    What does a "review" of an application profile consist of?
+
+    * Evaluate all elements, element refinements and encoding
+      schemes for conformance with the AM
+
+        o This should result in assigning a status of
+          "conforming" or "recommended" to terms that currently
+          don't have a status (new meanings - i.e. they all
+          conform to the AM).
+
+        o Terms in non-DCMI namespaces should be documented
+          according to DCMI requirements and have persistent
+          URIs supported by known policies.
+
+        o All terms must have an assigned URI (by DCMI or by
+          external organisation).
+
+        o If necessary, assign a URI in a DCMI namespace
+          (DCTERMS or a DCMI extension namespace) and place
+          documentation on the DCMI site.
+
+    * Review AP-specific comments for clarity and to ensure that
+      they do not extend existing term semantics
+
+    * Check that AP documentation conforms to DCMI requirements
+      (CEN guidelines or revised version)
+
+    * Review and document evidence of community buy-in to the AP
+      (as a whole)
+
+    * Consider whether the AP does was it says it does -- i.e. does
+      it meet its documented functional requirements
+
+    * Produce a "review report"
+
+    If the AP meets all these requirements then it is "conforming".
+
+Possible changes to CEN guidelines for AP -- Action: Tom
+
+    * Details about assigning URIs to terms
+
+    * Contextual info about why particular terms were chosen.
+
+Process prior to UB meeting:
+
+    * Assign shepherds (reports for packet by 1 Sept)
+
+        o Overall shepherd: Andrew
+        o Evaluation individual terms against AM: Andrew, Andy
+        o Check comments: Akira
+        o Check documentation: Tom
+        o Check community buy-in: Andrew
+        o Check functional requirements: Tom
+
+    * There should be an single announcement about the AP and all
+      terms within the AP that don not currently have a DCMI status
+      on dc-general by the shepherd -- the comment period should be
+      one month (announced Mon 25 July)
+
+    * With regard to the AP we're looking for views on fitness
+      for purpose, wider community buy-in and commentary on
+      semantic overlaps -- primary measure of community buy-in is
+      thru the WG.
+
+    Agreed that initial review of new terms and APs is to determine
+    conformance to AM or not.  Review of AP will also result in a
+    "review report" -- but need to determine the level of comment
+    in the report
+
+Need longer term roadmap of where APs can go, e.g.
+
+    WG ----> conformance ----> WG -----> recommended.
+
+    Need documentation for minimal proposal of new term -- Action:
+
+    Suggestion that 
+
+What namespace do "new" terms go into?  
+
+    OPTION 1
+
+        * If elements, element refinements that are not
+          in other namespaces are "recommended" and
+          "cross-domain" then they go into the DCTerms
+          namespace.  Otherwise they go into a DCMI extension
+          namespace.
+
+        * All vocabulary terms that are not in other namespaces go
+          into a DCMI extension namespace.
+
+    OPTION 2
+
+        * All "new" elements, element refinements and encoding
+          schemes that are not in other namespaces go into
+          DCTERMS namespace.
+
+        * All vocabulary terms that are not in other namespaces go
+          into a DCMI extension namespace.
+
+    OPTION 3
+
+        * Everything goes into an extension namespace
+
+    OPTION 4 (as per BoT proposal)
+
+        * If proposal originates from a strategic activity
+          it goes into an extension namespace
+
+        * Everything else goes into DCTerms.
+
+What namespace URI should we use?   
+
+    Depends on the OPTIONS above.  
+
+        If OPTION 1, proposal to use:
+        
+            http://purl.org/dcx/cdwg/    - an acronym with implied semantics
+         OR http://purl.org/dcx/2005/06/ - a date stamp
+         OR http://purl.org/dcx/01/      - something neutral (eg, sequential number)
+
+        If OPTION 2, proposal to use:
+
+            http://purl.org/dcx/vocab_name/
+
+Summary position of UB on extension namespaces proposal:
+
+    * Agree with move to using APs as primary mechanism for
+      proposing new terms.  Will develop documentation for WGs to
+      encourage and support this.
+
+    * Agree with need to provide home for WG-generated
+      vocabularies.  Will develop new namespaces and associated
+      documentation for vocabularies.
+
+    * It is not clear that there is currently a demonstrable
+      need for new namespaces for elements, element refinements
+      and encoding schemes, and we see no pressing need to put new
+      terms into extension namespaces.  Under proposals above the
+      "approval" process for new elements, element refinements and
+      encoding schemes is unchanged -- therefore can continue using
+      existing DCTERMS namespace for them, at least until we see how
+      things progress as a result of moving to greater use of APs.
+
+    * Recognise a need to structure documentation about DCMI terms
+      to emphasise a core set and to de-emphasise domain-specific
+      terms. The UB proposes to address this problem by reviewing
+      the statuses we assign to terms and the ones already assigned.
+

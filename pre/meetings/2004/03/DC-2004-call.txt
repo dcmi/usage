@@ -1,0 +1,91 @@
+                     CALL FOR PAPERS
+ 
+                        DC-2004
+          International Conference on Dublin Core
+               and Metadata Applications
+ 
+                   11-14 October 2004
+                    Shanghai, China
+              http://dc2004.library.sh.cn/ 
+ 
+Host:       Shanghai Library 
+            - http://www.library.sh.cn/new-eng/ 
+Sponsors:   Library of Chinese Academy of Sciences
+            - http://www.las.ac.cn/ 
+            National Science and Technology Library of China 
+            - http://www.nstl.gov.cn/ 
+            Dublin Core Metadata Initiative
+            - http://dublincore.org/ 
+ 
+Metadata based on standards such as Dublin Core is a key
+component of information environments from scientific
+repositories to corporate intranets and from business and
+publishing to education and e-government.
+ 
+DC-2004 -- the fourth in a series of conferences previously
+held in Tokyo, Florence, and Seattle -- will examine a broad
+range of metadata applications, especially with a view towards
+improving interoperability across boundaries of language,
+culture, and communities of practice.  Tutorials will provide
+an introduction to metadata for non-experts.
+ 
+In conjunction with DC-2004, the Dublin Core Metadata
+Initiative will hold technical working-group meetings and
+Shanghai Library will host the 2004 Shanghai International
+Library Forum (http://www.libnet.sh.cn/silf2004/).
+ 
+The Conference track of DC-2004 invites submissions of papers
+in the following areas:
+ 
+-- Conceptual models for metadata
+-- Interoperability among metadata systems and standards
+-- Enterprise metadata
+-- Globalization, localization, and multilinguality of metadata
+-- Metadata for education, e-Government, and geospatial applications
+-- Institutional Repositories and metadata harvesting
+-- Search engines and metadata
+-- Systems and tools for metadata applications
+-- Metadata for cultural heritage and long-term preservation
+-- Surveys, case studies, and novel activities based on metadata
+-- Metadata registries and registry services
+-- Metadata standardization
+-- Ontologies and Semantic Web
+-- Knowledge management
+ 
+Paper Categories
+ 
+  Regular Papers (8 to 10 pages) describe original work
+  in detail.
+ 
+  Short papers (2 to 4 pages) and posters describe a specific
+  model, application, or activity in a concise format.
+ 
+  Author guidelines and submission details can be found at
+  http://dc2004.library.sh.cn/papers/.
+ 
+  All submissions will be peer-reviewed by the program
+  committee and published both in print and electronically
+  in the conference proceedings.
+ 
+  All accepted papers must be presented at the conference by
+  at least one of their authors.
+ 
+Deadlines
+ 
+  Paper submission              1 May 2004
+  Poster submission             15 May 2004
+  Acceptance notification       1 June 2004
+  Camera-ready copy due         1 July 2004
+ 
+Previous Dublin Core conferences
+ 
+  DC-2001, Tokyo          http://www.nii.ac.jp/dc2001/ 
+  DC-2002, Florence       http://www.bncf.net/dc2002/ 
+  DC-2003, Seattle        http://dc2003.ischool.washington.edu/ 
+ 
+Organization and chairs
+ 
+  Program Co-chairs       Liu Wei (Shanghai Library)
+                          Thomas Baker (Fraunhofer, Germany)
+  Workshop Chair          Makx Dekkers (DCMI)
+

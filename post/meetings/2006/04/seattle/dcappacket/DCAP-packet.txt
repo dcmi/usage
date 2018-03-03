@@ -1,0 +1,29 @@
+Guidelines for reviewing application profiles
+-- Dublin Core Application Profile Guidelines (CEN CWA, now DCMI draft)
+-- DCMI-compliant Term Decision Tree (draft)
+
+Guidelines on declaring vocabularies related to application profiles
+-- Guidelines for assigning identifiers to metadata terms (draft)
+-- Best practice recipes for serving RDF vocabularies (W3C draft)
+
+The DCMI model (and clarifications)
+-- DCMI Abstract Model (DCMI Recommendation)
+-- Mixing and Matching FAQ (draft)
+-- XML, RDF, and DCAPs (DCMI Recommended Resource)
+-- Element Refinement in Dublin Core Metadata (DCMI Recommended Resource)
+
+Supporting policy documentation
+-- DCMI Namespace Policy
+-- DCMI Policy on Naming Terms
+-- Procedure for Approval of DCMI Metadata Terms and Recommendations
+
+Application profile for Simple Dublin Core [Roadmap 1.3.1.]
+
+    To be discussed at April Usage Board meeting.
+
+Guidance for implementers of application profiles [Roadmap 1.4]
+
+    http://dublincore.org/usage/documents/profile-guidelines/ - ACTION on me to revise
+
+
+

@@ -1,0 +1,101 @@
+----------------------------------------------------------------------
+Date: Fri, 3 Feb 2006 10:04:36 -0000
+Reply-To: A mailing list for the Dublin Core Metadata Initiative's Usage Board <DC-USAGE@JISCMAIL.AC.UK>
+Sender: A mailing list for the Dublin Core Metadata Initiative's Usage Board <DC-USAGE@JISCMAIL.AC.UK>
+From: Andy Powell <andy.powell@EDUSERV.ORG.UK>
+Subject: FW: Encoding scheme used for dc.language - heads up
+To: DC-USAGE@JISCMAIL.AC.UK
+
+For those who haven't spotted it, there is a little flurry of discussion
+on the dc-government list suggesting that RFC 3066 is perhaps now a
+little dated in its approach to 2 vs. 3-letter language codes.
+
+The comment for dc:language currently suggests that value strings should
+conform to that RFC whereas it is possible that concensus within
+eGovernment metadata circles is to use 3-letter codes (as also suggested
+by Joseph Busch in his response to the dc-corporate WG).
+
+Andy
+--
+Head of Development, Eduserv Foundation
+http://www.eduserv.org.uk/foundation/
+andy.powell@eduserv.org.uk
++44 (0)1225 474319
+-----Original Message-----
+From: Dublin Core Element Set government and public sector resource
+[mailto:DC-GOVERNMENT@JISCMAIL.AC.UK] On Behalf Of Andy Powell
+Sent: 03 February 2006 09:56
+To: DC-GOVERNMENT@JISCMAIL.AC.UK
+Subject: Re: Encoding scheme used for dc.language - Province of Ontario
+
+Martin,
+Thanks for the summary.  I very much agree.  Speaking as a member of the
+Usage Board, I think that if this working group can reach a concensus
+view that the current DC guidance to use RFC 3066 is wrong and, better
+still, suggest some revised wording for the dc:language comment, then
+I'm sure that a good case could be made to the UB for change.  (Note,
+I'm not necessarily promising that change would be forthcoming! :-) ).
+
+Note that the UB is in the process of considering some minor changes to
+the comment for dc:language anyway, because the current wording gives
+both 'en' and 'eng' as valid examples for English, the second of which
+falls foul of the "2-letter rule" in the RFC.
+
+Note also that in "qualified DC" it is already perfectly acceptable to
+use the dcterms:ISO639-2 encoding scheme to explicitly indicate that
+3-letter codes are in use.  E.g. (in XHTML meta tags):
+
+<meta name=3D"DC.language" scheme=3D"DCTERMS.ISO639-2" content=3D"fre" =
+/>
+
+I presume that when using this encoding scheme, alternative forms of
+3-letter codes are allowed (where they exist), e.g.
+
+<meta name=3D"DC.language" scheme=3D"DCTERMS.ISO639-2" content=3D"fra" =
+/>
+
+is also valid?
+
+Andy
+--
+Head of Development, Eduserv Foundation
+http://www.eduserv.org.uk/foundation/
+andy.powell@eduserv.org.uk
++44 (0)1225 474319
+
+> -----Original Message-----
+> From: Dublin Core Element Set government and public sector resource
+> [mailto:DC-GOVERNMENT@JISCMAIL.AC.UK] On Behalf Of Martin Ford
+> Sent: 03 February 2006 06:34
+> To: DC-GOVERNMENT@JISCMAIL.AC.UK
+> Subject: Re: Encoding scheme used for dc.language - Province of
+> Ontario
+>
+> So really we are back to the first question:
+>
+> Who is using which part and why?
+>
+> In short, if you use Dublin Core use part 1 but if more than just
+> Canada is using part 2 and there is good justification for using part
+> 2 we need to get the DC ruling changed.
+> Denmark says it is using part 1. So far that is 1-1 a draw.
+> As I see it, on the surface, part 2 is better for cultural and
+> linguistic adaptability it is better for cross domain work such as
+> using with GI standards. I think these days part
+> 2 does have more codes BUT the DC ruling allows for that by stating
+> you can use those codes from part 2 that are not in part 1. However, I
+
+> will not recommend anyone to break the DC ruling and use part 2 that
+> to me is anarchy. So as I said we all use part 1 in DC usage or we
+> change the ruling. To do the later we need to know:
+>
+> Who is using which part and why?
+>
+> This is a short-term issue. There is a bigger problem for the future,
+> as we will never get complete agreement on this in a world that is
+> ever changing we need to develop a way that will meet the changes as
+> they happen rather than switching standards.
+>
+> Regards.
+>
+> Martin Ford

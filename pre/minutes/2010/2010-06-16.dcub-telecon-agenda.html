@@ -1,0 +1,142 @@
+<PRE>
+DCMI Usage Board telecon - Wednesday, 16 June 2010, 9:00am EDT
+
+    1300 UTC - 0600 Seattle / 0900 New York / 1400 London / 1500 Berlin / 2200 Tokyo
+    <a href="http://www.timeanddate.com/worldclock/fixedtime.html?month=06&day=18&year=2010&hour=13&min=00&sec=0&p1=0">http://www.timeanddate.com/worldclock/fixedtime.html?month=06&day=18&year=2010&hour=13&min=00&sec=0&p1=0</a>
+
+    Dial-in number         :  1-218-936-4141
+    Participant Access Code:  334034 
+
+    Expected: Tom (chair), Julie, Stefanie, Akira, Joe, Pete.
+
+1. Errata and other changes to DCMI Metadata Terms (Akira)
+    
+    Meeting notes:
+    --  <a href="http://dublincore.org/usage/minutes/2009/2009-10-16.dcub-meeting-seoul-minutes.html">http://dublincore.org/usage/minutes/2009/2009-10-16.dcub-meeting-seoul-minutes.html</a>
+
+    Draft decision document:
+    --  <a href="/usage/decisions/2010/dcterms-changes/index.shtml">http://dublincore.org/usage/decisions/2010/dcterms-changes/index.shtml</a>
+
+    Akira's check:
+    --  <a href="https://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind1003&L=DC-USAGE&P=7190">https://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind1003&L=DC-USAGE&P=7190</a>
+
+    Richard Cyganiak noticed an error (no rdfs:comment for dc:title):
+    --  <a href="https://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind1006&L=DC-ARCHITECTURE&P=57">https://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind1006&L=DC-ARCHITECTURE&P=57</a>
+
+    Related actions:
+
+        ACTION 2009-10-16: Pete to look at XSLT for dcmi-terms page index
+        to determine whether "ready reference" links to terms of the DCMI
+        Type Vocabulary and terms related to the DCMI Abstract Model might
+        be added.
+        -- larger issue is whether DCMI Metadata Terms should be published 
+           using RDFa -- e.g., see 
+           <a href="https://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind1005&L=DC-ARCHITECTURE&P=4348">https://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind1005&L=DC-ARCHITECTURE&P=4348</a>
+
+        ACTION 2009-10-16: Tom to correct RDF schemas of DCMI Metadata Terms
+        to use blank node with publisher.
+
+2.  Asserting the equivalence of dcterms:creator and foaf:maker (Tom and Pete)
+
+    In Seoul, our proposal assumed:
+         FOAF says
+             foaf:maker rdfs:subPropertyOf dcterms:creator .
+         DCMI says
+             dcterms:creator rdfs:subPropertyOf foaf:maker .
+
+    Since then, FOAF now says:
+             foaf:maker owl:equivalentProperty dcterms:creator .
+
+    ACTION 2009-10-16 Pete and Tom: Pete will investigate OWL
+    further to see whether it is possible to do this using OWL;
+    Pete and Tom will work up a post to email to the DC
+    Architecture and the Semantic Web community with cross
+    postings pointing to the DC Architecture list email.
+
+    PROPOSED DECISION (to add to Decision document):
+
+        RESOLVED: That in agreement with the maintainers of the 
+        FOAF vocabulary, which have added to FOAF the assertion
+
+             foaf:maker owl:equivalentProperty dcterms:creator
+
+        DCMI will assert:
+
+             dcterms:creator owl:equivalentProperty foaf:maker 
+
+3. Response to request for new term?
+   
+   -- David Bromage points out that RFC 5646 has obsoleted RFC 4646
+      <a href="https://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind1006&L=DC-GENERAL&P=52">https://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind1006&L=DC-GENERAL&P=52</a>
+
+   Possible responses:
+
+   -- Simply vote on the call and fold this into the latest batch of changes:
+
+      RESOLVED: That DCMI coin the URI
+      <a href="http://purl.org/dc/terms/RFC5646">http://purl.org/dc/terms/RFC5646</a>
+      following the precedents of
+      <a href="http://purl.org/dc/terms/RFC1766">http://purl.org/dc/terms/RFC1766</a>
+      <a href="http://purl.org/dc/terms/RFC3066">http://purl.org/dc/terms/RFC3066</a>
+      <a href="http://purl.org/dc/terms/RFC4646">http://purl.org/dc/terms/RFC4646</a>.
+
+   -- Explain that we do not intend to continue following this course.
+
+4. Corrections to "DCAP Guidelines"
+
+   ACTION 2009-10-16: Tom to make correction in DCAP guidelines
+   regarding ISO639-2 as proposed in consultation with co-author
+   Karen Coyle.
+   
+   ACTION 2009-10-16: Tom to add resource class constraint to
+   DCAP guidelines as proposed in consultation with co-author
+   Karen Coyle.
+
+5. User guidance
+
+-- DCMI Glossary Task Group (Tom)
+   
+-- DCMI User Guide (Stefanie with Tom)
+
+   <a href="http://dublincore.org/usageboardwiki/UsingDublinCore">http://dublincore.org/usageboardwiki/UsingDublinCore</a>
+   <a href="http://dublincore.org/usageboardwiki/UsingDublinCore_2fChapterOne">http://dublincore.org/usageboardwiki/UsingDublinCore_2fChapterOne</a>
+   <a href="http://dublincore.org/usageboardwiki/UsingDublinCore_2fChapterTwo">http://dublincore.org/usageboardwiki/UsingDublinCore_2fChapterTwo</a>
+   <a href="http://dublincore.org/usageboardwiki/UsingDublinCore_2fChapterThree">http://dublincore.org/usageboardwiki/UsingDublinCore_2fChapterThree</a>
+
+   ACTION 2009-10-16: Stephanie to write an Introduction for new
+   Guidelines, using Diane's contents list as the basis.
+
+   ACTION 2009-10-16: Stephanie to find examples for the
+   interesting (i.e.  difficult) properties to clearly show their
+   use.
+
+-- FAQ (Tom)
+
+   ACTION 2009-10-16: Tom and Pete to capture essence of the issues regarding 
+   dcterms:identifier as a literal value in a short paragraph to take to DC 
+   Architecture.
+
+   ACTION 2009-10-16: Pete and Tom to write up two approaches ("legacy"
+   and "modern") to the notion of the "Simple Dublin Core".
+
+6. Future of the Usage Board
+
+   What is the proper role (or mix of roles) for the Usage Board?
+
+   -- Application profile review.
+   -- Review of user guidance material (such as FAQ, Glossary, User Guide)
+   -- DCMI Metadata Terms maintenance.
+
+   What is the optimal size and skill mix of the Usage Board?
+   Should it be one group or two?
+
+7. Next steps
+   
+   -- DC-2010 in Pittsburgh
+   -- Telecons
+
+-- 
+Thomas Baker &lt;tbaker@tbaker.de&gt;
+
+
+</PRE>

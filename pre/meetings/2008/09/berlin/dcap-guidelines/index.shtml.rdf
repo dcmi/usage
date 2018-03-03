@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description about="http://dublincore.org/documents/2008/09/01/dc-ds-xml-notes/">
+<dc:title>Notes on the DC-DS-XML XML Format</dc:title>
+<dc:creator>Pete Johnston</dc:creator>
+<dc:description>This document describes the background to the development of Expressing Dublin Core Description Sets using XML (DC-DS-XML), and its relationship to the document Guidelines for implementing Dublin Core in XML (2003-04-02)</dc:description>
+<dc:date>2008-09-01</dc:date>
+<dc:format>text/html</dc:format>
+<dc:language>en</dc:language>
+<dc:publisher>Dublin Core Metadata Initiative</dc:publisher>
+</rdf:Description>
+</rdf:RDF>

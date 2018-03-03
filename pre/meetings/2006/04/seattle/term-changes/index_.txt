@@ -1,0 +1,20 @@
+Title:         Changes to terms in the DCTERMS namespace
+Identifier:    http://stage.dublincore.org/usage/meetings/2006/04/seattle/term-changes/index.shtml
+
+Discussant: Diane
+
+[1] http://dublincore.org/usageboardwiki/TermChanges
+[2] http://stage.dublincore.org/usage/meetings/2006/04/seattle/domains-ranges/2006-03-11.educationLevel.html
+
+As decided on 2006-02-23, Tom split off changes to terms of
+the DCTERMS namespace into a separate document and placed it
+in the Wiki [1].  Additional errata and unfinished business
+with regard to DCTERMS terms have since been added by Tom
+(DDC, alternative) and Diane (date refinements).
+
+We should make sure the document is checked for spelling
+consistency -- organisation/organization (to prefer the
+latter).
+
+Also, dcterms:educationLevel needs a better definition [2].
+

@@ -1,0 +1,108 @@
+Identifier:  http://dublincore.org/usage/minutes/2008/2008-09-21.berlin-3Swap.html
+Description: This is one part of the minutes for the Usage Board meeting
+             of 20-21 September 2009.  See http://dublincore.org/usage/minutes/.
+
+3. Review of Scholarly Works Application Profile (SWAP)
+
+http://dublincore.org/usage/meetings/2008/09/berlin/review-swap/.index.html
+
+Readings:
+-- Profile review criteria
+   http://dublincore.org/usage/meetings/2008/09/berlin/ProfileReviewCriteria-20080917.html
+-- Objectives and Scope, Functional Requirements, Domain Model (Andrew and Akira)
+   http://dublincore.org/usage/meetings/2008/09/berlin/review-swap/ObjectivesScope_SWAP.pdf
+-- DSP templates and constraints (Tom, Pete, Joe)
+   http://dublincore.org/usage/meetings/2008/09/berlin/review-swap/SwapConstraints.html
+   http://dublincore.org/usage/meetings/2008/09/berlin/review-swap/eprints-raw-missing-description-info.html
+-- DSP metadata terms referenced (Diane and Julie)
+   http://dublincore.org/usage/meetings/2008/09/berlin/review-swap/ReviewMetadataTermsReferenced.html
+-- Eprints Description Set Profile
+   http://dublincore.org/usage/meetings/2008/09/berlin/review-swap/EprintsApplicationProfile-knowware.pdf
+
+Definition and scope: has been circulated and discussed. Tom:
+are we missing something about ongoing maintenance
+responsibility. Julie: There's a new person coming on who
+will be responsible, so presumably that's taken care of.
+
+DSP Metadata Terms Reference: Julie and Diane confirm that
+the current wiki version is correct. Pete: the info:uri for
+bibliographicCitation should be identified as a Syntax Encoding
+Scheme. Julie: There's an option to provide and OpenURL opject.
+Tom questioned whether it was formatted correctly and Pete
+thinks so.  Tom: There's a more general question about this,
+and Ann Apps' document about Bibliographic Citation, and what
+SWAP does is consistent with this, Tom wants this to be more
+explicit in DCMI documentation.
+
+ACTION: Julie or Diane should write up a sentence for the
+review pointing out that the info:uri for the OpenURL Framework
+is nowhere declared as a datatype or SES, but that in our
+interpretation of the documentation (see citation in review)
+the use of the URI in this way is consistent with the concept
+of a datatype.
+
+Constraints: Pete notes that the URLs Tom cites are
+incorrect--Tom got those from the XML source, which need to
+be corrected.
+
+SWAP DSP Errata:
+1) Remove trailing slashes from URL for Entity Type
+2) Typographical errors
+3) Remove VES constraint for IsExpressedAs etc.
+4) Remove null values for Language
+5) Type, Status and accessRights - use of VES should be optional
+6) Revise SWAP use of dc:type for both expression entity type
+   and resource type wrt property list constraint matching issue
+   outlined below
+7) Bibliographic Citation DC-Text example should have
+   two statements rather than a single value string; and
+   eprint-specific recommendation should read 'or' rather than
+   'and/or'
+8) Some of the DC-Text examples in SWAP use "ResourceRef ( x )"
+   for the "blank node" case.  At some point this was changed in DC-Text;
+   it should use "ValueId ( x )".  See example 23 in DC-Text spec.
+
+SWAP DSP Discussion Points:
+1) Subject constrained to a single value string?
+
+Agreed:
+Point about VES constraints for Funder etc. Fine as is.
+
+Pete: DSP model permits use of both literal and non-literal
+values.
+
+ACTION: Tom to correct profile review criteria section on
+statement templates: [mandatory] property constraints -
+one of the following: ...
+
+ISSUE: Is constraint 6.3 required?
+
+ISSUE: Is it redundant to have a Value VES constraint in
+addition to a Value URI constraint, or good practice? Guidance
+on this point may belong in the application profile guidelines.
+
+ISSUE: Rendering of the Wiki pages does not capture all of
+the DSP detail and uses different labelling.  It would be
+useful to hyperlink labels in the DSP rendered page to the
+DSP documentation itself.  Also, to hyperlink description
+template labels within the wiki page itself, e.g. creator to
+agent description.
+
+ISSUE: Criteria should reflect that a property list
+constraint should be used once only within a description
+template. Guidance should be given to application profile
+creators on this issue, e.g. using the subject example where
+an application profile wants to require an LCSH term and have
+an option to add a free tag or a different vocabulary term.
+Consider inclusion of this guidance on the current proposed
+guidelines for application profiles.  One option is to make
+the constraint human-readable only. Clarify with Mikael before
+progressing this.
+
+RESOLVED: SWAP conforms.
+
+ACTION (Tom): Prepare final review document, to be finalised on
+a telecon pending revised SWAP document and list of corrections.
+
+ACTION (Julie as SWAP editor): Corrections to SWAP (as above).
+

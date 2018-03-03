@@ -1,0 +1,18 @@
+[2006-03-16 3:03 PM] [INFO] Now logging to <file:///E:/ub.log>.
+[2006-03-16 3:03 PM] [INFO] Channel view for ``#UB'' opened.
+[2006-03-16 3:03 PM] -->| YOU have joined #UB
+[2006-03-16 3:06 PM] <Diane> DCSV approved if Andy okays
+[2006-03-16 3:07 PM] <Diane> Changes to original 15 need to be done before NISO review
+[2006-03-16 3:08 PM] <Diane> We need to decide whether the changes in recommendation for RFC3066 need to be included in this set of changes or as a separate issue
+[2006-03-16 3:09 PM] <Diane> Andrew is ambivalent about whether should be separate--from a process point of view
+[2006-03-16 3:12 PM] <Diane> Diane thinks that the issue of what "recommendation" means is the crux of the issue
+[2006-03-16 3:15 PM] <Diane> One way to handle the problem of the language comment is to generalize it
+[2006-03-16 3:15 PM] <Diane> Tom thinks we need to have some discussion about it beforehand
+[2006-03-16 3:19 PM] <tbaker> ACTION Andrew: Write comment for dc:language - post to dc-usage - 
+[2006-03-16 3:19 PM] <Diane> Andrew will write up the change to look more like what Coverage says, "Use AN encoding scheme" without prefering one
+[2006-03-16 3:22 PM] <tbaker> ACTION Andrew: wordsmith, "content of the resource", justifications for each element
+[2006-03-16 3:32 PM] <tbaker> Diane: hold off on replicating URIs - danger that people will think we're putting everything in DCTERMS henceforth
+[2006-03-16 3:41 PM] <tbaker> ACTION Diane - Post to list proposing demo of NSDL registry for Seattle UB meeting - brief description, time required.
+[2006-03-16 3:45 PM] <tbaker> Wiki: Preference things are missing - maybe in one attempt to get spammers out - ask harry
+[2006-03-16 3:45 PM] <tbaker> what's supposed to be there
+[2006-03-16 4:12 PM] |<-- Diane has left irc.ukoln.ac.uk (Quit: Snak 5.0.4 IRC For Macintosh - http://www.snak.com)

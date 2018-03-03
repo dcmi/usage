@@ -1,0 +1,155 @@
+---
+title: 
+date: '2017-09-01T16:21:09+01:00'
+description: 
+draft: false
+creators: []
+contributors: []
+publisher: 
+tags: []
+---
+
+<pre>
+Topic: DCMI Abstract Model
+Modified: 2004-03-22 09:41, Monday
+Maintainer: Tom Baker
+Latest version: <a href="/usage/meetings/2004/03/ISSUES/model/">http://dublincore.org/usage/meetings/2004/03/ISSUES/model/</a>
+See also: <a href="/usage/meetings/2004/03/ISSUES/">http://dublincore.org/usage/meetings/2004/03/ISSUES/</a>
+
+Shepherd: Andy
+
+SUMMARY (Tom)
+
+Andy has revised the draft model:
+
+    <a href="http://www.ukoln.ac.uk/metadata/dcmi/abstract-model/">http://www.ukoln.ac.uk/metadata/dcmi/abstract-model/</a>
+
+We need to discuss:
+
+-- aspects of this model that relate to Usage Board 
+   practice, such as the notion of Application Profile;
+
+-- use of dcterms:URI as the encoding scheme for those parts of
+   encoded metadata that express a "value URI" as opposed to 
+   a "value string" (see email below);
+
+-- the relation of this document to other "foundational" 
+   documents maintained by DCMI, especially
+   <a href="/usage/documents/principles/">http://dublincore.org/usage/documents/principles/</a>, which is 
+   included in the main packet (see discussion below).
+
+------------------------------------------------------------------------
+Notes from Tom on the relation between the DCMI Abstract Model (DAM)
+and the existing DCMI Grammatical Principles (DGP) at
+<a href="/usage/documents/principles/">http://dublincore.org/usage/documents/principles/</a>.
+------------------------------------------------------------------------
+
+I see two slightly different needs:
+
+1) The need to present this new model to the general public
+   in a self-contained and readable form.
+
+2) The need for DCMI to have a set of URI-identified documents
+   that makes optimal sense from the standpoints of citation
+   and maintenance.
+
+Need #1 is (almost) met by the existing draft, which
+contains almost all of the elements one would need for a
+self-contained presentation to a broad public. For this,
+in my opinion, it still needs a narrative introduction -- one
+which wraps the model in some historical context and briefly
+states how the present document relates to earlier documents.
+With such a context, the article would basically be ready for
+D-Lib Magazine (let's call this "DLIB-DAM" as opposed to a
+"DCMI-DAM" to be maintained as a DCMI document).
+
+In terms of Need #2, however, and with respect to
+other DCMI-maintained documents, the DAM "package"
+(model plus Appendixes) does not seem ideal:
+
+-- The existing two-page "DCMI Grammatical Principles"
+   (<a href="/usage/documents/principles">http://dublincore.org/usage/documents/principles</a>) is almost
+   completely subsumed in Section 8 (Terminology) of DAM.
+
+   The only things missing from DAM with respect to DGP are:
+   -- a two-sentence scope statement that explicitly gets the 
+      definition of "term" from the DCMI Namespace Policy;
+   -- a one-sentence definition of "appropriate value";
+   -- a three-sentence discussion of Vocabulary Terms (with
+      the recent addition of "Broader Than" and "Narrower 
+      Than").
+   -- a one-sentence definition of "Application Profile" 
+      (along the lines of the one I suggested for DAM);
+   -- a short footnote acknowledging a historical shift 
+      towards seeing Element Refinements as Properties.
+
+   Having to maintain DAM and DGP in sync creates potential
+   error and confusion (and extra work). The solution could be
+   either to delete DAM's Section 8 ("Terminology") and replace
+   it with a pointer to DGP -- or vice versa. I am inclined
+   to the latter, i.e. to delete the DGP document (redirecting
+   its URI) and add some (but not all!) of the missing bits
+   to DAM. Then the terminology section (Section 8) could
+   perhaps be moved up to the front of DCMI-DAM -- boring
+   for a D-Lib article but good practice for a specification.
+
+-- Rather than leave the comparisons of RDF, XML, and XHTML
+   encoding specs against the model in the DCMI-DAM document
+   itself, I might sense either:
+
+   1) to fold each of the comparisons into the Specification
+      in question; 
+   2) to break out each comparison as a separate document
+      with a citable URI and (in the longer term) subject to a
+      separate processe of revision and approval; or 
+   3) to bundle all of the comparisons into a single,
+      citable document (but not as an Appendix to the model
+      itself).
+
+   On the other hand, the appendix on RDF as it is currently
+   written can help people who already know RDF understand
+   the Abstract Model itself, so perhaps it should remain
+   in the Appendix even if yet-to-be-written comparisons for
+   DCMI's two RDF-related Specifications reside elsewhere.
+
+   I do not have a strong opinion about these options.
+
+-- The note about structured values is on one level
+   an abstract typology, but it is also framed as a response
+   to the state of discussion as of the time of writing.
+   One could perhaps split it out as a separate document with
+   a separately citable URI, though it is only one page long
+   so I do not feel strongly about this.
+
+Note that following the suggestions would have the effect of
+making DCMI-DAM document shorter (just five pages) and turning
+the existing two-page "DCMI Grammatical Principles" into a
+redirect to DCMI-DAM. 
+
+------------------------------------------------------------------------
+Date: Wed, 25 Feb 2004 10:49:27 +0000
+From: Andy Powell &lt;a.powell@UKOLN.AC.UK&gt;
+------------------------------------------------------------------------
+
+When a vocabulary term gets a URI assigned to it, it changes
+from being a 'value string' to being a 'value URI' and the
+encoding needs to change to reflect that. So for example in
+XML, instead of
+
+&lt;dc:subject xsi:type="dcterms:DDC"&gt;Internet&lt;/dc:subject&gt;
+
+or
+
+&lt;dc:subject xsi:type="dcterms:DDC"&gt;004.678&lt;/dc:subject&gt;
+
+depending on your preference for numbers or words, the encoding would
+change to something more like
+
+&lt;dc:subject xsi:type="dcterms:URI"&gt;info:ddc/22/eng//004.678&lt;/dc:subject&gt;
+
+As usual, the RDF/XML encoding handles this rather better.
+
+I'll write up something longer about this before the meeting. This is
+just to flag up the issue.
+
+</pre>

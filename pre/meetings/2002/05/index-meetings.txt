@@ -1,0 +1,73 @@
+Title:                DCMI Usage Board Meetings - a chronology
+Maintainer:           Thomas Baker, Usage Board Chair
+Identifier:           http://dublincore.org/usage/meetings/
+Latest version:       http://dublincore.org/usage/meetings/
+Installed as:         http://dublincore.org/usage/meetings/index.shtml
+Date Last Modified:   2002-04-27
+Description:
+
+    This document, periodically updated, provides annotated links to 
+    the agendas and meeting notes of DCMI Usage Board meetings.  The
+    decisions resulting from these meetings are documented at
+    http://dublincore.org/usage/decisions/.
+
+2002 May 12-13, Bath, UK
+
+    Agenda: http://www.gmd.de/People/Thomas.Baker/agenda.html
+    Meeting notes:
+
+2001 October 22, Tokyo, Japan
+
+    Agenda: http://dublincore.org/usage/meetings/2001/10/agenda.shtml
+    Meeting notes: http://dublincore.org/usage/meetings/2001/10/meeting-notes.shtml
+    Meeting packet: http://dublincore.org/usage/meetings/2001/10/2001-10-19.dc-usage.pdf
+
+    The Usage Board met at DC2001 in Tokyo to discuss issues of
+    process (ie, a Web-based fast-track procedure for
+    registering encoding schemes) and review an extensive
+    proposal from the DC-Government Working Group.
+
+2001 May 21, Dublin, Ohio, USA
+
+    Agenda: http://dublincore.org/usage/meetings/2001/05/index.shtml
+    Meeting notes: http://dublincore.org/usage/meetings/2001/05/meetingnotes.shtml
+
+    At a DCMI meeting in Madeira, February 2001, the Advisory
+    Committee approved the re-constitution of the old Usage
+    Committee as a smaller Usage Board, the goal of which would
+    be to meet twice per year face-to-face and review proposals
+    for metadata term semantics in a timely, principled, and
+    well-documented manner.  The first meeting of the new Usage
+    Board was held in May 2001 at OCLC in Dublin, Ohio.  The
+    Board discussed mission and process, an application profile,
+    changed one definition, and approved three new metadata terms
+    [1-5].
+
+    [1] http://dublincore.org/usage/decisions/index.shtml#2001.05
+    [2] http://dublincore.org/usage/decisions/index.shtml#2001.04
+    [3] http://dublincore.org/usage/decisions/index.shtml#2001.03
+    [4] http://dublincore.org/usage/decisions/index.shtml#2001.02
+    [5] http://dublincore.org/usage/decisions/index.shtml#2001.01
+
+2000 January through July, DCMI mailing lists
+
+    A Usage Committee of twenty-four interested members of the
+    DCMI Advisory Committee held a discussion over the Web and
+    approved a set of first set of DCMI Qualifiers [3,6] and a
+    controlled vocabulary of values for the Type element [5,7].
+    The discussion, from late 1999 through follow-up in July
+    2000, is archived on the (now-defunct) Mailbase service [1].
+    The voting results for individual qualifiers, with review
+    comments, are archived at DCMI [2].  The set of qualifiers
+    was issued as a DCMI Recommendation on 11 July [3], as
+    described in a press release at that time [4].
+
+    [1] http://www.mailbase.ac.uk/lists/dc-usage/
+    [2] http://dublincore.org/usage/meetings/2000/04/
+    [3] http://dublincore.org/usage/documents/2000/07/11/dcmes-qualifiers/
+    [4] http://dublincore.org/usage/news/communications/pr-20000711.shtml
+    [5] http://dublincore.org/documents/2000/07/11/dcmi-type-vocabulary/
+    [6] http://dublincore.org/usage/decisions/index.shtml#2000.01
+    [7] http://dublincore.org/usage/decisions/index.shtml#2000.02
+
+

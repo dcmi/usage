@@ -1,0 +1,311 @@
+Title:         Usage Board profile
+Identifier:    http://dublincore.org/usage/meetings/2006/09/manzanillo/profile-pipeline/ub-profile/.index.html
+
+----------------------------------------------------------------------
+Notes from May 2005
+
+1) We need to look carefully at the RDF schema binding to 
+   determine which of the attributes used in [1] and [2] are
+   really needed in the RDF schemas.  From my notes, here is 
+   a draft mapping, with reference to a hypothetical namespace
+   "dcu:" to hold terms not yet formally declared:
+
+   Name:              NOT USED
+   Namespace:         rdfs:isDefinedBy   rdf:resource="xxx"
+   Label:             rdfs:label         xml:lang="en-US"
+   Definition:        rdfs:comment       xml:lang="en-US"
+   Type of term:      rdf:type           rdf:resource="http://.../#element"
+   Status:            dcu:status         rdf:resource="http://.../#recommended"
+   Date issued:       dcterms:issued
+   Comment:           dc:description     xml:lang="en-US"
+   See:               rdfs:seeAlso       rdf:resource="http://..."
+   References:        dcterms:references rdf:resource="http://.../#W3CDTF"
+   Refines:           rdfs:subPropertyOf
+   Qualifies:         dcu:qualifies
+   Date modified:     dcq:Modified
+   Decision:          dcu:decision       rdf:resource = "uri"
+   Version:           dcu:version        rdf:resource = "uri"
+   Replaces:          NOT USED
+   Is Replaced By:    NOT USED
+   Broader Than:      NOT USED
+   Narrower Than:     rdfs:subClassOf
+
+   Of course, we need to consider the possibility that not
+   all of the attributes of [1] and [2] would be needed in
+   the RDF schemas.
+
+2) If we accept the mappings of some terms defined in [1] and [2]
+   to existing terms in namespaces maintained by W3C and to DCMI's
+   own Terms namespace, then at a minimum it would appear we would
+   need to declare the following:
+
+       dcu:status      - Harry needs this for the DCMI Registry
+       dcu:qualifies
+       dcu:decision       
+       dcu:version        
+
+3) In addition, it would appear we need the term
+
+       dcu:isTranslationOf
+
+   Harry needs this for the DCMI Registry, and Tom thinks this
+   is needed so that a translation of DCMI term definitions
+   into languages such as Japanese can reference the specific
+   Term Version used as the basis for the translation.
+
+4) The term dcu:status has, in effect, a controlled vocabulary 
+   of values:
+
+       http://dublincore.org/usage/documents/process/#conforming
+       http://dublincore.org/usage/documents/process/#recommended
+       http://dublincore.org/usage/documents/process/#registered
+
+   These are currently defined in the document DCMI Usage Board
+   Process, and the URIs are anchors to specific points in that
+   document.  We should consider whether it is a good idea to
+   continue this or whether we would want to declare a status
+   vocabulary, and if so, how their URIs should be formed.
+
+5) The term "Type of Term" (currently mapped in the RDF
+   binding to rdf:type) also has, in effect, a controlled vocabulary
+   of values:
+
+       http://dublincore.org/usage/documents/principles/#element-refinement
+       http://dublincore.org/usage/documents/principles/#element
+       http://dublincore.org/usage/documents/principles/#encoding-scheme
+       http://dublincore.org/usage/documents/principles/#vocabulary-term
+
+6) Work on the DCMI Abstract Model [3] and a formal model for
+   DCMI Application Profiles [4] suggests a need for several
+   other terms, along the lines of:
+
+       dcu:ApplicationProfile
+       dcu:PropertyUsage
+
+   In September 2004, Pete posted a strawman set of terms at
+   http://homes.ukoln.ac.uk/~lispj/cen-cwa/vocab/dcapterms.rdf.
+
+7) DCMI's RDF schemas [5] have long asserted the existence of
+   URI references for terms based on the DCMI Namespace
+   http://purl.org/dc/terms/ -- even though, technically,
+   this should not have been possible without going through
+   UB process.  These include:
+
+       http://purl.org/dc/terms/DateScheme
+       http://purl.org/dc/terms/FormatScheme
+       http://purl.org/dc/terms/IdentifierScheme
+       http://purl.org/dc/terms/LanguageScheme
+       http://purl.org/dc/terms/SpatialScheme
+       http://purl.org/dc/terms/SubjectScheme
+       http://purl.org/dc/terms/TypeScheme
+
+   We would need to formulate a policy for creating,
+   maintaining, and identifying such terms - bearing
+   in mind that the terms above are already "legacy"
+   (i.e., for all we know, there may be applications
+   in the world that would break if DCMI were to 
+   drop or deprecate these terms).
+
+8) Since the addition of 
+
+        http://purl.org/dc/dcmitype/MovingImage
+        http://purl.org/dc/dcmitype/StillImage
+
+   we have two new attributes for Vocabulary Terms:
+
+        Broader Than
+        Narrower Than - currently represented with rdfs:subClassOf
+
+------------------------------------------------------------------------
+Usage Board Application Profile (draft)
+------------------------------------------------------------------------
+
+Mandatory
+   Name           [1] The unique token assigned to the term.
+   URI            [1] The Uniform Resource Identifier used to uniquely
+                      identify a term.
+   Namespace      [2] The Uniform Resource Identifier of the namespace 
+                      within which the term is defined.
+   Label          [1] The human-readable label assigned to
+                      the term.
+   Definition     [1] A statement that represents the concept
+                      and essential nature of the term.
+   Type of term   [1] The type of term, such as Element or Encoding
+                      Scheme, as described in the DCMI Grammatical
+                      Principles.
+   Status         [1] Status assigned to term by the DCMI Usage Board, 
+                      as described in the DCMI Usage Board Process.
+   Date issued    [1] Date on which a term was first declared.
+
+When appropriate
+   Comment        [1] Additional information about the term
+                      or its application.
+   See            [1] A link to authoritative documentation.
+   References     [1] A citation or URL of a resource referenced 
+                      in the Definition or Comment.
+   Refines        [1] A reference to a term refined by an Element 
+                      Refinement.
+   Qualifies      [1] A reference to a term qualified by an Encoding
+                      Scheme.
+   Broader Than   [1] A reference from a more general to a more specific
+                      Vocabulary Term
+   Narrower Than  [1] A reference from a more specific to a more general
+                      Vocabulary Term
+
+Version-related
+   Date modified  [2] Date on which a term declaration was subsequently 
+                      modified.
+   Decision       [2] A link to the Usage Board decision describing
+                      the creation or modification of a term
+                      declaration.
+   Version        [2] An historical version of a term declaration.
+   Replaces       [2] A reference to the immediately precedent
+                      historical version of a term declaration.
+   Is Replaced By [2] An identifier for the historical version of a 
+                      term declaration by which this historical version
+                      is superseded.
+
+REFERENCES
+
+[1] http://dublincore.org/documents/dcmi-terms/
+[2] http://dublincore.org/usage/terms/history/
+[3] http://www.ukoln.ac.uk/metadata/dcmi/abstract-model/
+[4] ftp://ftp.cenorm.be/public/ws-mmi-dc/mmidc116.htm
+[5] http://dublincore.org/2003/03/24/dcq
+[6] http://homes.ukoln.ac.uk/~lispj/cen-cwa/vocab/dcapterms.rdf
+
+------------------------------------------------------------------------
+Strawman vocabulary drafted by Pete Johnston, July 2004
+-- http://homes.ukoln.ac.uk/~lispj/cen-cwa/vocab/dcapterms.rdf
+   about a hypothetical http://example.org/dcap/
+------------------------------------------------------------------------
+
+  dcap:SchemaDocument     http://example.org/dcap/
+  dc:title                Schema for the DCAP vocabulary
+  dc:description          This schema contains descriptions of the DCAP terms. 
+                          Terms are declared using RDF Vocabulary Description Language 
+                          (RDF Schema).
+  dc:publisher            http://www.ukoln.ac.uk/#
+ 
+  dcap:MetadataVocabulary http://example.org/dcap/#
+  dc:title                The DCAP Vocabulary
+  dc:description          The DCAP Vocabulary provides classes and properties 
+                          used to describe Dublin Core Application Profiles and Property Usages 
+                          and related resources.
+  dc:publisher            http://www.rdn.ac.uk/#
+  dcap:seeAlso            http://www.ukoln.ac.uk/projects/iemsr/wp2/dcap/
+  dcap:preferredXMLNamespaceName      
+                          dcap
+  dcap:preferredXMLNamespacePrefix    
+                          http://example.org/dcap/
+
+  rdfs:Class              http://example.org/dcap/Document
+  Label:                  Document
+
+  rdfs:Class              http://example.org/dcap/SchemaDocument
+  Label:                  Schema Document
+
+  rdfs:Class              http://example.org/dcap/Agency
+  Label:                  Agency
+
+  rdfs:Class              http://example.org/dcap/MetadataVocabulary
+  Label:                  Metadata Vocabulary
+
+  rdfs:Class              http://example.org/dcap/AppProfile
+  Label:                  Application Profile
+
+  rdfs:Class              http://example.org/dcap/PropertyUsage
+  Label:                  Property Usage
+
+  rdfs:Class              http://example.org/dcap/BindingSchema
+  Label:                  Binding Schema
+
+  rdfs:Class              http://example.org/dcap/VocabStatus
+  Label:                  Vocabulary or Profile Status
+  
+  dcap:VocabStatus        http://example.org/dcap/VocabStatus/private
+  Label:                  Private
+  
+  dcap:VocabStatus        http://example.org/dcap/VocabStatus/draft
+  Label:                  Draft
+
+  dcap:VocabStatus        http://example.org/dcap/VocabStatus/proposedRecommendation
+  Label:                  Proposed Recommendation
+
+  dcap:VocabStatus        http://example.org/dcap/VocabStatus/recommendation
+  Label:                  Recommendation
+
+  rdfs:Class              http://example.org/dcap/TermStatus
+  Label:                  Vocabulary or Profile Status
+
+  dcap:TermStatus         http://example.org/dcap/TermStatus/private
+  Label:                  Private
+
+  dcap:TermStatus         http://example.org/dcap/TermStatus/unstable
+  Label:                  Unstable
+
+  dcap:TermStatus         http://example.org/dcap/TermStatus/testing
+  Label:                  Testing
+
+  dcap:TermStatus         http://example.org/dcap/TermStatus/stable
+  Label:                  Stable
+
+  dcap:TermStatus         http://example.org/dcap/TermStatus/deprecated
+  Label:                  Deprecated
+
+  rdfs:Class              http://example.org/dcap/Obligation
+  Label:                  Obligation
+
+  dcap:Obligation         http://example.org/dcap/Obligation/reserved
+  Label:                  Reserved
+
+  dcap:Obligation         http://example.org/dcap/Obligation/optional
+  Label:                  Optional
+
+  dcap:Obligation         http://example.org/dcap/Obligation/recommended
+  Label:                  Optional (Recommended)
+
+  dcap:Obligation         http://example.org/dcap/Obligation/mandatory
+  Label:                  Mandatory
+  
+
+  rdf:Property            http://example.org/dcap/uses
+  Label:                  Uses
+  rdfs:range              http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
+
+  rdf:Property            http://example.org/dcap/encodingScheme
+  Label:                  Encoding Scheme
+
+  rdf:Property            http://example.org/dcap/obligation
+  Label:                  Obligation
+  rdfs:range              http://example.org/dcap/Obligation
+
+  rdf:Property            http://example.org/dcap/condition
+  Label:                  Condition
+
+  rdf:Property            http://example.org/dcap/maxOccurs
+  Label:                  Maximum Occurrences
+
+  rdf:Property            http://example.org/dcap/isMemberOf
+  Label:                  Is Member Of
+
+  rdf:Property            http://example.org/dcap/seeAlso
+  Label:                  See also
+  rdfs:range              http://example.org/dcap/Document
+
+  rdf:Property            http://example.org/dcap/version
+  Label:                  Version
+
+  rdf:Property            http://example.org/dcap/status
+  Label:                  Status
+
+  rdf:Property            http://example.org/dcap/isExpressedBy
+  Label:                  Is Expressed By
+  rdfs:range              http://example.org/dcap/BindingSchema
+
+  rdf:Property            http://example.org/dcap/preferredXMLNamespaceName
+  Label:                  Preferred XML Namespace Name
+
+  rdf:Property            http://example.org/dcap/preferredXMLNamespacePrefix
+  Label:                  Preferred XML Namespace Prefix
+

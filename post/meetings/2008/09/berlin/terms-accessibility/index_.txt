@@ -1,0 +1,80 @@
+Title:         Properties
+Identifier:    http://dublincore.org/usage/meetings/2008/09/berlin/terms-accessibility/.index.html
+Source:        http://dublincore.org/usage/meetings/2008/09/berlin/terms-accessibility/index.txt
+Directory:     http://dublincore.org/usage/meetings/2008/09/berlin/terms-accessibility/
+Created:       2008-09-17
+
+Shepherd: Andrew
+
+----------------------------------------------------------------------
+Required Usage Board reading
+-- The wiki front page: 
+   http://dublincore.org/accessibilitywiki/
+   archived as: http://dublincore.org/usage/meetings/2008/09/berlin/terms-accessibility/FrontPage.html
+
+-- A proposal for a new element 
+   http://dublincore.org/accessibilitywiki/NewElementProposal
+   archived as: http://dublincore.org/usage/meetings/2008/09/berlin/terms-accessibility/NewElementProposal.html
+
+-- Context for the element proposal
+   http://dublincore.org/accessibilitywiki/AccessForAllFramework
+   archived as: http://dublincore.org/usage/meetings/2008/09/berlin/terms-accessibility/AccessForAllFramework.html
+
+
+----------------------------------------------------------------------
+Background reading
+-- An application profile providing context to the proposal
+   http://dublincore.org/accessibilitywiki/ElementsVocabularies
+   -- Liddy, August 2008: "this is irrelevant to the proposal now"
+
+-- An abstract model for the application profile
+   http://dublincore.org/accessibilitywiki/ApplicationProfileAbstractModel
+   -- Liddy, August 2008: "an abstract model that relates to application 
+      profiles that might be considered elsewhere"
+
+-- Various RDF schemas
+   -- http://purl.org/afa/afa.xml redirects to
+      http://www.ozewai.org/afa-namespaces/afa.xml which is archived as
+      http://dublincore.org/usage/meetings/2008/09/berlin/terms-accessibility/afa.xml
+   -- http://purl.org/afa/accessibility/accessibility.xml redirects to
+      http://www.ozewai.org/afa-namespaces/accessibility/accessibility.xml which is archived as
+      http://dublincore.org/usage/meetings/2008/09/berlin/terms-accessibility/accessibility.xml
+   -- Liddy, August 2008: "Long term, of course, I would not want  
+      to have those on my website but the purl can easily be changed. I  
+      trust they would point to DCMI in the end... or whatever is appropriate?"
+
+----------------------------------------------------------------------
+2008-08-27 Liddy responses to questions by Tom 
+
+(passages in single quotes are paraphrased, in double quotes are quoted)
+
+'We will find a (non-DCMI) way to declare accessMode,
+flexibility, supportTool, role, and readingRate in an
+AfA namespace.  We are asking the Usage Board to declare
+accessibility in the dcterms: namespace.  Then we will register
+an application profile and call it quits.'
+
+[Is "accessibility" particularly salient, or is it more
+important than the others (is there a reason "accessibility"
+should be declared in a different namespace from the others)?]
+
+"I expect that most people will do no more than give values to
+one element. We always thought that. Experts in the field, and
+those working on alternatives etc, will use the application
+profile. For a while we were convinced to call that main
+element 'adaptability' and then it became possible that the
+only way forward was to avoid using the main element, that
+we hoped would be a DC term, and use accessmode. This is,
+I hope, history."
+
+[AccessForAllFramework [2] provides context, but the
+document cites itself (a page on accessibilitywiki) as the
+home of the Accessibility Framework.  Where do you want to
+publish the overall framework itself?]
+
+"I guess now I would go for a DC term published by DC and
+the rest just registered in the DC registry and finally close
+down leaving a page to provide guidance to DC users."
+
+Last updated:  LASTUPDATED
+

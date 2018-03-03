@@ -1,0 +1,295 @@
+<PRE>
+Subject: 	Call for review of new metadata documents
+Date: 	Wed, 5 Mar 2008 23:35:51 -0500
+From: 	Gary Simons &lt;gary_simons@SIL.ORG&gt;
+Reply-To: 	Open Language Archives Community Implementers List 
+&lt;OLAC-IMPLEMENTERS@LISTSERV.LINGUISTLIST.ORG&gt;
+To: 	OLAC-IMPLEMENTERS@LISTSERV.LINGUISTLIST.ORG
+
+
+
+Dear implementers,
+
+Many of you also subscribe to the OLAC-GENERAL list and so have gotten the
+general announcement about this call for review for new metadata documents.
+Those of you who have implemented an OLAC data provider are directly
+affected since this new work focuses on ways of improving the quality of the
+metadata in our implementations.  In this message we repeat the general
+announcement for the benefit of those not subscribed to OLAC-GENERAL, and
+then we supply further information that is relevant to you as implementers.
+
+Six months ago the US National Science Foundation awarded funding for a
+project named "OLAC: Accessing the World's Language Resources" which aims to
+greatly improve access to language resources for linguists and the broader
+communities of interest. If you are interested in learning more about the
+project, you may visit the project home page at:
+
+   <a href="http://olac.wiki.sourceforge.net/">http://olac.wiki.sourceforge.net/</a>
+
+In the first phase of the project we are focusing on improving metadata
+quality as a prerequisite to improving the quality of search.  To that end
+we have drafted some new documents that can serve as a basis for improving
+and measuring metadata quality within our community:
+
+   Best Practice Recommendations for Language Resource Description
+   <a href="http://www.language-archives.org/REC/bpr.html">http://www.language-archives.org/REC/bpr.html</a>
+
+   OLAC Metadata Usage Guidelines
+   <a href="http://www.language-archives.org/NOTE/usage.html">http://www.language-archives.org/NOTE/usage.html</a>
+
+   OLAC Metadata Quality Metrics
+   <a href="http://www.language-archives.org/NOTE/metrics.html">http://www.language-archives.org/NOTE/metrics.html</a>
+
+These documents have been reviewed in Draft status by the Metadata Working
+Group. After significant revision, they are now promoted to Proposed status
+and are thus ready for review by the entire community. In keeping with the
+OLAC Process standard, we hereby make a formal call for review. The review
+period will end on MARCH 31, at which point all of the comments that have
+been received will be processed to create revised versions of the documents.
+You may submit comments by simply replying to this message. &lt;End of general
+announcement&gt;
+
+The OLAC Metadata Standard that you followed in implementing your repository
+defines the constraints on validity for a metadata record, but it gives no
+advice about what a high quality metadata record is like. The first two
+documents listed above address this issue.  Then, in keeping with the OLAC
+core value of "Peer Review", we want to implement a service that will
+measure conformance to the recommendations that can be automatically tested
+for. That is the issue addressed by the third document listed above.
+
+We have implemented the proposed Metadata Quality Score so that you can see
+the implications for your current metadata. (As the documents are revised to
+express community consensus, the implementation of the metrics will be
+updated to match.) The metadata quality analysis as currently implemented is
+accessible from a test version of the Participating Archives page. The site
+has no links to this test page; it is accessed by entering this URL in a
+browser:
+
+   <a href="http://www.language-archives.org/archives-new.php">http://www.language-archives.org/archives-new.php</a>
+
+Follow the "Sample Record" link for your archive to see the quality score
+for the sample record named in your Identify response, along with comments
+on what can be done to improve the score. Follow the "Metrics" link to see
+the average quality score for the records you are currently providing. 
+Kudos to the Audio Archive of Linguistic Fieldwork (Berkeley), Centre de
+Ressources pour la Description de l'Oral (CRDO), and the CHILDES Data
+Repository who are already getting scores around 8 or higher.  The rest of
+us have room for significant improvement!
+
+Eventually, this new Participating Archives page will replace the one that
+is currently accessed from the ARCHIVES link in the OLAC site banner. 
+However, this will not happen right away. After the current round of review
+and any subsequent revisions, the documents will be put to the OLAC Council,
+who will check the revised documents and promote them to Candidate status
+when they feel they are ready. Next we will issue a call for implementation
+and give at least one month for implementer feedback. Based on that
+feedback, final revisions will be made to the satisfaction of the Council
+who will then grant Adopted status.  The new Participating Archives page
+will not replace the current one until the new guidelines and metrics are
+adopted.
+
+This discussion of process is to let you know that you will probably want to
+plan to update the implementation of your metadata repository some time
+within the next few months. When these new metadata recommendations and
+usage guidelines are officially adopted, the public will be able to see the
+metrics scores for your repository. In the meantime, it is just other
+implementers who are seeing them. You need not wait until the Candidate call
+for implementation to begin implementing changes.  As soon as your updated
+repository is harvested, you will see the metrics change.
+
+Again, the review period will end on MARCH 31, at which point all of the
+comments that have been received will be processed to create revised
+versions of the documents. You may submit comments by replying to the list
+(and potentially entering into discussion with other implementers) or by
+mailing them to &lt;olac_project@gial.edu&gt;. That account is handled by Debbie
+Chang, a Masters candidate at the Graduate Institute of Applied Linguistics
+who is the Research Assistant for our project.  She will compile a list of
+all the comments (whether submitted to the list or to the project account),
+which the document editors will then be asked to respond to. That response
+will come after the review period closes.
+
+With a solid foundation based on quality metadata, our grant project will be
+able to build improved search services and to expand coverage by attracting
+more participating archives and by implementing gateways to other
+aggregators.  We are grateful for your participation in this venture and
+trust that you share our excitement about its potential.
+
+Best wishes,
+Gary & Steven
+
+_______
+Steven Bird, University of Melbourne and University of Pennsylvania
+Gary Simons, SIL International and GIAL
+OLAC Coordinators (www.language-archives.org)
+
+
+From TBaker  Sat Mar  8 08:53:08 2008
+Received: from vsmtpgwdexc.exc.top.gwdg.de ([134.76.26.171]) by vs1.exc.top.gwdg.de with Microsoft SMTPSVC(6.0.3790.3959);
+	 Fri, 7 Mar 2008 20:35:39 +0100
+Received: from mx.gwdg.de ([134.76.10.20]) by vsmtpgwdexc.exc.top.gwdg.de with Microsoft SMTPSVC(6.0.3790.3959);
+	 Fri, 7 Mar 2008 20:35:38 +0100
+Received: from moutng.kundenserver.de ([212.227.126.171])
+	by mx.gwdg.de with esmtp (Exim 4.68)
+	(envelope-from &lt;SRS0=/dxo=TZ=cornell.edu=dih1@srs.kundenserver.de&gt;)
+	id 1JXiLo-0005xD-Ju
+	for tbaker@gwdg.de; Fri, 07 Mar 2008 20:35:38 +0100
+Received-SPF: pass (mxeu13: domain of cornell.edu designates 128.253.83.142 as permitted sender) client-ip=128.253.83.142; envelope-from=dih1@cornell.edu; helo=authusersmtp.mail.cornell.edu;
+Received: from authusersmtp.mail.cornell.edu (granite2.mail.cornell.edu [128.253.83.142])
+	by mx.kundenserver.de (node=mxeu13) with ESMTP (Nemesis)
+	id 0MKsEO-1JXiLn1GYd-0005Bc for tbaker@tbaker.de; Fri, 07 Mar 2008 20:35:28 +0100
+Received: from diane-i-hillmanns-powerbook-g4-15.local (fltg-dslttc1-32.fltg.net [208.31.47.163])
+	(authenticated bits=0)
+	by authusersmtp.mail.cornell.edu (8.13.1/8.12.10) with ESMTP id m27JZOgA009549
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NOT)
+	for &lt;tbaker@tbaker.de&gt;; Fri, 7 Mar 2008 14:35:25 -0500 (EST)
+Message-ID: &lt;47D198FD.6000808@cornell.edu&gt;
+Date: Fri, 07 Mar 2008 14:35:25 -0500
+From: "Diane I. Hillmann" &lt;dih1@cornell.edu&gt;
+User-Agent: Thunderbird 2.0.0.0 (Macintosh/20070326)
+MIME-Version: 1.0
+To: Thomas Baker &lt;tbaker@tbaker.de&gt;
+Subject: [Fwd: Call for review of new metadata documents]
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+X-Spam-Level: /
+X-Spam-Report: Content analysis: 0.0 points, 6.0 required
+	_SUMMARY_
+X-Virus-Scanned: (clean) by exiscan+sophie
+Return-Path: SRS0=/dxo=TZ=cornell.edu=dih1@srs.kundenserver.de
+X-OriginalArrivalTime: 07 Mar 2008 19:35:38.0519 (UTC) FILETIME=[6BF61270:01C8808A]
+Status: RO
+Content-Length: 6586
+Lines: 131
+
+Tom:
+
+Here's the OLAC stuff I spoke to you about.
+
+Diane
+
+
+-------- Original Message --------
+Subject: 	Call for review of new metadata documents
+Date: 	Wed, 5 Mar 2008 23:35:51 -0500
+From: 	Gary Simons &lt;gary_simons@SIL.ORG&gt;
+Reply-To: 	Open Language Archives Community Implementers List 
+&lt;OLAC-IMPLEMENTERS@LISTSERV.LINGUISTLIST.ORG&gt;
+To: 	OLAC-IMPLEMENTERS@LISTSERV.LINGUISTLIST.ORG
+
+
+
+Dear implementers,
+
+Many of you also subscribe to the OLAC-GENERAL list and so have gotten the
+general announcement about this call for review for new metadata documents.
+Those of you who have implemented an OLAC data provider are directly
+affected since this new work focuses on ways of improving the quality of the
+metadata in our implementations.  In this message we repeat the general
+announcement for the benefit of those not subscribed to OLAC-GENERAL, and
+then we supply further information that is relevant to you as implementers.
+
+Six months ago the US National Science Foundation awarded funding for a
+project named "OLAC: Accessing the World's Language Resources" which aims to
+greatly improve access to language resources for linguists and the broader
+communities of interest. If you are interested in learning more about the
+project, you may visit the project home page at:
+
+   <a href="http://olac.wiki.sourceforge.net/">http://olac.wiki.sourceforge.net/</a>
+
+In the first phase of the project we are focusing on improving metadata
+quality as a prerequisite to improving the quality of search.  To that end
+we have drafted some new documents that can serve as a basis for improving
+and measuring metadata quality within our community:
+
+   Best Practice Recommendations for Language Resource Description
+   <a href="http://www.language-archives.org/REC/bpr.html">http://www.language-archives.org/REC/bpr.html</a>
+
+   OLAC Metadata Usage Guidelines
+   <a href="http://www.language-archives.org/NOTE/usage.html">http://www.language-archives.org/NOTE/usage.html</a>
+
+   OLAC Metadata Quality Metrics
+   <a href="http://www.language-archives.org/NOTE/metrics.html">http://www.language-archives.org/NOTE/metrics.html</a>
+
+These documents have been reviewed in Draft status by the Metadata Working
+Group. After significant revision, they are now promoted to Proposed status
+and are thus ready for review by the entire community. In keeping with the
+OLAC Process standard, we hereby make a formal call for review. The review
+period will end on MARCH 31, at which point all of the comments that have
+been received will be processed to create revised versions of the documents.
+You may submit comments by simply replying to this message. &lt;End of general
+announcement&gt;
+
+The OLAC Metadata Standard that you followed in implementing your repository
+defines the constraints on validity for a metadata record, but it gives no
+advice about what a high quality metadata record is like. The first two
+documents listed above address this issue.  Then, in keeping with the OLAC
+core value of "Peer Review", we want to implement a service that will
+measure conformance to the recommendations that can be automatically tested
+for. That is the issue addressed by the third document listed above.
+
+We have implemented the proposed Metadata Quality Score so that you can see
+the implications for your current metadata. (As the documents are revised to
+express community consensus, the implementation of the metrics will be
+updated to match.) The metadata quality analysis as currently implemented is
+accessible from a test version of the Participating Archives page. The site
+has no links to this test page; it is accessed by entering this URL in a
+browser:
+
+   <a href="http://www.language-archives.org/archives-new.php">http://www.language-archives.org/archives-new.php</a>
+
+Follow the "Sample Record" link for your archive to see the quality score
+for the sample record named in your Identify response, along with comments
+on what can be done to improve the score. Follow the "Metrics" link to see
+the average quality score for the records you are currently providing. 
+Kudos to the Audio Archive of Linguistic Fieldwork (Berkeley), Centre de
+Ressources pour la Description de l'Oral (CRDO), and the CHILDES Data
+Repository who are already getting scores around 8 or higher.  The rest of
+us have room for significant improvement!
+
+Eventually, this new Participating Archives page will replace the one that
+is currently accessed from the ARCHIVES link in the OLAC site banner. 
+However, this will not happen right away. After the current round of review
+and any subsequent revisions, the documents will be put to the OLAC Council,
+who will check the revised documents and promote them to Candidate status
+when they feel they are ready. Next we will issue a call for implementation
+and give at least one month for implementer feedback. Based on that
+feedback, final revisions will be made to the satisfaction of the Council
+who will then grant Adopted status.  The new Participating Archives page
+will not replace the current one until the new guidelines and metrics are
+adopted.
+
+This discussion of process is to let you know that you will probably want to
+plan to update the implementation of your metadata repository some time
+within the next few months. When these new metadata recommendations and
+usage guidelines are officially adopted, the public will be able to see the
+metrics scores for your repository. In the meantime, it is just other
+implementers who are seeing them. You need not wait until the Candidate call
+for implementation to begin implementing changes.  As soon as your updated
+repository is harvested, you will see the metrics change.
+
+Again, the review period will end on MARCH 31, at which point all of the
+comments that have been received will be processed to create revised
+versions of the documents. You may submit comments by replying to the list
+(and potentially entering into discussion with other implementers) or by
+mailing them to &lt;olac_project@gial.edu&gt;. That account is handled by Debbie
+Chang, a Masters candidate at the Graduate Institute of Applied Linguistics
+who is the Research Assistant for our project.  She will compile a list of
+all the comments (whether submitted to the list or to the project account),
+which the document editors will then be asked to respond to. That response
+will come after the review period closes.
+
+With a solid foundation based on quality metadata, our grant project will be
+able to build improved search services and to expand coverage by attracting
+more participating archives and by implementing gateways to other
+aggregators.  We are grateful for your participation in this venture and
+trust that you share our excitement about its potential.
+
+Best wishes,
+Gary & Steven
+
+_______
+Steven Bird, University of Melbourne and University of Pennsylvania
+Gary Simons, SIL International and GIAL
+OLAC Coordinators (www.language-archives.org)
+
+</PRE>

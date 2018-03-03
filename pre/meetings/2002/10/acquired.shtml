@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+  <head>
+    <meta name="generator" content="HTML Tidy, see www.w3.org" />
+
+    <title>Acquired qualifier for Date element</title>
+    <meta http-equiv="Content-Type"
+    content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href="/css/default.css"
+    type="text/css" />
+<script src="/js/default.js" type="text/javascript">
+</script>
+  </head>
+
+  <body>
+    <!--#include virtual="/ssi/header.shtml" --> 
+<h2><a name="top"></a>DCMI Government Working Group<br />
+  Proposal: Acquired qualifier for Date element</h2>
+
+    <table cellspacing="0" cellpadding="4" width="100%" border="1" summary="a layout table.">
+      <tbody>
+        <tr>
+          <td valign="top" align="center">
+          <b>Name:</b></td>
+
+          <td>acquired</td>
+        </tr>
+
+        <tr>
+          <td valign="top" align="center">
+          <b>Label:</b></td>
+
+          <td>Acquired</td>
+        </tr>
+
+        <tr>
+          <td valign="top" align="center">
+          <b>Definition:</b></td>
+
+          <td>Date on which the resource was received into the
+          organisation.</td>
+        </tr>
+
+        <tr>
+          <td valign="top" align="center">
+          <b>Comment:</b></td>
+
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td valign="top" align="center">
+          <b>Examples:</b></td>
+
+          <td>WC3-DTF: 2002-08-01:09:18:40</td>
+        </tr>
+
+        <tr>
+          <td valign="top" align="center"><b>Type
+          of Term:</b></td>
+
+          <td>Element refinement</td>
+        </tr>
+
+        <tr>
+          <td valign="top" align="center"><b>Term
+          Qualified:</b></td>
+
+          <td>date</td>
+        </tr>
+
+        <tr>
+          <td valign="top" align="center"><b>Why
+          Needed:</b></td>
+
+          <td><font face="Times New Roman">In a resource discovery
+          process (Search &amp; Retrieval) for resources in a
+          specific agency, users (e.g. journalist) can have a need
+          for knowing exactly when the agency was aware of the
+          content of a specific resource. The status of a resource
+          can change when it is submitted by one authority to
+          another (e.g. in legislative procedures) without
+          necessarily any change being made to the content of that
+          resource.</font></td>
+        </tr>
+
+        <tr>
+          <td valign="top" align="center">
+          <b>Proposal Status:</b></td>
+
+          <td>Conforming</td>
+        </tr>
+
+        <tr>
+          <td valign="top" align="center">
+          <b>Related DCMI Terms:</b></td>
+
+          <td>DCMI Term: accepted<br />
+      Approval Decision: <a
+          href="/usage/decisions/2002/2002-02.accepted.shtml"> http://dublincore.org/usage/decisions/2002/2002-02.accepted.shtml</a><br />
+
+          Definition: "Date of acceptance of the resource (e.g. of
+          thesis by university department, of article by journal,
+          etc.)."</td>
+        </tr>
+
+        <tr>
+          <td valign="top" align="center">
+          <b>Related non-DCMI Terms:</b></td>
+
+          <td>DC.Date.Accepted (Dissertation Online Project)</td>
+        </tr>
+
+        <tr>
+          <td><b>Impact on Applications:</b></td>
+
+          <td>Some or minor impact. But benefits are enhanced
+          interoperability</td>
+        </tr>
+
+        <tr>
+          <td valign="top"><b>About the Proposers:</b></td>
+
+          <td>
+            
+      <p>DC-Government Working Group: <a
+            href="/groups/government/">http://www.dublincore.org/groups/government/</a><br />
+
+            DC-Government Working Group Discussion List Archive: <a
+            href="http://www.jiscmail.ac.uk/lists/DC-GOVERNMENT.html">
+            http://www.jiscmail.ac.uk/lists/DC-GOVERNMENT.html</a></p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Issues <span class="smallsans">[<a
+    href="http://dublincore.org/groups/government/#top">top</a>]</span></h2>
+    While it might appear that there is overlap between the
+    proposed 'dateAccepted' and the DCMI refinement 'dateAcquired',
+    the two terms serve different purposes. Date.Acquired is about
+    the resource itself being received, 'dateAccepted' is about the
+    content of the resource being approved. One resource may have
+    different values for dateAcquired and dateAccepted, so two
+    refinements are needed. for example a resource arrives in an
+    organisation on a given date, but cannot be formally accepted
+    until it has been reviewed by a committee. Its status changes
+    when it is accepted. At no point does the content of the
+    resource change during this process. 
+
+    <h2>Public Comment Period Summary <span class="smallsans">[<a
+    href="http://dublincore.org/groups/government/#top">top</a>]</span></h2>
+
+    <p>[The summary of the discussion during the Public Comment
+    Period is to be supplied by the Usage Board shepherd before
+    discussion and decision by the Usage Board.]</p>
+
+    <h2>Remarks about the qualifier from the DC GOV community
+    2001.08.01-2002.08.01</h2>
+
+    <p>21 march 2002<br />
+    Chris Croome:<br />
+    Acquisition Date. Should this work like a DCMI Period [2],
+    initially with just a start date and then an end date for when
+    the organisation gets reorganised and renamed and the resource
+    gets passed on? Perhaps AquiredDate and AquiredBy might make
+    sense as refinements of Publisher? I don't know if this was
+    ever considered? But with the confusing speed at with UK
+    government departments get renamed and reorganised more
+    flexibilty might make sense for the Date Acquired?<br />
+    <br />
+    21 feb 2002<br />
+    Douglas Campell<br />
+    Date.acquired - shouldn't the encoding scheme be "W3CDTF"
+    instead of "ISO 8601" to match the Date encoding scheme in DC
+    Qualifiers?<br />
+    <br />
+    28 sept 2001<br />
+    John Roberts<br />
+    Date/Acquired - We are unsure as to whether this is in fact
+    discovery mertadata or management metadata.</p>
+    <!--#include virtual="/ssi/footer.shtml" -->
+  </body>
+</html>
+
