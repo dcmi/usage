@@ -47,6 +47,7 @@
 * https://github.com/dcmi/usage/tree/master/pre/meetings/2002/10/agenda.shtml	https://github.com/dcmi/usage/tree/master/post/meetings/2002/10/agenda.md
 * https://github.com/dcmi/usage/tree/master/pre/meetings/2002/10/bibliographicCitation-Dateien/epub.css	https://github.com/dcmi/usage/tree/master/post/meetings/2002/10/bibliographicCitation-Dateien/epub.css
 * https://github.com/dcmi/usage/tree/master/pre/meetings/2002/10/bibliographicCitation.html	https://github.com/dcmi/usage/tree/master/post/meetings/2002/10/bibliographicCitation.md
+----------------------------------------------------------------------
 * https://github.com/dcmi/usage/tree/master/pre/meetings/2002/10/florence-meeting-notes.shtml	https://github.com/dcmi/usage/tree/master/post/meetings/2002/10/florence-meeting-notes.md
 * https://github.com/dcmi/usage/tree/master/pre/meetings/2002/10/securityClassification.shtml	https://github.com/dcmi/usage/tree/master/post/meetings/2002/10/securityClassification.md
 * https://github.com/dcmi/usage/tree/master/pre/meetings/2003/06/Agenda-ithaca.html	https://github.com/dcmi/usage/tree/master/post/meetings/2003/06/Agenda-ithaca.md
@@ -96,6 +97,7 @@
 * https://github.com/dcmi/usage/tree/master/pre/meetings/2004/03/rights-proposals.html	https://github.com/dcmi/usage/tree/master/post/meetings/2004/03/rights-proposals.md
 * https://github.com/dcmi/usage/tree/master/pre/meetings/2004/10/2004-03-15.DCMIType-sas.html	https://github.com/dcmi/usage/tree/master/post/meetings/2004/10/2004-03-15.DCMIType-sas.md
 * https://github.com/dcmi/usage/tree/master/pre/meetings/2004/10/2004-08-27.process.html	https://github.com/dcmi/usage/tree/master/post/meetings/2004/10/2004-08-27.process.md
+----------------------------------------------------------------------
 * https://github.com/dcmi/usage/tree/master/pre/meetings/2004/10/Element-refinement.html	https://github.com/dcmi/usage/tree/master/post/meetings/2004/10/Element-refinement.md
 * https://github.com/dcmi/usage/tree/master/pre/meetings/2004/10/Meeting-summary.shtml	https://github.com/dcmi/usage/tree/master/post/meetings/2004/10/Meeting-summary.md
 * https://github.com/dcmi/usage/tree/master/pre/meetings/2004/10/mmidc117.html	https://github.com/dcmi/usage/tree/master/post/meetings/2004/10/mmidc117.md
@@ -145,6 +147,7 @@
 * https://github.com/dcmi/usage/tree/master/pre/meetings/2008/09/berlin/dcap-guidelines/injection_graph_func.js	https://github.com/dcmi/usage/tree/master/post/meetings/2008/09/berlin/dcap-guidelines/injection_graph_func.js
 * https://github.com/dcmi/usage/tree/master/pre/meetings/2008/09/berlin/dcap-guidelines/mybookcase.jpg	https://github.com/dcmi/usage/tree/master/post/meetings/2008/09/berlin/dcap-guidelines/mybookcase.jpg
 * https://github.com/dcmi/usage/tree/master/pre/meetings/2008/09/berlin/dcap-guidelines/singapore-framework.png	https://github.com/dcmi/usage/tree/master/post/meetings/2008/09/berlin/dcap-guidelines/singapore-framework.png
+----------------------------------------------------------------------
 * https://github.com/dcmi/usage/tree/master/pre/meetings/2008/09/berlin/etc-actions/UsageBoardWikiFrontPage	https://github.com/dcmi/usage/tree/master/post/meetings/2008/09/berlin/etc-actions/UsageBoardWikiFrontPage
 * https://github.com/dcmi/usage/tree/master/pre/meetings/2008/09/berlin/etc-encodingschemes/SES_VES.doc	https://github.com/dcmi/usage/tree/master/post/meetings/2008/09/berlin/etc-encodingschemes/SES_VES.doc
 * https://github.com/dcmi/usage/tree/master/pre/meetings/2008/09/berlin/review-planning/2008-03-07.olac.html	https://github.com/dcmi/usage/tree/master/post/meetings/2008/09/berlin/review-planning/2008-03-07.olac.md
@@ -194,6 +197,7 @@
 * https://github.com/dcmi/usage/tree/master/pre/minutes/2004/2004-10-10.UB-Meeting-notes.html	https://github.com/dcmi/usage/tree/master/post/minutes/2004/2004-10-10.UB-Meeting-notes.md
 * https://github.com/dcmi/usage/tree/master/pre/minutes/2004/2004-10-18.meeting-excerpts.html	https://github.com/dcmi/usage/tree/master/post/minutes/2004/2004-10-18.meeting-excerpts.md
 * https://github.com/dcmi/usage/tree/master/pre/minutes/2005/2005-02-25.Telecon-notes.html	https://github.com/dcmi/usage/tree/master/post/minutes/2005/2005-02-25.Telecon-notes.md
+----------------------------------------------------------------------
 * https://github.com/dcmi/usage/tree/master/pre/minutes/2005/2005-02-25.UB-Telecon-agenda.html	https://github.com/dcmi/usage/tree/master/post/minutes/2005/2005-02-25.UB-Telecon-agenda.md
 * https://github.com/dcmi/usage/tree/master/pre/minutes/2005/2005-02-25.meeting-notes2.jpg	https://github.com/dcmi/usage/tree/master/post/minutes/2005/2005-02-25.meeting-notes2.jpg
 * https://github.com/dcmi/usage/tree/master/pre/minutes/2005/2005-02-25.telecon-notes2.html	https://github.com/dcmi/usage/tree/master/post/minutes/2005/2005-02-25.telecon-notes2.md
@@ -243,6 +247,7 @@
 * https://github.com/dcmi/usage/tree/master/pre/minutes/2006/2006-08-18.ub-telecon-report.html	https://github.com/dcmi/usage/tree/master/post/minutes/2006/2006-08-18.ub-telecon-report.md
 * https://github.com/dcmi/usage/tree/master/pre/minutes/2006/2006-09-01.ub-telecon-agenda.html	https://github.com/dcmi/usage/tree/master/post/minutes/2006/2006-09-01.ub-telecon-agenda.md
 * https://github.com/dcmi/usage/tree/master/pre/minutes/2006/2006-09-01.ub-telecon-report.html	https://github.com/dcmi/usage/tree/master/post/minutes/2006/2006-09-01.ub-telecon-report.md
+----------------------------------------------------------------------
 * https://github.com/dcmi/usage/tree/master/pre/minutes/2006/2006-09-15.ub-telecon-agenda.html	https://github.com/dcmi/usage/tree/master/post/minutes/2006/2006-09-15.ub-telecon-agenda.md
 * https://github.com/dcmi/usage/tree/master/pre/minutes/2006/2006-09-15.ub-telecon-report.html	https://github.com/dcmi/usage/tree/master/post/minutes/2006/2006-09-15.ub-telecon-report.md
 * https://github.com/dcmi/usage/tree/master/pre/minutes/2006/2006-10-01.meeting-notes-manzanillo.html	https://github.com/dcmi/usage/tree/master/post/minutes/2006/2006-10-01.meeting-notes-manzanillo.md
@@ -292,6 +297,7 @@
 * https://github.com/dcmi/usage/tree/master/pre/minutes/2008/2008-07-30.dcub-telecon-report.html	https://github.com/dcmi/usage/tree/master/post/minutes/2008/2008-07-30.dcub-telecon-report.md
 * https://github.com/dcmi/usage/tree/master/pre/minutes/2008/2008-08-20.dcub-telecon-agenda.html	https://github.com/dcmi/usage/tree/master/post/minutes/2008/2008-08-20.dcub-telecon-agenda.md
 * https://github.com/dcmi/usage/tree/master/pre/minutes/2008/2008-08-20.dcub-telecon-report.html	https://github.com/dcmi/usage/tree/master/post/minutes/2008/2008-08-20.dcub-telecon-report.md
+----------------------------------------------------------------------
 * https://github.com/dcmi/usage/tree/master/pre/minutes/2008/2008-09-03.dcub-telecon-agenda.html	https://github.com/dcmi/usage/tree/master/post/minutes/2008/2008-09-03.dcub-telecon-agenda.md
 * https://github.com/dcmi/usage/tree/master/pre/minutes/2008/2008-09-20.dcub-meeting-notes-raw.html	https://github.com/dcmi/usage/tree/master/post/minutes/2008/2008-09-20.dcub-meeting-notes-raw.md
 * https://github.com/dcmi/usage/tree/master/pre/minutes/2008/2008-09-21.berlin-1Libraries.html	https://github.com/dcmi/usage/tree/master/post/minutes/2008/2008-09-21.berlin-1Libraries.md
