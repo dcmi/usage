@@ -1,7 +1,0 @@
-for num in 1 42 72 97 101 122 162 205 265 267 307 312 325
-do
-    for file in compare.md compare_preview.md
-    do
-        sed -n ${num}p $file >>Paul.txt
-    done
-done
