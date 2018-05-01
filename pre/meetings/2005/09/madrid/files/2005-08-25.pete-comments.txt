@@ -1,0 +1,106 @@
+------------------------------------------------------------------------
+Date: Thu, 25 Aug 2005 13:48:25 +0100
+From: Pete Johnston <p.johnston@ukoln.ac.uk>
+------------------------------------------------------------------------
+
+I've noted the two outstanding issues with the "content"
+of the DC CD AP:
+
+-- clarifying whether Location and Service are distinct and
+   if they are what the relationships are between Collection
+   and Location and Collection and Service
+
+-- how to represent the fact that a collection contains some
+   items of format F
+
+I'm proposing to discuss both of these ate the meeting of
+the DC CD WG in Madrid.
+
+I've left the isLocatedIn and isAccessedVia properties in
+the DC CD AP, but essentially they are placeholders for a
+final solution, so I suggest the UB skips over examining them
+(though of course any thoughts from UB on the problem would
+be welcome!)
+
+For the date stuff, in the absence of a proposal for a solution
+from DC Date WG, I've gone ahead and referenced the format used
+in RKMS. If DC Date WG does propose a suitable format/scheme
+then I'll happily switch over to that.
+
+More on the general modelling side of things - the "what
+are we doing in a DCAP?" sort of questions which I think UB
+is more interested in - I still have some niggling doubts
+about the relationship between the way a DCAP "contextualises
+the use of" a property (I've stopped saying "redefines" or
+"narrows the definition of") and subproperty relations.
+
+For example, in the DC CD AP
+
+-- the property dc:relation is used with vocabulary encoding
+   scheme dcmitype:Collection to indicated an "association"
+   of unspecified type between the described collection and
+   a second collection;
+
+-- the property dcterms:isReferencedBy is used with no
+   vocabulary encoding scheme specified to indicated that
+   the reference publication is based on the study of the
+   described collection.
+
+I think both of these are consistent with the definitions
+of the properties (OK, in the second case it might be a bit
+loose - but if it is based on the study of the collection,
+it must reference it, I think)
+
+But the fact that dcterms:isReferencedBy is a subproperty
+of dc:relation implies that every statement made referring
+to dcterms:isReferenced By implies a statement referring
+to dc:relation.
+
+So
+
+collection:C dcterms:isReferencedBy book:B .
+
+implies
+
+collection:C dc:relation book:B .
+
+Which is pefectly fine given the DCMI definition of dc:relation
+- there _is_ a relation of some type between the collection
+and the book.
+
+However, the inferred statement does _not_ correspond to the
+"use" we are making of dc:relation in the DC CD AP - book:B
+is not an "associated collection".
+
+I think this is a general issue when a DCAP "uses" both a
+property and a subproperty of that property. I'm not sure
+whether this really is a problem and /or what to do about it,
+but it provides a good topic for discussion, I think!
+
+One solution would be to say "don't ever do that" in
+a DCAP, and you should coin a new subproperty for the
+case where you use the property - so in this case, coin
+cld:associatedCollection (subprop of dc:relation) and use
+that instead of dc:relation. Both would imply a straight
+dc:relation statement, and as the DCAP isn't "contextualising"
+dc:relation, there is no clash of interpretation.
+
+And/or you say the interpretation of the property is _always_
+only that of the source definition - and the stuff in the
+DCAP is just a guideline for the metadata _creator_, not for
+the consumer.... Again, if you want to make explicit that
+your association is something different from dc:relation,
+then you need a new subproperty.
+
+I'm tempted to say that defining new subproperties is
+a _better_ strategy than "narrowing/contextualising" the
+definitions of existing properties in the name of "reuse". We
+should _not_ feel it is "bad" to define new properties where
+it is appropriate to do so. Yes, you get more terms in use,
+but that isn't necessarily "wrong" - "proliferation" doesn't
+mean no interoperability. the subproperty relation tells
+my application that the statement made using this thing
+it has never seen before implies a statement made using
+dc:relation. That is the point of having the concept of
+subproperty in the DCAM.
+

@@ -1,0 +1,164 @@
+---
+title: 
+date: '2017-09-01T16:21:09+01:00'
+description: 
+draft: false
+creators: []
+contributors: []
+publisher: 
+tags: []
+---
+
+<pre>
+Title: Use of metadata at <a href="">http://dublincore.org</a> - a proposal
+Identifier: <a href="/usage/meetings/2004/03/ISSUES/dublincore-org/">http://dublincore.org/usage/meetings/2004/03/ISSUES/dublincore-org/</a>
+Date: 2004-03-10
+Author: Tom Baker
+
+The DCMI Web site currently has metadata records for more
+than 700 individual items -- many of which are long-obsolete
+working drafts. As a result, users searching the DCMI site are
+presented with many irrelevant hits, and the genuinely useful
+resources are hard to find. Moreover, the DCMI Web site is 
+not well integrated into the OAI world. I propose we remedy
+this situation by doing the following:
+
+1) We create a list 50 to 100 "key" resources for which DCMI
+   can commit to maintaining excellent metadata (see Appendix
+   A below). DCMI would keep the short-list up-to-date and use
+   it for periodically checking the freshness of metadata.
+   The records for these 50 to 100 key resources would
+   have good and exhaustive keywords, accurate dates, and
+   abstract-length descriptions.
+
+2) We delete the metadata for all other resources (or at any
+   rate rename the *.rdf metadata files so they will not be 
+   captured in the search index).
+
+3) It would seem that Web sites (like DCMI's) with small
+   numbers of documents to expose can now do this as an "OAI
+   Static Repository" (see Appendix B below) -- perhaps by
+   converting the RDF metadata into the XML schema "oai_dc",
+   concatenating the schemas in one big XML file, and making
+   that file available to OAI Static Repository harvesters.
+
+4) If we get this far and the approach works well, we should
+   not neglect to describe this method in a small document
+   to be posted on the DCMI Web site.
+
+------------------------------------------------------------------------
+APPENDIX A: Best candidates for metadata
+------------------------------------------------------------------------
+
+<a href="/">http://dublincore.org/</a>
+<a href="/about/">http://dublincore.org/about/</a>
+<a href="/about/bylaws/">http://dublincore.org/about/bylaws/</a> - doesn't exist yet
+<a href="/about/copyright/">http://dublincore.org/about/copyright/</a> -- no metadata yet
+<a href="/banners/">http://dublincore.org/banners/</a>
+<a href="/dcregistry/">http://dublincore.org/dcregistry/</a> -- no metadata yet
+<a href="/documents/">http://dublincore.org/documents/</a>
+<a href="/documents/dc-xml-guidelines/">http://dublincore.org/documents/dc-xml-guidelines/</a>
+<a href="/documents/dces/">http://dublincore.org/documents/dces/</a>
+<a href="/documents/dcmes-xml/">http://dublincore.org/documents/dcmes-xml/</a>
+<a href="/documents/dcmi-box/">http://dublincore.org/documents/dcmi-box/</a>
+<a href="/documents/dcmi-dcsv/">http://dublincore.org/documents/dcmi-dcsv/</a>
+<a href="/documents/dcmi-ieee-mou/">http://dublincore.org/documents/dcmi-ieee-mou/</a>
+<a href="/documents/dcmi-namespace/">http://dublincore.org/documents/dcmi-namespace/</a>
+<a href="/documents/dcmi-period/">http://dublincore.org/documents/dcmi-period/</a>
+<a href="/documents/dcmi-point/">http://dublincore.org/documents/dcmi-point/</a>
+<a href="/documents/dcmi-terms/">http://dublincore.org/documents/dcmi-terms/</a>
+<a href="/documents/dcmi-type-vocabulary/">http://dublincore.org/documents/dcmi-type-vocabulary/</a>
+<a href="/documents/dcq-html/">http://dublincore.org/documents/dcq-html/</a>
+<a href="/documents/dcq-rdf-xml/">http://dublincore.org/documents/dcq-rdf-xml/</a>
+<a href="/documents/library-application-profile/">http://dublincore.org/documents/library-application-profile/</a>
+<a href="/documents/usageguide/">http://dublincore.org/documents/usageguide/</a>
+<a href="/documents/usageguide/glossary.shtml">http://dublincore.org/documents/usageguide/glossary.shtml</a> -- separate metadata??
+<a href="/documents/usageguide/qualifiers.shtml">http://dublincore.org/documents/usageguide/qualifiers.shtml</a> -- separate metadata??
+<a href="/documents/wgguidelines/">http://dublincore.org/documents/wgguidelines/</a>
+<a href="/groups/">http://dublincore.org/groups/</a>
+<a href="/groups/access/">http://dublincore.org/groups/access/</a>
+<a href="/groups/agents/">http://dublincore.org/groups/agents/</a>
+<a href="/groups/architecture/">http://dublincore.org/groups/architecture/</a>
+<a href="/groups/citation/">http://dublincore.org/groups/citation/</a>
+<a href="/groups/collections/">http://dublincore.org/groups/collections/</a>
+<a href="/groups/corporate/">http://dublincore.org/groups/corporate/</a>
+<a href="/groups/corporate/Seattle/">http://dublincore.org/groups/corporate/Seattle/</a>
+<a href="/groups/date/">http://dublincore.org/groups/date/</a>
+<a href="/groups/education/">http://dublincore.org/groups/education/</a>
+<a href="/groups/environ/">http://dublincore.org/groups/environ/</a>
+<a href="/groups/government/">http://dublincore.org/groups/government/</a>
+<a href="/groups/guide/">http://dublincore.org/groups/guide/</a>
+<a href="/groups/kernel/">http://dublincore.org/groups/kernel/</a>
+<a href="/groups/languages/">http://dublincore.org/groups/languages/</a>
+<a href="/groups/libraries/">http://dublincore.org/groups/libraries/</a>
+<a href="/groups/mailinglists.shtml">http://dublincore.org/groups/mailinglists.shtml</a>
+<a href="/groups/pid/">http://dublincore.org/groups/pid/</a>
+<a href="/groups/preservation/">http://dublincore.org/groups/preservation/</a>
+<a href="/groups/registry/">http://dublincore.org/groups/registry/</a>
+<a href="/groups/standards/">http://dublincore.org/groups/standards/</a>
+<a href="/groups/tools/">http://dublincore.org/groups/tools/</a>
+<a href="/groups/type/">http://dublincore.org/groups/type/</a>
+<a href="/links/">http://dublincore.org/links/</a>
+<a href="/news/">http://dublincore.org/news/</a>
+<a href="/news/adoption/">http://dublincore.org/news/adoption/</a>
+<a href="/news/communications/">http://dublincore.org/news/communications/</a>
+<a href="/news/communications/deliverables.shtml">http://dublincore.org/news/communications/deliverables.shtml</a>
+<a href="/news/documents.shtml">http://dublincore.org/news/documents.shtml</a>
+<a href="/projects/">http://dublincore.org/projects/</a>
+<a href="/resources/">http://dublincore.org/resources/</a>
+<a href="/resources/faq/">http://dublincore.org/resources/faq/</a>
+<a href="/resources/translations/">http://dublincore.org/resources/translations/</a>
+<a href="/schemas/">http://dublincore.org/schemas/</a>
+<a href="/sitemap.shtml">http://dublincore.org/sitemap.shtml</a>
+<a href="/sponsors/">http://dublincore.org/sponsors/</a>
+<a href="/tools/">http://dublincore.org/tools/</a>
+<a href="/usage/">http://dublincore.org/usage/</a>
+<a href="/usage/decisions/">http://dublincore.org/usage/decisions/</a>
+<a href="/usage/documents/">http://dublincore.org/usage/documents/</a>
+<a href="/usage/documents/abstract-model/">http://dublincore.org/usage/documents/abstract-model/</a> - address does not exist yet
+<a href="/usage/documents/approval/">http://dublincore.org/usage/documents/approval/</a>
+<a href="/usage/documents/criteria/">http://dublincore.org/usage/documents/criteria/</a>
+<a href="/usage/documents/mission/">http://dublincore.org/usage/documents/mission/</a>
+<a href="/usage/documents/overview/">http://dublincore.org/usage/documents/overview/</a>
+<a href="/usage/documents/principles/">http://dublincore.org/usage/documents/principles/</a>
+<a href="/usage/documents/process/">http://dublincore.org/usage/documents/process/</a>
+<a href="/usage/documents/profiles/">http://dublincore.org/usage/documents/profiles/</a>
+<a href="/usage/documents/publications/">http://dublincore.org/usage/documents/publications/</a>
+<a href="/usage/documents/vocabulary-guidelines/">http://dublincore.org/usage/documents/vocabulary-guidelines/</a>
+<a href="/usage/meetings/">http://dublincore.org/usage/meetings/</a>
+<a href="/usage/terms/">http://dublincore.org/usage/terms/</a>
+<a href="/usage/terms/history/">http://dublincore.org/usage/terms/history/</a>
+<a href="/workshops/">http://dublincore.org/workshops/</a>
+
+------------------------------------------------------------------------
+APPENDIX B: Support for OAI Static Repositories
+------------------------------------------------------------------------
+
+According to <a href="http://www.openarchives.org/news/oaistaticrepo0301010.html">http://www.openarchives.org/news/oaistaticrepo0301010.html</a>,
+the OAI protocol now provides: 
+
+    a simple approach for exposing relatively static and
+    small collections of metadata records through the OAI-PMH.
+    The Static Repository approach is targeted at organizations
+    that:
+
+    -- Have metadata collections ranging in size between 1
+       and 5000 records;
+    -- Can make static content available through a
+       network-accessible Web server;
+    -- Need a technically simpler implementation strategy
+       compared to acting as an OAI-PMH Repository, which
+       requires processing OAI-PMH requests.
+
+    A Static Repository is an XML file that is made accessible
+    at a persistent URL. The XML file contains metadata
+    records and repository information.
+
+    A Static Repository becomes accessible via OAI-PMH through
+    the intermediation of one Static Repository Gateway.
+    A Static Repository Gateway uses the metadata records and
+    repository information, provided via XML in the Static
+    Repository, to process the six OAI-PMH requests for access
+    to that information.
+
+</pre>

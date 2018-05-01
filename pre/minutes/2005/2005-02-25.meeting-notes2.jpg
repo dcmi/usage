@@ -1,0 +1,407 @@
+Usage Board telecon - meeting notes
+
+Friday, 2005-02-25, 2100UTC
+
+Participants: Andy, Tom, Stuart, Diane, Rebecca
+Regrets: Akira, Traugott, Andrew
+
+1. Ongoing revision of UB Process [Stuart and Diane]
+
+   ACTION [Stuart, Diane]: Revise Process before May meeting.
+
+   -- Add wording to the UB Process document referring to
+      the DCMI Mission Statement, e.g. to section 4.3 onwards.
+   -- Add wording to 4.3.1 of UB Process document to indicate
+      that the criteria are not 'exclusive'
+   -- Revisit 3.2 of UB Process document at some stage
+      in light of Scope Statement (see Andrew's action).
+   -- Add wording somewhere in UB Process document to
+      indicate that the recording of decisions should be rich
+      enough that the rationale for decisions is clear to others.
+   -- Agreed various changes to the UB Process document
+      based on the email from Tom in the meeting packet
+      (Stuart has detailed record of changes required).
+   -- Agreed that the announcement of the start of the
+      comment period should come from the shepherd and should
+      say that comments can go to either the appropriate WG
+      mailing list, the dc-general mailing list or privately to
+      the shepherd and should explicitly ask for indications
+      of support for the proposal.  Need to update the UB
+      Process document accordingly.
+   -- Proposals for new terms should be moved to the DCMI Web
+      site, and given DCMI page headers and a status of
+      'Proposed term'. when they are accepted by the UB
+      (i.e. before comment period starts).
+   -- Add a new status of 'Endorsed' (for LoC statements
+      about MARC Relator terms) and document processes related
+      to endorsement of such assertions.
+   -- Clarify use of the status "Registered" now that UB is no
+      longer accepting proposals for Vocabulary Encoding Schemes.
+   -- Need a process for handling changes to definitions
+      such as that contemplated for Date.
+   -- Note: Need to consider future possibilities for giving a
+      status of 'Conforming' to terms in external namespaces.
+
+-----------------------------------------------------------------
+
+2. Other process-related issues
+
+   -- Scope Statement [Andrew]: what are the boundaries and
+      criteria for inclusion of terms in DCMI (i.e. what
+      'resource discovery' and 'cross-domain' means in
+      practice), to be included in UB Mission and Principles,
+      UB Process, or elsewhere.
+
+      ACTION [Tom]: Tom to talk with Andrew.
+
+   -- Announcement Template [Tom]: Create a comment period
+      announcement email template to be used by shepherds.
+
+      ACTION [Tom]: Comment period announcement email - ongoing.
+
+   -- Approval Process Overview [Tom]: Clarify the relationship
+      between UB Process document and Makx's 'Procedure for
+      approval of DCMI Metadata Terms and Recommendations'
+      http://dublincore.org/usage/documents/approval/.
+
+      ACTION [Tom]: The approval document is maintained by
+      the Managing Director as a high-level summary aimed
+      at a general audience -- a one-stop source of the
+      overall procedure.  It should link to the more detailed
+      UB process document.  The UB should inform Managing
+      Director every time there is a major revision of UB
+      process (which is not often).  This should be reflected
+      in the UB Process.
+
+-----------------------------------------------------------------
+
+3. Abstract Model
+
+   -- Encoding Scheme Types [Andy]: For each of the currently
+      recommended encoding schemes we need to
+      determine if it is a syntax encoding scheme
+      or a vocabulary encoding scheme.  Andy posted
+      a list on Feb 26, temporarily archived at
+      http://www.bi.fhg.de/People/Thomas.Baker/2005-02-26.Encoding-scheme-types.html.
+
+      ACTION: Discuss approval process at next telecon and
+      consequences for documentation.
+
+   -- Wording of Definitions [Andy]: Agreed to consider
+      re-wording the definitions of current elements to make
+      them more consistent with the abstract model.
+
+      ACTION: Andy to draft before May meeting, including
+      results on Date definition.
+
+      ACTION: Rebecca, and everyone, to consider the impact
+      of such changes on standards.
+
+   -- DCSV Revision [Andy, Andrew]: Revise DCSV-related encoding
+      schemes (removing XML examples, etc).
+
+      ACTION: Andy to do by May meeting.
+
+   -- Element Refinement document [Pete]: In Shanghai, we
+      agreed to recommend to the Directorate that it publish
+      http://www.ukoln.ac.uk/metadata/dcmi/dc-elem-refine/2004-10-01/
+      -- Pete's document -- as a 'recommended resource'.
+      However, at the subsequent Advisory Board meeting it
+      was this should be circulated for comment to the DC-AB
+      list before it was published.  As of 2005-02-25, Pete
+      still wants to make a few minor tweaks before doing this.
+
+      ACTION: Tom to nudge Pete (2005-02-25).
+
+-----------------------------------------------------------------
+
+4. Attributes for describing DCMI Terms ("UB application profile")
+
+   -- Properties for Describing Terms [Tom]: At some point, we
+      should formally declare terms such as "Status" (as well
+      as the Status types: "recommended", "conforming"...).
+
+      ACTION: Tom to explore possibility of coordinating with
+      SKOS community in this regard.  Berlin conference in
+      April will provide opportunity to speak with ISO11179
+      community as well; will report on results in May.
+
+-----------------------------------------------------------------
+
+5. MARC Relator Terms
+
+   -- In Shanghai, Diane agreed to slightly revise those
+      definitions that do not specifically refer to the
+      resource being described.  Diane posted these on
+      Oct 21 and they have been temporarily posted at
+      http://www.bi.fhg.de/People/Thomas.Baker/2004-10-21.Relator-terms-review-diane.txt
+
+      ACTION: Rebecca will review these from an LoC point
+      of view, as it would involve revising the master list
+      from which all sub-sets (including the refinements of
+      dc:contributor) are derived.  As of 2005-02-25, Rebecca's
+      list is fairly stable, but we should finalize it by the
+      May meeting.
+
+   -- DCMI needs an RDF-based mechanism for recording UB's
+      endorsment of each LoC assertion that MARCRel:xxx refines
+      dc:xxx or dcterms:xxx.  This action was on Pete.
+
+      ACTION: Andy has emailed Pete to ask whether he can
+      work on this.  Alternatively, Tom has offered to seek
+      help with this in the RDF community.  On 2005-02-25,
+      the group agreed that we could finalize an announcement
+      of the LoC sub-property assertions without having an RDF
+      mechanism in place -- i.e., DCMI could simply endorse
+      the assertions verbally until an RDF mechanism for doing
+      the same is worked out.
+
+   -- Maintenance Process [Tom and Rebecca]: We need to
+      document ongoing relationship between DCMI and LoC.
+
+      ACTION: Rebecca will write down the mechanism for adding
+      things to the list at LoC.  The basic idea should be
+      that LC makes an initial decision, sends it to UB for
+      possible refinement and agreement.  Once LoC hears
+      back from UB on the decision, there would be a fairly
+      simple mechanism for incorporating the new term in the
+      dc:contributor sub-list.  There is a question as to
+      whether each addition to this list would need to be
+      announced to DC-GENERAL.
+
+   -- From Shanghai, the action "Need to supply examples for
+      Using Dublin Core" was given to Pete in this context.
+      It was not clear whether this refers to Relator terms
+      or more generally to examples for Provenance and Rights
+      Holder, for which Diane needs examples.
+
+      ACTION: Andy has emailed Pete for clarification.
+
+-----------------------------------------------------------------
+
+6. Element proposal: Accessibility [Andrew]
+
+   -- "Accessibility" Proposal: Agreed to change definition
+      to: A description of the qualities of the resource in
+      terms of control, display and content that can be used to
+      match the needs and preferences of a user.  Noted need to
+      clarify comment to indicate what is meant by 'control,
+      display and content' and to note that recommended best
+      practice is to provide a machine-readable statement.
+
+      Background materials - including the proposal - are in
+      [1], page 127+.  There has been discussion on the list,
+      starting at [2].  Stuart summarized this discussion, which
+      I have temporarily re-posted at [3].
+
+      [1] http://dublincore.org/usage/meetings/2004/10/Meeting-packet.pdf
+      [2] http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0502&L=dc-usage&T=0&O=A&P=54
+      [3] http://www.bi.fhg.de/People/Thomas.Baker/2005-02-25.accessibility-proposal.txt
+
+-----------------------------------------------------------------
+
+7. Term proposals: Collection Description (Andrew)
+
+   -- Approved: accrualMethod
+      -- Change 'method' to 'process' in the definition.
+      -- Remove mention of specific scheme from comment.
+
+   -- Approved: accrualPeriodicity
+      -- Remove mention of specific scheme from comment.
+
+   -- Approved: accrualPolicy
+      -- Remove mention of specific scheme from comment.
+
+      ACTION: Andrew finalize the decisions.
+      ACTION: Tom nudge Andrew (2005-02-25)
+
+   -- Unable to approve or reject proposals for 3 DC-CD
+      controlled vocabularies.  Defer decision, pending clarification
+      about the ongoing maintenance of the vocabularies.  Suggest
+      that WG consider possible options for future maintenance.
+      Seek clarification from the Board of Trustees about the role
+      of DCMI (and the DC UB) in the maintenance of controlled
+      vocabularies.
+
+      ACTION: Tom will discuss at Trustees' retreat.
+
+-----------------------------------------------------------------
+
+8. Element proposal: "Instructional Method" [Akira]
+
+  -- Element was approved as "conforming"
+
+     -- Change definition to: 'A process, used to engender
+        knowledge, attitudes and skills, that the resource
+        is designed to support'.
+
+     -- Need to find a way of removing 'this element describes'
+        from the start of the comment.  Stuart did
+        this on Nov 7, reposted temporarily as
+        http://www.bi.fhg.de/People/Thomas.Baker/2004-11-07.instructionalMethod-comment.txt.
+
+    -- Decision text needs to document community support.
+
+    ACTION: Tom has posted draft decision text at [1].
+    Stuart and Akira should most closely check this and add
+    community support documentation.  Diane wants examples.
+
+    [1] http://www.bi.fhg.de/People/Thomas.Baker/2005-02.instructionalMethod.html
+
+-----------------------------------------------------------------
+
+9. Encoding Scheme proposal: "NLM" [Rebecca]
+
+   -- Proposal for Encoding Scheme unanimously approved
+      (2005-02-25).  A few changes were made with respect to
+      the text posted by Rebecca: changed label and definition
+      and deleted the contact information.  A revised decision
+      text was temporarily posted at:
+      http://www.bi.fhg.de/People/Thomas.Baker/2005-01.NLM.html
+
+      ACTION: Approve the final decision text in next telecon
+      -- or, more simply, consider the decision final when
+      Rebecca double-checks the decision text.
+
+   -- We expect that this will be the last proposal to
+      assign a DCMI URI to an external vocabulary.  In the
+      medium term, we need to develop a policy, process,
+      mechanism and documentation for endorsing non-DCMI
+      encoding scheme URIs (same endorsement mechanism as for
+      endorsing non-DCMI properties) and develop guidelines
+      to help external organisations/people declare URIs
+      for non-DCMI vocabulary encoding schemes.  Medium-term
+      action: Stuart, Diane, Tom, Pete (for RDF mechanism)
+
+   -- In the meantime, we need a public statement of new
+      approach for handling vocabulary encoding schemes.
+
+      ACTION: Tom to formulate short statement for discussion
+      on UB list and in telecons.
+
+   -- Decided to flag existing encoding scheme documentation
+      on the DCMI Web site (and the registration tool) as being
+      obsolete.  These are:
+      -- http://wip.dublincore.org/schemes/index.html
+      -- http://dublincore.org/usage/documents/vocabulary-guidelines/
+
+      ACTION: Tom to follow up with Web Team.
+
+-----------------------------------------------------------------
+
+10. Date issues
+
+   -- ISO 8601: In Shanghai, we agreed to register a new
+      syntax encoding scheme called 'dcterms:ISO8601Basic'
+      and add comment indicating that some value strings that
+      conform to ISO8601Basic will not be valid value strings
+      for dc:date (e.g. '15.30').  However, in subsequent
+      discussions with members of the Date Working Group and
+      Advisory Board, and after a new "all-ISO8601" proposal
+      was discussed on the UB list, we decided to send this
+      issue back to the Date Working Group.  As of 2005-02-26,
+      the WG workplan on the DCMI Website is out of date
+      [1].  A more recent one was posted on 2005-02-01
+      [2], in which this item is listed under point 2a.
+      The "proposal from the Usage Board" referred to in that
+      posting was introduced in [3], prompting among other
+      things an observation from Misha Wolf [4].
+
+      [1] http://dublincore.org/groups/date/workplan_2003-2004.shtml
+      [2] http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0502&L=dc-date&T=0&F=&S=&P=53
+      [3] http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0411&L=dc-date&T=0&P=189
+      [3] http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0411&L=dc-date&T=0&P=1646
+
+      ACTION: Tom talk to Eric and ask him what is happening.
+
+   -- Definition of dc:date
+
+      -- In Shanghai, we prepared a proposed modification of
+         the definition for Date, to read: 'A date (or date and
+         time), including a range, of an event in the lifecycle
+         of the resource'.  In subsequent discussion, however,
+         we realized that a change in the Comment would achieve
+         the same purpose.  This issue was sent back to the
+         Date WG for a recommendation.  See, for example, [1].
+         Date WG now has this as an item on their work plan
+         [2].
+
+      [1] http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0411&L=dc-date&T=0&F=&S=&P=914
+      [2] http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0502&L=dc-date&T=0&F=&S=&P=53
+
+      ACTION: Tom to talk to Eric.
+
+   -- Explain implications for ISO and NISO of changes to
+      dc:date definition
+
+      ACTION: Rebecca.  Rebecca does not believe there is
+      an impact because it is her understanding that DCMI is
+      authorized to be the maintenance agency.  She will try
+      to find out what we can and cannot do as a maintenance
+      agency (and will also look up the date for the next
+      review, which would provide us with a deadline for any
+      such changes).
+
+-----------------------------------------------------------------
+
+11. Type vocabulary definitions and comments
+
+    -- We need to tidy up editorial inconsistencies and send
+       to dc-usage list for signing off.
+
+       ACTION: Stuart before next call.
+
+-----------------------------------------------------------------
+
+12. Maintenance of application profiles and controlled vocabularies
+
+   -- We need to ask the Board of Trustees to clarify the
+      commitment and mechanism that DCMI has for maintaining
+      the application profiles that are developed by DC WGs.
+      This is a resource issue.  It implies getting into
+      territory where we are badly prepared.  UB could only
+      undertake this if the Trustees were to say it is a
+      priority and provide the resources to do it.
+
+      ACTION: Tom discuss above position at next telecon and
+      represent it to the Trustees at the retreat on April 3-4.
+
+-----------------------------------------------------------------
+
+13. Meeting in Washington
+
+   -- UB members should check into availability and cost of
+      flights and get back to Tom for the budget estimate (2005-02-26).
+
+   -- Rebecca will reserve a block of rooms at Chapel Hill Suite.
+
+   -- We should bear in mind that new requirements for
+      "biometric passports" could impact Akira (Japan), Andrew
+      (Australia), Andy (UK), and Traugott (Sweden). See
+      http://www.statewatch.org/news/2004/jan/EUUSAG2.pdf.
+
+-----------------------------------------------------------------
+
+14. New version of Citation Guidelines
+
+   -- Ann Apps posted a new version of Citation Guidelines [1]
+      on 2005-02-18.  She sees a dependency on the revised
+      'DC-in-XML' guidelines and sets 2005-09-30 as a target
+      for moving the text onto the approval track.
+
+      Specifically, she sees a dependency on:
+      - namespace and location for dcxml
+      - an XML way to encode a value URI
+      - an XML way to encode a rich description
+
+      [1] http://epub.mimas.ac.uk/DC/dc-citation-guidelines/
+
+
+
+--
+Dr. Thomas Baker                        Thomas.Baker@izb.fraunhofer.de
+Institutszentrum Schloss Birlinghoven         mobile +49-160-9664-2129
+Fraunhofer-Gesellschaft                          work +49-30-8109-9027
+53754 Sankt Augustin, Germany                    fax +49-2241-144-2352
+Personal email: thbaker79@alumni.amherst.edu
+

@@ -1,0 +1,263 @@
+------------------------------------------------------------------------
+Decision on "Accessibility" - summary as of 2005-04-13
+------------------------------------------------------------------------
+
+Background
+
+-- The proposal
+   http://www.ozewai.org/DC-term-proposal/prop-reqs-table2.html 
+   http://dublincore.org/usage/meetings/2004/10/Meeting-packet.pdf, p.127
+
+-- About the proposal
+   http://www.ozewai.org/DC-term-proposal/overview.html 
+   http://www.ozewai.org/DC-term-proposal/criteria.html 
+   http://www.ozewai.org/DC-term-proposal/index.html
+
+-- 2005-10-01: agenda item, Shanghai meeting
+   http://dublincore.org/usage/meetings/2004/10/ISSUES/terms-accessibility/
+
+Proposed definition
+
+    Definition:  "A reference to a machine-readable profile
+    that describes the qualities of a resource that can be
+    used to match the needs and preferences of a user as
+    expressed in a machine-readable user profile."
+
+UB decision from the meeting notes (2005-10-10)
+
+    Agreed to change definition to: "A description of the
+    qualities of the resource in terms of control, display
+    and content that can be used to match the needs and
+    preferences of a user."
+
+    Note: need to clarify comment to indicate what is meant
+    by 'control, display and content' and to note that recommended
+    best practice is to provide a machine-readable statement.
+
+Subsequent discussion on the proposed definition:
+
+-- One potential source of confusion is the notion of
+   "access" in "accessibility", because "access" is used
+   in DCMI terms and in other contexts to refer to much
+   different things.
+
+   -- The Oxford American dictionary defines "access" with
+      words such as "reached, entered, or used".  Other
+      dictionaries define "access" in terms of "approaching,
+      entering, exiting, communicating with, or making use of"
+      or "freedom or ability to obtain or make use of".
+
+   -- In the DCMI term "accessRights", access is about
+      obtaining a resource (as in "obtain a copy of").
+      The proposed "Accessibility" element is not about this
+      type of access.
+
+   -- "Access" is used in the context of the Budapest Open
+      Access Initiative specifically to refer to
+      "free availability on the public Internet" (see
+      http://www.earlham.edu/~peters/fos/boaifaq.htm#openaccess).
+      In other words, it also is about access in the sense of
+      "obtaining", which is not what the proposed Accessibility
+      term is about.
+
+   -- In the W3C world, accessibility is also about
+      "intellectual accessibility" -- things like
+      level of difficulty and language.  It also
+      seems to have something to do with the ease
+      with which a resource can be used.  According to
+      http://www.w3.org/WAI/ut2/accessibility.html, Web
+      accessibility means that people with disabilities can
+      use the Web.  More specifically, Web accessibility means
+      that the Web is designed so that people with disabilities
+      can perceive, understand, navigate, and interact with it
+      effectively, as well as create and contribute content to
+      the Web.  Web accessibility addresses all disabilities,
+      including visual, auditory, physical, speech, cognitive,
+      and neurological disabilities.
+
+-- Bottom line: access-as-obtain and access-as-use are
+   different things, even if the word "access" is often used
+   to express both notions.  Somehow the definition of the
+   new property needs to reflect that distinction.
+
+-- Moreover, the proposed Accessibility element really seems to
+   be specifically about "Web Accessibility" (i.e.,
+   accessibility to digital resources in the context of the
+   Web), though this is not stated explicitly in the definition
+   or comment.  Could one, for example, use Accessibility to
+   describe the accessibility of a building?  As proposed
+   the term could be called "Web Accessibility", however
+   this would seem to be a refinement of a broader notion
+   of "Accessibility" -- not limited to digital resources.
+   In fact, calling the term "Accessibility" when "Web
+   Accessibility" was meant would make it difficult at a
+   later date to create a broader term for accessibility.
+   The Usage Board therefore felt it made more sense to
+   broaden the definition of Accessibility explicitly to to
+   include non-digital resources (and recognizing that "Web
+   Accessibility" could in principle be proposed subsequently
+   as a refinement of "Accessibility").
+
+A broader definition was proposed, not limited to Web resources
+and Web technology (2005-03-18):
+
+    Definition: "A statement about the ease with which the
+    resource can be accessed and used, regardless of the technology
+    being used."
+
+    Comment: "Factors that determine the ease of access
+    and use of the resource include the control of the
+    interface, the sensory modality of the resource as
+    presented and variations in the expressive form of the
+    information. Recommended best practice is to express
+    the value in a machine-readable manner such as the W3C
+    Evaluation and Reporting Language (EARL)."
+
+Then questions were raised with regard to how the intended
+use fits with the DCMI Abstract Model:
+
+-- A statement made using the accessibility property doesn't
+   actually describe the "accessibility" of the resource.
+   Rather, it provides a basis for a process to take place --
+   involving a description of the resource and a description
+   of the user -- the outcome of which is an indication of
+   the accessibility of that resource for that user.
+
+-- In the understanding of the Usage Board, the Accessibility
+   property is intended to describe a relation between a
+   resource and a _description_ of that resource -- where that
+   description describes those specific attributes of the
+   resource that support such an "accessibility assessment"
+   process.
+
+-- The only descriptions the UB could find of how the
+   "accessibility-related attributes
+   description" is represented refer to XML --
+   document-based, rather than statement-based (see
+   http://www.imsproject.org/accessibility/accmdv1p0/imsaccmd_infov1p0.html).
+   Given that the DCMI Abstract Model (now a recommendation) is
+   closely aligned with RDF, it would be useful to understand
+   how such an accessibility assessment process would be
+   modeled in RDF.  In the understanding of the UB, the
+   information that is represented in an "accessibility-related
+   attributes description" is a set of statements about the
+   resource -- the same resource as in the first description
+   -- and in an RDF implementation there would be a set of
+   properties to represent this (about use of colour, use of
+   audio etc).  In an RDF environment, it is not clear why one
+   would actually need an "accessibility" property at all, as
+   the set of statements could be stored as a physical RDF/XML
+   doc separate from the resource discovery description and
+   one could use rdfs:seeAlso to point to "more statements"
+   about the subject resource.
+
+-- Such a use is not without precedent, as that is how some
+   implementers understand dc:rights.  However, dc:rights
+   may contain a string value made up of a rights statement.
+   By analogy, it should be explicitly permissible to use an
+   Accessibility element for an unstructured plain-literal
+   "accessibility statement" (i.e., in words, as a string
+   value).
+
+-- Changing "machine-addressable" to "machine-readable"
+   does not really address the underlying issue because plain
+   string value and value URIs are all "machine-readable".
+   Rather, the real issue seems to be its intended use for
+   citing related descriptions.  If this is the case, then
+   it is perhaps more helpful to say this in the comment,
+   pointing users to the Abstract Model.
+
+-- It was noted that defining dcterms:accessibility as a term
+   which links to a separate description of the
+   resource seems a bit like creating a new term called
+   dcterms:libraryOrientedDescription and then using it to
+   link to a MARC record.
+
+-- As a minor point, we agreed that "sensory modality" seems
+   like specialist jargon and needed to be re-worded for
+   understandability.
+
+Discussion of these modeling issues led us to take a closer 
+look at EARL itself:
+
+-- The "Example" entry in the table in [1] refers to IMS
+   AccMD XML, and the "Comment" referred to [2,3], but neither
+   illustrates exactly how it should be implemented.
+
+   [1] http://www.ozewai.org/DC-term-proposal/prop-reqs-table2.html
+   [2] http://www.imsproject.org/accessibility/accmdv1p0/imsaccmd_oviewv1p0.html
+   [3] http://www.imsproject.org/accessibility/accmdv1p0/imsaccmd_bestv1p0.html
+
+-- The EARL 1.0 working draft spec [1] didn't seem to be
+   linked from the EARL home page [2].  EARL development
+   now seems to be under [3].  The status of these various
+   documents is was not clear to us.
+
+   [1] http://www.w3.org/TR/EARL10/
+   [2] http://www.w3.org/2001/03/earl/
+   [3] http://www.w3.org/WAI/ER/
+
+-- In section 3 of EARL 1.0, there is an example of an EARL
+   assertion [1].  The (newer?) EARL 1.0 example is modelled
+   slightly differently from the (older?) example shown
+   on the EARL home page.  That old example seemed to be a
+   simple "resource:X earl:passes test:Y" (with reification
+   to say who asserted that).  The (newer?) model sidesteps
+   reification and has the "assertor" (and also the subject
+   resource, the test, the result etc) as a property
+   of a resource of type earl:Assertion.  This new EARL
+   1.0 model would seem to fit less cleanly into the DC
+   "statements-about-the-subject-resource" framework
+   (there is no longer an earl:passes property involved),
+   so on this basis, there may be more grounds for that
+   pointer-to-EARL-stuff property.
+
+   [1] http://www.w3.org/TR/EARL10/#assertion
+
+-- If EARL is about (to quote the homepage): "evaluating web
+   pages and web sites against the Web Accessibility Content
+   Guidelines", then it is arguable whether the definition should
+   be "A statement about the ease with which it is possible ...".
+   Rather, it should be "A statement about the conformance of
+   a resource to a particular accessibility benchmark" or words
+   to that effect.
+
+-- As implied in the proposed wording of the definition of
+   Accessibility, the intended value would seem to be a second
+   (albeit fairly long and complex) description of the resource
+   -- one that uses attributes of the resource that are relevant
+   in the context of how accessibile it is likely to be - color,
+   use of images, etc.
+
+-- The problems we had in finding good examples as a guide
+   served to underline a more general, medium-term need for
+   user guidance on the intended use of an Accessibility
+   property.  In the short term, to help the Usage Board
+   finalize this decision, the Usage Board would like to see a
+   simple concrete example of how a DC description and an EARL
+   assertion are used together and exactly where the proposed
+   property fits in.  More to the point, the current wording
+   of the Comment (below) still refers to EARL, but it is
+   unclear whether it is yet appropriate to do so, and if so,
+   what exactly should be cited.
+
+This discussion has led the Usage Board to the current wording
+on the table:
+
+        Definition: A statement about the ease with which it
+        is possible to use, interact with or comprehend the
+        resource, regardless of the technology used.
+
+        Comment: Ease of access encompasses the ability to
+        perceive, understand, navigate, or interact with a
+        resource -- digital or physical -- regardless of the
+        technology being used.  For example, this element may
+        be used for statements about the accessibility of a
+        resource to people who are permanently or temporarily
+        disabled.  Users wishing to associate this element
+        with a description of a resource from the standpoint
+        of accessibility -- a "related description" in terms
+        of the DCMI Abstract Model [CITE] -- should consider
+        expressing the value in a machine-readable language
+        such as the W3C Evaluation and Reporting Language
+        (EARL) [CITE].

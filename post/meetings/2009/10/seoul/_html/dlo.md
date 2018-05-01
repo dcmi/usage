@@ -1,0 +1,86 @@
+---
+title: 
+date: '2017-09-01T16:21:09+01:00'
+description: 
+draft: false
+creators: []
+contributors: []
+publisher: 
+tags: []
+aliases:
+- "/usage/meetings/2009/10/seoul/_html/dlo.html"
+---
+
+<pre>
+----------------------------------------------------------------------
+2009-07-18 DanBri to public-media-annotation@w3.org
+
+    On 18/6/09 11:16, Pierre-Antoine Champin wrote:
+    &gt; According to your interpretation, the director of a movie would be
+    &gt; covered by the definition, which was indeed not intended (or did I miss
+    &gt; something? ;-)
+
+    Yes, I was going on what was written, rather than what I thought you 
+    might've really meant!
+
+    Other projects have danced around this problem. Early Dublin Core talked 
+    about "document like objects" with a strong emphasis towards online 
+    documents, but then you get the museums and archival community involved, 
+    and suddenly a physical painting, or a slide from a photos of that 
+    painting, or a roll of old movie film, all seem also in scope. And it 
+    turns out (eg. as concluded by <a href="http://dublincore.org/workshops/dc3/">http://dublincore.org/workshops/dc3/</a>) 
+    that documents like objects, online and offline images, can usefully be 
+    described with many common properties.
+
+    It seems you want to limit things to content / works and content-bearing 
+    objects, rather than admit the entire universe here?
+
+    BTW re "Any Resource (as defined by [RFC 3986])", ... I wouldn't bother 
+    citing <a href="http://www.faqs.org/rfcs/rfc3986.html">http://www.faqs.org/rfcs/rfc3986.html</a> for a definition of 
+    resource. All it says is
+
+          "This specification does not limit the scope of what might be a
+           resource; rather, the term "resource" is used in a general sense
+           for whatever might be identified by a URI."
+
+    I suggest instead "thing", since that's all RFC3986 "resource" means 
+    these days.
+
+    &gt; Would "Any Resource (...) representing a media content" be clearer (this
+    &gt; is a question to the WG as well) ? It may seem a little too "concrete"
+    &gt; at first sight (e.g. implying "machine representation"), but I think the
+    &gt; following paragraph makes it clear it can be more abstract.
+
+    Taking my "thing" suggestion, that gives ... "Any thing representing 
+    media content". This seems a reasonable statement of intent. Perhaps the 
+    best way to make this concrete (amongst ourselves, if not in the spec) 
+    is by example. Which of the following are intended to be Media Resources:
+
+    1. a library MARC record describing a DVD
+    2a. a HTML page describing that same DVD (some specific DVD)
+    2b. an Amazon HTML page describing the general class of that DVD (ie. 
+    that you can buy)
+    3. An MPEG movie embedding metadata describing the film (from the DVD)
+    4. A videotape of the film
+    5. A set of several thousand identical 35mm films with that same content
+    6. A rusty metal tin on a specific shelf of a national archive room, 
+    containing one of those films
+    7. The abstract notion of Shakespeare's Hamlet
+    8. The abstract notion of the W3C homepage
+    9. A printed, written transcript of the soundtrack to a film
+    10. Information about the creator of (9.).
+
+    This is just a rough list, from top of my head. Main points: do you 
+    include physical artifacts directly? does there need to be a digital 
+    representation involved somewhere?
+
+    Thinking again about
+
+    "Any thing/resource representing media content", isn't that almost 
+    circular or somehow redundant, if "media" is taken to mean the carrier 
+    or means by which content/information is represented or transmitted?
+
+    Can you give some more borderline counter-examples (apart from the 
+    Director) of situations where something is *not* a media object?
+
+</pre>

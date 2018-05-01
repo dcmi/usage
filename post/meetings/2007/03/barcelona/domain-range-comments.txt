@@ -1,0 +1,70 @@
+----------------------------------------------------------------------
+2007-03-12 Subject: Range issue (Andy)
+
+Feedback during the comment period about the DCAM and our proposed
+assignment of ranges to properties in the DCTERMS namepsace has
+highlighted the issue that it is problematic in RDF (most notably in
+OWL DL) for properties to have a range that allows both literals and
+non-literals as values.
+
+In short, it is important in the context of RDF for us to be clear
+about whether a property has a 'string' or a 'thing' as a value. 
+(Note that the use of 'thing' here includes physical, digital and
+conceptual things).
+
+A case in point is dcterms:description, for which we've proposed a
+range of rdf:Resource.  This range allows dcterms:description to be
+used with a value that is a literal (a textual abstract for example)
+and a non-literal (a thumbnail image for example).  Ditto for
+dcterms:title.
+
+In discussion between Andy, Mikael, Pete and Tom we agreed that it
+would be sensible to revise our proposed assignments of ranges to make
+it absolutely clear whether the value is a string or a thing.
+
+Therefore, when we discuss this issue in Barcelona, we need to run
+through each of the properties in the DCTERMS namespace (including the
+new 15 properties) and decide:
+
+1) whether the value is a thing or a string
+
+2) whether we want to narrow the range of the property further by
+using a subclass of 'thing' or 'string'
+
+It may be there there are a few problematic cases (such as
+dcterms:description above) where the wording of our definitions is
+such that we really do allow both things and strings as values, in
+which case we will need to adopt an alternative approach, such as
+defining two properties, one with a string as the range and one with a
+thing as the range.  I would hope that there will not be many such
+cases!
+
+In the context of this dicussion the rdf:Resource and owl:Thing classes
+may be of use to us.
+
+http://www.w3.org/2000/01/rdf-schema#Resource
+
+http://www.w3.org/2002/07/owl#Thing
+
+It is also worth noting that this discussion is premised on the notion
+that OWL-DL compatability, i.e. clearly separating values as strings
+from values as things, is a good idea.  However, recent discussion on
+one of the semantic Web mailing lists seems to imply that this issue is
+not clear cut, even within the SW community.
+
+    So, this means that if one queries for the the
+    skos:prefLabel of a concept, one either gets a literal
+    or a resource with a label equal to this literal. This
+    prevents the use of construction rules and keeps the SKOS
+    vocabulary simple. The only extension to the current SKOS
+    vocabulary would a a class skos:Term. [1]
+
+[1] http://lists.w3.org/Archives/Public/public-swd-wg/2007Mar/0004
+
+This is essentially an architectural issue.  We can usefully have a
+discussion about semantics in Barcelona, and doing so will help clarify
+our own understanding of how our properties should be used.  But there
+may have to be a separate architectural discussion (on dc-architecture
+or elsewhere) about whether DCMI should aim for OWL-DL compatability or
+not.
+

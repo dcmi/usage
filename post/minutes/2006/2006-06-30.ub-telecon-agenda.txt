@@ -1,0 +1,426 @@
+              Agenda - Usage Board telecon
+              2006-06-30 Fri 1300 UTC (1500 Berlin, 0600 Seattle, 2200 Tokyo)
+
+              See dialing instructions below
+              For IRC, type "/join #UB" on the chat line at:
+              -- irc://irc.ukoln.ac.uk/ or
+              -- http://dev.ukoln.ac.uk/irc
+
+Participants: Tom, Akira, Joe, Andrew, Diane, Stuart
+Regrets: Andy
+
+----------------------------------------------------------------------
+1. Next face-to-face meeting, Colima, Mexico
+
+   2006-09-30 Sat 0900-1800
+   2006-10-01 Sun 0900-1700
+
+   -- Plan to arrive the evening before?  Hotel preferences?
+
+----------------------------------------------------------------------
+2. Proposed telecons for August-September
+
+   Aug 04 Fri 1300 UTC (1500 Berlin, 0600 Seattle, 2200 Tokyo)
+   Aug 18 Fri 1300 UTC (1500 Berlin, 0600 Seattle, 2200 Tokyo)
+   Sep 01 Fri 1300 UTC (1500 Berlin, 0600 Seattle, 2200 Tokyo)
+   Sep 15 Fri 1300 UTC (1500 Berlin, 0600 Seattle, 2200 Tokyo)
+   Sep 22 Fri 1300 UTC (1500 Berlin, 0600 Seattle, 2200 Tokyo)
+
+   -- Is the Friday slot good?
+   -- Who cannot attend on which dates?
+   -- Note: scheduled DCMI Web builds on Aug 07, Aug 28, Sep 25
+
+----------------------------------------------------------------------
+3. Seattle meeting notes
+
+   The raw meeting notes are at:
+   http://dublincore.org/usage/minutes/2006-04-30.ub-raw-meeting-notes.doc
+
+   My final edited version will be posted at:
+   http://dublincore.org/usage/minutes/2006/2006-04-30.meeting-notes-final.html
+
+----------------------------------------------------------------------
+4. Finalizing the DCMI Type Vocabulary changes
+
+   The actions from Seattle were:
+
+   ACTION 2006-04-30 (Tom and Stuart) Create an announcement text for DC
+          General and website [news] -- due 19 June
+   ACTION 2006-04-30 (Tom and Stuart) create a decision text and numbered
+          decision -- due 19 June
+   ACTION 2006-04-30 (Tom and Stuart) Finalize the above on the list
+   ACTION 2006-04-30 (Tom) Submit approved revisions to Directorate for
+          approval; after approval, rebuild and install Type
+          Vocabulary documentation
+   
+   On 2006-06-18, I posted a draft Decision text [1].  However, on closer
+   reading of the raw meeting notes [2], it would appear I transcribed the 
+   wrong wordings on four points:
+
+    DATASET - comment
+        NOT:      A dataset is intended to be useful.
+        RATHER:   A dataset may be useful for direct machine processing.
+
+    MOVING IMAGE - definition
+        NOT:      A series of visual representation that,
+                  when shown in succession, impart an impression of motion.
+        RATHER:   A series of visual representations imparting
+                  an impression of motion when shown in succession.
+
+    SOUND - definition
+        NOT:      Auditory material.
+        RATHER:   A resource primarily intended to be heard.
+
+    TEXT - definition
+        NOT:      Words for reading.
+        RATHER:   A resource consisting primarily of words for reading.
+
+   In the telecon today:
+   -- confirm the transcription error (i.e., the decision text [1] will
+      need to be revised);
+   -- confirm the role of the shepherd (Stuart) and one additional reviewer
+      in double-checking the draft decision text [1] against the meeting notes;
+   -- confirm timeline for finalization: all UB members sign off on revised
+      text by Friday, 11 August for publication and announcement with 25 
+      August Web build.
+
+   [1] http://stage.dublincore.org/usageboard/2006/2006-01.dcmitype/dcmitype-decision/
+   [2] http://dublincore.org/usage/minutes/2006-04-30.ub-raw-meeting-notes.doc
+
+----------------------------------------------------------------------
+5. Finalizing the DCMES editorial changes
+
+   Three texts are needed:
+
+   1) Announcement of public comment (two paragraphs) (Tom - for 
+      start of public comment on August 25)
+
+   2) Public comment text: Proposed Changes to Terms in the
+      DCMES namespace - a more advanced draft of [1] based on
+      changes agreed at the Seattle meeting [2]
+
+   3) A Usage Board Decision text (Tom, to be prepared after
+      the public comment period and approved by the UB in Colima)
+
+   [1] http://stage.dublincore.org/usageboard/2006/2006-01.definitions/term-changes/
+   [2] http://dublincore.org/usage/minutes/2006/2006-04-30.meeting-notes-final.html
+
+----------------------------------------------------------------------
+6. Colima Review of Collection Description Application Profile
+
+   Pete has indicated that the "Dublin Core Collection
+   Description Application Profile" (DCCDAP) [1] can be made
+   ready for review at the Colima Usage Board meeting.
+
+   I believe we are in principle ready to review the profile
+   from the standpoint of formal conformance with the
+   Abstract Model and propose that we do this in Colima.
+
+   In its current form, however, the DCCDAP draft identifiers
+   a number of properties and classes with "placeholder" URIs
+   (see Appendix C below).  The question of whether these
+   terms could or should be declared in DCMI namespaces is
+   one that the Directorate is currently investigating.
+
+   Could the UB assign a status of "conforming" [2] to a
+   profile with placeholder URIs?  I think not.  However,
+   we do urgently need to move forward on this issue, so I
+   suggest we plan to issue a review in the form of written
+   comments and evaluation (short of formally issuing the
+   status of "conforming") .
+
+   As of August 2005 [3], the plan was that UB members would
+   read and digest the profile ahead of time and prepare small 
+   position papers:
+       o Overall shepherd                               Andrew
+       o Evaluate terms against Abstract Model    Andrew, Andy
+       o Check comments                                  Akira
+       o Check documentation                               Tom
+       o Check community buy-in                         Andrew
+       o Check functional requirements                     Tom
+
+   Should we pick up this plan again and take it from there?
+
+   Part of even such a "short-of-formal" conformance review
+   should be evaluation of documentation provided.  Pete has
+   pointed out that our more DCMI Usage Board Process [4] no
+   longer has the sections on minimal documentation needed for
+   "new" terms that were part of the old Process document [5].
+   See Appendixes A and B below.  Pete proposes a proposal
+   for the term "PropertyitemFormat" as a model for such
+   documentation [6].
+
+   Unlike the review of a term proposal, the review of an
+   application profile does not currently require a public
+   comment period.  However, if we are to share review
+   duties among members of the Usage Board, we would need to
+   schedule enough time to allow this work to be done and the
+   results disseminated and gathered into the meeting packet.
+   This suggests a timetable of:
+
+        2006-08-24 Thu  DCCDAP submitted for review
+        2006-09-14 Thu  UB members complete partial reviews
+        2006-09-30 Sat  UB meeting in Colima
+
+   [1] http://www.ukoln.ac.uk/metadata/dcmi/collection-application-profile/2006-02-24/
+   [2] http://dublincore.org/usage/documents/process/#conforming
+   [3] http://dublincore.org/usage/meetings/2005/09/madrid/profile-collection/
+   [4] http://dublincore.org/usage/documents/2006/02/13/process/
+   [5] http://dublincore.org/usage/documents/2003/02/07/process/
+   [6] http://dublincore.org/collectionwiki/PropertyitemFormat
+
+----------------------------------------------------------------------
+7. Replicating DCMES in the DCTERMS Namespace  - and -
+   Assigning Domains and Ranges to DCMI properties
+
+   In Seattle, the Usage Board supported the idea that DCMI
+   replicate the 15 DCMES elements in the DCTERMS namespace
+   and suggested that DCMI not rush this decision -- rather,
+   it was recommended that the Directorate consider the
+   timeline, priorities, how to do an impact analysis, and
+   resource requirements.
+
+   In Seattle, the UB also agreed to progress the assignment
+   of domains and ranges to DCMI terms [1], starting with
+   approval of the class semantics (buy-in, public comment, F2F
+   UB meeting, community consensus) and approval of the use of
+   these classes as domains and ranges for DCMI terms (buy-in,
+   public comment, F2F UB meeting, community consensus).
+
+   Since then, I have discussed this with Mikael, who sees the 
+   following dependencies between the UB effort and the DCAM
+   effort:
+   
+       1. DCAM updates (clarification of Value Type, VES, SES, introduce
+          notions of domains and ranges)
+       2. DC-TEXT, DC-XML and DC-RDF updated to reflect the above
+       3. Copy contents of "1.1" namespace to "terms" namespace
+       4. Introduce domains and ranges into "terms" namespace
+        - Define semantics
+        - Check if we want to reuse W3C classes
+        - Declare classes
+        - Apply to "terms" properties
+       5. Clarify whether encoding schemes are VESs or SESs
+       6. Approve DC-TEXT, DC-XML and DC-RDF as DCMI Recommendations
+
+   Mikael has in the meantime kicked off discussion of a 
+   proposal on dc-architecture [2].
+   
+   [1] http://dublincore.org/architecturewiki/DCPropertyDomainsRanges
+   [2] http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0606&L=dc-architecture&P=5526
+
+----------------------------------------------------------------------
+8. Back burner
+
+   Proposed changes to terms in the /TERMS/ namespace are
+   documented at [1] and were discussed in Seattle [2].
+   We should make progress on this if possible, but with less
+   urgency than the above.
+
+   [1] http://dublincore.org/usageboardwiki/TermChanges
+   [2] http://dublincore.org/usage/minutes/2006/2006-04-30.meeting-notes-final.html
+
+----------------------------------------------------------------------
+Dialing instructions
+    1) Dial: local country number (http://www.sprintbiz.com/intlaudio)
+       -- Germany  0800-181-2311
+       -- UK       0800-032-0634
+       -- Japan    00531-13-0842 "KDD Only"
+       -- US       888-448-7101
+       -- US       888-448-7101
+    2) Outside the US, you hear: "Welcome... Please enter your 10-digit..."
+       Type: 888-448-7101#
+    3) You hear: "Please enter..."
+       Type:     764-6081#
+----------------------------------------------------------------------
+IRC: Note that port 6667 needs to be open between your client and
+     the server.  Your firewall may need to be opened slightly and/or
+     port-blocking settings in your virus/security tool may need to be
+     changed.  You can always re-set your nickname with "/nick YourName".
+
+
+
+
+----------------------------------------------------------------------
+Appendix A: Excerpts from 2006 UB process
+            http://dublincore.org/usage/documents/2006/02/13/process/
+
+6. Proposals for registration of application profiles
+
+    6.1. Application Profiles subject to review. Application
+         profiles emanating from DCMI Strategic Activities may
+         be reviewed by the Usage Board. Metadata implementers
+         (established projects, communities or research groups)
+         may also request review, subject to approval by the UB
+         Chair. /Point to information regarding DCMI Strategic
+         Activities when available./
+
+    6.2. Documentation of Application Profiles. Application
+         profiles must provide, for each term, an identifier of the
+         element set where it is defined, ideally in the form of
+         URIs for individual terms. If the terms in an application
+         profile describe anything other than generic "resources"
+         (the typical domain of Dublin Core), the application
+         profile must make this clear. This is particularly
+         important if an application profile is based on a data
+         model that describes multiple classes of resources,
+         such as agents or collections. It is recommended that
+         application profiles be prepared using the guidelines
+         <http://dublincore.org/usage/documents/profile-guidelines>.
+
+    6.4. Contextual information about Application
+         Profiles. The documentation for each Application Profile
+         must provide -- or point to a short text that describes --
+         the context and purposes in which the application profile
+         is used or is likely to be used; the organizations or
+         individuals involved in its development and a capsule
+         history thereof; and any arrangements, policies,
+         or intentions regarding the future development and
+         maintenance of the application profile.
+
+    6.5. Evaluation of terms in Application Profiles. The
+         use of terms related to Dublin Core (such as refinements
+         of Dublin Core elements, or Dublin Core elements that
+         have been constrained for particular contexts) will be
+         evaluated from the standpoint of semantic conformance,
+         grammatical principle (eg, "dumb-down"), clarity, and
+         good practice. /Note: revisit this./
+
+    6.6. Assignment of status "conforming". Application
+         profiles which pass review will be assigned the status
+         of Conforming.  The status of Conforming indicates a Usage
+         Board assessment of the application profile as of the date
+         of its submission for review. Changes to already Conforming
+         application profiles require further Usage Board review
+         of the application profile in whole or in part according
+         to the processes and criteria outlined in sections 6.1
+         through 6.3.
+
+    6.7. Publication of Usage Board reviews of Application Profiles.
+         For application profiles that "pass" review, the Usage Board will
+         publish a Review on a Web page for application profiles. Each Review
+         will include, at a minimum: any comments from the Usage Board on the
+         application profile; pointers to locally archived copies of the
+         application profile as originally submitted and (if necessary) as
+         subsequently amended in light of Usage Board comments; a pointer
+         (with appropriate disclaimers) to the "latest version" of an
+         application profile held by its maintainers.
+
+    6.8. Persistent identifiers for reviewed Application Profiles.
+         Review represents a form of recognition, and its URL will be
+         persistent for purposes of citation.
+
+7. New terms proposed with an Application Profile
+
+    7.1. Evaluation of new terms. New terms appearing in application
+         profile submissions must be evaluated for compliance with the DCMI
+         Abstract Model prior to evaluation of the Application Profile itself.
+
+    7.2. Assignment of DCMI term URIs and status. New terms deemed in
+         compliance with the DCMI Abstract Model may be given URIs in DCMI
+         namespaces and assigned a status of Conforming.
+
+    7.3. Conformance criteria. Decisions as to whether a proposed term
+         is in compliance with the DCMI Abstract Model will be made using the
+         DCMI-Compliant Term Decision Tree
+         <http://www.ukoln.ac.uk/twiki/bin/view/Metadata/TermDecisionTree>.
+
+----------------------------------------------------------------------
+Appendix B: Excerpts from 2003 UB process
+            http://dublincore.org/usage/documents/2006/02/13/process/
+
+   4.2.1. To be supplied by the proposers (see table below):
+
+   Proposal Requirements Table 
+   
+   Name                 A suggested unique token for use in encodings
+   Label                A suggested human-readable label for the proposed term
+   Definition           The definition of the term
+   Comment              Information concerning the possible application of 
+                        the proposed term
+   Examples             Examples of use of the proposed term, making clear what type of 
+                        literal values are expected.
+   Type of term         Is the proposed term an "element,"
+                        or an "element refinement" (as defined in
+                        http://dublincore.org/usage/documents/principles) [NOTE:
+                        Encoding schemes are registered using a separate process]
+   Term qualified       If the proposed term is an element refinement, which term does 
+                        it qualify?
+   Why needed           A justification of the need for the proposed term
+   Working Group 
+   support              Demonstration and documentation that the proposed new 
+                        term has substantial support of Working Group
+                        members. Evidence of such support
+                        can include votes held on mailing
+                        lists or in face-to-face meetings or
+                        positive endorsements from members
+                        of the DC-GENERAL mailing list.
+
+   Proposed status      Is the term proposed as Recommended or Conforming?
+   Related DCMI terms   A discussion of possible overlap with existing terms
+   Related non-DCMI 
+   terms                An annotated listing of related terms in non-DCMI metadata 
+                        vocabularies
+   Impact on 
+   applications         An annotated listing of existing applications that 
+                        could be affected by recognition of this term
+   About the proposers  A pointer to a description, in standard form (to be 
+                        specified) of the working group or organization putting 
+                        forward the proposal: its scope, aims, a brief history, 
+                        current status, and a pointer to archives.
+
+
+----------------------------------------------------------------------
+Appendix C: Namespaces and terms needed for DCCDAP
+
+-- General description terms (non-collection-specific)
+   http://example.org/gen/terms#  
+   http://example.org/gen/terms#RKMS-ISO8601
+   http://example.org/gen/terms#isLocatedAt
+   http://example.org/gen/terms#isAccessedVia
+   http://example.org/gen/terms#contentsDateRange [*]
+   http://example.org/gen/terms#itemFormat [*]
+   -- See http://dublincore.org/collectionwiki/PropertyitemFormat
+   -- See http://dublincore.org/collectionwiki/DCCDAPitemFormat
+
+   [*] Still under discussion.
+
+-- Collection-specific properties
+   http://example.org/cld/terms#  
+   http://example.org/cld/terms#CLDType
+   http://example.org/cld/terms#DCCDAccrualMethod
+   -- See http://www.ukoln.ac.uk/metadata/dcmi/collection-DCCDAccrualMethod/
+   http://example.org/cld/terms#DCCDAccrualPeriodicity
+   -- http://www.ukoln.ac.uk/metadata/dcmi/collection-DCCDAccrualPeriodicity/
+   http://example.org/cld/terms#DCCDAccrualPolicy
+   -- See http://www.ukoln.ac.uk/metadata/dcmi/collection-DCCDAccrualPolicy/
+   http://example.org/cld/terms#dateContentsCreated
+   http://example.org/cld/terms#collectionDescription
+   http://example.org/cld/terms#associatedCollection
+
+-- Collection type vocabulary terms
+   http://example.org/cld/type#   
+   -- See http://www.ukoln.ac.uk/metadata/dcmi/collection-type/ (latest version 2005-03-19)
+   http://example.org/cld/type#Catalogue
+   http://example.org/cld/type#HierarchicFindingAid
+   http://example.org/cld/type#Index
+   http://example.org/cld/type#CollectionCollection
+   http://example.org/cld/type#CollectionDataset
+   http://example.org/cld/type#CollectionEvent
+   http://example.org/cld/type#CollectionImage
+   http://example.org/cld/type#CollectionMovingImage
+   http://example.org/cld/type#CollectionStillImage
+   http://example.org/cld/type#CollectionInteractiveResource
+   http://example.org/cld/type#CollectionPhysicalObject
+   http://example.org/cld/type#CollectionService
+   http://example.org/cld/type#CollectionSoftware
+   http://example.org/cld/type#CollectionSound
+   http://example.org/cld/type#CollectionText
+
+
+-- 
+Dr. Thomas Baker <tbaker@tbaker.de>
+Director, Specifications and Documentation
+Dublin Core Metadata Initiative
+
+2009-01-29: Changed usageboard/log URIs to usage/minutes URIs.

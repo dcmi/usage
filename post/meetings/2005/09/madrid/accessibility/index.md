@@ -1,0 +1,66 @@
+---
+title: 
+date: '2017-09-01T16:21:09+01:00'
+description: 
+draft: false
+creators: []
+contributors: []
+publisher: 
+tags: []
+---
+
+<pre>
+Title: Accessibility decision follow-up
+Identifier: <a href="/usage/meetings/2005/09/madrid/accessibility/">http://dublincore.org/usage/meetings/2005/09/madrid/accessibility/</a>
+Main agenda: <a href="/usage/meetings/2005/09/madrid/">http://dublincore.org/usage/meetings/2005/09/madrid/</a>
+Modified: 2005-09-04 16:10, Sunday
+
+In Shanghai, the Usage Board considered a proposal
+from the DCMI Accessibility Working Group (the
+full proposal is documented in the meeting packet at
+dublincore.org/usage/meetings/2004/10/Meeting-packet.pdf).
+A decision was made to approve an element pending clarification
+of several points.
+
+After lengthy discussion, the Board concluded that the decision
+to approve an element could not be finalized. These reasons
+were explained in the decision text of 2005-06-13 at [1].
+
+The working group has now written a response to the decision
+[2]. The group has now also formulated an abstract model for
+accessibility [3] as the basis for further discussion, and
+with the intent of submitting a proposal for a new element [4].
+
+Liddy Nevile, chair of the Accessibility Working Group, has
+requested that the Usage Board provide some guidance to the
+working group about future proposals, and particularly about
+how the Usage Board sees their work fitting in with the DCMI
+Abstract Model.
+
+It would be useful if we could review the decision and
+briefly discuss the current work at our meeting in Madrid.
+To prepare for this, please read:
+
+[1] The Usage Board decision of 2005-06-13
+169 <a href="http://dublincore.org/usage/decisions/2005/2005-04.Accessibility.html">http://dublincore.org/usage/decisions/2005/2005-04.Accessibility.html</a>
+
+[2] Response of the Working Group to the Usage Board decision
+171 <a href="/usage/meetings/2005/09/madrid/files/2005-09-04.ResponseToUsageBoard.txt">http://dublincore.org/usage/meetings/2005/09/madrid/files/2005-09-04.ResponseToUsageBoard.txt</a>
+
+[3] The model currently being used in the working group as the basis for further work
+173 <a href="/usage/meetings/2005/09/madrid/files/2005-09-04.AccessForAllFramework.txt">http://dublincore.org/usage/meetings/2005/09/madrid/files/2005-09-04.AccessForAllFramework.txt</a>
+177 <a href="/usage/meetings/2005/09/madrid/files/2005-09-04.AccessForAll-AbstractModel.png">http://dublincore.org/usage/meetings/2005/09/madrid/files/2005-09-04.AccessForAll-AbstractModel.png</a>
+
+[4] The new element proposal under development
+178 <a href="/usage/meetings/2005/09/madrid/files/2005-09-04.NewElementProposal.txt">http://dublincore.org/usage/meetings/2005/09/madrid/files/2005-09-04.NewElementProposal.txt</a>
+
+Note: The files under [2], [3], and [4] were originally posted on a Wiki:
+-- dublincore.org/accessibilitywiki/ResponseToUsageBoard
+-- dublincore.org/accessibilitywiki/AccessForAllFramework
+-- accsig.atrc.utoronto.ca/AccessForAll/AccessForAll-AbstractModel.png
+-- dublincore.org/accessibilitywiki/NewElementProposal
+These files, which looked fine when viewed in normal Web
+browsers, were converted into plain text when the Wiki text
+proved to be unreadable when incorporated into the meeting
+packet via an Adobe Acrobat Web capture.
+</pre>

@@ -1,0 +1,10 @@
+Title:         Vocabulary Encoding Schemes and Syntax Encoding Schemes
+Identifier:    http://dublincore.org/usage/meetings/2008/09/berlin/etc-encodingschemes/.index.html
+Source:        http://dublincore.org/usage/meetings/2008/09/berlin/etc-encodingschemes/index.txt
+Directory:     http://dublincore.org/usage/meetings/2008/09/berlin/etc-encodingschemes/
+Created:       2008-09-17
+
+Vocabulary Encoding Schemes and Syntax Encoding Schemes (Andrew)
+
+Required reading:
+-- http://dublincore.org/usage/meetings/2008/09/berlin/etc-encodingschemes/SES_VES.pdf

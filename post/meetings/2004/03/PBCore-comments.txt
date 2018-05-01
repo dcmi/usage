@@ -1,0 +1,92 @@
+------------------------------------------------------------------------
+Date:         Mon, 8 Mar 2004 17:08:27 -0500
+From: "Rebecca S. Guenther" <rgue@LOC.GOV>
+Subject: Some comments on PB Core
+To: DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+Because I participated in the survey about the PBCore metadata dictionary,
+I was able to get a sense of some of the issues we might be concerned
+about in a Usage Board review. I have selected some sample elements to
+illustrate what some of these issues are. This is not comprehensive.
+
+The article in the 2003 conference program is reasonably complete, but
+does not have as much description and does not include examples, as the
+survey did. I will bring a copy of some sample elements that shows this
+additional information.
+
+Comments about PBCore
+
+1. They use the "dot" syntax. This has implications for the element names
+that they have chosen. They need to realize that the refinements will
+stand alone and not be related to the element they refine except in the
+RDF expression. Our latest ruling on this was to have refinements be able
+to stand alone.  For example: Title.Program should be programTitle.
+
+2. Example: Title.Series.
+I question whether this is a refinement of title but of Relation. The
+semantics of title are:
+Definition:  A name given to the resource.
+Comment:  Typically, Title will be a name by which the resource is
+formally known.
+In this case, series is at a different level hierarchically; it is really
+a related title, that is, the series in which the title appears. Thus I
+would call it Relation isPartOf or a new refinement isPartOfSeries. We
+discussed this in the context of the DC-Lib AP and decided to use
+isPartOf.
+
+3. Type.Form
+This is described as the manner in which the content of a resource is
+structured for presentation, viewed or heard by a user. It has a
+controlled list. It also says it has an implied hierarchy when using Type,
+Type.Form and Type.Genre. Examples are documentary and tutorial.
+This distinction is difficult to make and I can't really tell here which
+is which. I'm also not sure how this so-called hierarchy can be conveyed.
+
+4. Description.ProgramRelatedText.
+It is described as the actual text or link to text. I imagine this
+violates the 1:1 principle, since it is really another representation of
+the program in textual form.
+
+5. Relation.Type
+This implies that there is an attribute type with a list of values. Those
+values are what are the refinements themselves (e.g. hasFormat,
+isFormatOf, etc.). Not the way DCMES does things.
+
+6. Relation.Identifier
+Specifies that this is free text. Examples include a URI but also includes
+an ISBN or a string specifying a location (e.g. "Room 217: Section
+C: Shelf 5"). If it's a URI, it should be identified as a URI (refining
+Relation). If it's free text, I'm not sure it refines the semantics of
+identifier:
+"An unambiguous reference to the resource within a given context. "
+and we don't generally embed one DC element within another.
+
+7. Creator.Role, Contributor.Role, Publisher.Role
+We all remember the discussions about this one; the particular role is the
+refinement.
+
+8. Language.Usage
+Says it identifies the existence and type of other audio and textual
+representations of the main audio or language presentation mode for a
+resource or asset. It has a controlled list that includes "DV1", "SAP1",
+"Open caption", "DVD Subtitle01", etc.
+I don't think this is at all consistent with the semantics of language:
+"Definition:  A language of the intellectual content of the resource.
+Comment:  Recommended best practice is to use RFC 3066 [RFC3066] which,
+in conjunction with ISO639 [ISO639]), defines two- and three-letter
+primary language tags with optional subtags. Examples include "en" or
+"eng" for English, "akk" for Akkadian", and "en-GB" for English used in
+the United Kingdom."
+
+This brings up:
+
+1. What does it mean to register an application profile?
+
+2. How much detail needs to go into the review of an AP? Every element?
+
+3. What do we need to say about syntax (i.e., they're using the dot syntax
+here, appropriate only in HTML)?
+
+4. What if an AP requires some sort of hierarchy in metadata elements?
+

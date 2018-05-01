@@ -1,0 +1,78 @@
+<PRE>
+------------------------------------------------------------------------
+2003-02-07: Roland on MARC Relators
+------------------------------------------------------------------------
+
+&gt; Let me try to summarize: the RDF block below currently
+&gt; says that <a href="http://www.loc.gov/marc/relators/cns">http://www.loc.gov/marc/relators/cns</a> (or
+&gt; <a href="http://www.loc.gov/marc/relators/censor">http://www.loc.gov/marc/relators/censor</a>, if LOC decides to
+&gt; use full words instead of three-letter codes) is a subproperty
+&gt; of <a href="http://purl.org/dc/elements/1.1/contributor">http://purl.org/dc/elements/1.1/contributor</a> (careful *not*
+&gt; to use <a href="http://purl.org/dc/terms/contributor!">http://purl.org/dc/terms/contributor!</a>).  It also says
+&gt; that <a href="http://www.loc.gov/marc/relators/cns">http://www.loc.gov/marc/relators/cns</a> is labelled "Censor",
+&gt; "Bowdlerizer", and "Expurgator".
+
+I like the /relators/cns - 
+(In fact that's the way we already use marc relators)
+
+It's a pretty good idea to use the "code" to create a URI.
+That's a systematic device all classification systems basically
+could and should use.  All what they then have to do is to
+provide a namespace URI and the concatenation rule.
+
+&gt; One question is how the RDF can indicate that of the three
+&gt; labels, "Censor" is preferred.
+
+If one thinks the preference given to "censor" is not
+essential, then one should go with an iterated label. If one
+thinks it suffices the preference understandable for humans,
+one could put a remark in the comment.
+
+An alternative would be to use dc:title and dct:alternative
+instead of rdfs:label. 
+
+dc:title is nothing but a range extension to rdfs:label in that
+"literal value" is not required for dc:title.  dc:title could
+also have an rdf:Alt container as value, which (in RDF M&S)
+gives the first item the role of a default - Various versions
+with fine grained differences in meaning are possible.
+
+&gt; The other question is whether, alternatively, two additional
+&gt; URIs should be created for "Bowdlerizer" and "Expurgator"
+&gt; -- URIs which would then be related to the URI for "Censor"
+&gt; using the relation daml:samePropertyAs.  And if so, how would
+&gt; "Censor" then be marked as the preferred term.
+
+More work and you end up with the same issue to select
+a default in a class of objects explicitly declared as
+equivalent.
+
+An additional drawback is with instance data: Whatever you do
+to deprecate the use of the unwanted URIs - they stay valid.
+So you create in effect the problem you want to get rid of.
+
+It would make sense to constitute resources to make the titles
+referentiable, in case one wants to provide translations of the
+English words separately - instead of other language titles
+for the concept (!) represented by the code.  The URI's for
+these resources then would be totally unrelated to the URIs
+for the marc relators. They could perhaps be taken from a
+URIified English dictionary.
+
+One should think of a URI associated with a descriptor simply
+as a way of assigning a "code" primarily for consumption of
+web applications - there is no particular voodoo built in.
+
+Be aware of daml stuff - will sooner or later become superseded
+by owl.
+
+Anyway...fine grained sophisticated label structures one
+could create at some time in the future, when one really is
+sure about what purpose these structures should serve.
+
+For the start: take the easiest approach, which does not
+assert something really wrong.  Be sure: Highly sophisticated
+structures are currently not much appreciated by most of
+the users.
+
+</PRE>

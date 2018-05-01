@@ -1,0 +1,7 @@
+Title:         DC Library Application 
+Identifier:    http://dublincore.org/usage/meetings/2006/09/manzanillo/profiles-dclib/html/
+Created:       2006-09-22
+
+Shepherd: Tom
+
+Reading: http://dublincore.org/usage/meetings/2006/09/manzanillo/profiles-dclib/MODS-terms-in-DC-Lib-Proposal.doc

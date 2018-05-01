@@ -1,0 +1,140 @@
+------------------------------------------------------------------------
+Date:         Mon, 28 Feb 2005 13:59:21 +0000
+From: Andy Powell <a.powell@UKOLN.AC.UK>
+Subject: DCMES definitions - possible re-wording
+To: DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+On Friday, I was reminded of my action to look thru the current DCMES
+definitions and suggest possible revisions to make them more in line with
+the DCMI Abstract Model (DCAM).
+
+Here are the ones that I find problematic:
+
+---
+Element Name: Format
+Label: Format
+Definition: The physical or digital manifestation of the resource.
+Comment:  Typically, Format may include the media-type or dimensions of
+  the resource. Format may be used to identify the software, hardware, or
+  other equipment needed to display or operate the resource. Examples of
+  dimensions include size and duration. Recommended best practice is to
+  select a value from a controlled vocabulary (for example, the list of
+  Internet Media Types [MIME] defining computer media formats).
+
+Problem: The current definition implies that the value is a "manifestation
+of the resource", which is not the intention.  This issue has previously
+been raised on one of the the DCMI lists (I forget when and where) which
+suggests that at least one real end-user has mis-interpretted this wording
+in this way.
+
+Proposed definition: The media-type or dimensions of the resource.
+Proposed comment: Format may be used to identify the software, hardware,
+  or other equipment needed to display or operate the resource. Examples of
+  dimensions include size and duration. Recommended best practice is to
+  select a value from a controlled vocabulary (for example, the list of
+  Internet Media Types [MIME] defining computer media formats).
+
+---
+Element Name: Source
+Label:  Source
+Definition:  A Reference to a resource from which the present resource is
+  derived.
+Comment:  The present resource may be derived from the Source resource in
+  whole or in part. Recommended best practice is to identify the referenced
+  resource by means of a string or number conforming to a formal
+  identification system.
+
+Problem: As per the DCAM, the value is the related resource, not a
+reference to the resource.
+
+Proposed definition:  A resource from which the present resource is
+  derived.
+
+---
+Element Name: Relation
+Label:  Relation
+Definition:  A reference to a related resource.
+Comment:  Recommended best practice is to identify the referenced resource
+  by means of a string or number conforming to a formal identification
+  system.
+
+Problem: same as with Source.
+
+Proposed definition:  A related resource.
+Proposed comment: unchanged
+
+---
+Element Name: Rights
+Label:  Rights Management
+Definition:  Information about rights held in and over the resource.
+Comment:  Typically, Rights will contain a rights management statement for
+  the resource, or reference a service providing such information. Rights
+  information often encompasses Intellectual Property Rights (IPR),
+  Copyright, and various Property Rights. If the Rights element is absent,
+  no assumptions may be made about any rights held in or over the resource.
+
+Problem: the comment refers both to a 'statement' and a reference to a
+service that provides a statement'  This is an implementation issue anbd
+shouldn't be in the comment.
+
+Proposed definition: unchanged
+Proposed comment:  Typically, Rights will contain a rights management
+  statement for the resource.  Rights information often encompasses
+  Intellectual Property Rights (IPR), Copyright, and various Property
+  Rights. If the Rights element is absent, no assumptions may be made about
+  any rights held in or over the resource.
+
+------------------------------------------------------------------------
+Comments by Pete
+------------------------------------------------------------------------
+
+> Problem: As per the DCAM, the value is the related resource, not a
+> reference to the resource.
+
+[snip]
+
+This same problem is also present in the comment for dc:description
+
+Comment: Description may include but is not limited to: an abstract,
+table of contents, reference to a graphical representation of content or
+a free-text account of the content.
+
+I think the "reference to" should be deleted (and for consistency an "a"
+added before "table of contents").
+
+So:
+
+Proposed Comment:       Description may include but is not limited to:
+an abstract, a table of contents, a graphical representation of content
+or a free-text account of the content.
+
+Re: Rights
+
+> Proposed definition: unchanged
+> Proposed comment:  Typically, Rights will contain a rights management
+>   statement for the resource.  Rights information often encompasses
+>   Intellectual Property Rights (IPR), Copyright, and various Property
+>   Rights. If the Rights element is absent, no assumptions may be made
+about
+>   any rights held in or over the resource.
+
+This hadn't occurred to me before but after writing all that stuff about
+XML elements not being DC elements, I wondered whether the use of
+"contain" in the first sentence of the comment is also slightly
+misleading/inappropriate in the light of the DCAM.
+
+XML elements are containers, and they have content.
+
+But DC elements are not containers and do not have content: they are
+properties and they describe relationships between resources and values.
+
+So it might be recast as something like
+
+"Typically, a rights management statement for the resource is provided."
+
+or
+
+"Typically, rights information includes a rights management statement
+for the resource."
+

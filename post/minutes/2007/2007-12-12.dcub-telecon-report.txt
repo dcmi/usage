@@ -1,0 +1,141 @@
+DCMI Usage Board - Wednesday, 2007-12-12 2100 UTC telecon - report
+
+This report: http://dublincore.org/usage/minutes/2007/2007-12-12.dcub-telecon-report.html
+Agenda:      http://dublincore.org/usage/minutes/2007/2007-12-12.dcub-telecon-agenda.html
+
+Present: Tom Baker, Diane Hillmann, Julie Allinson, Joe Tennis, 
+Pete Johnston, Akira Miyazawa, Andrew Wilson
+
+======================================================================
+NEXT TELECON
+   
+   Wednesday, 23 January
+   1300 Seattle / 1600 New York / 2100 London (UTC) / 2200 Berlin / 0600 Tokyo+ / 0800 Sydney+
+
+======================================================================
+NEXT BUILD on 14 January goals:
+-- "Revisions to DCMI Metadata Terms" as a UB decision document (see below)
+-- "Domains and Ranges" as a UB decision document (see below)
+-- Updated Decisions page - http://stage.dublincore.org/usage/decisions/#Decision-2008-01
+-- Updated TERMS document -
+   http://stage.dublincore.org/documents/2008/01/14/dcmi-terms/index.shtml
+-- Updated RDF schemas
+
+======================================================================
+"Revisions to DCMI Metadata Terms" 
+-- http://stage.dublincore.org/usage/decisions/2008/dcterms-changes/index.shtml
+
+Editing of this document is "done" but for details.
+
+ACTION 2007-12-12: Tom to revise section on Type Vocabulary in 
+introduction.
+
+======================================================================
+DOMAINS-RANGES
+-- http://stage.dublincore.org/documents/2008/01/14/domain-range/
+
+Tom and Pete replaced "[unspecified]" with the implied domain
+or implied range of rdfs:Resource so that this is now applied
+consistently in the document.  
+
+Explanatory text on the intentions w.r.t. non-literal ranges
+has been added.
+
+Pete has updated the class diagrams in
+http://stage.dublincore.org/documents/2008/01/14/domain-range/.
+Tom will check.
+
+ACTION 2007-08-26: Pete and Mikael to investigate the
+usefulness of defining a class of 'non-literal' and assess what
+the consequences of this would be for machine processability.
+(Usage Board should track issues involved in the notion of
+a range of 'non-literal'.)
+-- continues
+
+======================================================================
+DCTERMS DOCUMENTATION
+
+ACTION 2007-08-25: Tom to add clarification to Introduction
+of http://dublincore.org/documents/dcmi-terms/ -- for example
+rationale for replicating 1.1 terms in the TERMS namespace,
+recommendations on what people should be using by preference,
+and any other -- will circulate to AB for advice on anything
+else that should be in that introduction.  Also "member of".
+-- continues
+
+Tom has re-designed the TERMS document according to the following
+outline (as agreed in Singapore):
+    Table of Contents
+    Section 1: Introduction and Definitions
+    Section 2: Properties in the /terms/ namespace
+    Section 3: Properties in the legacy /elements/1.1/ namespace
+    Section 4: Vocabulary Encoding Schemes
+    Section 5: Syntax Encoding Schemes
+    Section 6: Classes
+    Section 7: DCMI Type Vocabulary
+    Section 8: Terms related to the DCMI Abstract Model
+
+ACTION 2007-12-12: Pete to suggest a way to present a tabular
+overview of terms at the top of the document.
+
+ACTION 2007-12-12: Andrew and Julie to review document and 
+comment.
+
+======================================================================
+PROFILE REVIEW
+-- http://stage.dublincore.org/usage/reviews/index.shtml
+
+ACTION 2007-08-25: Tom to add to the criteria in the wiki
+http://dublincore.org/usageboardwiki/ProfileReviewCriteriaNew
+a section called "Organizational Context": evaluation questions
+to be asked about who has stewardship of a proposed AP.
+-- continues
+
+ACTION 2007-12-12: Joe to edit Profile Review Criteria -
+http://dublincore.org/usageboardwiki/ProfileReviewCriteriaNew -
+for discussion in late January.
+
+ACTION 2007-12-12: Andrew to edit Term Decision Tree -
+http://dublincore.org/usageboardwiki/TermDecisionTree
+(was http://dublincore.org/architecturewiki/TermDecisionTree)
+- especially focusing on differentiating
+Vocabulary and Syntax Encoding Schemes
+(http://dublincore.org/usageboardwiki/SesAndVes).
+
+ACTION 2007-12-12: Diane to outline an approach to presenting
+documentation on application profiles for non-technical users.
+(Tom has created the page http://dublincore.org/usageboardwiki/IntroToProfiles
+starting with links to legacy documents of interest.)
+
+======================================================================
+OTHER ISSUES
+
+ACTION 2007-11-23: Joe and Andrew to edit a discussion
+of issues with the element Coverage
+http://dublincore.org/usageboardwiki/IssuesWithCoverage
+for discussion on a future telecon.  (Note: 'spatial' and
+'temporal' are "correct" but 'coverage' is too broad --
+it allows for topic and this is in conflict with 'subject'
+[TK] -- this is an Application Profile issue [TB].)
+-- on the back burner for now
+
+ACTION 2007-08-26: Tom and Mikael to create a draft "Simple
+Dublin Core" AP using the 1.1 namespace and which models
+everything as literals. Document the legacy functional
+requirements and the organizational context for this AP.
+-- continues
+
+ACTION 2007-08-26: Andrew, Tom, and Dan B, in context of Agents
+TG, to finish the assessment of FOAF against the functional
+requirements. Include context describing kinds of places
+where FOAF would be useful and where it wouldn't be useful.
+Following this assessment, the TG to propose/recommend a
+course of action to DCMI Directorate.
+-- continues.  Andrew to progress in January.
+
+ACTION 2007-03-17: Joe to draft a document discussing
+issues related to principles and purpose of UB decision-making.
+(The context was the decision to define ISO639-2 as a set of codes.)
+-- continues.
+
+2009-01-29: Changed usageboard/log URIs to usage/minutes URIs.

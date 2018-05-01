@@ -1,0 +1,304 @@
+<?xml version="1.0"?>
+<DescriptionSetTemplate xmlns="http://dublincore.org/xml/dc-dsp/2008/01/14" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dublincore.org/xml/dc-dsp/2008/01/14 http://dublincore.org/architecturewiki/DescriptionSetProfile?action=AttachFile&amp;do=get&amp;target=dcmi-dsp.xsd ">
+<DescriptionTemplate ID="ScholarlyWork" maxOccurs="1" minOccurs="1" standalone="yes">
+<ResourceClass>http://purl.org/eprint/entityType/ScholarlyWork/</ResourceClass>
+<StatementTemplate minOccurs="1" maxOccurs="1" type="nonliteral">
+<Property>http://purl.org/dc/elements/1.1/type</Property>
+<NonLiteralConstraint>
+<ValueURIOccurrence>mandatory</ValueURIOccurrence>
+<ValueURI>http://purl.org/eprint/entityType/ScholarlyWork/</ValueURI>
+<VocabularyEncodingSchemeOccurrence>mandatory</VocabularyEncodingSchemeOccurrence>
+<VocabularyEncodingSchemeURI>http://purl.org/eprint/entityType/</VocabularyEncodingSchemeURI><ValueStringConstraint maxOccurs="0"></ValueStringConstraint></NonLiteralConstraint></StatementTemplate>
+<StatementTemplate minOccurs="1" type="literal">
+<Property>http://purl.org/dc/elements/1.1/title</Property>
+</StatementTemplate>
+<StatementTemplate type="nonliteral">
+<Property>http://purl.org/dc/elements/1.1/subject</Property>
+<NonLiteralConstraint>
+<ValueURIOccurrence>optional</ValueURIOccurrence>
+<VocabularyEncodingSchemeOccurrence>optional</VocabularyEncodingSchemeOccurrence>
+<ValueStringConstraint maxOccurs="1"><LanguageOccurrence>optional</LanguageOccurrence>
+<SyntaxEncodingSchemeOccurrence>disallowed</SyntaxEncodingSchemeOccurrence>
+</ValueStringConstraint></NonLiteralConstraint></StatementTemplate>
+<StatementTemplate type="literal">
+<Property>http://purl.org/dc/terms/abstract</Property>
+</StatementTemplate>
+<StatementTemplate minOccurs="1" type="literal">
+<Property>http://purl.org/dc/elements/1.1/identifier</Property>
+<LiteralConstraint><SyntaxEncodingSchemeOccurrence>mandatory</SyntaxEncodingSchemeOccurrence>
+<SyntaxEncodingScheme>http://purl.org/dc/terms/URI</SyntaxEncodingScheme>
+</LiteralConstraint>
+</StatementTemplate>
+<StatementTemplate type="nonliteral">
+<Property>http://purl.org/dc/elements/1.1/creator</Property>
+<NonLiteralConstraint descriptionTemplateRef="agent">
+<VocabularyEncodingSchemeOccurrence>optional</VocabularyEncodingSchemeOccurrence>
+<ValueStringConstraint maxOccurs="1"><LanguageOccurrence>optional</LanguageOccurrence>
+<SyntaxEncodingSchemeOccurrence>disallowed</SyntaxEncodingSchemeOccurrence>
+</ValueStringConstraint></NonLiteralConstraint></StatementTemplate>
+<StatementTemplate type="nonliteral">
+<Property>http://www.loc.gov/loc.terms/relators/FND</Property>
+<NonLiteralConstraint descriptionTemplateRef="agent">
+<VocabularyEncodingSchemeOccurrence>optional</VocabularyEncodingSchemeOccurrence>
+<ValueStringConstraint maxOccurs="1"><LanguageOccurrence>optional</LanguageOccurrence>
+<SyntaxEncodingSchemeOccurrence>disallowed</SyntaxEncodingSchemeOccurrence>
+</ValueStringConstraint></NonLiteralConstraint></StatementTemplate>
+<StatementTemplate type="literal">
+<Property>http://purl.org/eprint/terms/grantNumber</Property>
+</StatementTemplate>
+<StatementTemplate type="nonliteral">
+<Property>http://www.loc.gov/loc.terms/relators/THS</Property>
+<NonLiteralConstraint descriptionTemplateRef="agent">
+<VocabularyEncodingSchemeOccurrence>optional</VocabularyEncodingSchemeOccurrence>
+<ValueStringConstraint maxOccurs="1"><LanguageOccurrence>optional</LanguageOccurrence>
+<SyntaxEncodingSchemeOccurrence>disallowed</SyntaxEncodingSchemeOccurrence>
+</ValueStringConstraint></NonLiteralConstraint></StatementTemplate>
+<StatementTemplate type="nonliteral">
+<Property>http://purl.org/eprint/terms/affiliatedInstitution</Property>
+<NonLiteralConstraint descriptionTemplateRef="agent">
+<VocabularyEncodingSchemeOccurrence>optional</VocabularyEncodingSchemeOccurrence>
+<ValueStringConstraint maxOccurs="1"><LanguageOccurrence>optional</LanguageOccurrence>
+<SyntaxEncodingSchemeOccurrence>disallowed</SyntaxEncodingSchemeOccurrence>
+</ValueStringConstraint></NonLiteralConstraint></StatementTemplate>
+<StatementTemplate type="nonliteral">
+<Property>http://purl.org/eprint/terms/hasAdaptation</Property>
+<NonLiteralConstraint>
+<ValueURIOccurrence>mandatory</ValueURIOccurrence>
+<VocabularyEncodingSchemeOccurrence>disallowed</VocabularyEncodingSchemeOccurrence>
+<ValueStringConstraint maxOccurs="0"></ValueStringConstraint></NonLiteralConstraint></StatementTemplate>
+<StatementTemplate type="nonliteral">
+<Property>http://purl.org/eprint/terms/isExpressedAs</Property>
+<NonLiteralConstraint descriptionTemplateRef="expression">
+<VocabularyEncodingSchemeOccurrence>disallowed</VocabularyEncodingSchemeOccurrence>
+<ValueStringConstraint maxOccurs="0"></ValueStringConstraint></NonLiteralConstraint></StatementTemplate>
+</DescriptionTemplate>
+<DescriptionTemplate ID="Expression" standalone="no">
+<ResourceClass>http://purl.org/eprint/entityType/Expression/</ResourceClass>
+<StatementTemplate minOccurs="1" maxOccurs="1" type="nonliteral">
+<Property>http://purl.org/dc/elements/1.1/type</Property>
+<NonLiteralConstraint>
+<ValueURIOccurrence>mandatory</ValueURIOccurrence>
+<ValueURI>http://purl.org/eprint/entityType/Expression/</ValueURI>
+<VocabularyEncodingSchemeOccurrence>mandatory</VocabularyEncodingSchemeOccurrence>
+<VocabularyEncodingSchemeURI>http://purl.org/eprint/entityType/</VocabularyEncodingSchemeURI><ValueStringConstraint maxOccurs="0"></ValueStringConstraint></NonLiteralConstraint></StatementTemplate>
+<StatementTemplate type="literal">
+<Property>http://purl.org/dc/elements/1.1/title</Property>
+</StatementTemplate>
+<StatementTemplate type="literal">
+<Property>http://purl.org/dc/elements/1.1/description</Property>
+</StatementTemplate>
+<StatementTemplate minOccurs="1" type="literal">
+<Property>http://purl.org/dc/elements/1.1/identifier</Property>
+<LiteralConstraint><SyntaxEncodingSchemeOccurrence>mandatory</SyntaxEncodingSchemeOccurrence>
+<SyntaxEncodingScheme>http://purl.org/dc/terms/URI</SyntaxEncodingScheme>
+</LiteralConstraint>
+</StatementTemplate>
+<StatementTemplate maxOccurs="1" type="literal">
+<Property>http://purl.org/dc/terms/available</Property>
+<LiteralConstraint><SyntaxEncodingSchemeOccurrence>mandatory</SyntaxEncodingSchemeOccurrence>
+<SyntaxEncodingScheme>http://purl.org/dc/terms/W3CDTF</SyntaxEncodingScheme>
+</LiteralConstraint>
+</StatementTemplate>
+<StatementTemplate type="nonliteral">
+<Property>http://purl.org/eprint/terms/status</Property>
+<NonLiteralConstraint>
+<ValueURIOccurrence>mandatory</ValueURIOccurrence>
+<ValueURI>http://purl.org/eprint/status/PeerReviewed</ValueURI>
+<ValueURI>http://purl.org/eprint/status/NonPeerReviewed</ValueURI>
+<VocabularyEncodingSchemeOccurrence>mandatory</VocabularyEncodingSchemeOccurrence>
+<VocabularyEncodingSchemeURI>http://purl.org/eprint/status/</VocabularyEncodingSchemeURI><ValueStringConstraint maxOccurs="0"></ValueStringConstraint></NonLiteralConstraint></StatementTemplate>
+<StatementTemplate type="literal">
+<Property>http://purl.org/eprint/terms/version</Property>
+</StatementTemplate>
+<StatementTemplate type="nonliteral">
+<Property>http://purl.org/dc/elements/1.1/language</Property>
+<NonLiteralConstraint>
+<ValueURIOccurrence>disallowed</ValueURIOccurrence>
+<ValueURI></ValueURI>
+<ValueURI></ValueURI>
+<VocabularyEncodingSchemeOccurrence>disallowed</VocabularyEncodingSchemeOccurrence>
+<VocabularyEncodingSchemeURI></VocabularyEncodingSchemeURI><ValueStringConstraint maxOccurs="1"><LanguageOccurrence>disallowed</LanguageOccurrence>
+<SyntaxEncodingSchemeOccurrence>mandatory</SyntaxEncodingSchemeOccurrence>
+<SyntaxEncodingScheme>http://purl.org/dc/terms/RFC3066</SyntaxEncodingScheme>
+</ValueStringConstraint></NonLiteralConstraint></StatementTemplate>
+<StatementTemplate type="nonliteral">
+<Property>http://purl.org/dc/elements/1.1/type</Property>
+<NonLiteralConstraint>
+<ValueURIOccurrence>mandatory</ValueURIOccurrence>
+<ValueURI>http://purl.org/eprint/type/ScholarlyText</ValueURI>
+<ValueURI>http://purl.org/eprint/type/Book</ValueURI>
+<ValueURI>http://purl.org/eprint/type/BookItem </ValueURI>
+<ValueURI>http://purl.org/eprint/type/BookReview</ValueURI>
+<ValueURI>http://purl.org/eprint/type/ConferenceItem</ValueURI>
+<ValueURI>http://purl.org/eprint/type/ConferencePaper</ValueURI>
+<ValueURI>http://purl.org/eprint/type/ConferencePoster</ValueURI>
+<ValueURI>http://purl.org/eprint/type/JournalItem</ValueURI>
+<ValueURI>http://purl.org/eprint/type/JournalArticle</ValueURI>
+<ValueURI>http://purl.org/eprint/type/NewsItem</ValueURI>
+<ValueURI>http://purl.org/eprint/type/Patent</ValueURI>
+<ValueURI>http://purl.org/eprint/type/Report</ValueURI>
+<ValueURI>http://purl.org/eprint/type/SubmittedJournalArticle</ValueURI>
+<ValueURI>http://purl.org/eprint/type/Thesis</ValueURI>
+<ValueURI>http://purl.org/eprint/type/WorkingPaper</ValueURI>
+<VocabularyEncodingSchemeOccurrence>mandatory</VocabularyEncodingSchemeOccurrence>
+<VocabularyEncodingSchemeURI>http://purl.org/eprint/type/</VocabularyEncodingSchemeURI><ValueStringConstraint maxOccurs="0"></ValueStringConstraint></NonLiteralConstraint></StatementTemplate>
+<StatementTemplate type="nonliteral">
+<Property>http://purl.org/eprint/terms/copyrightHolder</Property>
+<NonLiteralConstraint descriptionTemplateRef="agent">
+<VocabularyEncodingSchemeOccurrence>optional</VocabularyEncodingSchemeOccurrence>
+<ValueStringConstraint maxOccurs="1"><LanguageOccurrence>optional</LanguageOccurrence>
+<SyntaxEncodingSchemeOccurrence>disallowed</SyntaxEncodingSchemeOccurrence>
+</ValueStringConstraint></NonLiteralConstraint></StatementTemplate>
+<StatementTemplate type="nonliteral">
+<Property>http://purl.org/dc/terms/hasVersion</Property>
+<NonLiteralConstraint descriptionTemplateRef="expression">
+<VocabularyEncodingSchemeOccurrence>disallowed</VocabularyEncodingSchemeOccurrence>
+<ValueStringConstraint maxOccurs="0"></ValueStringConstraint></NonLiteralConstraint></StatementTemplate>
+<StatementTemplate type="nonliteral">
+<Property>http://purl.org/eprint/terms/hasTranslation</Property>
+<NonLiteralConstraint descriptionTemplateRef="expression">
+<VocabularyEncodingSchemeOccurrence>disallowed</VocabularyEncodingSchemeOccurrence>
+<ValueStringConstraint maxOccurs="0"></ValueStringConstraint></NonLiteralConstraint></StatementTemplate>
+<StatementTemplate type="literal">
+<Property>http://purl.org/dc/terms/bibliographicCitation</Property>
+<LiteralConstraint><SyntaxEncodingSchemeOccurrence>optional</SyntaxEncodingSchemeOccurrence>
+<SyntaxEncodingScheme>info:ofi/fmt:kev:mtx:</SyntaxEncodingScheme>
+</LiteralConstraint>
+</StatementTemplate>
+<StatementTemplate type="nonliteral">
+<Property>http://purl.org/dc/terms/references</Property>
+<NonLiteralConstraint>
+<ValueURIOccurrence>optional</ValueURIOccurrence>
+<VocabularyEncodingSchemeOccurrence>disallowed</VocabularyEncodingSchemeOccurrence>
+<ValueStringConstraint maxOccurs="2"><LanguageOccurrence>disallowed</LanguageOccurrence>
+<SyntaxEncodingSchemeOccurrence>optional</SyntaxEncodingSchemeOccurrence>
+<SyntaxEncodingScheme>info:ofi/fmt:kev:mtx:</SyntaxEncodingScheme>
+</ValueStringConstraint></NonLiteralConstraint></StatementTemplate>
+<StatementTemplate type="nonliteral">
+<Property>http://www.loc.gov/loc.terms/relators/EDT</Property>
+<NonLiteralConstraint descriptionTemplateRef="agent">
+<VocabularyEncodingSchemeOccurrence>optional</VocabularyEncodingSchemeOccurrence>
+<ValueStringConstraint maxOccurs="1"><LanguageOccurrence>optional</LanguageOccurrence>
+<SyntaxEncodingSchemeOccurrence>disallowed</SyntaxEncodingSchemeOccurrence>
+</ValueStringConstraint></NonLiteralConstraint></StatementTemplate>
+<StatementTemplate type="nonliteral">
+<Property>http://purl.org/eprint/terms/isManifestedAs</Property>
+<NonLiteralConstraint descriptionTemplateRef="manifestation">
+<VocabularyEncodingSchemeOccurrence>disallowed</VocabularyEncodingSchemeOccurrence>
+<ValueStringConstraint maxOccurs="0"></ValueStringConstraint></NonLiteralConstraint></StatementTemplate>
+</DescriptionTemplate>
+<DescriptionTemplate ID="Manifestation" standalone="no">
+<ResourceClass>http://purl.org/eprint/entityType/Manifestation/</ResourceClass>
+<StatementTemplate minOccurs="1" maxOccurs="1" type="nonliteral">
+<Property>http://purl.org/dc/elements/1.1/type</Property>
+<NonLiteralConstraint>
+<ValueURIOccurrence>mandatory</ValueURIOccurrence>
+<ValueURI>http://purl.org/eprint/entityType/Manifestation/</ValueURI>
+<VocabularyEncodingSchemeOccurrence>mandatory</VocabularyEncodingSchemeOccurrence>
+<VocabularyEncodingSchemeURI>http://purl.org/eprint/entityType/</VocabularyEncodingSchemeURI><ValueStringConstraint maxOccurs="0"></ValueStringConstraint></NonLiteralConstraint></StatementTemplate>
+<StatementTemplate type="nonliteral">
+<Property>http://purl.org/dc/elements/1.1/format</Property>
+<NonLiteralConstraint>
+<ValueURIOccurrence>disallowed</ValueURIOccurrence>
+<VocabularyEncodingSchemeOccurrence>disallowed</VocabularyEncodingSchemeOccurrence>
+<ValueStringConstraint maxOccurs="1"><LanguageOccurrence>disallowed</LanguageOccurrence>
+<SyntaxEncodingSchemeOccurrence>mandatory</SyntaxEncodingSchemeOccurrence>
+<SyntaxEncodingScheme>http://purl.org/dc/terms/IMT</SyntaxEncodingScheme>
+</ValueStringConstraint></NonLiteralConstraint></StatementTemplate>
+<StatementTemplate type="literal">
+<Property>http://purl.org/dc/terms/modified</Property>
+<LiteralConstraint><SyntaxEncodingSchemeOccurrence>mandatory</SyntaxEncodingSchemeOccurrence>
+<SyntaxEncodingScheme>http://purl.org/dc/terms/W3CDTF</SyntaxEncodingScheme>
+</LiteralConstraint>
+</StatementTemplate>
+<StatementTemplate type="nonliteral">
+<Property>http://purl.org/dc/elements/1.1/publisher</Property>
+<NonLiteralConstraint descriptionTemplateRef="agent">
+<VocabularyEncodingSchemeOccurrence>optional</VocabularyEncodingSchemeOccurrence>
+<ValueStringConstraint maxOccurs="1"><LanguageOccurrence>optional</LanguageOccurrence>
+<SyntaxEncodingSchemeOccurrence>disallowed</SyntaxEncodingSchemeOccurrence>
+</ValueStringConstraint></NonLiteralConstraint></StatementTemplate>
+<StatementTemplate type="nonliteral">
+<Property>http://purl.org/eprint/terms/isAvailableAs</Property>
+<NonLiteralConstraint descriptionTemplateRef="copy">
+<VocabularyEncodingSchemeOccurrence>disallowed</VocabularyEncodingSchemeOccurrence>
+<ValueStringConstraint maxOccurs="0"></ValueStringConstraint></NonLiteralConstraint></StatementTemplate>
+</DescriptionTemplate>
+<DescriptionTemplate ID="Copy" standalone="no">
+<ResourceClass>http://purl.org/eprint/entityType/Copy/,http://purl.org/dc/terms/DigitalResource</ResourceClass>
+<StatementTemplate minOccurs="1" maxOccurs="1" type="nonliteral">
+<Property>http://purl.org/dc/elements/1.1/type</Property>
+<NonLiteralConstraint>
+<ValueURIOccurrence>mandatory</ValueURIOccurrence>
+<ValueURI>http://purl.org/eprint/entityType/Copy/</ValueURI>
+<VocabularyEncodingSchemeOccurrence>mandatory</VocabularyEncodingSchemeOccurrence>
+<VocabularyEncodingSchemeURI>http://purl.org/eprint/entityType/</VocabularyEncodingSchemeURI><ValueStringConstraint maxOccurs="0"></ValueStringConstraint></NonLiteralConstraint></StatementTemplate>
+<StatementTemplate type="nonliteral">
+<Property>http://purl.org/dc/terms/accessRights</Property>
+<NonLiteralConstraint>
+<ValueURIOccurrence>mandatory</ValueURIOccurrence>
+<ValueURI>http://purl.org/eprint/accessRights/OpenAccess</ValueURI>
+<ValueURI>http://purl.org/eprint/accessRights/RestrictedAccess</ValueURI>
+<ValueURI>http://purl.org/eprint/accessRights/ClosedAccess</ValueURI>
+<VocabularyEncodingSchemeOccurrence>mandatory</VocabularyEncodingSchemeOccurrence>
+<VocabularyEncodingSchemeURI>http://purl.org/eprint/accessRights/</VocabularyEncodingSchemeURI><ValueStringConstraint maxOccurs="0"></ValueStringConstraint></NonLiteralConstraint></StatementTemplate>
+<StatementTemplate type="nonliteral">
+<Property>http://purl.org/dc/terms/license</Property>
+<NonLiteralConstraint>
+<ValueURIOccurrence>mandatory</ValueURIOccurrence>
+<VocabularyEncodingSchemeOccurrence>disallowed</VocabularyEncodingSchemeOccurrence>
+<ValueStringConstraint maxOccurs="0"></ValueStringConstraint></NonLiteralConstraint></StatementTemplate>
+<StatementTemplate maxOccurs="1" type="literal">
+<Property>http://purl.org/dc/terms/available</Property>
+<LiteralConstraint><SyntaxEncodingSchemeOccurrence>mandatory</SyntaxEncodingSchemeOccurrence>
+<SyntaxEncodingScheme>http://purl.org/dc/terms/W3CDTF</SyntaxEncodingScheme>
+</LiteralConstraint>
+</StatementTemplate>
+<StatementTemplate type="nonliteral">
+<Property>http://purl.org/dc/terms/isPartOf</Property>
+<NonLiteralConstraint>
+<ValueURIOccurrence>mandatory</ValueURIOccurrence>
+<VocabularyEncodingSchemeOccurrence>disallowed</VocabularyEncodingSchemeOccurrence>
+<ValueStringConstraint maxOccurs="1"><LanguageOccurrence>optional</LanguageOccurrence>
+<SyntaxEncodingSchemeOccurrence>optional</SyntaxEncodingSchemeOccurrence>
+</ValueStringConstraint></NonLiteralConstraint></StatementTemplate>
+</DescriptionTemplate>
+<DescriptionTemplate ID="Agent" standalone="no">
+<ResourceClass>http://purl.org/eprint/entityType/Person/,http://purl.org/eprint/entityType/Organization/</ResourceClass>
+<StatementTemplate minOccurs="1" maxOccurs="1" type="nonliteral">
+<Property>http://purl.org/dc/elements/1.1/type</Property>
+<NonLiteralConstraint>
+<ValueURIOccurrence>mandatory</ValueURIOccurrence>
+<ValueURI>http://purl.org/eprint/entityType/Person/</ValueURI>
+<ValueURI>http://purl.org/eprint/entityType/Organization/</ValueURI>
+<VocabularyEncodingSchemeOccurrence>mandatory</VocabularyEncodingSchemeOccurrence>
+<VocabularyEncodingSchemeURI>http://purl.org/eprint/entityType/</VocabularyEncodingSchemeURI><ValueStringConstraint maxOccurs="0"></ValueStringConstraint></NonLiteralConstraint></StatementTemplate>
+<StatementTemplate type="literal">
+<Property>http://xmlns.com/foaf/0.1/name</Property>
+</StatementTemplate>
+<StatementTemplate type="literal">
+<Property>http://xmlns.com/foaf/0.1/family_name</Property>
+</StatementTemplate>
+<StatementTemplate type="literal">
+<Property>http://xmlns.com/foaf/0.1/givenname</Property>
+</StatementTemplate>
+<StatementTemplate type="nonliteral">
+<Property>http://xmlns.com/foaf/0.1/workplaceHomepage</Property>
+<NonLiteralConstraint>
+<ValueURIOccurrence>mandatory</ValueURIOccurrence>
+<VocabularyEncodingSchemeOccurrence>disallowed</VocabularyEncodingSchemeOccurrence>
+<ValueStringConstraint maxOccurs="0"></ValueStringConstraint></NonLiteralConstraint></StatementTemplate>
+<StatementTemplate type="nonliteral">
+<Property>http://xmlns.com/foaf/0.1/mbox</Property>
+<NonLiteralConstraint>
+<ValueURIOccurrence>mandatory</ValueURIOccurrence>
+<VocabularyEncodingSchemeOccurrence>disallowed</VocabularyEncodingSchemeOccurrence>
+<ValueStringConstraint maxOccurs="0"></ValueStringConstraint></NonLiteralConstraint></StatementTemplate>
+<StatementTemplate type="nonliteral">
+<Property>http://xmlns.com/foaf/0.1/homepage</Property>
+<NonLiteralConstraint>
+<ValueURIOccurrence>mandatory</ValueURIOccurrence>
+<VocabularyEncodingSchemeOccurrence>disallowed</VocabularyEncodingSchemeOccurrence>
+<ValueStringConstraint maxOccurs="0"></ValueStringConstraint></NonLiteralConstraint></StatementTemplate>
+</DescriptionTemplate>
+</DescriptionSetTemplate>

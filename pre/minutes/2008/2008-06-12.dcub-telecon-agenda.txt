@@ -1,0 +1,59 @@
+Agenda - telecon 2008-06-12 1300 UTC
+
+Topic:    Review of Karen Coyle's draft Guidelines for Application Profiles
+Expected: Karen Coyle, Andrew Wilson, Diane Hillmann, Joe Tennis, Julie Allison, 
+          Pete Johnston, Tom Baker, Stefanie Ruehle
+Regrets:  Akira Miyazawa
+
+          Other members of the DC-REVIEW mailing list may join
+          http://www.jiscmail.ac.uk/lists/dc-review.html
+          (please email tbaker@tbaker.de to confirm participation)
+
+----------------------------------------------------------------------
+Karen's draft (required reading):
+    http://www.kcoyle.net/temp/dcap/
+
+----------------------------------------------------------------------
+Notes from previous telecon (Tuesday, 2008-06-03)
+    http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0806&L=dc-review&P=694
+
+----------------------------------------------------------------------
+Background - http://dublincore.org/news/2008/
+
+    Guidelines for Application Profiles under development
+
+    2008-03-31, The DCMI Directorate has awarded a contract to
+    Karen Coyle to write user-oriented "Guidelines for Dublin
+    Core Application Profiles". The guidelines will provide
+    an overview of recent work on a formal Description Set
+    Profile specification in the context of the Singapore
+    Framework for Dublin Core Application Profiles together
+    with good-practice examples.
+
+----------------------------------------------------------------------
+Timezones
+See: http://www.timeanddate.com/worldclock/fixedtime.html?month=06&day=03&year=2008&hour=13&min=00&sec=0&p1=0
+
+    1300 UTC on Tuesday, June 3 corresponds to:
+    0600 Seattle 
+    0900 New York 
+    1400 London 
+    1500 Berlin 
+    2200 Tokyo
+    2300 Sydney
+
+----------------------------------------------------------------------
+Calling into the conference:
+    1) Dial: local country number
+       -- Australia 1800-006-458
+       -- UK 0800-032-0634
+       -- Germany 0800-181-2311
+       -- Sweden 020-792-635
+       -- Japan 00531-13-0842 "KDD Only"
+       -- US - skip this step
+    2) You hear: "Welcome... Please enter your 10-digit..."
+       Type: 888-448-7101#
+    3) You hear: "Please enter..."
+       Type:     764-6081#
+
+

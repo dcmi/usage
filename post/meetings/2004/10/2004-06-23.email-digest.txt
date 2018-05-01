@@ -1,0 +1,203 @@
+------------------------------------------------------------------------
+Date:         Fri, 21 May 2004 10:56:55 +0100
+From: Andy Powell <a.powell@UKOLN.AC.UK>
+Subject: Re: Fwd: Approved qualifiers in Dublin Core
+To: DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+On Thu, 20 May 2004, Diane Hillmann wrote:
+
+> Folks:
+>
+> Any suggestions for an answer to this?
+
+My answer would be the same as the one I gave to the NetInsert people,
+i.e. something along these lines...
+
+--- cut ---
+
+One approach is that you 'name' your encoding scheme using a URI within
+your own namespace, e.g.
+
+http://wwwcf.nlm.nih.gov/class/Class
+
+If you do this, then your XHTML encoding would be along the lines of
+
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+<link rel="schema.NLM" href="http://wwwcf.nlm.nih.gov/class/" />
+
+<meta name="DC.subject"
+      scheme="NLM.Class"
+      content="WA 288"
+/>
+
+This is in line with the XHTML encoding guidelines at
+
+  http://dublincore.org/documents/dcq-html/
+
+and doesn't require any registration of 'NLMClass' with DCMI.
+
+Note that there are other possibilities for choosing the URI that you use
+to name your taxonomy - for example, you could use a PURL
+
+  http://purl.org/NLM/Class
+
+in which case the 'rel="schema' line above will need to be changed.  Note
+also that there are psuedo-religious issues around whether you should use
+a URIref rather than a URI to name your scheme (i.e. whether it should
+have a '#' in it or not).
+
+The above approach can also be used if you choose a future encoding
+based on XML, where the instance metadata will look something like
+
+<dc:subject xsi:type="nlm:Class">WA 288</dc:subject>
+
+given an appropriate namnespace declaration for the 'nlm' prefix.
+It will also work in RDF/XML (though the syntax is not as shown above).
+
+You might also like to consider assigning a URI (or URIref)  to each of
+the terms in your taxonomy?  If so, then a possible way of doing this is
+to use the 'info' URI scheme (though note that this isn't a registered URI
+scheme yet).  For details see
+
+  http://www2.elsevier.co.uk/~tony/info/info.html
+
+Some examples are at
+
+  http://www2.elsevier.co.uk/~tony/info/info.html#ex_ddc
+
+--- cut ---
+
+Andy
+
+> >From: "Boehr, Diane (NIH/NLM)" <boehrd@mail.nlm.nih.gov>
+> >To: "'dih1@cornell.edu'" <dih1@cornell.edu>
+> >Subject: Approved qualifiers in Dublin Core
+> >Date: Wed, 19 May 2004 16:18:41 -0400
+> >
+> >Diane,
+> >
+> >How would NLM go about getting the NLM classification to be one of the
+> >approved qualifiers for DC.Subject?  MeSH has already been approved and we
+> >would like the value NLMClass to also be added, with the following URL
+> >link <http://wwwcf.nlm.nih.gov/class/>http://wwwcf.nlm.nih.gov/class/
+> >
+> >I couldn't find an official contact for a request like this on the DCMI
+> >site, so I hope you can help.
+> >
+> >Diane Boehr
+> >
+> >Diane Boehr
+> >Cataloging Unit Head
+> >National Library of Medicine
+> >8600 Rockville Pike
+> >Bethesda, MD 20894
+> >301-435-7059
+> >boehrd@mail.nlm.nih.gov
+>
+
+------------------------------------------------------------------------
+Date:         Fri, 21 May 2004 13:14:26 +0200
+From: Thomas Baker <thomas.baker@BI.FHG.DE>
+Subject: Re: Fwd: Approved qualifiers in Dublin Core
+To: DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+Diane Boehr of NLM wrote:
+> > >How would NLM go about getting the NLM classification to be one of the
+> > >approved qualifiers for DC.Subject?  MeSH has already been approved and we
+> > >would like the value NLMClass to also be added, with the following URL
+> > >link <http://wwwcf.nlm.nih.gov/class/>http://wwwcf.nlm.nih.gov/class/
+
+Diane Hillmann asked:
+> > Any suggestions for an answer to this?
+
+Andy responded:
+> This is in line with the XHTML encoding guidelines at
+>
+>   http://dublincore.org/documents/dcq-html/
+>
+> and doesn't require any registration of 'NLMClass' with DCMI.
+
+Andy's response provides guidance on using the URI (which
+they already have) in encodings, but Diane Boehr seems to be
+requesting that DCMI provide approval for NLM classification.
+
+Two responses seem possible:
+
+1) Traugott, who may be out of email contact just now, is going
+   to put up a simple Web page listing Subject vocabularies.
+
+2) We could consider whether the DCMI Usage Board can and
+   should assign status to this externally maintained term,
+   perhaps in the form of an endorsement of an assertion by NLM
+   that http://wwwcf.nlm.nih.gov/class/ qualifies dc:subject.
+
+------------------------------------------------------------------------
+Date:         Wed, 23 Jun 2004 16:23:04 -0400
+From: "Rebecca S. Guenther" <rgue@LOC.GOV>
+Subject: Re: "Approval" for NLM encoding scheme?
+To: DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+Okay, I talked to Diane yesterday. She didn't quite understand everything
+I was telling her I don't think. It seems that they are using Dublin Core
+elements, but as HTML, not as XML. You can see what they're using at:
+http://www.nlm.nih.gov/tsd/cataloging/metafilenew.html. You'll see they're
+using that dot syntax. They've used "NLMDC.Subject.NLMClass" as their
+element for this encoding scheme.
+
+I explained to her the various options, particularly about declaring a
+persistent URI for the NLM classification and/or registering an info:
+scheme. (She did say that they are using that NLM classification URI as a
+persistent one.) This would work in the context of XML schema or RDF/XML
+but didn't have too much meaning for her since they seem to be using the
+dot syntax. So she still seemed to be more attracted to having some sort
+of registration of NLM classification comparable to what already exists in
+dcmi:terms for MESH and LCC.
+
+I suppose how I interpret it is that she would like the option that Tom
+mentions below:
+"record that assertion in a machine-processable form so that the
+endorsement of the NLM term shows up in our Web documents and RDF
+schemas;"
+I guess that means a fast-track sort of registration/approval by the UB.
+
+Alternatively, I could talk to someone else there who knows more about any
+plans they have for setting up namespaces, schemas and the like.
+
+Rebecca
+
+> On Sat, May 22, 2004 at 08:12:22AM +0200, Thomas Baker wrote:
+> > On Fri, May 21, 2004 at 04:07:05PM -0400, Rebecca Guenther wrote:
+> > > I'm not sure I understand how this relates to NLM. The assertions have to
+> > > do with asserting whether each term in the relators list is a subproperty
+> > > of Contributor. NLM is asking about how to use their encoding scheme with
+> > > the DC element Subject. Or maybe I'm missing something on this late
+> > > Fri. afternoon.
+> >
+> > NLM has a term which -- they would like to assert -- qualifies
+> > a DCMI term.  But unless I have misunderstood, Diane's point is
+> > that NLM is _also_ looking for some sort of acknowledgement,
+> > approval, recommendation, or dissemination by DCMI of that
+> > assertion.
+> >
+> > The MARC Relators, to my way of thinking, are a test case for
+> > working out the mechanics and the etiquette of making and
+> > recognizing such assertions, so we should consider whether
+> > it provides a model for handling the NLM qualifier.
+> >
+> > If NLM already has a term -- and it already has a persistent,
+> > institutionally supported URI (still an "if" I believe) --
+> > and they assert that it qualifies dc:subject, we could do
+> > one or more of the following:
+> >
+> > -- simply take mental note;
+> > -- alert DC-General (once);
+> > -- record the fact on Traugott's planned Web page;
+> > -- review the assertion in UB and endorse or recommend it in some form;
+> > -- record that assertion in a machine-processable form so that the
+> >    endorsement of the NLM term shows up in our Web documents and RDF
+> >    schemas;
+> > -- ensure that the term appears in the DCMI Registry.
+

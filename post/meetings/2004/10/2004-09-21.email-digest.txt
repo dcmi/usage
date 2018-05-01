@@ -1,0 +1,255 @@
+------------------------------------------------------------------------
+Date:         Mon, 20 Sep 2004 11:46:44 -0400
+From: "Rebecca S. Guenther" <rgue@LOC.GOV>
+Subject: Re: Decision text for ISO 8601 encoding scheme
+To: DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+Okay, in fact I think I'll change the text a bit. It is now:
+"This encoding scheme represents the alternative provided
+in ISO 8601 that does not include hyphens as separators
+between year, month, and day."
+
+change to:
+
+"This encoding scheme represents the alternative form specified in ISO
+8601 as 'basic format', which does not include hyphens as separators
+between year, month, and day."
+
+References
+Note that it is a problem that ISO does not provide free access to its
+documents. However, I have bookmarked the final draft of the 2000 revision
+to ISO 8601 which explains the different alternatives. I recommend
+including it as a reference:
+
+1. ISO 8601:2000
+Representation of dates and times, second edition
+Final draft, as edited and published by the ISO/CS
+http://lists.ebxml.org/archives/ebxml-core/200104/pdf00005.pdf
+(alternatives detailed in 5.2.1.1)
+
+2. Date and Time Formats
+http://www.w3.org/TR/NOTE-datetime
+This note defines a profile of ISO 8601, which specifies the "extended
+format" representation, i.e. inclusion of hyphens between year, month and
+day.
+
+3. XML Schema: Datatypes (Appendix D: ISO 8601 Date and Time Formats)
+http://www.w3.org/TR/xmlschema-2/#isoformats
+This W3C recommendation is part 2 of the specification of the XML Schema
+language and provides more detail on ISO formats.
+
+Rebecca
+
+On Mon, 20 Sep 2004, Thomas Baker wrote:
+> On Mon, Sep 20, 2004 at 11:01:39AM -0400, Rebecca Guenther wrote:
+> > I just looked at the decision text and it looks fine to me. What further
+> > do I need to do?
+>
+> According to
+> http://www.bi.fhg.de/People/Thomas.Baker/ISSUES/iso8601/,
+> links to two W3C documents should be added, perhaps with some
+> accompanying text.
+
+------------------------------------------------------------------------
+Date:         Mon, 20 Sep 2004 17:42:19 +0100
+From: Pete Johnston <p.johnston@UKOLN.AC.UK>
+Subject: Re: Decision text for ISO 8601 encoding scheme
+To: DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+Tom, Rebecca,
+
+> According to http://www.bi.fhg.de/People/Thomas.Baker/ISSUES/iso8601/,
+> links to two W3C documents should be added, perhaps with some
+> accompanying text.
+
+Did you see Douglas Campbell's comments on the dc-date list?
+
+http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0409&L=dc-date&T=0&F=&S=&P=395
+
+I think it needs to be absolutely clear whether the encoding scheme is
+intended to permit all of the options available in ISO8601.
+
+These two references may muddy the waters slightly:
+
+http://www.w3.org/TR/NOTE-datetime W3CDTF permits only a subset of
+ISO8601 (That's where we came in!)
+
+http://www.w3.org/TR/xmlschema-2/#isoformats The XML Schema datatypes
+also appear to diverge from ISO8601:
+
+====
+It should be pointed out that the datatypes described in this
+specification do not cover all the types of data covered by [ISO 8601],
+nor do they support all the lexical representations for those types of
+data.
+====
+
+So if these links are included, I think it needs to be clear what their
+inclusion signifies with regard to the encoding scheme.
+
+Pete
+
+------------------------------------------------------------------------
+Date:         Mon, 20 Sep 2004 14:10:35 -0400
+From: "Rebecca S. Guenther" <rgue@LOC.GOV>
+Subject: Re: Decision text for ISO 8601 encoding scheme
+To: DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+On Mon, 20 Sep 2004, Pete Johnston wrote:
+
+> Tom, Rebecca,
+>
+> > According to http://www.bi.fhg.de/People/Thomas.Baker/ISSUES/iso8601/,
+> > links to two W3C documents should be added, perhaps with some
+> > accompanying text.
+>
+> Did you see Douglas Campbell's comments on the dc-date list?
+>
+> http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0409&L=dc-date&T=0&F=&S
+> =&P=395
+>
+> I think it needs to be absolutely clear whether the encoding scheme is
+> intended to permit all of the options available in ISO8601.
+
+The intent was only to allow the expression of date using what they call
+the "basic format", i.e. without hyphens. It is not supposed to address
+other permutations or date ranges. ISO doesn't really have separate
+designations for these various options. We could consider a different
+designation? Like "ISO 8601 basic" or ISO8601B. But we'll be making it up.
+
+Douglas Campbell's message talks particularly about date ranges, which
+hasn't been covered by DCMI. It was an issue in the DC-Lib AP.
+
+> These two references may muddy the waters slightly:
+>
+> http://www.w3.org/TR/NOTE-datetime W3CDTF permits only a subset of
+> ISO8601 (That's where we came in!)
+
+Right. The representation with hyphens separating YYYY and MM and DD etc.
+
+> http://www.w3.org/TR/xmlschema-2/#isoformats The XML Schema datatypes
+> also appear to diverge from ISO8601:
+
+I only put it in because Tom told me to, but I don't really think it's all
+that relevant to the discussion, so would just as well leave it out. More
+confusing than anything.
+
+Rebecca
+
+------------------------------------------------------------------------
+Date:         Mon, 20 Sep 2004 20:32:00 +0100
+From: Pete Johnston <p.johnston@UKOLN.AC.UK>
+Subject: Re: Decision text for ISO 8601 encoding scheme
+To: DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+> The intent was only to allow the expression of date using
+> what they call the "basic format", i.e. without hyphens. It
+> is not supposed to address other permutations or date ranges.
+> ISO doesn't really have separate designations for these
+> various options. We could consider a different designation?
+> Like "ISO 8601 basic" or ISO8601B. But we'll be making it up.
+
+Yes, but we _are_ making up the name anyway ;-)
+
+Douglas' instinctive assumption (and mine, initially, to be honest!) was
+that dcterms:ISO8601 would mean _any_ format permitted by ISO8601.
+
+"The thing with dcterms:ISO8601 is that if you're going to call it that,
+surely it can really only mean ISO 8601 in its entirety."
+
+http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0409&L=dc-date&T=0&F=&S=&P=659
+
+I wasn't certain what the plan was, but I did say it was dangerous to
+make that assumption, and you shouldn't read too much into a name:
+
+"Well, I'd argue that dcterms:ISO8601 or more properly
+http://purl.org/dc/terms/ISO8601 is just a name.
+
+What that name/URIref denotes is up to the Usage Board to say. I agree
+that it might be confusing, but there's no reason they can't say it
+denotes some subset of the dates available under ISO8601."
+
+http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0409&L=dc-date&T=0&F=&S=&P=797
+
+But having said that, I do have some sympathy with Douglas' position,
+especially given that (AFAIK) DC doesn't impose any similar
+"qualifications" (!) in the definitions of our other terms that
+reference other specs and standards: the references to the RFCs and
+other ISO standards just mean "the value space as defined in RFCxxx or
+ISOxxx".
+
+So if DC does impose some caveats here, it has to be very clear.
+
+> Douglas Campbell's message talks particularly about date
+> ranges, which hasn't been covered by DCMI. It was an issue in
+> the DC-Lib AP.
+
+So, to be absolutely clear on this issue, can I just ask whether this
+new encoding scheme (whatever it is called) permits date ranges or not?
+
+> I only put it in because Tom told me to, but I don't really
+> think it's all that relevant to the discussion, so would just
+> as well leave it out. More confusing than anything.
+
+I think so, yes.
+
+Pete
+
+------------------------------------------------------------------------
+Date: Tue, 21 Sep 2004
+From: Tom
+------------------------------------------------------------------------
+
+On Mon, Sep 20, 2004 at 02:10:35PM -0400, Rebecca Guenther wrote:
+> > http://www.w3.org/TR/xmlschema-2/#isoformats The XML Schema datatypes
+> > also appear to diverge from ISO8601:
+> 
+> I only put it in because Tom told me to, but I don't really think it's all
+> that relevant to the discussion, so would just as well leave it out. More
+> confusing than anything.
+
+According to the notes in the Bath meeting packet
+(http://dublincore.org/usage/meetings/2004/03/ISSUES/registration-proposals/),
+the additions were suggested by Roland and agreed to by
+Rebecca:
+
+> In Ithaca in June 2003, we discussed proposals for several
+> encoding schemes [1].
+> 
+> The Ithaca notes show we approved two proposals [2]:
+> -- http://purl.org/dc/terms/ISO8601 (by a vote of 7 to 1) 
+> -- http://purl.org/dc/terms/AAT (by a vote of 8 to 0)
+> 
+> We also decided [2]: "New terms to go in the terms namespace
+> with one or two exceptions (MARC, DOI?). Discussions and
+> agreement on new terms to be continued online in early to
+> mid-July."
+> 
+> I see the proposals were discussed in July 2003 [3,4,5]
+> and then in Seattle, and this would appear to be the state
+> of affairs:
+> 
+> 1) http://purl.org/dc/terms/ISO8601
+>    Discussed and approved.  I have put a draft of the decision text at
+>    http://dublincore.org/usage/meetings/2004/03/2004-01.ISO8601.txt.
+>    If Rebecca confirms this is accurate, we can publish it after the 
+>    Bath meeting.
+> 
+>    Note that Roland suggested [4]: "As far as ISO
+>    8601 is concerned i refer to the Abstract of
+>    http://www.w3.org/TR/NOTE-datetime as well as
+>    http://www.w3.org/TR/xmlschema-2/#isoformats. May I suggest
+>    to include both links with the registration of ISO 8601."
+>    Rebecca agreed that these links should be included.
+
+Since the original decision to approve ISO8601 was made fifteen
+months ago, and finalization of the wording has proved to
+be more difficult than expected, I think we should discuss
+the proposal in Shanghai in the context of the broader issues
+which have arisen with regard to date, then we should re-vote
+to approve "ISO8601".
+

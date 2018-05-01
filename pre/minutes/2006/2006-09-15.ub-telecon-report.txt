@@ -1,0 +1,63 @@
+              Report - Usage Board telecon #19
+              2006-09-15 Fri 1300 UTC (1500 Berlin, 0600 Seattle, 2200 Tokyo)
+
+              See dialing instructions below
+              For IRC, type "/join #UB" on the chat line at:
+              -- irc://irc.ukoln.ac.uk/ or
+              -- http://dev.ukoln.ac.uk/irc
+
+Participants: Tom, Joe, Andrew, Akira, Diane
+Regrets: Stuart, Andy
+
+Agenda for this call: 
+http://dublincore.org/usage/minutes/2006/2006-09-15.ub-telecon-agenda.html
+
+Previous meeting: 
+http://dublincore.org/usage/minutes/2006/2006-09-01.ub-telecon-agenda.html
+
+----------------------------------------------------------------------
+Review of Collection Description Application Profile (Andrew)
+-- Status of partial reviews
+   Andrew: has all CDAP comments yet - has not yet analysed.  
+   Enough here for a good report.
+   ACTION Andrew 2006-09-15: Summary report by next Wednesday for
+   inclusion in meeting packet.
+
+----------------------------------------------------------------------
+Manzanillo agenda - CORRECTED URLs
+-- http://stage.dublincore.org/usage/meetings/2006/09/manzanillo/html/index.html
+
+    Saturday
+    -- Comment on editorial changes to DCMES (Tom)
+       http://stage.dublincore.org/usage/meetings/2006/09/manzanillo/dcmes-changes/html/
+       Read:
+       -- http://dublincore.org/usage/public-comment/2006/08/dcmes-changes/
+
+    -- Domains and ranges (Andy)
+       -- http://stage.dublincore.org/usage/meetings/2006/09/manzanillo/domains-ranges/html/
+
+    -- Encoding schemes (Andy)
+       -- http://stage.dublincore.org/usage/meetings/2006/09/manzanillo/encoding-schemes/html/
+
+    Sunday
+    -- Review of Collection Description Profile (Andrew; guest: Pete)
+       -- http://stage.dublincore.org/usage/meetings/2006/09/manzanillo/profile-cdap/html
+
+    -- Workplan for 2006-2007 - dependencies on Abstract Model
+       -- http://stage.dublincore.org/usage/meetings/2006/09/manzanillo/workplan/html/
+
+----------------------------------------------------------------------
+Upcoming meetings and telecons
+
+   Next week's telecon may be cancelled, but holding the date for now
+
+   --  Sep 22 Fri 1300 UTC - Tom, Stuart, Andrew, Diane ok / Joe, Akira no / Andy unsure
+
+   Next scheduled DCMI Web build is on Monday, Sep 25.
+
+-- Face-to-face meeting in Colima, Mexico
+
+   2006-09-30 Sat 0900-1800
+   2006-10-01 Sun 0900-1700
+
+2009-01-29: Changed usageboard/log URIs to usage/minutes URIs.

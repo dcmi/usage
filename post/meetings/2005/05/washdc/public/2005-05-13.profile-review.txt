@@ -1,0 +1,116 @@
+Excerpt from DCMI Usage Board Process (full text of which
+is elsewhere in this packet)
+
+6. Proposals for Registration of Application Profiles
+
+    *6.1.* Sources of proposals
+
+        *6.1.1.* DCMI working groups
+
+            *6.1.1.1.* Existing working groups or working groups
+            established for the purpose of developing proposals
+
+        *6.1.2.* Metadata implementers
+
+            *6.1.2.1.* Established projects or research groups 
+
+        *6.1.3.* UB itself
+
+    *6.2.* For the purposes of review by the Usage Board:
+
+        *6.2.1.* The Usage Board is interested in reviewing application
+        profiles that make substantial use of Dublin Core elements. The
+        review of application profiles by the Usage Board serves to:
+
+            *6.2.1.1.* analyze the usage of Dublin Core within
+            significant implementations;
+
+            *6.2.1.2.* assign a DCMI stamp of approval;
+
+            *6.2.1.3.* promote the sharing of application profiles
+            between communities; and
+
+            *6.2.1.4.* identify new terms as candidates for inclusion in
+            DCMI namespaces.
+
+        *6.2.2.* Application profiles must provide, for each term, an
+        identifier of the element set where it is defined, ideally in
+        the form of URIs for individual terms.
+
+        *6.2.3.* If the terms in an application profile describe
+        anything other than generic "resources" (the typical domain of
+        Dublin Core), the application profile must make this clear. This
+        is particularly important if an application profile is based on
+        a data model that describes multiple classes of resources, such
+        as agents or collections.
+
+        *6.2.4.* It is recommended that application profiles be prepared
+        using the Dublin Core Application Profile guidelines published
+        by CEN [http://www.cenorm.be/cenorm/businessdomains/
+        businessdomains/isss/cwa/cwa14855.asp].
+
+        *6.2.5.* Each application profile must provide, or point to, a
+        short text that describes:
+
+            *6.2.5.1.* The context and purposes in which the application
+            profile is used or is likely to be used.
+
+            *6.2.5.2.* The organizations or individuals involved in its
+            development and a capsule history thereof.
+
+            *6.2.5.3.* Any arrangements, policies, or intentions
+            regarding the future development and maintenance of the
+            application profile.
+
+    *6.3.* Review of Application Profiles by the Usage Board
+
+        *6.3.1.* An application profile is "well-formed" if it is
+        presented in accordance with the broad and flexible requirements
+        outlined above. These presentation requirements may become more
+        specific as "good practice" emerges over time.
+
+        *6.3.2.* Usage Board review focuses on the use of terms related
+        to Dublin Core terms and on any data models that provide a
+        context for those terms. The Usage Board is agnostic about the
+        use of terms not directly related to Dublin Core; strictly
+        speaking such terms are outside the scope of Usage Board review.
+
+        *6.3.3.* The use of terms related to Dublin Core (such as
+        refinements of Dublin Core elements, or Dublin Core elements
+        that have been constrained for particular contexts) will be
+        evaluated from the standpoint of semantic conformance,
+        grammatical principle (eg, "dumb-down"), clarity, and good practice.
+
+    *6.4.* Publication and use of Usage Board Reviews
+
+        *6.4.1.* An application profiles that "pass" review will be
+        assigned the status of 'conforming'.
+
+            *6.4.1.1.* The status of 'conforming' indicates a Usage
+            Board assessment of the application profile as of the date
+            of its submission for review.
+
+            *6.4.1.2.* Changes to already 'conforming' application
+            profiles require further Usage Board review of the
+            application profile in whole or in part according to the
+            processes and criteria outlined in sections 6.1 through 6.3. 
+
+        *6.4.2.* For application profiles that "pass" review, the Usage
+        Board will publish a Review on a Web page for application profiles.
+
+        *6.4.3.* Each Review will include, at a minimum:
+
+            *6.4.3.1.* Any comments from the Usage Board on the
+            application profile.
+
+            *6.4.3.2.* Pointers to locally archived copies of the
+            application profile as originally submitted and (if
+            necessary) as subsequently amended in light of Usage Board
+            comments.
+
+            *6.4.3.3.* A pointer to the "latest version" of an
+            application profile held by its maintainers.
+
+    *6.5.* Review represents a form of recognition, and its URL will be
+    persistent for purposes of citation.
+

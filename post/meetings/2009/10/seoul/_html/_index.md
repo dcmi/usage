@@ -1,0 +1,149 @@
+---
+title: 
+date: '2017-09-01T16:21:09+01:00'
+description: 
+draft: false
+creators: []
+contributors: []
+publisher: 
+tags: []
+---
+
+<pre>
+Title: Usage Board meeting in Seoul - Agenda
+Identifier: <a href="http://dublincore.org:8080/usage/meetings/2009/10/seoul/.index.html">http://dublincore.org:8080/usage/meetings/2009/10/seoul/</a>
+Created: 2009-09-06
+
+----------------------------------------------------------------------
+Expected
+    Seoul: Tom Baker, Andrew Wilson, Stefanie Ruehle, Akira Miyazawa, Joe Tennis
+    Remote: Julie Allinson, Pete Johnston
+
+----------------------------------------------------------------------
+Administrative Components (Andrew)
+    <a href="http://www.bs.dk/standards/AdministrativeComponents.htm">http://www.bs.dk/standards/AdministrativeComponents.htm</a>
+    <a href="http://dublincore.org:8080/usage/meetings/2009/10/seoul/.html/acore-email-digest.html">http://dublincore.org:8080/usage/meetings/2009/10/seoul/.html/acore-email-digest.html</a>
+
+    -- Task: Prepare a short review of ACore for discussion
+        in Seoul. What can or should the Usage Board say about
+        ACore? The review should discuss the possibility of
+        defining ACore as an application profile.
+
+----------------------------------------------------------------------
+Errata and other changes to DCMI terms documentation (Akira)
+    <a href="http://dublincore.org:8080/usage/meetings/2009/10/seoul/.html/errata.html">http://dublincore.org:8080/usage/meetings/2009/10/seoul/.html/errata.html</a>
+        This document includes some proposals to be decided formally 
+        at the meeting (and documents some decisions already and in 
+        the queue for publication). After the Seoul meeting, this will
+        be turned into a single decision document.
+
+    <a href="http://dublincore.org/usage/minutes/2008/2008-09-21.berlin-5Etc.html">http://dublincore.org/usage/minutes/2008/2008-09-21.berlin-5Etc.html</a>
+        The meeting notes for Berlin record the discussion of the literal
+        range for Title and Alternative title.
+
+    -- Task: Carefully check all of the proposed changes.
+        Write a very short summary of the rationale for assigning
+        a literal range to Title and Alternative title (using the 
+        meeting notes above.
+
+----------------------------------------------------------------------
+Usage issues (Pete)
+-- Creator and Maker
+    <a href="http://dublincore.org:8080/usage/meetings/2009/10/seoul/.html/dccreator.html">http://dublincore.org:8080/usage/meetings/2009/10/seoul/.html/dccreator.html</a>
+    <a href="https://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0909&amp;L=DC-ARCHITECTURE&amp;P=24982">https://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0909&amp;L=DC-ARCHITECTURE&amp;P=24982</a>
+
+-- Candidate issues for further discussion
+    <a href="http://dublincore.org:8080/usage/meetings/2009/10/seoul/.html/dcidentifier.html">http://dublincore.org:8080/usage/meetings/2009/10/seoul/.html/dcidentifier.html</a>
+    <a href="http://dublincore.org/documents/usageguide/appendix_roles.shtml">http://dublincore.org/documents/usageguide/appendix_roles.shtml</a>
+        "Using Dublin Core Part 6: Using Agent Roles"
+
+    Simple Dublin Core
+        <a href="http://www.intute.ac.uk/publications/eprints-uk/simpledc-guidelines.html">http://www.intute.ac.uk/publications/eprints-uk/simpledc-guidelines.html</a>
+        <a href="http://dublincore.org:8080/usage/meetings/2009/10/seoul/.html/simpledc.html">http://dublincore.org:8080/usage/meetings/2009/10/seoul/.html/simpledc.html</a>
+
+    -- Task: Follow dc-architecture discussion regarding
+        DC creator and FOAF maker and summarize discussion to
+        dc-usage by Friday, 2 October. Prepare bullet points
+        for discussing other issues (see above) in order to
+        identify topics for further discussion in the Usage
+        Board. Propose a one-paragraph glossary entry for
+        "Simple Dublin Core" for discussion. Could Agent Roles
+        be discussed in a short glossary entry?
+
+----------------------------------------------------------------------
+Using Dublin Core - Elements and Qualifiers (Stefanie)
+    <a href="http://dublincore.org/documents/usageguide/elements.shtml">http://dublincore.org/documents/usageguide/elements.shtml</a>
+        "Using Dublin Core Part 4: The Elements"
+    <a href="http://dublincore.org/documents/usageguide/qualifiers.shtml">http://dublincore.org/documents/usageguide/qualifiers.shtml</a>
+        "Using Dublin Core Part 5: The Qualifiers"
+    <a href="http://dublincore.org:8080/usage/meetings/2009/10/seoul/.html/usingdc.html">http://dublincore.org:8080/usage/meetings/2009/10/seoul/.html/usingdc.html</a>
+
+    -- Task: In Seoul, we will not have time to discuss all of the 
+        examples for elements and qualifiers in Using Dublin Core.
+        Rather, the task here is to prepare bullet points on general
+        issues related to the examples, for example the issue of
+        literal versus non-literal values. Prepare to discuss possible
+        ways forward for Using Dublin Core: what would need to be done
+        in order to bring the document up to date? Is a document at
+        this level needed, and what is its audience?
+
+----------------------------------------------------------------------
+Glossary (Joe)
+    <a href="http://dublincore.org/documents/usageguide/glossary.shtml">http://dublincore.org/documents/usageguide/glossary.shtml</a>
+        "Using Dublin Core - Part 7: DCMI Glossary" 
+    <a href="http://dublincore.org:8080/beta/glossary/">http://dublincore.org:8080/beta/glossary/</a>
+        Tom proposes that the glossary be written as a relatively short
+        document covering only major concepts that are characteristic of
+        Dublin Core metadata. The glossary is potentially a good place to
+        explain legacy issues, such as "dumb down" and "document-like object".
+    Candidate issues for inclusion (or summary) in a glossary:
+        <a href="http://dublincore.org:8080/usage/meetings/2009/10/seoul/.html/dumbdown.html">http://dublincore.org:8080/usage/meetings/2009/10/seoul/.html/dumbdown.html</a>
+        <a href="http://dublincore.org:8080/usage/meetings/2009/10/seoul/DumbDownNotes.htm">http://dublincore.org:8080/usage/meetings/2009/10/seoul/DumbDownNotes.htm</a>
+        <a href="http://dublincore.org:8080/usage/meetings/2009/10/seoul/.html/dlo.html">http://dublincore.org:8080/usage/meetings/2009/10/seoul/.html/dlo.html</a>
+        <a href="http://dublincore.org:8080/usage/meetings/2009/10/seoul/IssuesWithCoverage.htm">http://dublincore.org:8080/usage/meetings/2009/10/seoul/IssuesWithCoverage.htm</a>
+
+    -- Task: Identify which of the terms in the old glossary
+        are most important for describing the "Dublin Core style"
+        of metadata. For those most important terms, suggest bullet
+        points for what a modern glossary entry should say. Flag any
+        obvious gaps -- DC terminology that would need to be covered
+        in a glossary, such as the "candidate issues" above (and suggest
+        bullet points).
+
+----------------------------------------------------------------------
+Frequently Asked Questions (Julie)
+-- Legacy FAQ
+    <a href="http://dublincore.org/resources/faq/">http://dublincore.org/resources/faq/</a>
+-- DCMI Mixing and Matching FAQ (Andy Powell, 2005)
+    <a href="http://www.ukoln.ac.uk/metadata/dcmi/mixing-matching-faq/">http://www.ukoln.ac.uk/metadata/dcmi/mixing-matching-faq/</a>
+-- Candidate FAQ
+    <a href="http://dublincore.org:8080/usage/meetings/2009/10/seoul/.html/range.html">http://dublincore.org:8080/usage/meetings/2009/10/seoul/.html/range.html</a>
+
+    -- Task: Identify which questions are still really
+        frequently asked. For those questions, prepare bullet points
+        proposing current answers. Propose an answer to the
+        frequently asked question about the difference between
+        dc:creator and dcterms:creator.
+
+----------------------------------------------------------------------
+Introduction to metadata (Tom?)
+    <a href="http://dublincore.org:8080/usage/meetings/2009/10/seoul/dublincore-org-beta-pages.pdf">http://dublincore.org:8080/usage/meetings/2009/10/seoul/dublincore-org-beta-pages.pdf</a>
+    dublincore.org/documents/usageguide/index.shtml
+        "Using Dublin Core" Parts 1-3: Introduction to metadata
+    dublincore.org:8080/beta/metadata-basics/
+    dublincore.org:8080/beta/specifications/
+        Tom's proposed homepage text covering some of these issues.
+    dublincore.org:8080/usage/meetings/2009/10/seoul/.html/general.html
+        Karen Coyle comments.
+    dublincore.org:8080/usage/meetings/2009/10/seoul/.html/levels.html
+        Comments on Singapore Framework and interoperability level issues.
+    dublincore.org/documents/interoperability-levels/
+        Interoperability Levels
+
+    -- Task: Tom would like to lead a discussion on various texts
+        he has drafted about DCMI basic concepts.
+
+----------------------------------------------------------------------
+Old actions
+    <a href="http://dublincore.org:8080/usage/meetings/2009/10/seoul/.html/oldactions.html">http://dublincore.org:8080/usage/meetings/2009/10/seoul/.html/oldactions.html</a>
+</pre>

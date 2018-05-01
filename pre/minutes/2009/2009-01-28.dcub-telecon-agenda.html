@@ -1,0 +1,189 @@
+<PRE>
+Usage Board telecon - Wednesday 28 January 2009 - 2100 UTC
+
+This agenda: <a href="http://dublincore.org/usage/minutes/2009-01-28.dcub-telecon-agenda.html">http://dublincore.org/usage/minutes/2009-01-28.dcub-telecon-agenda.html</a>
+
+Expected: Tom Baker, Julie Allinson, Pete Johnston,
+          Akira Miyazawa, Stefanie Ruehle, Joe Tennis,
+          Andrew Wilson
+
+Wednesday, January 28
+    1300 Seattle
+    1600 New York
+    2100 London = 2100 UTC
+    2200 Berlin
+    0600 Tokyo
+    0800 Canberra 
+
+Dial-in Number:           1-219-509-8020
+Participant Access Code:  334034
+
+----------------------------------------------------------------------
+Reading list for the call - everyone please review!
+
+-- DCMI Libraries properties - Stefanie's draft note to Corey and Mary:
+   <a href="http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0901&L=dc-usage&P=6437">http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0901&L=dc-usage&P=6437</a>
+-- Draft SWAP review (in progress)
+   <a href="/usage/reviews/2009/swap/">http://dublincore.org/usage/reviews/2009/swap/</a>
+-- SWAP, corrected (in progress)
+   <a href="http://dublincore.org/scholarwiki/SWAPDSP">http://dublincore.org/scholarwiki/SWAPDSP</a>
+-- Profile review criteria
+   <a href="http://dublincore.org/documents/2009/01/05/profile-review-criteria/">http://dublincore.org/documents/2009/01/05/profile-review-criteria/</a>
+-- Profile review criteria issue raised by Tom re: mandatory constraints
+   <a href="http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0901&L=DC-USAGE&P=7010">http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0901&L=DC-USAGE&P=7010</a>
+-- SWAP and Profile review criteria issue raised by Pete re: ST with same property constraints
+   <a href="http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0901&L=DC-USAGE&T=0&O=D&P=3390">http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0901&L=DC-USAGE&T=0&O=D&P=3390</a>
+
+Details below...
+
+----------------------------------------------------------------------
+Review of DCMI Libraries properties
+
+Berlin conclusions:
+
+    1.1 Date Captured
+
+    Conclusion: Proposal does not provide well-defined notion
+    of "captured", but based on our discussion, Option 3
+    (dcterms:captured as subproperty of dcterms:created) seems
+    most appropriate approach.
+
+    Issues: Meaning of "capture" is not clear: "digitisation" is
+    one case; "snapshotting" Web sites etc is another. Difficult
+    to generalise.
+
+    1.2 Holding Location
+
+    DECISION: Suggest use of agls:availability.
+
+    1.3 Version
+
+    DECISION: Agreed to present property as proposed for public
+    comment and finalise in telecon.
+
+On the call, we will discuss:
+
+    Stefanie's draft note to Mary Woodley and Corey Harper of 2009-01-26 - see
+    <a href="http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0901&L=dc-usage&P=6437">http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0901&L=dc-usage&P=6437</a>
+
+----------------------------------------------------------------------
+Review of Accessibility properties
+
+Berlin conclusions:
+
+    RESOLVED: Co-ordinate development of property and VES with
+    AGLS. Andrew to shepherd.
+
+    Step 1: Liaise with AGLS re co-ordinated publication of
+    property dcterms:accessibility and AGLS VES.
+
+    Step 2: UB to ask AGLS to confirm desired VES.
+
+    Step 3: UB and AGLS to jointly agree natural language
+    definition and formal range to express semantics of
+    resource-valuerelationship. (Note: currently apparent
+    overlap between values for "accessibility" and "accessMode"
+    properties.)
+
+    Goal: Co-ordinated publication of DCMI property and AGLS VES
+    along with simple usable documentation.
+
+On the call:
+
+    Andrew to report on progress with AGLS.
+
+----------------------------------------------------------------------
+Review of Scholarly Works Application Profile (SWAP)
+-- see <a href="/usage/reviews/2009/swap/">http://dublincore.org/usage/reviews/2009/swap/</a>
+
+For discussion on the 2009-01-28 call, everyone please read
+the draft review:
+
+    <a href="/usage/reviews/2009/swap/">http://dublincore.org/usage/reviews/2009/swap/</a>
+
+Note the following:
+    
+-- Julie has been making corrections at
+   <a href="http://dublincore.org/scholarwiki/SWAPDSP">http://dublincore.org/scholarwiki/SWAPDSP</a> and will convert
+   the AP into a HTML document we can archive as a snapshot.
+
+-- Added bullet point about the kev:ctx format as a datatype,
+   under "Metadata Terms Referenced".
+
+To discuss on the call:
+
+-- A clear statement of conformance.
+
+-- Issue raised by Pete of two STs (Expression/Entity Type and
+   Expression/Type) with the same property list constraint
+   (list of one member, dc:type).  (Note that the DSP
+   specification says that "For each description, each
+   statement is bound to a Statement Template in the
+   corresponding Description Template by evaluating the
+   Property Constraint. Each statement must be bound to
+   exactly one...")
+
+   See Pete's posting of 15 January:
+   <a href="http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0901&L=DC-USAGE&T=0&O=D&P=339">http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0901&L=DC-USAGE&T=0&O=D&P=339</a>
+
+    ISSUE 2008-09-21: Criteria should reflect that a property list
+    constraint should be used once only within a description
+    template. Guidance should be given to application profile
+    creators on this issue, e.g. using the subject example where
+    an application profile wants to require an LCSH term and have
+    an option to add a free tag or a different vocabulary term.
+    Consider inclusion of this guidance on the current proposed
+    guidelines for application profiles.  One option is to make
+    the constraint human-readable only. Clarify with Mikael before
+    progressing this.
+
+----------------------------------------------------------------------
+Profile Review Criteria
+-- 2009-01-05. Published on dublincore.org:
+   <a href="http://dublincore.org/documents/2009/01/05/profile-review-criteria/">http://dublincore.org/documents/2009/01/05/profile-review-criteria/</a>
+
+   This is a snapshot of <a href="http://dublincore.org/usageboardwiki/ProfileReviewCriteria">http://dublincore.org/usageboardwiki/ProfileReviewCriteria</a>
+   which we used in Berlin.
+
+-- Issue: Dependence of Review Criteria on the Description Set Profile specification
+   -- see <a href="http://dublincore.org/documents/dc-dsp/">http://dublincore.org/documents/dc-dsp/</a>
+
+    ACTION 2008-09-21: Tom to correct profile review criteria
+    section on statement templates: [mandatory] property
+    constraints - one of the following: ...
+
+    For discussion: Tom's posting of 2009-01-26:
+    <a href="http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0901&L=DC-USAGE&P=7010">http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0901&L=DC-USAGE&P=7010</a>
+
+----------------------------------------------------------------------
+Ongoing actions and issues...
+
+    ACTION 2008-09-21: Joe and Andrew to continue work on Coverage.
+
+    ACTION 2008-09-21: Tom (and Mikael) to continue work on Simple Dublin Core.
+
+    ACTION 2008-09-21: Tom to amend the naming policy (DCMI
+    names should not differ only with respect to case).
+
+    ACTION 2008-09-21: Andrew and Julie to write a one-page guideline on
+    creating new terms that comply with the DCAM (replaces the
+    original action).
+
+    ACTION 2008-09-21: Tom to correct RDF schemas of DCMI Metadata
+    Terms to use blank node with publisher.
+
+    ISSUE 2008-09-21: Is it good practice to provide a
+    Value VES in addition to a Value URI, or is it arguably
+    redundant?  (Example: "Entity Type" under "Scholarly Work"
+    in SWAP, <a href="http://dublincore.org/scholarwiki/SWAPDSP">http://dublincore.org/scholarwiki/SWAPDSP</a>).
+    Guidance on this point may belong in the application
+    profile guidelines.
+
+    ISSUE 2008-09-21: Rendering of Wiki pages using the DSP
+    syntax does not capture all of the DSP detail and uses
+    different labelling.  It would be useful to hyperlink
+    labels in the DSP rendered page to the DSP documentation
+    itself.  Also, to hyperlink description template labels
+    within the wiki page itself, e.g. creator to agent
+    description.
+</PRE>

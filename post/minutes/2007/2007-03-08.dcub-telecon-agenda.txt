@@ -1,0 +1,63 @@
+From tbaker@tbaker.de Wed Mar  7 12:54:53 2007
+Date: Wed, 7 Mar 2007 12:54:53 +0100
+From: Thomas Baker <tbaker@tbaker.de>
+To: DCMI Usage Board <dc-usage@jiscmail.ac.uk>
+Subject: Agenda - 2007-03-08 Thu 2100 UTC (note unusual time)
+Message-ID: <20070307115453.GA776@sub-tombaker>
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.4.2.1i
+Status: RO
+Content-Length: 1463
+Lines: 48
+
+Agenda - 2007-03-08 Thu 2100 UTC
+2100 Bath - 2200 Berlin - 1300 Seattle - 0600 Tokyo+ / 0800 Sydney+
+
+1. Actions from last week
+
+    ACTION 2007-03-02 Andy - will send around summary of
+    domain-range issues in week of 5 March.
+
+    ACTION 2007-03-02 Diane - will send links or attachments
+    of potential RDA discussion materials in week of 5 March.
+    On 8 March telecon, we will discuss goals of UB discussion.
+
+2. Barcelona meeting agenda
+   http://dublincore.org/usageboardwiki/AgendaBarcelona
+
+   Friday
+   -- Outstanding actions (Tom)
+   -- DCMES finalization (Akira)
+   -- Domains and Ranges (Andy)
+   -- DCTERMS definitions and comments (Tom)
+   -- Term type of existing encoding schemes (Tom?)
+
+   Saturday
+   -- Collection Description Application Profile (Joe)
+   -- Review of Application Profiles (Tom, Andy, Stuart, Diane)
+   -- RDA issues (Diane)
+
+3. Any other business
+
+Dialing instructions (http://dublincore.org/usageboardwiki/DialingInstructions):
+    1) Dial: local country number
+       -- Australia 1800-006-458
+       -- UK 0800-032-0634
+       -- Germany 0800-181-2311
+       -- Sweden 020-792-635
+       -- Japan 00531-13-0842 "KDD Only"
+       -- US - skip this step
+    2) You hear: "Welcome... Please enter your 10-digit..."
+       Type: 888-448-7101#
+    3) You hear: "Please enter..."
+       Type:     764-6081#
+
+
+-- 
+Dr. Thomas Baker <tbaker@tbaker.de>
+Director, Specifications and Documentation
+Dublin Core Metadata Initiative
+
+

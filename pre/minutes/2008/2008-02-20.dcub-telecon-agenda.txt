@@ -1,0 +1,103 @@
+DCMI Usage Board - Wednesday, 2008-02-20 2100 UTC telecon - agenda
+
+This agenda:  http://dublincore.org/usage/minutes/2008/2008-02-20.dcub-telecon-agenda.html
+UB meetings:  http://dublincore.org/usage/minutes/
+UB mail list: http://www.jiscmail.ac.uk/lists/dc-usage.html
+UB wiki:      http://dublincore.org/usageboardwiki/
+1300 Seattle / 1600 New York / 2100 London (UTC) / 2200 Berlin / 0600 Tokyo+ / 0800 Sydney+
+See dialing instructions below.
+
+Expected: Tom, Diane, Julie, Joe, Pete, Akira, Andrew, Stefanie
+
+Agenda
+
+-- Welcome Stefanie Rühle
+
+======================================================================
+PROFILE REVIEW
+-- http://stage.dublincore.org/usage/reviews/index.shtml
+
+ACTION 2008-01-23: Joe to send around executive
+summary of review criteria for discussion
+http://dublincore.org/usageboardwiki/ProfileReviewCriteriaNew
+-- done, see: http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0802&L=dc-usage&P=1252
+
+ACTION 2007-12-12: Andrew to edit Term Decision Tree -
+http://dublincore.org/usageboardwiki/TermDecisionTree
+(was http://dublincore.org/architecturewiki/TermDecisionTree)
+- especially focusing on differentiating
+Vocabulary and Syntax Encoding Schemes
+(http://dublincore.org/usageboardwiki/SesAndVes).
+
+ACTION 2007-12-12: Diane to outline an approach to presenting
+documentation on application profiles for non-technical users.
+(Tom has created the page http://dublincore.org/usageboardwiki/IntroToProfiles
+starting with links to legacy documents of interest.)
+-- 2008-12-23. Diane modified page - will send notes to list
+before next telecon.
+
+ACTION 2008-01-23: Julie to explore possibilities for UB
+review of SWAP (Eprints).
+
+======================================================================
+DOMAINS AND RANGES
+
+ACTION 2007-08-26: Pete and Mikael to investigate the
+usefulness of defining a class of 'non-literal' and assess what
+the consequences of this would be for machine processability.
+(Usage Board should track issues involved in the notion of
+a range of 'non-literal'.)
+
+Range of dcterms:title
+   See http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0712&L=dc-architecture&P=3679
+       http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0702&L=DC-ARCHITECTURE&P=R4809
+
+-- need to record an action for moving forward...
+
+======================================================================
+SINGAPORE FRAMEWORK
+-- http://dublincore.org/documents/2008/01/14/singapore-framework/
+
+-- http://dublincore.org/architecturewiki/DescriptionSetProfile will 
+   go out for Public Comment in February
+
+======================================================================
+LONGER-TERM ISSUES
+
+Please look at http://dublincore.org/usageboardwiki/#Issues.  In the 
+call, we will walk through these and set priorities.
+
+======================================================================
+ANNUAL MEETING - 21 SEPTEMBER IN BERLIN
+
+KIM Project Working Group (http://www.kim-forum.org/)
+joint session on Sunday, 21 September
+
+======================================================================
+NEXT TELECON - some options:
+
+1) Wednesday March 12 - 2100 UTC
+     1300 Seattle / 1600 New York / 2100 London (UTC) / 2200 Berlin / 0600 Tokyo+ / 0800 Sydney+
+2) Monday March 10 - 1400 UTC
+     0600 Seattle / 0900 New York / 1400 London (UTC) / 1500 Berlin / 2300 Tokyo  / 0100 Sydney
+
+======================================================================
+DIALING INSTRUCTIONS 
+(http://dublincore.org/usageboardwiki/DialingInstructions):
+     1) Dial: local country number
+        -- UK        0800-032-0634
+        -- Germany   0800-181-2311
+        -- Australia 1800-006-458
+        -- Sweden    020-792-635
+        -- Japan     00531-13-0842 "KDD Only"
+        -- US        skip this step...
+     2) You hear: "Welcome... Please enter your 10-digit..."
+        Type: 888-448-7101#
+     3) You hear: "Please enter..."
+        Type:     764-6081#
+
+     Time-slot alternatives are:
+     1. 0600 Seattle / 0900 New York / 1400 London (UTC) / 1500 Berlin / 2300 Tokyo  / 0100 Sydney
+     2. 1300 Seattle / 1600 New York / 2100 London (UTC) / 2200 Berlin / 0600 Tokyo+ / 0800 Sydney+
+
+2009-01-29: Changed usageboard/log URIs to usage/minutes URIs.

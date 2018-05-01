@@ -1,0 +1,642 @@
+Singapore Usage Board Meeting Notes, 25-26 August 2007
+
+----------------------------------------------------------------------
+Day 1, 2007-08-25
+
+Present: Joe, Tom, Stuart, Andrew, Akira
+Guests: Raju, Pete, Traugott
+Ex officio: Makx
+
+1. Changes to Terms in the DCTERMS Namespace (Diane) [lead by Tom in
+Diane‚Äôs absence]
+
+
+Errors noticed.
+
+
+   1.
+
+      Types of Encoding Schemes ‚Ä"
+
+   2.
+
+      Block on third page of the document ‚Ä" formatting screwed up,
+      missing 4646
+
+   3.
+
+      4646 ‚Ä" datatype vs. VES needs to be resolved
+
+   4.
+
+      in paragraph ‚ÄúNew Terms Related to the Abstract Model‚Äù -
+      change DCAM ‚Äúis member of‚Äù to a ‚Äúmember of‚Äù
+
+   5.
+
+      section 2 ‚Ä" change ‚Äúfree-standing names‚Äù to ‚Äúfree-standing
+      labels‚Äù
+
+
+ACTION (TOM): revise the introduction
+
+
+Going through section 3:
+
+
+dcterms:creator ‚Ä" APPROVED
+
+dcterms:source ‚Ä" APPROVED
+
+dcterms:coverage ‚Ä" APPROVED
+
+dcterms:language ‚Ä" APPROVED
+
+dcterms:subject ‚Ä" APPROVED [noted, the list of examples is incomplete]
+
+dcterms:title ‚Ä" APPROVED
+
+dcterms:audience ‚Ä" APPROVED
+
+dcterms:alternative ‚Ä" APPROVED
+
+dcterms:tableOfContents ‚Ä" APPROVED
+
+dcterms:abstract ‚Ä" APPROVED
+
+dcterms:dateCreated ‚Ä" APPROVED
+
+dcterms:dateValid ‚Ä" APPROVED
+
+dcterms:dateAvailable ‚Ä" APPROVED
+
+dcterms:dateIssued ‚Ä" APPROVED
+
+dcterms:modified ‚Ä" APPROVED
+
+dcterms:extent ‚Ä" APPROVED
+
+dcterms:medium ‚Ä" APPROVED
+
+dcterms:isVersionOf ‚Ä" APPROVED
+
+dcterms:hasVersion ‚Ä" APPROVED
+
+dcterms:isReplacedBy ‚Ä" APPROVED
+
+dcterms:replaces ‚Ä" APPROVED
+
+dcterms:isRequiredBy ‚Ä" APPROVED
+
+dcterms:requires ‚Ä" APPROVED
+
+dcterms:isPartOf ‚Ä" APPROVED
+
+dcterms:hasPart ‚Ä" APPROVED
+
+dcterms:isReferencedBy ‚Ä" APPROVED
+
+dcterms:references ‚Ä" APROVED
+
+dcterms:isFormatOf ‚Ä" APPROVED
+
+dcterms:hasFormat ‚Ä" APPROVED
+
+dcterms:conformsTo ‚Ä" add the word ‚Äúdescribed‚Äù therefore it should
+read: ‚ÄúAn established resource to which the described resource
+conforms‚Äù APPROVED
+
+dcterms:spatial ‚Ä" APPROVED
+
+dcterms:temporal ‚Ä" APPROVED
+
+dcterms:mediator ‚Ä" APPROVED
+
+dcterms:dateAccepted ‚Ä" APPROVED
+
+dcterms:dateCopyrighted ‚Ä" APPROVED
+
+dcterms:dateSubmitted ‚Ä" APPROVED
+
+dcterms:educationLevel ‚Ä" add ‚Äòdescribed‚Äô and change ‚Äòwhom‚Äô to
+‚Äòwhich‚Äô thus, ‚Äú‚Ä¶for which the described resource is intended‚Äù
+‚Ä" APPROVED
+
+dcterms:accessRights ‚Ä" APROVED
+
+dcterms:bibliographicCitation ‚Ä" APPROVED
+
+dcterms:license ‚Ä" Tom to explicitly say ‚ÄúNew Comment [comment
+deleted]‚Äù ‚Ä" APPROVED
+
+dcterms:rightsHolder ‚Ä" APPROVED
+
+dcterms:provenance ‚Ä" APPROVED
+
+dcterms:instructionalMethod ‚Ä" APPROVED
+
+dcterms:accrualMethod ‚Ä" APPROVED
+
+dcterms:accrualPeriodicity ‚Ä" APPROVED
+
+dcterms:accrualPolicy ‚Ä" APPROVED
+
+RESOLVED: --- in all of the Vocabulary Encoding Schemes change
+‚Äòdefined‚Äô to ‚Äòspecified‚Äô
+
+dcterms:LCSH - change dcterms:LCSH to ‚Äòthe set of labeled concepts
+specified by Library Congress Subject Headings‚Äô
+
+    *
+
+      APPROVED with change
+
+dcterms:MESH change dcterms:MESH to ‚Äòthe set of labeled concepts
+specified by the Medical Subject Headings‚Äô - APPROVED with the change
+noted above
+
+dcterms:DDC ‚Ä" ‚Äòthe set of conceptual resources specified‚Ä¶‚Äô ‚Ä"
+APPROVED
+
+dcterms: LCC - ‚Äòthe set of conceptual resources specified‚Ä¶‚Äô ‚Ä"
+APPROVED
+
+dcterms:UDC - ‚Äòthe set of conceptual resources specified‚Ä¶‚Äô ‚Ä"
+APPROVED
+
+dcterms:DCMIType ‚Ä" ‚ÄòThe set of classes specified by the DCMI Type
+Vocabulary, used to categorize the nature or genre of the resource.‚Äô
+
+dcterms:IMT ‚Ä" ‚Äòthe set of media types specified by the Internet
+Assigned Numbers Authority‚Äô - APPROVED
+
+dcterms:ISO639-2 ‚Ä" ‚ÄòThe three-letter alphabetic codes listed in
+ISO639-2 for the representation of‚Ä¶..‚Äô APPROVED
+
+dcterms:RFC1766 ‚Ä" APPROVED
+
+dcterms:URI ‚Ä" change ‚Äòdefined‚Äô to ‚Äòspecified‚Äô, write out
+Internet Engineering Task Force, also: could take clarification
+somewhere, but should remain consistent between DCMI usage and XML
+Schema ‚Ä" APPROVED as changed
+
+dcterms:Point ‚Ä" APPROVED
+
+dcterms:ISO3166 ‚Ä" APPROVED
+
+dcterms:Box ‚Ä" APPROVED
+
+dcterms:TGN ‚Ä" APPROVED
+
+dcterms:Period ‚Ä" APPROVED
+
+dcterms:W3CDTF ‚Ä" APPROVED
+
+dcterms:RFC3066 ‚Ä" ‚ÄòThe set of tags constructed according to RFC 3066
+for the identification of languages.‚Äô ‚Ä" APPROVED with changed
+punctuation
+
+dcterms:NLM ‚Ä" ‚ÄòThe set of conceptual resources specified by the
+National Library of Medicine Classification‚Äô ‚Ä" APPROVED
+
+dcterms:RFC4646 - ‚ÄòThe set of tags constructed according to RFC 4646
+for the identification of languages.‚Äô APPROVED with change in punctuation
+
+dcam:memberOf ‚Ä" APROVED
+
+dcterms:VocabularyEncodingScheme ‚Ä" APPROVED
+
+
+ACTION (TOM): change introduction discussing 4646 to Syntax Encoding
+Scheme ‚Ä" it currently reads Vocabulary
+
+
+ACTION (someone?): post a known list of issues to the UB list (1) for
+subject ‚Ä" if read as inclusive, the list of examples is incomplete,
+(2) classification codes is misleading because it misses classification
+captions (use classification expressions instead), (3) ‚Äòspatial‚Äô and
+‚Äòtemporal‚Äô are ‚Äúcorrect‚Äù but ‚Äòcoverage‚Äô is too broad ‚Ä" it
+allows for topic and this is in conflict with ‚Äòsubject‚Äô [TK] ‚Ä" but
+this is an Application Profile issue [TB]
+
+
+DISCUSSION: because of the problem between ‚Äòcoverage‚Äô on the one
+hand and ‚Äòspatial‚Äô and ‚Äòtemporal‚Äô on the other. We have two
+problems:
+
+   1.
+
+      overlap between subject and coverage
+
+   2.
+
+      subproperty relations between spatial/temporal and coverage
+
+
+we have four courses of action:
+
+   1.
+
+      delete assertion spatial/temporal subproperty of coverage [problem
+      for legacy and namespace policy]
+
+   2.
+
+      change definition of spatial/temporal to fit coverage [problem for
+      namespace policy]
+
+   3.
+
+      do nothing and accept that spatial/temporal are not really
+      subproperties
+
+   4.
+
+      introduce a new coverage or recommend spatial/temporal instead
+
+
+NOTED: 2004 definition of ‚Äòcoverage‚Äô was significantly different
+from 2007 ‚Ä" and we may have introduced a problem in the change in 2007
+i.e., constraining ‚Äòcoverage‚Äô by using the word ‚Äòtopic‚Äô
+
+
+NOTED: DCMI might want to build an AP that ameliorates the legacy
+problems of 1.1 and TERMS ‚Ä" ‚Äòcoverage‚Äô, ‚Äòidentifier‚Äô,
+‚Äòsource‚Äô, etc. ‚Ä" this needs to be linked to discussion and
+decision of the AP of Simple DC.
+
+
+AGREED: ‚Äòspatial‚Äô and ‚Äòtemporal‚Äô subproperty assertions are
+inconsistent with the definition of ‚Äòcoverage‚Äô
+
+
+ACTION (TOM): will put the above discussion on telecon agendas
+
+
+DISCUSSION: two issues were raised [TK]
+
+   1.
+
+      are all vocabularies defining? ‚Ä" many are just lists, labels, or
+      the like, with no formal definitions
+
+   2.
+
+      what is the relationship between concepts and terms in vocabulary
+      control?
+
+
+AGREED: we can use ‚Äòspecified‚Äô instead of ‚Äòdefined‚Äô
+
+
+Options for fixing #2 above:
+
+          *
+
+            set of concepts specified by‚Ä¶
+
+          *
+
+            vocabulary specified by‚Ä¶
+
+
+AGREED: change dcterms:LCSH to the set of labeled concepts specified by
+Library Congress Subject Headings
+
+
+[Adjourned for lunch]
+
+
+Agenda Item #2 ‚Ä" Presentation dcTERMS namespace
+
+
+Question: How do we want to present DCMES, TERMS, DCAM terms ‚Ä"
+
+
+#1 ‚Ä" just list these in these sections
+
+1.1
+
+TERMS
+
+VES
+
+SES
+
+DCMITYPE
+
+DCAM
+
+
+#2 ‚Ä" put TERMS first, to emphasize our preference
+
+put dcterms first
+
+then the 15 1.1 ns -
+
+VES
+
+SES
+
+DCMITYPE
+
+DCAM
+
+
+AGREED: follow proposal #2 above
+
+
+ACTION (TOM): add clarification to the introduction ‚Ä" for example
+rationale for replicating 1.1 terms in the TERMS ns, recommendations on
+what people should be using by preference, and any other ‚Ä" will
+circulate to AB for advice on anything else that should be in that
+introduction
+
+
+ACTION (TOM): Prepare restructured TERMS document.
+
+
+----------------------------------------------------------------------
+Agenda Item #3: Review of Application Profiles
+
+Usefulness ‚Ä" requirements for the metadata are x,y, or z, and it is
+documented as such
+
+
+There are separate steps for deciding which APs to consider
+
+
+Criteria should be as clear as possible, and if possible, elicit a yes
+or no answer to the question posed. Verbose explanations belong in a
+separate document.
+
+
+Usefulness should only be used in functional requirements relationship
+to domain model.
+
+
+ACTION (TOM): add to the wiki a section called ‚ÄúOrganizational
+Context‚Äù to ask evaluation questions about who has stewardship of the
+proposed AP
+
+
+======================================================================
+Singapore Usage Board Meeting Notes, Day 2, 26 August 2007
+
+Present: Diane, Stuart, Tom, Andrew, Akira, Joe
+Guests: Pete, Mikael, Fredrik, Raju
+Ex officio: Makx
+
+----------------------------------------------------------------------
+Domains and Ranges
+ 
+
+ISSUE: Should we adopt 'non-literal resource' as a new range value?
+
+
+Akira: All values will become 'literals'. A date written in the W3CDTF
+is a literal but the date itself is *not* a literal. We need more
+analysis of what ranges are and what values are appropriate.
+
+
+Often a range value is just a rewording of a property. Pete says not a
+problem.  Issue is whether the relationship between properties and
+sub-properties is changed, not how the range restricts values. Choices
+about property ranges made for APs affects eventual metadata
+interoperability.
+
+
+Akira: problem with relationship between ranges and properties.
+Properties have meanings which are very close to the values of ranges.
+
+
+NOTE (Tom): 'has domain of rdfs:resource' is an implicit assignment and
+there is no need to declare it explicitly.
+
+
+ACTION (Tom): In cases where the domain is not specified add
+'[unspecified]'.
+
+
+dcterms:contributor -- APPROVED
+
+dcterms:Agent -- AGREED to change comment to read: "Examples of Agent
+include person, organization, and software agent." APPROVED
+dcterms:AgentClass -- change comment to read: "Examples of Agent Class
+include groups seen as classes, such as students, women, charities,
+lecturers." APPROVED.
+dcterms:coverage -- APPROVED
+dcterms:LocationPeriodOrJurisdiction -- AGREED to change 'period' in
+definition to 'period of time'. APPROVED.
+dcterms:Location -- AGREED to change definition to: "A spatial region or
+named place." APPROVED
+dcterms:PeriodOfTime -- AGREED to change definition to: "An interval of
+time that is named or is specified by its start and end dates." APPROVED.
+dcterms:Jurisdiction -- APPROVED
+dcterms:creator -- APPROVED
+dcterms:date -- APPROVED. 'Yes': 5; 'No': 1.
+dcterms:description -- APPROVED
+dcterms:format -- APPROVED
+dcterms:MediaTypeOrExtent -- APPROVED
+dcterms:MediaType -- APPROVED
+dcterms:PhysicalMedium -- AGREED to change comment to: "Examples include
+paper, canvas, or DVD" and to change definition to: "A physical material
+or carrier". APPROVED
+dcterms:PhysicalResource -- APPROVED
+dcterms:FileFormat -- APPROVED
+dcterms:DigitalResource -- REMOVE because not used in any Domain or
+Range assignment. It was only proposed for reasons of symmetry with
+PhysicalResource.
+dcterms:SizeOrDuration -- AGREED The definition is to be redone.
+
+ACTION (Pete): To propose new definition for the proposed class
+SizeOrDuration.
+
+dcterms:Duration -- REMOVE because not used in any Domain or Range
+assignment. It may make sesne to create such a subclass of
+SizeOrDuration at a future date but there may be better ways to subclass
+SizeOrDuration.
+dcterms:Size -- REMOVE because not used in any Domain or Range
+assignment. It may make sense to create such a subclass of
+SizeOrDuration at a future date but there may be better ways to subclass
+SizeOrDuration.
+dcterms:identifier -- APPROVED
+dcterms:language -- APPROVED
+dcterms:LinguisticSystem -- APPROVED
+dcterms:publisher -- APPROVED
+dcterms:relation -- APPROVED
+ISSUE: Whether we leave the range unspecified, or whether we specify a
+range of 'non-literal'. This would require the definition of a new class
+of 'non-literal'.
+
+ACTION (Tom): Add a note to the terms documentation for each term that
+has an approved range of rdfs:resource, except for 'description' and its
+sub-properties 'abstract' and 'tableOfContents', to the effect that the
+intention is that these terms are to be used with non-literal values,
+with a pointer to the AM. The Usage Board is currently investigating a
+model for expressing this intention formally.
+
+ACTION (Tom): Add a note to the documentation for 'title' saying the
+intention is that while the Usage Board recognises that title is used in
+practice primarily with literal values we also recognise that important
+uses of 'title' with non-literal values and so the Usage Board is
+investigating the options for expressing this.
+
+ACTION (Pete & Mikael): To investigate the usefulness of defining a
+class of 'non-literal' and assess what the consequences of this would be
+for machine processability.
+
+ACTION: To track the issues involved in the notion of a range of
+'non-literal'.
+dcterms:rights -- APPROVED
+dcterms:RightsStatement -- AGREED to change 'Resource' to 'resource' in
+definition. APPROVED
+dcterms:LicenseDocument --  AGREED to change 'Resource' to 'resource' in
+definition. APPROVED
+dcterms:source -- APPROVED
+dcterms:subject -- APPROVED
+dcterms:title -- NOT APPROVED. Vote -- Yes: 3; No: 1; Abstain: 2. As a
+consequence the range for 'title' remains unspecified.
+NOTE: For "parallel properties", DCMI could provide pointers to a
+"parallel property" in another namespace from a DCMI vocabulary declaration.
+Options:  1. Leave range unspecified
+              2. Assign range of 'non-literal'
+              3. Assign range of 'literal' [the proposal]
+dcterms:type --  APPROVED
+NOTE: Need for clarification of relationship between rdf:type and
+dcterms:type
+dcterms:abstract -- APPROVED
+dcterms:acessRights -- APPROVED
+dcterms:accrualMethod -- APPROVED
+dcterms:MethodOfAccrual -- APPROVED
+dcterms:accrualPeriodicity -- APPROVED
+dcterms:Frequency -- APPROVED
+dcterms:accrualPolicy -- APPROVED
+dcterms:Policy -- AGREED to change definition to: "A plan or course of
+action by an authority, intended to influence and determine decisions,
+actions and other matters." APPROVED
+dcterms:alternative -- NOT APPROVED. See note above for dcterms:title
+dcterms:audience -- APPROVED
+dcterms:available -- APPROVED
+dcterms:bibliographicCitation -- APPROVED
+dctermsBibliographicResource -- APPROVED
+dcterms:conformsTo -- APPROVED
+dctrms:Standard -- APPROVED
+dcterms:created -- APPROVED
+dcterms:dateAccepted -- APPROVED
+dcterms:dateCopyrighted -- APPROVED
+dcterms:dateSubmitted -- APPROVED
+dcterms:educationlevel -- APPROVED
+dcterms:extent -- APPROVED
+dcterms:hasFormat -- APPROVED
+dcterms:hasPart -- APPROVED
+dcterms:hasVersion -- APPROVED
+dcterms:instructionalMethod -- APPROVED
+dcterms:MethodOfInstruction -- APPROVED
+dcterms:isFormatOf -- APPROVED
+dcterms:isPartOf -- APPROVED
+dcterms:isReferencedBy -- APPROVED
+dcterms:isReplacedBy -- APPROVED
+dcterms:isRequiredBy -- APPROVED
+dcterms:issued -- APPROVED
+dcterms:isVersionOf -- APPROVED
+dcterms:license -- APPROVED
+dcterms:mediator -- APPROVED
+dcterms:medium -- APPROVED
+dcterms:modified -- APPROVED
+dcterms:provenance -- APPROVED
+dcterms:ProvenanceStatement -- APPROVED
+dcterms:references -- APPROVED
+dcterms:replaces -- APPROVED
+dcterms:requires -- APPROVED
+dcterms:rightsHolder -- APPROVED
+dcterms:spatial -- APPROVED
+dcterms:tableOfContents -- APPROVED
+dcterms:temporal -- APPROVED
+dcterms:valid -- APPROVED
+
+Agenda Item 8. Application Profile of Simple Dublin Core
+Question being addressed is "What do we want to say simple DC is?". This
+work needs to be based on what functions we are trying to provide for.
+1. To provide an AP that tells implementors how to use the traditional
+'15' in a way that conforms to modern understanding of metadata
+descriptions based on the DCAM.
+2. Scope and purpose based on the mature understanding of the UB,
+developed over the last 6 years.
+To be explicit about a number of things, to comment, to point out flaws
+and do some house cleaning.
+Something that looks very much like the DC15; go into spatial and
+temporal; provide a pedagological clarification of the 'core'.
+The new AP is not intended to solve the general problem of 'resource
+description', which is best addressed by communities in Application
+Profiles.
+How to deal with source and identifier without going beyond the 15?
+NB We are not starting from scratch.
+Purpose (MN): to serve as a path for implementors of the simple DC to
+move towards a more modern implementation of DC metadata terms.
+Need to have a relatively conservative interpretation of the OAI-PMH
+version of DC.
+Need for a second profile - but what is its function and scope?
+Describe the legacy and the path to the new - in two profiles but
+presented as one package.
+Straightforward to create a AP for traditional 'simple DC'. Then...?
+A second AP that provides a modern way of implementing what people think
+of as 'simple DC' (but called something else).
+To reverse engineer traditional use of 'simple' DC.
+Reconstruct a new version of what was called 'simple DC' that implements
+modern understandings and ameliorates existing flaws in the DC15.
+APs or description set profiles?
+
+ACTION (Tom & Mikael): Create a draft AP using the 1.1 namespace and
+which models everything as literals. Document the legacy functional
+requirements and the organizational context for this AP.
+
+AGREED: Defer, for the time being, work on a second AP until we have a
+better understanding of the functional requirements, scope and purpose
+of this second AP.
+
+Agenda Item 4. Agents and FOAF
+Does FOAF as a vocab meet the needs of the DCMI community? Does DC have
+a role to play in providing an institutional context for FOAF.
+
+Dan Brickley proposed using FOAF for Agents Task Group.  Dan did
+functional requirements of FOAF ‚Ä" on Agent Task Group wiki.
+
+Independent namespace reuse study
+
+Name
+Organization
+Website
+Email
+
+FOAF is a private namespace ‚Ä" so there are issues there
+
+2 issues with using FOAF:
+    1. desire to use FOAF in DCAM-based APs like Eprints
+    2. FOAF could expire as a reliable namespace
+
+Dan owns the namespace, but is not interested in submitting it to a
+UB-like process.
+
+Best option would be for the Agents TG/Community to decide and forward
+an AP to the UB.
+MN: need to decouple the FOAF vocab from the AP issue.
+
+ACTION (Andrew, Tom, Dan B): Agents TG to finish the assessment of FOAF
+against the functional requirements. Include context describing kinds of
+places where FOAF would be useful and where it wouldn't be useful.
+Following this assessment, the TG to propose/recommend a course of
+action to DCMI Directorate.
+
+Agenda Item 5. Changes to term declarations in RDF (Tom)
+
+ACTION (Tom): To add to the terms changes document, the change to the
+type of the terms in the type vocabulary.
+Google Docs -- Web word processing, presentations and spreadsheets. </> 	
+Edit this page (you have permission)
+<Edit?tab=edit&dr=true&docid=ddc6hcv5_0fwr2gh>
+Edit this page (if you have permission)
+<Edit?tab=edit&dr=true&docid=ddc6hcv5_0fwr2gh> | Report spam
+<http://docs.google.com/support/bin/request.py?hl=en&page=troubleshooter.cs&problem=abuse&contact_type=abuse&stage=fm&contact_typemaster=abuse&Action.Search=Continue&ctx=direct&docurl=http%3A%2F%2Fdocs.google.com%2FDoc%3Fid%3Dddc6hcv5_0fwr2gh> 
+
+

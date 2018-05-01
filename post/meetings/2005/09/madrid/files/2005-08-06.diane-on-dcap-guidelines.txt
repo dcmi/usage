@@ -1,0 +1,64 @@
+------------------------------------------------------------------------
+Date: Sat, 6 Aug 2005 20:25:42 -0400 (EDT)
+Subject: AP Question
+From: "Diane Ileana Hillmann" <dih1@cornell.edu>
+To: "Tom Baker" <baker@sub.uni-goettingen.de>
+------------------------------------------------------------------------
+
+I'd like to bring a couple of AP issues to your attention,
+based on recent discussions with the DC-Ed AP Drafting
+Committee as well as a result of my just-ended workshop on
+APs in Canada.  I know you're involved with the revision of
+the CEN Guidelines and I trust you will forward these comments
+on to others interested in these issues.
+
+The issue has to do with the terms used to specify obligation
+in an AP.  Like many developing APs, we've copied much from the
+Libraries AP, including their terms and codes for obligation.
+After coming back from my vacation in France (with considerably
+fewer brain cells than I began with) I looked at our AP and
+started seeing "R" as Required (neglecting to look at what
+we'd copied over as a key) and the confusion from that caused
+me to look a bit more closely at what we'd cut and pasted.
+It became clear to me that the DC-Lib group had imported
+those terms and codes from MARC, and there were two issues
+that started to jell:
+
+1. There seems no other places in the AP that codes are used,
+   and given my own brain fog it started to seem like a bad idea
+   to use codes rather than terms. For catalog librarians these
+   codes are second nature; for others, not so.
+
+2. Once I started thinking about the terms, it became obvious
+   that what we were dealing with here was a small controlled
+   vocabulary, with terms that we hadn't given much thought to
+   as we incorporated them.
+
+I started asking myself whether this was the right set of
+terms to begin with, and whether it might make sense to ask
+you about whether any notion of standardizing obligation terms
+might be part of the work being attempted as the Guidelines
+are reviewed.
+
+Now, having spent three days talking about APs (and nothing
+but APs) with a small group of very savvy and engaged folks,
+I'm more and more convinced that this issue is an important
+one. For instance, one of the participants wanted to include
+in his AP terms to describe:
+
+A.  Information that might be carried if received from others
+    but not necessarily sought prospectively
+
+B. Information that will not be used, neither stored nor
+   accepted (particularly if it might be pernicious or
+   misleading in a particular context).
+
+Maybe because it was the end of a long day, but I couldn't
+figure out why not, and this lead me to think that the issue
+might benefit from further discussion.
+
+I'd appreciate any insights you might offer on these issues,
+particularly the one concerning codes vs. terms, as we'd like
+to get that one straight before moving ahead (and it might
+be an easier one, on the whole!)
+

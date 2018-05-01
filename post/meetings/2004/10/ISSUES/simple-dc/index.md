@@ -1,0 +1,178 @@
+---
+title: 
+date: '2017-09-01T16:21:09+01:00'
+description: 
+draft: false
+creators: []
+contributors: []
+publisher: 
+tags: []
+---
+
+<pre>
+Title: What is "Simple Dublin Core"?
+Identifier: <a href="/usage/meetings/2004/10/ISSUES/simple-dc/">http://dublincore.org/usage/meetings/2004/10/ISSUES/simple-dc/</a>
+See also: <a href="/usage/meetings/2004/10/ISSUES/">http://dublincore.org/usage/meetings/2004/10/ISSUES/</a>
+Created: 2004-09-14
+Agenda frozen: 2004-10-02 07:25, Saturday
+Archived: 2004-11-10
+Maintainer: Tom Baker
+Note: If any of the links below are broken, please refer to 
+                   the meeting packet
+                   (<a href="/usage/meetings/2004/10/Meeting-packet.pdf">http://dublincore.org/usage/meetings/2004/10/Meeting-packet.pdf</a>) 
+                   for copies of the key documents discussed at the meeting.
+
+People still get confused by what constitutes "the Real Core"
+-- if it is the DC-15, then why is Audience excluded? As Diane
+has pointed out, the distinction between the namespaces and
+the concepts of "Simple" and "Qualified" are at best an uneasy
+mix of the legacy and the arbitrary.
+
+We may not have time to discuss this issue in Shanghai, but I
+am putting the following email digest into the meeting packet
+because we should all be aware that this is an ongoing and
+unresolved problem. Perhaps we could discuss it over dinner?
+
+Some possibilities to consider:
+
+-- "The Core" is the DC-15 plus all "recommended" elements.
+-- Maybe we should assign an additional "Core" status.
+
+Diane suggests that some up-front statement of our intentions
+-- not a "FAQ", but something that appears prominently in our
+documentation -- should be formulated to clarify these issues.
+
+------------------------------------------------------------------------
+Date: Mon, 21 Jun 2004 17:13:04 -0400
+From: "Rebecca S. Guenther" &lt;rgue@LOC.GOV&gt;
+Subject: Re: Decision on type-specific terms
+To: DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+On scope of DCMI namespaces, I was asked a question that I couldn't
+completely answer.
+
+When an element becomes "recommended" rather than "conforming" is there
+any implication that it becomes part of simple DC? I've always known the
+answer to that as being no, but what that means is that for OAI harvesting
+it can't be carried, since OAI harvesting uses simple DC. The question
+comes up mainly (I think) with added elements rather than refinements. Do
+we expect that the oai_dc schema cannot change if simple Dublin Core
+cannot change?
+
+------------------------------------------------------------------------
+Erin Stewart &lt;erinste@MICROSOFT.COM&gt; originally posted on February 17
+to indicate she was dissatisfied with Diane's AskDCMI text:
+------------------------------------------------------------------------
+
+Answer (to similar question): There are still 15 elements
+in simple Dublin Core, those elements described in
+the document at: &lt;<a href="http://dublincore.org/documents/dces&amp;gt">http://dublincore.org/documents/dces&amp;gt</a>;
+<a href="http://dublincore.org/documents/dces/">http://dublincore.org/documents/dces/</a>. All of these terms
+are at the element level.
+
+Audience is indeed a valid DC term, at the element level
+(see &lt;<a href="http://dublincore.org/documents/dcmi-terms/#audience&amp;gt">http://dublincore.org/documents/dcmi-terms/#audience&amp;gt</a>;
+<a href="http://dublincore.org/documents/dcmi-terms/#audience">http://dublincore.org/documents/dcmi-terms/#audience</a> ), but
+is not included in the group of 15 "core" elements, partially
+because those original 15 are seen as of more general use than
+any of the refinements and other terms approved more recently.
+
+The DC namespaces reflect this difference:
+Audience appears in the same namespace as the
+refinements, not the original 15 elements. See
+&lt;<a href="http://dublincore.org/documents/2001/10/26/dcmi-namespace&amp;gt">http://dublincore.org/documents/2001/10/26/dcmi-namespace&amp;gt</a>;
+<a href="http://dublincore.org/documents/2001/10/26/dcmi-namespace/">http://dublincore.org/documents/2001/10/26/dcmi-namespace/</a>
+for the full Namespace Policy document.
+
+------------------------------------------------------------------------
+Date: Fri, 16 Jul 2004 08:28:04 -0400
+From: Kelly A Green &lt;kgreen@VRS.STATE.VA.US&gt;
+Sender: DC-CORPORATE@JISCMAIL.AC.UK
+Subject: Re: "Audience"
+To: Erin Stewart &lt;erinste@MICROSOFT.COM&gt;
+------------------------------------------------------------------------
+
+Audience is used when you use Qualified Dublin Core. That is when you 
+use element qualifiers (Is Part Of; Has Part Of (elements of 
+"relations"); Valid; Created; Available (elements of "Date") are 
+examples that I am using) Personally, I don't understand how it is an 
+Element that is available within Qualified DC is not available as a Core 
+Element. The rest of Qualified DC includes Element Refinements, not 
+additional Elements. I suppose that is a question for the board.
+Perhaps it is to allow additional elements to be added in the future?
+
+DC Qualified is found at:
+<a href="http://dublincore.org/documents/usageguide/qualifiers.shtml">http://dublincore.org/documents/usageguide/qualifiers.shtml</a>
+
+------------------------------------------------------------------------
+Date: Fri, 16 Jul 2004 08:53:55 -0700
+Sender: DCMI Usage Board Back Channel &lt;DC-USAGE-BC@JISCMAIL.AC.UK&gt;
+From: Stuart Sutton &lt;sasutton@U.WASHINGTON.EDU&gt;
+Subject: Re: "Audience"
+Comments: To: Kelly A Green &lt;kgreen@VRS.STATE.VA.US&gt;,
+          DC-CORPORATE@JISCMAIL.AC.UK
+To: DC-USAGE-BC@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+The perceived "problem" with the status of "audience" is an ongoing one
+and will only grow more problematic as additional elements/properties
+(every bit as "first class" as the original 15) are added to the DCMI
+namespaces. For example, at its recent meeting in Bath (UK), the Usage
+Board added a property named "provenance" which, like "audience," is
+_not_ a refinement of the original 15 ... see the Usage Board decision
+at the following URL:
+
+<a href="http://www.dublincore.org/usage/decisions/#Decision-2004-01">http://www.dublincore.org/usage/decisions/#Decision-2004-01</a>
+
+The fact that _every_ additional DCMI recommended/conforming property
+lands in the terms namespace (<a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>) and not the
+namespace for the original 15 (<a href="http://purl.org/dc/elements/1.1/">http://purl.org/dc/elements/1.1/</a>) is not
+relevant to their status as fully approved/sanctioned properties of
+DCMI. The decision (good or bad) to maintain the original 15 elements
+in their own namespace and dump everything else into another was not
+intended (as far as I can tell) to be any sort of comment on the status
+of those post-15 properties. The fact that they came after NISO
+approval of the original 15 also seems to me to be inconsequential.
+Nothing prohibits the maintenance agency for the NISO standard (DCMI I
+believe?) from going through the process of adding "audience" to the
+standard. Personally, I bloody wish it would do so so that we can put
+to rest the incessant uncertainty as to its status.
+
+DCMI created the Usage Board and a whole set of processes for proposing
+new properties and refinements to existing properties. However, it has
+totally failed to get the word out to the DC community that newly
+approved properties (i.e., properties given "recommended" or
+"conforming" status) are DCMI properties with DCMI legitimacy equal to
+the original 15. While equally legitimate, this does not mean that all
+applications (e.g., OAI that is hinged on the unqualified, original 15
+properties) will necessarily know what to do with these properties and
+may well ignore or discard them. That's a problem of these sorts of
+applications and not a DCMI problem. The problem of confusion will
+probably not improve until DCMI figures out how to better communicate to
+the world how DCMI terms namespaces (i.e., properties/elements) are
+evolving.
+
+To find out about these Usage Board decisions regarding new properties
+and property refinements, check out the Usage Board "decisions on
+proposals" page at the URL below. Sometimes there is a bit of lag time
+between the decisions being announced there and their incorporation into
+schemas and other documentation.
+
+<a href="http://www.dublincore.org/usage/decisions/#Decision-2004-01">http://www.dublincore.org/usage/decisions/#Decision-2004-01</a>
+
+------------------------------------------------------------------------
+Date: Fri, 16 Jul 2004 12:01:28 -0400
+Reply-To: Kelly A Green &lt;kgreen@VRS.STATE.VA.US&gt;
+Sender: DC-CORPORATE@JISCMAIL.AC.UK
+From: Kelly A Green &lt;kgreen@VRS.STATE.VA.US&gt;
+Subject: Re: "Audience"
+------------------------------------------------------------------------
+
+Thank you for the clarification Stuart. I too wish the Usage Board would
+simply add approved elements to the standard.
+Yes, NISO standard is DCMI, found at
+<a href="http://www.niso.org/standards/standard_detail.cfm?std_id=3D725">http://www.niso.org/standards/standard_detail.cfm?std_id=3D725</a>
+We are Standard Z39.85 (PDF)
+
+</pre>

@@ -1,0 +1,21 @@
+Title:         Finalizing DCMI Type Vocabulary after the comment period
+Identifier:    http://stage.dublincore.org/admin/www/usage/meetings/2006/04/seattle/dcmitype/
+Created:       2006-03-30
+
+Shepherd: Stuart
+
+Required reading
+[1] http://dublincore.org/usage/public-comment/2005/12/type-vocabulary-changes/
+[2] http://stage.dublincore.org/usage/public-comment/2006/03/type-vocabulary-comments/
+
+See also
+[3] http://stage.dublincore.org/usage/meetings/2006/04/seattle/domains-ranges/
+
+A public comment period was held from 8 Dec to 31 Jan on
+changes to the DCMI Type Vocabulary [1].  The responses have
+been summarized in tabular form [2].
+
+The finalization of the DCMI Type Vocabulary changes depends on
+resolution of the "stylistic" issue in the topic "DCMI property
+domains and ranges" [3].
+

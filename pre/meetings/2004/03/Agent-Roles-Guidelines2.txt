@@ -1,0 +1,132 @@
+Guidelines for using Agent Roles in Dublin Core (Draft)
+
+1/23/04, dih
+2/12/04, rsg
+2/16/04, dih
+2/23/04, tb (converted to plain text only)
+
+Function of roles and history of approval by DCMI 
+
+The need to express a role for the "Agent" elements (Creator,
+Contributor, and, to a lesser extent, Publisher) in the Dublin
+Core element Set has been expressed for many years and there
+have been a number of ideas for how to handle this. A role
+is a term that further refines the contribution of the agent
+to the resource described; an example is "illustrator" might
+be a role associated with the element Contributor when that
+person provided, for example, illustrations to the resource
+rather than being entirely responsible for all aspects of
+the intellectual content.
+
+The DCMI Usage Board has discussed the issue several times
+and agreed that the role values are properly element
+refinements. At its meeting in Florence in Oct. 2002,
+the Board generally agreed that deprecating Creator and
+Publisher in favor of Contributor should be considered,
+since the role values Creator and Publisher could be used to
+refine Contributor if needed.  Because of negative response to
+this sort of change in the Dublin Core element set, the DCMI
+Usage Board decided to recommend role refinements only to
+Contributor, but to leave Creator, Contributor and Publisher
+as separate elements.
+
+Because a standardized, widely adopted list of roles already
+existed in the MARC Code List for Relators, it was recommended
+early in these discussions that DCMI not develop its own. In
+early 2000 a subset of the MARC relators list was circulated
+for approval to include 10 generally applicable roles out
+of the approximately 150 MARC relator terms. Because of the
+need to consider other aspects of the "Agent" issue, at that
+time the proposal was deferred. Discussion initially in the
+DC-Libraries Working Group (which prepared an application
+profile for use in libraries that included the relator terms)
+and later in the DCMI Usage Board revealed that consensus
+was that users not be constrained by a small list of elements
+and that the entire list of relator terms should be available
+given the difficulty of anticipating needs in various domains.
+
+The Library of Congress has prepared an RDF expression
+of the MARC relator list, to be used in conjunction with
+the Dublin Core element Contributor. This is available at:
+http://www.loc.gov/marc/dc/marcrelcodes.rdf (note: this is
+not yet a persistent URI but Rebecca will provide one!).
+
+The MARC Relator list, what it is and how it's structured
+
+The MARC Code List for Relators was developed for use in
+MARC 21 bibliographic records to express the relationship
+between a name and a work.  The list includes both role
+terms and three-character codes that represent those terms.
+The terms were only included on the list if the name and its
+associated role were considered important enough to include
+on a bibliographic record as a contributor.  Thus, all terms
+represent possible contributions to a resource.  The Library of
+Congress is the maintenance agency for this list and regularly
+adds new ones when the need is expressed and documented.
+
+The MARC Relator list includes three-character alphabetic
+codes to be used to identify roles. These are to be considered
+synonyms for the term they represent.  In addition the list
+provides definitions for use of the term/code.  In the RDF
+representation, the codes are tokens to be used for the term
+and are part of the URI.  In some cases unused terms refer to
+used terms; these are included in the RDF representation as a
+note (dc:description).  All terms are declared as refinements
+of dc:contributor.
+
+Using Roles with Contributor
+
+In order to minimize the possibility of confusion, the Usage
+Board has authorized the use of roles only with the element
+Contributor. Because Creator is in some sense a role elevated
+to a position at the level of element, the Board's position
+is that it makes no sense to provide yet another level of
+roles beneath that particular element.
+
+Because Publisher and Creator each appears on the list of MARC
+Relator terms, and the entire list is available to be used
+as roles, it is acceptable to use the role of Publisher or
+Creator instead of the element within an implementation. If
+marc:creator is used instead of dc:creator, the two terms
+should probably not be used together in the same instance.
+
+Because roles are to be used only with the Contributor element,
+appropriate "Dumb Down" of all agent refinements expressed as
+roles will be to Contributor.  Given this, implementations
+may choose (preferably within the context of an application
+profile), to specify explicitly whether the MARC relator terms
+of publisher or creator may be used, based on the fact that
+the distinction could be retained in Simple Dublin Core if
+the Element level term is retained for those particular roles.
+
+Using Roles in XML and other Schemas
+
+Because the maintenance of the MARC Relator list will
+remain with the Library of Congress, the namespace of the
+roles will be established by LC and will not be a DCMI
+namespace. Thus, schemas will need to include the MARC
+relator namespace in order to properly express role terms.
+See the document Guidelines for Implementing Dublin Core
+in XML <http://dublincore.org/documents/dc-xml-guidelines/>
+for specific information on using non-DCMI namespaces.
+
+Terms not on the MARC Relators list
+
+The MARC Relator list has been developed over many years to
+meet a wide variety of needs.  New terms are added on the basis
+of need, and LC has expressed willingness to continue to expand
+the list upon request. Implementers also have the option to
+create and expose alternative vocabularies for the expression
+of other kinds of roles not reflected in the MARC Relator list.
+
+Managing the Use of Role in an Implementation
+
+The MARC Relator list is large, including approximately 150
+separate terms for various roles. Some of the roles on the
+list were created for specific domains, and would be of little
+use in other communities.  It might therefore be useful for
+implementations to declare a subset of the role vocabulary
+as relevant to their specific goals, preferably by way of a
+formal application profile.
+
+

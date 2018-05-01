@@ -1,0 +1,167 @@
+Title:      Comments on PB Core
+Creator:    DCMI Usage Board
+Date:       2004-06-22
+
+At its meeting in Bath, UK in March 2004, the DCMI Usage
+Board discussed the metadata element set "PB Core", which
+was developed for the public broadcasting community on the
+basis of Dublin Core metadata elements [1].  The Usage Board
+considers application profiles in terms of their conformance
+with Dublin Core principles [2].  The following is not a
+thorough review of PB Core but an overview of aspects which
+are problematic from the standpoint of an application profile
+conforming to DCMI principles.
+
+There are several areas in which PB Core diverges from
+established DCMI principles and practices:
+
+1. Use of the "dot" syntax to form metadata element names.
+   This naming style was used in HTML implementations of
+   Dublin Core of the late 1990s but has been superseded
+   by a naming style (and data model) which considers both
+   elements and element refinements as "properties" -- and
+   accordingly with names that stand on their own (e.g.,
+   see Footnote 9 of [3], the "DCMI Policy on Naming Terms"
+   [4], and the section on Element Refinements in [5]).
+   In PB Core, then "Title.Program" would be "programTitle".
+
+2. Element Refinements must refine -- but not extend --
+   the semantics of an element (see [2]). Some of the element
+   refinements proposed in PB Core, however, change or broaden
+   the meaning of the base element. Examples are:
+
+   Title.Series
+
+        The semantics of dc:title are: "Definition:  A name
+        given to the resource.  Comment:  Typically, Title will
+        be a name by which the resource is formally known."
+        "The resource" means here: "the resource being
+        described by dc:title".
+
+        However, pbcore:Title.Series does not refer to "the
+        resource being described by dc:title".  Rather,
+        it refers to the title of the series to which
+        the resource being described by dc:title belongs.
+
+        In this case, the Series may be seen as a separate
+        entity -- it is in effect a "related resource"
+        (see the draft Abstract Model [6] for a discussion
+        of "related resource").  The relationship between a
+        described resource and a related resource may be
+        described with dc:relation.  The DC Libraries Working
+        Group discussed such a case in the context of the
+        DC-Lib Application Profile and recommended pointing
+        to related resources such as Series with the term
+        dct:isPartOf, a refinement of dc:relation [7].
+        (In principle, one might coin an even narrower term
+        such as pbs:isPartOfSeries, but such a local refinement
+        would presumably not be understood outside of PBS.)
+
+   Language.Usage
+
+        The semantics of dc:language are: "Definition:  A
+        language of the intellectual content of the resource.
+        Comment:  Recommended best practice is to use RFC 3066
+        [RFC3066] which, in conjunction with ISO639 [ISO639]),
+        defines two- and three-letter primary language tags
+        with optional subtags. Examples include "en" or
+        "eng" for English, "akk" for Akkadian", and "en-GB"
+        for English used in the United Kingdom."
+
+        In the draft PB Core, the intended use of
+        Language.Usage is to record the existence and type of
+        other audio and textual representations of the main
+        audio or language presentation mode for a resource
+        or asset.  In the draft PB Core, suggested values
+        for the element include controlled terms such as
+        "DVD Subtitle01".
+
+        However, while "eng" ("English") is a proper value of
+        dc:language, "DVD Subtitle01" is not.  Rather, the PB Core
+        drafters mean to say, in effect: "This resource (a DVD)
+        also has subtitles, which have the language English."
+
+        In modeling terms, one might either describe each
+        set of subtitles or captions as a "related resource"
+        with attributes of its own (such as dc:language);
+        this solution would be formally precise but complex and
+        expensive to implement.  Alternatively, one might more
+        simply see the languages of these multiple component
+        parts all as attributes of the DVD as a whole. The
+        metadata would then say, in effect, "This DVD has
+        the languages English, Spanish, and Portuguese"
+        without distinguishing between subtitles and captions.
+
+        These two options involve trade-offs between simplicity
+        (which in this case would be simplistic) and complexity
+        (which would be expensive), with implications for
+        interoperability.  One compromise solution would be
+        to create PBS-specific refinements such as "Subtitle
+        Language" or "Caption Language", each of which would
+        hold "a language of the resource" (i.e., a language
+        code) and thus dumb down properly to Language.
+
+        Applications outside of PBS -- unaware perhaps of
+        these distinctions -- might interpret these different
+        refinements in an undifferentiated way as meaning "This
+        DVD has the languages English, Spanish, and Portuguese"
+        (see above).  In other words, the distinctions between
+        subtitles and captions might be lost to non-PBS users
+        of PBS metadata.  This approach could work, however,
+        if it is sufficient for PBS that the distinctions be
+        understood internally.
+
+3. Some PB Core "element refinements" are not element refinements
+   in the sense of the DCMI model.  Examples are:
+
+     Relation.Type
+     Creator.Role
+
+   Both cases in effect imply a data model in which a Dublin
+   Core element -- e.g., dc:relation or dc:creator -- itself
+   has an attribute which, in turn, has a value in which
+   controlled vocabularies (e.g., "IsPartOf" for Relation,
+   "Cinematographer" for Creator) are used.
+
+   In the DCMI model [1,5], however, terms such as IsPartOf or
+   Cinematographer are themselves "element refinements" with
+   respect to elements.  In other words, the term identified
+   by the URI http://purl.org/dc/terms/isPartOf semantically
+   refines the term http://purl.org/dc/elements/1.1/relation.
+
+4. Some element refinements violate the One-to-One Principle,
+   according to which Dublin Core metadata describes (ideally)
+   one manifestation or version of a resource, rather than
+   conflating multiple manifestations into one description
+   (see Usage Guide [7], Section 1.2.).  An example of this is:
+
+        Description.ProgramRelatedText
+
+   This is described as the actual text or link to text. This
+   violates the One-to-One Principle inasmuch it is really
+   another representation of the program in textual form --
+   a "related resource" and, as such, better referenced using
+   a refinement of dc:relation.
+
+5. Historically, the Dublin Core community has had difficulty
+   distinguishing within the dc:type element between "form"
+   and "genre".  Rather than create two separate refinements
+   of dc:type -- Type.Form and Type.Genre, as proposed in the
+   draft PB Core -- it may be easiest simply to use two or
+   more specialized vocabularies (one vocabulary of "forms"
+   and one vocabulary of "genres") in conjunction with the
+   unrefined element dc:type.
+
+For presenting PB Core as a document, its authors might
+consider using the CEN guidelines for Dublin Core application
+profiles [9].
+
+[1] http://dublincore.org/usage/meetings/2004/03/ISSUES/profiles-pbcore/
+[2] http://dublincore.org/usage/documents/principles/
+[3] http://dublincore.org/usage/documents/2003/11/18/principles/
+[4] http://dublincore.org/documents/naming/
+[5] http://dublincore.org/documents/dcmi-terms/
+[6] http://www.ukoln.ac.uk/metadata/dcmi/abstract-model/2004-02-04/
+[7] http://dublincore.org/documents/2002/09/24/library-application-profile/
+[8] http://dublincore.org/documents/usageguide/
+[9] http://www.cenorm.be/isss/cwa14855/ 

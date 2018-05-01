@@ -1,0 +1,89 @@
+From tbaker  Wed Oct  7 13:58:51 2009
+Return-Path: <owner-dc-usage@JISCMAIL.AC.UK>
+Delivery-Date: Wed, 07 Oct 2009 13:43:39 +0200
+Received-SPF: pass (mxeu2: domain of JISCMAIL.AC.UK designates 130.246.192.56 as permitted sender) client-ip=130.246.192.56; envelope-from=owner-dc-usage@JISCMAIL.AC.UK; helo=ictmailer1.itd.rl.ac.uk;
+Received: from ictmailer1.itd.rl.ac.uk (ictmailer1.itd.rl.ac.uk [130.246.192.56])
+	by mx.kundenserver.de (node=mxeu2) with ESMTP (Nemesis)
+	id 0MfWFL-1MgpOa311n-00PAsI for tbaker@TBAKER.DE; Wed, 07 Oct 2009 13:43:39 +0200
+Received: from LISTSERV.JISCMAIL.AC.UK (jiscmail.ac.uk) by ictmailer1.itd.rl.ac.uk (LSMTP for Windows NT v1.1b) with SMTP id <8.0076C793@ictmailer1.itd.rl.ac.uk>; Wed, 7 Oct 2009 12:43:39 +0100
+Received: by JISCMAIL.AC.UK (LISTSERV-TCP/IP release 15.5) with spool id
+          151670551 for DC-USAGE@JISCMAIL.AC.UK; Wed, 7 Oct 2009 12:43:39 +0100
+Received: from [130.246.193.105] by JISCMAIL.AC.UK (SMTPL release 1.0w) with
+          TCP; Wed, 7 Oct 2009 12:43:39 +0100
+X-RAL-MFrom: <Pete.Johnston@eduserv.org.uk>
+X-RAL-Connect: <qah-mail1.eduserv.org.uk [195.188.238.26]>
+Received: from qah-mail1.eduserv.org.uk (qah-mail1.eduserv.org.uk
+          [195.188.238.26]) by bofur.jiscmail.ac.uk (8.13.1/8.13.1) with ESMTP
+          id n97BhaOX018088 for <DC-USAGE@JISCMAIL.AC.UK>; Wed, 7 Oct 2009
+          12:43:38 +0100
+Received: from edu-win-eml-l01.edu2000.com ([192.168.33.96]) by
+          qah-mail1.eduserv.org.uk with esmtp (Exim 4.44) id 1MvUvO-0006wz-Rq
+          for DC-USAGE@JISCMAIL.AC.UK; Wed, 07 Oct 2009 12:43:36 +0100
+Received: from edu-vmw-eml-l01.edu2000.com ([192.168.144.5]) by
+          edu-win-eml-l01.edu2000.com with Microsoft SMTPSVC(6.0.3790.3959);
+          Wed, 7 Oct 2009 12:43:18 +0100
+Received: from edu-vmw-eml-l01.edu2000.com ([192.168.144.5]) by
+          edu-vmw-eml-l01.edu2000.com ([192.168.144.5]) with mapi; Wed, 7 Oct
+          2009 12:43:18 +0100
+Thread-Topic: Simple Dublin Core
+Thread-Index: AcpHQ1EDwRN5p6EJT+WZZrTz5JwxaA==
+Accept-Language: en-US, en-GB
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+acceptlanguage: en-US, en-GB
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+X-OriginalArrivalTime: 07 Oct 2009 11:43:18.0487 (UTC)
+                       FILETIME=[5D299E70:01CA4743]
+X-Spam-Score: -5.9 (-----)
+X-Scan-Signature: cf054edd0e5ff69e80cfd8312e4d3c97
+X-CCLRC-SPAM-report: -0.002 : SPF_HELO_PASS,SPF_PASS
+X-Scanned-By: MIMEDefang 2.61 on 130.246.193.105
+Message-ID:  <59E2F1A55E23D64DB03813F9B680F9D9156A89BAC5@edu-vmw-eml-l01.edu2000.com>
+Date:         Wed, 7 Oct 2009 12:43:17 +0100
+Reply-To:     A mailing list for the Dublin Core Metadata Initiative's Usage              Board <DC-USAGE@JISCMAIL.AC.UK>
+Sender:       A mailing list for the Dublin Core Metadata Initiative's Usage Board <DC-USAGE@JISCMAIL.AC.UK>
+From:         Pete Johnston <Pete.Johnston@EDUSERV.ORG.UK>
+Subject: Simple Dublin Core
+To:           DC-USAGE@JISCMAIL.AC.UK
+Precedence: list
+List-Help: <http://jiscmail.ac.uk/cgi-bin/webadmin?LIST=DC-USAGE>,
+           <mailto:LISTSERV@JISCMAIL.AC.UK?body=INFO%20DC-USAGE>
+List-Unsubscribe: <mailto:DC-USAGE-unsubscribe-request@JISCMAIL.AC.UK>
+List-Subscribe: <mailto:DC-USAGE-subscribe-request@JISCMAIL.AC.UK>
+List-Owner: <mailto:DC-USAGE-request@JISCMAIL.AC.UK>
+List-Archive: <http://jiscmail.ac.uk/cgi-bin/webadmin?LIST=DC-USAGE>
+Envelope-To: tbaker@TBAKER.DE
+Status: RO
+Content-Length: 924
+Lines: 26
+
+One of the Seoul meeting items which has my name against it is to come up w=
+ith a one paragraph definition of "Simple Dublin Core".
+
+By way of explaining my thoughts on the subject, I've just posted:
+
+http://efoundations.typepad.com/efoundations/2009/10/what-is-simple-dublin-=
+core.html
+
+which doesn't quite get to the point of a "one-paragraph glossary entry" bu=
+t I'll distill one out of it.
+
+I have another (longer!) piece on "Qualified Dublin Core" which I've been w=
+orking on (to answer the question from John on Twitter). I need to clean it=
+ up but will try to post on the blog by the end of the day.
+
+Maybe some of this stuff might be useful to Stefanie in looking more broadl=
+y at other bits of the Usage Guide too.
+
+Pete
+---
+Pete Johnston
+Technical Researcher, Eduserv
+pete.johnston@eduserv.org.uk=20
++44 (0)1225 474323
+http://www.eduserv.org.uk/research/people/petejohnston/
+http://efoundations.typepad.com/
+

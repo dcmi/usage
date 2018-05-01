@@ -1,0 +1,396 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US"
+xml:lang="en-US">
+  <head>
+    <meta name="generator" content="HTML Tidy, see www.w3.org" />
+
+    <title>DCMI Basic Page Template</title>
+    <meta http-equiv="Content-Type"
+    content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href="/css/default.css"
+    type="text/css" />
+<script src="/js/default.js" type="text/javascript">
+</script>
+    
+  </head>
+
+  <body>
+<!--#include virtual="/ssi/header.shtml" -->
+       
+<table
+    summary="A layout table with a description about the status of this document."
+     border="0" width="100%" cellspacing="0" cellpadding="2">
+<tr> 
+<td align="right" valign="top"> 
+<div align="left"> <strong>Title:</strong> </div>
+</td>
+<td align="right" valign="top"> 
+<div align="left"> 
+<h2><strong>Dublin Core Metadata Registered Encoding Schemes</strong></h2>
+</div>
+</td>
+</tr>
+<tr> 
+<td align="right" valign="top"> 
+<div align="left"> <strong>Date Issued:</strong> </div>
+</td>
+<td align="right" valign="top"> 
+<div align="left"> 2001-09-06 </div>
+</td>
+</tr>
+<tr> 
+<td align="right" valign="top"> 
+<div align="left"> <strong>Identifier:</strong> </div>
+</td>
+<td align="right" valign="top"> 
+<div align="left"> <a
+            href="/documents/2001/09/06/schemes/">http://dublincore.org/documents/2001/09/06/schemes/</a> 
+</div>
+</td>
+</tr>
+<tr> 
+<td align="right" valign="top"> 
+<div align="left"><b>Supersedes:</b></div>
+</td>
+<td align="right" valign="top"> 
+<div align="left">Not Applicable</div>
+</td>
+</tr>
+<tr> 
+<td align="right" valign="top"> 
+<div align="left"><b>Is Superseded By:</b></div>
+</td>
+<td align="right" valign="top"> 
+<div align="left">Not Applicable</div>
+</td>
+</tr>
+<tr> 
+<td align="right" valign="top"> 
+<div align="left"> <strong>Replaces:</strong> </div>
+</td>
+<td align="right" valign="top"> 
+<div align="left"> Not Applicable</div>
+</td>
+</tr>
+<tr> 
+<td align="right" valign="top"> 
+<div align="left"> <strong>Is Replaced By:</strong> </div>
+</td>
+<td align="right" valign="top"> 
+<div align="left"> Not Applicable </div>
+</td>
+</tr>
+<tr> 
+<td align="right" valign="top"> 
+<div align="left"> <strong>Latest version:</strong> </div>
+</td>
+<td align="right" valign="top"> 
+<div align="left"> <a href="/documents/schemes/">http://dublincore.org/documents/schemes/</a> 
+</div>
+</td>
+</tr>
+<tr> 
+<td width="20%" valign="top"> </td>
+<td width="80%" valign="top"> </td>
+</tr>
+<tr>
+<td width="20%" valign="top"><b>Translations:</b></td>
+<td width="80%" valign="top"><a href="/resources/translations/#dces1-1">http://dublincore.org/resources/translations/</a></td>
+</tr>
+<tr> 
+<td width="20%" valign="top"> 
+<div align="left"> <strong>Status of document:</strong> </div>
+</td>
+<td width="80%" valign="top"> 
+<div align="left"> This is a DCMI <a
+            href="/documents/#recommendations">Recommendation</a>. </div>
+</td>
+</tr>
+<tr> 
+<td valign="top"><strong>Description of document:</strong></td>
+<td valign="top">This document is a description of the currently registered
+encoding schemes being used.</td>
+</tr>
+<tr> 
+<td valign="top" colspan="2"> 
+<hr title="separator from head" />
+</td>
+</tr>
+</table>
+<a name="introduction"></a>
+<h3>Introduction</h3>
+
+<p>The document summarizes the currently registered encoding schemes.  These include:</p>
+
+<ul>
+<li><b><a href="#subjectscheme">Subject Encoding Schemes</a></b></li>
+   <ul>
+   <li><a href="#LCSH">LCSH</a></li>
+   <li><a href="#LCC">LCC</a></li>
+   <li><a href="#DDC">DDC</a></li>
+   <li><a href="#UDC">UDC</a></li>
+   <li><a href="#MESH">MESH</a></li>
+   </ul>
+<li><b><a href="#datescheme">Date Encoding Schemes</a></b></li>
+   <ul>
+   <li><a href="#W3C-DTF">W3C-DTF</a></li>
+   <li><a href="#Period">Period</a></li>
+   </ul>
+<li><b><a href="#identifierscheme">Identifier Encoding Schemes</a></b></li>
+   <ul>
+   <li><a href="#URI">URI</a></li>
+   </ul>
+<li><b><a href="#formatscheme">Format Encoding Schemes</a></b></li>
+   <ul>
+   <li><a href="#IMT">IMT</a></li>
+   </ul>
+<li><b><a href="#languagescheme">Language Encoding Schemes</a></b></li>
+   <ul>
+   <li><a href="#RFC1766">RFC1766</a></li>
+   <li><a href="#ISO639-2">ISO639-2</a></li>
+   </ul>
+<li><b><a href="#spatialscheme">Spatial Encoding Schemes</a></b></li>
+   <ul>
+   <li><a href="#DCMI-Box">DCMI Box</a></li>
+   <li><a href="#DCMI-Point">DCMI Point</a></li>
+   <li><a href="#TGN">TGN</a></li>
+   <li><a href="#DD">DD</a></li>
+   <li><a href="#DMS">DMS</a></li>
+   <li><a href="#ISO3166">ISO3166</a></li>
+   </ul>
+</ul>
+A word about intent, obligations, etc. should go here...
+<br />
+<br /><br />
+  
+<a id="subjectscheme"></a>
+<h3><b>Subject Encoding Schemes</b></h3>
+<p>A set of subject encoding schemes and/or formats</p>
+<ul>
+<a id="LCSH"></a>
+<li>
+<pre>
+  Name:       Library of Congress Subject Headings
+  Token:      LCSH
+  Type:       Subject Scheme
+  Maintainer: <a href="http://www.loc.gov">Library of Congress</a>
+  Contact:    <a href="mailto:somebody@loc.gov">somebody@loc.gov</a>
+</pre>
+</li>
+
+<a id="LCC"></a>
+<li>
+<pre>
+  Name:       Library of Congress Classification
+  Token:      LCC
+  Type:       Subject Scheme
+  Maintainer: <a href="http://www.loc.gov">Library of Congress</a>
+  Contact:    <a href="mailto:somebody@loc.gov">somebody@loc.gov</a>
+</pre>
+</li>
+
+<a id="DDC"></a>
+<li>
+<pre>
+  Name:       Dewey Decimal Classification
+  Token:      DDC
+  Type:       Subject Scheme
+  Maintainer: <a href="http://www.oclc.org/dewey/">OCLC Forest Press</a>
+  Contact:    <a href="mailto:somebody@oclc.org">somebody@oclc.org</a>
+</pre>
+</li>
+
+<a id="UDC"></a>
+<li>
+<pre>
+  Name:       Universal Decimal Classification
+  Token:      UDC
+  Type:       Subject Scheme
+  Maintainer: <a href="http://www.unknown.org">???</a>
+  Contact:    <a href="mailto:somebody@unknown.org">somebody@unknown.org</a>
+</pre>
+</li>
+
+<a id="MESH"></a>
+<li>
+<pre>
+  Name:       Medical Subject Headings
+  Token:      MESH
+  Type:       Subject Scheme
+  Maintainer: <a href="http://www.unknown.org">???</a>
+  Contact:    <a href="mailto:somebody@unknown.org">somebody@unknown.org</a>
+</pre>
+</li>
+
+</ul>
+
+<a id="datescheme"></a>
+<h3><b>Date Encoding Schemes</b></h3>
+<p>A set of date encoding schemes and/or formats</p>
+<ul>
+<a id="W3C-DTF"></a>
+<li>
+<pre>
+  Name:       W3C Encoding rules for dates and times (a profile based on ISO8601) 
+  Token:      W3C-DTF
+  Type:       Date Scheme
+  Maintainer: <a href="http://www.w3.org">W3C World Wide Web Consortium</a>
+  Contact:    <a href="mailto:somebody@w3c.org">somebody@w3c.org</a>
+</pre>
+</li>
+
+<a id="Period"></a>
+<li>
+<pre>
+  Name:       A specification of the limits of a time interval 
+  Token:      Period
+  Type:       Date Scheme
+  Maintainer: <a href="http://dublincore.org">Dublin Core Metadata Initiative</a>
+  Contact:    <a href="mailto:somebody@dublincore.org">somebody@dublincore.org</a>
+</pre>
+</li>
+
+</ul>
+
+<a id="identifierscheme"></a>
+<h3><b>Identifier Encoding Schemes</b></h3>
+<p>A set of identifier encoding schemes and/or formats</p>
+<ul>
+<a id="URI"></a>
+<li>
+<pre>
+  Name:       A URI Uniform Resource Identifier 
+  Token:      URI
+  Type:       Identifier Scheme
+  Maintainer: <a href="http://www.ietf.org/">The Internet Engineering Task Force</a>
+  Contact:    <a href="mailto:somebody@ietf.org">somebody@ietf.org</a>
+</pre>
+</li>
+</ul>
+
+<a id="formatscheme"></a>
+<h3><b>Format Encoding Schemes</b></h3>
+<p>A set of Format encoding schemes and/or formats</p>
+<ul>
+<a id="IMT"></a>
+<li>
+<pre>
+  Name:       The Internet media type of the resource 
+  Token:      IMT
+  Type:       Format Scheme
+  Maintainer: <a href="http://www.unknown.org">???</a>
+  Contact:    <a href="mailto:somebody@unknown.org">somebody@unknown.org</a>
+</pre>
+</li>
+</ul>
+
+<a id="languagescheme"></a>
+<h3><b>Language Encoding Schemes</b></h3>
+<p>A set of language encoding schemes and/or formats</p>
+<ul>
+<a id="RFC1766"></a>
+<li>
+<pre>
+  Name:       Internet RFC 1766 'Tags for the identification of Language' specifies a two 
+              letter code taken from ISO 639, followed optionally by a two letter country 
+              code taken from ISO 3166 
+  Token:      RFC1766
+  Type:       Language Scheme
+  Maintainer: <a href="http://www.loc.gov">Library of Congress</a>
+  Contact:    <a href="mailto:somebody@loc.gov">somebody@loc.gov</a>
+</pre>
+</li>
+
+<a id="ISO639-2"></a>
+<li>
+<pre>
+  Name:       Codes for the representation of names of languages
+  Token:      ISO639-2
+  Type:       Language Scheme
+  Maintainer: <a href="http://www.loc.gov">Library of Congress</a>
+  Contact:    <a href="mailto:somebody@loc.gov">somebody@loc.gov</a>
+</pre>
+</li>
+
+</ul>
+
+<a id="spatialscheme"></a>
+<h3><b>Spatial Encoding Schemes</b></h3>
+<p>A set of geographic place encoding schemes and/or formats</p>
+<ul>
+<a id="DCMI-Box"></a>
+<li>
+<pre>
+  Name:       The DCMI Box identifies a region of space using its geographic limits
+  Token:      DCMI Box
+  Type:       Spatial Scheme
+  Maintainer: <a href="http://dublincore.org">Dublin Core Metadata Initiative</a>
+  Contact:    <a href="mailto:somebody@dublincore.org">somebody@dublincore.org</a>
+</pre>
+</li>
+
+<a id="DCMI-Point"></a>
+<li>
+<pre>
+  Name:       The DCMI Point identifies a point in space using its geographic coordinates 
+  Token:      DCMI Point
+  Type:       Spatial Scheme
+  Maintainer: <a href="http://dublincore.org">Dublin Core Metadata Initiative</a>
+  Contact:    <a href="mailto:somebody@dublincore.org">somebody@dublincore.org</a>
+</pre>
+</li>
+
+<a id="TGN"></a>
+<li>
+<pre>
+  Name:       The Getty Thesaurus of Geographic Names
+  Token:      TGN
+  Type:       Spatial Scheme
+  Maintainer: <a href="http://www.getty.edu/">The Getty Research Institute</a>
+  Contact:    <a href="mailto:somebody@getty.edu">somebody@getty.edu</a>
+</pre>
+</li>
+
+<a id="DD"></a>
+<li>
+<pre>
+  Name:       A latitude and longitude expressed in decimal degrees
+  Token:      DD
+  Type:       Spatial Scheme
+  Maintainer: <a href="http://dublincore.org">Dublin Core Metadata Initiative</a>
+  Contact:    <a href="mailto:somebody@dublincore.org">somebody@dublincore.org</a>
+</pre>
+</li>
+
+<a id="DMS"></a>
+<li>
+<pre>
+  Name:       A latitude and longitude expressed in degrees, minutes, seconds
+  Token:      DMS
+  Type:       Spatial Scheme
+  Maintainer: <a href="http://dublincore.org">Dublin Core Metadata Initiative</a>
+  Contact:    <a href="mailto:somebody@dublincore.org">somebody@dublincore.org</a>
+</pre>
+</li>
+
+<a id="ISO3166"></a>
+<li>
+<pre>
+  Name:       ISO3166 Codes for the representation of names of countries
+  Token:      ISO3166
+  Type:       Spatial Scheme
+  Maintainer: <a href="http://www.unknown.org">???</a>
+  Contact:    <a href="mailto:somebody@unknown.org">somebody@unknown.org</a>
+</pre>
+</li>
+
+
+</ul>
+
+
+    <!--#include virtual="/ssi/footer.shtml" -->
+  </body>
+</html>
+

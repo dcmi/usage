@@ -1,0 +1,136 @@
+Title:        Agenda Item #6 -- Review of Application Profiles
+              DCMI Usage Board Meeting, 29-30 April 2006, Seattle
+Identifier:   http://dublincore.org/usage/minutes/2006/2006-04-30.meeting-notes-dcap.html
+See also:     http://dublincore.org/usage/minutes/2006/2006-04-30.meeting-notes-final.html
+
+How can we make it easy for users to prepare application
+profiles?  These are extant documents that relate to
+application profiles:
+
+Points of reference
+    DCAP (CEN) documentation guidelines
+    http://dublincore.org/usage/documents/2005/09/03/profile-guidelines/
+
+    Term Decision Tree
+    http://www.ukoln.ac.uk/metadata/dcmi/term-decision-tree/
+
+    DCAP-in-RDF (CEN)
+    http://www.cenorm.be/isss/cwa15248/
+
+    DCMI Abstract Model -> needs Profile Model
+    http://dublincore.org/documents/abstract-model/ 
+
+What is an application profile?
+    OLD: "list of terms"
+
+    NEW: "Statement of what set of things are being described,
+    and a list of terms that going to be used to describe those
+    things."  If so, then we need an application profile
+    for an application profile.
+
+    Is it: 
+    -- Rules by which you create a description set for an application?
+    -- The makeup of a description set?
+
+    Agreed: Something like `Rules by which a description set is
+    "defined"`.
+
+----------------------------------------------------------------------
+Outline of an Application Profile for an Application Profile:
+-- See whiteboard diagram:
+   http://dublincore.org/usage/minutes/2006-04-30.dcap-discussion.jpg
+
+    Description of this DCAP
+        dc:creator    = Samuel Adams
+        dc:title      = My application profile
+        dc:description
+    Model (e.g., entity-relationship model)
+    -- Model of Entity 1
+       Property 1
+       Property 2
+       Property 3
+    -- Model of Entity 2
+       Property 1
+       Property 2
+       Property 3
+    DescriptionUsage
+       Description 1
+           Occurrence = 1
+           Class of described resources = collection (rdf:type, or new term?)
+           PropertyUsage
+               Uses Property
+               Label for this DCAP
+               Usage in this DCAP (something like "Usage Comments")
+               Constraint: Obligation
+               Constraint: Datatype
+               Constraint: Occurence
+               Constraint: Condition [text]
+               VES Usage
+                   UsesVES
+                   VESLabel for this DCAP
+                   Usage in this DCAP
+                   Constraint for VESUsage: Obligation
+                   Constraint for VESUsage: Occurence
+                   Constraint for VESUsage: Condition [text]
+               Value URI Usage
+                   Constraint: Obligation
+                   ...
+               SES Usage
+                   ...
+               Rich Representation Usage
+                   ...
+               Value String Usage
+                ...
+           PropertyUsage
+       Description 2
+           Occurrence = 1 or more
+           Class of entities = agent
+           PropertyUsage
+           PropertyUsage
+
+----------------------------------------------------------------------
+ISSUES
+-- Need QualifiedNameforProperty?
+-- Need Qualified Name for Syntax Encoding Scheme?
+-- Need to serve properties from the property URI -- i.e.,
+   translations (Finnish) must come from DCMI namespace?
+-- Is an application profile used for instance metadata
+   creation?
+-- Do property usages have URI`s?
+-- How do you say you must use LCSH?  In Obligation?
+-- Do we need "condition" or does it go in "best practices" documents?
+-- Need to model Value String Usage and Obligation.
+-- RDF representation of the above
+-- Regarding "Local Definition": Definition is sacrosanct --
+   if you`re using someone else`s properties the definition
+   should not be changed
+-- Simple DC defaults to describing resources -- so it does 
+   not require models of multiple entities.
+
+DOCUMENTATIONAL VS FORMAL STYLE
+
+-- Do we need two styles (for property usages)?  One for humans
+   (documentational) and one for machines (formal)?  For example,
+   should the documentation include, as part of PropertyUsage:
+
+       Source Label {for information only} [do these by reference]
+       Source Definition {for information only} [do these by reference]
+       Source Comment {for information only} [do these by reference]
+
+DOCUMENTATION MAINTENANCE
+-- How do we maintain a master copy of this AP of an AP?
+   RDF/XML should be the master copy.  Different scenarios:
+
+   1) NSDL Interface -> RDF/XML -> HTML or XML 
+   2) Dctext -> RDF/XML-> HTML or XML
+   3) Schema Generation Tool -> RDF/XML-> HTML or XML
+   4) Human -> RDF/XML-> HTML or XML
+
+   AGREED: RDF/XML should be complete enough to generate XML
+   schemas.
+
+AGREED: A separate list of vocabulary encoding schemes can
+be derived from Property Usage, so we do not need a separate
+list as part of an application profile.
+
+2009-01-29: Changed usageboard/log URIs to usage/minutes URIs.

@@ -1,0 +1,413 @@
+<HTML>
+<BODY>
+<H1>DC Usage Board Meeting Minutes</H1>
+<H3>Madrid, 9-10 September 2005</H3>
+
+<H2>Attendance</H2>
+
+Tom Baker (chair)<BR>
+Andy Powell (scribe)<BR>
+Andrew Wilson<BR>
+Akira Miyazawa<BR>
+Diane Hillmann<BR>
+Stuart Sutton<BR>
+
+<H2>Guests</H2>
+
+Joe Tennis<BR>
+Pete Johnston<BR>
+Alistair Miles<BR>
+
+<H4>Day 1 -- Friday 9 September</H4>
+
+<H3>Application Profile Review</H3>
+
+<H4>Review of Collection Description application profile</H4>
+
+<P><B>Aim:</B> to better understand how the UB "approves" APs
+and what the consequences of that are in terms of "term" and
+"AP" maintenance, namespaces, etc.  At this stage we are not
+ready to actually approve the DCCDAP because no public comment
+period has been undertaken and there are some outstanding
+issues with the AP itself.</P>
+
+<P>This may result in changes being made to the CEN AP Guidelines
+document (e.g. making assignment of URI to terms mandatory).
+May also result in changes to other documents: Term decision
+tree, etc.
+
+<P>Medium-term aim is for a suite of documents that describe and
+document APs in ways that are useful to people creating them.
+
+<P><B>Editorial note:</B> In AP Summary "Property" should be
+"Qualified Name" (for consistency with the full AP document).
+
+<P><B>Issue:</B> Discussion about use of dcmitype:Collection as
+a vocabulary encoding scheme.  Issue with the AM -- all
+VES are classes but should all classes be treated as VESs?
+Could consider adding notion of "range" to the AM, but would
+need something like "applicationProfileRange" for use in APs.
+Work of the DC/RDF Taskforce is beginning to think about
+assigning domains and ranges to DC properties, so likely
+to have to add notion of "domain" and "range" to the AM at
+some point.  Need to think about what impact this has on the
+model for APs.
+
+<P><B>Issue:</B> AP creators are not necessarily sophisticated
+enough to deal with RDFS/OWL and the concepts in the AM.
+Need human-readable documentation (e.g. summary tables along
+the lines used in the draft DCCDAP) that forces AP developers
+down the right road without confusing them.
+
+<P><B>Issue:</B> Need to develop model of APs, based on the work done
+for the DCCDAP, including assigning URIs to all the concepts
+used in the model ("obligation", "mandatory", "element",
+"element refinement", etc.).
+
+<P><B>Issue:</B> what is "defined by" for?
+
+<P><B>Issue:</B> what does the UB want to say about APs --
+e.g. what statuses are we intending to assign?
+
+<P><B>Issue:</B> what are APs for?  Documenting current
+practice?  Declaring future practice?  Should an AP be able
+to document usage that doesn't conform to the AM?
+
+<P>We agreed the following statements:
+
+<UL>
+<LI>1. The AM supports semantic interoperability between software systems.
+
+<LI>2. A DCAP is used to declare a particular application of the AM.
+
+<LI>3. The value of developing a DCAP is to encourage
+   consistency in how a set of terms is deployed within and
+   across communities.
+
+<LI>4. Many existing metadata implementations are not based on the
+   AM and may be described using forms of "application profiles"
+   other than DCAPs.
+
+<LI>5. Instance metadata in such implementations may be mapped
+   to new AM-compliant applications (which are declared using
+   a DCAP).
+</UL>
+
+<P><B>Issue:</B> there is a potential problem with the use of both
+an element and one or more of its refinements in a DCAP
+(e.g. the use of both relation and references in the DCCDAP)
+because inferences made on the use of the refinement may not be
+compatible with the DCAP defined usage of the element.  Suggest
+considering use of new refinements (e.g. "relatedCollection")
+to get round this problem.  This issue needs to be covered
+in future guidance for creating new APs.
+
+<P><B>Action:</B> Tom to revise the CEN Guidelines in line with the
+documentary approach used in the draft DCCDAP.
+
+<H4>Decision tree</H4>
+
+<P><B>Agreed:</B> in AP drafts, example.org will be used for
+terms that do not yet have a real URI.
+
+<P>New properties and encoding schemes that arise from DCMI
+"strategic" activities and that conform to the AM but do not
+yet have a URI will be added to the DCTERMS namespace.
+
+<P>So new terms in draft APs either have real URIs already
+assigned OR they have example.org URIs, which is an indication
+that the term needs to be assigned a URI in the DCTERMS
+namespace.
+
+<P><B>Action:</B> AndyP to review the details in the decision tree
+about how terms should be declared.
+
+<P><B>Agreed:</B> Draft APs that contain new terms must be accompanied
+by appropriate documentation for the new term.
+
+<P><B>Issue:</B> What is "appropriate documentation" in the context of
+new terms in draft APs?
+
+<P><B>Agreed:</B> Human-readable and/or machine-readable statements about
+the type of all terms used in APs (e.g. "This is an Element as
+defined in the DCAM") should be made available at the term URI.
+
+<P><B>Agreed:</B> When an activity is identified as being strategic,
+DCMI needs to ensure ongoing UB engagement ASAP.
+
+<P><B>Action:</B> Need to revise the criteria for evaluating new terms
+in the process document - Stuart, Diane.
+
+<P><B>Issue:</B> Are APs intended to be used to validate instance
+metadata?  I.e. is some instance metadata that includes
+additional terms non-conformant with an AP?  This should be
+discussed in the CEN Guidelines.
+
+<H4>Editorial changes to the DCMI Type Vocabulary</H4>
+
+<P><B>Action:</B> change comment for Software to provide list of examples
+"C source file, MS-Windows .exe executable, Perl script, etc."
+
+<P><B>Action:</B> Leave comment for Sound unchanged.
+
+<P><B>Action:</B> Change "For example --" to "Examples include:" throughout.
+
+<P><B>Action:</B> Terms to be arranged alphabetically.
+
+<P><B>Action:</B> All references to other terms in DCMIType should just
+use the term label without quotes (e.g. Moving Image).
+
+<P>All actions on Stuart and Diane.
+
+<H4>Changes to DCMES property definitions</H4>
+
+<P><B>Note:</B> Need to add proposed change to dcterms:URI to
+change seeAlso link to new URI spec.  
+
+<P><B>Agreed:</B> Use "The spatial or temporal topic of
+the resource, or the jurisdiction under which the resource
+is relevant" as definition of Coverage.  Change comment to
+something like "Spatial topic may be a named place...".
+
+<P><B>Agreed:</B> Use "The medium, Internet Media Type or extent of
+the resource" as definition of Format.  Need to revise the
+comment to explain these three parts.  Change comment to
+include "Format may be used to select the software, hardware,
+or other equipment needed to display or operate the resource".
+
+<P><B>Note:</B> Need to change final sentence of Type comment in line
+with Format definition.
+
+<P></B>Agreed:</B> Change definition of Creator to "An entity primarily
+responsible for making the resource" and change definition of
+Contributor to "An entity responsible for making contributions
+to the resource".
+
+<P><B>Action:</B> Remove use of "Resource" prefix from Type and
+Identifier labels.
+
+<P><B>Action:</B> Andy to make changes above.
+
+<P><B>Action:</B> Diane to write up short document giving the rational
+for these changes.
+
+<P>Actions to be undertaken prior to next teleconference.
+
+<H4>Domains and ranges</H4>
+
+Agreed that it is a good idea to move the DC RDF Taskforce
+work on assigning domains and ranges forward in some way.
+
+<P>Need to define set of DC classes (an ontology) for use as
+domains and ranges, but map to equivalent existing classes
+in other namespaces as appropriate.
+
+<P>Need to think about how to iterate the development of our
+ontology -- and how to engage with community.  Possibly declare
+in parallel with other DCMI RDFS declarations for the time
+being.
+
+<P>This activity fits better within UB remit than within DC
+Architecture.
+
+<P><B>Action:</B> DC RDF taskforce to continue developing draft
+document of domains and ranges -- to be brought back to UB
+when reasonable draft is ready for consideration of how to
+handover activity to the UB.
+
+<P>End of day 1
+
+<H4>Day 2 -- Saturday 10 September</H4>
+
+<H4>Dc:date</H4>
+
+<P><B>Agreed:</B> accept the change to the comment for dc:date as
+recommended by the WG.
+
+<P><B>Action:</B> Andy to add change to list of other changes to DCMES terms.
+
+<H4>DCSV</H4>
+
+<P>Add "Editorial Changes" section to the end of each of these
+documents, noting why these changes have happened.
+
+<P>Remove un-used references.
+
+<P>Tidy up hyphenated words (as per Tom's comments).
+
+<P><B>Issue:</B> should these documents still have "Recommended status"?
+
+<P>Change titles (and other text) to use "DCMI DCSV: A syntax
+for representing simple structured data in a text string".
+
+<P>Agreed with Tom's points 2, 3, 4, 5, 6, 7, 8 and 9.
+
+<P><B>Note:</B> need to add definition of "structured value string" to terminology section.
+
+<P><B>Issue:</B> Note this also requires change to the abstract model terminology.
+
+<P>Spelling of "hierarchical".
+
+<P>Make changes as per Ann's comments.
+
+<P>Make changes as per Pete's comments.
+
+<P><B>Action:</B> Andy and Andrew to make changes above and send to list.
+
+<P><B>Agreed:</B> Need to change status of these documents to "Rescinded
+Recommendation" with note about historical context and
+justification.
+
+<P><B>Agreed:</B> change status of Period, Point and Box to
+"Conforming". VOTE: 6 in favor, none against, none abstain.
+
+<P><B>Action:</B> Tom to write up decision text (for the change to the
+terms above) and approve on the list.
+
+<P><B>Agreed:</B> Fix the redirects to the current Recommendations on
+the Web site.  Put current proposed changes as date-stamped
+"Proposed Recommendations".  Put new proposed changes as
+date-stamped "Proposed Rescinded Recommendations" and submit
+to Directorate for comment period.
+
+<P><B>Action:</B> Tom to clarify process for doing this with Directorate.
+
+<P><B>Issue:</B> Frequency of updates to the DCMI Web site is sometimes
+problematic.
+
+<P><B>Action:</B> Tom to raise this with the Directorate.
+
+<H4>MARC Relator terms</H4>
+
+<P><B>Issue:</B> what should be served at term URIs and namespace URIs.
+
+<P><B>Agreed:</B> Emerging best practice is to use content negotiation
+to serve both text/html and application/rdf+xml.  Should use an
+HTTP 303 reposnse to redirect from term URI to representation.
+Do this at both the term URIs and the namespace URI.
+
+<P><B>Action:</B> Andy to write up requirement for what needs to happen
+on the DCMI Web server to achieve this for current DCMI
+terms/namespaces and send to list for forwarding to Web team.
+
+<P><B>Action:</B> Tom to liaise with Rebecca about what DCMI
+is doing.  
+
+<P>For the text/html representation of a DCMI term, the
+HTTP 303 redirect should go to the anchor for that term in
+http://dublincore.org/documents/dcmi-terms/.
+
+<P>For the application/rdf+xml representation of a DCMI
+term, serve the RDFS for the whole namespace initially --
+but could have a discussion on DC Architecture about whether
+it is better to only serve RDFS for the individual terms.
+
+<P><B>Action:</B> Tom/Diane to undertake other ongoing actions
+from pages 8 and 9 of the packet.
+
+<P><B>Action:</B> Pete to update "Element refinement in DC
+Metadata" Recommended Resource in order to use correct MARC
+relator URI. (No comment period required).
+
+<P><B>Issue:</B> what assertions do we want to make about
+MARC Relator Terms?
+<UL>
+
+<LI>1 - Endorse the LoC assertions about individual properties
+being sub-properties of dc:contributor?
+
+<LI>2 - Endorse the use of all MARC Relator Terms in DC metadata descriptions?
+
+<LI>Both?
+
+<LI>Also need to decide if either of the endorsements above
+are only about specific date-stamped assertions or are more
+open-ended (i.e. true whatever LoC does in the future).
+</UL>
+
+<P><B>Action:</B> Tom to do both on open-ended basis as
+human-readable document.
+
+<P><B>Agreed:</B> Use a "DCMI list of trusted RDFS data
+sources" as mechanism for indicating endorsement of whole
+vocabularies?  It may be that in the future we choose to
+drive the DCMI registry from this list and that therefore
+the appearance of something in the DCMI registry implies
+endorsement by DCMI.
+
+<P><B>Agreed:</B> The initial list is:
+<UL>
+<LI>DCMES namespace URI
+<LI>DCTERMS namespace URI
+<LI>DCMIType namespace URI
+<LI>MARC Relators namespace URI (note: RDF not currently served here)
+</UL>
+
+<P><B>Agreed:</B> Addition of new trusted RDFS data sources is driven by the development of APs in WGs.
+
+<H4>Process Document</H4>
+
+<P>Part I
+
+<P>Put current 3.2 (Conforming) to 3.1.  Move 3.1 (Recommended)
+to 3.2 and change meaning in line with decisions in Washington
+(i.e. conforming and no overlap).
+
+<P><B>Issue:</B> what statuses are needed in the process document?
+
+<P>Definition of Endorsed needs some work -- it is about
+"relationship" assertions between terms, not about the terms
+themselves.
+
+<P>Part II
+
+<P>Break out parts about evaluating individual terms into separate citable document.
+
+<P>Break out vocabulary of statuses into separate citable document.
+
+<P>Break out parts about UB makeup, processes (I) and changes
+to processes (III) into separate citable document.
+
+<P>Consider move to "step-by-step" approach to documenting
+process (as per document below) -- at least at summary level.
+
+<P><B>Note:</B> "Procedure for approval of
+DCMI Metadata Terms and Recommendations" at
+http://dublincore.org/usage/documents/approval/ will need to
+be updated to focus on APs rather than individual terms.
+
+<P><B>Action:</B> Diane and Stuart to move process document forward.
+
+<P>Guidelines for some new elements Agreed to proposals with
+a couple of minor editorial changes.
+
+<H4>Accessibility</H4>
+
+Andy to attend WG meeting during conference.
+
+<H4>Back burner</H4>
+
+<P><B>Vocabulary vs. Syntax Encoding Schemes</B>
+
+<P>Move action on Pete and Andy to write position paper about
+Vocabulary and Syntax encoding schemes to DC RDF Taskforce.
+
+<P><B>Endorsement of external encoding schemes</B>
+
+<P>To be conformant with the DCAM
+<UL>
+<LI>Term must be declared in right way (using RDF).
+<LI>Term must be assigned URI.
+<LI>URI must resolve to the RDF declaration (via 303 redirect).
+</UL>
+
+<P><B>Action:</B> Andy to add these criteria to the "decision tree".
+
+<P><B>Action:</B> Andy/Tom to undertake process to assign
+status to decision tree document.
+
+<H4>Next meeting</H4>
+
+
+</BODY>
+</HTML>

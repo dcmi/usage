@@ -1,0 +1,146 @@
+<PRE>
+DCMI Usage Board - Friday, 2007-11-23 telecon - report
+
+This report:  <a href="http://dublincore.org/usage/minutes/2007/2007-11-23.dcub-telecon-report.html">http://dublincore.org/usage/minutes/2007/2007-11-23.dcub-telecon-report.html</a>
+Agenda:       <a href="http://dublincore.org/usage/minutes/2007/2007-11-23.dcub-telecon-agenda.html">http://dublincore.org/usage/minutes/2007/2007-11-23.dcub-telecon-agenda.html</a>
+
+Attended: Tom, Diane, Joe, Pete, Julie
+Regrets: Akira, Andrew
+
+----------------------------------------------------------------------
+Goals for this telecon and the next
+
+RESOLVED
+-- we finalize "Revisions to DCMI Metadata Terms" today as a UB decision document
+-- finalize "Domains and Ranges" in next 2-3 weeks
+-- hold back all decision documents until we can release everything together,
+   i.e., updated TERMS documentation
+-- discuss Review of Application Profiles on telecon before December holidays
+
+ACTION 2007-11-23: Tom to clarify with
+Makx the status of Domains and Ranges document
+(<a href="http://stage.dublincore.org/documents/2007/12/03/domain-range/">http://stage.dublincore.org/documents/2007/12/03/domain-range/</a>)
+- maybe use "Notes for DC in RDF" as model
+(<a href="http://dublincore.org/documents/dc-rdf-notes/index.shtml">http://dublincore.org/documents/dc-rdf-notes/index.shtml</a>).
+
+----------------------------------------------------------------------
+Next telecons
+-- Alternative slots are
+   1. 0600 Seattle / 0900 New York / 1400 London (UTC) / 1500 Berlin / 2300 Tokyo  / 0100 Sydney
+      Too late for Andrew.
+   2. 1300 Seattle / 1600 New York / 2100 London (UTC) / 2200 Berlin / 0600 Tokyo+ / 0800 Sydney+
+      Okay Mondays through Thursday, not Friday.
+
+-- A telecon had been scheduled for Dec 14 Fri 14:00 London,
+   but we agreed to find a time in slot 2 instead.
+
+ACTION 2007-11-23: Tom to ask Andrew and Akira for availability
+12 December, 21:00 London time, for next telecon - as per
+<a href="http://www.doodle.ch/fwi26q845ssfc9it">http://www.doodle.ch/fwi26q845ssfc9it</a>.  Suggest holding a longer
+call (90") in order to finish Domains and Ranges discuss Review
+of Profiles.
+
+======================================================================
+Finalizing "Revisions to DCMI Metadata Terms" as a Usage Board decision document
+-- see [DCTERMS-CHANGES] on the basis of the meeting notes [MEETING-NOTES].
+
+----------------------------------------------------------------------
+Issues with the meeting notes (w.r.t. "Revisions")
+-- see <a href="http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0711&L=dc-usage&P=2433">http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0711&L=dc-usage&P=2433</a>
+
+    ACTION 2007-11-23: Tom to correct wordings for
+    dcterms:LCSH, dcterms:MESH, dcterms:DDC, dcterms:LCC,
+    and dcterms:UDC, adding the word "the" as in:
+
+        specified by the Library of Congress Subject Headings
+        specified by the Medical Subject Headings
+        specified by the Dewey Decimal Classification
+        specified by the Library of Congress Classification
+        specified by the Universal Decimal Classification
+
+----------------------------------------------------------------------
+Changes made between July public-comment version and December draft decision
+
+ACTION 2007-11-23: Julie to compare the diff of changes between
+the July version and December draft of "Revisions to DCMI Metadata
+Terms", as posted to to DC-USAGE [1], with the draft meeting notes [2].
+[1] <a href="http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0711&L=dc-usage&P=2660">http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0711&L=dc-usage&P=2660</a>
+[2] <a href="http://dublincore.org/usage/minutes/2007/2007-08-26.dcub-meeting-notes.html">http://dublincore.org/usage/minutes/2007/2007-08-26.dcub-meeting-notes.html</a>
+
+ACTION 2007-11-23: Tom to put full names at top of meeting notes.
+-- DONE - see [MEETING-NOTES]
+
+DECISION: new term dcterms:ISO639-3 approved as worded in
+<a href="http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0711&L=dc-usage&P=2660">http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0711&L=dc-usage&P=2660</a>
+contingent on approval by Akira or Andrew (at least one of them).
+
+ACTION 2007-11-23: Tom to get Akira and Andrew votes for
+dcterms:ISO639-3.
+
+AGREED: Tom's paragraph on UB policy for "replacement" terms in 
+Introduction to [DCTERMS-CHANGES] is fine.
+
+   <a href="http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0711&L=dc-usage&P=3015">http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0711&L=dc-usage&P=3015</a>
+
+AGREED: Tom's paragraph on term type of member terms of DCMI Type 
+Vocabulary is fine but needs an additional sentence about the term "member of".
+
+ACTION 2007-11-23: Pete to propose sentence to the effect
+that DCAM introduces a property to express the relation
+between a resource and vocabulary of which it is a member...
+This paragraph (with the additional sentence) will be reused
+in some form in the introduction to the DCTERMS document.
+
+----------------------------------------------------------------------
+Actions arising from Singapore discussion of [DCTERMS-CHANGES]
+
+ACTION 2007-11-23: Joe to own the issue
+<a href="http://dublincore.org/usageboardwiki/IssuesWithCoverage">http://dublincore.org/usageboardwiki/IssuesWithCoverage</a> for
+discussion on a future telecon.
+
+RESOLVED to drop the following action - point 3 to be incorporated
+in Joe's note on IssuesWithCoverage:
+
+    ACTION 2007-08-25: (Someone?) to post a list of known issues
+    to the UB list (1) for subject -- if read as inclusive, the
+    list of examples ("keywords, key phrases, or classification
+    codes") is incomplete, (2) classification codes is
+    misleading because it misses classification captions (use
+    classification expressions instead), (3) 'spatial' and
+    'temporal' are "correct" but 'coverage' is too broad --
+    it allows for topic and this is in conflict with 'subject'
+    [TK] -- but this is an Application Profile issue [TB].
+
+----------------------------------------------------------------------
+Review of application profiles (Joe)
+
+ACTION 2007-11-23: Tom post pointers to descriptions of
+Singapore Framework for use in preparing December 12 discussion
+of Profile review.
+
+AGREED: revised [GRAMMATICAL-PRINCIPLES] are okay but recognize a 
+need to mark obsolete documents more clearly on DCMI Web site.
+
+----------------------------------------------------------------------
+References
+
+[COLLECTIONS-PROFILE-REVIEW]
+   <a href="http://stage.dublincore.org/usage/reviews/2007/collections-ap/index.shtml">http://stage.dublincore.org/usage/reviews/2007/collections-ap/index.shtml</a>
+
+[DCTERMS-CHANGES]
+   <a href="http://stage.dublincore.org/usage/decisions/2007/dcterms-changes/index.shtml">http://stage.dublincore.org/usage/decisions/2007/dcterms-changes/index.shtml</a>
+
+[GRAMMATICAL-PRINCIPLES]
+   <a href="http://stage.dublincore.org/usage/documents/principles/">http://stage.dublincore.org/usage/documents/principles/</a>
+
+[MEETING-NOTES] 
+   <a href="http://dublincore.org/usage/minutes/2007/2007-08-26.dcub-meeting-notes.html">http://dublincore.org/usage/minutes/2007/2007-08-26.dcub-meeting-notes.html</a>
+
+[MEETING-NOTES-RAW]
+   <a href="http://dublincore.org/usage/minutes/2007/2007-08-26.dcub-meeting-notes-raw.html">http://dublincore.org/usage/minutes/2007/2007-08-26.dcub-meeting-notes-raw.html</a>
+
+[PROFILE-REVIEWS]
+   <a href="http://stage.dublincore.org/usage/reviews/index.shtml">http://stage.dublincore.org/usage/reviews/index.shtml</a>
+
+</PRE>
+2009-01-29: Changed usageboard/log URIs to usage/minutes URIs.

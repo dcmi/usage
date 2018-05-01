@@ -1,0 +1,95 @@
+Title:               DCMI Usage Board decisions
+Identifier:          http://dublincore.org/usage/decisions/
+Latest version:      http://dublincore.org/usage/decisions/
+Installed as:        http://dublincore.org/usage/decisions/index.shtml
+Date Last Modified:  2002-04-27
+Description:         
+
+	This document is a periodically updated index, in
+	reverse chronological order, of decisions taken by the
+	Usage Board (since May 2001); its precedessor, the Usage
+	Committee (1999-2000); and the Advisory Committee
+	(1998-1999).  See http://dublincore.org/usage/meetings/
+	for historical details.  Decisions documented here can
+	be cited by their full Identifier.  This document is
+	maintained by the Chair of Usage Board, currently Tom
+	Baker.
+
+<a name="2001.05">
+Decision:   2001.05
+Identifier: http://dublincore.org/usage/decisions/index.shtml#2001.05
+Title:      Usage Board decisions on DC-Government proposal
+Date:       2001-11-23
+Text:       http://dublincore.org/usage/decisions/2001/government-02.shtml
+See also:   http://dublincore.org/usage/meetings/2001/10/agenda.shtml
+See also:   http://dublincore.org/usage/meetings/2001/10/meeting-notes.shtml
+See also:   http://dublincore.org/usage/meetings/2001/10/2001-10-19.dc-usage.pdf
+
+<a name="2001.04">
+Decision:   2001.04
+Identifier: http://dublincore.org/usage/decisions/index.shtml#2001.04
+Title:      Change in the Language element definition
+Date:       2001-05-21
+Text:       http://dublincore.org/usage/meetings/2001/05/DCMI-Usage_language-change.htm
+See also:   http://dublincore.org/usage/meetings/2001/05/index.shtml
+See also:   http://dublincore.org/usage/meetings/2001/05/meetingnotes.shtml
+
+<a name="2001.03">
+Decision:   2001.03
+Identifier: http://dublincore.org/usage/decisions/index.shtml#2001.03
+Title:      Approval of URI as an encoding scheme for Source
+Date:       2001-05-21
+Text:       http://dublincore.org/usage/decisions/2001/05/uri-source.txt
+See also:   http://dublincore.org/usage/meetings/2001/05/index.shtml
+See also:   http://dublincore.org/usage/meetings/2001/05/meetingnotes.shtml
+
+<a name="2001.02">
+Decision:   2001.02
+Identifier: http://dublincore.org/usage/decisions/index.shtml#2001.02
+Title:      Use of "name" and "label" clarified
+Date:       2001-05-21
+Text:       http://dublincore.org/usage/decisions/2001/05/name-label.txt
+See also:   http://dublincore.org/usage/meetings/2001/05/index.shtml
+See also:   http://dublincore.org/usage/meetings/2001/05/meetingnotes.shtml
+
+<a name="2001.01">
+Decision:   2001.01
+Identifier: http://dublincore.org/usage/decisions/index.shtml#2001.01
+Title:      Usage Board decisions on DC-Education proposal
+Date:       2001-05-21
+Text:       http://www.dublincore.org/usage/decisions/2001/education-01.shtml
+See also:   http://dublincore.org/usage/meetings/2001/05/index.shtml
+See also:   http://dublincore.org/usage/meetings/2001/05/meetingnotes.shtml
+See also:   http://dublincore.org/terms/elements-qualifiers/index.shtml#audience
+See also:   http://dublincore.org/terms/elements-qualifiers/index.shtml#mediator
+See also:   http://dublincore.org/terms/elements-qualifiers/index.shtml#conformsTo
+
+<a name="2000.02">
+Decision:   2000.02
+Identifier: http://dublincore.org/usage/decisions/index.shtml#2000.02
+Title:      DCMI Type Vocabulary
+Date:       2000-07-11
+Text:       http://dublincore.org/documents/2000/07/11/dcmi-type-vocabulary/
+
+<a name="2000.01">
+Decision:   2000.01
+Identifier: http://dublincore.org/usage/decisions/index.shtml#2000.01
+Title:      Dublin Core Qualifiers
+Date:       2000-07-11
+Text:       http://dublincore.org/documents/2000/07/11/dcmes-qualifiers/
+
+<a name="1999.01">
+Decision:   1999.01
+Identifier: http://dublincore.org/usage/decisions/index.shtml#1999.01
+Title:      Dublin Core Metadata Element Set, version 1.1
+Date:       1999-07-02
+Text:       http://dublincore.org/documents/1999/07/02/dces/
+
+<a name="1998.01">
+Decision:   1998.01
+Identifier: http://dublincore.org/usage/decisions/index.shtml#1998.01
+Title:      Dublin Core Metadata Element Set, version 1.0
+Date:       1998-09
+Text:       http://dublincore.org/documents/1998/09/dces/
+
+

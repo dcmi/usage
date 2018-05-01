@@ -1,0 +1,52 @@
+DCMI Usage Board - telecon - report
+
+Date: Fri, 2007-04-27 1300 UTC
+
+1.  The element Coverage is defined as "The spatial or temporal
+    topic of the resource...", then the comment says:
+
+       Spatial topic and spatial applicability may be a
+       named place or a location specified by its geographic
+       coordinates. Temporal period may be a named period, date,
+       or date range.
+
+    The second sentence is clearly meant to parallel the first.
+    This obvious mistake (once pointed out) has gone unnoticed
+    by UB reviewers and in Public Comment since 2005.
+
+    RESOLVED (on telecon): Change sentence
+
+        Temporal period may be a named period, date, or date range.
+
+    to read:
+
+        Temporal topic may be a named period, date, or date range.
+
+    ACTION 2007-04-27: Tom to communicate change to NISO and 
+    make change in DCMI documentation.
+
+2. ACTION 2007-04-27: All to comment on Makx's proposal for 
+   DCMI process -- see April 15 dc-usage-bc posting [1].
+
+3. ACTION 2007-04-27: All to comment on Future of Usage Board
+   issues [2].  In particular, please suggest criteria
+   ("profiles" :-) for the membership mix of the Usage Board.
+
+4. ACTION 2007-04-27: All to send Tom a) arrival and departure
+   dates in Singapore; b) airfare estimates.
+
+5. Collections Application Profile - to be finalized on May 18
+   telecon.  Ongoing action on Andrew to draft review result.
+
+6. Domains and Ranges vocabulary - Plan to finalize in May for
+   Public Comment.  Tom has action to draft Usage Board position
+   on ranges for date, description, title for Public Comment.
+
+7. Next telecon: Friday, 18 May, same time (1300 UTC).  Tom to
+   liaise beforehand with Diane, who will be on break.  Tom will
+   send around summary of other outstanding Barcelona actions
+   in preparation.
+
+[1] http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0704&L=dc-usage-bc&P=276
+[2] http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0703&L=dc-usage-bc&P=1679
+

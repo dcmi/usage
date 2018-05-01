@@ -1,0 +1,74 @@
+<PRE>
+ XXXXXXX   XXX   XXXXXX   XXXXX    XXXX             X      XXX  
+ X  X  X  X   X   X    X    X     X    X          XXX     X   X 
+    X    X     X  X    X    X    X                  X     X   X 
+    X    X     X  X    X    X    X                  X     X   X 
+    X    X     X  XXXXX     X    X                  X     X   X 
+    X    X     X  X         X    X                  X     X   X 
+    X    X     X  X         X    X                  X     X   X 
+    X     X   X   X         X     X    X            X     X   X 
+   XXX     XXX   XXXX     XXXXX    XXXX           XXXXX    XXX  
+                                                                
+                                                                
+TOPIC 10. MARC Relator Terms as Refinements for Contributor (Rebecca)
+
+   In Florence, we agreed to work with the Library of Congress
+   to have MARC relator terms declared as refinements of
+   Contributor.  LC is currently implementing this decision
+   and Rebecca can report in Ithaca.  We should determine
+   whether the Usage Board needs to follow through, and how,
+   and identify any lessons learned.  After Ithaca, we will
+   need to prepare a document explaining how MARC Relator
+   terms can be used as refinements for Contributor.
+
+   Required reading:
+   -- <a href="http://stage.dublincore.org/usage/meetings/2003/06/TOPIC10.html">http://stage.dublincore.org/usage/meetings/2003/06/TOPIC10.html</a>
+   -- Assignment of URIs to metadata terms of MARC 21 - Action plan
+      <a href="http://stage.dublincore.org/usage/meetings/2003/06/MARC-URIs.html">http://stage.dublincore.org/usage/meetings/2003/06/MARC-URIs.html</a>
+   -- Excerpts from the RDF schema declaring the MARC Relator terms
+      <a href="http://stage.dublincore.org/usage/meetings/2003/06/Relator-excerpts-rdfxml.txt">http://stage.dublincore.org/usage/meetings/2003/06/Relator-excerpts-rdfxml.txt</a>
+   -- Comments from Roland
+      <a href="http://stage.dublincore.org/usage/meetings/2003/06/Marc-relators-in-rdf.txt">http://stage.dublincore.org/usage/meetings/2003/06/Marc-relators-in-rdf.txt</a>
+
+   Time needed: 90"
+
+------------------------------------------------------------------------
+2003-06-09 Rebecca
+------------------------------------------------------------------------
+
+With regard to markup in RDF of our entire relator code list:
+there is still the question about how we are coding the
+equivalent terms that needs to be discussed.  The first term
+that illustrates the problem of equivalent terms is artist
+(uri: <a href="http://www.loc.gov/marc.relators.art">http://www.loc.gov/marc.relators.art</a>), where we have
+used 2 labels for the same thing ("Artist" and "Graphic
+technician"). But that doesn't really work because we want
+to say that graphic technician is another name for artist,
+but artist should be used instead.
+
+The URIs are named as we proposed in the CORES article, so
+this text should perhaps be included in the packet because it
+has some impact on some of the documents we'll be discussing
+in the UB meetings. One is this one of course. There is the
+general issue about duplicate URIs being assigned for the
+same thing, one in dcterms and one that we will be assigning
+(when we do that). Example is LCSH, which has a URI in dcterms
+but once we assign URIs to our elements we'll have one. I
+will be mentioning this issue in the document I'm working on
+concerning encoding schemes for DC-Lib AP.
+
+We need to discuss again the issue of making creator a
+refinement of contributor. We discussed at the previous
+meeting but then at the conference/workshop I heard a
+lot of disagreement with this approach. So we may need to
+revisit. I'll be sending our marked up RDF document shortly. We
+still need to settle on the best way to represent equivalent
+terms when one is preferred. There were numerous discussions
+about this, but this was never fully resolved, so our RDF
+experts need to consider. 
+
+In addition, I would like some guidance on how to represent
+the use of the whole relator list in the library application
+profile.
+
+</PRE>

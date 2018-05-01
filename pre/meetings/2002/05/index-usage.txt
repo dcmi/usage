@@ -1,0 +1,41 @@
+Title:               DCMI Usage Board - overview
+Identifier:          http://dublincore.org/usage/
+Installed as:        http://dublincore.org/usage/index.shtml
+Date Last Modified:  2002-04-27
+Description:         The mission of the Usage Board is to ensure an orderly
+                     evolution of the metadata vocabularies maintained by
+                     DCMI, evaluating proposals for extensions or changes in
+                     light of grammatical principle, semantic clarity, and 
+                     usefulness.
+
+== DCMI Metadata Terms
+   http://dublincore.org/usage/terms/
+
+== Mission, Principles, and Process
+   http://dublincore.org/usage/documents/
+
+== Usage Board Meetings
+   http://dublincore.org/usage/meetings/
+
+== Decisions
+   http://dublincore.org/usage/decisions/
+
+== News
+
+   2002-04-17: Public comment for proposals to Usage Board
+       http://www.jiscmail.ac.uk/cgi-bin/wa.exe?A2=ind0204&L=dc-general&O=A&P=1249
+       Public comment is open for these documents until 10 May 2002.
+
+== Members
+
+   Chair:          Thomas Baker, Fraunhofer-Gesellschaft, Germany
+   Members:        Rebecca Guenther, Library of Congress, USA
+                   Diane Hillmann, Cornell University, USA
+                   Traugott Koch, NetLab, Sweden
+                   Haruki Nagata, ULIS, Japan
+                   Andy Powell, UKOLN, UK
+                   Roland Schwaenzl, University of Osnabrueck, Germany
+                   Stuart Sutton, University of Washington, USA
+                   DCMI Directorate, ex officio
+
+

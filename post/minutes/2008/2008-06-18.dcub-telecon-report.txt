@@ -1,0 +1,64 @@
+Report - telecon 2008-06-18 2100 UTC
+
+This agenda:  http://dublincore.org/usage/minutes/2008/2008-06-18.dcub-telecon-report.html
+UB meetings:  http://dublincore.org/usage/minutes/
+UB mail list: http://www.jiscmail.ac.uk/lists/dc-usage.html
+UB wiki:      http://dublincore.org/usageboardwiki/
+              http://dublincore.org/usageboardwiki/#Issues - where long-term issues are tracked
+
+Attended: Tom, Diane, Julie, Andrew, Stefanie, Akira
+Regrets: Joe, Pete
+
+-- Report of the May 28 telecon is available at
+   http://dublincore.org/usage/minutes/2008/2008-05-28.dcub-telecon-report.html
+
+-- Karen Coyle has published Application Profile guidelines
+   http://www.kcoyle.net/temp/dcap/
+
+   Tom will make editorial corrections after break, in August.
+   We will discuss on 30 July telecon - all UB members should please 
+   prepare for discussion.
+
+-- Use of dc:source in SKOS primer
+   http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0806&L=dc-usage&P=1727
+   http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0806&L=dc-usage&P=1980
+
+   Agree that the example used in draft SKOS Primer is
+   a stretch.  In practice, use of dc:source is often
+   discouraged.  Tom will suggest using another example.
+
+-- Review of Eprints/SWAP
+   http://dublincore.org/usageboardwiki/EprintsProfileReview
+   http://colab.mpdl.mpg.de/mediawiki/ApplicationProfiles/ProfileReviewCriteriaDe
+
+   Draft reviews of the following will be made available
+   before the 30 July telecon:
+
+   -- Objectives and Scope, Functional Requirements, Domain Model
+      Andrew and Akira
+   
+   -- DSP templates and constraints
+      Joe and Pete
+   
+   -- DSP metadata terms referenced
+      Diane and Julie
+   
+   -- Syntax guidelines
+      Tom and Stefanie
+
+Goals for September meeting:
+   -- Review of Eprints/SWAP
+   -- Profile Review Criteria
+   -- Review of Karen Coyle's Guidelines for Application Profiles
+   -- Other issues and actions as listed on http://dublincore.org/usageboardwiki/
+
+   Tom will invite the KIM Working Group to give a presentation on 
+   Sunday afternoon.
+
+Upcoming telecons -- will use http://freeconference.com/
+
+-- 2008-07-30 Wed 1300 UTC - no regrets
+-- 2008-08-20 Wed 1300 UTC - regrets: Joe
+-- 2008-09-03 Wed 1300 UTC - regrets: Joe
+
+2009-01-29: Changed usageboard/log URIs to usage/minutes URIs.

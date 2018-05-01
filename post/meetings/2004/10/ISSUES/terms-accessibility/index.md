@@ -1,0 +1,79 @@
+---
+title: 
+date: '2017-09-01T16:21:09+01:00'
+description: 
+draft: false
+creators: []
+contributors: []
+publisher: 
+tags: []
+---
+
+<pre>
+Title: Proposal for a term "Accessibility"
+Identifier: <a href="/usage/meetings/2004/10/ISSUES/terms-accessibility/">http://dublincore.org/usage/meetings/2004/10/ISSUES/terms-accessibility/</a>
+See also: <a href="/usage/meetings/2004/10/ISSUES/">http://dublincore.org/usage/meetings/2004/10/ISSUES/</a>
+Created: 2004-09-14
+Agenda frozen: 2004-10-02 07:25, Saturday
+Archived: 2004-11-10
+Maintainer: Tom Baker
+Note: If any of the links below are broken, please refer to 
+                   the meeting packet
+                   (<a href="/usage/meetings/2004/10/Meeting-packet.pdf">http://dublincore.org/usage/meetings/2004/10/Meeting-packet.pdf</a>) 
+                   for copies of the key documents discussed at the meeting.
+
+Shepherd: Stuart Sutton
+
+In August, the DCMI Accessibility Working Group submitted a
+proposal for a term called "Accessibility". In Shanghai,
+we need to decide whether or not to approve this as a new
+DCMI Element.
+
+The following are required reading:
+
+-- The proposal
+   <a href="http://www.ozewai.org/DC-term-proposal/prop-reqs-table2.html">http://www.ozewai.org/DC-term-proposal/prop-reqs-table2.html</a> 
+
+-- About the proposal
+   <a href="http://www.ozewai.org/DC-term-proposal/overview.html">http://www.ozewai.org/DC-term-proposal/overview.html</a> 
+
+-- Evaluation of the proposal
+   <a href="http://www.ozewai.org/DC-term-proposal/criteria.html">http://www.ozewai.org/DC-term-proposal/criteria.html</a> 
+
+The following background material is not required:
+
+   <a href="http://www.ozewai.org/DC-term-proposal/index.html">http://www.ozewai.org/DC-term-proposal/index.html</a>
+
+------------------------------------------------------------------------
+Date: Wed, 29 Sep 2004 06:46:03 +0200
+From: Thomas Baker &lt;thomas.baker@bi.fhg.de&gt;
+To: DCMI Usage Board &lt;dc-usage@jiscmail.ac.uk&gt;
+Subject: Accessibility proposal
+------------------------------------------------------------------------
+
+It looks to me like the definition of Accessibility may need to
+be wordsmithed to make it more general and bring it into line
+with other DCMI definitions. The proposed definition reads:
+
+    A reference to a machine-readable profile that describes
+    the qualities of a resource that can be used to match
+    the needs and preferences of a user as expressed in a
+    machine-readable user profile.
+
+The comments specify that the referenced profile may be in RDF,
+XML, EARL, etc. Problems include:
+
+    "A reference to..." -- no longer appropriate now that a
+    value is considered to be a resource.
+
+    Restriction to "machine-readable" in the definition itself.
+
+For example, one might edit as follows:
+
+    A description of the qualities of a resource that can be
+    used to match the needs and preferences of a user...
+
+If anyone would like to work out an alternative wording
+beforehand, this could save us time in the meeting.
+
+</pre>

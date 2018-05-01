@@ -1,0 +1,207 @@
+---
+title: 
+date: '2017-09-01T16:21:09+01:00'
+description: 
+draft: false
+creators: []
+contributors: []
+publisher: 
+tags: []
+---
+
+<pre>
+Title: Encoding Scheme "ISO8601"
+Identifier: <a href="/usage/meetings/2004/10/ISSUES/iso8601/">http://dublincore.org/usage/meetings/2004/10/ISSUES/iso8601/</a>
+See also: <a href="/usage/meetings/2004/10/ISSUES/">http://dublincore.org/usage/meetings/2004/10/ISSUES/</a>
+Created: 2004-09-14
+Agenda frozen: 2004-10-02 07:25, Saturday
+Archived: 2004-11-10
+Maintainer: Tom Baker
+Note: If any of the links below are broken, please refer to 
+                   the meeting packet
+                   (<a href="/usage/meetings/2004/10/Meeting-packet.pdf">http://dublincore.org/usage/meetings/2004/10/Meeting-packet.pdf</a>) 
+                   for copies of the key documents discussed at the meeting.
+
+Shepherd: Rebecca
+
+In Bath [1], Rebecca was assigned the action to finalize the
+decision text [2]. This was to involve two things:
+
+1) including links to W3C documents [3,4], and
+
+2) including (both in the decision and in the announcement)
+   text to the effect that this will potentially be the last
+   new DCMI term declared with reference to an ISO standard
+   unless ISO decides _not_ to name such things within their
+   own namespace.
+
+In September, however, it was noticed that such a statement
+about the use of non-DCMI URIs as DCMI Encoding Schemes was
+closely related to the issue raised at the Bath meeting with
+regard to reusing MODS terms in a Dublin Core metadata context.
+
+At issue is the nature of what, in any given case, is
+actually identified by a URI and whether the entity identified
+really fits into the DCMI Abstract Model.
+
+In Shanghai, therefore, we will aim at finalizing the revised
+description of the term "ISO8601" so that it can be added
+to the DCMI term sets (Point #1 above). And we will discuss
+the assignment of DCMI Encoding Schemes to non-DCMI standards
+(such as ISO standards) in the context of a broader discussion
+of the use of non-DCMI terms and term URIs in Dublin Core
+metadata (Point #2 above).
+
+Some relevant email is appended below.
+
+[1] <a href="/usage/meetings/2004/03/ISSUES/registration-proposals/">http://dublincore.org/usage/meetings/2004/03/ISSUES/registration-proposals/</a>
+[2] <a href="http://www.bi.fhg.de/People/Thomas.Baker/public/2004-03.ISO8601.txt">http://www.bi.fhg.de/People/Thomas.Baker/public/2004-03.ISO8601.txt</a>
+[3] <a href="http://www.w3.org/TR/NOTE-datetime">http://www.w3.org/TR/NOTE-datetime</a>
+[4] <a href="http://www.w3.org/TR/xmlschema-2/#isoformats">http://www.w3.org/TR/xmlschema-2/#isoformats</a>
+[6] <a href="/usage/meetings/2004/10/registration/">http://dublincore.org/usage/meetings/2004/10/registration/</a>
+[7] <a href="/usage/meetings/2004/10/nlm/">http://dublincore.org/usage/meetings/2004/10/nlm/</a>
+[8] <a href="/usage/meetings/2004/10/iso8601/">http://dublincore.org/usage/meetings/2004/10/iso8601/</a>
+
+------------------------------------------------------------------------
+Date: Tue, 14 Sep 2004 10:49:50 +0100
+Reply-To: DCMI Collection Description Group &lt;DC-COLLECTIONS@JISCMAIL.AC.UK&gt;
+Sender: DCMI Collection Description Group &lt;DC-COLLECTIONS@JISCMAIL.AC.UK&gt;
+From: Pete Johnston &lt;p.johnston@UKOLN.AC.UK&gt;
+Subject: Re: ISO8601 vs W3CDTF
+To: DC-COLLECTIONS@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+Douglas,
+
+I'll try to respond to your other points later, but just on this
+specific point:
+
+&gt; But back to DC CD AP - It doesn't feel right to be re-defining an
+&gt; encoding scheme as we have done in the current draft - either you are
+&gt; using ISO 8601 or you're not! A side issue is using the "dcterms"
+&gt; namespace is anticipating DCMI will endorse it.
+
+Apologies, this is my fault, and I should have made it clearer what was
+going on with the ISO8601 encoding scheme.
+
+I completely agree with you that DCAPs must not redefine encoding
+schemes.
+
+My understanding is that the Usage Board has already (in June 2003)
+accepted ISO8601 as an encoding scheme, and indicated their intent to
+create a corresponding class <a href="http://purl.org/dc/dcterms/ISO8601">http://purl.org/dc/dcterms/ISO8601</a> in the
+DCterms vocabulary. See
+
+<a href="http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0307&amp;L=dc-usage&amp;P=R15220&amp;I=-1">http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0307&amp;L=dc-usage&amp;P=R15220&amp;I=-1</a>
+
+and subsequently
+
+<a href="http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0402&amp;L=dc-usage&amp;P=R1278&amp;I=-1">http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0402&amp;L=dc-usage&amp;P=R1278&amp;I=-1</a>
+
+I understand that there has been some delay in _publishing_ that
+decision and actually including an RDFS description in the DCMI schemas,
+but that decision _has_ been made.
+
+So what I really wanted to do in DC CD AP was just reference this DCMI
+term (as we do for the other DCMI encoding schemes) and reproduce the
+DCMI description. But that description doesn't exist for me to reproduce
+:-( so I just did a quick one myself, essentially as a placeholder so
+that we could get the reference to ISO8601 into this draft - and maybe
+prompt the UB into publishing their decision! ;-)
+
+There is some current dialogue about this on the UB list
+
+<a href="http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0409&amp;L=dc-usage&amp;T=0&amp;F=&amp;S=&amp;P=1454">http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0409&amp;L=dc-usage&amp;T=0&amp;F=&amp;S=&amp;P=1454</a>
+
+but it really deals with a broader debate about when DCMI-created URIs
+are required and when URIs coined by other parties can be cited.
+
+I don't think there is any indication that UB are going to reverse their
+decision that ISI8601 has been adopted as a DCMI encoding scheme,
+though, and I see Tom has just posted a message seeking to separate out
+that issue and get the ISO8601 decision finalised
+
+<a href="http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0409&amp;L=dc-usage&amp;T=0&amp;F=&amp;S=&amp;P=2083">http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0409&amp;L=dc-usage&amp;T=0&amp;F=&amp;S=&amp;P=2083</a>
+
+which is good. ;-)
+
+&gt; I think we should propose DC-Date make their top priority decision be:
+&gt; "Does the W3CDTF encoding scheme include date ranges, and
+&gt; what types are included (eg. open ended)?". [NB: I will be pushing
+strongly
+&gt; on DC-Date that it _does_ include ranges.] This is probably the
+longest-standing
+&gt; issue around W3CDTF dates, and potentially could be resolved
+&gt; reasonably quickly.
+
+And I had always understood that W3CDTF does not cover date ranges, and
+we have been stretching that spec by labelling date ranges as conforming
+to W3CDTF ;-)
+
+So....
+
+&gt; Then we could remove the dcterms:ISO8601 encoding scheme (and I could
+&gt; sleep at nights ;-) ).
+&gt;
+&gt; A small extra note - the AP summary document omits W3CDTF from
+&gt; dcterms:created and cld:dateContentsCreated.
+
+.... yes, that was intentional on my part, because the expectation is
+that these will always be date ranges and (IMHO!) W3CDTF does not cover
+date ranges.
+
+But yes, I agree with you that this is something - probably, as you say,
+the single issue! - that I would have liked to see the DC Date WG
+clarify, as it is a permanent source of ambiguity and confusion, and
+just about every implementer goes over the same ground.
+
+FWIW, Andy and I also highlighted to UB recently that the definition of
+dc:date itself is ambiguous :-(
+
+<a href="http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0407&amp;L=dc-usage&amp;T=0&amp;F=&amp;S=&amp;P=1346">http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0407&amp;L=dc-usage&amp;T=0&amp;F=&amp;S=&amp;P=1346</a>
+
+<a href="http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0407&amp;L=dc-usage&amp;T=0&amp;F=&amp;S=&amp;P=1464">http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0407&amp;L=dc-usage&amp;T=0&amp;F=&amp;S=&amp;P=1464</a>
+
+Pete
+
+------------------------------------------------------------------------
+Date: Tue, 14 Sep 2004 11:17:10 +0100
+Reply-To: DCMI Collection Description Group &lt;DC-COLLECTIONS@JISCMAIL.AC.UK&gt;
+Sender: DCMI Collection Description Group &lt;DC-COLLECTIONS@JISCMAIL.AC.UK&gt;
+From: Andy Powell &lt;a.powell@UKOLN.AC.UK&gt;
+Subject: Re: ISO8601 vs W3CDTF
+To: DC-COLLECTIONS@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+On Tue, 14 Sep 2004, Pete Johnston wrote:
+
+&gt; &gt; I think we should propose DC-Date make their top priority decision be:
+&gt; &gt; "Does the W3CDTF encoding scheme include date ranges, and
+&gt; &gt; what types are included (eg. open ended)?". [NB: I will be pushing
+&gt; strongly
+&gt; &gt; on DC-Date that it _does_ include ranges.] This is probably the
+&gt; longest-standing
+&gt; &gt; issue around W3CDTF dates, and potentially could be resolved
+&gt; &gt; reasonably quickly.
+&gt;
+&gt; And I had always understood that W3CDTF does not cover date ranges, and
+&gt; we have been stretching that spec by labelling date ranges as conforming
+&gt; to W3CDTF ;-)
+
+There is nothing in
+
+<a href="http://www.w3.org/TR/NOTE-datetime">http://www.w3.org/TR/NOTE-datetime</a>
+
+to indicate that ranges are supported. I.e. none of the supported formats
+is a range. My personal view is that your 'rest of ISO8601 still applies'
+argument is unlikely to be the case - i.e. only the exact formats listed
+in the profile are allowable. But I agree that your view may be correct!
+:-)
+
+Note that this isn't an issue over which DCMI has any control. The
+W3CDTF profile is "owned" by the W3C. Therefore I would suggest that an
+email to the original authors (both listed at the top of the profile spec)
+is the best course of action at this time??
+
+Andy
+</pre>

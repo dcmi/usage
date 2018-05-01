@@ -1,0 +1,24 @@
+[2/9/2006 3:03 PM] [INFO] Now logging to <file:///e:/u/folders/2006-01-26.ubcall.log>.
+[2/9/2006 3:03 PM] [INFO] Channel view for ``#UB'' opened.
+[2/9/2006 3:03 PM] -->| YOU (TBaker) have joined #UB
+[2/9/2006 3:03 PM] <Diane> Hey guys, for a while I thought I was on the wrong line ... ;-)
+[2/9/2006 3:04 PM] <TBaker> are you on the phone??
+[2/9/2006 3:04 PM] <Diane> yes
+[2/9/2006 3:04 PM] <TBaker> uh-oh...
+[2/9/2006 3:04 PM] <sasutton> I am on the phone
+[2/9/2006 3:04 PM] <Diane> On hold, w/music
+[2/9/2006 3:04 PM] <TBaker> let me dial in again... grr....
+[2/9/2006 3:04 PM] <sasutton> Same
+[2/9/2006 3:07 PM] <TBaker> diane: roadmap document
+[2/9/2006 3:11 PM] <TBaker> propose for next telecon: RDA
+[2/9/2006 3:13 PM] <TBaker> stuart: mike crandall and he are making arrangements
+[2/9/2006 3:13 PM] <TBaker> should know more this week - arrangements with hotel nearby
+[2/9/2006 3:13 PM] <sasutton> Watertown Hotel @ http://www.watertownseattle.com/
+[2/9/2006 3:21 PM] <TBaker> ACTION: Stuart and Diane propose additional wording on 5.7.
+[2/9/2006 3:23 PM] <TBaker> Diane: principle is important: that people who did not participate in the discussion should not be able to vote
+[2/9/2006 3:26 PM] <TBaker> ACTION: Tom take out italics in Process document
+[2/9/2006 3:38 PM] *TBaker discussion about Notes and Recommendations ("DCMI recommends" is implied)
+[2/9/2006 3:39 PM] <TBaker> Diane: maybe address is Roadmap - categories of documentation - "step back and look at things"
+[2/9/2006 3:42 PM] <TBaker> ACTION: Tom consider in context of Roadmap (everyone to make suggestions)
+[2/9/2006 3:44 PM] <TBaker> Andrew: Agents working group will have AP for Mexico
+[2/9/2006 3:44 PM] <TBaker> Stuart: Education AP will be coming, but not by Mexico

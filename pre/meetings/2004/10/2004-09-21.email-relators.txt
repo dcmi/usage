@@ -1,0 +1,153 @@
+------------------------------------------------------------------------
+Date:         Fri, 17 Sep 2004 15:54:49 -0400
+From: "Rebecca S. Guenther" <rgue@LOC.GOV>
+Subject: relators
+To: DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+I am getting closer to getting the next draft of the relators out, but
+would like to run a few questions by the group.
+
+1. At one point we said that it is better to consider Creator and
+Publisher refinements of Contributor, but there was lots of disagreement
+about endorsing that so that Creator and Contributor are deprecated. I
+want to confirm that we would consider Publisher a refinement of
+Contributor in terms of putting in the statement in the RDF that Publisher
+is a subproperty of dc:contributor. I also feel that if that is the case
+we should also consider Distributor a subproperty of contributor and also
+as a subproperty of publisher.
+
+Alternative is not to make the assertion about either of them being a
+subproperty of contributor.
+
+2. I am going through the list of terms and looking at what Andy did last
+Feb. or March (just before our last meeting), where he took out some of
+the assertions. There are a few ways to do this. My feeling is that it
+would be better to take a broad view of the definition of contributor and
+only take out the subproperty assertion out where it clearly is not
+appropriate. Another approach is try to pare down the list to a more core
+set. We've discussed both of these approaches for awhile and have gone
+back and forth on them. My feeling from our last meeting is that we prefer
+to do the former, but want to see if anything had changed.
+
+Any thoughts?
+
+Rebecca
+
+------------------------------------------------------------------------
+Date:         Fri, 17 Sep 2004 21:17:15 +0100
+From: Andy Powell <a.powell@UKOLN.AC.UK>
+Subject: Re: relators
+To: DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+On Fri, 17 Sep 2004, Rebecca S. Guenther wrote:
+
+> 1. At one point we said that it is better to consider Creator and
+> Publisher refinements of Contributor, but there was lots of disagreement
+> about endorsing that so that Creator and Contributor are deprecated. I
+> want to confirm that we would consider Publisher a refinement of
+> Contributor in terms of putting in the statement in the RDF that Publisher
+> is a subproperty of dc:contributor. I also feel that if that is the case
+> we should also consider Distributor a subproperty of contributor and also
+> as a subproperty of publisher.
+
+I'm not sure how I've argued this in the past (probably both ways! :-) )
+but looking at the definitions now it seems to me that
+
+- when it is the case that a person is a dc:creator of a resource then, by
+definition, they are also a dc:contributor to the resource.  This is
+always true - therefore it is safe to make the assertion that dc:creator
+is a sub-property of dc:contributor.
+
+- when it is the case that a person is a dc:publisher of something, it is
+sometimes also true that they are a dc:contributor to it.  But this is not
+always true - therefore it is not safe to make dc:publisher a sub-property
+of dc:contributor
+
+> Alternative is not to make the assertion about either of them being a
+> subproperty of contributor.
+>
+> 2. I am going through the list of terms and looking at what Andy did last
+> Feb. or March (just before our last meeting), where he took out some of
+> the assertions. There are a few ways to do this. My feeling is that it
+> would be better to take a broad view of the definition of contributor and
+> only take out the subproperty assertion out where it clearly is not
+> appropriate.
+
+I'm not sure what you mean by 'broad' here... but, as we've discussed in
+the past, if there are any cases (even just one case!) where the assertion
+that a given property is a sub-property of dc:contributor is *false*, then
+we must not make the assertion.
+
+dc:publisher is a good example.  There are cases where the 'entity
+responsible for making the resource available' is *not* also an 'entity
+responsible for making contributions to the content of the resource' (e.g.
+if you greate a digital photograph and then give it to me to put on my Web
+site, then I am the dc:publisher but *not* a dc:contributor) - therefore
+we can *not* make the assertion that dc:publisher is a refinement of
+dc:contributor.
+
+Andy
+
+------------------------------------------------------------------------
+Date: Tue, 21 Sep 2004 12:53:20 +0200
+From: Thomas Baker <thomas.baker@bi.fhg.de>
+To: A mailing list for the Dublin Core Metadata Initiative's Usage Board <DC-USAGE@JISCMAIL.AC.UK>
+Subject: Re: relators
+------------------------------------------------------------------------
+
+On Fri, Sep 17, 2004 at 03:54:49PM -0400, Rebecca Guenther wrote:
+> 2. I am going through the list of terms and looking at what Andy did last
+> Feb. or March (just before our last meeting), where he took out some of
+> the assertions.
+
+I will include this latest exchange into the meeting packet.
+
+I have updated
+http://www.bi.fhg.de/People/Thomas.Baker/ISSUES/terms-relators/
+to try to clarify how exactly we should proceed with this
+point over the coming week, then at the meeting in Shanghai.
+
+The following actions (there are others) are particularly
+important:
+
+1.  ACTION (Andy and Rebecca): To create one document with
+    definitions and sub-property assertions for the relator terms
+    and circulate it to the UB list.  
+
+2.  ACTION (everyone): Each UB member will read through the list
+    prepared by Andy and Rebecca and sign-off on the sub-property
+    assertions.
+
+3.  ACTION (everyone; Tom): DCMI will need to make some form of
+    endorsement of the sub-property assertions.  For example,
+    the UB should assert that the Relator terms conform to the
+    DCMI model and that it agrees with the specific assertions.
+    Exactly where and how these assertions/endorsements should
+    be made remains to be clarified.
+
+4.  ACTION (Tom and Rebecca): To develop a document defining
+    the etiquette for the relationship between DCMI and LC with
+    regard to maintaining the assertions.  This document should
+    describe any relevant policies on the part of LC (analogous
+    to the DCMI Namespace Policy).
+
+I would suggest
+
+-- that Rebecca make the full list available by next Friday,
+   if possible, for inclusion in the meeting packet (Point 1);
+
+-- that we all read through the list in preparation for the
+   meeting and come prepared to "sign off" on the selection
+   (Point 2); 
+
+-- that we then discuss the form that endorsement assertions 
+   by DCMI should take (Point 3); 
+
+-- only after which would Tom and Rebecca be in a position
+   to propose an understanding between DCMI and LC regarding
+   maintenance (Point 4).
+
+Tom
+

@@ -1,0 +1,547 @@
+<PRE>
+Topic:             MARC Relator terms as sub-properties of dc:contributor
+Modified:          2004-03-22 09:41, Monday
+Maintainer:        Tom Baker
+Identifier:        <a href="/usage/meetings/2004/03/ISSUES/terms-relators/">http://dublincore.org/usage/meetings/2004/03/ISSUES/terms-relators/</a>
+See also:          <a href="/usage/meetings/2004/03/ISSUES/">http://dublincore.org/usage/meetings/2004/03/ISSUES/</a>
+
+Shepherd: Rebecca Guenther
+
+SUMMARY (Tom)
+
+This topic seems to have three threads:
+
+-- Ongoing discussion of what it really means when MARC
+   Relator terms are declared to be semantically narrower than
+   dc:contributor (see the rough-cut email excerpts below).
+
+-- Guidelines for using Agent Roles in Dublin Core -- a draft
+   prepared by Diane and Rebecca and printed in the main packet:
+   <a href="/usage/meetings/2004/03/Agent-Roles-Guidelines2.txt">http://dublincore.org/usage/meetings/2004/03/Agent-Roles-Guidelines2.txt</a>.
+
+-- The mechanics of declaring machine-processably that all
+   (or maybe just most!) Relator terms are
+   subPropertyOf dc:contributor.  The 13-page RDF schema,
+   <a href="http://www.loc.gov/marc/dc/marcrelcodes.rdf">http://www.loc.gov/marc/dc/marcrelcodes.rdf</a>, will be put
+   into the supplementary packet for reference, though the
+   nitty-gritty of the RDF encoding should be largely out of
+   scope for our discussion in Bath.
+
+
+------------------------------------------------------------------------
+Date:         Wed, 24 Sep 2003 13:25:23 -0400
+From: "Rebecca S. Guenther" &lt;rgue@LOC.GOV&gt;
+Subject: MARC relators in RDF
+To: DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+I have put up the MARC relator code list in RDF at:
+<a href="http://www.loc.gov/marc/dc/marcrelcodes.rdf">http://www.loc.gov/marc/dc/marcrelcodes.rdf</a>
+
+I read over the comments about equivalent terms and decided to do the
+following:
+
+1. All relator terms have the following:
+&lt;rdfs:subPropertyOf rdf:resource="<a href="http://purl.org/dc/terms/contributor">http://purl.org/dc/terms/contributor</a>" /&gt;
+
+Meaning that it is equivalent to dc:contributor.  
+
+    [** Note: Andy suggested that Rebecca meant to say
+    "subPropertyOf dc:contributor" here. **]
+
+2. marc.relators/cre (i.e. marc:creator) has the following statement:
+&lt;owl:equivalentProperty
+rdf:resource="<a href="http://purl.org/dc/elements/1.1/creator">http://purl.org/dc/elements/1.1/creator</a>" /&gt;
+
+This is what Roland suggested. I felt that this was better than sameAs,
+since I understood this to be a weaker equivalence. Because marc:creator
+and dc:creator have different semantics, I thought this was safer.
+
+3. I made no statement about equivalence between marc:publisher and
+dc:publisher, because the relator terms only are used when the entity
+functions as a publisher that makes contributions. dc:publisher, as has
+been pointed out, makes the resource available. This term indicates
+contributions to the resource in the context of also being a publisher. So
+marc:publisher just has the statement as above concerning its equivalence
+to dc:contributor.
+
+We can discuss this further at the UB meeting in Seattle and any other
+issues about implementing these terms as refinements of dc:contributor.
+
+FYI: the above URL will be changed at some point in the future when we set
+up a namespace for the relators.
+
+------------------------------------------------------------------------
+Date:         Mon, 7 Jul 2003 11:11:03 -0400
+From: "Diane I. Hillmann" &lt;dih1@CORNELL.EDU&gt;
+Subject: Re: Comments on Encoding Scheme registration
+To: DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+Yes, I think the important thing to remember is that we decided to
+include all roles on the LC relator list so that implementers could
+make the choice of what to use, rather than US having to anticipate
+their needs.  I think when we get to the point of expressing our
+decision and how people ought to use these terms, the idea that the
+choices are theirs needs to be made.
+
+------------------------------------------------------------------------
+Date:         Mon, 7 Jul 2003 17:52:44 +0200
+From: Roland Schwaenzl &lt;Roland.Schwaenzl@MATHEMATIK.UNI-OSNABRUECK.DE&gt;
+Subject: Re: Comments on Encoding Scheme registration
+To: DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+The issue is NOT, whether they CAN be contributors in some cases,
+but whether they ARE contributors in all possible cases.
+
+marc:publisher as you put it in NOT redundant to a
+dc:publisher.  A dc:publisher is allowed simply to make a
+resource available as is and is not a priori supposed to
+contribute to it's content.
+
+&gt; They will add other terms
+&gt; from the MARC relator list where necessary to bring out a particular role
+&gt; in relation to the resource. If they're using MARC they'll use
+&gt; marc:publisher (in the way it's used in MARC, which is as a value of a
+&gt; relator element associated with the name). My understanding is that we are
+&gt; adding these subProperty statements for machine readability, but I don't
+&gt; imagine people will get confused.
+
+Information systems will DRAW AUTOMATIC conclusions from
+subProperty relations.  It is important to get subProperty
+relations right.
+
+
+------------------------------------------------------------------------
+Date:         Mon, 16 Feb 2004 23:50:36 +0000
+From: Andy Powell &lt;a.powell@UKOLN.AC.UK&gt;
+Subject: Re: Guidelines for the use of Roles
+To: DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+On Mon, 16 Feb 2004, Diane Hillmann wrote:
+&gt; Rebecca and I have a draft to present for comment.  It lacks examples,
+&gt; which our notes suggest Andy was willing to provide.  Because we've gotten
+&gt; down to the wire (apologies), we decided to distribute the draft and see if
+&gt; we've covered the necessary ground, hoping that Andy will flog around some
+&gt; examples to be added later.
+
+There remain issues with the use of MARC relator codes - and these have
+recently surfaced on the DC Collection Description WG mailing list.
+
+The CD WG need a property to indicate the owner of the resource (in this
+case a collection).  The use of marc:own was discussed.  marc:own is
+defined to be a refinement of dc:contributor.  However, in this case, the
+owner will not necessarily have made a contribution to the collection.
+They may simply have bought the collection for example. Therefore, the WG
+will have to find an alternative to marc:own.
+
+So, two things...
+
+1) The definition of marc:own at
+
+ <a href="http://www.loc.gov/marc/dc/marcrelcodes.rdf">http://www.loc.gov/marc/dc/marcrelcodes.rdf</a>
+
+needs to make it crystal clear that in this case, 'owner' is defined to be
+an owner that has made contributions to the content of the resource.
+I.e., the defintion of marc:own should be changed to something like
+
+ The person or organization that currently owns and has made a
+ contribution to the content of the item or collection.
+
+2) In many cases WGs and other groups will have to find alternatives to
+the MARC relator codes because the restrictive definitions (as having made
+a contribution) are not intuitive and are too narrow for many uses.
+
+------------------------------------------------------------------------
+Date:         Tue, 17 Feb 2004 11:37:39 -0000
+From: Pete Johnston &lt;p.johnston@UKOLN.AC.UK&gt;
+Subject: Re: Guidelines for the use of Roles
+------------------------------------------------------------------------
+
+I was going to say I fully agree with Andy's comments below, especially
+the first point about the need to make it explicit in the textual
+definitions of these properties that they imply that the object of the
+property is an entity that contributes to the content of the resource.
+
+But looking at the list of properties more closely, it seems to me that
+there are cases where saying that they are a sub-property of
+dc:contributor introduces an element of contradiction:
+
+e.g. <a href="http://www.loc.gov/marc.relators/dub">http://www.loc.gov/marc.relators/dub</a>
+
+Label = "Dubious author"
+Comment = "A person or corporate body to which authorship has been
+dubiously or incorrectly ascribed."
+
+So in making a statement using this sproperty, on the one hand you
+assert that authorship has been dubiously or incorrectly ascribed, but
+at the same time you say that they are "An entity responsible for making
+contributions to the content of the resource" (!)
+
+Yes, I can just about see that you _can_ assert that their claim to
+_authorship_ is dubious, and also assert that they still made some other
+contribution to the content, without contradicting yourself.
+
+But in practice this seems to limit the legitimate use of the property
+to the extent that it is almost useless in any practical sense.
+
+I'm probably re-opening a can of worms, but I'll do it anyway: why is it
+necessary to declare all of these things as sub-properties of
+dc:contributor? It seems to me that many of them make perfectly useful
+properties without asserting any relationship to dc:contributor (and
+indeed asserting that relationship only serves to limit their
+usefulness).
+
+------------------------------------------------------------------------
+Date:         Tue, 17 Feb 2004 17:30:30 -0500
+From: "Rebecca S. Guenther" &lt;rgue@LOC.GOV&gt;
+------------------------------------------------------------------------
+
+I guess it's because there was the argument that if we
+use these roles with a DC element, that DC element being
+contributor, it has to refine the semantics of the element. So
+I was told we had to put that statement in for each of the role
+terms on our list (which didn't originally have anything of
+the sort). And I followed instructions, although we wouldn't
+be having these arguments about the use of the terms if they
+didn't make these assertions. So we have a list of stable,
+standardized terms for roles, but there seems to be this
+argument that we can't use them if they don't exactly fit
+in with the semantics of contributor. Maybe the way out is
+to consider the word "contributions" as broad and inclusive
+of indirect types of contributions. Maybe the problem is
+the choice of words we used for elements in the original
+DCMES. (I'm sure you'll all love that statement.)
+
+------------------------------------------------------------------------
+Date:         Tue, 17 Feb 2004 17:15:59 -0500
+From: "Rebecca S. Guenther" &lt;rgue@LOC.GOV&gt;
+Subject: Re: Guidelines for the use of Roles
+------------------------------------------------------------------------
+
+On Mon, 16 Feb 2004, Andy Powell wrote:
+
+&gt; On Mon, 16 Feb 2004, Diane Hillmann wrote:
+&gt;
+&gt; &gt; Rebecca and I have a draft to present for comment.  It lacks examples,
+&gt; &gt; which our notes suggest Andy was willing to provide.  Because we've gotten
+&gt; &gt; down to the wire (apologies), we decided to distribute the draft and see if
+&gt; &gt; we've covered the necessary ground, hoping that Andy will flog around some
+&gt; &gt; examples to be added later.
+&gt;
+&gt; There remain issues with the use of MARC relator codes - and these have
+&gt; recently surfaced on the DC Collection Description WG mailing list.
+&gt;
+&gt; The CD WG need a property to indicate the owner of the resource (in this
+&gt; case a collection).  The use of marc:own was discussed.  marc:own is
+&gt; defined to be a refinement of dc:contributor.  However, in this case, the
+&gt; owner will not necessarily have made a contribution to the collection.
+&gt; They may simply have bought the collection for example. Therefore, the WG
+&gt; will have to find an alternative to marc:own.
+
+marc:own says that it's a refinement of dc:contributor because we were
+told this had to be done to be able to use these terms.
+
+All of these terms were initially included in the relators list because an
+institution thought they played a large enough role in connection with a
+resource to warrant having access to it by that entity's name. Thus, we
+concluded that this is a form of contribution. In the case of owner, the
+relationship to the resource is that the named entity is an owner and this
+role is important to the given resource. So it is a very broad definition
+of "contributor". We don't actually call them contributors as such in
+MARC, which was what this list was defined for, but consider them making a
+contribution to the resource in an indirect way.  So for any situation
+where "owner" is the role that an entity played in the resource, it would
+be the type of resource for which ownership is important (probably rare
+material that might not be identified any other way).
+
+&gt; So, two things...
+&gt;
+&gt; 1) The definition of marc:own at
+&gt;
+&gt;  <a href="http://www.loc.gov/marc/dc/marcrelcodes.rdf">http://www.loc.gov/marc/dc/marcrelcodes.rdf</a>
+&gt;
+&gt; needs to make it crystal clear that in this case, 'owner' is defined to be
+&gt; an owner that has made contributions to the content of the resource.
+&gt; I.e., the defintion of marc:own should be changed to something like
+&gt;
+&gt;  The person or organization that currently owns and has made a
+&gt;  contribution to the content of the item or collection.
+&gt;
+&gt; 2) In many cases WGs and other groups will have to find alternatives to
+&gt; the MARC relator codes because the restrictive definitions (as having made
+&gt; a contribution) are not intuitive and are too narrow for many uses.
+
+I'm not sure I understand this comment. The MARC definitions are not
+currently so narrow (as I described above). Adding something like what you
+suggest to the definition will make them narrower than they were
+intended. That could affect existing usage and invalidate existing
+records. So I don't think we will want to narrow these definitions in
+this way.
+
+------------------------------------------------------------------------
+Date:         Thu, 19 Feb 2004 11:49:20 +0000
+From: Andy Powell &lt;a.powell@UKOLN.AC.UK&gt;
+Subject: Re: Guidelines for the use of Roles
+To: DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+On Wed, 18 Feb 2004, Pete Johnston wrote:
+
+&gt; Right. So that narrowness is _not_ present in the initial MARC relator
+&gt; definitions. I wasn't clear whether it was or not.
+
+Good.  I'm glad that we seem to have clarified this at last.
+
+&gt; But making the statement (as the declaration sof the RDF properties do):
+&gt;
+&gt; marcrel:own rdfs:subPropertyOf dc:contributor .
+&gt;
+&gt; does effectively generate this narrowing, I think.
+
+Yes, that's right.  Declaring some of these relators as being
+sub-properties of dc:contributor does narrow their intended semantics.
+
+&gt; Well, strictly speaking, what it says is, every time I say:
+&gt;
+&gt; _x marcrel:own _y . (Resource x has-an-owner Entity y)
+&gt;
+&gt; I also imply:
+&gt;
+&gt; _x dc:contributor _y .  (Resource x has-an-entity-that-made-a
+&gt; contribution-to-the content Entity y)
+&gt;
+&gt; Which I don't think you really want to say.
+
+Agreed.
+
+&gt; I take your point that you can argue that the entities related to a
+&gt; resource by a MARC relator property do "make a contribution" to the
+&gt; resource in the very general sense you describe above. But (it seems to
+&gt; me) they do not necessarily do so in the specific sense of
+&gt; dc:contributor.
+
+Agreed.
+
+&gt; Now we might well argue that's a problem with the definition of
+&gt; dc:contributor (as I think you suggest in your subsequent message). But
+&gt; working on the basis of the current definition of dc:contributor, it
+&gt; seems to me that stating the subproperty relation creates an undesirable
+&gt; result in many cases.
+
+Agreed.
+
+&gt; So it seems to me the problem is with the constraint that:
+&gt;
+&gt; &gt; marc:own says that it's a refinement of dc:contributor
+&gt; &gt; because we were told this had to be done to be able to use
+&gt; &gt; these terms.
+
+Well, somewhere along the line, this whole process seems to have got very
+confused... which is all water under the bridge, so probably best
+forgotten?
+
+The important thing to recognise is that the MARC properties can be used
+irrespective of whether or not they refine DC properties.  And indeed,
+they become much more useful if they are not tied to DC properties in an
+inappropriate way.
+
+&gt; It seems to me that it makes perfect sense to describe some of these
+&gt; relator terms as refinements of dc:contributor, but for others it does
+&gt; not. And that decision has to be taken on a case-by-case basis not on a
+&gt; one-rule-for-all. But even for those relator terms that are not
+&gt; refinements of dc:contributor, it's still useful for LoC to declare them
+&gt; as RDF properties so that applications can use them: they just have
+&gt; nothing to do with dc:contributor. That's OK, isn't it?
+
+Yes.  So... I think the best course of action is to go thru the current
+LoC RDF schema declaration for these terms and do the following:
+
+- remove rdfs:subPropertyOf assertions where it is not appropriate, e.g.
+  for marc:own
+- add explicit owl:samePropertyAs assertions w.r.t. dc:creator,
+  dc:publisher and dc:contributor (there are one or two of these but I
+  suspect there could be more, e.g. marc:aut == dc:creator)
+
+Then we'll have a much more useful set of new properties that don't make
+wrong or confusing assertions about their relationship to existing DC
+properties... and which then can be used by other initiatives like the DC
+Collection Description WG.
+
+Is there any reason not to change the RDFS in this way?  I am happy to
+have a stab at making the changes to the LoC RDFS, but probably better for
+someone at LoC to do it.
+
+------------------------------------------------------------------------
+Date:         Thu, 19 Feb 2004 09:45:30 -0500
+From: "Rebecca S. Guenther" &lt;rgue@LOC.GOV&gt;
+Subject: Re: Guidelines for the use of Roles
+------------------------------------------------------------------------
+
+So, to clarify, if you have a MARC relator term that is NOT a refinement
+of Contributor, then you just use it without any relation to a DC term? We
+don't have this problem with semantics in either MARC or MODS because the
+element we use it with is called "name", which is much broader than DC
+creator or contributor. In other words, DC has no element that is a name
+associated with a resource, but those elements stipulate specific roles
+related to the resource that are inherent in their semantics. I guess this
+is really the problem. I haven't been following the collection description
+work, but if there were a resource description and you wanted to include
+the owner, you would use DC elements for everything except that and use
+marc:own (or whatever we decide) for the owner's name?
+
+I think what Andy suggests is appropriate. I could work with Andy to do
+this. Andy, let's talk about how best to get this accomplished.
+
+------------------------------------------------------------------------
+Date:         Thu, 19 Feb 2004 15:11:33 +0100
+From: Roland Schwaenzl &lt;Roland.Schwaenzl@MATHEMATIK.UNI-OSNABRUECK.DE&gt;
+Subject: Re: Guidelines for the use of Roles
+------------------------------------------------------------------------
+
+&gt; Yes, that's right.  Declaring some of these relators as being
+&gt; sub-properties of dc:contributor does narrow their intended semantics.
+
+If the intended semantics is as aluded to above, the
+declaration is counter productive and will yield unexpected
+results in retrieval (narrow minded people would say "wrong
+results").
+
+I'm kind of surprised to read that the MARC relators have a
+broader semantics.  When we discussed the issue last time
+concerns i had were dismissed on the basis, that narrower
+semantics is understood, just not explicitly stated till now.
+
+&gt; &gt; Well, strictly speaking, what it says is, every time I say:
+&gt; &gt;
+&gt; &gt; _x marcrel:own _y . (Resource x has-an-owner Entity y)
+&gt; &gt;
+&gt; &gt; I also imply:
+&gt; &gt;
+&gt; &gt; _x dc:contributor _y .  (Resource x has-an-entity-that-made-a
+&gt; &gt; contribution-to-the content Entity y)
+&gt; &gt;
+&gt; &gt; Which I don't think you really want to say.
+
+The information given previously was exactly opposite.
+
+&gt; &gt; Now we might well argue that's a problem with the definition of
+&gt; &gt; dc:contributor (as I think you suggest in your subsequent message).
+
+When you want to have a different semantics go ahead, provide a
+definition for a new dc term and advertise it.
+
+&gt; Well, somewhere along the line, this whole process seems to have got very
+&gt; confused... which is all water under the bridge, so probably best
+&gt; forgotten?
+
+Back to A ?
+
+&gt; The important thing to recognise is that the MARC properties can be used
+&gt; irrespective of whether or not they refine DC properties.  And indeed,
+&gt; they become much more useful if they are not tied to DC properties in an
+&gt; inappropriate way.
+
+We have to take care of the dc vocabulary. We can say,
+we find the asserted relation inappropriate and suggest to delete it.
+
+&gt; &gt; But even for those relator terms that are not
+&gt; &gt; refinements of dc:contributor, it's still useful for LoC to declare them
+&gt; &gt; as RDF properties so that applications can use them: they just have
+&gt; &gt; nothing to do with dc:contributor.
+
+Certainly it is useful to have well coined and structured
+vocabularies for use in RDF.
+
+It's our bussiness to further promote DC vocabulary in this area.
+
+&gt; Yes.  So... I think the best course of action is to go thru the current
+&gt; LoC RDF schema declaration for these terms and do the following:
+&gt;
+&gt; - remove rdfs:subPropertyOf assertions where it is not appropriate, e.g.
+&gt;   for marc:own
+&gt; - add explicit owl:samePropertyAs assertions w.r.t. dc:creator,
+&gt;   dc:publisher and dc:contributor (there are one or two of these but I
+&gt;   suspect there could be more, e.g. marc:aut == dc:creator)
+
+Not to use owl "sameAs"  we decided previously.
+
+
+
+------------------------------------------------------------------------
+Date:         Fri, 20 Feb 2004 10:21:13 -0000
+From: Pete Johnston &lt;p.johnston@UKOLN.AC.UK&gt;
+Subject: Re: Guidelines for the use of Roles
+To: DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+The relevant paragraph is here
+
+<a href="http://www.w3.org/TR/2004/REC-owl-ref-20040210/#equivalentProperty-def">http://www.w3.org/TR/2004/REC-owl-ref-20040210/#equivalentProperty-def</a>
+
+NOTE: Property equivalence is not the same as property equality.
+Equivalent properties have the same "values" (i.e., the same property
+extension), but may have different intensional meaning (i.e., denote
+different concepts). Property equality should be expressed with the
+owl:sameAs construct. As this requires that properties are treated as
+individuals, such axioms are only allowed in OWL Full.
+
+But I'm not at all sure I understand the distinction being made.
+
+Roland, could you maybe explain the distinction with some examples of
+what it would mean if we used owl:equivalentProperty and what it would
+mean if we used owl:sameAs please?
+
+------------------------------------------------------------------------
+Date:         Mon, 16 Feb 2004 23:36:31 +0000
+From: Andy Powell &lt;a.powell@UKOLN.AC.UK&gt;
+Subject: Re: Guidelines for the use of Roles
+To: DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+On Mon, 16 Feb 2004, Diane Hillmann wrote:
+&gt; Rebecca and I have a draft to present for comment.  It lacks examples,
+&gt; which our notes suggest Andy was willing to provide.  Because we've gotten
+&gt; down to the wire (apologies), we decided to distribute the draft and see if
+&gt; we've covered the necessary ground, hoping that Andy will flog around some
+&gt; examples to be added later.
+
+XHTML
+-----
+
+&lt;link rel="schema.DC" href="<a href="http://purl.org/dc/elements/1.1/">http://purl.org/dc/elements/1.1/</a>" /&gt;
+&lt;link rel="schema.MARC" href="<a href="http://www.loc.gov/marc.relators/">http://www.loc.gov/marc.relators/</a>" /&gt;
+
+&lt;meta name="DC.title" content="Reichstag" /&gt;
+&lt;meta name="MARC.arc" content="Sir Norman Foster" /&gt;
+
+XML
+---
+
+&lt;?xml version="1.0"?&gt;
+
+&lt;metadata
+  xmlns:dc="<a href="http://purl.org/dc/elements/1.1/">http://purl.org/dc/elements/1.1/</a>"
+  xmlns:marc="<a href="http://www.loc.gov/marc.relators/">http://www.loc.gov/marc.relators/</a>"&gt;
+  &lt;dc:title&gt;Reichstag&lt;/dc:title&gt;
+  &lt;marc:arc&gt;Sir Norman Foster&lt;/marc:arc&gt;
+&lt;/metadata&gt;
+
+RDF/XML
+-------
+
+&lt;?xml version="1.0"?&gt;
+
+&lt;rdf:RDF
+  xmlns:rdf="<a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#">http://www.w3.org/1999/02/22-rdf-syntax-ns#</a>"
+  xmlns:dc="<a href="http://purl.org/dc/elements/1.1/">http://purl.org/dc/elements/1.1/</a>"
+  xmlns:marc="<a href="http://www.loc.gov/marc.relators/">http://www.loc.gov/marc.relators/</a>"&gt;
+  &lt;rdf:Description rdf:about=""&gt;
+    &lt;dc:title&gt;Reichstag&lt;/dc:title&gt;
+    &lt;marc:arc&gt;Sir Norman Foster&lt;/marc:arc&gt;
+  &lt;/rdf:Description&gt;
+&lt;/rdf:RDF&gt;
+
+</PRE>

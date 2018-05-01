@@ -1,0 +1,162 @@
+Task: Identify which questions are still really 
+      frequently asked.  For those questions, prepare bullet points 
+      proposing current answers.  Propose an answer to the 
+      frequently asked question about the difference between 
+      dc:creator and dcterms:creator.
+
+DONE - http://dublincore.org/resources/faq/
+NOT DONE - http://www.ukoln.ac.uk/metadata/dcmi/mixing-matching-faq/
+
+    ----------------------------------------------------------------------
+    Yes -  1. What is metadata?
+    The simplest definition of metadata is " structured data about data."
+    Metadata is descriptive information about a resource whether it be physical or 
+    electronic. The underlying concepts behind metadata have been in use for as 
+    long as collections of information have been organized. Library card catalogs 
+    represent a well-established example of metadata for resource discovery.
+    Metadata can be generated either "by hand" or derived automatically using 
+    software.
+
+    ----------------------------------------------------------------------
+    No -  2.  Where is the metadata on the Dublin Core website? [does 
+    anybody actually ask this?]
+    No -  3.  What is a resource?
+    No -  4.  What is resource discovery? 
+    No - 5.  What is the Dublin Core Metadata Initiative? [this is on the 
+    homepage, who on earth would miss that!]
+
+    ----------------------------------------------------------------------
+    Yes - 6. What is the Dublin Core?
+    The Dublin Core Metadata Initiative develops and maintains specifications in 
+    support of resource description. These include the DCMI Metadata Terms, 
+    which includes the classic Dublin Core Metadata Element Set, the DCMI Type 
+    Vocabulary, and resource classes used as formal domains and ranges, along 
+    with supporting documents, usage guides, the Dublin Core Abstract Model and 
+    other model-related specifications, and a set of syntax guidelines for encoding 
+    Dublin Core in HTML, XML and RDF.
+    Further information: http://dublincore.org/documents/
+
+    ----------------------------------------------------------------------
+    No -  7.  What is the Dublin Core Metadata Element Set? 
+
+    ----------------------------------------------------------------------
+    Change - to "Why use Dublin Core?" 8.  Who can benefit from
+    using the Dublin Core Metadata Element Set?  Dublin Core offers
+    a means of describing resources in a standard way.  It is
+    particularly useful where interoperability with other systems is
+    important.
+
+    ----------------------------------------------------------------------
+    Change - to 'What is Simple Dublin Core?' 
+    9.  What is the difference between "Simple" ("unqualified") and "Qualified" Dublin Core? 
+    "Simple" Dublin Core refers to the Dublin Core Metadata Element Set Version 
+    1.1, a set of 15 metadata properties for describing resources.
+    Further information: http://dublincore.org/documents/dcmi-terms/
+
+    ----------------------------------------------------------------------
+    Add - "What is 'Qualified' Dublin Core?"
+
+    The phrase "Qualified" Dublin Core is a legacy term often used to refer to the 
+    extended set of properties now maintained by Dublin Core. 
+
+    ----------------------------------------------------------------------
+    Add - what are Dublin Core Application Profiles?
+
+    In current practice, Dublin Core is more focussed on the development of 
+    "application profiles" than on registering new metadata properties. A Dublin 
+    Core Application Profile defines metadata records which meet specific 
+    application needs while providing semantic interoperability with other 
+    applications on the basis of globally defined vocabularies and models.
+    Further information: http://dublincore.org/documents/profile-guidelines/
+
+    ----------------------------------------------------------------------
+    No -   10.  Should I use Simple or Qualified Dublin Core? 
+    No -  11.  How do I begin implementing the Dublin Core Metadata Element Set?
+
+    ----------------------------------------------------------------------
+    Yes - 12.  What is the relationship between the DCMI and other Internet 
+    standards groups? [keep text if this is this still correct?]
+
+    ----------------------------------------------------------------------
+    No -  13.  Was the Dublin Core intended to be used only for digital or 
+    Web-based resources? 
+    No - 14.  How is Dublin Core metadata used? 
+
+    ----------------------------------------------------------------------
+    Yes - 15.  How is Dublin Core metadata stored? 
+    Dublin Core can be stored as part of the HTML header of a web resource, as an 
+    XML or RDF document, or can be mapped into a database structure.
+
+    ----------------------------------------------------------------------
+    Change to - "Can I embed Dublin Core metadata within my HTML 
+    documents?" 16.  How can I embed Dublin Core metadata within my HTML documents? 
+    Yes. See http://dublincore.org/documents/dc-html/
+
+    ----------------------------------------------------------------------
+    No - 17.  What is the relationship between Dublin Core Metadata and RDF and XML? 
+
+    ----------------------------------------------------------------------
+    Change - to "What is the Dublin Core Abstract Model" 18.  What is the 
+    Dublin Core data model? 
+    The Dublin Core Abstract Model (DCAM) specifies the components and 
+    constructs used in Dublin Core metadata. It defines the nature of the 
+    components used and describes how those components are combined to create 
+    information structures. It provides an information model which is independent 
+    of any particular encoding syntax. 
+    Further information: http://dublincore.org/documents/abstract-model/
+
+    ----------------------------------------------------------------------
+    No - 19.  How do I participate in discussions about the Dublin Core? 
+    No - 20.  What is the maximum length for each field in Dublin Core? 
+    No - 21.  What is an attribute-value pair? 
+    No - 22.  What is the Warwick Framework? 
+    No - 23.  What search-engines support the Dublin Core? 
+
+    ----------------------------------------------------------------------
+    Change - to "Can I add a new property to Dublin Core Metadata Terms?"
+    24.  Can I add a new element to Dublin Core? [a. yes, but you don't 
+    necessarily have to, just declare it]
+
+    New properties can be formally considered by the Dublin Core Usage Board, 
+    although creators of  Dublin Core Application Profiles are free to define and 
+    declare their own metadata properties, or to use properties from existing 
+    schemes.
+
+    Section 2.5 of the following document specifies what constitutes a "valid"
+    metadata property: http://dublincore.org/documents/profile-review-criteria/
+
+    ----------------------------------------------------------------------
+    No -  25.  What is the Open Metadata Registry? 
+    No - 26.  How do I store proper names in Dublin Core? 
+    ? - 27.  DCMI Intellectual Property FAQ 
+
+    ----------------------------------------------------------------------
+    Yes -  28.  What is the "Dumb-Down" Principle? 
+    [This needs discussion]
+
+    ----------------------------------------------------------------------
+    Change - to "Can I use controlled vocabularies for different metadata 
+    properties?" - 29.  How can I use existing controlled vocabularies for DC 
+    Subject metadata? 
+    Yes. DCMI registers a number of vocabularies in DCMI Metadata Terms: 
+    http://dublincore.org/documents/dcmi-terms/
+
+    ----------------------------------------------------------------------
+    Change - to "Can I use vocabularies that are not approved by DCMI?" -
+    30.  Can I use controlled vocabularies that are not approved by DCMI? 
+    Yes. DCMI has registered registers a number of vocabularies but does not aim 
+    to register all possible vocabularies. There are, of course, many others that are 
+    equally legitimate, and it has always been our intent that communities of 
+    expertise be able to leverage the value of such existing schemes in their 
+    metadata. To promote interoperability, it is recommended that application 
+    designers review registered controlled vocabularies for one that may be 
+    suitable for their application.
+
+    ----------------------------------------------------------------------
+    Yes -  31.  What are the DCMI Namespaces?
+    Text as is
+
+    ----------------------------------------------------------------------
+    Add - "What is the difference between dcterms:creator and dc:creator?"
+    [I don't know what the answer is]
+

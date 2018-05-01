@@ -1,0 +1,63 @@
+---
+title: 
+date: '2017-09-01T16:21:09+01:00'
+description: 
+draft: false
+creators: []
+contributors: []
+publisher: 
+tags: []
+---
+
+<pre>
+Title: Encoding Scheme for "NLM Classification"
+Identifier: <a href="/usage/meetings/2004/10/ISSUES/nlm/">http://dublincore.org/usage/meetings/2004/10/ISSUES/nlm/</a>
+See also: <a href="/usage/meetings/2004/10/ISSUES/">http://dublincore.org/usage/meetings/2004/10/ISSUES/</a>
+Created: 2004-09-14
+Agenda frozen: 2004-10-02 07:25, Saturday
+Archived: 2004-11-10
+Maintainer: Tom Baker
+Note: If any of the links below are broken, please refer to 
+                   the meeting packet
+                   (<a href="/usage/meetings/2004/10/Meeting-packet.pdf">http://dublincore.org/usage/meetings/2004/10/Meeting-packet.pdf</a>) 
+                   for copies of the key documents discussed at the meeting.
+
+Shepherd: Rebecca
+
+2004-05-19. Diane Boehr of NLM inquired about "getting the
+NLM classification to be one of the approved qualifiers"
+for dc:subject. In response, Andy explained how one could
+name one's own encoding scheme with a URI and use that URI
+in XML encodings without having to "register" it with DCMI.
+However, Tom thought she was asking how DCMI might somehow
+recognize ("approve" or "recommend") such an NLM URI, which
+suggested alternative actions such as the following:
+
+-- alert DC-General (once);
+-- record the fact on Traugott's planned Web page;
+-- review the assertion in UB and endorse or recommend it in some form;
+-- record that assertion in a machine-processable form so that the
+   endorsement of the NLM term shows up in our Web documents and RDF
+   schemas;
+-- ensure that the term appears in the DCMI Registry.
+-- There is also an option of using the LC source code list that
+   includes a value for NLM classification; and LC has said they
+   would define URIs for all the values on these lists.
+
+Rebecca spoke with Diane Boehr in June, and it would seem
+NLM simply wants to have a DCMI-maintained encoding scheme
+designating the NLM classification.
+
+The email exchange above is summarized in 
+<a href="http://www.bi.fhg.de/People/Thomas.Baker/public/2004-06-23.email-digest.txt">http://www.bi.fhg.de/People/Thomas.Baker/public/2004-06-23.email-digest.txt</a>.
+
+In Shanghai, we need to decide what to do about this in the
+context of a broader discussion of how the Usage Board will
+henceforth handle Encoding Schemes now that DCMI has decided
+not to operate a Web-based "registration" service [1,2,3]
+
+[1] <a href="/usage/meetings/2004/10/registration/">http://dublincore.org/usage/meetings/2004/10/registration/</a>
+[2] <a href="/usage/meetings/2004/10/process/">http://dublincore.org/usage/meetings/2004/10/process/</a>
+[3] <a href="/usage/meetings/2004/10/iso8601/">http://dublincore.org/usage/meetings/2004/10/iso8601/</a>
+
+</pre>

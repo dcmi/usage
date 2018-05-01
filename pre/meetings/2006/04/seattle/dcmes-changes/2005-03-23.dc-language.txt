@@ -1,0 +1,42 @@
+----------------------------------------------------------------------
+Date: Wed, 23 Mar 2005 09:37:56 +0100
+From: Thomas Baker <thomas.baker@bi.fhg.de>
+To: DCMI Usage Board <dc-usage@jiscmail.ac.uk>
+Subject: Problem with comment for dc:language?
+----------------------------------------------------------------------
+
+Dear all,
+
+We received this comment from Martin Dürst of W3C about the Comment for
+dc:language.
+
+Tom
+
+
+On Tue, Mar 22, 2005 at 06:09:08PM -0500, duerst@w3.org wrote:
+> Submitter Name: Martin Dürst
+> Submitter Email: duerst@w3.org
+> Feedback Type: Comment
+> 
+> This is a comment about http://dublincore.org/documents/dces/,
+> in particular Element Name: Language. It currently says:
+> 'Recommended best practice is to use RFC 3066 .... Examples include "en" or "eng" for English...'. This should be fixed.
+> "eng" is not valid in RFC 3066; RFC 3066 clearly says that
+> if there is a two-letter and a three-letter code for a
+> language, the two-letter code MUST be used.
+> 
+> Regards,   Martin.
+
+----------------------------------------------------------------------
+Date:         Wed, 23 Mar 2005 08:51:33 -0000
+Reply-To: "A mailing list for the Dublin Core Metadata Initiative's Usage              Board" <DC-USAGE@JISCMAIL.AC.UK>
+Sender: "A mailing list for the Dublin Core Metadata Initiative's Usage              Board" <DC-USAGE@JISCMAIL.AC.UK>
+From: Andrew Wilson <andrew.c.wilson@AHDS.AC.UK>
+Subject: Re: Problem with comment for dc:language?
+To: DC-USAGE@JISCMAIL.AC.UK
+----------------------------------------------------------------------
+
+Well he's right. RFC 3066 says quite explicitly that you must use a 2 letter
+code from ISO 639-1 unless the language only has a 3 letter code. We need to
+change the comment .
+

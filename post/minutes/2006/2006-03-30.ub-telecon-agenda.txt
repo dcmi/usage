@@ -1,0 +1,59 @@
+----------------------------------------------------------------------
+Date: Wed, 29 Mar 2006 12:49:57 +0200
+From: Thomas Baker <tbaker@tbaker.de>
+To: DCMI Usage Board <dc-usage@jiscmail.ac.uk>
+Subject: [DC-USAGE] Telecon Thu 2006-03-30
+
+Dear all,
+
+We have a telecon scheduled for tomorrow afternoon.
+The telecon agenda will be to discuss the agenda for the
+Seattle meeting (I want to circulate a PDF packet by Thursday,
+6 April).
+
+I am still working on this (sorry) and will circulate shortly
+before the call.  During the call, I will want to make sure
+we have slots for all current issues, an estimate of how much
+time is needed for each, and we should set overall priorities.
+
+Note that Central Europe is on Summer Time, so Berlin is
+one hour later than usual (16:00) and UK is 15:00.  I have
+double-checked the times for Tokyo, Seattle, and East Coast
+and believe they they are 23:00, 06:00, and 9:00 respectively.
+If anyone knows otherwise, please post...!
+
+Tom
+
+              Usage Board telecon 
+              2006-03-30 Thu 1400 UTC (1600 Berlin, 0600 Seattle, 2300 Tokyo)
+
+              See dialing instructions below
+              For IRC, type "/join #UB" on the chat line at:
+              -- irc://irc.ukoln.ac.uk/ or
+              -- http://dev.ukoln.ac.uk/irc
+
+----------------------------------------------------------------------
+Dialing instructions
+    1) Dial: local country number (http://www.sprintbiz.com/intlaudio)
+       -- Germany  0800-181-2311
+       -- UK       0800-032-0634
+       -- Japan    00531-13-0842 "KDD Only"
+       -- US       888-448-7101
+       -- US       888-448-7101
+    2) Outside the US, you hear: "Welcome... Please enter your 10-digit..."
+       Type: 888-448-7101#
+    3) You hear: "Please enter..."
+       Type:     764-6081#
+----------------------------------------------------------------------
+IRC: Note that port 6667 needs to be open between your client and
+     the server.  Your firewall may need to be opened slightly and/or
+     port-blocking settings in your virus/security tool may need to be
+     changed.  You can always re-set your nickname with "/nick YourName".
+
+
+-- 
+Dr. Thomas Baker                                 tbaker@tbaker.de
+Director, Specifications and Documentation
+Dublin Core Metadata Initiative
+
+

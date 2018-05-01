@@ -1,0 +1,45 @@
+---
+title: 
+date: '2017-09-01T16:21:09+01:00'
+description: 
+draft: false
+creators: []
+contributors: []
+publisher: 
+tags: []
+---
+
+<pre>
+Topic: Editorial changes to definitions and labels
+Identifier: <a href="/usage/meetings/2005/09/madrid/property-definitions/">http://dublincore.org/usage/meetings/2005/09/madrid/property-definitions/</a>
+Main agenda: <a href="/usage/meetings/2005/09/madrid/">http://dublincore.org/usage/meetings/2005/09/madrid/</a>
+Modified: 2005-09-04 16:10, Sunday
+
+Shepherd: Andy Powell
+
+Changes to DCMI property definitions and comments have been
+proposed [1]. In addition, a change to the comment for
+dc:date has been discussed by the DCMI Date Working Group
+[3] -- see related Madrid topic, "Issues related to dc:date".
+
+In Madrid, we should carefully review these changes and
+"approve" them in a provisional sense. After folding this set
+of changes together with the proposed changes to the DCMI Type
+Vocabulary, all of the changes would be posted to DC-GENERAL
+for a comment period before a final vote for approval is held.
+
+Please review:
+
+[1] Proposed changes to DCMI property definitions
+65 <a href="http://www.ukoln.ac.uk/twiki/bin/view/Metadata/ProposedPropertyDefinitions">http://www.ukoln.ac.uk/twiki/bin/view/Metadata/ProposedPropertyDefinitions</a>
+
+[2] Digest of discussion in August 2005:
+70 <a href="/usage/meetings/2005/09/madrid/files/2005-08-25.definition-changes-digest.txt">http://dublincore.org/usage/meetings/2005/09/madrid/files/2005-08-25.definition-changes-digest.txt</a>
+
+[3] Proposed change to the comment for dc:date, explicitly recognizing ranges
+84 <a href="/usage/meetings/2005/09/madrid/files/2005-07-29.date-comment.txt">http://dublincore.org/usage/meetings/2005/09/madrid/files/2005-07-29.date-comment.txt</a>
+
+[4] List of possible changes as of May 2005 (for comparison)
+85 <a href="/usage/meetings/2005/09/madrid/files/2005-05-13.definition-changes.txt">http://dublincore.org/usage/meetings/2005/09/madrid/files/2005-05-13.definition-changes.txt</a>
+
+</pre>

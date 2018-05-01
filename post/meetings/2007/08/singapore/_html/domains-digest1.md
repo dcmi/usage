@@ -1,0 +1,254 @@
+---
+title: 
+date: '2017-09-01T16:21:09+01:00'
+description: 
+draft: false
+creators: []
+contributors: []
+publisher: 
+tags: []
+aliases:
+- "/usage/meetings/2007/08/singapore/_html/domains-digest1.html"
+---
+
+<pre>
+----------------------------------------------------------------------
+2007-06-29 DCMI &amp; Non-Literal Resources - "Pete Johnston" &lt;Pete.Johnston@eduserv.org.uk&gt;
+
+To respond to Alistair's question about what it is we're trying to
+achieve, and to try to explain how we've got to where we are, my
+understanding is as follows:
+
+(i) The initial motivation for assigning domains/ranges - as stated by
+Tom in the announcement [1] - was to make explicit to applications
+reading the RDFS data what was already implicit to humans reading the
+human-readable comments (e.g. when I make a statement - any statement -
+using dcterms:creator, the value is an Agent).
+
+This seems to be quite in line with Alistair's remindeer that we should
+"assign ranges to license inferencing". (There's probably an argument
+that there's not a great deal of value in allowing a consumer to infer
+that a value is an "AccrualMethod" without getting any more info about
+the relationships of that class to any other classes, but apart from
+that, I don't think there's a problem there.)
+
+(ii) At this point we didn't care too much if we said that a property
+had a range of rdfs:Resource (or we left the range unspecified) and
+allowed for values to be either literals or non-literals (and we changed
+the DCAM description model so that for any individual statement it is
+unambiguous whether the value is a literal or not.)
+
+Having said that, I think in some cases we really did intend to specify
+that a property should be used only with a "non-literal resource" as
+value (e.g. I think this is the case for dcterms:relation and its
+subproperties). _However_ taking Alistair's point about inferencing v
+enforcing consistency, then maybe the latter is an example of wanting to
+enforce consistency, and using rdfs:range is not the way to do that. (I
+guess the exception where rdfs:range could work in this way would be
+when an XML Schema datatype I used as a range? e.g. a datatype-aware
+application could detect that "xyz" wasn't in the lexical space of
+xsd:int.) 
+
+Also, defining a class called dcterms:NonLiteralResource and saying in
+human-readable terms "This is a class of everything except literals" and
+using that as a range doesn't in itself do much good: either an
+application needs some "built-in knowledge" about that class or we need
+to be able to say in machine-processable terms, "This class excludes
+literals" and we need OWL constructs to say that.
+
+(Aside: Doesn't this apply for all the other classes too? i.e. how do I
+know the class dcterms:Agent excludes literals? If we say
+
+dcterms:creator rdfs:range dcterms:Agent .
+
+and I find
+
+document:D dcterms:creator "Fred" .
+
+Does an "RDFS-aware" application see a "contradiction" there? Probably
+not?
+
+But if we say
+
+dcterms:date rdfs:range rdfs:Literal .
+
+and I find
+
+document:D dcterms:date period:FirstWorldWar .
+period:FirstWorldWar rdfs:label "First World War" .
+period:FirstWorldWar some:start "1914"^^xsd:date .
+period:FirstWorldWar some:end "1918"^^xsd:date .
+
+then it would?)
+
+(iii) Then in the course of the public comment period on the first
+proposal, the new question of OWL-DL compatability was raised. And it
+was suggested that allowing a single property to take either literal
+values in or non-literal values was problematic, at least from an OWL-DL
+perspective.
+
+So at their last meeting, the DCMI Usage Board tried to decide for each
+property whether it should take literal values or non-literal values. 
+
+I think we're saying that while this is a worthwhile - and probably
+necessary - exercise, trying to express the results of that exercise
+using rdfs:range is not the right thing to do. For checking consistency
+in OWL-DL, we really need to type properties as owl:DatatypeProperty or
+owl:ObjectProperty (which is what I see the FOAF folk seem to have
+done), and that may even involve defining some "parallel" properties
+(e.g. description as object and description as literal).
+
+So I think in the short term, I think we're saying we should
+
+- for those cases where we were going to specify range = "Non-Literal
+Resource", leave them as range = rdfs:Resource (no range specified)
+- note that we haven't addressed the OWL-DL compatability problem
+
+[1] <a href="http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0702&amp;LUe-ARCHITECTURE&amp;P=291">http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0702&amp;LUe-ARCHITECTURE&amp;P=291</a>
+
+----------------------------------------------------------------------
+2007-07-15 From: Mikael Nilsson &lt;mikael@nilsson.name&gt;
+
+fre 2007-06-29 klockan 12:40 +0100 skrev Pete Johnston:
+&gt; Having said that, I think in some cases we really did intend to specify
+&gt; that a property should be used only with a "non-literal resource" as
+&gt; value (e.g. I think this is the case for dcterms:relation and its
+&gt; subproperties). _However_ taking Alistair's point about inferencing v
+&gt; enforcing consistency, then maybe the latter is an example of wanting to
+&gt; enforce consistency, and using rdfs:range is not the way to do that. (I
+&gt; guess the exception where rdfs:range could work in this way would be
+&gt; when an XML Schema datatype I used as a range? e.g. a datatype-aware
+&gt; application could detect that "xyz" wasn't in the lexical space of
+&gt; xsd:int.)  
+
+Well, I must say I disagree with Alistairs view that rdfs:range and
+rdfs:domain are *only* used to enable inferencing. Even according to the
+RDF Primer [1]:
+
+"RDF Schema also provides vocabulary for describing how properties and
+classes are intended to be used together in RDF data."
+
+"The rdfs:domain property is used to indicate that a particular property
+applies to a designated class."
+
+"This schema-supplied information might be used in different ways. One
+application might interpret this statement as specifying part of a
+template for RDF data it is creating, and use it to ensure that any
+ex:author property has a value of the indicated (ex:Person) class. That
+is, this application interprets the schema description as a constraint
+in the same way that a programming language might. However, another
+application might interpret this statement as providing additional
+information about data it is receiving, information which may not be
+provided explicitly in the original data. For example, this second
+application might receive some RDF data that includes an ex:author
+property whose value is a resource of unspecified class, and use this
+schema-provided statement to conclude that the resource must be an
+instance of class ex:Person. A third application might receive some RDF
+data that includes an ex:author property whose value is a resource of
+class ex:Corporation, and use this schema information as the basis of a
+warning that "there may be an inconsistency here, but on the other hand
+there may not be". Somewhere else there may be a declaration that
+resolves the apparent inconsistency (e.g., a declaration to the effect
+that "a Corporation is a (legal) Person")."
+
+Thus, ranges are indeed *intended* to convey an idea of how the property
+is *intended* to be used.
+
+&gt; Also, defining a class called dcterms:NonLiteralResource and saying in
+&gt; human-readable terms "This is a class of everything except literals" and
+&gt; using that as a range doesn't in itself do much good: either an
+&gt; application needs some "built-in knowledge" about that class or we need
+&gt; to be able to say in machine-processable terms, "This class excludes
+&gt; literals" and we need OWL constructs to say that. 
+
+That does not mean that it's useless. It just means that not all
+application will be able to use it as a consistency check. But the
+explicit *intention* has still been documented. 
+&gt; 
+&gt; (Aside: Doesn't this apply for all the other classes too? i.e. how do I
+&gt; know the class dcterms:Agent excludes literals? If we say
+&gt; 
+&gt; dcterms:creator rdfs:range dcterms:Agent .
+&gt; 
+&gt; and I find
+&gt; 
+&gt; document:D dcterms:creator "Fred" .
+&gt; 
+&gt; Does an "RDFS-aware" application see a "contradiction" there? Probably
+&gt; not? 
+
+It can conclude that dcterms:Agent rdfs:subClassOf rdfs:Literal, I
+suppose.
+
+&gt; But if we say
+&gt; 
+&gt; dcterms:date rdfs:range rdfs:Literal .
+&gt; 
+&gt; and I find
+&gt; 
+&gt; document:D dcterms:date period:FirstWorldWar .
+&gt; period:FirstWorldWar rdfs:label "First World War" .
+&gt; period:FirstWorldWar some:start "1914"^^xsd:date .
+&gt; period:FirstWorldWar some:end "1918"^^xsd:date .
+&gt; 
+&gt; then it would?)
+
+No. It would just conclude 
+
+period:FirstWorldWar rdf;type rdfs:Literal
+
+:-/
+
+&gt; I think we're saying that while this is a worthwhile - and probably
+&gt; necessary - exercise, trying to express the results of that exercise
+&gt; using rdfs:range is not the right thing to do. For checking consistency
+&gt; in OWL-DL, we really need to type properties as owl:DatatypeProperty or
+&gt; owl:ObjectProperty (which is what I see the FOAF folk seem to have
+&gt; done), and that may even involve defining some "parallel" properties
+&gt; (e.g. description as object and description as literal).
+
+I don't see why we can't do
+
+dcterms:NonLiteralResource a rdfs:Class ;
+   rdf:comment "The class of resources which are not literals" ;
+   owl:disjointWith rdfs:Literal .
+
+Together with
+
+dcterms:Agent rdf:type dcterms:NonLiteralResource.
+
+and
+
+document:D dcterms:creator "Fred" .
+
+we would get
+
+document:D dcterms:creator _:x .
+_:x rdf:type rdfs:Literal
+
+and 
+_:x rdf:type dcterms:Agent
+
+and thus a contradiction.
+
+What's wrong with that?
+
+&gt; So I think in the short term, I think we're saying we should
+&gt; 
+&gt; - for those cases where we were going to specify range = "Non-Literal
+&gt; Resource", leave them as range = rdfs:Resource (no range specified)
+
+I don't agree. Based on this discussion, I really feel we *should*
+introduce the NonLiteral class.
+
+&gt; - note that we haven't addressed the OWL-DL compatability problem 
+
+As far as I understood it, this is more a case of ontologies needing to
+declare the properties locally as ObjectProperty or DatatypeProperty. A
+property cannot be both *in one ontology*. Right?
+
+/Mikael
+
+[1] <a href="http://www.w3.org/TR/rdf-primer/">http://www.w3.org/TR/rdf-primer/</a>
+
+</pre>

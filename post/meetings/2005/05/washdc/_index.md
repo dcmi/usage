@@ -1,0 +1,63 @@
+---
+title: 
+date: '2017-09-01T16:21:09+01:00'
+description: 
+draft: false
+creators: []
+contributors: []
+publisher: 
+tags: []
+---
+
+<pre>
+Topic: Agenda for Usage Board meeting, Washington DC, 19-20 May 2005
+Identifier: <a href="/usage/meetings/2005/05/washdc/">http://dublincore.org/usage/meetings/2005/05/washdc/</a>
+Created: 2005-05-13
+Modified: 2005-05-16 17:28, Monday
+Maintainer: Tom Baker
+
+     2005-05-19: 10:00-12:00 (2 hours)
+   
+     01. Accessibility [Tom]
+         <a href="/usage/meetings/2005/05/washdc/topic-accessibility/">http://dublincore.org/usage/meetings/2005/05/washdc/topic-accessibility/</a>
+   
+     2005-05-19: 13:00-17:30 (4 hours)
+   
+     02. DCMI Extension Namespaces and review of application profiles [Tom]
+         <a href="/usage/meetings/2005/05/washdc/topic-profiles/">http://dublincore.org/usage/meetings/2005/05/washdc/topic-profiles/</a>
+   
+     03. Review of Collection Description Application Profile [all]
+         <a href="/usage/meetings/2005/05/washdc/topic-profiles-collection/">http://dublincore.org/usage/meetings/2005/05/washdc/topic-profiles-collection/</a>
+   
+     04. Review of Library Application Profile [Tom]
+         <a href="/usage/meetings/2005/05/washdc/topic-profiles-libraries/">http://dublincore.org/usage/meetings/2005/05/washdc/topic-profiles-libraries/</a>
+   
+     2005-05-20: 9:00-12:00 (2+ hours)
+   
+     05. MARC relator terms - 1.5 hours [Rebecca]
+         <a href="/usage/meetings/2005/05/washdc/topic-relators/">http://dublincore.org/usage/meetings/2005/05/washdc/topic-relators/</a>
+   
+     06. dc:language - 30 min [Rebecca]
+         <a href="/usage/meetings/2005/05/washdc/topic-language-comment/">http://dublincore.org/usage/meetings/2005/05/washdc/topic-language-comment/</a>
+   
+     07. Type vocabulary - 1 hr [Stuart]
+         <a href="/usage/meetings/2005/05/washdc/topic-type-vocabulary/">http://dublincore.org/usage/meetings/2005/05/washdc/topic-type-vocabulary/</a>
+   
+     2005-05-20: 13:00-17:30 (4 hours)
+   
+     08. Process Document - 30-45 min [Stuart, Diane]
+         <a href="/usage/meetings/2005/05/washdc/topic-process/">http://dublincore.org/usage/meetings/2005/05/washdc/topic-process/</a>
+   
+     09. Using Dublin Core and AskDCMI - 30 min [Diane]
+         <a href="/usage/meetings/2005/05/washdc/topic-userguide/">http://dublincore.org/usage/meetings/2005/05/washdc/topic-userguide/</a>
+   
+     10. Madrid meeting [Tom]
+         <a href="/usage/meetings/2005/05/washdc/topic-madrid/">http://dublincore.org/usage/meetings/2005/05/washdc/topic-madrid/</a>
+   
+     11. Definitions and Labels - 1 hour? - or Madrid... [Andy]
+         <a href="/usage/meetings/2005/05/washdc/topic-definitions-labels/">http://dublincore.org/usage/meetings/2005/05/washdc/topic-definitions-labels/</a>
+   
+     12. Encoding scheme types - 1 hour? - or Madrid... [Andy]
+         <a href="/usage/meetings/2005/05/washdc/topic-encoding-scheme-types/">http://dublincore.org/usage/meetings/2005/05/washdc/topic-encoding-scheme-types/</a>
+   
+</pre>

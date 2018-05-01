@@ -1,0 +1,224 @@
+------------------------------------------------------------------------
+Date: Tue, 9 Mar 2004 16:40:05 -0500 (EST)
+From: Rebecca S. Guenther <rgue@loc.gov>
+To: Andy Powell <a.powell@ukoln.ac.uk>
+Cc: dih1@cornell.edu
+Subject: IMPORTANT: Roles
+------------------------------------------------------------------------
+
+Here are my comments on your markup and where I do and don't agree. We've
+had some previous email on the question of the narrowness of semantics in
+dc:contributor. Your answer concerning the value of core vs. some of these
+more specific roles that are outside core is well taken. But I still argue
+that what is a contributor is in the mind of the beholder; i.e. it depends
+upon what sort of resource you are describing. If in the legal field, the
+plaintiff may be a contributor if it is a transcript of the proceedings. I
+could argue that for almost everything on the list. Also, I didn't think
+you were consistent in your assessment (not that it was an easy job!). So
+here are those that I don't entirely agree with:
+
+Applicant: if the resource were an application for something, this would
+certainly be a contributor.
+
+Attributed name: "Use to relate an author, artist, etc. to a work for
+which there is or once was substantial authority for designating that
+person as author, creator, etc. of the work."
+This says it is possibly a contributer, although it is not certain, so
+should be a refinement of contributor.
+
+Auctioneer: what if the resource is a list of items to be
+auctioned; the auctioneer would have contributed.
+
+Bibliographic antecedent: "Use for the author responsible for a work upon
+which the work represented by the catalog record is based. This may be
+appropriate for adaptations, sequels, continuations, indexes, etc."
+The only reason I could see for you not considering this as contributor is
+the 1:1 principle, but I don't think you can control how people are
+describing these works. We already know that there is lots of controversy
+about that. Certainly the "bibliographic antecedent" played a role in the
+creation of the resource.
+
+Client: "a person or organization for whom another person of organization
+is acting"
+This is what is used e.g. for the owner of a house that an architect
+designed. I would certainly think the client would have input in that
+design so would consider a contributor.
+
+Complainant: "Use for the party who applies to the courts for redress,
+usually in an equity proceeding."
+I won't list all of the legal terms that are in this document, but for any
+of them, if the resource is the proceeding itself, I would consider them
+contributors to the content of the resource. You have excluded all of the
+legal terms (and there are lots of them).
+
+Contractor: Often the contractor does all the intellectual work.
+
+Copyright claimant: if the resource is a copyright registration, then this
+and copyright holder would be contributors.
+
+Dedicator: Use for the author of a dedication, which may be a formal
+statement or in epistolary or verse form.
+If some famous person wrote the dedication, I would bet you would want to
+consider him a contributor-- it is part of the intellectual content,
+although perhaps a small part.
+
+Degree grantor: wouldn't that institution have provided much that
+contributed to the intellectual content? Can you imagine all these theses
+and dissertation projects not being able to call the institution a
+contributor??
+
+Distributor: should this be a subProperty of publisher? (or maybe we're
+not making these associations)
+
+Expert: "Use for a person in charge of the description and appraisal of
+the value of goods, particularly rare items, works of art, etc. "
+What if an art catalog of some sort?
+
+Under funder: The part highlighted as being incomplete I can remove-- it
+was part of a reference that should not be there.
+
+Monitor: "Use for a person or organization that supervises compliance with
+the contract and is responsible for the report and controls its
+distribution. Sometimes referred to as the grantee, or controlling
+agency."
+This you indicated was refinement of contributor, but why this and not
+others that don't have a direct contribution?
+
+Opponent: "Use for the person or corporate body responsible for opposing a
+thesis or dissertation."
+You have this one as contributor, but not, e.g. degree grantor.
+
+Other: this is our extension mechanism. I can understand why you wouldn't
+want it to be included.
+This does bring up to me how we will maintain this document if we start
+removing terms. But I guess that's our problem.
+
+Patent applicant and patent holder: same as copyright; what if the
+resource is a description of the patent?
+
+Patron: why this and not client? Seem to be similar roles.
+
+Publisher: should this be a subProperty of Contributor, since creator is?
+
+Witness: you've included this one as contributor, but none of the other
+legal terms (which I would argue should all be included).
+
+This exercise brings up the question:
+
+Are we creating a "core" list of roles? Previous discussion said no, we
+don't want to do that. Application profiles can do that.
+or
+Are we just saying that the term does or does not refine contributor? But
+then you have to think broadly what the possible resource could be which
+is being described.
+
+This exercise again says to me that maybe it isn't best to decide for
+others what they want to consider as contributors, since it depends on
+what they're describing.
+
+So where do we go from here? If you want to comment on those above, I'll
+just accept it and update the document. My argument for some not mentioned
+above was the need for access to the resource from the name whose role is
+the term from this list. You answered that by saying use the term as one
+from the marc namespace. I'll accept that, although I still question
+whether we should be doing this. It also means that for any new roles that
+we propose adding to our MARC list, we will have to bring it to the UB to
+see if it refines contributor, rather than just automatically adding? This
+will make maintenance a bit of a headache.
+
+Sorry for the length of this message and being such a pain. Copied to
+Diane so that she can comment. If we can come to some conclusion right
+away I can revise on Wed.-- leaving Thurs. night (I'll be in the office
+for most of Thurs.).
+
+Rebecca
+
+On Mon, 23 Feb 2004, Andy Powell wrote:
+
+> On Thu, 19 Feb 2004, Rebecca S. Guenther wrote:
+>
+> > If you do the first, will you also attempt to evaluate whether the given
+> > term is a refinement of dc:contributor? That seems to me what will take
+> > the most time. That approach is fine with me if that's what you meant. I
+> > would then see if I agree. In the meantime I might look at the list and
+> > independently try to assess which should be contributor and which not.
+>
+> My first attempt is at
+>
+> http://www.ukoln.ac.uk/metadata/dcmi/marcrel/codes.xml
+>
+> Note that it addition to removing subproperty of dc:contributor in quite a
+> few cases, I have also done the following
+>
+> - marcrel:cre --euqivalentproperty--> dc:creator
+> - marcrel:aut --euqivalentproperty--> dc:creator
+> - marcrel:pbl --euqivalentproperty--> dc:publisher
+> - marcrel:dpc --subpropertyof-------> dc:subject
+>
+> And I've corrected the URL for dc:contributor throughout! :-)
+>
+> I've checked this file still validates.
+>
+> Andy.
+>
+
+------------------------------------------------------------------------
+Date:         Wed, 10 Mar 2004 21:28:46 -0000
+From: Pete Johnston <p.johnston@UKOLN.AC.UK>
+Subject: Re: IMPORTANT: Roles (fwd)
+To: DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+Rebecca,
+
+> Here are my comments on your markup and where I do and don't
+> agree. We've had some previous email on the question of the
+> narrowness of semantics in dc:contributor. Your answer
+> concerning the value of core vs. some of these more specific
+> roles that are outside core is well taken. But I still argue
+> that what is a contributor is in the mind of the beholder;
+> i.e. it depends upon what sort of resource you are
+> describing. If in the legal field, the plaintiff may be a
+> contributor if it is a transcript of the proceedings. I could
+> argue that for almost everything on the list. Also, I didn't
+> think you were consistent in your assessment (not that it was
+> an easy job!). So here are those that I don't entirely agree with:
+
+[snip]
+
+> This exercise again says to me that maybe it isn't best to
+> decide for others what they want to consider as contributors,
+> since it depends on what they're describing.
+
+Just to clarify.... by declaring a property example:role a sub-property
+of dc:contributor, we are saying that:
+
+If you state
+
+_x example:role _y
+
+then (in all cases) I can infer that
+
+_x dc:contributor _y
+
+so we should only make the sub-property assertion where that rule holds
+in all cases.
+
+Now, if example:role is _not_ declared as a sub-property of
+dc:contributor I can't draw the conclusion above. _However_, it doesn't
+stop you saying (where appropriate) that both
+
+_x example:role _y
+
+and
+
+_x dc:contributor _y
+
+i.e. it doesn't mean an agent who is a plaintiff can't also be a
+contributor; it just means I can't infer that all plaintiffs are
+contributors. Which is what we want, I think?
+
+(I think maybe it's a bit confusing to think of these properties as
+"roles": they describe relationships between a resource and an
+entity/agent, just as the dc:contributor property does.)
+

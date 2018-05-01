@@ -1,0 +1,37 @@
+----------------------------------------------------------------------
+2006-03-31
+
+The DCMI Usage Board announces the beginning of a comment
+period for a number of editorial revisions to labels,
+definitions and comments for the original 15 elements, plus
+revisions to definitions and comments for several of the
+terms in the DCMIType Vocabulary.  
+
+Recognizing the problems inherent in a decade-long legacy
+of practice, the Board has undertaken a general cleanup and
+reconciliation of terminology, capitalization, and style
+that had accumulated since the submission of the original 15
+elements for standardization within NISO and ISO.  
+
+In addition, improvements of definitional conformance to the
+1:1 rule were included, in particular, the elimination of the
+usage of the wording "content of a resource" which appeared to
+undercut the rule.  
+
+Some changes were made to reduce overlap of definitions, based
+on experiences of implementers and the confusion that had been
+noted in application as the continuing refinement of terms
+tended to highlight anomalies and problems in definitions.
+
+In reviewing and suggesting changes in these areas, the Usage
+Board hopes to create a more solid foundation for moving
+forward with Application Profiles and improved metadata
+description as well as to reflect our improved understanding
+of the needs of current and prospective implementors.
+
+Comments from the community are encouraged, both in general
+concerning the changes as a whole and on particular changes. To
+comment on individual changes, please separate the comments
+into individual messages to enable clearer threading on the
+list archive.
+

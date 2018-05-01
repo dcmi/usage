@@ -1,0 +1,47 @@
+------------------------------------------------------------------------
+Date:         Thu, 12 May 2005 10:41:26 +0100
+From: Andy Powell <a.powell@UKOLN.AC.UK>
+Subject: Vocabulary Encoding Scheme vs Syntax Encoding Scheme - summary
+To: DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+Summing up previous discussion, the test for whether a term is a syntax
+encoding scheme or a vocabulary encoding scheme is as follows:
+
+- if the term defines a set of strings, either by enumerating them or by
+   providing a rule for building them, the the term is a syntax encoding
+   scheme
+
+- if the term defines a class of values (not strings) , then the term is a
+   vocabulary encoding scheme.
+
+Therefore, we get the following:
+
+Box             Syntax
+DCMIType        Vocabulary
+DDC             Vocabulary
+IMT             Vocabulary
+ISO3166         Vocabulary
+ISO639-2        Vocabulary
+LCC             Vocabulary
+LCSH            Vocabulary
+MESH            Vocabulary
+Period          Syntax
+Point           Syntax
+RFC1766         Syntax
+RFC3066         Syntax
+TGN             Vocabulary
+UDC             Vocabulary
+URI             Syntax
+W3CDTF          Syntax
+
+Note that I've previously argued that RFC1766 and RFC3066 are vocabulary
+encoding schemes, but the RFCs specifically state that they define a set
+of 'tags', which I can't interpret in any other way than as an enumerated
+list of stings - therefore they are both syntax encoding schemes according
+to the above rule.
+
+The key difference between syntax and vocabulary encoding schemes is their
+place in the abstract model.  Syntax encoding schemes relate to 'value
+strings' - vocabulary encoding schemes relate the the 'value' (resource).
+

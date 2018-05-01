@@ -1,0 +1,48 @@
+Title:         DCMI Usage Board administrative process
+Identifier:    http://stage.dublincore.org/usage/meetings/2006/04/seattle/ub-process/index.shtml
+
+Discussants: Stuart and Diane
+
+[1] http://dublincore.org/usage/documents/process/
+[2] http://stage.dublincore.org/usage/meetings/2006/04/seattle/ub-process/2006-02-23.process-ub-voting.txt
+
+A revised process document was published on 2006-02-13 [1].
+Subsequently, there was some discussion on the rules for voting
+-- whether people who did not participate in a face-to-face
+discussion should nonetheless have a vote [2] -- after which
+we agreed on a telecon to leave the wording vague for now.
+
+On 2006-03-30, Stuart had an action item to write up a
+paragraph regarding UB process for revising the UB process
+document -- a statement regarding how that process document
+itself is revised so that there is something to point to should
+questions of process arise.  Attached is a strawman section 10
+for the _DCMI Usage Board Administrative Processes_ document
+[1]:
+
+    10. Revisions to Usage Board processes
+
+    10.1.  Purpose of process revisions.  Usage Board
+    processes are revised and new versions of the _DCMI
+    Usage Board Administrative Processes_ document published
+    from time-to-time: (a)  to clarify and correct process
+    statements in the _DCMI Usage Board Administrative
+    Processes_ document; (b) as the result of evolving
+    knowledge and practice; (c) to conform to the evolving
+    mission of DCMI; and (d) on request of the Board of
+    Trustees or the DCMI Directorate.
+
+    10.2.  Managing process revisions.  The processes of
+    revising Usage Board processes and the _DCMI Usage Board
+    Administrative Processes_ document are informal, ongoing
+    and managed by the Chair of the Usage Board.
+
+    10.3. Documenting Usage Board processes.  All revisions
+    to Usage Board processes are reflected here in the _DCMI
+    Usage Board Administartive Processes_ document.
+
+    10.4. Communicating process revisions.  Substantive
+    revisions to the _DCMI Usage Board Administrative
+    Processes_ document are announced on DC-General and other
+    appropriate DCMI discussion lists.
+

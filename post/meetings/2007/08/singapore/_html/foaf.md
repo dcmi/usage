@@ -1,0 +1,134 @@
+---
+title: 
+date: '2017-09-01T16:21:09+01:00'
+description: 
+draft: false
+creators: []
+contributors: []
+publisher: 
+tags: []
+aliases:
+- "/usage/meetings/2007/08/singapore/_html/foaf.html"
+---
+
+<pre>
+Title: FOAF
+Identifier: <a href="http://stage.dublincore.org/usage/meetings/2007/08/singapore/.html/foaf.html">http://stage.dublincore.org/usage/meetings/2007/08/singapore/.html/foaf.html</a>
+Created: 2007-07-19
+
+----------------------------------------------------------------------
+2007-08-18 From: Andrew Wilson &lt;andrew.wilson@NAA.GOV.AU&gt;
+
+Couple of things about the meeting packet. I
+inadvertently reversed the order of references 7 and
+8. Tom, could you please change them around on the page at:
+<a href="http://stage.dublincore.org/usage/meetings/2007/08/singapore/.html/foaf.html">http://stage.dublincore.org/usage/meetings/2007/08/singapore/.html/foaf.html</a>.
+Ie. The URL at reference 7 should actually be at reference
+8 and vice versa. Thanks.
+
+I know I gave quite a lot of references for this topic, probably too
+much for people to read in practice. I'm not sure that there is much
+point in actually including the FOAF specification as I suspect people
+won't have time to read it. Maybe Tom can just provide the URL without
+actually including the document in the meeting packet? Can we include in
+the packet the draft functional requirements document, the assessment of
+FOAF against the FR, and Dan's short paper on describing agents with
+FOAF, as well as the excerpt from the ePrints application profile
+referred to by Andy and which is included in Tom's first email about the
+meeting packet? I think that should be more than sufficient.=20
+
+Re Topic 4:
+
+This is about exploring the viability of using FOAF as the DCMI
+recommendation for describing agents associated with the resources
+described by DCMI description sets. I hope that at the UB meeting we can
+answer the following questions:
+1. Is the Agents FR document adequate for the needs of the DCMI
+community?
+2. How well does FOAF meet the Agents FR? Is the ePrints AP work
+relevant and useful?
+3. Is FOAF/ePrints adequate and appropriate for describing agents as
+part of DC description sets?
+4. If the answer to 3 is 'yes', what needs to be done to make
+FOAF/ePrints useable?
+
+The basic minimum reading required for this topic is the
+Agents FR draft [1], Dan's assessment of FOAF against the
+draft FR [2], and the relevant section of the ePrints AP
+[3]. It would be really helpful if the UB could also read
+Dan's introduction to using FOAF [4] but I think we can manage
+without it if they don't.
+
+[1] <a href="http://dublincore.org/groups/agents/agentFRdraft2-2.html">http://dublincore.org/groups/agents/agentFRdraft2-2.html</a>
+[2] <a href="http://dublincore.org/agentswiki/FoafReview">http://dublincore.org/agentswiki/FoafReview</a>
+[3] <a href="http://www.ukoln.ac.uk/repositories/digirep/index/EPrints_Application_Profile#Description_of_an_Agent">http://www.ukoln.ac.uk/repositories/digirep/index/EPrints_Application_Profile#Description_of_an_Agent</a>
+    <a href="http://stage.dublincore.org/usage/meetings/2007/08/singapore/Eprints-excerpt.pdf">http://stage.dublincore.org/usage/meetings/2007/08/singapore/Eprints-excerpt.pdf</a>
+[4] <a href="http://rdfweb.org/mt/foaflog/archives/2003/07/10/12.05.33/">http://rdfweb.org/mt/foaflog/archives/2003/07/10/12.05.33/</a>
+
+----------------------------------------------------------------------
+2007-07-18 - from Andrew
+
+The Agents Task Group, which consists of myself, Tom Baker, and Dan
+Brickley, was set up following DC2006 to progress work on developing a
+method for describing Agents as part of DC description sets. There are a
+number of unresolved work items waiting to be completed and Tom and I
+think the best chance to make progress would be to discuss the Friend Of
+A Friend (FOAF) and Agents requirements at the UB meeting in Singapore.
+It would be a great help if you could all come to Singapore prepared to
+discuss the Agent description issues. The Agents TG has its own Wiki [1]
+which includes the workplan and links to existing documents.
+
+I'd like to set aside 60 minutes on the Singapore UB Agenda to discuss
+the agents work. The discussion must start from the basic position that
+it is not feasible for DCMI to develop a new set of properties to
+describe Agents. Although there is a lot of interest in the Community in
+how to describe agents there has been virtually no interest shown in
+contributing to the work of the Group. So, if the UB decide that FOAF
+does not meet our agent description requirements then we will need to
+seriously consider the future of our agents work.
+
+Before the older Agents Working Group was dissolved [2] we agreed that
+the best way forward was to develop an AP using existing properties [3].
+Dan Brickley has been interested for some time in moving FOAF closer to
+the DCMI community and proposed that it be investigated by DCMI as a
+metadata schema for describing agents in DC description sets. Dan has
+recently done a comparison [6] of the Agents requirements, as
+articulated some years ago [4], and the FOAF specification [5]. A brief
+discussion about identifying things using FOAF at [7], written a few
+years ago by Dan B., will also be a good introduction to some of the
+issues. These documents should prepare you discuss whether FOAF is an
+adequate and appropriate mechanism for describing agents as part of DCMI
+description sets. FOAF is purely an RDF vocabulary so we need to discuss
+what consequences this would have for implementors should we agree to
+recommend FOAF.
+
+It is important to understand how agent descriptions are linked to
+resource descriptions in description sets. A very helpful presentation
+on 'Agents and the DCAM' was given by Andy Powell to the Agents WG at
+the Madrid Conference [8].
+
+Finally, it might be informative if you have time to also consider the
+work that IFLA is doing on Authority files in the draft Functional
+requirements for Authority data [9].
+
+My hope is that we finish the UB meeting with agreement on the following
+issues:
+
+1. Is the Agents FR document adequate?
+2. How well does FOAF meet the Agents FR?
+3. Is FOAF adequate and appropriate for describing agents as part of DC
+   description sets?
+4. If the answer to 3 is 'yes', what needs to be done to make FOAF
+   useable?
+
+[1] <a href="http://dublincore.org/agentswiki/FrontPage">http://dublincore.org/agentswiki/FrontPage</a>
+[2] <a href="http://dublincore.org/groups/agents/">http://dublincore.org/groups/agents/</a>
+[3] <a href="http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0510&amp;L=dc-agents&amp;P=154">http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0510&amp;L=dc-agents&amp;P=154</a>
+[4] <a href="http://dublincore.org/groups/agents/agentFRdraft2-2.html">http://dublincore.org/groups/agents/agentFRdraft2-2.html</a>
+[5] <a href="http://xmlns.com/foaf/spec/">http://xmlns.com/foaf/spec/</a>
+[6] <a href="http://dublincore.org/agentswiki/FoafReview">http://dublincore.org/agentswiki/FoafReview</a>
+[7] <a href="http://rdfweb.org/mt/foaflog/archives/2003/07/10/12.05.33/">http://rdfweb.org/mt/foaflog/archives/2003/07/10/12.05.33/</a>
+[8] <a href="http://dublincore.org/groups/agents/dc2005_dc-agents-meeting.ppt">http://dublincore.org/groups/agents/dc2005_dc-agents-meeting.ppt</a>
+[9] <a href="http://www.ifla.org/VII/d4/FRANAR-ConceptualModel-2ndReview.pdf">http://www.ifla.org/VII/d4/FRANAR-ConceptualModel-2ndReview.pdf</a>
+
+</pre>

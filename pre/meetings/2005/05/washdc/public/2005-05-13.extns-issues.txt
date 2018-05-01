@@ -1,0 +1,93 @@
+Some Issues Related to DCMI Extension Namespaces
+
+2005-05-13
+
+-- "Documentation clutter":  If terms are going to "expire"
+   (i.e. cease to be actively maintained) at some point, we 
+   would want to have some way to present a view of the
+   "fresh" terms.
+
+-- Maintenance: The SKOS vocabulary is maintained directly
+   in RDF, which is used to generate Web pages.  We should 
+   perhaps look into this as a method for maintaining EXT-NS
+   terms, or perhaps even share tools with the SKOS community.
+
+-- Scope Statement: There is an old action on Andrew to draft
+   a Scope Statement: what are the boundaries and criteria for
+   inclusion of terms in DCMI (i.e. what 'resource discovery'
+   and 'cross-domain' means in practice), to be included
+   in UB Mission and Principles, UB Process, or elsewhere.
+   Is this still relevant?
+
+-- Status of "Conforming": In March 2004 in Bath, we reaffirmed
+   that the Usage Board can assign the the status of
+   "conforming" to an Application Profile based on a
+   significantly more thorough review focused on elements
+   and element refinements at the point of review.  The AP
+   designated as "conforming" (i.e., a snapshot of the AP
+   document at the time reviewed) would be archived on the
+   DCMI Website.  Changes to the AP should result in a new
+   AP and resubmission to the UB (i.e., for new "time stamp").
+
+-- To batch or not to bach.  The DCMI Extension Namespaces
+   proposal is deliberately in the plural - "namespaces".
+   The idea is that batches of terms will be subject to 
+   maintenance by different communities or organizations.
+   Putting all terms into one big would make it less 
+   convenient to divide up maintenance responsibility.
+
+-- Naming (URIs) - base URI.  The DCMI Extension Namespaces
+   need a base URI; the current preference is to
+   use something based on http: //dublincore.org/,
+   such as http://dublincore.org/extension/ or http:
+   //dublincore.org/ext/.  However, the argument has been made
+   that, for consistency, http: //purl.org/ should be used.
+
+-- Naming (URIs) - sub-namespace URI.  Given that
+   the DCMI Extension Namespaces will be subdivided into 
+   "sub-namespaces" with separately maintained batches of 
+   terms, then the question is how to name those batches.
+   In theory, URIs are opaque.  In practice, however, people
+   do try to interpret the strings used in a URI.  We should
+   therefore be careful to choose names that do not convey
+   misleading notions.  Some possibilities:
+      
+   a) To use strings such as "dccdwg", as in:
+      http://dublincore.org/ext/dccdwg/.
+
+   b) To assign a "time-stamped" base URI to a working 
+      group, e.g., http://dublincore.org/extra/2005/09/
+      for Collection Description WG.  Advantage: avois
+      strings which reflect the origins of a batch
+      of terms in a particular working group or activity.  
+
+   c) To number the extension namespaces sequentially:
+      http://dublincore.org/ext/01/ - for collection description
+      http://dublincore.org/ext/02/ - for libraries
+
+-- Use of the term "Namespace".  DCMI needs to be clear as
+   to whether a DCMI Namespace is "a collection of URIs"
+   (i.e., the generally accepted notion that a "anemspace"
+   is a "set of names") or "a collection of terms identified
+   by URIs" -- and at any rate not an XML namespace.  DCMI --
+   but not necessarily the Usage Board -- would need to use
+   the term "namespace" consistently in the Abstract Model
+   and the Namespace Policy.  For example:
+
+        DCMI namespace
+
+        A collection of 'term names' (i.e. 'term URIs')
+        where each term is assigned a URI that starts with
+        the same 'base URI'.  The 'base URI' is known as the
+        'DCMI namespace URI'.  (Note that a 'DCMI namespace'
+        is not the same as an 'XML namespace').
+
+        Note that the grouping of 'term names' into a 'DCMI
+        namespace' is orthogonal to the grouping of 'terms'
+        into a 'DCMI vocabulary'.  'Term names' are grouped
+        into 'DCMI namespaces' in order to ease the assignment
+        of URIs to 'terms' and to streamline their use in
+        particular encoding syntaxes.  'Terms' are grouped into
+        'DCMI vocabularies' in order to meet a functional need.
+
+

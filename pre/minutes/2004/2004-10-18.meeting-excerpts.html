@@ -1,0 +1,157 @@
+<PRE>
+DC Usage Board Meeting in Shanghai - summary
+
+Abstract Model
+
+*   For each of the currently recommended encoding schemes
+    we need to determine if it is a syntax encoding scheme or
+    a vocabulary encoding scheme.
+
+*   Agreed to consider re-wording the definitions
+    of current elements to make them more consistent with the
+    abstract model.
+
+Versioning of DCMI 'term descriptions'
+
+*   Agreed to continue the current practice of treating
+    the DCMI description of a DCMI term as a discrete
+    'bundle of attributes' that is assigned a new URI each
+    time anything in that 'bundle' is updated.
+
+Attributes for describing DCMI Terms ("UB application profile")
+
+*   Agreed that we need to
+
+    o   EITHER re-use existing OWL/RDFS terms and create new
+        UB-specific terms (in UB namespaces - 'UB terms', 'UB term
+        types', 'UB encoding scheme types' and 'UB status types')
+        to describe all DCMI terms
+
+    o   OR liaise with ISO11179 about re-using their terms
+        (which requires them assigning URIRefs for those terms and
+        have an underlying RDF model).
+
+MARC Relator Terms
+
+*   Approved set of circa 100 MARC Relator terms as
+    sub-properties of dc:contributor.  Model: Library of 
+    Congress asserts the sub-property relationship and
+    Usage Board endorses those assertions.
+
+*   DCMI needs an RDF-based mechanism for recording UB's
+    endorsement of each LoC assertion.
+
+*   Need to consider future possibilities for giving a
+    status of 'Conforming' to terms in external namespaces.
+
+Element Refinement document
+
+*   Agreed to publish Pete's explanation of element refinement 
+    as a 'recommended resource'.
+
+Element proposal: Accessibility
+
+*   Approved "Accessibility" as Recommended element.
+
+*   Definition: A description of the
+    qualities of the resource in terms of control, display
+    and content that can be used to match the needs and
+    preferences of a user.
+
+Term proposals: Collection Description
+
+*   Approved the following as "conforming" elements:
+
+    accrualMethod
+    accrualPeriodicity
+    accrualPolicy
+
+*   Unable to approve or reject proposals for 3 DC-CD
+    controlled vocabularies.  Defer decision, pending clarification
+    about the ongoing maintenance of the vocabularies.  Suggest
+    that WG consider possible options for future maintenance.
+    Seek clarification from the Board of Trustees about the role
+    of DCMI (and the DC UB) in the maintenance of controlled
+    vocabularies.
+
+Term proposal: Education 
+
+*   Approved conforming element Instructional Method:
+    'A process, used to engender knowledge, attitudes and
+    skills, that the resource is designed to support'.
+
+Future term proposal: NLM
+
+*   Agreed we will, in principle, accept a proposal for
+    'NLM' as a vocabulary encoding scheme with a DCTERMS URI
+
+*   Expectation that this will be the last proposal to
+    assign a DCMI URI to an external vocabulary.
+
+*   Need to develop a policy, process, mechanism and
+    documentation for endorsing non-DCMI encoding scheme URIs
+    (same endorsement mechanism as for endorsing non-DCMI
+    properties) and develop guidelines to help external
+    organisations/people declare URIs for non-DCMI vocabulary
+    encoding schemes (to note that preference is for owners
+    to declare URIs for their own vocabularies).  Note impact
+    on status of 'Registered' in current UB Process document.
+
+*   Need to flag existing encoding scheme documentation
+    on the DCMI Web site (and the registration tool) as 
+    obsolete.
+
+ISO 8601
+
+*   Agreed to register a new syntax encoding scheme called
+    'dcterms:ISO8601Basic' and add comment indicating that some
+    value strings that conform to ISO8601Basic will not be valid
+    value strings for dc:date (e.g. '15.30').
+
+*   Further discussion at Shanghai conference (e.g., Date
+    Working Group) suggests that this should be subject to 
+    careful review before the decision is finalized.
+
+Type vocabulary definitions and comments
+
+*   Need to tidy up editorial inconsistencies and send
+    to dc-usage list for signing off.
+
+Definition of dc:date
+
+*   Proposed re-definition: 'A date (or date and time),
+    including a range, of an event in the lifecycle of the
+    resource'.  Suggest this to the DC Date WG as a new definition
+    of dc:date and ask for their comments.
+
+*   Subsequent discussion in Shanghai has raised the possibility
+    that the problem with the definition could be handled with
+    a comment.
+
+Review of application profiles
+
+*   Need to ask the Board of Trustees to clarify the
+    commitment and mechanism that DCMI has for maintaining the
+    application profiles that are developed by DC WGs.
+
+Preservation policy for DCMI documentation
+
+*   Agreed that the PDF version of the meeting packet is
+    sufficient for preservation purposes.
+
+DCX Proposal
+
+*   DCMI does not host experimental or short term
+    namespaces.
+    
+What is Simple Dublin Core?
+
+*   Some discussion about what 'simple DC' means but no
+    real consensus reached.  
+
+AskDCMI and FAQ
+
+*   Some discussion about 'issues' and updates to the
+    AskDCMI system, but no decisions made due to lack of time.
+
+</PRE>

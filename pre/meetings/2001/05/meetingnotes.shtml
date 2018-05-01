@@ -1,0 +1,412 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US"
+xml:lang="en-US">
+  <head>
+    <meta name="generator" content="HTML Tidy, see www.w3.org" />
+
+    <title>DCMI Usage Board - Meeting Notes (2001-05-21)</title>
+    <meta http-equiv="Content-Type"
+    content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href="/css/default.css"
+    type="text/css" />
+<script src="/js/default.js" type="text/javascript">
+</script>
+  </head>
+
+  <body>
+    <!--#include virtual="/ssi/header.shtml" -->
+
+    
+<h1>Overview of May Meeting</h1>
+<h2>Dublin, Ohio</h2>
+<h2>2001-05-21-2001-05-22</h2>
+<p>(Note: From a Usage Board email message. Archived copy is available at: <br>
+  <a href="http://www.jiscmail.ac.uk/cgi-bin/wa.exe?A2=ind0106&amp;L=dc-usage&amp;F=&amp;S=&amp;P=2538">http://www.jiscmail.ac.uk/cgi-bin/wa.exe?A2=ind0106&L=dc-usage&F=&S=&P=2538</a> 
+  ) </p>
+<p>Dear all (Harry and Beth take note!),</p>
+<p>I have finished the first pass through Beth's notes (see below) and am looking 
+  for an efficient way to wrap up all of our work from the May 21-22 meeting. 
+  I find it easiest to think of this in terms of ten deliverables, each with a 
+  designated drafter, and have structured the discussion below accordingly. The 
+  filenames I assigned are not binding.</p>
+<p>Please print out this document (long!) and read it through carefully. I would 
+  like to ask all drafters to send their documents (or URLs if appropriate) to 
+  Beth for posting on a Web page; I have attached mine to this message. Beth will 
+  let us know the URL of that page.</p>
+<p>1. <a href="http://dublincore.org/documents/2001/03/09/dcmi-namespace/">http://dublincore.org/documents/2001/03/09/dcmi-namespace/</a> 
+  (Harry)</p>
+<ul>
+  <li> the draft namespace policy for DCMI. Though this is not a Usage Board document, 
+    we did discuss it at some length (see #2a-m, #9c, #11, #19, #20). In particular, 
+    we suggested removing the words &quot;in the judgment of the DCMI directorate&quot;; 
+    deleting references to the registry for the sake of simplicity; and deleting 
+    comments about what to do with the namespace if DCMI is dissolved. 
+    <p>That discussion has now been superseded by discussion on the dc-architecture 
+      list. As of June 12, it would appear that a consensus is forming around 
+      a counter-proposal, which will need to be written up at some point. Could 
+      Harry perhaps use the current proposal as a basis and put together a proposal 
+      using the URIs suggested on the list? Tom and Andy could perhaps then help 
+      edit this. We note that the DCMI Directorate said it was going to
+      recruit an ad-hoc committee of experts to review the draft of March
+      9 and assume they would do the same with a counter-proposal.</p>
+  </li>
+</ul>
+<p>2. <a href="mission.html">MISSION.TXT</a> (Tom) - I have circulated the revised 
+  Mission and Principles document to the list for comment and attach a copy here 
+  for Beth.</p>
+<p>3. <a href="criteria.html">CRITERIA.TXT</a> (Tom) - As called for in points 
+  #3v-w, I cut the &quot;Criteria for Evaluating Element and Qualifier Proposals&quot; 
+  from MISSION.TXT and created a separate document, also attached.</p>
+<p>4. GUIDELINES.TXT (Traugott) - Point #8 summarizes discussion of
+  Traugott's strawman. Traugott, could you please revise this, post
+  to dc-usage, and send it to Beth?</p>
+<p>6. PROCESS.DOC (Diane) - Diane took extensive notes during the discussion and 
+  posted a revised draft on May 30 at <a href="http://128.253.121.110/DC-UB/DC-UBprocess3.html">http://128.253.121.110/DC-UB/DC-UBprocess3.html</a>. 
+  Diane, does the draft account for points #1a(ii-iii) below? Since this document 
+  is undergoing revision, I'd suggest that Beth simply link to it for now. Diane, 
+  with regard to 5.2.1 I believe we decided that only members of the Usage Board 
+  (and the DCMI Directorate) can post to the JISCMAIL list for the Usage Board, 
+  but that all of the traffic is archived for and accessible to the public.</p>
+<p>7. PROCESS-DIAGRAM.DOC (Tom) - I will have someone here turn 
+  the process flow chart -- the one I drew on the flip-chart --
+  into a diagram for inclusion in #6.</p>
+<p>8. EDUCATION.TXT (Stuart) - Stuart, I know you have posted this
+  but could you please submit the corrected to Beth as well? </p>
+<p>9. LANGUAGE.TXT (Rebecca) - Rebecca, same as with Stuart's
+  document, could you please submit this to Beth?</p>
+<p>10. DECISIONS.TXT (Beth) - In accordance with 5.3.3. of Diane's process
+  document, our decisions will need to be published as a Web document
+  on the Recommendations page. Beth has standard templates for this
+  and will combine the contents of EDUCATION.TXT and LANGUAGE.TXT
+  into one DECISIONS.TXT. This combined file should also include a
+  reference to our approval of &quot;URI&quot; for Source (point #21), which
+  does not need to be further documented because it already is part
+  of the August 2000 qualifier recommendation.</p>
+<p>LOOSE ENDS</p>
+<p>-- Point #3x(iii): it is not clear to me what action is required
+  with regard to links between the User Guide and recommended
+  terms.</p>
+<p>-- Defining what is out of scope for UB: We decided that the UB should
+  not be concerned with application profiles or other namespaces
+  (point #15a-b). Is this articulated somewhere?</p>
+<p>-- In point #15c, we suggested that the DCMI registry be responsible
+  for registering application profiles. What is the action?</p>
+<p>-- Usage Board control of RDF/XML schemas in the DCMI registry:
+  In point #7a we established that nothing should go into the DCMI
+  namespace until it has been vetted by the UB. Is this
+  principle recorded somewhere in our documentation? Should it
+  be in the process document?</p>
+<p>-- The Usage Board Web page will provide links to all relevant
+  documents, which includes
+  1) Human-readable Web documents such as Recommendations;
+  2) All machine-understandable (RDF/XML) schemas in the DCMI
+  registry.
+  It is not clear to me where this decision is documented. Perhaps
+  we need to elaborate section 5.3 of the Process document?</p>
+<p>-- At some point, we decided that proposals might be submitted
+  via a standard form on the Web. Who would create such a form?</p>
+<p>ACTIONS</p>
+<p>-- Harry to use the current namespace strawman as the basis for a rough
+  draft for a namespace counter-proposal for discussion with Tom and
+  Andy (see point 1 above)?</p>
+<p>-- #22b: Rebecca will shepherd a proposal to add RFC 3066 for
+  fast-track approval.</p>
+<p>-- #14: All DCMI documentation should be consistent in the use of Name
+  and Label (these terms should switched in DCES 1.1 to bring it into
+  line with the Qualifier recommendation, and there would need to be
+  an &quot;errata&quot; note to this effect). Who can do this (perhaps Harry)?</p>
+<p>-- #7b: The UB has decided that nothing will go into the DCMI namespace
+  until it has been vetted by the UB, so someone (not clear who) will
+  need to &quot;clean house&quot; in the registry directory tree, moving schemas
+  with unapproved elements into a separate &quot;experimental&quot; area and
+  reserving the persistent, &quot;official&quot; area for approved terms.
+  Harry?</p>
+<p>-- I would suggest that the drafters of each document be responsible
+  for getting approval of their document. What should the process be
+  for doing this via the list? I suggest the following: the drafter
+  submits the document to the dc-usage list with Cc: to Beth for
+  posting on the meeting follow-up page. The drafters should clearly
+  indicate that they are submitting the document for close reading and
+  final approval. During the course of a one-month comment period,
+  every member of the Usage Board should sign off (if only with a
+  one-on-one message to the drafter) on every such deliverable. The
+  drafter should keep track of who has signed off.</p>
+<p>-- Once we have tried such a process, we should add it to the process
+  document.</p>
+<p>-- We are tentatively scheduled to have a one-day (or two half-day) 
+  meetings in Tokyo during October 22-24. I will write a separate note
+  to the group to set this in motion.</p>
+<p>Tom</p>
+<p><br>
+  --------------------------------------------------------------------------<br>
+  DCMI USAGE BOARD - notes (Beth Marsh)<br>
+  --------------------------------------------------------------------------</p>
+<p>21 - 22 May 2001</p>
+<p>In Attendance:</p>
+<p>Traugott Koch, member<br>
+  Andy Powell, member<br>
+  Stuart Sutton, member<br>
+  Diane Hillmann, member<br>
+  Makx Dekkers, ex officio<br>
+  Tom Baker, chair<br>
+  Stu Weibel, ex officio<br>
+  Rebecca Guenther, member<br>
+  Harry Wagner, web team<br>
+  Beth Marsh, web team</p>
+<p>1. Basic principles and documentation<br>
+  a. Usage Board - <br>
+  i. Usage board mailing list - closed subscription; public archive - <br>
+  return to jiscmail list.<br>
+  ii. Post proposals to dc-general for public comment<br>
+  iii. Proposal shepards will be tasked w/ providing a digest of <br>
+  discussions<br>
+  iv. DC usage board web page will provide links to relevant documents<br>
+  1. milestone changed to &quot;under discussion&quot; editor =&gt; <br>
+  Shepard; proposals endorsed by u.b.<br>
+  2. members of group<br>
+  3. mission statement<br>
+  4. other issues, ongoing discussions<br>
+  5. meeting agendas and minutes<br>
+  6. background materials for proposals<br>
+  7. archive view via meeting; proposal<br>
+  8. archive past discussions/meeting notes<br>
+  9. archives should be arranged around each meeting<br>
+  10. Listing of documents that are under Usage Board control <br>
+  (ownership)<br>
+  a. Human readable documents (xref to docs on dcmi <br>
+  web site)<br>
+  b. Machine-understandable (RDF/XML) documents <br>
+  (SCHEMAS)</p>
+<p>2. Namespace Document<br>
+  a. Posted to the DC-Architecture mailing list<br>
+  b. Public comment is now over<br>
+  c. Stu has asked Harry Wagner &amp; Dan Brickley to incorporate public <br>
+  comments into the document and prepare it for final publication<br>
+  d. Need an &quot;ad hoc&quot; analysis board to review document (external reviewers)<br>
+  e. Ad hoc committee will make a recommendation to the DCMI Directorate<br>
+  f. Directorate will have final say - yea or nay<br>
+  g. V-a - Minor editorial changes will be corrected w/o comment period but <br>
+  will be posted to Usage board list <br>
+  h. Web site needs to have a change notice for any changes to <br>
+  recommendation documents<br>
+  i. V-c - remove &quot;in the judgment of the DCMI directorate&quot;<br>
+  j. Usage board has authority to add new elements &amp; qualifiers<br>
+  k. Usage board should see namespace document before finalized<br>
+  l. Namespace doc shouldn't reference process or Registry - need to make it <br>
+  as simple as possible.<br>
+  m. VI - comments on what to do w/ namespace in the event DCMI is <br>
+  expanded should be deleted.</p>
+<p>3. Mission and scope of Usage Board<br>
+  a. Mission: Remove references to specific status &quot;recommending, <br>
+  conforming, obsolete&quot;<br>
+  b. Publication policy: The Usage Board makes available its proceedings and <br>
+  decisions in a publicly available space on the DCMI web site. <br>
+  c. Publication policy: delete second sentence.<br>
+  d. Process model: The UB process is defined in &quot;Process Document&quot;<br>
+  e. Process model: Change title from process model to process<br>
+  f. Scope: deleting second sentence <br>
+  g. Scope: information resources should be changed to resources<br>
+  h. Scope: The scope of the UB is the Dublin Core Metadata Element Set, <br>
+  plus additional vocabulary terms (link to vocabulary terms section) <br>
+  deemed useful for discovering resources across domains.<br>
+  i. Grammar: delete &quot;Dublin core statements.revised '2001-06-13'<br>
+  j. Grammar: last sentence change to: &quot;The grammar is described more fully 
+  <br>
+  in &quot;Grammar Document link&quot;.<br>
+  k. Move dlib grammar doc to UB web site.<br>
+  l. Can be ambiguous statement Vocabulary Terms in General: Vocabulary <br>
+  terms in Dublin Core refer to elements, qualifiers or terms in controlled <br>
+  vocabularies maintained by DCMI. Vocabulary terms are uniquely <br>
+  defined in namespaces (link Namespace document).<br>
+  m. Elements: First sentence: An element is a property of a resource.<br>
+  n. Elements: Delete rest of paragraph<br>
+  o. Qualifiers: First sentence: Qualifiers modify the properties of Dublin Core 
+  <br>
+  ... or relation. <br>
+  p. Qualifiers statements (rest remains the same)<br>
+  q. Dumb Down principle: Delete last sentence<br>
+  r. Dumb Down principle: Change &quot;be able to ignore any qualifier and use 
+  <br>
+  the value as if it were unqualified&quot;<br>
+  s. Appropriate literals: delete paragraph<br>
+  t. Appropriate literals: change name to &quot;Appropriate Values&quot; <br>
+  u. Appropriate Values: Best practice for a particular element or qualifier may 
+  <br>
+  vary by context. Definitions may provide some guidance, other <br>
+  information may be found in the Users Guide (link to guide).<br>
+  v. Criteria for Evaluating Element &amp; Qualifier Proposals: change &quot;it&quot; 
+  to <br>
+  &quot;term&quot;<br>
+  w. Criteria for Evaluating Element &amp; Qualifier Proposals: Delete entire 
+  <br>
+  section and create a new document.<br>
+  x. Questions for discussion<br>
+  i. No<br>
+  ii. Not at all.<br>
+  iii. ACTION: Need to add &quot;see also&quot; reference from element set <br>
+  linked to the Usage guide. - From working group: element <br>
+  definition and further comments; From user guide wg - usage <br>
+  recommendations - Usage Board is responsible for all 3 areas. <br>
+  Make usage recommendations a part of element or qualifier <br>
+  proposal.<br>
+  iv. No decision - part of the process document</p>
+<p>4. MARBI Process<br>
+  a. Think about DCMI stakeholders; how to bring them into the process</p>
+<p>5. Process Proposal<br>
+  a. General discussion - Diane is keeping notes of changes on her copy.</p>
+<p>6. Revisiting the Open Meeting Policy<br>
+  a. Announcements of meetings will include an invitation to write to the <br>
+  meeting chair or to Makx for an invitation to attend meeting.</p>
+<p>7. Revisiting when URI's should be assigned to namespace proposal<br>
+  a. Guideline: nothing will go into the DCMI namespace until it's been vetted 
+  <br>
+  by the UB as recommended or conforming.<br>
+  b. Need to clean up the registry area into experimental area and persistent 
+  <br>
+  &quot;official&quot; area.</p>
+<p>8. Guidelines for reviewing and acknowledging vocabulary and encoding scheme 
+  <br>
+  qualifiers<br>
+  a. For each scheme information<br>
+  i. Add: Provide information on maintenance agency<br>
+  ii. Add: Include spot for any additional information on the proposed <br>
+  scheme<br>
+  iii. Add: Information on what domains this is used in; how widely <br>
+  used<br>
+  iv. Add: Email address and contact person<br>
+  v. Create web form for scheme submission<br>
+  b. &quot;Registered&quot; encoding schemes, not recommended or conforming<br>
+  c. DCMI maintained schemes are still recommended but registered for <br>
+  tokens<br>
+  d. Decision process is &quot;fast-track&quot; and different criteria; shepherd 
+  will be <br>
+  assigned for a &quot;group&quot; of schemes (a flock).<br>
+  e. Registered: just for vocabulary schemes, except for DCMI maintained <br>
+  vocabularies <br>
+  f. Recommended or Conforming is valid for encoding schemes<br>
+  g. Delete &quot;decently sized user base&quot;<br>
+  h. Token acronyms - if no official token exists but if there's an already <br>
+  established tokens used in other applications, use it.<br>
+  i. Tokens must be unique <br>
+  j. Name of organization does not stand for particular vocabulary<br>
+  k. Official translations - add &quot;dash&quot; and language code<br>
+  l. Versions - if version is important, register each version, if it's not, than 
+  <br>
+  only one version should be registered. Leave it up to users to decide <br>
+  and/or register versions - For web form to registration: need to draft <br>
+  explanation of versions and when it appropriate to register versions - also 
+  <br>
+  to state that DCMI is just registering and not vetting versions. &quot;If you 
+  use <br>
+  a generic token, then be aware of x, y &amp; z. If you use a versioned token, 
+  <br>
+  then be aware of x, y, and z.&quot;<br>
+  m. ACTION: Traugott will draft explanation for &quot;l&quot;<br>
+  n. The UB acknowledges scheme by giving them the status of Registered. <br>
+  Strike the rest of the last point.</p>
+<p>9. Education Proposal<br>
+  a. General comment: Need criteria for evaluating proposals <br>
+  b. Audience element:<br>
+  i. Need analysis of how audience has been used by other projects - <br>
+  proposals should come w/ this information - shepherd could <br>
+  provide analysis in larger context<br>
+  ii. Agreement that it is conforming w/ modification to wording <br>
+  iii. Comment: The category of user may be determined by the creator <br>
+  or publisher of the resource or by a third party. <br>
+  iv. Definition: A category of user for whom the resource intended or <br>
+  useful.<br>
+  v. Consensus is that it's conformant; UB looking at whether it should <br>
+  become recommended. ACTION: Stuart Sutton will be the <br>
+  shepherd to bring it to a recommended element before or by the <br>
+  Tokyo meeting.<br>
+  c. Any new element that is assigned a status of &quot;recommended&quot; should 
+  be <br>
+  added to the DC Element Set. Recommended means more than just cross-<br>
+  domain.</p>
+<p>10. Terms revisited: Recommended, Conformant, Non-conformant, Obsolete.</p>
+<p>11. Namespaces: A Recommended or Conformant element should go into the element 
+  <br>
+  namespace; a recommended or conformant qualifier should go into the qualifier 
+  <br>
+  namespace; non-conformant elements or qualifiers should find their own <br>
+  namespace.<br>
+  a. http://dublincore.org/qualifiers/dcq#<br>
+  b. http://dublincore.org/elements/dces#<br>
+  c. Recommendation: one namespace for elements; one for<br>
+  qualifiers and one per DCMI controlled vocabulary;<br>
+  furthermore we see no reason for a current DCMI<br>
+  namespace to contain a version number or a date<br>
+  stamp at this time.</p>
+<p>12. Education: Qualifier: Mediator<br>
+  a. Definition: A category of user that mediates access to the resource and for 
+  <br>
+  whom the resource is intended and useful.<br>
+  b. Comment: Delete reference to dc-ed: in the last sentence<br>
+  c. Spelling: trainor should be trainer<br>
+  d. Consensus is that it is a conformant qualifier.</p>
+<p>13. Proposals #2 &amp; #3<br>
+  a. Consensus in favor of Proposal #3 (Conforms to)<br>
+  b. Definition: Strike &quot;education or training&quot; - A reference to an 
+  established <br>
+  standard to which the resource conforms.<br>
+  c. Comment: This does not assume total conformance with the referenced <br>
+  standard.<br>
+  d. Name: conformsTo<br>
+  e. Label: Conforms To<br>
+  f. Consensus for conformant qualifier to the relation element.</p>
+<p>14. Recommendation: All DCMI documentation should be consistent in the use 
+  of the <br>
+  Name &amp; the Label (changes should be made to DCES 1.1)</p>
+<p>15. Education: Proposal #4<br>
+  a. UB is not concerned w/ application profiles.<br>
+  b. UB is not concerned w/ other namespaces.<br>
+  c. Recommendation: UB shouldn't approve application profiles. DC-<br>
+  Registry should be responsible for registering application profiles.</p>
+<p>16. Makx - where to place information about domain specific information on 
+  the web <br>
+  site?</p>
+<p>17. Confusion w/ the term &quot;Recommendation&quot; - Need to have one document 
+  per <br>
+  proposal. From web form comes a &quot;proposed recommendation.&quot; Change 
+  status <br>
+  terms from Recommended and Conformant to Recommended as Cross-domain x <br>
+  and Recommended as a Domain-specific x. Changes will be written up and then 
+  <br>
+  reviewed. (Ex. Audience has been recommended as a domain specific element)</p>
+<p>18. UB Output: Gets incorporated into the RDF schema; announced on dc-general; 
+  <br>
+  keep element recommendations separate from qualifier recommendations in <br>
+  documents.</p>
+<p>19. Tom - Keep the namespace for the first 15 elements as a core legacy and 
+  then add <br>
+  additional elements as necessary into a new namespace.</p>
+<p>20. Suggested namespaces:<br>
+  a. dublincore.org/elements#<br>
+  b. dublincore.org/qualifiers#<br>
+  c. dublincore.org/vocabularies/type/<br>
+  d. dublincore.org/vocabularies/???/</p>
+<p>21. Consensus: URI is a qualifier for the Source element</p>
+<p>22. Language Element definition:<br>
+  a. Consensus: Accept Rebecca's recommendation.<br>
+  b. Need to add RFC 3066 as an encoding scheme - ACTION: Rebecca will <br>
+  shepherd the proposal to add RFC 3066 as a fast track proposal.</p>
+<p>23. Go thru future work items via email</p>
+<p>24. UB meeting will tenetively meet in Tokyo. Plan a full day meeting - or 
+  2 half-<br>
+  day meetings during the DC-2001 week.</p>
+<p><br>
+  _______________________________________________________________________________<br>
+  Dr. Thomas Baker Thomas.Baker@gmd.de<br>
+  GMD Library<br>
+  Schloss Birlinghoven +49-2241-14-2352<br>
+  53754 Sankt Augustin, Germany fax +49-2241-14-2619</p>
+<p></p>
+<hr>
+
+
+    <!--#include virtual="/ssi/footer.shtml" -->
+  </body>
+</html>
+

@@ -1,0 +1,47 @@
+Title:             Decision on proposal for dcterms:ISO8601
+Shepherd:          Rebecca Guenther
+Identifier:        http://dublincore.org/usage/decisions/2004/2004-01.ISO8601.txt
+Date:              2004-03-20
+
+Proposal text: http://dublincore.org/usage/meetings/2003/06/dclib-encodingschemes.html
+Decision:      Accept
+
+Approved text - beginning
+------------------------------------------------------------------------
+    URI:           http://purl.org/dc/terms/ISO8601
+    Namespace:     http://purl.org/dc/terms/
+    Name:          ISO8601
+    Label:         ISO8601
+    Definition:    This encoding scheme represents the alternative provided
+                   in ISO 8601 that does not include hyphens as separators between year,
+                   month, and day.
+    Type of Term:  http://dublincore.org/usage/documents/principles/#encoding-scheme
+    Qualifies:     http://purl.org/dc/elements/1.1/date
+    Qualifies:     http://purl.org/dc/elements/1.1/coverage
+    Qualifies:     http://purl.org/dc/terms/temporal
+    Date issued:   2004-03-20
+    Decision:      http://dublincore.org/usage/decisions/#Decision-2004-01
+------------------------------------------------------------------------
+Approved text - end
+
+Availability and maintenance status:     
+    ISO document (available for a fee)
+
+Appropriateness of maintenance agency:   
+    Appropriate
+
+Uniqueness and appropriateness of proposed token:
+    Unique, but may be confusion with the other alternative in 8601 
+    with hyphens, defined in DC as w3cdtf.
+
+Possible use with elements not specified in proposal     
+
+Other comments:
+    Rules for encoding: ISO 8601 has alternatives, with or
+    without the hyphen (i.e. 2001-08-07 or 20010807). W3C-DTF
+    includes hyphens and is the only encoding scheme currently
+    approved in DCMI.  Alternative using no hyphen needs to
+    be registered as an encoding scheme, since it is well
+    established in the library community.
+
+ 

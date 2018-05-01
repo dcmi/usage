@@ -1,0 +1,56 @@
+---
+title: 
+date: '2017-09-01T16:21:09+01:00'
+description: 
+draft: false
+creators: []
+contributors: []
+publisher: 
+tags: []
+---
+
+<pre>
+Title: The back burner
+Identifier: <a href="/usage/meetings/2005/09/madrid/backburner/">http://dublincore.org/usage/meetings/2005/09/madrid/backburner/</a>
+Main agenda: <a href="/usage/meetings/2005/09/madrid/">http://dublincore.org/usage/meetings/2005/09/madrid/</a>
+Modified: 2005-09-04 16:10, Sunday
+
+Encoding scheme types
+    
+    Andy and Pete want to write a position paper distinguishing
+    vocabulary encoding schemes and syntax encoding schemes. See:
+
+180 <a href="/usage/meetings/2005/09/madrid/files/2005-05-16.encoding-scheme-types.html">http://dublincore.org/usage/meetings/2005/09/madrid/files/2005-05-16.encoding-scheme-types.html</a>
+
+Endorsement mechanism for non-DCMI encoding schemes
+
+    After testing a Web interface for the "registration"
+    of encoding schemes, we backed off from going down the
+    road of having DCMI declare and maintain purl.org URIs for
+    others' vocabularies in favor of encouraging other people
+    to coin URIs to identify their own vocabularies. As a
+    mechanism for getting those URIs into the DCMI registry
+    (and more generally as a way for people to publicize their
+    vocabularies through DCMI listings), we figured we could
+    devise a way to "endorse" the non-DCMI URIs thus created
+    (in effect to say, "DCMI agrees that this URI can be used
+    as an encoding scheme in Dublin Core metadata").
+
+    There is an ongoing action on Tom, Stuart, and Diane to
+    draft the policy and process documents necessary to support
+    the assignment of such endorsements by the Usage Board
+    (or at any rate by DCMI). Diane and Stuart have put a
+    placeholder for this in the Usage Board Administrative
+    Process document.
+
+    The assignment of such endorsements seems related to the
+    endorsement of assertions by Library of Congress that
+    MARC Relator terms are sub-properties of dc:contributor.
+
+    Pete agreed to help define a mechanism for expressing
+    such endorsements in RDF. Once the policy framework for
+    endorsement is clear, its expression in RDF could perhaps
+    be discussed by the DCMI Architecture Working Group
+    (or by its DC RDF task force).
+
+</pre>

@@ -1,0 +1,115 @@
+DCMI Usage Board - Wednesday, 2008-03-26 2100 UTC telecon - agenda
+
+Wednesday March 12 - 2100 UTC
+1400 Seattle / 1700 New York / 2100 London (UTC) / 2200 Berlin / 0600 Tokyo+ / 0800 Sydney+
+See: http://www.timeanddate.com/worldclock/fixedtime.html?month=03&day=26&year=2008&hour=21&min=00&sec=0&p1=0
+
+This report:  http://dublincore.org/usage/minutes/2008/2008-03-26.dcub-telecon-agenda.html
+UB meetings:  http://dublincore.org/usage/minutes/
+UB mail list: http://www.jiscmail.ac.uk/lists/dc-usage.html
+UB wiki:      http://dublincore.org/usageboardwiki/
+              http://dublincore.org/usageboardwiki/#Issues - where long-term issues are tracked
+
+See dialing instructions below.
+
+Expected: Tom, Diane, Julie, Joe, Pete, Akira, Andrew, Stefanie
+
+======================================================================
+PROFILE REVIEW CRITERIA
+
+ACTION 2008-02-20: Tom to put Profile Review Criteria
+into MPDL wiki for further editing and propose workflow
+for conducting reviews.
+
+-- DONE - see
+   http://colab.mpdl.mpg.de/mediawiki/ApplicationProfiles/ProfileReviewCriteriaDe
+   Tom and Stefanie to discuss
+   See questions for discussion at
+   http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0803&L=dc-usage&P=2164
+
+======================================================================
+TERM DECISION TREE
+
+-- Tom and Stefanie propose
+   http://colab.mpdl.mpg.de/mediawiki/ApplicationProfiles/TermDecisionTree
+   See discussion at http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0803&L=dc-usage&P=1296
+
+ACTION 2007-12-12: Andrew to edit Term Decision Tree -
+http://dublincore.org/usageboardwiki/TermDecisionTree
+- especially focusing on differentiating
+Vocabulary and Syntax Encoding Schemes
+(http://dublincore.org/usageboardwiki/SesAndVes).
+
+======================================================================
+PROFILES TO REVIEW
+
+ACTION 2008-02-20: Julie to propose set of Eprints/SWAP
+documentation for Usage Board review and evaluate editorial
+changes needed.
+
+Kernel Application Profile - http://dublincore.org/kernelwiki
+-- Tom and Pete to report
+
+UKOLN Geospatial application profile?
+-- http://www.ukoln.ac.uk/repositories/digirep/images/e/ef/Geospatial_Application_Profile.doc
+
+======================================================================
+RANGE OF dcterms:title
+
+ACTION 2008-02-20: Akira to propose a "rich" title property
+with range Non-Literal Resource as a complement to dcterms:title
+with a range of Literal.
+
+-- DONE - see
+   http://dublincore.org/usageboardwiki/TitleProposal
+   http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0803&L=dc-usage&P=2058 - Pete's comments
+
+Discussion about range of dcterms:title
+   See http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0712&L=dc-architecture&P=3679
+       http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0702&L=DC-ARCHITECTURE&P=R4809
+
+======================================================================
+SMALL PROBLEM WITH NAMESPACE DOCUMENTS
+
+-- Pete has pointed out that dcterms:publisher is used with a literal
+   value in the namespace documents for http://purl.org/dc/terms/, etc
+   http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0802&L=dc-usage&P=2654
+
+======================================================================
+DOMAINS AND RANGES
+
+ACTION 2007-08-26: Pete and Mikael to investigate the
+usefulness of defining a class of 'non-literal' and assess what
+the consequences of this would be for machine processability.
+(Usage Board should track issues involved in the notion of
+a range of 'non-literal'.)
+
+======================================================================
+ANNUAL MEETING - 21 SEPTEMBER IN BERLIN
+
+KIM Project Working Group (http://www.kim-forum.org/)
+joint session on Sunday, 21 September
+
+======================================================================
+NEXT TELECON 
+
+Time-slot alternatives are:
+     1. 0600 Seattle / 0900 New York / 1400 London (UTC) / 1500 Berlin / 2300 Tokyo  / 0100 Sydney
+     2. 1300 Seattle / 1600 New York / 2100 London (UTC) / 2200 Berlin / 0600 Tokyo+ / 0800 Sydney+
+
+======================================================================
+DIALING INSTRUCTIONS 
+(http://dublincore.org/usageboardwiki/DialingInstructions):
+     1) Dial: local country number
+        -- UK        0800-032-0634
+        -- Germany   0800-181-2311
+        -- Australia 1800-006-458
+        -- Sweden    020-792-635
+        -- Japan     00531-13-0842 "KDD Only"
+        -- US        skip this step...
+     2) You hear: "Welcome... Please enter your 10-digit..."
+        Type: 888-448-7101#
+     3) You hear: "Please enter..."
+        Type:     764-6081#
+
+2009-01-29: Changed usageboard/log URIs to usage/minutes URIs.

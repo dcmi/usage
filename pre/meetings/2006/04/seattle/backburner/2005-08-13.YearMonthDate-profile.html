@@ -1,0 +1,102 @@
+<PRE>
+----------------------------------------------------------------------
+Date:         Sat, 13 Aug 2005 16:49:28 +0200
+Reply-To:     Charles McCathieNevile &lt;chaals@OPERA.COM&gt;
+Subject: Re: Adding ISO 8601 as a scheme -- discussion
+Comments: To: Misha Wolf &lt;Misha.Wolf@reuters.com&gt;
+To:           DC-DATE@JISCMAIL.AC.UK
+
+On Fri, 12 Aug 2005 23:48:12 +0200, Misha Wolf &lt;Misha.Wolf@REUTERS.COM&gt; wrote:
+&gt; Re an ISO 8601 Basic profile, I'm not sure that the verb "develop"
+&gt; applies.  I think it would take anyone with a copy of the standard about
+&gt; 5 minutes.  Then we'd spend 5 weeks discussing how to name it
+
+If we can agree on a name, I am prepared to "write" a Note describing a 
+format that is YYYYMMDD, which is my understanding of one of the 
+particular formats that is being sought (are there others that people 
+wanted?). I suggest we call it YearMonthDay format.
+
+I think Misha's assessment of how much work is required is pretty accurate 
+- armed with a copy of what you want plus Misha's Date Time Format note as 
+a template...
+
+----------------------------------------------------------------------
+Date:         Sun, 14 Aug 2005 13:32:07 +0100
+Reply-To:     Pete Johnston &lt;p.johnston@UKOLN.AC.UK&gt;
+Sender:       DCMI Date Working Group &lt;DC-DATE@JISCMAIL.AC.UK&gt;
+From:         Pete Johnston &lt;p.johnston@UKOLN.AC.UK&gt;
+Subject: Draft open date range format (Re: Adding ISO 8601 as a scheme -- discussion)
+Comments: To: "Childress,Eric" &lt;childree@oclc.org&gt;
+To:           DC-DATE@JISCMAIL.AC.UK
+
+Quoting "Childress,Eric" &lt;childree@oclc.org&gt;:
+
+&gt;     DC does not "need" another body to develop encoding schemes, but
+&gt; I've been given to believe that DCMI prefers to outsource such activity
+&gt; if possible. That seems very reasonable to me -- with a primarily
+&gt; volunteer organization, development and maintenance bandwidth is always
+&gt; limited. Concentrating on DC's core standards is appropriate.
+&gt;
+&gt;     If it is our opinion that this is a case where DC Date needs to
+&gt; develop and maintain a scheme then that too can be an appropriate
+&gt; activity. I ask only that we consider various alternatives and fix on
+&gt; such a course for cause.  If we're convinced DC Date is the best hope
+&gt; for development of a suitable scheme, we should be able to persuade the
+&gt; UB as well.
+
+I must admit that I had thought that it _was_ part of this groups work to
+"develop" some suggestions for date formats - even if ultimately the DCMI Usage
+Board recommends that we (or they) need to find a non-DCMI "owner"/maintenance
+agency for whatever we come up with.
+
+I wasn't at the DC Date WG meeting at DC-2004 but
+
+<a href="http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0411&L=dc-date&P=53">http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0411&L=dc-date&P=53</a>
+
+says:
+
+===
+After lively back-and-forth discussion it was agreed that the Date WG would
+explore modifying W3CDTF and/or developing a suitable DCDTF application profile
+to meet the requirements of DC Libraries.
+===
+
+&gt;From a purely selfish viewpoint ;-) my own _very_ pressing concern is that this
+week (gulp!), I must submit a first draft of a specification based on a Dublin
+Core Application Profile. And in that specification I need to provide a URI for
+an encoding scheme to support the representation of "open ended" date ranges. It
+doesn't have to be a DCMI-owned URI, but I need a description of a date format,
+and a means of referring to it within the framework of the DCMI Abstract Model
+(as a class or as a datatype).
+
+So, given that this is beyond what is in W3CDTF (for which DCMI provides the
+class with the URI <a href="http://purl.org/dc/terms/W3CDTF">http://purl.org/dc/terms/W3CDTF</a>) and ISO8601 (and DCMI
+currently provides no URI for the class of things represented by ISO8601
+anyway), it seems to me I/we (DC CD WG) have little option but to create our
+own specification for that format.
+
+So I've had a go:
+
+<a href="http://www.ukoln.ac.uk/metadata/dcmi/date-dccd-odrf/">http://www.ukoln.ac.uk/metadata/dcmi/date-dccd-odrf/</a>
+
+I've just hacked this out this morning (pillaging from the W3CDTF doc) and I'm
+sure it needs more work, but, well, it's a start. And as I say, I need
+something now, even if it gets refined/tidied up later.
+
+Comments welcome!
+
+Note this is _not_ a profile of ISO8601 because ISO8601 doesn't support "open
+date-ranges". (And on that basis I probably shouldn't use phrasing like "an
+open date range: a time-interval expressed.... " because I don't think what I
+am calling an "open date-range" falls within what ISO8601 calls a "period of
+time" or "time-interval". It's a different concept, I think. But I'm not sure!)
+
+Anyway, as Misha and Charles have suggested, I don't think it would be _that_
+difficult to identify the formats required and to produce similar documents to
+address at least some of the other requirements.
+
+And I think it may be a worthwhile exercise for us to try to do that - and deal
+with the social/political/administrative issues (who owns the specs, who assigns
+URIs for the encoding schemes etc etc) separately.
+
+</PRE>

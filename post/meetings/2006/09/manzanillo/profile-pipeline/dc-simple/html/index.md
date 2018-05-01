@@ -1,0 +1,101 @@
+---
+title: 
+date: '2017-09-01T16:21:09+01:00'
+description: 
+draft: false
+creators: []
+contributors: []
+publisher: 
+tags: []
+---
+
+<pre>
+Title: Simple Dublin Core
+Identifier: <a href="/usage/meetings/2006/09/manzanillo/profile-pipeline/dc-simple/html/">http://dublincore.org/usage/meetings/2006/09/manzanillo/profile-pipeline/dc-simple/html/</a>
+Created: 2006-09-06
+
+Draft: <a href="/usage/meetings/2006/09/manzanillo/profile-pipeline/dc-simple/2006-08-12.dc-simple.html">http://dublincore.org/usage/meetings/2006/09/manzanillo/profile-pipeline/dc-simple/2006-08-12.dc-simple.html</a>
+
+----------------------------------------------------------------------
+2006-04-30 Usage Board meeting, Seattle - notes
+
+-- ISSUE: What is Simple Dublin Core?
+
+-- "Simple DC" is a concept used in a number of ways in a
+   number of places. Do we address it in reference to OAI?
+
+-- "Simple DC is a description set with one description that
+   describes a resource with 15 optional property usages"
+
+-- If we say Simple DC is a conforming AP, then folks will
+   be using it as a model.
+
+-- Why do we need an AP to say what Simple DC is? Because you
+   have to say the 15 properties are optional and repeatable.
+
+-- What goes on a AP for Simple DC? It should include those
+   properties of the DCMI Profile Model (Application Profile
+   of Application Profiles).
+
+-- ISSUE: OAI uses value string language. Do we put anything
+   about value string language in this AP?
+
+-- AGREED: Simple DC includes value string language, and this
+   is optional.
+
+-- AGREED: Need to include URI in Simple DC AP, not the QName.
+
+-- AGREED: Do not cite our own XML schemas in the AP for Simple DC
+
+-- ISSUE: Documentation mentioning "Simple Dublin Core" should be 
+   revised to point to the Simple DC AP.
+
+----------------------------------------------------------------------
+Use of "Simple Dublin Core" in DCMI documentation
+
+<a href="/documents/dcmes-xml/">http://dublincore.org/documents/dcmes-xml/</a>
+
+    This document describes an encoding for the DCMES in XML subject to these restrictions:
+
+    * The Dublin Core elements described in the DCMES V1.1 reference can be used
+    * No other elements can be used
+    * No element qualifiers can be used
+    * The resulting RDF/XML cannot be embedded in web pages
+
+<a href="/documents/usageguide/">http://dublincore.org/documents/usageguide/</a>
+
+    The Dublin Core standard includes two levels: Simple and
+    Qualified. Simple Dublin Core comprises fifteen elements;
+    Qualified Dublin Core includes three additional elements
+    (Audience, Provenance and RightsHolder), as well as a group
+    of element refinements (also called qualifiers) that refine
+    the semantics of the elements in ways that may be useful in
+    resource discovery.
+
+<a href="/documents/usageguide/glossary.shtml">http://dublincore.org/documents/usageguide/glossary.shtml</a>
+
+    Simple Dublin Core
+
+    The fifteen Dublin Core elements used without qualifiers,
+    that is without element refinement or encoding
+    schemes. Sometimes referred to as Dublin Core simple.
+
+<a href="/resources/faq/">http://dublincore.org/resources/faq/</a>
+
+    "Simple Dublin Core" is Dublin Core metadata that
+    uses no qualifiers; only the main 15 elements of the
+    Dublin Core Metadata Element Set are expressed as simple
+    attribute-value pairs without any "qualifiers" (such as
+    encoding schemes, enumerated lists of values, or other
+    processing clues) to provide more detailed information
+    about a resource.
+
+<a href="/schemas/xmls/">http://dublincore.org/schemas/xmls/</a>
+
+    Simple DC XML schema, version 2002-12-12
+
+    This schema defines terms for Simple Dublin Core, i.e. the 15 elements
+    from the <a href="http://purl.org/dc/elements/1.1/">http://purl.org/dc/elements/1.1/</a> namespace, with no use of
+    encoding schemes or element refinements.
+
+</pre>

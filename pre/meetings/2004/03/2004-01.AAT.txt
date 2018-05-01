@@ -1,0 +1,37 @@
+Title:             Decision on proposal for dcterms:AAT
+Shepherd:          Rebecca Guenther
+Identifier:        http://dublincore.org/usage/decisions/2004/2004-01.AAT.txt
+Date:              2004-03-20
+
+Proposal text: http://dublincore.org/usage/meetings/2003/06/dclib-encodingschemes.html
+Decision:      Accept
+
+Approved text - beginning
+------------------------------------------------------------------------
+    URI:           http://purl.org/dc/terms/AAT
+    Namespace:     http://purl.org/dc/terms/
+    Name:          AAT
+    Label:         AAT
+    Definition:    Art and Architecture Thesaurus
+    Type of Term:  http://dublincore.org/usage/documents/principles/#encoding-scheme
+    Qualifies:     http://purl.org/dc/elements/1.1/type
+    Qualifies:     http://purl.org/dc/elements/1.1/subject
+    Date issued:   2004-03-20
+    Decision:      http://dublincore.org/usage/decisions/#Decision-2004-01
+------------------------------------------------------------------------
+Approved text - end
+
+Availability and maintenance status:
+    Available at  http://www.getty.edu/research/tools/vocabulary/aat/
+
+Maintained by:
+    Getty Research Institute
+
+Appropriateness of maintenance agency:
+    Appropriate
+
+Uniqueness and appropriateness of proposed token:
+    Unique and appropriate
+
+Possible use with elements not specified in proposal.
+

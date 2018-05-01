@@ -1,0 +1,203 @@
+---
+title: 
+date: '2017-09-01T16:21:09+01:00'
+description: 
+draft: false
+creators: []
+contributors: []
+publisher: 
+tags: []
+aliases:
+- "/usage/meetings/2009/10/seoul/_html/accessibility.html"
+---
+
+<pre>
+----------------------------------------------------------------------
+*Accessibility proposal -- Summary to date*
+
+10 September 2009
+
+At its meeting of 21 September 2008, the DCMI Usage Board resolved to
+coordinate with the AGLS on the development of a property and related value
+encoding scheme to express the "accessibility" of a resource [1]. The
+process -- subsequently agreed with the AGLS Working Group, maintainers of
+the AGLS standard "AGLS Metadata Terms" (AS5044) [2] -- called for the DCMI
+Usage Board and the AGLS Working Group to agree on the natural language
+definition and formal range for a proposed new DCMI property,
+"accessibility". Usage of the property was to be exemplified by a Vocabulary
+Encoding Scheme (VES) proposed by AGLS. The goal was for DCMI and AGLS to
+jointly announce the publication of a DCMI property and AGLS vocabulary
+encoding scheme, and to publish the two new terms along with "simple usable
+documentation".
+
+The requirement for agreement between DCMI and AGLS on a definition and
+range for the related terms was stipulated in order to convey a coherent
+joint message. Reviewing the property and VES proposals in parallel was
+motivated by a desire to illustrate the new property with a set of exemplary
+values. At the time, the Usage Board noted that a draft Dublin Core
+application profile [3] called for the use of _two_ properties related to
+accessibility -- "accessibility" and "accessMode" -- the definitions of
+which seemed to overlap. In its discussion, the Usage Board therefore
+reiterated the requirement, inherent for any RDF property, that statements
+made using the "accessibility" property make sense independently of their
+context within particular description sets.
+
+The Usage Board discussed the following issues:
+
+-- Range of the "accessibility" property The definition proposed for the
+   property is: "A characteristic of a resource that relates to the human
+   capacity to perceive, operate, understand or otherwise engage with the
+   resource". It was suggested that this wording reads like the definition of a
+   range class one might call "Accessibility Characteristic". The proposed
+   property, according to this view, would relate a resource to an
+   "accessibility characteristic". (It was noted in December 2008 that a
+   proposal for such a range class would need to be approved together with the
+   related property.)
+
+-- Terms in the proposed vocabulary encoding scheme seen as "accessibility
+   characteristics" As of August 2009, it remained unclear whether the terms
+   of the vocabulary encoding scheme were to be declared by AGLS as belonging
+   to a particular class of terms, such as (it was suggested) SKOS concepts.
+   This issue notwithstanding, it was recognized that the terms (or SKOS
+   concepts) of the proposed VES were broadly related to aspects of a resource
+   that might affect or limit the ability of a user to consume the resource,
+   although it is less clear how the term "hazard" relates to a "human
+   capacity".
+
+-- User guidance The Usage Board felt that the proposal alone did not
+   present sufficient guidance about the intended use of the property to
+   properly answer the questions that would be expected after publication. If
+   metadata-consuming applications are intended to test for accessibility
+   values and draw actionable conclusions, this use is only implied, not
+   articulated explicitly or illustrated with examples. For example, the
+   proposal does not provide usage scenarios for judging the difference between
+   saying:
+
+    Resource:R dc:type dcmitype:Sound
+
+   as opposed to:
+
+    Resource:R proposed:accessibility proposed:auditoryOnly
+
+-- Relationship of the proposal to other "accessibility" work In the course
+   of discussion, it was argued that the proposed "accessibility
+   characteristics" are "low-hanging fruit" -- salient accessibility-related
+   concepts that have emerged from years of discussion in the accessibility
+   field. However, if it is the case that these concepts have matured in other
+   communities, the Usage Board feels that the sources of these concepts need
+   to be acknowledged and cited with more precision in the proposal and in any
+   resulting publication.
+
+In particular, the Usage Board notes that previous work seems to be based on
+the notion of defining multiple properties (or functional equivalents) for
+accessibility characteristics. These other standards bodies seem not to have
+coined anything analogous to a single accessibility property or modelled
+accessibility characteristics as a controlled vocabulary (enumerated list of
+values). In that sense, the proposal seems to show an entirely new way to
+model accessibility for which the Usage Board sees little implementation
+experience or examples.
+
+The Usage Board acknowledges the importance of accessibility as an idea and
+strongly endorses the idea of describing resources in ways that clarify how
+those resources can be perceived, operated, understood or otherwise engaged
+with. However, the Usage Board believes that there are problems with the
+current proposal that need to be resolved before the proposal could be put
+to a Usage Board vote.
+
+[1] <a href="http://dublincore.org/usage/minutes/2008/2008-09-21.berlin-2Accessibility.html">http://dublincore.org/usage/minutes/2008/2008-09-21.berlin-2Accessibility.html</a>
+[2] <a href="http://www.agls.gov.au/documents/aglsterms/">http://www.agls.gov.au/documents/aglsterms/</a>
+[3] <a href="http://dublincore.org/accessibilitywiki/ElementsVocabularies?action=diff&amp;date2=1219099321&amp;date1=1214977622">http://dublincore.org/accessibilitywiki/ElementsVocabularies?action=diff&amp;date2=1219099321&amp;date1=1214977622</a>
+
+----------------------------------------------------------------------
+Date: Thu, 10 Sep 2009 20:40:15 +1000
+From: Liddy Nevile &lt;liddy@SUNRISERESEARCH.ORG&gt;
+Subject: Re: Accessibility Summary
+To: DC-USAGE@JISCMAIL.AC.UK
+
+my comments below:
+
+On 10/09/2009, at 1:50 PM, Andrew Wilson wrote:
+&gt; -- Terms in the proposed vocabulary encoding scheme seen as  
+&gt; "accessibility characteristics" As of August 2009, it remained  
+&gt; unclear whether the terms of the vocabulary encoding scheme were to  
+&gt; be declared by AGLS as belonging to a particular class of terms,  
+&gt; such as (it was suggested) SKOS concepts. This issue  
+&gt; notwithstanding, it was recognized that the terms (or SKOS concepts)  
+&gt; of the proposed VES were broadly related to aspects of a resource  
+&gt; that might affect or limit the ability of a user to consume the  
+&gt; resource, although it is less clear how the term "hazard" relates to  
+&gt; a "human capacity".
+
+In the field of accessibility for people with disabilities, in  
+particular, it is very important to warn users if there is what is   
+known as a hazard within a resource. A typical hazard is a flashing  
+visual object or repetitive sound that is likely to trigger a fit or  
+other reaction in those who are susceptable to such problems. Just as  
+something that is videoOnly will not be useful to a person without  
+sight, a resource with a hazard will not be suitable for them.
+
+&gt; -- User guidance The Usage Board felt that the proposal alone did  
+&gt; not present sufficient guidance about the intended use of the  
+&gt; property to properly answer the questions that would be expected  
+&gt; after publication. If metadata-consuming applications are intended  
+&gt; to test for accessibility values and draw actionable conclusions,  
+&gt; this use is only implied, not articulated explicitly or illustrated  
+&gt; with examples. For example, the proposal does not provide usage  
+&gt; scenarios for judging the difference between saying:
+&gt;
+&gt; Resource:R dc:type dcmitype:Sound
+&gt;
+&gt; as opposed to:
+&gt;
+&gt; Resource:R proposed:accessibility proposed:auditoryOnly
+
+As many resources contain a mix of objects, there is a difference  
+between a resource that has the dcmitype: sound but happens to have a  
+related object that is a text description of what is in that sound,  
+and a resource that is not associated with such an alternative. Where  
+a resource initially is not associated with a text transcription, say,  
+but someone adds one for it, the metadata can be changed. The problem  
+that led to the need for these terms is that often, from an  
+accessibility perspective, it is the relationship between  
+characteristics of a resource that affects accessibility, and that  
+would mean the receiving system would have to relate the two  
+possibilities, whereas with a single term describing the accessibility  
+characteristic, this would not be necessary. This issue was raised and  
+dealt with about 6 years ago and is documented on the accessibility  
+wiki.
+
+&gt; -- Relationship of the proposal to other "accessibility" work In  
+&gt; the course of discussion, it was argued that the proposed  
+&gt; "accessibility characteristics" are "low-hanging fruit" -- salient  
+&gt; accessibility-related concepts that have emerged from years of  
+&gt; discussion in the accessibility field. However, if it is the case  
+&gt; that these concepts have matured in other communities, the Usage  
+&gt; Board feels that the sources of these concepts need to be  
+&gt; acknowledged and cited with more precision in the proposal and in  
+&gt; any resulting publication.
+
+Citation of the original use in IMS specifications, the follow-up use  
+in ISO standards, and the implementations has been available for  
+several years. The terms are not exactly the same as those used in the  
+IMS or ISO case because they use hierarchies of terms in ways that  
+cannot be replicated in DC metadata. The terms chosen have been  
+approved by those who developed the IMS and ISO standards, however.
+
+&gt; In particular, the Usage Board notes that previous work seems to be  
+&gt; based on the notion of defining multiple properties (or functional  
+&gt; equivalents) for accessibility characteristics. These other  
+&gt; standards bodies seem not to have coined anything analogous to a  
+&gt; single accessibility property or modelled accessibility  
+&gt; characteristics as a controlled vocabulary (enumerated list of  
+&gt; values). In that sense, the proposal seems to show an entirely new  
+&gt; way to model accessibility for which the Usage Board sees little  
+&gt; implementation experience or examples.
+
+Both the other standards bodies have defined extensive vocabularies  
+but, as explained above, they have done so in a hierarchical way so  
+that users can follow down the hierarchies to get more precision. As  
+the DC way of achieving the goal is different, this is not useful and  
+the added detail would be developed in an application profile - a  
+draft of which has been available for several years to illustrate this.
+
+</pre>

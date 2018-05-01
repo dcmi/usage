@@ -1,0 +1,285 @@
+Proposal for DCMI Extension Namespaces
+
+Creator:        Thomas Baker
+Contributor:    Makx Dekkers
+Date:           2005-05-04
+
+About this document
+
+The DCMI Board of Trustees, at its meeting in Seeheim, Germany,
+in April 2005, revisited DCMI's mission statement, extending
+the mission explicitly to encompass resource description. In
+light of this revised mission, the Trustees also discussed the
+need of DCMI Working Groups to find a home for descriptive
+and other, application- or domain-specific terms that they
+define in the course of developing their Application Profiles.
+
+The absence of such a home is perceived as a crucial bottleneck
+delaying the forward progress of Working Groups and the
+practical adoption of Application Profiles. At the same time,
+the DCMI Board of Trustees felt there was an opportunity
+for DCMI to increase its value to the community by offering
+a solution to this need, also acknowledging that care needs
+to be taken to do this in a sensible and sustainable way.
+
+The Board of Trustees tasked the DCMI Directorate to elaborate
+a proposal to address these issues and identify the actions
+that need to be taken to establish a home for such terms as
+a service to the community.
+
+This proposal is work in progress, to be revised after
+discussion within the DCMI Directorate, Board of Trustees,
+Usage Board, and Advisory Board.
+
+Caveat: This document refers to the notion of "namespace"
+in line with the existing DCMI Namespace Policy [5]. As
+discussed in the Usage Board and Architecture Working Group,
+however, this use of "namespace" has been seen as needing
+clarification.  Prior to implementation, the name of the
+proposed service should perhaps be reconsidered in light of
+such a clarification.
+
+Background: the current situation
+
+The mission of DCMI has long emphasized resource discovery
+across domains.  Accordingly, the DCMI Usage Board has used
+"cross-domain validity" and "usefulness for resource discovery"
+as twin criteria for evaluating terms proposed for inclusion in
+the set of DCMI Terms [1,12,13].  Terms approved for inclusion
+are assigned URIs formed on the basis of three base URIs
+[2,3,4] and maintained in accordance with the DCMI Namespace
+Policy [5].
+
+DCMI Working Groups, on the other hand, typically define their
+task as one of developing an "Application Profile" for use
+in a particular domain or application, e.g., for describing
+government information, learning materials, library resources,
+or resource collections. In order to do this, Working Groups
+often need to coin new terms for descriptive needs unmet by
+existing vocabularies.
+
+To the extent that such additional terms are not demonstrably
+useful both for "resource discovery" and "across domains",
+they have hitherto not been considered good candidates for
+inclusion in the central set of DCMI Terms.  Some such terms
+have been rejected by the Usage Board for not meeting these
+criteria, while others have been approved on the basis of
+a relaxed interpretation of the criteria.  Some terms of a
+clearly domain-specific or purely descriptive nature were
+simply never proposed.
+
+Until now, the option available to Working Groups
+developing such terms has been to declare them in non-DCMI
+namespaces. Guidelines laying out options for doing so have
+been drafted [6].  However, finding an appropriate home for new
+terms -- e.g. an institution which can at a minimum guarantee
+that URIs will not be reassigned and will remain resolvable
+to documentation on the Web for the foreseeable future --
+has proven to be a significant hurdle.
+
+At the same time, the Usage Board has developed and begun to
+test processes for reviewing Application Profiles [7,8,9]. The
+DCMI Abstract Model [10], which describes the nature and
+composition of "DCMI metadata descriptions", was approved
+as a DCMI Recommendation in March 2005 and provides a solid
+and agreed basis for such reviews. In principle, Usage Board
+review is aimed at establishing whether a given application
+profile for such descriptions is in conformance with the
+Abstract Model.
+
+Proposed approach
+
+In order to be able to provide a home for terms outside of the criteria
+governing the inclusion in the core set, DCMI needs to take a number of
+actions and formulate a number of policies. The Directorate proposes
+the following approach:
+
+1. To host namespaces for terms outside of the core set under
+   the name "DCMI Extension Namespaces".
+
+2. To define and describe DCMI Extension Namespaces in a revised
+   and extended DCMI Namespace Policy [5].
+
+3. To assign a base URI for DCMI Extension Namespaces and
+   formulate a procedure by which new terms will be assigned
+   URIs -- also as an extension to the DCMI Namespace Policy
+   [5].  The proposed base URI for DCMI Extension Namespaces is
+   http://dublincore.org/extension/.
+
+4. To formulate guidance on the naming and identification of
+   terms in DCMI Extension Namespaces to the extent that these
+   topics are not already covered by the DCMI Namespace
+   Policy [5] and the DCMI Policy on Naming Terms [11], and
+   to formulate and document a model for versioning historical
+   descriptions of DCMI Extension Namespaces.
+
+5. To develop and clarify the criteria, formal processes and
+   workflow by which a DCMI Extension Namespace is created, terms
+   are reviewed and approved, approved terms are added to that
+   namespace, and a DCMI Extension Namespace, once created, can be
+   edited or changed over time. This involves describing the
+   roles of a DCMI Strategic Activity (i.e. a DCMI Working
+   Group) and the Usage Board in the creation and review of
+   terms for a DCMI Extension Namespace.
+
+6. To formulate a policy to define and clarify the persistence
+   of DCMI Extension Namespaces and the maintenance responsibility
+   that DCMI takes towards these namespaces, in particular
+   clarifying the respective roles and responsibilities
+   of the DCMI Usage Board in the medium- and longer-term
+   maintenance of DCMI Extension Namespaces given that DCMI
+   Strategic Activities will usually have a limited lifespan.
+
+7. To define the notion of a DCMI Strategic Activity,
+   involving the description of any duties or obligations
+   between DCMI as an organization and the leaders or members
+   of a DCMI Strategic Activity, along with any clarifications
+   regarding membership and operational procedures of Strategic
+   Activities. This may involve obtaining commitment for the
+   management of the Strategic Activity from a institutional
+   stakeholder, possibly a DCMI Affiliate.
+
+Discussion
+
+In recognition of the long-term maintenance and workload issues
+raised by the prospect of additional DCMI-owned namespaces,
+it is suggested that access to such namespaces be limited
+to activities (i.e. Working Groups) designated by DCMI as
+"strategic activities".  In this approach, a DCMI Strategic
+Activity can present an Application Profile to the Usage
+Board for review for conformance to the Abstract Model, and
+any new terms in a profile judged to be "conforming" would
+be eligible for declaration in a DCMI Extension Namespace. The
+Collection Description Working Group has been suggested as
+a test case for the status of DCMI Strategic Activity.
+
+It seems reasonable to build in safeguards to avoid that DCMI
+be confronted with the obligation to maintain a rapidly growing
+number of additional terms over time. Firstly, the Usage
+Board, currently chartered as a central, generically-scoped
+committee, cannot be presumed to have all the necessary
+expertise to maintain terms that may be application- or
+domain-specific. Secondly, care should be taken not to create
+an overwhelming workload for the Usage Board in maintaining
+potentially rapidly growing set of terms.
+
+It can be expected that terms proposed for DCMI Extension
+Namespaces will typically be terms "around the edges" of Dublin
+Core -- the "missing pieces" of the particular Application
+Profile under development. A DCMI Extension Namespace might
+typically have between one and a dozen or so properties. In
+addition, a DCMI Extension Namespace may hold terms for small
+controlled vocabularies of values. These terms most likely
+will only make sense in the context of the Application Profile
+for which they were created. Therefore, DCMI should put more
+emphasis on Application Profiles -- by assigning them status,
+describing them on Web pages, and featuring them as examples
+of good practice -- than on DCMI Extension Namespaces per se.
+
+References
+
+[1] http://dublincore.org/documents/terms/
+[2] http://purl.org/dc/terms/
+[3] http://purl.org/dc/dcmitype/
+[4] http://purl.org/dc/elements/1.1/
+[5] http://dublincore.org/documents/dcmi-namespace/
+[6] http://www.ukoln.ac.uk/metadata/dcmi/term-identifier-guidelines/
+[7] http://dublincore.org/usage/documents/profiles/
+[8] http://www.dublincore.org/usage/documents/process/#six
+[9] http://www.dublincore.org/usage/documents/process/#conforming
+[10] http://dublincore.org/documents/abstract-model/
+[11] http://dublincore.org/documents/naming-policy/
+[12] http://dublincore.org/usage/documents/process/#recommended
+[13] http://dublincore.org/usage/documents/process/#conforming
+[14] http://www.w3.org/2004/02/skos/core/spec/
+[15] http://www.jiscmail.ac.uk/cgi-bin/wa.exe?A2=ind0202&L=dc-usage&F=&S=&P=3628
+[16] http://dublincore.org/usage/meetings/2004/10/ISSUES/dcx/
+
+
+Appendix: Usage Board discussions about "namespace hosting"
+
+The problem of declaring and maintaining terms outside of the central
+vocabularies has been discussed at various times by the Usage Board.
+In January 2002, the position of the Usage Board was as follows [15]:
+
+    When the Usage Board approves a term, that term will go
+    into the dcterms namespace (or perhaps into a new namespace
+    in some exceptional circumstances).  If the UB does not
+    approve a term, then projects will have to create 'a new
+    (non-DCMI) namespace' -- which means a namespace with a
+    non-DCMI namespace URI, which means that it isn't hosted
+    on the DCMI site.
+
+    In order to avoid confusion, such non-DCMI namespaces
+    should not be allowed to carry 'DC' in their name.
+
+    Views of non-DCMI namespaces may well be available thru
+    the DCMI Registry, but the implications for review process
+    and registry interface have yet to be worked out.
+
+In subsequent discussion between the Usage Board and the
+Directorate, it was agreed that DCMI as an organization
+(and not the Usage Board in particular) might make a
+strategic decision to offer Namespace Hosting as a service to
+working groups as long as care were taken to ensure that the
+distinction between DCMI Term namespaces and a hosted namespace
+were never ambiguous (for example, by avoiding the use of
+"DC-" in the title of a namespace).  It was agreed that hosted
+namespaces would be outside the jurisdiction of the Usage
+Board inasmuch the Usage Board would not be responsible for
+responding to requests for editorial changes to hosted terms.
+
+At its meeting of May 2002, the Usage Board pictured this as a
+model consisting of a core (the Dublin Core), a semi-periphery
+of additional DCMI terms, and a periphery of non-DCMI terms
+identified under the domain of a yet-to-be-created, DCMI-owned
+but non-DCMI-branded namespace host.
+
+For several reasons, DCMI did not implement this idea at
+the time.  It was not clear by whose authority, if not
+the Usage Board's, terms were to be declared in a hosted
+namespace.  Working groups are by definition temporary, so
+maintenance responsibility, to the extent it were implied,
+would by default revert to DCMI as a whole, and therefore to
+the Usage Board.  It was also recognized that a DCMI-hosted
+namespace would offer a solution attractive for many working
+groups, generating a potentially unmanageable demand for
+access to the namespace host.
+
+Furthermore, it was not clear by what criteria and processes
+DCMI could -- if not via the Usage Board -- regulate such
+access and ensure at least a minimal quality of terms declared
+in a hosted namespace.  Nor was it clear by what processes or
+criteria DCMI might assert an implied right to deprecate or
+even remove terms proven by implementation to be problematic.
+
+In a nutshell, the prospect of creating a DCMI-owned
+namespace host in the absence of a clear process model
+seemed to risk associating DCMI with a potentially large
+number of unmaintained (and unmaintainable) namespaces.
+Taken individually, these namespaces would look fragmentary
+-- the "missing pieces" of this or that application profile.
+Collectively, they would present an incoherent whole.
+
+(One recurring variant of the Namespace Hosting idea
+has been for DCMI to create a namespace where working
+groups can "park" new or experimental terms without going
+through a formal approval process in order to make new or
+experimental terms citable by URI, thus supporting a less
+"bureaucratic", more bottom-up, market-driven approach to
+growing vocabularies. However this scenario, according to
+which working groups would get direct access to a namespace
+host, seems even more problematic than others.  This variant
+is discussed in [16].)
+
+After periodic consideration of alternatives, the Usage
+Board has always circled back to the notion that in the end,
+terms must be maintained, and it should always be clear who
+is maintaining the terms -- at any rate for all terms which
+have or could be perceived to have branding by DCMI. In the
+absence of alternative solutions within DCMI, the Usage
+Board has followed the conservative course of limiting
+its vocabulary management activities to a small and slowly
+growing vocabulary of terms in accordance with reasonably
+strict policies, processes, and principles.
+

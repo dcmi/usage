@@ -1,0 +1,58 @@
+------------------------------------------------------------------------
+Date:         Sat, 26 Feb 2005 09:19:17 +0000
+From: Andy Powell <a.powell@UKOLN.AC.UK>
+Subject: Re: Vocabulary Encoding Scheme vs Syntax Encoding Scheme
+To: DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+On Sat, 26 Feb 2005, Thomas Baker wrote:
+> 2003-02-11
+>
+>     vocabulary-encoding-scheme:
+>         http://purl.org/dc/terms/LCSH
+>         http://purl.org/dc/terms/MESH
+>         http://purl.org/dc/terms/DDC
+>         http://purl.org/dc/terms/LCC
+>         http://purl.org/dc/terms/UDC
+>         http://purl.org/dc/terms/DCMIType
+>         http://purl.org/dc/terms/IMT
+>         http://purl.org/dc/terms/ISO639-2
+>         http://purl.org/dc/terms/ISO3166
+>         http://purl.org/dc/terms/TGN
+>         http://purl.org/dc/terms/RFC3066
+>
+>     Mixed bag
+>         http://purl.org/dc/terms/URI     - syntax-encoding-scheme (probably)
+>         http://purl.org/dc/terms/RFC1766 - syntax-encoding-scheme (probably)
+>         http://purl.org/dc/terms/W3CDTF  - syntax-encoding-scheme (probably)
+>         http://purl.org/dc/terms/Point   - arguably something else...
+>         http://purl.org/dc/terms/Box     - arguably something else...
+>         http://purl.org/dc/terms/Period  - arguably something else...
+
+The rule I'm using is...
+
+ If it is possible to enumerate a finite list of all possible valid values
+ then the encoding scheme is a 'vocabulary'.
+
+Box             Syntax
+DCMIType        Vocabulary
+DDC             Vocabulary
+IMT             Vocabulary
+ISO3166         Vocabulary
+ISO639-2        Vocabulary
+LCC             Vocabulary
+LCSH            Vocabulary
+MESH            Vocabulary
+Period          Syntax
+Point           Syntax
+RFC1766         Vocabulary
+RFC3066         Vocabulary
+TGN             Vocabulary
+UDC             Vocabulary
+URI             Syntax
+W3CDTF          Syntax
+
+Things like RFC1766 look a bit like 'syntaxes' because they are made up of
+copmponent parts - but the fact that you can enumerate a list of all
+possible valid values means (I think) that they are 'vocabularies'.
+

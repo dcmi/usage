@@ -1,0 +1,18 @@
+NLC=(description="agent" 
+    http://purl.org/dc/terms/Agent
+    http://purl.org/eprint/entityType/Person/
+    http://purl.org/eprint/entityType/Organization/
+
+NLC=(description="agent" 
+    http://purl.org/dc/terms/Agent
+    http://purl.org/eprint/entityType/Person/
+
+NLC=(description="copy" 
+    http://purl.org/eprint/entityType/Copy/
+    http://purl.org/dc/terms/DigitalResource
+
+NLC=(description="expression" 
+    http://purl.org/eprint/entityType/Expression/
+
+NLC=(description="manifestation" 
+    http://purl.org/eprint/entityType/Manifestation/

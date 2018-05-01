@@ -1,0 +1,54 @@
+---
+title: 
+date: '2017-09-01T16:21:09+01:00'
+description: 
+draft: false
+creators: []
+contributors: []
+publisher: 
+tags: []
+aliases:
+- "/usage/meetings/2006/04/seattle/all-in-dcterms/index.shtml"
+---
+
+<pre>
+Title: Replicating ELEMENTS1.1 terms in the DCTERMS namespace
+Identifier: <a href="/admin/www/usage/meetings/2006/04/seattle/all-in-dcterms/">/admin/www/usage/meetings/2006/04/seattle/all-in-dcterms/</a>
+Created: 2006-03-30
+
+Discussion leader: Andy
+
+Reading:
+-- <a href="http://dublincore.org/usageboardwiki/ReplicatingDCMESINDCTERMS">/usageboardwiki/ReplicatingDCMESINDCTERMS</a>
+
+In Madrid (September 2005), the Architecture Working Group
+discussed the possibility of adding the fifteen DCMES terms
+[1] to the DCTERMS namespace [2] (in addition to them being in
+the existing DCMES namespace) -- i.e., to coin [3] in addition
+to [4]. This would mean that many DC users would only need
+to use a single DCTERMS namespace. In Madrid, there was no
+clear agreement about whether this should be done or not.
+
+Such a change, if approved, would require further changes to
+the namespace policy [5,6]. In fact, the change would have
+a cascading effect on all DCMI documentation that cites
+DCMES URIs.
+
+In the 2006-03-23, we agreed on the need for a small document
+summarizing reasons pro and con. We need a coherent line
+on why we would bother to do this. One possibility from a
+process point of view would be for Architecture to ask UB to
+take this on as a work item.
+
+ACTION 2006-03-23: Andy - post a discussion for the rationale
+to Architecture list for replicating Elements 1.1 in DCTERMS
+This input on the list would become input at UB in Seattle.
+
+[1] <a href="http://purl.org/dc/elements/1.1/">http://purl.org/dc/elements/1.1/</a>
+[2] <a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>
+[3] <a href="http://purl.org/dc/terms/title">http://purl.org/dc/terms/title</a>
+[4] <a href="http://purl.org/dc/elements/1.1/title">http://purl.org/dc/elements/1.1/title</a>
+[5] <a href="/documents/dcmi-namespace/">/documents/dcmi-namespace/</a>
+[6] <a href="http://dublincore.org/architecturewiki/NamespacePolicy">/architecturewiki/NamespacePolicy</a>
+
+</pre>

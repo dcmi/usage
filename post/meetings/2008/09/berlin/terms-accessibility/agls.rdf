@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+
+<!-- 
+   
+  RDF Schema declaration for AGLS Metadata Element Set version 1.2.
+  
+  This Version
+  Created:  2007-12-11
+  Modified: 2008-01-15
+  Creator:  David Bromage, National Archives of Australia
+  
+ -->
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY rdfns 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+    <!ENTITY rdfsns 'http://www.w3.org/2000/01/rdf-schema#'>
+    <!ENTITY dcns 'http://purl.org/dc/elements/1.1/'>
+    <!ENTITY dctermsns 'http://purl.org/dc/terms/'>
+    <!ENTITY aglsns 'http://www.agls.gov.au/agls/1.2/'>
+]>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dcterms="http://purl.org/dc/terms/"
+         xmlns:agls="http://www.agls.gov.au/agls/1.2/"
+         xmlns:aglsterms="http://www.agls.gov.au/agls/terms/">
+
+<rdf:Description rdf:about="http://www.agls.gov.au/agls/1.2/">
+  <dc:title xml:lang="en-AU">The AGLS Metadata Element Set v1.2 namespace providing access to its content by means of an RDF Schema</dc:title>
+  <dc:creator xml:lang="en-AU">National Archives of Australia</dc:creator>
+  <dc:publisher xml:lang="en-AU">National Archives of Australia</dc:publisher>
+  <dc:rights>Copyright Commonwealth of Australia 2002</dc:rights>
+  <dc:description xml:lang="en-AU">The AGLS Metadata Element Set v1.2 namespace provides URIs for the AGLS Metadata Elements v1.2. Entries are declared using RDF Schema language to support RDF applications.</dc:description>
+  <dc:language>English</dc:language>
+  <dcterms:created>2002-02-05</dcterms:created>
+  <dcterms:modified>2008-01-15</dcterms:modified>
+</rdf:Description>
+
+<rdf:Property rdf:about="http://www.agls.gov.au/agls/1.2/audience">
+  <rdfs:label xml:lang="en-AU">Audience</rdfs:label>
+  <rdfs:comment xml:lang="en-AU">A class of entity for whom the resource is intended or useful.</rdfs:comment>
+  <rdfs:isDefinedBy rdf:resource="http://www.agls.gov.au/agls/1.2/"/>
+  <dcterms:issued>2002-02-05</dcterms:issued>
+  <dcterms:modified>2008-01-15</dcterms:modified>
+  <dc:type rdf:resource="http://dublincore.org/usage/documents/principles/#element"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="http://www.agls.gov.au/agls/1.2/availability">
+  <rdfs:label xml:lang="en-AU">Availability</rdfs:label>
+  <rdfs:comment xml:lang="en-AU">How the resource can be obtained or accessed, or contact information.</rdfs:comment>
+  <rdfs:isDefinedBy rdf:resource="http://www.agls.gov.au/agls/1.2/"/>
+  <dcterms:issued>2002-02-05</dcterms:issued>
+  <dcterms:modified>2008-01-15</dcterms:modified>
+  <dc:type rdf:resource="http://dublincore.org/usage/documents/principles/#element"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="http://www.agls.gov.au/agls/1.2/function">
+  <rdfs:label xml:lang="en-AU">Function</rdfs:label>
+  <rdfs:comment xml:lang="en-AU">The business function to which the resource relates.</rdfs:comment>
+  <rdfs:isDefinedBy rdf:resource="http://www.agls.gov.au/agls/1.2/"/>
+  <dcterms:issued>2002-02-05</dcterms:issued>
+  <dcterms:modified>2008-01-15</dcterms:modified>
+  <dc:type rdf:resource="http://dublincore.org/usage/documents/principles/#element"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="http://www.agls.gov.au/agls/1.2/mandate">
+  <rdfs:label xml:lang="en-AU">Mandate</rdfs:label>
+  <rdfs:comment xml:lang="en-AU">A specific legal instrument which requires a resource to be created or made available.</rdfs:comment>
+  <rdfs:isDefinedBy rdf:resource="http://www.agls.gov.au/agls/1.2/"/>
+  <dcterms:issued>2002-02-05</dcterms:issued>
+  <dcterms:modified>2008-01-15</dcterms:modified>
+  <dc:type rdf:resource="http://dublincore.org/usage/documents/principles/#element"/>
+</rdf:Property>
+
+</rdf:RDF>

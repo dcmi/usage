@@ -1,0 +1,310 @@
+----------------------------------------------------------------------
+Date: Tue, 21 Mar 2006 11:04:37 +0000
+From: Pete Johnston <p.johnston@UKOLN.AC.UK>
+Subject: Re: Updated Wikipedia article
+To: DC-USAGE@JISCMAIL.AC.UK
+
+Diane I. Hillmann wrote:
+> Folks:
+> 
+> I went in and changed the page: http://en.wikipedia.org/wiki/Dublin_Core 
+> using stuff from "Using Dublin Core" primarily.
+> 
+> You're welcome to see what you think and do some editing yourself, if 
+> you've a mind to do so. I won't take it personally, I promise!
+
+I haven't edited the document on Wikipedia (yet), and I don't really 
+want to do so unilaterally, but (and this really applies to other 
+introductory resources like the "Using Dublin Core" document and like 
+the conference tutorials) I think that the role of the DCMI Abstract 
+Model as providing the conceptual framework for DC should be presented 
+more "up front" e.g. there should be a short/simplified summary 
+description of the DCAM in the introductory section, or as a separate 
+section following the intro and before the discussion of Simple DC and 
+Qualified DC. Mentioning the DCAM _only_ as a tool for comparing 
+different syntaxes is only telling half the story (IMHO) - though I 
+think the DCAM doc itself might be slightly more "bullish" in its own 
+intro paragraph! ;-).
+
+Now sure, I appreciate that that might look like a case of "historical 
+revisionism" to the casual observer who knows "the 15 elements came 
+first" (or indeed only knows the 15 elements), but I do think we need to 
+shift firmly towards putting the DCAM at the centre of our explanations 
+of "what DC is". (If people want a history of the evolution of DC, and 
+how DCMI got from "the 15 elements" to "the qualifiers" to the 
+grammatical principles to the DCAM, OK, that's fine, but that's a 
+different document.)
+
+I recognise this probably goes against the way we've tended to introduce 
+DC, but I'd go as far as saying that it is confusing/unhelpful to start 
+talking about "elements" without first describing the DCAM, at least in 
+some way - maybe not every fine detail, but the fundamental points about 
+making statements that assert relationships between resources and 
+values. Without such "contextual" information, it just begs the question 
+of what an "element" is. It makes a "leap of faith" that readers already 
+share a common understanding of what an element is, but (as we've found 
+out somewhat painfully over the last few years), that is not the case: 
+the term "element" is used to refer to different things in different 
+contexts and readers draw their own (different, incompatible) 
+conclusions ("Ah, they're talking about XML elements", "Ah, so they're 
+referring to things like LOM elements", "Ah, they mean attribute-value 
+pairs" etc etc etc).
+
+I think the account of "Simple Dublin Core" also blurs the distinction 
+between the DCMES as a set of terms, each of which may be deployed in 
+many different "DC application profiles" with different constraints on 
+their usage in a description set, and "Simple Dublin Core" as one such 
+DCAP with one particular set of constraints. And in the account of 
+"Qualified DC" I'm not sure the word "value" is being used in the way it 
+is used in the DCAM. I think phrases like "the value may still be useful 
+to a human reader" suggest that the reference is to (what the DCAM 
+calls) "value strings".
+
+----------------------------------------------------------------------
+Date: Tue, 21 Mar 2006 11:55:30 -0000
+From: Andy Powell <andy.powell@EDUSERV.ORG.UK>
+Subject: Re: Updated Wikipedia article
+To: DC-USAGE@JISCMAIL.AC.UK
+
+Yes, I agree with this... though it's certainly not easy to come up with
+the one paragraph summary of what DC is.  That's one of our problems!
+But talking about 'elements', 'simple' and 'qualified' doesn't help
+much!
+
+Here's my stab at a summary...
+
+--- cut ---
+
+Dublin Core (DC) is a metadata standard for describing a wide range of
+digital, physical and conceptual resources (i.e. just about anything!).
+
+A DC description is made up of a set of statements, each of which
+comprises a property/value pair.  Typically, the described resource is
+identified using its URI and the value is either identified using its
+URI or represented using a simple string (the 'value string').  In many
+cases, multiple descriptions are combined in order to build up richer
+descriptions ('description sets') about related groups of resources.
+For example, in describing a digitised painting, it may also be
+appropriate to describe the original painting from which the
+digitisation was made and the original artist, thus creating a
+description set of three related descriptions.  Statements may be
+refined by indicating the language of the value string, any data-type
+('syntax encoding scheme') to which the value string conforms or the
+class ('vocabulary encoding scheme') from which the value is taken.
+Properties, syntax encoding schemes, vocabulary encoding schemes and
+concepts in controlled vocabularies are known as 'terms'.  All terms in
+DC metadata are assigned URIs, and schema languages are used to indicate
+the relationships between them.
+
+The features of the DC metadata standard are fully described in the
+Dublin Core Abstract Model (DCAM).
+
+The Dublin Core Metadata Initiative (DCMI), the body that facilitates
+the community development of the DC metadata standard, provides a core
+set of about 80 properties, encoding schemes and controlled vocabularies
+from which descriptions can be constructed, but encourages communities
+to create additional terms as necessary, within the framework provided
+by the DCAM.
+
+Finally, the DCMI community has defined three encoding syntaxes that can
+be used to encode DC metadata records for exchange between software
+systems and services using XHTML, XML and RDF.
+
+Historically, DC refered to properties as 'elements' and is perhaps best
+known for the Dublin Core Metadata Element Set (DCMES) - a set of 15
+elements, created originally to support the discovery of resources on
+the Web.
+
+--- cut ---
+
+This, rightly(!), relegates DCMES to a footnote and doesn't even mention
+simple and qualified! :-)
+
+On the face of it, it may seem harder to grasp than the traditional
+'element', DCMES, 'simple DC', 'qualified DC' approach - but I think
+that is largely to do with where we come from.  Personally, I think it
+is much clearer - it emphasises what is important and ignores what can
+safely be forgotten.
+
+----------------------------------------------------------------------
+Date: Tue, 21 Mar 2006 12:06:53 -0500
+From: "Diane I. Hillmann" <dih1@CORNELL.EDU>
+Subject: Re: Updated Wikipedia article
+To: DC-USAGE@JISCMAIL.AC.UK
+
+Tom, responding to Pete and Andy:
+
+>I agree that the Abstract Model should be at the center of
+>explanations, and I like most of the text.  I also think we
+>need to revisit the explanation for "simple" versus "qualified"
+>Dublin Core.
+
+I agree that the Abstract Model should be better integrated into the 
+text, and have said more than once that I'd like to find a way to 
+integrate the AM better into "Using Dublin Core," but could use some 
+help with that.  Because I used text from "Using Dublin Core" as the 
+basis for what I added to the article, it suffers from some of the 
+same problems.
+
+>Two issues however:
+>
+>1) To start with statements, property-value pairs, and URIs is
+>    to jump in at the deep end.  The notion of "core metadata
+>    properties" has been and should continue to be a key part
+>    of the message.  Introducing "the Dublin Core" up-front also
+>    helps explain the funny name.
+>
+
+Yes, in my experience, the DCAM certainly is the deep end for most 
+people. I think it makes more sense to use Wikipedia to provide a 
+"soft" approach, dealing first with things people might have already 
+heard about DC, and making that clearer before getting into deeper 
+water.
+
+>    > The Dublin Core Metadata Initiative (DCMI), the body that facilitates
+>    > the community development of the DC metadata standard, provides a core
+>    > set of about 80 properties,
+>
+>    I suspect that the notion of "core metadata properties" really
+>    is easier for most people to grasp than the notion of an
+>    abstract model.  I would not want DCMI to lose that focus --
+>    80 properties is no longer really a "core".
+
+Agreed. Despite our mere 10 years of "legacy," we are seen by many in 
+an increasingly complex world as more approachable and 
+understandable--metadata for the masses, perhaps. We can't afford to 
+lose that advantage.
+
+>2) "DC" and "DCMI"
+>
+>    > The features of the DC metadata standard are fully described
+>    > in the Dublin Core Abstract Model (DCAM).
+
+Usage aside, I think the sentence above denies the fact that the 
+explanation provided in the DCAM, while certainly full, is fairly 
+technical from the point of view of the metadata novice.
+
+>    This is not quite how I understand our current use of
+>    "DC" and "DCMI".  To take two important examples, we
+>    currently have the "DCMI Abstract Model" and we talk
+>    about "Dublin Core Application Profiles" (but not "DC
+>    Application Profiles" or "DCMI Application Profiles").
+>    In a reasonably consistent way, we currently:
+>
+>    -- use "Dublin Core" instead of "DC".  The exception is when
+>       we use the names of Jiscmail lists as handles for working
+>       groups (e.g., "DC-Architecture").  In DCMI publications,
+>       we have I think avoided using the free-standing acronym
+>       "DC" to mean just "Dublin Core" for quite a long time.
+>       If we were to revive it, would we do so with the intent
+>       to refer to "the Dublin Core" (DC-15) or to designate
+>       the abstract model?
+>
+>    -- use "DCMI" for things that are managed or maintained by
+>       DCMI as an organization -- e.g., "DCMI Usage Board".
+>       The DCMI Abstract Model is a model put forward and
+>       maintained by DCMI for metadata that uses DCMI terms,
+>       (whereas a Dublin Core Application Profile is in most
+>       cases not put forward or maintained by DCMI).
+
+I *think* I followed most of this pattern, but may have blundered a bit ... ;-)
+
+----------------------------------------------------------------------
+Date: Wed, 22 Mar 2006 07:52:51 +0000
+From: Pete Johnston <p.johnston@ukoln.ac.uk>
+Cc: DC-USAGE@jiscmail.ac.uk
+Subject: Re: Updated Wikipedia article
+
+Quoting Thomas Baker <tbaker@tbaker.de>:
+
+> Two issues however:
+>
+> 1) To start with statements, property-value pairs, and URIs is
+>   to jump in at the deep end.  The notion of "core metadata
+>   properties" has been and should continue to be a key part
+>   of the message.  Introducing "the Dublin Core" up-front also
+>   helps explain the funny name.
+>
+>   > The Dublin Core Metadata Initiative (DCMI), the body that facilitates
+>   > the community development of the DC metadata standard, provides a core
+>   > set of about 80 properties,
+>
+>   I suspect that the notion of "core metadata properties" really
+>   is easier for most people to grasp than the notion of an
+>   abstract model.  I would not want DCMI to lose that focus --
+>   80 properties is no longer really a "core".
+
+Unless we explain what we mean by "property", and show how properties 
+are used in DC metadata (to construct simple statements that assert 
+relationships between resources), then we are left with the same 
+problem with the word "property" that we have now with the word 
+"element".
+
+Agreed, "property" maybe comes with slightly less "baggage" than 
+"element", but I've had experience of people picking up on my tendency 
+to use "property" rather than "element" and altering their usage 
+accordingly. But unless I explain why I'm saying property - what a 
+property is - then they think I'm using it simply as a synonym, and 
+they start using "property" for all the contexts in which they were 
+using "element", including ways which are inconsistent with the DCAM.
+
+And - perhaps even worse - they start to apply the term "property" to 
+things defined in other meta-models - where those thinga are not 
+properties at all, and the "native" (to that meta-model) term "element" 
+is indeed the most appropriate term.
+
+Whatever we call the fifteen things, we have to explain what they are 
+and how they are used.
+
+----------------------------------------------------------------------
+Date: Wed, 22 Mar 2006 13:34:49 -0000
+From: Andy Powell <andy.powell@EDUSERV.ORG.UK>
+Subject: Re: Updated Wikipedia article
+To: DC-USAGE@JISCMAIL.AC.UK
+
+>    I suspect that the notion of "core metadata properties" really
+>    is easier for most people to grasp than the notion of an
+>    abstract model.  I would not want DCMI to lose that focus --
+>    80 properties is no longer really a "core".
+
+OK, could drop the specific ('80') and leave the general ('core set of
+...')?
+
+But main problem is with emphasis and order.  It's difficult to say what
+DCMI provides (essentially 'a core set of terms that can be used to
+create descriptions of resources') without describing the nature of what
+those terms are and how they fit together.
+
+Perhaps in my suggested text,
+
+The Dublin Core Metadata Initiative (DCMI), the body that facilitates
+the community development of the DC metadata standard, provides a core
+set of about 80 properties, encoding schemes and controlled vocabularies
+from which descriptions can be constructed, but encourages communities
+to create additional terms as necessary, within the framework provided
+by the DCAM.
+
+needs to be moved up front and changed to
+
+The Dublin Core Metadata Initiative (DCMI), the body that facilitates
+the community development of the Dublin Core metadata standard, provides
+a flexible and extensible metadata framework and a core set of terms
+from which descriptions can be constructed, but encourages communities
+to create additional terms as necessary to meet their own descriptive
+requirements.
+
+Then go on to describe the framework (the DCAM) in more detail...
+
+Does that help?
+
+> 2) "DC" and "DCMI"
+>
+>    > The features of the DC metadata standard are fully described
+>    > in the Dublin Core Abstract Model (DCAM).
+>
+>    This is not quite how I understand our current use of
+>    "DC" and "DCMI".
+
+Sorry.  I was writing in a hurry so I didn't follow corporate
+guidelines! :-)
+

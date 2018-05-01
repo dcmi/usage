@@ -1,0 +1,98 @@
+---
+title: 
+date: '2017-09-01T16:21:09+01:00'
+description: 
+draft: false
+creators: []
+contributors: []
+publisher: 
+tags: []
+---
+
+<pre>
+Topic: DCMI Extension Namespaces and Review of Application Profiles
+Identifier: <a href="/usage/meetings/2005/05/washdc/topic-profiles/">http://dublincore.org/usage/meetings/2005/05/washdc/topic-profiles/</a>
+See also: <a href="/usage/meetings/2005/05/washdc/">http://dublincore.org/usage/meetings/2005/05/washdc/</a>
+Created: 2005-05-12
+Modified: 2005-05-16 17:28, Monday
+Maintainer: Tom Baker
+
+In Washington, we need to clarify -- in terms of policy,
+process, and principle -- the context within which the Usage
+Board will participate in the creation and maintenance of
+DCMI Extension Namespaces (EXT-NSes).
+
+According to the proposal [1], terms would normally be put
+into a EXT-NS by being part of an Application Profile (DCAP)
+developed by a DCMI Strategic Activity and put forward for
+review by the Usage Board. If a DCAP were found by the Usage
+Board to be "conformant" with the DCMI Abstract Model, any
+terms in that DCAP which had not yet been declared could be put
+into an EXT-NS. By definition, a DCMI Strategic Activity would
+be sponsored by an organization willing to share maintenance
+responsibility for the terms with DCMI, and the commitment
+of DCMI to maintain terms in an EXT-NS over the long term
+would be subject to declared limitations and processes.
+
+We should discuss, if only briefly, some of the open issues
+with regard to the implementation of EXT-NSes. These issues,
+elaborated in [2], include:
+
+-- Use of the term "namespace" (Namespace Policy and Abstract Model)
+-- Naming issues: use of acronyms or date-stamps in URI strings
+-- Batching of terms into separate DCMI Extension Namespaces
+-- Scope of EXT-NSes: to include controlled vocabularies?
+-- DCMI maintenance commitment and responsibility
+-- Maintenance role of outside organizations
+
+More importantly, we need to clarify by what processes and
+criteria we will undertake the review of DCAPs by which terms
+will be put into an EXT-NS. In order to do this, we should
+all read (or skim):
+
+-- The EXT-NS proposal [1] and issues list [2]
+-- The DCMI Namespace Policy, which will need to be extended [3]
+-- Relevant Usage Board process documents [4,5,6]
+-- Expectations as to the documentational format of DCAPs [7]
+-- Naming and identification of terms in an EXT-NS [8,9]
+-- The Abstract Model [10] and clarifications thereof [14]
+-- In particular, usability of XML elements as DCMI elements [11,12,13]
+-- Prior experience in the UB on reviewing DCAPs [15]
+
+After discussing these issues in general, we will look
+specifically at the DCAPs being developed by the Collection
+Description and Libraries working groups in order to determine,
+in more detail, how such a review would work in practice.
+
+[1] DCMI Extension Namespaces proposal
+     <a href="/usage/meetings/2005/05/washdc/public/2005-05-04.DCMI_Extension_Namespaces.txt">http://dublincore.org/usage/meetings/2005/05/washdc/public/2005-05-04.DCMI_Extension_Namespaces.txt</a>
+[2] Issues list
+     <a href="/usage/meetings/2005/05/washdc/public/2005-05-13.extns-issues.txt">http://dublincore.org/usage/meetings/2005/05/washdc/public/2005-05-13.extns-issues.txt</a>
+[3] DCMI Namespace Policy
+     <a href="/documents/dcmi-namespace/">http://dublincore.org/documents/dcmi-namespace/</a>
+[4] DCMI Usage Board Review of Application Profiles
+     <a href="/usage/documents/profiles">http://dublincore.org/usage/documents/profiles</a>
+[5] DCMI Usage Board Process: "Proposals for Registration of Application Profiles"
+     <a href="/usage/meetings/2005/05/washdc/public/2005-05-13.profile-review.txt">http://dublincore.org/usage/meetings/2005/05/washdc/public/2005-05-13.profile-review.txt</a>
+[6] Procedure for Approval of DCMI Metadata Terms and Recommendations
+     <a href="/usage/documents/approval/">http://dublincore.org/usage/documents/approval/</a>
+[7] Dublin Core Application Profile Guidelines
+     <a href="/usage/meetings/2004/03/cwa14855-20040210.pdf">http://dublincore.org/usage/meetings/2004/03/cwa14855-20040210.pdf</a>
+[8] DCMI Policy on Naming Terms
+     <a href="/documents/naming-policy/">http://dublincore.org/documents/naming-policy/</a>
+[9] Guidelines for Assigning Identifiers to Metadata Terms
+     <a href="http://www.ukoln.ac.uk/metadata/dcmi/term-identifier-guidelines/">http://www.ukoln.ac.uk/metadata/dcmi/term-identifier-guidelines/</a>
+[10] DCMI Abstract Model (DCMI Recommendation)
+     <a href="/documents/abstract-model/">http://dublincore.org/documents/abstract-model/</a> 
+[11] XML, RDF, and DCAPs (no status yet)
+     <a href="http://www.ukoln.ac.uk/metadata/dcmi/dc-elem-prop/">http://www.ukoln.ac.uk/metadata/dcmi/dc-elem-prop/</a>
+[12] DCMI Mixing and Matching FAQ (first draft)
+     <a href="http://www.ukoln.ac.uk/metadata/dcmi/mixing-matching-faq/">http://www.ukoln.ac.uk/metadata/dcmi/mixing-matching-faq/</a>
+[13] DC-Libraries and DC-Architecture discussion about using XML elements
+     <a href="/usage/meetings/2005/05/washdc/public/2005-02-15.dc-architecture-digest.txt">http://dublincore.org/usage/meetings/2005/05/washdc/public/2005-02-15.dc-architecture-digest.txt</a>
+[14] Element Refinement in Dublin Core Metadata (draft DCMI Recommended Resource)
+     <a href="http://www.ukoln.ac.uk/metadata/dcmi/dc-elem-refine/">http://www.ukoln.ac.uk/metadata/dcmi/dc-elem-refine/</a>
+[15] Review of PBCore, June 2004
+     <a href="/usage/meetings/2005/05/washdc/public/2004-06-22.PBCore-final.txt">http://dublincore.org/usage/meetings/2005/05/washdc/public/2004-06-22.PBCore-final.txt</a>
+
+</pre>

@@ -1,0 +1,702 @@
+NISO ballot on DCMES - response to comments
+
+Shepherd: Akira
+
+The final vote tally for the ballot on NISO/ANSI Z39.85 [1] was
+YES: 47, NO: 1 (National Library of Medicine), ABSTAIN: 1.
+
+Our task in Barcelona is to formulate responses to each of
+the comments for submission to NISO by the end of March.
+The last column is where you indicate whether the response
+action would be an editorial (E) or substantive (S) change
+to the standard text.
+
+[1] http://www.niso.org/standards/balloting.html
+
+======================================================================
+Comment 1: NLM in general
+
+    The underlying reason for the No vote is that the revision
+    does not resolve the fundamental issues that caused NLM to
+    vote No on the original ballot for the standard. Therefore,
+    we believe that the consistent position is to vote No
+    on the revision. Although the most important issue in
+    NLM's No vote in the 2001 standard was that none of
+    the elements in Dublin Core are essential or required,
+    other reasons included issues related to the definition
+    for the Title element and the relationship between the
+    Source and Relation elements (which are also addressed
+    in our comments below regarding the current revision).
+
+    Regarding the specific semantic revisions that are
+    presented on the current ballot, the NLM review group
+    found that these are minor revisions with the goal of
+    clarifying intended semantics and to bring the wording
+    of the definitions and usage comments into line with
+    the language of the DCMI Abstract Model. In general,
+    the review group felt that the changes proposed have
+    succeeded in achieving this goal. We do, however, offer
+    some specific comments about a few of the proposed changes.
+
+Note: http://www.niso.org/standards/resources/DC-NLM-vote.html (from 2001-01-31):
+
+    Element Name: Title, under "comments" we suggest deletion
+    of the word "formally" - the terms may mean something to
+    a catalogers but may not mean anything to others outside
+    of the information professional and may lead to confusion;
+
+    Element Name: Source and Element Name: Relation - The
+    differences between these two element is difficult to
+    discern even for some information specialists. Several
+    foreign DCMESs were reviewed and many struggled with
+    definitions that would differentiation these elements. The
+    outcome varied between the various interpretations since
+    translations do not clarify the ambiguities.
+
+======================================================================
+Comment 2: CDL about sections 1 and 3
+
+    RFC 2396 (URI Syntax) is clearly obsoleted by RFC
+    3986. References to it should be changed to RFC 3986. This
+    also affects a sentence in the Purpose and Scope section:
+    "A resource is defined here to be anything which has
+    identity, as in the definitions used in Internet RFC 2396,
+    Uniform Resource Identifiers (URI): Generic Syntax, by
+    Tim Berners-Lee et al., and in the DCMI Abstract Model, by
+    Andy Powell et al." This sentence would be better worded
+    consistent with RFC 3986 (which backs away from defining
+    resource) along the lines of the recently revised RFC 2413
+    (for Dublin Core), which reads: "As in Internet RFC 3986
+    [RFC3986], "Uniform Resource Identifier (URI): Generic
+    Syntax," this specification does not limit the scope of
+    what might be a resource
+
+http://dublincore.org/documents/2007/02/05/abstract-model/:
+
+    resource (http://www.w3.org/2000/01/rdf-schema#Resource)
+
+        Anything that might be identified. Familiar examples
+        include an electronic document, an image, a service
+        (for example, "today's weather report for Los
+        Angeles"), and a collection of other resources. Not
+        all resources are network "retrievable"; for example,
+        human beings, corporations, concepts and bound books
+        in a library can also be considered resources.
+
+http://www.ietf.org/rfc/rfc2396.txt:
+
+    Resource
+
+        A resource can be anything that has identity.  Familiar
+        examples include an electronic document, an image, a service
+        (e.g., "today's weather report for Los Angeles"), and a
+        collection of other resources.  Not all resources are network
+        "retrievable"; e.g., human beings, corporations, and bound
+        books in a library can also be considered resources.
+
+http://www.ietf.org/rfc/rfc3986.txt:
+
+    Resource
+
+        This specification does not limit the scope of what
+        might be a resource; rather, the term "resource"
+        is used in a general sense for whatever might be
+        identified by a URI.  Familiar examples include
+        an electronic document, an image, a source of
+        information with a consistent purpose (e.g., "today's
+        weather report for Los Angeles"), a service (e.g.,
+        an HTTP-to-SMS gateway), and a collection of other
+        resources.  A resource is not necessarily accessible
+        via the Internet; e.g., human beings, corporations,
+        and bound books in a library can also be resources.
+        Likewise, abstract concepts can be resources, such
+        as the operators and operands of a mathematical
+        equation, the types of a relationship (e.g., "parent"
+        or "employee"), or numeric values (e.g., zero, one,
+        and infinity).
+
+======================================================================
+Comment 3: CDL on sections 1 and 3: RFC 3066 obsoleted by RFC 4646
+
+    RFC 3066 (Language Tags) is clearly obsolete. References
+    to RFC 3066 should all be changed to RFC 4646.
+
+======================================================================
+Comment 4: NARA, Definition and comment for dc:format
+
+    The 'Definition' section of the term 'Coverage' includes
+    the new term 'spatial applicability', which is not further
+    explained (as are 'spatial topic', 'temporal topic' and
+    'jurisdiction') in the 'Comments' section. The definition of
+    'spatial applicability' is addressed in 'Editorial changes
+    to terms in the Dublin Core Metadata Element Set (DCMES) -
+    response to comments', so it is unusual that a clarification
+    was not incorporated in this draft standard.
+
+----------------------------------------------------------------------
+http://dublincore.org/usage/decisions/2006/2006-03.response-to-comments.shtml
+
+6) For the element Coverage, the following definition had
+   been proposed for public comment:
+
+        The spatial or temporal topic of the resource, or
+        the jurisdiction under which the resource is relevant.
+
+   The Treasury Board reviewers felt that the words "spatial
+   or temporal topic of the resource" did not capture the full
+   scope of usage of this element within the Government of
+   Canada, where the spatial aspect of Coverage is also used
+   for resources that "apply to" a certain geographic area
+   (e.g., for employment opportunities in a specific area).
+
+   The reviewers suggested the definition:
+
+        The spatial or temporal characteristics of the
+        resource, or the jurisdiction under which the resource
+        is relevant.
+
+   However, the Usage Board felt that the examples given do,
+   in fact, fall under the proposed definition of Coverage,
+   as "applicability" falls under a broad view of "aboutness".
+
+   That spatial applicability is in scope has been made clear
+   in the definition approved by the Usage Board:
+
+        The spatial or temporal topic of the resource,
+        the spatial applicability of the resource, or the
+        jurisdiction under which the resource is relevant.
+
+   The Usage Board notes that including temporal applicability
+   within the scope of Coverage would have introduced an
+   overlap with the element refinement Valid ("Date (often
+   a range) of validity of a resource").
+
+The definition of Type was subject to careful discussion in
+light of implementation experience -- in practice, Type has
+been interpreted quite broadly -- and in light of the DCMI
+Abstract Model.  Comparing the existing definition, from 1999:
+
+    The nature or genre of the content of the resource.
+
+to the definition proposed for public comment:
+
+    The genre, functional category, or aggregation level
+    of the resource.
+
+the Usage Board felt that the proposed definition makes the
+semantics of Type more specific in ways that are not well
+understood.  The definition that was approved:
+
+    The nature or genre of the resource.
+
+follows the wording of the existing definition and retains
+its broad applicability.
+
+----------------------------------------------------------------------
+3.14. Coverage
+
+2001> Element Name:   Coverage
+2001> Label:          Coverage
+2001> Definition:     The extent or scope of the content of the 
+2001>                 resource.
+2001> Comment:        Typically, Coverage will include spatial
+2001>                 location (a place name or geographic
+2001>                 coordinates), temporal period (a
+2001>                 period label, date, or date range),
+2001>                 or jurisdiction (such as a named
+2001>                 administrative entity). Recommended best
+2001>                 practice is to select a value from a
+2001>                 controlled vocabulary (for example, the
+2001>                 Thesaurus of Geographic Names [TGN]) and
+2001>                 to use, where appropriate, named places
+2001>                 or time periods in preference to numeric
+2001>                 identifiers such as sets of coordinates
+2001>                 or date ranges.
+
+2006> Name:           coverage
+2006> Label:          Coverage
+2006> Definition:     The spatial or temporal topic of the resource, the
+2006>                 spatial applicability of the resource, or the 
+2006>                 jurisdiction under which the resource is relevant.
+2006> Comment:        Spatial topic may be a named place or a location 
+2006>                 specified by its geographic coordinates. Temporal
+2006>                 period may be a named period, date, or date
+2006>                 range. A jurisdiction may be a named administrative
+2006>                 entity or a geographic place to which the resource
+2006>                 applies. Recommended best practice is to use a 
+2006>                 controlled vocabulary such as the Thesaurus of
+2006>                 Geographic Names [TGN].  Where appropriate, named 
+2006>                 places or time periods can be used in preference
+2006>                 to numeric identifiers such as sets of coordinates
+2006>                 or date ranges.
+
+      -- Element Name now called Name, since 2002 in lowercase
+         [see Section 2.6]
+
+      -- In definition, replaces the ambiguous phrase "extent
+         or scope of the content of the resource" with the
+         phrase "spatial or temporal topic of the resource".
+         The use of "extent" in the term Coverage had caused
+         confusion with respect to the term Format -- the
+         comment of which refers to "dimensions" such as
+         "size" and "duration" -- and to the term Extent,
+         a refinement of Format defined as "The size or
+         duration of the resource".
+
+      -- In definition, added the words "or the jurisdiction
+         under which the resource is relevant.  The notion of
+         "jurisdiction" entered into the scope of Coverage at
+         an early date as part of the comment and has informed
+         a significant number of implementations.  The Usage
+         Board has made this meaning explicit by referring to
+         "jurisdiction" in the definition itself and by further
+         clarifying the intended meaning in the comment.
+
+      -- In definition, replaces "content of the resource"
+         with "resource" [see Section 2.1]
+
+      -- In comment, replaces the phrase "select a value from
+         a controlled vocabulary" with "use a controlled
+         vocabulary" [see Section 2.3]
+
+======================================================================
+Comment 5: NLM Definition and comment for dc:format
+
+    We question the use of dimensions in format, as dimensions
+    are not a format but rather an attribute of format. Also,
+    we question the removal of the sentence Format may be used
+    to identify the software, hardware, or other equipment
+    needed to display or operate the resource. Deleting this
+    sentence could cause confusion among users of the standard
+    who wish to record this type of information.
+
+----------------------------------------------------------------------
+3.9.  Format    
+
+2001> Element Name:   Format
+2001> Label:          Format
+2001> Definition:     The physical or digital manifestation of 
+2001>                 the resource.
+2001> Comment:        Typically, Format will include the
+2001>                 media-type or dimensions of the resource.
+2001>                 Format may be used to identify the
+2001>                 software, hardware, or other equipment
+2001>                 needed to display or operate the
+2001>                 resource. Examples of dimensions include
+2001>                 size and duration.  Recommended best
+2001>                 practice is to select a value from a
+2001>                 controlled vocabulary (for example,
+2001>                 the list of Internet Media Types [MIME]
+2001>                 defining computer media formats).
+
+2006> Name:           format
+2006> Label:          Format
+2006> Definition:     The file format, physical medium, or dimensions
+2006>                 of the resource.
+2006> Comment:        Examples of dimensions include
+2006>                 size and duration. Recommended best practice is
+2006>                 to use a controlled vocabulary such as the list
+2006>                 of Internet Media Types [MIME].
+
+      -- Element Name now called Name, since 2002 in lowercase
+         [see Section 2.6]
+
+      -- The definition of Format as "The physical or digital
+         manifestation of the resource" has been a
+         source of confusion.  Specifically, it has been
+         misinterpreted as referring to a related resource
+         that is a "manifestation" in the sense of Functional
+         Requirements for Bibliographic Records (FRBR).
+         The new wording moves words from the original comment
+         into the definition in order to describe the intended
+         meaning more concretely.
+
+      -- In comment, drops the sentence: "Format may be used
+         to identify the software, hardware, or other equipment
+         needed to display or operate the resource."
+
+      -- In comment, replaces "select a value from an encoding
+         scheme" with "use a controlled vocabulary" [see Section 2.3]
+
+===========================================================
+Comment 6: CDL, definition of dc:source:
+
+    A minor issue has to do with the initial word "The" in the
+    definition of the Source element. The closest parallel
+    definition is Relation (Source being a special kind of
+    Relation), which begins with the non-parallel word "A",
+    suggesting that there is only one Source. The confusion is
+    minor because the element set does not restrict the number
+    of occurrences of the Source element.
+
+In the penultimate version of DCMES of 2006-08-28, Source
+was defined as "A related resource..." [1].  In the set of
+changes proposed for Public Comment on 2006-08-28, Source
+was also defined as "A related resource..." [2].
+
+After Public Comment was held, decisions were taken at the
+meeting in Manzanillo, at which time the article "The" in
+"The resource" was introduced in the context removing the
+redundant word "related" as per comments from the Canadian
+Treasury Board [3, quoted below].  
+
+The switch from "A" to "The" carried over into decision text
+of 2006-12-18 and the error went undetected by reviewers of
+the decision text in the Usage Board [4].  The change was
+also noted in the "Response to comments" of 2006-12-18 [5].
+The decision text was then used to published "DCMI Metadata
+Terms" on 2006-12-18 [6], published by NISO for ballot on
+2007-01-23 and as Internet-Draft draft-kunze-rfc2413bis-06.txt
+on 2007-02-19 by IETF [7].
+
+[1] http://dublincore.org/documents/2006/08/28/dcmi-terms/
+[2] http://dublincore.org/usage/public-comment/2006/08/dcmes-changes/
+[3] http://dublincore.org/usage/minutes/2006/2006-10-01.meeting-notes-manzanillo.txt
+[4] http://dublincore.org/usage/decisions/2006/2006-03.dcmes-changes.shtml
+[5] http://dublincore.org/usage/decisions/2006/2006-03.response-to-comments.shtml
+[6] http://dublincore.org/documents/2006/12/18/dcmi-terms/
+[7] http://www.ietf.org/internet-drafts/draft-kunze-rfc2413bis-06.txt
+
+----------------------------------------------------------------------
+http://dublincore.org/usage/minutes/2006/2006-10-01.meeting-notes-manzanillo.txt
+
+-- Discussion of Treasury Board of Canada comments on the
+   proposed changes to DCMES
+
+   AGREED: For dc:source, the word 'related' in the definition
+   is redundant and should be removed. The new definition
+   for Source will be the wording proposed in the Canadian
+   Treasury Board comments: "The resource from which the
+   described resource is derived.".
+
+   ACTION 2006-09-30: Tom - Change dc:source definition to read:
+   "The resource from which the described resource is derived"
+   [see http://dublincore.org/usage/public-comment/2006/08/dcmes-changes/].
+
+======================================================================
+Comment 7: NLM Definition of dc:source
+
+    We find the definition and comment still extremely
+    confusing and question the use of related resource to
+    describe the source. We understand that source is a
+    special type of related resource but this is not made
+    clear in the revisions. We recommend restating the
+    definition to The resource from which the described
+    resource is derived in whole or in part. The comment
+    would then read, The described resource may be derived
+    from the related resource. Recommended best practice is
+    to identify the source by means of a string conforming
+    to a formal identification system.
+
+3.11. Source
+
+2001> Element Name:   Source
+2001> Label:          Source
+2001> Definition:     A reference to a resource from which 
+2001>                 the present resource is derived.
+2001> Comment:        The present resource may be derived
+2001>                 from the Source resource in whole or
+2001>                 in part. Recommended best practice is
+2001>                 to identify the referenced resource by
+2001>                 means of a string or number conforming
+2001>                 to a formal identification system.
+
+2006> Name:           source
+2006> Label:          Source
+2006> Definition:     The resource from which the described 
+2006>                 resource is derived.
+2006> Comment:        The described resource may be derived from the
+2006>                 related resource in whole or in part. Recommended
+2006>                 best practice is to identify the related resource
+2006>                 by means of a string conforming to a formal
+2006>                 identification system.
+
+      -- Element Name now called Name, since 2002 in lowercase
+         [see Section 2.6]
+
+      -- In the definition, changes "present resource" to
+         "described resource", both more precise and consistent
+         with the DCMI Abstract Model
+
+      -- In definition, replaces "a reference to a resource"
+         with "resource" [see Section 2.2]
+
+      -- In comment, drops the redundant words "or number"
+
+======================================================================
+Comment 8: NLM, Comment for dc:subject
+
+    We question why the comment contains the phrase the topic will
+    be represented. rather than the subject will be represented.
+    as is the case in many of the other elements in which the
+    element name is repeated in the comment field. Repeating
+    the element name in the comment field would help provide
+    consistency among the elements.
+
+----------------------------------------------------------------------
+3.3.  Subject   
+
+2001> Element Name:   Subject
+2001> Label:          Subject and Keywords
+2001> Definition:     A topic of the content of the resource.
+2001> Comment:        Typically, Subject will be expressed
+2001>                 as keywords, key phrases, or classification
+2001>                 codes that describe a topic of the
+2001>                 resource. Recommended best practice
+2001>                 is to select a value from a controlled
+2001>                 vocabulary or formal classification scheme.
+
+2006> Name:           subject
+2006> Label:          Subject
+2006> Definition:     The topic of the resource.
+2006> Comment:        Typically, the topic will be represented using
+2006>                 keywords, key phrases, or classification codes.
+2006>                 Recommended best practice is to use a controlled
+2006>                 vocabulary.  To describe the spatial or temporal 
+2006>                 topic of the resource, use the Coverage element.
+
+      -- Element Name now called Name, since 2002 in lowercase
+         [see Section 2.6]
+
+      -- Change of label from "Subject and Keywords" to
+         "Subject".  It continues to be acknowledged in the
+         comment that a subject may be expressed with keywords.
+         This change also brings the label of the element 
+         ("Subject") in line with its name ("subject").
+
+      -- In definition, replaces "content of the resource"
+         with "resource" [see Section 2.1]
+
+      -- In comment, adds advice that the Coverage element
+         be used to describe the spatial or temporal topic
+         of the resource
+
+      -- In comment, replaces "use a value from an encoding
+         scheme" with "use a controlled vocabulary" [see
+         Section 2.3]
+
+      -- In comment, "expressed as" reworded as "represented using"
+
+======================================================================
+Comment 9: NLM, Comment for dc:title
+
+    We recommend removing the term formally from the comment
+    field. This term is ambiguous and may have a different meaning
+    in different communities
+
+----------------------------------------------------------------------
+3.1.  Title
+
+2001> Element Name:   Title
+2001> Label:          Title
+2001> Definition:     A name given to the resource.
+2001> Comment:        Typically, Title will be a name by
+2001>                 which the resource is formally known.
+
+2006> Name:           title
+2006> Label:          Title
+2006> Definition:     A name given to the resource.
+2006> Comment:        Typically, a Title will be a name by which 
+2006>                 the resource is formally known.
+      
+      -- Element Name now called Name, since 2002 in lowercase
+         [see Section 2.6]
+
+      -- In comment, reference to "Title" changed to "a Title"
+
+----------------------------------------------------------------------
+Date:         Fri, 16 Feb 2007 13:37:26 +0000
+From:         Misha Wolf <Misha.Wolf@REUTERS.COM>
+To:           DC-GENERAL@JISCMAIL.AC.UK
+Subject: draft-kunze-rfc2413bis-05.txt
+Sender:       General DCMI discussion list <DC-GENERAL@JISCMAIL.AC.UK>
+
+Hi John,
+
+I'm writing to comment on draft-kunze-rfc2413bis-05.txt
+(http://ietfreport.isoc.org/idref/draft-kunze-rfc2413bis/).
+
+On behalf of the News Industry, I wish to repeat our strong opposition
+to the comment against the DC title element:
+
+    Typically, Title will be a name by which the resource is formally
+    known.
+
+    This is true of no Web page that I know of (including the DC Web pages)
+    and is certainly not true of News stories.
+
+    If the DC community continues to insist that the Earth is flat, other
+    communities are forced to form their own views of DC's powers of
+    observation and interest in listening.
+
+    Regards,
+    Misha -- Co-author of RFC 2413 (http://www.ietf.org/rfc/rfc2413.txt)
+
+    Misha Wolf
+    News Standards Manager
+    Reuters
+
+----------------------------------------------------------------------
+Date:         Thu, 23 Jun 2005 19:26:29 +0100
+From:         Misha Wolf <Misha.Wolf@REUTERS.COM>
+Subject: Never mind the syntax, feel the semantics
+Comments: cc: semantic-web@w3.org, iptc-metadata@yahoogroups.com
+To:           DC-GENERAL@JISCMAIL.AC.UK
+
+I'll start by mentioning that I've put on a hard hat and a flame-
+retardant cape, just in case I need them.
+
+It's also worth reiterating Stu's mention of my long involvement
+with DC.  See, for example, RFC 2413 (Dublin Core Metadata for
+Resource Discovery), dating from 1998:
+   http://www.ietf.org/rfc/rfc2413.txt
+
+As I've mentioned in previous postings, the News Architecture
+Working Party of the International Press Telecommunications Council
+(IPTC) is actively examining the use of DC for those of our metadata
+elements where there is a good semantic fit.  Having been involved
+with DC all those years ago, I had assumed that this would be a
+relatively pain-free matter.  I was wrong.  Consider the humble
+title.  RFC 2413 defines this as:
+
+   The name given to the resource, usually by the Creator or
+   Publisher.
+
+The current official DC documentation states:
+
+   Definition: A name given to the resource.
+
+   Comment   : Typically, Title will be a name by which the resource
+               is formally known.
+
+Ouch!  This comment may well work for the Library community.  It
+certainly does not work for many other communities, such as Web page
+authors, professional photographers, or news organisations.
+
+If I change the title of one of the hundreds of Web pages I maintain,
+I am most certainly not changing "a name by which the resource is
+formally known".
+
+The same applies to a professional photographer changing the title
+of one of thousands of photos on her/his computer.
+
+And the same applies to a news story ... the title (ie headline) is
+most certainly not any kind of formal name.
+
+So we have a problem.  If the Semantic Web is to work, it is not
+enough to employ some common syntax or even a common abstract model. 
+We need to be able to share meaning.  And this is obviously a
+balancing act between having definitions that are so broad that they
+become meaningless and definitions that are so narrow that they fit
+only one community and are not shareable.  Those of us working on
+the architecture of mainstream news standards, perceive the comment
+associated with dc:title as being on the latter end of the spectrum.
+
+And so, as Chair of the IPTC News Metadata Framework WG, I am asking
+the DC community to reconsider the text of the comment accompanying
+the definition of dc:title.
+
+Many thanks,
+Misha Wolf
+Standards Manager, Reuters
+
+----------------------------------------------------------------------
+Date:         Thu, 23 Jun 2005 15:13:16 -0400
+From:         "Weibel,Stu" <weibel@OCLC.ORG>
+Subject: Re: Never mind the syntax, feel the semantics
+Comments: To: Misha Wolf <Misha.Wolf@REUTERS.COM>
+To:           DC-GENERAL@JISCMAIL.AC.UK
+
+This seems easy to me...
+
+Point A:
+
+The DEFINITION is broad and inclusive, and seems to me to clearly
+satisfy both the biblioheads and the webheads.
+
+The COMMENT is just that... A comment.  Intended to clarify (oops... We
+might not have done the best possible thing in this case, though the
+word 'typically' is a very legitimate trap door).
+
+Definitions are normative, comments are... well... Comments.
+
+Point B:
+
+The tricky balance that Misha articulates below has always been hard,
+and inevitably rough around the margins:
+
+    a balancing act between having definitions that are so broad
+    that they become meaningless and definitions that are so narrow
+    that they fit only one community and are not shareable.
+
+Always we should be apply the test of common sense... In this case, its
+asking the question...
+
+What is the most title-like-object in this resource, and if I choose it,
+am I likely to blow up any other  community's notion of THEIR
+title-like-object?
+
+The answer seems SOOOO obvious to me that I can't understand why this is
+even an issue.
+
+Hey, Misha... We've missed you!
+s
+
+======================================================================
+Comment 10, NLM Comment for dc:type
+
+    We question the deletion of the sentence Type includes
+    terms describing general categories, functions, genres, or
+    aggregation levels for content. We feel that by removing
+    this sentence it has taken away the guidance that was
+    previously present and resulted in a less user-friendly
+    comment. If one of the objectives of this revision is to
+    define elements at a high-level without much implementation
+    guidance, by only providing a definition and recommended
+    best practices, then the standard should be consistent
+    among all of the elements.
+
+----------------------------------------------------------------------
+3.8.  Type
+
+2001> Element Name:   Type
+2001> Label:          Resource Type
+2001> Definition:     The nature or genre of the content of 
+2001>                 the resource.
+2001> Comment:        Type includes terms describing general
+2001>                 categories, functions, genres, or
+2001>                 aggregation levels for content. Recommended
+2001>                 best practice is to select a value from
+2001>                 a controlled vocabulary (for example, the
+2001>                 DCMI Type Vocabulary [DCT]). To describe
+2001>                 the physical or digital manifestation of
+2001>                 the resource, use the Format element.
+
+2006> Name:           type
+2006> Label:          Type
+2006> Definition:     The nature or genre of the resource.
+2006> Comment:        Recommended best practice is to use a controlled
+2006>                 vocabulary such as the DCMI Type Vocabulary
+2006>                 [DCMITYPE]. To describe the file format, physical
+2006>                 medium, or dimensions of the resource, use the
+2006>                 Format element.
+
+      -- Element Name now called Name, since 2002 in lowercase
+         [see Section 2.6]
+
+      -- In label, changed "Resource Type" to "Type" [see
+         Section 2.4]
+
+      -- In definition, replaces "content of the resource"
+         with "resource" [see Section 2.1]
+
+      -- In comment, replaces the phrase "select a value from
+         a controlled vocabulary" with "use a controlled
+         vocabulary" [see Section 2.3]
+
+      -- In comment, deletes sentence: "Type includes terms
+         describing general categories, functions, genres,
+         or aggregation levels for content."
+
+
+2009-01-29: Changed usageboard/log URIs to usage/minutes URIs.

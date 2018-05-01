@@ -1,0 +1,96 @@
+------------------------------------------------------------------------
+Date:         Tue, 16 Aug 2005 20:56:07 +0100
+From:         Pete Johnston <p.johnston@UKOLN.AC.UK>
+Subject: New draft (2005-08-13) of DC CD AP available
+To:           DC-COLLECTIONS@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+I've created a new draft of the DC CD AP:
+
+http://www.ukoln.ac.uk/metadata/dcmi/collection-ap-summary/
+
+http://www.ukoln.ac.uk/metadata/dcmi/collection-application-profile/
+
+Bearing in mind that the Usage Board will be looking at this perhaps
+less from the perspective of whether the DC CD AP meets our "functional
+requirements", and rather more from the perspective of whether it is
+"well-formed" with respect to the DCMI Abstract Model (and whether it
+makes reasonable use of individual terms from the DC vocabularies), the
+main changes I've made are - as suggested at [1] - to try to bring it
+into alignment with the terminology and concepts of the DCAM, by
+
+1. providing a bit more introductory commentary on what the DC CD AP is;
+2. tweaking the text, mostly of "Comments", here and there to refer to
+values, value strings, statements etc as appropriate;
+3. reorgansing the tables a bit and for each property, for each
+vocabulary encoding scheme recommended for that property, adding a table
+which indicates whether a value URI, value string or rich representation
+is required/optional. 
+
+I've assumed that for every value, a related description _may_ be
+provided - so you might have a description of a subject term or a
+location or a collector or a service or whatever, but this DCAP doesn't
+tell you anything about what terms might be used in those descriptions.
+
+I hope (3) goes some way to addressing the questions I was getting along
+the lines of "Do I use a URI or a name/title here?" a bit better than my
+stock response of "Well, you can use either but you need to be sure
+which you want...". I've probably made some fairly arbitrary decisions
+along the way here, but I've tried to base them on what I've seen of
+existing practice, particularly in e.g. the JISC IESR project.
+
+So e.g. for properties like dc:title, dcterms:abstract, a "value string"
+is required but a "value URI" is optional; and for properties like
+cld:logo where the value is an image, a "value URI" is required, but a
+"value string" is optional. I was strongly inclined to mandate the use
+of a "value URI" for the relations between collections, but given that
+we stopped short of saying that collections must have URIs assigned to
+them (I think that was what we settled on? The use of dc:identifier with
+a URI is "optional but recommended" in the current version?), I've left
+it as optional. I made the decision that "rich representations" of
+values are not supported.
+
+We can discuss some of this and if necessary revise the detail of these
+options later - I suggest it might be a good topic for the f2f meeting
+of the WG in Madrid - , but I wanted to get a first cut at this in place
+in the version that the Usage Board review, as I think it illustrates
+some issues raised by the DCAM which have not been addressed by previous
+efforts at modelling/representing DC application profiles. 
+
+In terms of the "content" of the DC CD AP, the main changes I made were:
+
+- Format of Items/Collection: I've removed the dc:format property,
+pending resolution of the question of how to represent the fact that a
+collection has items of a specified format
+- Date ranges: The DC Date WG hasn't yet made a recommendation on the
+issue of how to represent "open date ranges" (which neither W3CDTF or
+ISO8601 support). So I've opted to reference an encoding scheme based on
+the date format used by the Australian Recordkeeping Metadata Schema
+(RKMS) [2]. I've created a (currently temporary) URI for this (see [3] -
+though at present I'm not suggesting we propose that scheme to UB - date
+schemes is a job for the DC Date WG) - as I couldn't see one defined by
+RKMS (but if anyone can point me at an existing URI, I'll use that). 
+
+(The other option would be to define a new date format, which I also
+made a start on. See [4]) 
+ 
+I'm happy to make minor changes to this version of the DC CD AP before
+passing it to the Usage Board (e.g. I haven't changed the logo
+definition but if we can agree wording for that - which I get a sense we
+are close to doing - then I'll include it in a new version), but I'd
+like to post a version to the Usage Board first thing on Monday, so any
+comments need to be made by the end of this Friday (19 August). 
+
+I have very little time (well, none, really) left to work on this this
+week, so I'm afraid any substantial changes will have to wait (unless
+there are any glaring errors) ;-) 
+
+There is one issue I'm slightly uncomfortable about but I don't know
+what to do about - I'll post a separate message on that, probably
+tomorrow.
+
+[1] http://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=ind0504&L=dc-collections&P=1125
+[2] RKMS Schemes http://www.sims.monash.edu.au/research/rcrg/research/spirt/deliver/schemes.html
+[3] http://www.ukoln.ac.uk/metadata/dcmi/collection-RKMS-ISO8601/
+[4] http://www.ukoln.ac.uk/metadata/dcmi/date-dccd-odrf/
+

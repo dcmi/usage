@@ -1,0 +1,379 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US"
+xml:lang="en-US">
+  <head>
+    <meta name="generator" content="HTML Tidy, see www.w3.org" />
+
+    <title>DCMI Usage Board</title>
+    <meta http-equiv="Content-Type"
+    content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" href="/css/default.css"
+    type="text/css" />
+<script src="/js/default.js" type="text/javascript">
+</script>
+  </head>
+
+  <body>
+    <!--#include virtual="/ssi/header.shtml" -->
+
+<h1>DCMI Usage Board</h1>
+
+    
+<PRE>
+-------------------------------------------------------------------------------
+Previous version: Thu Oct 18 16:14:04 MEST 2001
+This Version: Fri Oct 19 10:37:15 MEST 2001 - FINAL VERSION BEFORE MEETING
+
+Please contact thomas.baker@gmd.de for the latest version.
+The latest version will be posted on the mailing list
+at http://www.jiscmail.ac.uk/lists/dc-usage.html and (ideally)
+mirrored at
+http://www.gmd.de/People/Thomas.Baker/Agenda-tokyo.html.
+After the meeting, the agenda will be archived under
+http://dublincore.org/usage/meetings.
+-------------------------------------------------------------------------------
+
+AGENDA - USAGE BOARD MEETING IN TOKYO (DC-2001)
+
+Convenor: Tom Baker, Chair
+Members expected:
+        Andy Powell         Diane Hillmann      Haruki Nagata
+        Roland Schwaenzl    Stuart Sutton       Tom Baker
+        Traugott Koch     
+Apologies:
+        Rebecca Guenther
+Guests expected:
+        Harry Wagner        Stu Weibel          Rachel Heery
+
+See also http://www.nii.ac.jp/dc2001/index.html (click on "Advance Program")
+
+-------------------------------------------------------------------------------
+Meeting packet
+-------------------------------------------------------------------------------
+
+1.0.1: This agenda
+1.1.1: <a href="http://www.lub.lu.se/%7Etraugott/drafts/vocab-guide2.html">http://www.lub.lu.se/~traugott/drafts/vocab-guide2.html</a> [<a href="vocab-guide2.html">Cached copy</a>]
+1.1.2: <a href="http://www.gmd.de/People/Thomas.Baker/2001-10-10.dc-usage.faq-questions.html">http://www.gmd.de/People/Thomas.Baker/2001-10-10.dc-usage.faq-questions.html</a> [<a href="2001-10-10_dc-usage_faq-questions.html">Cached copy</a>]
+1.1.3: <a href="http://www.gmd.de/People/Thomas.Baker/rfc3066_proposal.doc">http://www.gmd.de/People/Thomas.Baker/rfc3066_proposal.doc</a> [<a href="rfc3066_proposal.html">Cached copy</a>]
+1.1.4: <a href="http://www.jiscmail.ac.uk/cgi-bin/wa.exe?A2=ind0109&amp;L=dc-usage&amp;F=&amp;S=&amp;P=3385">http://www.jiscmail.ac.uk/cgi-bin/wa.exe?A2=ind0109&L=dc-usage&F=&S=&P=3385</a> [<a href="usage-archives-2001-09.html">Cached copy</a>]
+1.1.5: <a href="http://www.lub.lu.se/%7Etraugott/drafts/DC-Vocabulary-Qualifiers.html">http://www.lub.lu.se/~traugott/drafts/DC-Vocabulary-Qualifiers.html</a> [<a href="DC-Vocabulary-Qualifiers.html">Cached copy</a>]
+1.1.6: <a href="http://wip.dublincore.org/Schemes.html">http://wip.dublincore.org/Schemes.html</a> screen-shot [<a href="schemas-screenshot.shtml">Cached copy</a>]
+1.2.1: <a href="http://www.gmd.de/People/Thomas.Baker/DC-Gov_proposal_v0.2_2001-10-121.doc">http://www.gmd.de/People/Thomas.Baker/DC-Gov_proposal_v0.2_2001-10-121.doc</a> [<a href="DC-Gov_proposal_v0.2_2001-10-121.html">Cached copy</a>]
+2.1.1: <a href="/documents/dcmi-namespace/">http://dublincore.org/documents/dcmi-namespace/</a> 
+2.1.2: <a href="/usage/documents/approval/">http://dublincore.org/usage/documents/approval</a>
+2.1.3: <a href="/usage/documents/process/">http://dublincore.org/usage/documents/process</a>
+2.1.4: <a href="http://www.gmd.de/People/Thomas.Baker/2001-10-15.Dc-usage.diane.Proposed_Section_3.3.doc">http://www.gmd.de/People/Thomas.Baker/2001-10-15.Dc-usage.diane.Proposed_Section_3.3.doc</a> [<a href="Proposed_Section_3.3.html">Cached copy</a>]
+2.1.5: <a href="/usage/documents/2001/06/12/criteria/">http://dublincore.org/usage/documents/criteria</a>
+2.1.6: <a href="http://www.gmd.de/People/Thomas.Baker/2001-10-18.Dc-usage.diane.AGENTs.doc">http://www.gmd.de/People/Thomas.Baker/2001-10-18.Dc-usage.diane.AGENTs.doc</a> [<a href="AGENTs.html">Cached copy</a>]
+2.1.7: <a href="http://www.jiscmail.ac.uk/cgi-bin/wa.exe?A2=ind0110&amp;L=dc-general&amp;O=A&amp;P=3646">http://www.jiscmail.ac.uk/cgi-bin/wa.exe?A2=ind0110&L=dc-general&O=A&P=3646</a> [<a href="dcgeneral-archives-2001-10.html">Cached copy</a>]
+
+-------------------------------------------------------------------------------
+1. Monday morning, 9:00-12:00 -- 3'00" with 15" break
+-------------------------------------------------------------------------------
+
+1.1. Guidelines for encoding schemes and subject 
+     vocabularies (Traugott, others?)
+
+    We need to clarify the process, workflow, and guidelines for
+    fast-track approval.  Traugott has revised the guidelines we
+    discussed in May and will present these.  See
+    [PACKET 1.1.1: http://www.lub.lu.se/~traugott/drafts/vocab-guide2.html],
+    posted on 8 October.
+
+    With regard to process, we should review Stu's recent addition
+    to the FAQ, mirrored at:
+    [PACKET 1.1.2: http://www.gmd.de/People/Thomas.Baker/2001-10-10.dc-usage.faq-questions.html].
+
+    Items under consideration for fast-track include:
+
+        RFC 3066, Rebecca's proposal, see
+            [PACKET 1.1.3: http://www.gmd.de/People/Thomas.Baker/rfc3066_proposal.doc]
+        Ethnologue language terms (Diane)
+        Identifier encoding schemes: ISSN, DOI, SICI, OpenURL... (Andy)
+            [PACKET 1.1.4: http://www.jiscmail.ac.uk/cgi-bin/wa.exe?A2=ind0109&L=dc-usage&F=&S=&P=3385].
+        [PACKET 1.1.5: http://www.lub.lu.se/~traugott/drafts/DC-Vocabulary-Qualifiers.html]
+
+    Harry has prototyped an encoding scheme Web page at
+    [PACKET 1.1.6: http://wip.dublincore.org/Schemes.html screen-shot].
+    We should try to agree on a standard Web form for submitting proposals.
+
+
+1.2.  DC-Government proposal (Stuart)
+
+    This is the main agenda item, for which we might need two hours.
+    I have mirrored the version we will discuss at
+    [PACKET 1.2.1: http://www.gmd.de/People/Thomas.Baker/DC-Gov_proposal_v0.2_2001-10-121.doc]
+
+    See also http://dublincore.org/groups/government.
+
+-------------------------------------------------------------------------------
+2. Meeting some evening, to be planned, eg 19:00-22:00?
+-------------------------------------------------------------------------------
+
+2.1. Update and wrapup of Namespace issue, implications for Usage Board (Andy)
+
+    Background: 
+    [PACKET 2.1.1: http://dublincore.org/documents/dcmi-namespace/]
+
+    What happened to the DCMI Persistence Policy which used to be at
+    http://dublincore.org/about/persistence?
+
+2.2.  Usage Board process (Diane)
+
+    Diane will summarize UB process as described in the
+    revised document and recap the process by which that
+    document was approved by AC.
+
+    Relevant documents are:
+    -- "Procedure for approval of DCMI Metadata Terms and
+       Recommendations", [PACKET 2.1.2: http://dublincore.org/usage/documents/approval].
+    -- "Usage Board administrative process",
+       [PACKET 2.1.3: http://dublincore.org/usage/documents/process].
+
+    Diane has also worked on a revised "Criteria for Evaluation
+    of Proposals", posted to the list and mirrored at
+    [PACKET 2.1.4: http://www.gmd.de/People/Thomas.Baker/2001-10-15.Dc-usage.diane.Proposed_Section_3.3.doc].
+    This would replace the current "Criteria" draft at
+    [PACKET 2.1.5: http://dublincore.org/usage/documents/criteria].
+
+    One urgent set of process issues concerns the workflow for
+    documenting decisions made at meetings.
+    I would suggest that shepherds be responsible
+    for getting approval of the final form of their documents.  
+
+    I suggest that the drafter submit the document to the dc-usage
+    list with Cc: to Beth for posting on the meeting follow-up
+    page.  The drafters should clearly indicate that they are
+    submitting the document for close reading and final approval.
+    During the course of a one-month comment period, every member
+    of the Usage Board should sign off (if only with a one-on-one
+    message to the drafter) on every such deliverable.  The drafter
+    should keep track of who has signed off.  If we agree on this
+    process, we should perhaps add it to our process document.
+
+2.2.  Agent issues: ways forward (Diane)
+
+    We discussed this on the list back in June, and
+    Diane has produced a summary mirrored at:
+    [PACKET 2.1.6: http://www.gmd.de/People/Thomas.Baker/2001-10-18.Dc-usage.diane.AGENTs.doc]
+
+    See also the Agent issues to be discussed in a Tokyo breakout
+    session on 23 October:
+    [PACKET 2.1.7: http://www.jiscmail.ac.uk/cgi-bin/wa.exe?A2=ind0110&L=dc-general&O=A&P=3646]
+
+2.3. Documentation of Usage Board results (Tom, Stu/Harry, Rachel)
+
+    A working paper
+    http://www.gmd.de/People/Thomas.Baker/UB-Doc.html was used as
+    the basis for overhauling the Web pages at
+    http://dublincore.org/usage.  This document will be updated in
+    response to discussion on the list and turned into a manual for
+    maintaining the UB Web pages.  Rachel Heery of the DCMI
+    Registry Working Group will also participate in the
+    discussions so that we can clarify the relationship between
+    the Usage Board and Registry activities.  The agenda of the
+    DC-9 meeting of the Registry WG is at 
+    http://www.jiscmail.ac.uk/cgi-bin/wa.exe?A2=ind0110&L=dc-general&O=A&P=4096.
+
+    In particular see:
+    -- Registry prototype: http://wip.dublincore.org:8080/registry/
+    -- Functional requirements: http://www.ukoln.ac.uk/~lisrmh/DCMI-registry/funreq.html
+
+-------------------------------------------------------------------------------
+3. Longer-term issues for "bar BOFs"
+-------------------------------------------------------------------------------
+
+3.1.  Application profiles (Andy, Tom)
+
+    On May 21 (at the Dublin meeting) we decided that:
+    a. UB is not concerned with application profiles.
+    b. UB is not concerned with other namespaces.
+    c. Recommendation: UB shouldn't approve application profiles.
+       DCMI Registry should be responsible for registering application 
+       profiles.
+
+    The issue here is by what process, and according to which
+    criteria, DCMI should be in the business of reviewing,
+    recognizing, or just plain registering application profiles.
+    Andy and I have been planning to write up some strawman
+    guidelines for application profiles and have not yet gotten to
+    this.  One issue is that of APs as human-readable Web pages, as
+    in http://dublincore.org/documents/library-application-profile,
+    which is discussed in:
+    http://www.jiscmail.ac.uk/cgi-bin/wa.exe?A2=ind0108&L=dc-general&O=A&P=274
+    http://www.jiscmail.ac.uk/cgi-bin/wa.exe?A2=ind0108&L=dc-general&O=A&P=673
+
+    Ideally, however, we would have more detailed guidelines for
+    expressing such profiles machine-understandably, eg along the
+    lines described in a paper by Makx, Rachel, Manjula, Gauri, and
+    myself to appear soon in JODI:
+    http://www.gmd.de/People/Thomas.Baker/Profiles.pdf.
+
+3.2.  DC-Citation (Andy)
+
+3.3.  Naming policy, dct:alternative vs dct:alternativeTitle (Andy)
+
+3.4.  Are element refinements "elements" or "qualifiers"? (Tom, Andy)
+
+    The broader issue is that of our grammar, and whether we need
+    an updated grammar paper.  A related issue from a DCMI
+    registry perspective is the technical question of whether a
+    metadata term's grammatical category (element, encoding
+    scheme, etc) should be expressed in the base RDF schema
+    encoding the DCMI namespace or expressed as an RDF annotation
+    to that schema.
+
+3.5. Reviewing or endorsing translations of DCMI Metadata Terms (Tom)
+    
+    We need to think, for the longer term, about whether, who,
+    and how translations of DCMI metadata terms should be
+    reviewed for quality and certified by DCMI.
+
+3.6. Definition of the Title element (Roland)
+    
+    See Roland's comments, mirrored at
+    http://www.gmd.de/People/Thomas.Baker/2001-10-03.Dc-usage.title-issue.html
+
+</PRE>
+<hr>
+<PRE>
+
+ADDENDUM TO AGENDA, USAGE BOARD MEETING OF 22 OCTOBER, TOKYO<br>Version: Fri Oct 19 12:32:27 MEST 2001</PRE>
+<p><br>
+  --------------------------------------------------------------------------<br>
+  Query from Alan Lillich, Adobe Systems Incorporated, 17 September 2001<br>
+  --------------------------------------------------------------------------</p>
+<p>Sent: Monday, September 17, 2001 8:14 PM<br>
+  To: DC-GENERAL@JISCMAIL.AC.UK<br>
+  Subject: Re: Repeating DC elements</p>
+<p>It has been very interesting to watch the recent discussion on repeating<br>
+  elements. I think the focus on personal choices is missing some important<br>
+  broader issues.</p>
+<p>The use of DC metadata will become much more valuable if we can achieve a<br>
+  high degree of commonality. Like the standardization of railroad gauges,<br>
+  it is not so important that you have a semicolon separated list of keywords,<br>
+  repeated simple keyword elements, or in the case of RDF one keyword element<br>
+  containing a bag of individual words. It is more important that metadata<br>
+  written by one piece of software be understood by another.</p>
+<p>There are (at least) two established and one emerging class of participants<br>
+  in the DC metadata game. The established players are the DCMI and<br>
+  significant end users of DC metadata. The end users are largely<br>
+  distinguished by defining their own databases and producing their own custom<br>
+  implementations. They are often in a situation where the metadata is the<br>
+  goal.</p>
+<p>The emerging participants are the volume software vendors and their<br>
+  customers who can benefit from reliable metadata for all of their electronic<br>
+  documents. Adobe finds itself in this situation. We are in the process of<br>
+  adding RDF and DC-based metadata support to all of our applications.<br>
+  Acrobat 5 is the first to ship with some of this support. (For those who<br>
+  have used Acrobat 5, it does not embody the final or definitive<br>
+  implementation. It was first, and as usual for software it does not do<br>
+  everything we want to do.)</p>
+<p>Adobe needs to make choices about the UI we present and the metadata we<br>
+  write. We can't afford to spend the time and money to provide ultimate<br>
+  flexibility. Much as we might wish, we can't canvas all or even a<br>
+  significant portion of our users ahead of time. We need to provide a common<br>
+  approach in all our applications that is useful for our customers, and that<br>
+  can be utilized by other software to provide additional value.</p>
+<p>We think it would be tremendously helpful for the DCMI to provide guidance<br>
+  and suggested good practice for the use of DC metadata in unclear areas like<br>
+  repeating elements. These should not have the weight of standards, but<br>
+  guidance to help choose a representation and to transform among<br>
+  representations. Policy for logically equivalent representations so that<br>
+  software recognizes all legitimate forms. Perhaps standard qualifiers to<br>
+  denote encodings like semicolon separated keywords.</p>
+<p>For those of us using RDF, localization through the xml:lang attribute is<br>
+  another area where it is easy to construct ambiguous examples. Suppose you<br>
+  have a book with two authors, one American and one Japanese. And the book<br>
+  is published in both the U.S. and Japan.</p>
+<p>For the title an rdf:Alt container makes the localization explicit, although<br>
+  repeated title properties with xml:lang attributes should be clear at least<br>
+  to a human (but only because of the semantic knowledge that books don't have<br>
+  multiple titles).</p>
+<p>Suppose the Japanese author wishes to have separate Romanji and Kanji names<br>
+  for the US and Japan. Use of simple repeated properties would be ambiguous,<br>
+  indistinguishable from a case of three authors. Again use of an rdf:Alt<br>
+  container for the Japanese author makes things clear. And use of an rdf:Bag<br>
+  or rdf:Seq container for both authors makes it clear whether there is any<br>
+  hierarchy.</p>
+<p>Alan Lillich<br>
+  Adobe Systems Incorporated.</p>
+<p>--------------------------------------------------------------------------<br>
+  Query from Eddie Byrne &lt;Eddie.Byrne@comhairle.ie&gt;,<br>
+  Irish Public Service Metadata Project Co-ordinator, 26 September 2001<br>
+  --------------------------------------------------------------------------</p>
+<p>Eddie Byrne sent a query to dc-general last May and got some responses,<br>
+  attached below, but the responses were inconclusive. He is looking for<br>
+  additional guidance:</p>
+<p>Byrne&gt; Issue: use of case for DC qualifiers in HTML<br>
+  Byrne&gt;<br>
+  Byrne&gt; Choice between: (example) DC.Relation.isFormatOf or<br>
+  Byrne&gt; DC.Relation.IsFormatOf (note the difference in case)<br>
+  Byrne&gt;<br>
+  Byrne&gt; Why am I confused? Because the explanation and examples given at both<br>
+  Byrne&gt; http://dublincore.org/documents/dcmes-qualifiers/ and<br>
+  Byrne&gt; http://dublincore.org/documents/2000/08/15/dcq-html/ are contradictory<br>
+  Byrne&gt; and do not explain the reasoning.<br>
+  Byrne&gt;<br>
+  Byrne&gt; I am currently recommending that which is indicated as the Name of 
+  the<br>
+  Byrne&gt; qualifier as that which is to be appended to the element (i.e.<br>
+  Byrne&gt; isFormatOf). The only rationale I can give is that in the event of<br>
+  Byrne&gt; migration to xhtml or xml the lower case convention is already<br>
+  Byrne&gt; practiced and minimum disruption occurs. Does that explanation make<br>
+  Byrne&gt; sense, or more precisely, is it correct?</p>
+<p>[message from Eddie Byrne to DC General Discussion list in May 2001]</p>
+<p>Forgive me, I know that this discussion was had in May 1999 (as per<br>
+  archives search), but the outcome seemed inconclusive (at least re.<br>
+  html). Rdf/xml lower case seems a foregone conclusion, but what about<br>
+  HTML, or more specifically the case of qualifiers? For example.<br>
+  DC.Relation.IsVersioOf or DC.Relation.isVersionOf ? DC site examples<br>
+  indicate the first as the case to use, however I not that AGLS<br>
+  specifies the second. What might be the now accepted case convention if<br>
+  there is such a thing? Or might someone explain why AGLS differ? Is the<br>
+  AGLS case determined in any way by issues of migration? Or does it<br>
+  matter?</p>
+<p>Eddie Byrne</p>
+<p>Response 1:</p>
+<p>Hi Eddie and other colleagues,</p>
+<p>Funnily enough, we were looking at just this issue yesterday when I was<br>
+  reviewing our metadata standards against AGLS and other Australioan<br>
+  government recommendations. HealthInsite aims to be AGLS-compliant but<br>
+  it was pointed out that we use the DC convention for case in element<br>
+  refinements. When I was developing the HealthInstie standards there was<br>
+  a lot of guess-work because DC and AGLS were developing at the same<br>
+  time. My feeling is that the issue is trivial and that harvester<br>
+  software can easily be adapted to ignore any case differences in the<br>
+  metadata syntax.</p>
+<p>Regards, Prue Prue Deacon<br>
+  HealthInsite Editorial Team<br>
+  Commonwealth Department of Health and Aged Care (Australia)</p>
+<p>Response 2:</p>
+<p>Eddie</p>
+<p>As Prue noted in her reply AGLS was a qualified metadata standard<br>
+  before DC had agreed on its qualifier set. For that reason we had to<br>
+  make a number of decisions about practical matters before DCMI had<br>
+  finalised its position on such matters. The AGLS capitalisation<br>
+  convention was based on earlier versions of the proposal set out in the<br>
+  paper &quot;Recording qualified Dublin Core metadata in HTML meta elements&quot;<br>
+  at: http://dublincore.org/documents/2000/08/15/dcq-html/. To date this<br>
+  is the only example of a convention for writing element refinements and<br>
+  it specifies the convention followed by AGLS (although not in so many<br>
+  words - lok at the examples) i.e. for element refinements the first<br>
+  letter of the refinement name is in lower case and the inital letter of<br>
+  any and all subsequent words which make up the refinement name are in<br>
+  upper case e.g. DC.Date.modified and DC.Relation.isVersionOf and<br>
+  DC.Relation.hasFormat.</p>
+<p>Cheers Andrew Wilson<br>
+  Assistant Director<br>
+  Recordkeeping Standards &amp; Policy<br>
+  National Archives of Australia</p>
+<PRE>&nbsp;
+</PRE>
+<!--#include virtual="/ssi/footer.shtml" -->
+</body>
+</html>
+
+

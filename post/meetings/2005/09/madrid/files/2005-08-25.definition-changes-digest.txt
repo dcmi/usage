@@ -1,0 +1,905 @@
+------------------------------------------------------------------------
+Date:         Tue, 23 Aug 2005 16:36:17 +0100
+From:         Andy Powell <a.powell@UKOLN.AC.UK>
+Subject: Proposed changes to DCMI property definitions
+To:           DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+I had an action (possibly with Diane?) to put the proposed changes to 
+DCMES definitions (the changes required in order to aling the definitions 
+with the DCAM) into the form of a document (at least, I think that's what 
+the action was!).
+
+I've done this and put the document in the DC RDF Taskforce's Wiki (since 
+these changes are also very relevant to the work of that group).  See:
+
+Proposed changes to DCMI property definitions
+http://www.ukoln.ac.uk/twiki/bin/view/Metadata/ProposedPropertyDefinitions
+
+Shout if you disagree with anything and/or have any other comments.
+
+Note that some of the proposed changes go a bit beyond a simple 
+interpretation of what the DCAM says!
+
+------------------------------------------------------------------------
+Date:         Tue, 23 Aug 2005 17:42:07 +0100
+From:         Pete Johnston <p.johnston@UKOLN.AC.UK>
+Subject: Re: Proposed changes to DCMI property definitions
+To:           DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+> Proposed changes to DCMI property definitions
+>
+http://www.ukoln.ac.uk/twiki/bin/view/Metadata/ProposedPropertyDefinitions
+>
+> Shout if you disagree with anything and/or have any other comments.
+
+The comment for dc:coverage includes
+
+===
+Coverage includes spatial location (a place name or geographic
+coordinates), temporal period (a period label, date, or date range) or
+jurisdiction (such as a named administrative entity).
+===
+
+I'm not sure "a place name" or (a set of) "geographic coordinates" _is_
+a spatial location. I think they are means of
+identifying/describing/representing/labelling a spatial location. Same
+for "a period label".
+
+I think the form "named adminstrative entity" gets it right - the value
+is the entity, not its name.
+
+So maybe
+
+"a place name" -> "a named place"  
+"geographic coordinates" -> "a location specified by (a set of?)
+geographic coordinates"
+"a period label" -> "a named period"
+
+Or rephrase the text in brackets to say "represented by [the
+names/labels etc]". 
+
+Either way works as long as they are consistent, I think.
+
+The comment for dc:source includes
+
+===
+The present resource may be derived from the Source resource in whole or
+in part. Recommended best practice is to identify the referenced
+resource by means of a string or number conforming to a formal
+identification system.
+===
+
+This uses both "the Source resource" (yuk!) and "the referenced
+resource" to refer to the same thing, the value - maybe clearer to
+settle on "the referenced resource" (which is the form used in the
+descriptions of subprops of dc:relation, I think?)
+
+Also this and some of the other DCMES definitions talk about "the
+present resource" whereas the subprops of dc:relation talk about "the
+described resource" - the latter seems a bit more in keeping with the
+DCAM?
+
+The comment for dc:rights includes
+
+===
+If the Rights element is absent...
+===
+
+This phrasing does seem a bit at odds with the DCAM. I think it reflects
+a view in which "elements" are components in instances (as in XML (or
+LOM?)). But the DCAM has no view of "elements" being "present in" or
+"absent from" descriptions. A description contains statements _referring
+to_ the property or it doesn't. 
+
+So I think this should really say something like (though neither of
+these seem quite right either!):
+
+> In the absence of a statement using the Rights property....
+
+or maybe
+
+> In the absence of a Rights statement....
+
+(though I recognise "Rights statement" might have other connotations)  
+
+> I would recommend changing all usage of "[intellectual] content of the
+resource" to "resource" in the definitions
+
+I notice that you haven't proposed a change to the definition of
+dc:subject ("The topic of the content of the resource.") Not sure if
+that was deliberate?
+
+------------------------------------------------------------------------
+Date:         Wed, 24 Aug 2005 14:23:41 +0100
+From:         Andy Powell <a.powell@UKOLN.AC.UK>
+Subject: Re: Proposed changes to DCMI property definitions
+To:           DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+On Tue, 23 Aug 2005, Pete Johnston wrote:
+
+> So maybe
+>
+> "a place name" -> "a named place"
+> "geographic coordinates" -> "a location specified by (a set of?)
+> geographic coordinates"
+> "a period label" -> "a named period"
+
+Thanks.  Fixed.
+
+> This uses both "the Source resource" (yuk!) and "the referenced
+> resource" to refer to the same thing, the value - maybe clearer to
+> settle on "the referenced resource" (which is the form used in the
+> descriptions of subprops of dc:relation, I think?)
+>
+> Also this and some of the other DCMES definitions talk about "the
+> present resource" whereas the subprops of dc:relation talk about "the
+> described resource" - the latter seems a bit more in keeping with the
+> DCAM?
+
+Thanks.  Fixed.
+
+> So I think this should really say something like (though neither of
+> these seem quite right either!):
+>
+>> In the absence of a statement using the Rights property....
+>
+> or maybe
+>
+>> In the absence of a Rights statement....
+>
+> (though I recognise "Rights statement" might have other connotations)
+
+I've removed this sentence completely.
+
+>> I would recommend changing all usage of "[intellectual] content of the
+> resource" to "resource" in the definitions
+>
+> I notice that you haven't proposed a change to the definition of
+> dc:subject ("The topic of the content of the resource.") Not sure if
+> that was deliberate?
+
+I've only explicitly proposed removing "[intellectual] content of the" in 
+those cases where I was making changes to the term for other reasons.  I 
+missed subject off the list of possible problems by accident.  I've 
+now added it.  Thanks.
+
+------------------------------------------------------------------------
+Date:         Wed, 24 Aug 2005 14:33:36 +0100
+From:         Andy Powell <a.powell@UKOLN.AC.UK>
+Subject: Re: Proposed changes to DCMI property definitions
+To:           DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+I have also added a proposed change for Language (i.e. removal of the 
+'eng' example from the comment) as noted in previous minutes.
+
+http://www.ukoln.ac.uk/twiki/bin/view/Metadata/ProposedPropertyDefinitions
+
+------------------------------------------------------------------------
+Date:         Wed, 24 Aug 2005 15:29:30 +0100
+From:         Andy Powell <a.powell@UKOLN.AC.UK>
+Subject: Re: Proposed changes to DCMI property definitions
+To:           DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+On Wed, 24 Aug 2005, Andy Powell wrote:
+
+> I have also added a proposed change for Language (i.e. removal of the 'eng' 
+> example from the comment) as noted in previous minutes.
+>
+> http://www.ukoln.ac.uk/twiki/bin/view/Metadata/ProposedPropertyDefinitions
+
+I also note from the Washington minutes that the label for Subject was 
+supposed to change - so I have also added a proposed change for Subject.
+
+------------------------------------------------------------------------
+Date:         Wed, 24 Aug 2005 10:33:57 -0400
+From:         "Diane I. Hillmann" <dih1@CORNELL.EDU>
+Subject: Re: Proposed changes to DCMI property definitions
+To:           DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+Andy,
+
+It was probably me, but whoosh, the summer has flown by.  In any 
+case, thanks for following through on these--and in general I agree 
+with your suggestions (with Pete's additions).  I have a comment 
+about Coverage, however.
+
+I'm a bit wary of using "topic" here, since it creates potential 
+confusion with Subject. I would prefer "scope" (and I'm not sure why 
+you think that creates a conflict with format and extent?) since 
+there's not necessarily an "aboutness" implied for coverage that the 
+word "topic" suggests. Particularly with the comment about 
+jurisdictional coverage, "topic" is problematic. I'd be willing to 
+compromise with "scope or topic" if necessary ... ;-)
+
+Particularly because many of our users come to DC from MARC, this is 
+an issue that comes up over and over. MARC handles the differences 
+between "topic" and "scope" by placement of geographic information 
+within a subject string. Resources "about" a place or time have the 
+geographic or temporal piece first in the subject string; where the 
+scope of the topic is limited by geographic or temporal aspects, it 
+comes after the topic.  For historical reasons, we've treated 
+Coverage differently, but, even so, it behooves us NOT to blur the 
+difference by emphasizing only the topical uses of Coverage.
+
+Diane
+
+------------------------------------------------------------------------
+Date:         Wed, 24 Aug 2005 15:48:31 +0100
+From:         Andy Powell <a.powell@UKOLN.AC.UK>
+Subject: Re: Proposed changes to DCMI property definitions
+To:           DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+On Wed, 24 Aug 2005, Diane I. Hillmann wrote:
+> It was probably me, but whoosh, the summer has flown by.  In any case, thanks 
+> for following through on these--and in general I agree with your suggestions 
+> (with Pete's additions).  I have a comment about Coverage, however.
+>
+> I'm a bit wary of using "topic" here, since it creates potential confusion 
+> with Subject. I would prefer "scope" (and I'm not sure why you think that 
+> creates a conflict with format and extent?) since there's not necessarily an 
+> "aboutness" implied for coverage that the word "topic" suggests. Particularly 
+> with the comment about jurisdictional coverage, "topic" is problematic. I'd 
+> be willing to compromise with "scope or topic" if necessary ... ;-)
+>
+> Particularly because many of our users come to DC from MARC, this is an issue 
+> that comes up over and over. MARC handles the differences between "topic" and 
+> "scope" by placement of geographic information within a subject string. 
+> Resources "about" a place or time have the geographic or temporal piece first 
+> in the subject string; where the scope of the topic is limited by geographic 
+> or temporal aspects, it comes after the topic.  For historical reasons, we've 
+> treated Coverage differently, but, even so, it behooves us NOT to blur the 
+> difference by emphasizing only the topical uses of Coverage.
+
+Hmmm... interesting.  I'm not sure I understand what you mean by 'scope' 
+here.
+
+I thought that Coverage was to do with the 'aboutness' of the resource.
+
+In fact, I've always worked on the basis that Coverage is, essentially, a 
+sub-property of Subject.  (Though of course, as good DCers we could never 
+say such a thing out loud! :-) ).
+
+This is clearly not your view...
+
+So, some examples.
+
+I've always assumed that when we say
+
+dc:coverage: bath, uk
+
+we mean that the topic of the resource is 'bath, uk' - the resource is 
+about 'bath, uk'.  And further, that we could just as well say
+
+dc:subject: bath, uk
+
+but we are being a little more specific by using Coverage.
+
+Similarly, when we say
+
+dc:coverage: 19th century
+
+we mean that the resource is about the 19th century - i.e. the topic of 
+the resource is "19th century".
+
+What do you mean by those two statements (assuming that it isn't the same 
+as my intepretation)?  I presume that you mean something different by 
+'scope' (as opposed to 'topic') - something like "is only relevent in this 
+context" perhaps?  So that, for example, if for some bizarre reason we 
+wanted to say that a resource is "about the US, but only appropriate for 
+use by people in the UK' we'd say
+
+dc:subject: US
+dc:coverage: UK
+
+??
+
+That certainly isn't my understanding of what Coverage is about.
+
+------------------------------------------------------------------------
+Date:         Wed, 24 Aug 2005 11:02:28 -0400
+From:         "Diane I. Hillmann" <dih1@CORNELL.EDU>
+Subject: Re: Proposed changes to DCMI property definitions
+To:           DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+Andy:
+
+One example of what I'm talking about is where, for instance, a 
+government site might have resources that apply to only a particular 
+jurisdiction or sub-jurisdiction. The resources are not really 
+"about" that jurisdiction or place, but the jurisdiction within which 
+the resource is applicable would be indicated in Coverage. There 
+might also be a Subject, which might categorize the general topic of 
+the resource.  The purposes of these two elements are quite 
+different, and not both relating to "aboutness" as I understand it.
+
+On the other hand, if you have resources for tourists about that 
+jurisdiction or place, they are certainly about that place.
+
+Diane
+
+------------------------------------------------------------------------
+Date:         Wed, 24 Aug 2005 16:18:58 +0100
+From:         Andy Powell <a.powell@UKOLN.AC.UK>
+Subject: Re: Proposed changes to DCMI property definitions
+To:           DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+On Wed, 24 Aug 2005, Diane I. Hillmann wrote:
+
+> Andy:
+>
+> One example of what I'm talking about is where, for instance, a government 
+> site might have resources that apply to only a particular jurisdiction or 
+> sub-jurisdiction. The resources are not really "about" that jurisdiction or 
+> place, but the jurisdiction within which the resource is applicable would be 
+> indicated in Coverage. There might also be a Subject, which might categorize 
+> the general topic of the resource.  The purposes of these two elements are 
+> quite different, and not both relating to "aboutness" as I understand it.
+
+OK, thanks.  Blimey, I think my understanding of Coverage has been wrong 
+up until now! :-(  Just to confirm... if I say
+
+dc:coverage: UK
+
+I am *not* saying that the resource is about the UK.  Rather, I am saying 
+that the resource is only applicable in the UK (i.e. only appropriate for 
+use in the UK)?  Or am I saying something else.
+
+> On the other hand, if you have resources for tourists about that jurisdiction 
+> or place, they are certainly about that place.
+
+In which case, I presumably use Subject:
+
+dc:subject: UK
+
+Is this what you are saying?  Is this how everyone uses Coverage?
+
+------------------------------------------------------------------------
+Date:         Wed, 24 Aug 2005 08:30:36 -0700
+From:         Stuart Sutton <sasutton@U.WASHINGTON.EDU>
+Subject: Re: Proposed changes to DCMI property definitions
+To:           DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+My understanding of coverage is exactly as Andy states it.
+
+------------------------------------------------------------------------
+Date:         Wed, 24 Aug 2005 08:36:50 -0700
+From:         Stuart Sutton <sasutton@U.WASHINGTON.EDU>
+Subject: Re: Proposed changes to DCMI property definitions
+To:           DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+Hmmm.  Diane, this runs absolutely counter to my assumptions about the
+semantics of coverage (per my response to Andy's earlier response).  In
+fact, I am working on a project that has defined a local property for
+jurisdiction (area/zone of mandated applicability) for academic
+standards in teaching and learning in the US because the focus on
+dc:coverage on "aboutness" made it an inappropriate place to express
+such notions of jurisdiction.
+
+------------------------------------------------------------------------
+Date:         Wed, 24 Aug 2005 11:56:57 -0400
+From:         "Diane I. Hillmann" <dih1@CORNELL.EDU>
+Subject: Re: Proposed changes to DCMI property definitions
+To:           DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+Well, I think this discussion points up the possible downside of 
+making explicit the topicality of Coverage, which I really don't 
+think was intended. But maybe I'm the minority in this.  I certainly 
+think that it has been used by may to express "aboutness" but whether 
+that means we should limit it to that and force implementors to 
+create local properties to express applicability is something we 
+might want to discuss further.
+
+It seems to me that, if we want to allow both uses, we might consider 
+a broader definition, and suggest to somebody that they propose a 
+refinement for coverage?  (I'm ducking here to avoid the rotten 
+tomatoes)
+
+------------------------------------------------------------------------
+Date:         Tue, 30 Aug 2005 09:41:31 +0100
+From:         Andrew Wilson <andrew.c.wilson@AHDS.AC.UK>
+Subject: Re: Proposed changes to DCMI property definitions
+To:           DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+Sorry for the lateness of this reply - I had to make an unexpected trip to
+Australia for a family medical emergency.
+
+I do want to make a comment about Coverage. My understanding of its use
+corresponds to Andy's (and Stuart's). Would it make sense to change the word
+'under' in the proposed definition to 'to', so it reads "...or the
+jurisdiction to whcih the resource is relevant"?
+
+------------------------------------------------------------------------
+Date:         Wed, 31 Aug 2005 13:33:31 +0100
+From:         Pete Johnston <p.johnston@UKOLN.AC.UK>
+Subject: Re: Proposed changes to DCMI property definitions
+To:           DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+Andrew said:
+
+> I do want to make a comment about Coverage. My understanding 
+> of its use corresponds to Andy's (and Stuart's). Would it 
+> make sense to change the word 'under' in the proposed 
+> definition to 'to', so it reads "...or the jurisdiction to 
+> whcih the resource is relevant"?
+
+I'm a bit confused now. ;-)
+
+I think Stuart and Andy(?) are suggesting that the value space of
+dc:coverage excludes "jurisdiction to which the resource is relevant"
+and includes _only_ (spatial/temporal) "aboutness".
+
+So _if_ that is the case - and I don't know whether it is the intention
+behind dc:coverage or not: I've always been a bit confused about the way
+people seem to use dc:coverage! - then it seems to me the definition
+should _exclude_ that reference. And I'd argue that we should also say
+that dc:coverage is a subproperty of dc:subject, but I'm aware I won't
+get very far making that argument... ;-) 
+
+However, I do note that AGLS seems to take the view that the value space
+of dc:coverage _includes_ spatial/temporal relevance/applicability (or
+however we describe it!)
+
+See AGLS
+http://www.naa.gov.au/recordkeeping/gov_online/agls/metadata_element_set
+.html
+
+where agls:jurisdiction is a refinement of dc:coverage with:
+
+Definition: The name of the political/administrative entity covered by
+the content of the resource.
+Comment: Jurisdiction is a description of the territory over which a
+particular government exercises its authority or a particular business
+transacts its operations, to which the resource content is applicable.
+
+If the value space of dc:coverage includes both spatial/temporal
+"aboutness" _and_ spatial/temporal relevance/applicability - which I
+think is Diane's position (?) and seems to be reflected in AGLS usage
+(and other e-gov usage? I'm not sure) at least - then the definition
+should make that clear. And in that case dc:coverage is not a
+subproperty of dc:subject - though I could have a spatialTopic property
+which was a subproperty of both dc:subject and dc:coverage! ;-)
+
+------------------------------------------------------------------------
+Date:         Wed, 31 Aug 2005 15:26:34 +0100
+From:         Andy Powell <a.powell@UKOLN.AC.UK>
+Subject: Re: Proposed changes to DCMI property definitions
+To:           DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+On Wed, 31 Aug 2005, Pete Johnston wrote:
+
+> Andrew said:
+>
+>> I do want to make a comment about Coverage. My understanding
+>> of its use corresponds to Andy's (and Stuart's). Would it
+>> make sense to change the word 'under' in the proposed
+>> definition to 'to', so it reads "...or the jurisdiction to
+>> whcih the resource is relevant"?
+>
+> I'm a bit confused now. ;-)
+>
+> I think Stuart and Andy(?) are suggesting that the value space of
+> dc:coverage excludes "jurisdiction to which the resource is relevant"
+> and includes _only_ (spatial/temporal) "aboutness".
+
+That would be nice... but that wasn't really what I was suggesting.  My 
+proposed (new) definition is
+
+   The spatial or temporal scope/topic(?) of the resource or the
+   jurisdiction under which the resource is relevant.
+
+i.e. I don't exclude "jurisdiction to which the resource is relevant".
+
+I don't see how we can remove the bit about jurisdiction without breaking 
+a lot of existing usage.
+
+Basically, it seems to me, that coverage is pretty much as broken as 
+format is (since they both try to define two things :-( ).  But we are 
+stuck with that situation.
+
+I'm arguing that (however much I dislike it!) coverage covers both 
+'aboutness' (the spatial or temporal scope/topic(?) of the resource) and 
+'applicability' (the jurisdiction under which the resource is relevant).
+
+Furthermore, I thought that Diane was arguing that coverage only covers 
+the 'applicability' aspect, i.e. the applicability in spatial, temporal or 
+jusidictional terms, and *not* the 'aboutness'...  but maybe I'm 
+mis-interpretting what she is saying.
+
+> So _if_ that is the case - and I don't know whether it is the intention
+> behind dc:coverage or not: I've always been a bit confused about the way
+> people seem to use dc:coverage! - then it seems to me the definition
+> should _exclude_ that reference. And I'd argue that we should also say
+> that dc:coverage is a subproperty of dc:subject, but I'm aware I won't
+> get very far making that argument... ;-)
+>
+> However, I do note that AGLS seems to take the view that the value space
+> of dc:coverage _includes_ spatial/temporal relevance/applicability (or
+> however we describe it!)
+>
+> See AGLS
+> http://www.naa.gov.au/recordkeeping/gov_online/agls/metadata_element_set
+> .html
+>
+> where agls:jurisdiction is a refinement of dc:coverage with:
+>
+> Definition: The name of the political/administrative entity covered by
+> the content of the resource.
+> Comment: Jurisdiction is a description of the territory over which a
+> particular government exercises its authority or a particular business
+> transacts its operations, to which the resource content is applicable.
+>
+> If the value space of dc:coverage includes both spatial/temporal
+> "aboutness" _and_ spatial/temporal relevance/applicability - which I
+> think is Diane's position (?) and seems to be reflected in AGLS usage
+> (and other e-gov usage? I'm not sure) at least - then the definition
+> should make that clear.
+
+Well, as I say above, that *is* also my position (though I didn't think it 
+was Diane's) and the proposed definition makes both aspects of the 
+semantics clear (to me).
+
+> And in that case dc:coverage is not a
+> subproperty of dc:subject
+
+OK, well I'm happy to go with that interpretation. However, FWIW, my view 
+is that "the jurisdiction under which the resource is relevant" is close 
+enough to 'aboutness' to fall within dc:subject. For example, I'm 
+struggling to think of an example where the jurisdiction (as given in 
+coverage) wouldn't also be appropriate for adding to a 'Keywords' meta 
+tag.
+
+> - though I could have a spatialTopic property
+> which was a subproperty of both dc:subject and dc:coverage! ;-)
+
+Yes.  What a mess :-(
+
+------------------------------------------------------------------------
+Date:         Wed, 31 Aug 2005 16:04:21 +0100
+From:         Pete Johnston <p.johnston@UKOLN.AC.UK>
+Subject: Re: Proposed changes to DCMI property definitions
+To:           DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+Ansy said:
+
+> That would be nice... but that wasn't really what I was 
+> suggesting.  My 
+> proposed (new) definition is
+> 
+>    The spatial or temporal scope/topic(?) of the resource or the
+>    jurisdiction under which the resource is relevant.
+> 
+> i.e. I don't exclude "jurisdiction to which the resource is relevant".
+
+Ah, OK.
+ 
+> I don't see how we can remove the bit about jurisdiction 
+> without breaking a lot of existing usage.
+
+Yes, I agree. That was my concern too.
+ 
+> Basically, it seems to me, that coverage is pretty much as broken as 
+> format is (since they both try to define two things :-( ).  
+> But we are stuck with that situation. 
+
+Yes. Sigh. :-(
+
+* wishes we could just start again *
+
+[snip]
+
+> OK, well I'm happy to go with that interpretation. However, 
+> FWIW, my view 
+> is that "the jurisdiction under which the resource is 
+> relevant" is close enough to 'aboutness' to fall within dc:subject.
+
+That may apply in some cases but I'm not sure it works in all cases. If
+I have 
+
+(a) "Planning your tour of the UK (for visitors from the US)"
+(b) "Planning your tour of the UK (for vistors from Brazil)"
+
+the spatial relevance/applicability of (a) is USA (or maybe USA and UK)
+and the spatial relevance/applicability of (b) is Brazil (or maybe
+Brazil and UK)
+
+But the spatial "aboutness" of both (a) and (b) is UK, not USA or
+Brazil.
+
+> For example, I'm 
+> struggling to think of an example where the jurisdiction (as given in 
+> coverage) wouldn't also be appropriate for adding to a 
+> 'Keywords' meta tag.
+
+Ah, but I think meta/keywords is broader than dc:subject?
+
+For my (a) above, I might well include both USA and UK as my
+meta/keywords but that doesn't necessarily mean I should include them
+both as values for dc:subject.
+
+Actually now that I look for it I'm not sure where the scope of
+meta/keywords is specified! The best I can find is
+
+http://www.w3.org/TR/html401/struct/global.html#edef-META
+
+and
+
+http://www.w3.org/TR/html401/appendix/notes.html#recs
+
+It seems to me the keywords in meta/keywords aren't limited to
+aboutness: they are _any_ keywords useful for retrieval.
+
+Whereas for dc:subject, keywords are supposed to describe the topic of
+the resource i.e, they are limited to "aboutness", not any old keyword.
+
+But yeah, I am hair-splitting here, and in practice I suspect the use of
+dc:subject is rather looser too.
+
+------------------------------------------------------------------------
+Date:         Wed, 31 Aug 2005 10:25:42 -0700
+From:         Stuart Sutton <sasutton@U.WASHINGTON.EDU>
+Subject: Re: Proposed changes to DCMI property definitions
+To:           DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+Well, if coverange is capable of being both aboutness and jurisdiction,
+it is quite broken indeed. People looking for resources about
+"California" using coverage are unlikely to be satisfied retrieving
+descriptions of the various chapters of the California statutes,
+administrative code, and case law.  And clearly, people looking for
+jurisdictional documents would be absolutely unlikely to be satisfied in
+the least with resources on the history of the California state flower
+(poppy) or the Gold Rush.   Jurisdiction and aboutness are conceptually
+different notions.  To be capable of expressing both jurisdiction and
+aboutness is to end up expressing neither with any certainty...or so it
+seems to me.
+
+------------------------------------------------------------------------
+Date:         Wed, 31 Aug 2005 13:39:02 -0400
+From:         "Diane I. Hillmann" <dih1@CORNELL.EDU>
+Subject: Re: Proposed changes to DCMI property definitions
+To:           DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+Stuart, et al.:
+
+I do believe that this ambiguity (or brokenness, if you insist) has 
+been with us since he beginning, though perhaps it took the messiness 
+of implementation to bring it to the fore. I do believe that, having 
+been around at the inception (such as it was), this was not 
+unintentional, though indeed our current sensibility is very much 
+against the kind of ambiguity represented here. The inclusion of the 
+Coverage element was pushed by the folks for whom geographic 
+representation was important--I don't think they cared so much about 
+the definition of the element, just that there was someplace to put 
+geographic information, for whatever purpose.
+
+I agree with Stuart that the use cases we have discussed, and the 
+implementations we know about, suggest that we might want to take 
+some action here.  I agree with Pete (I think it was) that there is 
+enough "aboutness" in our notion of jurisdiction that we should be 
+able to do something reasonable, without breaking existing 
+implementations. It may be that we should look to Format as our 
+guide, where the Extent and Medium refinements make the distinctions 
+we discovered "after the fact" of defining the Format element. In the 
+case of Coverage, we might be able to do with one.
+
+And yes, this was what I was trying to get at in my first post, 
+though certainly, in retrospect, I didn't get there via a straight 
+line. But then, neither did much in Dublin Core ...
+
+------------------------------------------------------------------------
+Date:         Wed, 31 Aug 2005 19:47:17 +0100
+From:         Pete Johnston <p.johnston@UKOLN.AC.UK>
+Subject: Re: Proposed changes to DCMI property definitions
+To:           DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+> I do believe that this ambiguity (or brokenness, if you insist) has 
+> been with us since he beginning, though perhaps it took the messiness 
+> of implementation to bring it to the fore. I do believe that, having 
+> been around at the inception (such as it was), this was not 
+> unintentional, though indeed our current sensibility is very much 
+> against the kind of ambiguity represented here. The inclusion of the 
+> Coverage element was pushed by the folks for whom geographic 
+> representation was important--I don't think they cared so much about 
+> the definition of the element, just that there was someplace to put 
+> geographic information, for whatever purpose.
+> 
+> I agree with Stuart that the use cases we have discussed, and the 
+> implementations we know about, suggest that we might want to take 
+> some action here.  I agree with Pete (I think it was) that there is 
+> enough "aboutness" in our notion of jurisdiction that we should be 
+> able to do something reasonable, without breaking existing 
+> implementations. 
+
+I think that was Andy. I was agreeing with Stuart and saying that
+"aboutness" and "relevance/applicability" were different notions (and by
+implication agreeing that having them rolled into a single property
+didn't seem very useful). What I wasn't sure about was whether the
+dc:coverage property did actually encompass both these notions, but it
+seems that it does. :-(
+
+> It may be that we should look to Format as our 
+> guide, where the Extent and Medium refinements make the distinctions 
+> we discovered "after the fact" of defining the Format element. In the 
+> case of Coverage, we might be able to do with one.
+
+I guess it would be possible to coin something like
+
+dcterms:relevance ("A time or place for which the resource is relevant
+or applicable") 
+
+with 
+
+dcterms:relevance rdfs:subpropertyOf dc:coverage
+
+(I think you could get away without dcterms:spatialRelevance and
+dcterms:temporalRelevance as well, and examine the type of the value
+instead, but I'm not sure.)
+
+But that doesn't change the fact that you can't tell whether references
+to the existing dc:coverage, dcterms:spatial and dcterms:temporal
+properties are being used for aboutness or for relevance.
+
+i.e. if I find
+
+thing:x dcterms:spatial country:Spain .
+thing:x dcterms:relevance country:Spain .
+
+I still don't know whether thing:x is "about" Spain or not.
+ 
+------------------------------------------------------------------------
+Date:         Wed, 31 Aug 2005 16:47:57 -0400
+From:         "Diane I. Hillmann" <dih1@CORNELL.EDU>
+Subject: Re: Proposed changes to DCMI property definitions
+To:           DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+>I think that was Andy. I was agreeing with Stuart and saying that
+>"aboutness" and "relevance/applicability" were different notions (and by
+>implication agreeing that having them rolled into a single property
+>didn't seem very useful). What I wasn't sure about was whether the
+>dc:coverage property did actually encompass both these notions, but it
+>seems that it does. :-(
+
+Oops, sorry! Sometimes when you guys get the bit between your teeth, 
+it's hard to keep up ... ;-)
+
+>  > It may be that we should look to Format as our
+>>  guide, where the Extent and Medium refinements make the distinctions
+>>  we discovered "after the fact" of defining the Format element. In the
+>>  case of Coverage, we might be able to do with one.
+>
+>I guess it would be possible to coin something like
+>
+>dcterms:relevance ("A time or place for which the resource is relevant
+>or applicable")
+>
+>with
+>
+>dcterms:relevance rdfs:subpropertyOf dc:coverage
+
+Given that we've not seen much call for relevance for temporal 
+information, and "jurisdiction" seems to be our challenge, couldn't 
+we consider some of the definitional work that Stuart has done for 
+that as an element and use is for a refinement?  Really, doesn't 
+Spatial and Temporal deal primarily with the "aboutness" portion?
+
+>(I think you could get away without dcterms:spatialRelevance and
+>dcterms:temporalRelevance as well, and examine the type of the value
+>instead, but I'm not sure.)
+>
+>But that doesn't change the fact that you can't tell whether references
+>to the existing dc:coverage, dcterms:spatial and dcterms:temporal
+>properties are being used for aboutness or for relevance.
+>
+>i.e. if I find
+>
+>thing:x dcterms:spatial country:Spain .
+>thing:x dcterms:relevance country:Spain .
+>
+>I still don't know whether thing:x is "about" Spain or not.
+>
+
+That's true, but isn't that a function of the fact that "relevance" 
+as a concept isn't particularly well understood in our community?  In 
+contrast, I think the people who work with jurisdictions (like 
+lawyers and governments) understand that concept instinctively and 
+don't tend to ask questions like the one you just asked ... ;-)  As 
+for the worry about already encoded information, consider when we 
+added StillImage and MovingImage to DCMIType. We didn't know whether 
+things that were already encoded as images were one or the other.
+
+Diane
+(keeping her head down, sort of)
+
+------------------------------------------------------------------------
+Date:         Thu, 1 Sep 2005 08:45:56 +0100
+From:         Pete Johnston <p.johnston@UKOLN.AC.UK>
+Subject: Re: Proposed changes to DCMI property definitions
+To:           DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+Quoting "Diane I. Hillmann" <dih1@cornell.edu>:
+
+> Given that we've not seen much call for relevance for temporal
+> information, and "jurisdiction" seems to be our challenge, couldn't
+> we consider some of the definitional work that Stuart has done for
+> that as an element and use is for a refinement?  Really, doesn't
+> Spatial and Temporal deal primarily with the "aboutness" portion?
+
+I was assuming that both dcterms:spatial and dcterms:temporal suffered from the
+same problem as dc:coverage (i.e. they encompass both "aboutness" and
+"relevance/applicability").
+
+I'm afraid "primarily" isn't any use to an application, though ;-). Either they
+do or they don't.
+
+> That's true, but isn't that a function of the fact that "relevance"
+> as a concept isn't particularly well understood in our community?  In
+> contrast, I think the people who work with jurisdictions (like
+> lawyers and governments) understand that concept instinctively and
+> don't tend to ask questions like the one you just asked ... ;-)
+
+I hadn't really developed the concept of "relevance" in any real way - what I
+was trying to get at was that since dc:coverage has both a temporal and spatial
+aspect, the problem of distinguishing aboutness and relevance is present in both
+of those dimensions. (Of course then there is an overlap with things like
+dcterms:valid, too)
+
+(To be honest, it's a bit of a mess: I suspect the problem isn't really fix-able
+without scrapping the current dc:coverage term and redefining it more
+coherently, but I recognise that would be a "major semantic impact"/new URI
+needed sort of case, so I'm not really proposing that as a course of action.)
+
+> As
+> for the worry about already encoded information, consider when we
+> added StillImage and MovingImage to DCMIType. We didn't know whether
+> things that were already encoded as images were one or the other.
+
+Agreed, but in that case the more general case ("it's an Image") is still
+(fairly) useful; in the dc:coverage case (as Stuart pointed out yesterday), the
+statement that "It's either about this time/place or it's relevant/applicable to
+this time/place  - but you can not know which" is, arguably, not very useful at
+all. You might almost just as well use dc:relation (some association with thsi
+time/place). This has always been my problem with dc:coverage - the _potential_
+scope means that any _actual_ use serves little real purpose.
+
+------------------------------------------------------------------------
+Date:         Wed, 31 Aug 2005 19:03:39 +0100
+From:         Pete Johnston <p.johnston@UKOLN.AC.UK>
+Subject: Re: Proposed changes to DCMI property definitions
+To:           DC-USAGE@JISCMAIL.AC.UK
+------------------------------------------------------------------------
+
+Stuart said:
+
+> Jurisdiction and aboutness are conceptually
+> different notions.  To be capable of expressing both 
+> jurisdiction and aboutness is to end up expressing neither 
+> with any certainty...or so it seems to me.
+
+I'm inclined to agree with Stuart, and in an ideal world the Right Thing
+To Do would be to coin different properties to represent the different
+notions. 
+
+But given that the existing hybrid use of all _three_ of dc:coverage,
+dcterms:spatial and dcterms:temporal is out there, the options for
+fixing it seem pretty messy.
+

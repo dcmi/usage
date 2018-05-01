@@ -1,0 +1,56 @@
+---
+title: 
+date: '2017-09-01T16:21:09+01:00'
+description: 
+draft: false
+creators: []
+contributors: []
+publisher: 
+tags: []
+aliases:
+- "/usage/meetings/2003/06/TOPIC15.html"
+---
+
+<pre>
+ XXXXXXX XXX XXXXXX XXXXX XXXX X XXXXX 
+ X X X X X X X X X X XXX X     
+    X X X X X X X X X     
+    X X X X X X X X X     
+    X X X XXXXX X X X XXXX  
+    X X X X X X X X 
+    X X X X X X X X 
+    X X X X X X X X X X 
+   XXX XXX XXXX XXXXX XXXX XXXXX XXX  
+                                                                
+
+TOPIC 15. Dublin Core Application Profiles (Tom)
+
+    Tom, Makx, Rachel, and Thomas Fischer have drafted
+    Guidelines for Dublin Core Application Profiles. Based on
+    an analysis of over twenty existing application profiles
+    of Dublin Core, the draft guidelines aim at providing
+    a sensible and coherent format that will meet the needs
+    of most Application Profile creators; that is as simple
+    as possible yet as detailed as is sometimes necessary;
+    and that will lend itself in the future to transformation
+    into machine-processable forms. Should the Usage Board
+    approve of, promote, or use these guidelines? Would the 
+    Usage Board need to discuss these guidelines in detail?
+
+    Required reading:
+    -- Guidelines for Dublin Core Application Profiles
+       <a href="http://stage.dublincore.org/usage/meetings/2003/06/Guidelines.pdf">http://stage.dublincore.org/usage/meetings/2003/06/Guidelines.pdf</a>
+    -- DCMI Usage Board Review of Application Profiles
+       <a href="http://dublincore.org/usage/documents/profiles/">http://dublincore.org/usage/documents/profiles/</a>
+                                                                
+== May need to add to DCMI Usage Board Review guidelines:
+
+    General recommendation: an application profile cannot be
+    conforming unless:
+    -- it uses elements and qualifiers in line with DCMI
+            grammar,
+    -- it only uses particular qualifiers in line with
+            existing DCMI term declarations (e.g. you cannot
+            currently use URI as an encoding scheme for
+            dc:description).
+</pre>
