@@ -10,4 +10,6 @@ The draft ISO 15836-2 proposes:
     identification systems include the Uniform Resource Name (URN), the Digital
     Object Identifier (DOI) and the International Standard Book Number (ISBN).
 
+Note: has range of Literal.
+
 Proposal: accept or reject?

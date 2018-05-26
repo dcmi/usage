@@ -1,4 +1,8 @@
-DCMI Metadata Terms noted, for "relation":
+DCMI Metadata Terms defines "relation"
+
+    A related resource
+
+DCMI Metadata Terms notes, for "relation":
 
     This term is intended to be used with non-literal values as defined in the
     DCMI Abstract Model.  As of December 2007, the DCMI Usage Board is seeking

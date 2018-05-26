@@ -22,3 +22,4 @@ The following
     DCMI Abstract Model.  As of December 2007, the DCMI Usage Board is seeking
     a way to express this intention with a formal range declaration.
 
+Proposal: drop
