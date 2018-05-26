@@ -18,7 +18,7 @@ A proposed correction to the [comment for dct:coverage](https://github.com/dcmi/
 ----------------------------------------------------------------------
 Proposed usage notes that do not raise issues related to range:
 
-* A proposal to [add a usage note for dct:Frequency](https://github.com/dcmi/usage/blob/master/proposals/note_Frequency.md).
+* A proposal to [add a note clarifying the meaning of dct:Frequency](https://github.com/dcmi/usage/blob/master/proposals/note_Frequency.md).
 
 ----------------------------------------------------------------------
 Other
