@@ -5,12 +5,12 @@ DCMIMT currently defines [http://purl.org/dc/terms/coverage](http://dublincore.o
     resource is relevant."
 
 The ISO 15836 definition currently reads (note the absences of "the"): 
-    
-        "spatial or temporal topic of the resource, spatial applicability of
-        the resource, or jurisdiction under which the resource is relevant"
+
+    "spatial or temporal topic of the resource, spatial applicability of
+    the resource, or jurisdiction under which the resource is relevant"
 
 Proposal: No change to ISO 15836. DCMIMT should edited to lose some articles while retaining the initial "The":
 
-       "The spatial or temporal topic of the resource, spatial applicability of
-       the resource, or jurisdiction under which the resource is relevant."
+   "The spatial or temporal topic of the resource, spatial applicability of
+   the resource, or jurisdiction under which the resource is relevant."
 

@@ -1,21 +1,27 @@
 ----------------------------------------------------------------------
 Substantial changes
 
-A proposal to change the [definition of the class dct:Standard](https://github.com/dcmi/usage/blob/master/proposals/definition_Standard.md) to align it with ISO/IEC definitions of "standard" has the effect of changing and narrowing the definition.
+* A proposal to change the [definition of the class dct:Standard](https://github.com/dcmi/usage/blob/master/proposals/definition_Standard.md) to align it with ISO/IEC definitions of "standard" has the effect of changing and narrowing the definition.
 
 ----------------------------------------------------------------------
 Clarifications of wording
 
-A proposal to re-word the [definition of dct:available](https://github.com/dcmi/usage/blob/master/proposals/definition_available.md) aims at clarifying 1) that the date something became available is a single date (and not a range), and 2) that the date something will become available may be an estimate and is often a range.
+* A proposal to re-word the [definition of dct:available](https://github.com/dcmi/usage/blob/master/proposals/definition_available.md) aims at clarifying 1) that the date something became available is a single date (and not a range), and 2) that the date something will become available may be an estimate and is often a range.
 
-* [definition_coverage.md](https://github.com/dcmi/usage/blob/master/proposals/definition_coverage.md)
-  ISO draft: slightly reword dct:coverage definition.
+* A proposal to re-word [the definition of dct:coverage](https://github.com/dcmi/usage/blob/master/proposals/definition_coverage.md) simply loses a few extra articles ("the").
 
-* [note_coverage.md](https://github.com/dcmi/usage/blob/master/proposals/note_coverage.md)
-  ISO draft: slightly reword dct:coverage usage note.
+----------------------------------------------------------------------
+Errata
 
-* [note_Frequency.md](https://github.com/dcmi/usage/blob/master/proposals/note_Frequency.md)
-  ISO draft: add short note with example.
+A proposed correction to the [comment for dct:coverage](https://github.com/dcmi/usage/blob/master/proposals/note_coverage.md) to change the reference to "the Thesaurus of Geographic Names" to "the Getty Thesaurus of Geographic names" (which is what it is called on the [Getty website](http://www.getty.edu/research/tools/vocabulary/tgn/index.html).
+
+----------------------------------------------------------------------
+Proposed usage notes that do not raise issues related to range:
+
+* A proposal to [add a usage note for dct:Frequency](https://github.com/dcmi/usage/blob/master/proposals/note_Frequency.md).
+
+----------------------------------------------------------------------
+Other
 
 * [note_License.md](https://github.com/dcmi/usage/blob/master/proposals/note_License.md)
   ISO draft: reject note for dct:LicenseDocument that is conceptually wrong.
