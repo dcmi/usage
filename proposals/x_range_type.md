@@ -6,13 +6,13 @@ Proposal: loosen the semantics of dcterms:type with a range of skos:Concept (or
 no range at all).  This would require a change to, or liberal interpretation
 of, the Namespace Policy.
 
-----------------------------------------------------------------------
+---------------------------------------------------------------------- 
 Discussion
 
-Date: Tue, 11 Aug 2015 16:55:54 +0100
-From: Jan Voskuil <jan.voskuil@TAXONIC.COM>
-Subject: dcterms:type and SKOS (retried)
-To: DC-ARCHITECTURE@JISCMAIL.AC.UK
+Date: Tue, 11 Aug 2015 16:55:54 +0100 
+From: Jan Voskuil <jan.voskuil@TAXONIC.COM> 
+Subject: dcterms:type and SKOS (retried) 
+To: DC-ARCHITECTURE@JISCMAIL.AC.UK 
 
 In recent work I have struck on a problematic interaction between SKOS
 and DC. These standards should strengthen each other. Using SKOS to
@@ -73,11 +73,11 @@ remove and range information from its definition.
 I would like to thank Irene Polikoff and Thomas Baker for valuable help
 so far. Regards, -Jan Voskuil
 
-----------------------------------------------------------------------
-Date: Tue, 11 Aug 2015 23:23:35 +0000
-From: Simon J D Cox <Simon.Cox@CSIRO.AU>
-Subject: Re: DC-ARCHITECTURE Digest - 10 Aug 2015 to 11 Aug 2015 (#2015-26)
-To: DC-ARCHITECTURE@JISCMAIL.AC.UK
+---------------------------------------------------------------------- 
+Date: Tue, 11 Aug 2015 23:23:35 +0000 
+From: Simon J D Cox <Simon.Cox@CSIRO.AU> 
+Subject: Re: DC-ARCHITECTURE Digest - 10 Aug 2015 to 11 Aug 2015 (#2015-26) 
+To: DC-ARCHITECTURE@JISCMAIL.AC.UK 
 
 This is actually a well-known problem/feature (depending on your pov) in
 SKOS.  SKOS Concepts are often 'classes' in the generic sense, but the
@@ -86,11 +86,11 @@ vocabulary to help move traditional 'vocabularies' into RDF, but stops
 short of modelling them fully as classes.  Your reference to 'punning'
 is on point. Don't expect DL compliance. 
 
-----------------------------------------------------------------------
-Date: Wed, 12 Aug 2015 06:05:21 +0000
-From: Jan Voskuil <jan.voskuil@TAXONIC.COM>
-Subject: Re: DC-ARCHITECTURE Digest - 10 Aug 2015 to 11 Aug 2015 (#2015-26)
-To: DC-ARCHITECTURE@JISCMAIL.AC.UK
+---------------------------------------------------------------------- 
+Date: Wed, 12 Aug 2015 06:05:21 +0000 
+From: Jan Voskuil <jan.voskuil@TAXONIC.COM> 
+Subject: Re: DC-ARCHITECTURE Digest - 10 Aug 2015 to 11 Aug 2015 (#2015-26) 
+To: DC-ARCHITECTURE@JISCMAIL.AC.UK 
 
 Hello Simon,
 
@@ -132,13 +132,11 @@ property.
     modelling choices", 
     http://efoundations.typepad.com/efoundations/2011/09/things-their-conceptualisations-skos-foaffocus-modelling-choices.html
 
-----------------------------------------------------------------------
-Date: Thu, 13 Aug 2015 04:41:47 +0000
-From: Simon J D Cox <Simon.Cox@CSIRO.AU>
-Subject: Re: dcterms:type and SKOS
-To: DC-ARCHITECTURE@JISCMAIL.AC.UK
-
-Hi Jan - 
+---------------------------------------------------------------------- 
+Date: Thu, 13 Aug 2015 04:41:47 +0000 
+From: Simon J D Cox <Simon.Cox@CSIRO.AU> 
+Subject: Re: dcterms:type and SKOS 
+To: DC-ARCHITECTURE@JISCMAIL.AC.UK 
 
 Ok - I think I understand a bit better. The issue is not so much the
 SKOS meta-modelling capability, but the formal definition of
@@ -154,11 +152,11 @@ that is routinely used to cross meta-levels, relating instances to types
 rdf:type, and precludes the use of a skos:Concept as its value because
 of the risk of breaking DL semantics. 
 
-----------------------------------------------------------------------
-Date: Thu, 13 Aug 2015 09:37:37 +0300
-From: Miika Alonen <miika.alonen@CSC.FI>
-Subject: Re: dcterms:type and SKOS
-To: DC-ARCHITECTURE@JISCMAIL.AC.UK
+---------------------------------------------------------------------- 
+Date: Thu, 13 Aug 2015 09:37:37 +0300 
+From: Miika Alonen <miika.alonen@CSC.FI> 
+Subject: Re: dcterms:type and SKOS 
+To: DC-ARCHITECTURE@JISCMAIL.AC.UK 
 
 I'v also used dct:type as described by Jan. Its used that way in many
 places, for example in DCAT Joinup profile:
@@ -198,14 +196,14 @@ Combining this insight with the original "abstract" notion of type,
 which is more like "genre", it seems reasonable to drop the range
 declaration... - j
 
-[1] http://wiki.dublincore.org/index.php/Review_of_DCMI_Abstract_Model
-[2] http://dublincore.org/documents/dc-rdf/
+[1] http://wiki.dublincore.org/index.php/Review_of_DCMI_Abstract_Model 
+[2] http://dublincore.org/documents/dc-rdf/ 
 
-----------------------------------------------------------------------
-Date: Thu, 13 Aug 2015 11:16:16 +0200
-From: Antoine Isaac <aisaac@FEW.VU.NL>
-Subject: Re: dcterms:type and SKOS
-To: DC-ARCHITECTURE@JISCMAIL.AC.UK
+---------------------------------------------------------------------- 
+Date: Thu, 13 Aug 2015 11:16:16 +0200 
+From: Antoine Isaac <aisaac@FEW.VU.NL> 
+Subject: Re: dcterms:type and SKOS 
+To: DC-ARCHITECTURE@JISCMAIL.AC.UK 
 
 Hi Jan, Simon,
 
@@ -237,11 +235,11 @@ formal perspective.  (note: I personally don't care so much about
 creating such statements, especially after I'm told to use the stricter
 dcterms: namespace rather than the good old flexible dc11: namespace)
 
-----------------------------------------------------------------------
-Date: Thu, 13 Aug 2015 11:40:00 +0000
-From: Jan Voskuil <jan.voskuil@TAXONIC.COM>
-Subject: Re: dcterms:type and SKOS
-To: DC-ARCHITECTURE@JISCMAIL.AC.UK
+---------------------------------------------------------------------- 
+Date: Thu, 13 Aug 2015 11:40:00 +0000 
+From: Jan Voskuil <jan.voskuil@TAXONIC.COM> 
+Subject: Re: dcterms:type and SKOS 
+To: DC-ARCHITECTURE@JISCMAIL.AC.UK 
 
 Hi Antoine, thank you for your comments and the pointers.
 
@@ -276,11 +274,11 @@ stimulate the use of Linked Data in general.
 So my line of thinking is more towards the promotion of SKOS than fixing
 formal semantics per se.... -j
 
-----------------------------------------------------------------------
-Date: Fri, 14 Aug 2015 16:59:45 +0200
-From: Antoine Isaac <aisaac@FEW.VU.NL>
-Subject: Re: dcterms:type and SKOS
-To: DC-ARCHITECTURE@JISCMAIL.AC.UK
+----------------------------------------------------------------------  
+Date: Fri, 14 Aug 2015 16:59:45 +0200 
+From: Antoine Isaac <aisaac@FEW.VU.NL> 
+Subject: Re: dcterms:type and SKOS 
+To: DC-ARCHITECTURE@JISCMAIL.AC.UK 
 
 Hi Jan,
 
@@ -296,13 +294,13 @@ Antoine
 [1] see e.g. https://schema.org/author . There must be somewhere online
     a discussion about this, but I lack the time to search for it...
 
-----------------------------------------------------------------------
-From tbaker  Sun Aug 16 08:46:04 2015
-Date: Sat, 15 Aug 2015 12:46:57 +0000
-Sender: DCMI Architecture Forum <DC-ARCHITECTURE@JISCMAIL.AC.UK>
-From: Jan Voskuil <jan.voskuil@TAXONIC.COM>
-Subject: Re: dcterms:type and SKOS
-To: DC-ARCHITECTURE@JISCMAIL.AC.UK
+---------------------------------------------------------------------- 
+From tbaker  Sun Aug 16 08:46:04 2015 
+Date: Sat, 15 Aug 2015 12:46:57 +0000 
+Sender: DCMI Architecture Forum <DC-ARCHITECTURE@JISCMAIL.AC.UK> 
+From: Jan Voskuil <jan.voskuil@TAXONIC.COM> 
+Subject: Re: dcterms:type and SKOS 
+To: DC-ARCHITECTURE@JISCMAIL.AC.UK 
 
 Hi Antoine, you are right. Maybe it would be just as powerful if the
 "official"  definition and description of use leaves range formally
@@ -314,14 +312,12 @@ a " comply or explain"-character: you could still use resources that are
 not (explicitly) typed as skos:Concept. You are still free to ignore the
 possible type-transfer phenomena. -j
 
-----------------------------------------------------------------------
-From tbaker  Sun Aug 16 08:46:12 2015
-Date: Sat, 15 Aug 2015 07:55:44 -0700
-From: Karen Coyle <kcoyle@KCOYLE.NET>
-Subject: Re: dcterms:type and SKOS
-To: DC-ARCHITECTURE@JISCMAIL.AC.UK
-Content-Length: 901
-Lines: 16
+---------------------------------------------------------------------- 
+From tbaker  Sun Aug 16 08:46:12 2015 
+Date: Sat, 15 Aug 2015 07:55:44 -0700 
+From: Karen Coyle <kcoyle@KCOYLE.NET> 
+Subject: Re: dcterms:type and SKOS 
+To: DC-ARCHITECTURE@JISCMAIL.AC.UK 
 
 Although dcterms:subject recommends that values be taken from a 
 controlled vocabulary, I think that some aspects of today's controlled 
@@ -339,11 +335,11 @@ the concept "person" and actual persons ("Napoleon Bonapart"). Surely
 we'll move beyond that now that we have the capability to distinguish 
 between them.
 
-----------------------------------------------------------------------
-Date: Sun, 16 Aug 2015 15:40:06 +0200
-From: Antoine Isaac <aisaac@FEW.VU.NL>
-Subject: Re: dcterms:type and SKOS
-To: DC-ARCHITECTURE@JISCMAIL.AC.UK
+---------------------------------------------------------------------- 
+Date: Sun, 16 Aug 2015 15:40:06 +0200 
+From: Antoine Isaac <aisaac@FEW.VU.NL> 
+Subject: Re: dcterms:type and SKOS 
+To: DC-ARCHITECTURE@JISCMAIL.AC.UK 
 
 Yes we probably need some flexibility about using properties both with
 SKOS-like vocabularies and other knowledge bases where a person is
@@ -361,11 +357,11 @@ or RWOs are instances of classes in the OWL framework. Dual-typing these
 as (RDFS/OWL) classes may break some systems - the ones that expects
 OWL-DL sort of expressivity at most, as Jan wanted to use.
 
-----------------------------------------------------------------------
-Date: Mon, 17 Aug 2015 07:55:22 +0000
-From: Jan Voskuil <jan.voskuil@TAXONIC.COM>
-Subject: Re: dcterms:type and SKOS
-To: DC-ARCHITECTURE@JISCMAIL.AC.UK
+---------------------------------------------------------------------- 
+Date: Mon, 17 Aug 2015 07:55:22 +0000 
+From: Jan Voskuil <jan.voskuil@TAXONIC.COM> 
+Subject: Re: dcterms:type and SKOS 
+To: DC-ARCHITECTURE@JISCMAIL.AC.UK 
 
 Karen, Antoine, I think this is true when for instance dcterms:creator
 is concerned, but I strongly disagree in case of dcterms:subject and
@@ -432,19 +428,19 @@ need to constrain the range of these.
 
 Does this make any sense? -Jan
 
-[1] http://xmlns.com/foaf/spec/#term_focus
-[2] "Getty Vocabularies: Linked Open Data Semantic Representation", chapter 
-    3 "Concept vs Thing Duality", http://vocab.getty.edu/doc/#Concept_vs_Thing_Duality.
-[3] Pete Johnston, "Things & their conceptualisations: SKOS, foaf:focus &
-    modelling choices, 
-    http://efoundations.typepad.com/efoundations/2011/09/things-their-conceptualisations-skos-foaffocus-modelling-choices.html
-[4] http://www.w3.org/TR/2005/WD-swbp-skos-core-guide-20051102/
+[1] http://xmlns.com/foaf/spec/#term_focus 
+[2] "Getty Vocabularies: Linked Open Data Semantic Representation", chapter  
+    3 "Concept vs Thing Duality", http://vocab.getty.edu/doc/#Concept_vs_Thing_Duality. 
+[3] Pete Johnston, "Things & their conceptualisations: SKOS, foaf:focus & 
+    modelling choices,  
+    http://efoundations.typepad.com/efoundations/2011/09/things-their-conceptualisations-skos-foaffocus-modelling-choices.html 
+[4] http://www.w3.org/TR/2005/WD-swbp-skos-core-guide-20051102/ 
 
-----------------------------------------------------------------------
-Date: Mon, 17 Aug 2015 12:46:04 +0300
-From: Dan Matei <Dan@CIMEC.RO>
-Subject: Re: dcterms:type and SKOS
-To: DC-ARCHITECTURE@JISCMAIL.AC.UK
+---------------------------------------------------------------------- 
+Date: Mon, 17 Aug 2015 12:46:04 +0300 
+From: Dan Matei <Dan@CIMEC.RO> 
+Subject: Re: dcterms:type and SKOS 
+To: DC-ARCHITECTURE@JISCMAIL.AC.UK 
 
 > To express the relation between a metamodelling concept
 > (":NapoleonConcept") and the RWO/FWO (":NapoleonBonaparte"),
@@ -482,26 +478,26 @@ Enea Silvio Piccolomini vs. Pius II
 
 or even:
 
-Bill Clinton (as himself)
-Bill Clinton (as governor of Arkansas)
-Bill Clinton (as president of USA)
+Bill Clinton (as himself) 
+Bill Clinton (as governor of Arkansas) 
+Bill Clinton (as president of USA) 
 
 But to consider them concepts ? Useful ?
 
-----------------------------------------------------------------------
-Date: Mon, 17 Aug 2015 10:17:08 +0000
-From: Jan Voskuil <jan.voskuil@TAXONIC.COM>
-Subject: Re: dcterms:type and SKOS
-To: DC-ARCHITECTURE@JISCMAIL.AC.UK
+---------------------------------------------------------------------- 
+Date: Mon, 17 Aug 2015 10:17:08 +0000 
+From: Jan Voskuil <jan.voskuil@TAXONIC.COM> 
+Subject: Re: dcterms:type and SKOS 
+To: DC-ARCHITECTURE@JISCMAIL.AC.UK 
 
 Hi Dan, thanks! I like your examples. I am thinking about these and
 usefulness, and get back later.... -j
 
-----------------------------------------------------------------------
-Date: Mon, 17 Aug 2015 13:41:00 +0000
-From: "Young,Jeff (OR)" <jyoung@OCLC.ORG>
-Subject: Re: dcterms:type and SKOS
-To: DC-ARCHITECTURE@JISCMAIL.AC.UK
+---------------------------------------------------------------------- 
+Date: Mon, 17 Aug 2015 13:41:00 +0000 
+From: "Young,Jeff (OR)" <jyoung@OCLC.ORG> 
+Subject: Re: dcterms:type and SKOS 
+To: DC-ARCHITECTURE@JISCMAIL.AC.UK 
 
 I don't necessarily think the RWO/focus/Concept pattern needs to be
 interpreted metaphysically. You could think of it as a bridge pattern to
@@ -519,22 +515,21 @@ http://www.w3.org/TR/skos-reference/#S14
 
 http://www.w3.org/TR/skos-reference/#div-mapping1
 
-----------------------------------------------------------------------
-Date: Mon, 17 Aug 2015 17:52:52 +0000
-From: Jan Voskuil <jan.voskuil@TAXONIC.COM>
-Subject: Re: dcterms:type and SKOS
-To: DC-ARCHITECTURE@JISCMAIL.AC.UK
+---------------------------------------------------------------------- 
+Date: Mon, 17 Aug 2015 17:52:52 +0000 
+From: Jan Voskuil <jan.voskuil@TAXONIC.COM> 
+Subject: Re: dcterms:type and SKOS 
+To: DC-ARCHITECTURE@JISCMAIL.AC.UK 
 
 Hans, inspiring indeed and certainly highly relevant! Thanks for
 pointing to this reference, -Jan
 
-----------------------------------------------------------------------
-Date: Mon, 17 Aug 2015 19:56:26 +0000
-Reply-To:     DCMI Architecture Forum <DC-ARCHITECTURE@JISCMAIL.AC.UK>
-Sender:       DCMI Architecture Forum <DC-ARCHITECTURE@JISCMAIL.AC.UK>
-From: Jan Voskuil <jan.voskuil@TAXONIC.COM>
-Subject: Re: dcterms:type and SKOS
-To: DC-ARCHITECTURE@JISCMAIL.AC.UK
+---------------------------------------------------------------------- 
+Date: Mon, 17 Aug 2015 19:56:26 +0000 
+Reply-To:     DCMI Architecture Forum <DC-ARCHITECTURE@JISCMAIL.AC.UK> 
+From: Jan Voskuil <jan.voskuil@TAXONIC.COM> 
+Subject: Re: dcterms:type and SKOS 
+To: DC-ARCHITECTURE@JISCMAIL.AC.UK 
 
 Hi Dan, and Karen,
 
@@ -634,16 +629,16 @@ synonym of foaf:focus or as something else.
 
 I hope I am not ranting. Does this make any sense? -Jan
 
-[1] https://en.wikipedia.org/wiki/Celestial_Emporium_of_Benevolent_Knowledge
-[2] https://en.wikipedia.org/wiki/Rhizome_(philosophy)
-[3] http://rhizomik.net/html/rhizome/
-[4] http://www.catalogingtheworld.com/
+[1] https://en.wikipedia.org/wiki/Celestial_Emporium_of_Benevolent_Knowledge  
+[2] https://en.wikipedia.org/wiki/Rhizome_(philosophy) 
+[3] http://rhizomik.net/html/rhizome/ 
+[4] http://www.catalogingtheworld.com/ 
 
-----------------------------------------------------------------------
-Date: Tue, 18 Aug 2015 10:48:56 -0700
-From: Karen Coyle <kcoyle@KCOYLE.NET>
-Subject: Re: dcterms:type and SKOS
-To: DC-ARCHITECTURE@JISCMAIL.AC.UK
+---------------------------------------------------------------------- 
+Date: Tue, 18 Aug 2015 10:48:56 -0700 
+From: Karen Coyle <kcoyle@KCOYLE.NET> 
+Subject: Re: dcterms:type and SKOS 
+To: DC-ARCHITECTURE@JISCMAIL.AC.UK 
 
 Jan,
 
@@ -675,21 +670,21 @@ different communities, as we see already.
 
 kc
 
-[1] http://lov.okfn.org
-[2] http://dublincore.org/documents/singapore-framework/
-[3] http://dublincore.org/documents/profile-guidelines/
-[4] http://wiki.dublincore.org/index.php/RDF_Application_Profiles
-[5] http://www.w3.org/2014/data-shapes/wiki/Main_Page
-[6] http://id.loc.gov/vocabulary/genreFormSchemes/marcgt.html
-[7] http://id.loc.gov/vocabulary/genreFormSchemes.html
-[8] http://sempublishing.sourceforge.net/
-[9] http://dublincore.org/documents/dcmi-type-vocabulary/
+[1] http://lov.okfn.org 
+[2] http://dublincore.org/documents/singapore-framework/ 
+[3] http://dublincore.org/documents/profile-guidelines/ 
+[4] http://wiki.dublincore.org/index.php/RDF_Application_Profiles 
+[5] http://www.w3.org/2014/data-shapes/wiki/Main_Page 
+[6] http://id.loc.gov/vocabulary/genreFormSchemes/marcgt.html 
+[7] http://id.loc.gov/vocabulary/genreFormSchemes.html 
+[8] http://sempublishing.sourceforge.net/ 
+[9] http://dublincore.org/documents/dcmi-type-vocabulary/ 
 
-----------------------------------------------------------------------
-Date: Mon, 17 Aug 2015 18:32:37 +0200
-From: Hans Overbeek <hoverbee@GMAIL.COM>
-Subject: Re: dcterms:type and SKOS
-To: DC-ARCHITECTURE@JISCMAIL.AC.UK
+---------------------------------------------------------------------- 
+Date: Mon, 17 Aug 2015 18:32:37 +0200 
+From: Hans Overbeek <hoverbee@GMAIL.COM> 
+Subject: Re: dcterms:type and SKOS 
+To: DC-ARCHITECTURE@JISCMAIL.AC.UK 
 
 An inspiring picture in this context might be the British Library Data
 Model - Book. [1] As you can see Person-as-Concept is dct:subject of a
@@ -697,13 +692,13 @@ Resource, whereas Person-as-Agent is dct:creator of a Resource.
 Organizations are also modeled both as Concepts and as Agents. Concepts
 relate to Agents using foaf:focus.
 
-[1] http://www.bl.uk/bibliographic/pdfs/bldatamodelbook.pdf
+[1] http://www.bl.uk/bibliographic/pdfs/bldatamodelbook.pdf 
 
-----------------------------------------------------------------------
-Date: Sun, 23 Aug 2015 11:53:51 +0000
-From: Jan Voskuil <jan.voskuil@TAXONIC.COM>
-Subject: Re: dcterms:type and SKOS
-To: DC-ARCHITECTURE@JISCMAIL.AC.UK
+---------------------------------------------------------------------- 
+Date: Sun, 23 Aug 2015 11:53:51 +0000 
+From: Jan Voskuil <jan.voskuil@TAXONIC.COM> 
+Subject: Re: dcterms:type and SKOS 
+To: DC-ARCHITECTURE@JISCMAIL.AC.UK 
 
 Karin, thank you for your insights and the references!
 
@@ -730,11 +725,11 @@ standard relations, which is not possible with a VES.
 Different communities could use different concept schemes (thesauri) in
 the ir APs to restrict the property values of the same properties. -j
 
-----------------------------------------------------------------------
-Date: Sun, 23 Aug 2015 09:39:37 -0700
-From: Karen Coyle <kcoyle@KCOYLE.NET>
-Subject: Re: dcterms:type and SKOS
-To: DC-ARCHITECTURE@JISCMAIL.AC.UK
+---------------------------------------------------------------------- 
+Date: Sun, 23 Aug 2015 09:39:37 -0700 
+From: Karen Coyle <kcoyle@KCOYLE.NET> 
+Subject: Re: dcterms:type and SKOS 
+To: DC-ARCHITECTURE@JISCMAIL.AC.UK 
 
 > I agree that flexibility is desirable. Would this in your view also
 > imply that the range declaration of dcterms:type as rdfs:Class should
@@ -758,11 +753,11 @@ to do. While SKOS is not difficult, we can't make others use it if they
 decide not to. However, if we want Dublin Core to be useful throughout 
 the web of data, we need to keep it as unconstrained as possible.
 
-----------------------------------------------------------------------
-Date: Sun, 23 Aug 2015 17:00:04 +0000
-From: Jan Voskuil <jan.voskuil@TAXONIC.COM>
-Subject: Re: dcterms:type and SKOS
-To: DC-ARCHITECTURE@JISCMAIL.AC.UK
+---------------------------------------------------------------------- 
+Date: Sun, 23 Aug 2015 17:00:04 +0000 
+From: Jan Voskuil <jan.voskuil@TAXONIC.COM> 
+Subject: Re: dcterms:type and SKOS 
+To: DC-ARCHITECTURE@JISCMAIL.AC.UK 
 
 If you want a range declaration for some of the dcterms-properties to
 prevent mixing literals and resources and urge people to use
@@ -770,11 +765,11 @@ dce-properties for use with literals, then why is rdfs:Class any better
 than skos:Concept? Alternatively one could consider something like
 owl:Thing. Is that the direction of your thinking? -j
 
-----------------------------------------------------------------------
-Date: Sun, 23 Aug 2015 12:40:50 -0700
-From: Karen Coyle <kcoyle@KCOYLE.NET>
-Subject: Re: dcterms:type and SKOS
-To: DC-ARCHITECTURE@JISCMAIL.AC.UK
+---------------------------------------------------------------------- 
+Date: Sun, 23 Aug 2015 12:40:50 -0700 
+From: Karen Coyle <kcoyle@KCOYLE.NET> 
+Subject: Re: dcterms:type and SKOS 
+To: DC-ARCHITECTURE@JISCMAIL.AC.UK 
 
 > If you want a range declaration for some of the dcterms-properties to
 > prevent mixing literals and resources and urge people to use
@@ -803,14 +798,14 @@ declarations matter? I have a feeling that if RDF validation does become
 widely used, the actual practice of vocabulary declaration may change 
 from what we see today.
 
-kc
+kc 
 [1] http://www.w3.org/2014/data-shapes/wiki/Main_Page
 
-----------------------------------------------------------------------
-Date: Sun, 23 Aug 2015 14:09:39 -0700
-From: Tom Johnson <johnson.tom@GMAIL.COM>
-Subject: Re: dcterms:type and SKOS
-To: DC-ARCHITECTURE@JISCMAIL.AC.UK
+---------------------------------------------------------------------- 
+Date: Sun, 23 Aug 2015 14:09:39 -0700 
+From: Tom Johnson <johnson.tom@GMAIL.COM> 
+Subject: Re: dcterms:type and SKOS 
+To: DC-ARCHITECTURE@JISCMAIL.AC.UK 
 
 > I'm not sure, though, where that leaves us in terms of vocabulary
 > definition and ranges -- if entailment based on ranges is not being
@@ -845,11 +840,11 @@ which suggests that it's a lack of use cases that is the problem.
 
 I suppose I have a few questions:
 
-  - Are there existing guidelines for vocabulary authors about how to 
-    employ the RDFS semantics effectively?
-  - What are the use cases for the RDFS semantics in DC Terms?
-  - Is there existing literature expositing a formal analysis of DC Terms
-    with respect to RDFS Interpretations as defined in the RDF Semantics[1]?
+    - Are there existing guidelines for vocabulary authors about how to 
+      employ the RDFS semantics effectively?
+    - What are the use cases for the RDFS semantics in DC Terms?
+    - Is there existing literature expositing a formal analysis of DC Terms
+      with respect to RDFS Interpretations as defined in the RDF Semantics[1]?
 
 >  ...it does appear that a decision was made to define dcterms at the
 >  RDFS layer of the stack rather than higher up, e.g. OWL. Perhaps
@@ -861,15 +856,15 @@ It seems clear enough that if we're struggling with RDFS being too
 restrictive, anything further up the stack is going to complicate things
 further.
 
-[0] i.e. properties that seem to exist entirely to assert a type for their
-    value: http://www.loc.gov/standards/mods/modsrdf/v1/modsrdf.owl
-[1] http://www.w3.org/TR/rdf11-mt/#rdfs_interpretations
+[0] i.e. properties that seem to exist entirely to assert a type for their 
+    value: http://www.loc.gov/standards/mods/modsrdf/v1/modsrdf.owl 
+[1] http://www.w3.org/TR/rdf11-mt/#rdfs_interpretations 
 
-----------------------------------------------------------------------
-Date: Tue, 25 Aug 2015 09:47:26 +0200
-From: Antoine Isaac <aisaac@FEW.VU.NL>
-Subject: Re: dcterms:type and SKOS
-To: DC-ARCHITECTURE@JISCMAIL.AC.UK
+---------------------------------------------------------------------- 
+Date: Tue, 25 Aug 2015 09:47:26 +0200 
+From: Antoine Isaac <aisaac@FEW.VU.NL> 
+Subject: Re: dcterms:type and SKOS 
+To: DC-ARCHITECTURE@JISCMAIL.AC.UK 
 
 On 8/23/15 11:09 PM, Tom Johnson wrote:
 > I suppose I have a few questions:

@@ -1,4 +1,4 @@
-The draft ISO 15836-2 proposes a usage note for "bibliographicCitation":
+The draft ISO 15836-2 proposes a usage note for the property [http://purl.org/dc/terms/bibliographicCitation](http://dublincore.org/documents/2012/06/14/dcmi-terms/#terms-bibliographicCitation):
 
     NOTE 1 to entry: Best practice is to include sufficient bibliographic
     detail to identify the cited resource unambiguously.

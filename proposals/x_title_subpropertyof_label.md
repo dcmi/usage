@@ -1,5 +1,5 @@
-----------------------------------------------------------------------
-2013-03-11 From: Richard Cyganiak <richard@cyganiak.de>
+---------------------------------------------------------------------- 
+2013-03-11 From: Richard Cyganiak <richard@cyganiak.de> 
 
     Is dc[terms]:title a subproperty of rdfs:label?
     Similarly, is dc[terms]:description a subproperty of rdfs:comment?
@@ -16,8 +16,8 @@
     Declaring these subproperty relationships would make this problem go 
     away.
 
-----------------------------------------------------------------------
-From: Richard Cyganiak <richard@cyganiak.de> on public-gld-wg@w3.org circa Mar 11 2013
+---------------------------------------------------------------------- 
+From: Richard Cyganiak <richard@cyganiak.de> on public-gld-wg@w3.org circa Mar 11 2013 
 
     1. Every resource, whenever practical, should have rdfs:label and 
     rdfs:comment. This is for dumb RDF display tools.

@@ -1,4 +1,4 @@
-DCMI Metadata Terms provides the following usage comment for "date":
+DCMI Metadata Terms provides the following usage comment for the property [http://purl.org/dc/terms/date](http://dublincore.org/documents/2012/06/14/dcmi-terms/#terms-date):
 
     Date may be used to express temporal information at any level of
     granularity. Recommended best practice is to use an encoding scheme, such

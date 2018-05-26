@@ -1,4 +1,5 @@
-DCMI Metadata Terms defines "creator", with a usage comment, as follows:
+DCMI Metadata Terms defines the property [http://purl.org/dc/terms/creator](http://dublincore.org/documents/2012/06/14/dcmi-terms/#terms-creator) with the following definition and 
+usage comment:
 
     An entity primarily responsible for making the resource.
 

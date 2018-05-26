@@ -1,8 +1,8 @@
-----------------------------------------------------------------------
-2016-02-01
-From: Steven Anderson <StevenCAnderson@hotmail.com>
-To: DC-ARCHITECTURE@JISCMAIL.AC.UK
-Subject: dcterms:extent, dcterms:format, and dcterms:created range questions:
+---------------------------------------------------------------------- 
+2016-02-01 
+From: Steven Anderson <StevenCAnderson@hotmail.com> 
+To: DC-ARCHITECTURE@JISCMAIL.AC.UK 
+Subject: dcterms:extent, dcterms:format, and dcterms:created range questions: 
 
 I'm writing as it seems the range of the above terms seem to differ in terms
 of official definition and actual practice. As such, I'd like to see if
@@ -67,9 +67,9 @@ Linked Data Friendly RDF Application Profile. Thank you for your time!
 
 ----------------------------------------------------------------------
 2016-02-08
-From:         Makx Dekkers <subs@MAKXDEKKERS.COM>
-Subject: Re: dcterms:extent, dcterms:format, and dcterms:created range questions:
-To:           DC-ARCHITECTURE@JISCMAIL.AC.UK
+From:         Makx Dekkers <subs@MAKXDEKKERS.COM> 
+Subject: Re: dcterms:extent, dcterms:format, and dcterms:created range questions: 
+To:           DC-ARCHITECTURE@JISCMAIL.AC.UK 
 
 I think this is an important discussion to have.
 
@@ -92,13 +92,11 @@ members know what to do and what to expect, but if you want your stuff to
 make sense in a more open environment, you'd better do things the way they
 were supposed to be done.
 
-----------------------------------------------------------------------
+---------------------------------------------------------------------- 
 2016-02-12
 From:         Antoine Isaac <aisaac@FEW.VU.NL>
 Subject: Re: dcterms:extent, dcterms:format, and dcterms:created range questions:
 To:           DC-ARCHITECTURE@JISCMAIL.AC.UK
-
-Dear Steven,
 
 As you mention the Europeana Data Model maybe someone from Europeana should
 answer... Here I go, even if it won't be very much different from what Makx
@@ -121,10 +119,6 @@ at the level of the vocabulary/ontology may be counterproductive (in the
 Semantic Web community some use the notion of 'semantic overcommitment to refer
 to this issue).
 
-Best,
-
-Antoine
-
-[1] see for example http://schema.org/dateCreated
-[2] http://wiki.dublincore.org/index.php/RDF_Application_Profiles
+[1] see for example http://schema.org/dateCreated 
+[2] http://wiki.dublincore.org/index.php/RDF_Application_Profiles 
 

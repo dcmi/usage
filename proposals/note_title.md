@@ -1,8 +1,8 @@
-DCMI Metadata Terms defines "title" as follows (with no usage comment):
+DCMI Metadata Terms defines the property [http://purl.org/dc/terms/title](http://dublincore.org/documents/2012/06/14/dcmi-terms/#terms-title) as follows:
 
     A name given to the resource.
 
-The draft ISO 15836-2 proposes the following:
+The draft ISO 15836-2 proposes the following definition and note:
 
     name given to the resource; usually a name by which the resource is formally known. 
 

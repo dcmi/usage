@@ -1,4 +1,4 @@
-DCMI Metadata Terms provides the following usage comment for "identifier":
+DCMI Metadata Terms provides the following usage comment for the property [http://purl.org/dc/terms/identifier](http://dublincore.org/documents/2012/06/14/dcmi-terms/#terms-identifier):
     
     Recommended best practice is to identify the resource by means of a string
     confirming to a formal identification system.

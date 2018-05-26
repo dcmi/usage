@@ -1,6 +1,4 @@
-http://purl.org/dc/terms/language
-
-DCMI Metadata Terms provides the following usage comment for "language":
+DCMI Metadata Terms provides the following usage comment for the property [http://purl.org/dc/terms/language](http://dublincore.org/documents/2012/06/14/dcmi-terms/#terms-language):
     
     Recommended best practice is to use a controlled vocabulary such as RFC
     4646.
@@ -29,10 +27,11 @@ Discussion
 Options
 
 * Keep the example 'eng' in ISO 15836-1 (for dc:language) and drop the example
-  for ISO 15836-2 (for dcterms:language).  
+  for ISO 15836-2 (for dcterms:language)?
+
+Question:
   
-* If dcterms:language is indeed being used extensively with literals, then we
-  should consider making this into an issue to be discussed and tracked.
+* Is dcterms:language is indeed being used extensively with literals?
 
 ----------------------------------------------------------------------
 Discussion
@@ -88,5 +87,5 @@ zh-Hant-HK for Traditional Chinese as used in Hong Kong. So in the current
 state of affairs, tags are standardized, well documented, widely used and
 implemented, and highly flexible.
 
-[1] https://plus.google.com/+BernardVatant/posts/LQiscfkCZY9
+[1] https://plus.google.com/+BernardVatant/posts/LQiscfkCZY9 
 

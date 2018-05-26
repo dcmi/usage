@@ -1,4 +1,4 @@
-DCMI Metadata Terms defines "relation"
+DCMI Metadata Terms defines the property [http://purl.org/dc/terms/relation](http://dublincore.org/documents/2012/06/14/dcmi-terms/#terms-relation) as follows:
 
     A related resource
 

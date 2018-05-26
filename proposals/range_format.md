@@ -1,33 +1,29 @@
-http://purl.org/dc/terms/format
+In DCMIMT (and in ISO 15836-1), the usage note for the properties [http://purl.org/dc/elements/1.1/format](http://dublincore.org/documents/2012/06/14/dcmi-terms/#elements-format) and [http://purl.org/dc/terms/format](http://dublincore.org/documents/2012/06/14/dcmi-terms/#terms-format) reads:
 
---  Comment/Note
+    Examples of dimensions include size and duration.  Recommended best
+    practice is to use a controlled vocabulary such as the list of Internet
+    Media Types [MIME].
 
-    * The DCMI Comment (followed by the ISO 15836-1 Note) currently says: 
-    
-        Examples of dimensions include size and duration.  Recommended best
-        practice is to use a controlled vocabulary such as the list of Internet
-        Media Types [MIME].
+    [MIME] http://www.iana.org/assignments/media-types/
 
-        where [MIME] http://www.iana.org/assignments/media-types/
+ISO 15836-2 proposes to add two additional notes and an example:
 
-    * ISO 15836-2 currently says, adding two additional Notes:
+    NOTE 1 to entry: Best practice for description of file format is to use
+    a controlled vocabulary such as the list of Internet Media Types
+    [MIME].
 
-        NOTE 1 to entry: Best practice for description of file format is to use
-        a controlled vocabulary such as the list of Internet Media Types
-        [MIME].
+    NOTE 2 to entry: In addition to the specific physical or electronic
+    media format, information concerning the size of a resource may be
+    included in the content of the Format element if available. In resource
+    discovery size, extent or medium of the resource might be used as a
+    criterion to select resources of interest, since a user may need to
+    evaluate whether they can make use of the resource within the
+    infrastructure available to them.
 
-        NOTE 2 to entry: In addition to the specific physical or electronic
-        media format, information concerning the size of a resource may be
-        included in the content of the Format element if available. In resource
-        discovery size, extent or medium of the resource might be used as a
-        criterion to select resources of interest, since a user may need to
-        evaluate whether they can make use of the resource within the
-        infrastructure available to them.
-
-        EXAMPLES text/xml
-                 4 kB
-                 40 x 512 pixels
-                 22 in.
+    EXAMPLES text/xml
+             4 kB
+             40 x 512 pixels
+             22 in.
 
 ----------------------------------------------------------------------
 Discussion
@@ -82,6 +78,6 @@ the letter alongside the ISO normal periodic review materials, so as to inform
 the P members of SC 4 (the countries which are entitled to vote) that there is
 a need for revision.
 
-[1] http://wiki.dublincore.org/index.php/User_Guide/Creating_Metadata#Guidelines_for_the_creation_of_format_content
-[2] http://wiki.dublincore.org/index.php/User_Guide/Publishing_Metadata#exFor1
-[3] http://dublincore.org/documents/dcmi-namespace/
+[1] http://wiki.dublincore.org/index.php/User_Guide/Creating_Metadata#Guidelines_for_the_creation_of_format_content 
+[2] http://wiki.dublincore.org/index.php/User_Guide/Publishing_Metadata#exFor1 
+[3] http://dublincore.org/documents/dcmi-namespace/ 

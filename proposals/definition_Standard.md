@@ -1,4 +1,4 @@
-DCMI Metadata Terms defines the class [http://purl.org/dc/terms/Standard](http://dublincore.org/documents/dcmi-terms/#terms-Standard) as follows:
+DCMI Metadata Terms defines the class [http://purl.org/dc/terms/Standard](http://dublincore.org/documents/2012/06/14/dcmi-terms/#terms-Standard) as follows:
     
     A basis for comparison; a reference point against which other things can be
     evaluated.

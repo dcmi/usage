@@ -1,8 +1,12 @@
-* [definition_Standard.md](https://github.com/dcmi/usage/blob/master/proposals/definition_Standard.md)
-  ISO draft: reword definition of dct:Standard, based on an ISO guide.
+----------------------------------------------------------------------
+Substantial changes
 
-* [definition_available.md](https://github.com/dcmi/usage/blob/master/proposals/definition_available.md)
-  ISO draft: slightly reword definition of dct:available.
+A proposal to change the [definition of the class dct:Standard](https://github.com/dcmi/usage/blob/master/proposals/definition_Standard.md) to align it with ISO/IEC definitions of "standard" has the effect of changing and narrowing the definition.
+
+----------------------------------------------------------------------
+Clarifications of wording
+
+A proposal to re-word the [definition of dct:available](https://github.com/dcmi/usage/blob/master/proposals/definition_available.md) aims at clarifying 1) that the date something became available is a single date (and not a range), and 2) that the date something will become available may be an estimate and is often a range.
 
 * [definition_coverage.md](https://github.com/dcmi/usage/blob/master/proposals/definition_coverage.md)
   ISO draft: slightly reword dct:coverage definition.
