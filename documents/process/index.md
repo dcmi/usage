@@ -1,9 +1,9 @@
 # Usage Board process
 
-Tom Baker 
-Version: 2018-05-25 
+Tom Baker  
+Version: 2018-05-25  
 
-## About this document
+### About this document
 
 This document supersedes [DCMI Usage Board Administrative
 Processes](http://dublincore.org/usage/documents/2006/02/13/process/), a
@@ -23,7 +23,7 @@ tracking issues.  The document is starting small, with the bare minimum of
 process needed to begin work, and will grow incrementally in response to 
 requirements arising.
 
-## Usage Board mission
+### Usage Board mission
 
 The Usage Board is responsible for ensuring an orderly evolution of metadata
 terms maintained by DCMI.  As of May 2018, the scope of the Usage Board is
@@ -33,7 +33,7 @@ DCMI, such as the [LRMI
 specifications](http://lrmi.dublincore.org/specifications). As its scope
 expands, the Usage Board may form distinct sub-committees.
 
-## Usage Board principles
+### Usage Board principles
 
 DCMI Metadata Terms is an RDF vocabulary, and all decisions taken to add or
 change terms must be consistent with RDF principles.  
@@ -49,14 +49,14 @@ On no account can a decision be approved that clearly violates the stated
 policy.  Were such a possibility to arise, the Namespace Policy would need
 first to be revised to account for the decision.
 
-## Usage Board members
+### Usage Board members
 
 Usage Board members are appointed by the DCMI Directorate on behalf of the DCMI
 Governing Board and on the advice of the Usage Board chair(s) and may step down at 
 their own discretion at any time.  The Usage Board chair is appointed by the DCMI 
 Directorate.
 
-## Usage Board decisions
+### Usage Board decisions
 
 The Usage Board strives for consensus, justifying its decisions and
 interpretations in terms of principle and of empirical practice. To be
@@ -70,7 +70,7 @@ Directorate for endorsement on behalf of the Governing Board.  In all
 foreseeable cases, review by the Directorate would be limited to ensuring that
 decisions are consistent with the Namespace Policy.
 
-## Usage Board mailing lists and teleconferences
+### Usage Board mailing lists and teleconferences
 
 * Teleconferences will be held on DCMI's [Zoom platform](https://zoom.us/).
 * Announcements and discussion of general issues will take place on two
