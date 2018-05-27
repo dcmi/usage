@@ -36,10 +36,10 @@ Question:
 ----------------------------------------------------------------------
 Discussion
 
-Date:         Fri, 6 Feb 2015 22:02:47 +0100
-From:         Bernard Vatant <bernard.vatant@MONDECA.COM>
-Subject: Language tag or language URI for vocabularies?
-To:           DC-ARCHITECTURE@JISCMAIL.AC.UK
+Date:         Fri, 6 Feb 2015 22:02:47 +0100  
+From:         Bernard Vatant <bernard.vatant@MONDECA.COM>  
+Subject:      Language tag or language URI for vocabularies?  
+To:           dc-architecture@jiscmail.ac.uk  
 
 Hi all
 

@@ -12,4 +12,6 @@ The draft ISO 15836-2 defines "Standard" as follows:
     
     [Source: ISO/IEC Guide 2:1996]
 
+See also discussion at https://github.com/dcmi/usage/issues/4
+
 Proposal: accept or reject?
