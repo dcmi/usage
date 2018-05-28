@@ -20,7 +20,7 @@ This new Usage Board process must take into account the decline of travel
 budgets but also the steady improvement of facilities for holding
 teleconferences, collaboratively editing minutes and other documents, and
 tracking issues.  The document is starting small, with the bare minimum of 
-process needed to begin work, and will grow incrementally in response to 
+process needed to begin work, and may grow incrementally in response to 
 requirements arising.
 
 ### Usage Board mission
@@ -62,8 +62,8 @@ The Usage Board strives for consensus, justifying its decisions and
 interpretations in terms of principle and of empirical practice. To be
 approved, a proposal needs more than 50% of cast votes in favor and less than
 25% of cast votes against.  (A vote to abstain counts as a cast vote.  Missing
-votes will not count either way. For votes of particular importance, reasonable
-efforts will be made to ensure that all members have the opportunity to vote.)
+votes will not count either way.  Reasonable efforts will be made to ensure that 
+all members have the opportunity to vote.)
 
 All decisions will be documented with brief justifications and forwarded to the
 Directorate for endorsement on behalf of the Governing Board.  In all
