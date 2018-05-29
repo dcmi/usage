@@ -39,16 +39,9 @@ Version: 2018-05-27
 * Say that in an archiving context, a mediator [be an archive](https://github.com/dcmi/usage/blob/master/proposals/note_mediator.md).
 
 --------------------------
-## "This term is intended to be used with non-literal values"
-
-* ["This term..."](https://github.com/dcmi/usage/blob/master/proposals/ranges_intended.md)
-* [Range of dct:relation](https://github.com/dcmi/usage/blob/master/proposals/range_relation.md)
-
---------------------------
 ## Literal notes proposed for object properties
 
-* Literal example for dct:bibliographicCitation, [which has range of dct:BibliographicResource](https://github.com/dcmi/usage/blob/master/proposals/note_bibliographicCitation.md).
-  ISO draft: add note and example for dct:bibliographicCitation.
+* Literal example for [dct:bibliographicCitation](https://github.com/dcmi/usage/blob/master/proposals/note_bibliographicCitation.md).
 * Say that the object of dct:rights [may be either a text or URI](https://github.com/dcmi/usage/blob/master/proposals/note_rights.md).
 * Say that the object of dct:rightsHolder [may be either a text or URI](https://github.com/dcmi/usage/blob/master/proposals/note_rightsHolder.md).
 * Literal examples for [dct:language](https://github.com/dcmi/usage/blob/master/proposals/range_language.md).
@@ -57,17 +50,18 @@ Version: 2018-05-27
 * Literal examples for [dct:format](https://github.com/dcmi/usage/blob/master/proposals/range_format.md).
 
 --------------------------
-## Extra attention needed
+## "This term is intended to be used with non-literal values"
+
+* ["This term..."](https://github.com/dcmi/usage/blob/master/proposals/ranges_intended.md)
+* [Range of dct:relation](https://github.com/dcmi/usage/blob/master/proposals/range_relation.md)
+
+--------------------------
+## Problematic proposals
 
 * A [proposed note for the property
   dct:license](https://github.com/dcmi/usage/blob/master/proposals/note_license.md) that
-  would need to be re-worded to be correct.
-
---------------------------
-## Substantive changes of definition
-
+  is wrong as proposed and would need to be re-worded.
 * Change and narrow [definition of class dct:Standard](https://github.com/dcmi/usage/blob/master/proposals/definition_Standard.md) to align with ISO/IEC definitions of "standard".
-* Separate "dimensions" [from dct:format](https://github.com/dcmi/usage/issues/2) because they are separate things.
 
 --------------------------
 ## Changes unrelated to the ISO process (lower priority)
@@ -75,4 +69,5 @@ Version: 2018-05-27
 * Change range of dct:type [from rdfs:Class to skos:Concept](https://github.com/dcmi/usage/blob/master/proposals/x_range_type.md).
 * Add triple [dct:title rdfs:subPropertyOf rdfs:label](https://github.com/dcmi/usage/blob/master/proposals/x_title_subpropertyof_label.md).
 * Clarify [dct:conformsTo](https://github.com/dcmi/usage/issues/5).
+* Separate "dimensions" [from dct:format](https://github.com/dcmi/usage/issues/2) because they are separate things.
 
