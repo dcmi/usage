@@ -1,10 +1,11 @@
 # Usage Board minutes
 
+----------------------------------------------------------------------
 Links
-* http://dublincore.org/usage/ 
-* http://www.jiscmail.ac.uk/lists/dc-usage-bc.html, dc-usage-bc, dcuse
-* http://www.jiscmail.ac.uk/lists/dc-usage.html - irc://irc.ukoln.ac.uk/ - then /join #UB
-* http://dublincore.org/about/bylaws/#article2d
+
+* [Usage Board process](https://github.com/dcmi/usage/blob/master/documents/process/index.md)
+* [Public dc-usage list](http://www.jiscmail.ac.uk/lists/dc-usage.html)
+* [Protected dc-usage-bc list](http://www.jiscmail.ac.uk/lists/dc-usage-bc.html)
 
 ----------------------------------------------------------------------
 2018-05-30 UB Telecon #56
