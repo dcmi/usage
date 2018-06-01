@@ -1,4 +1,3 @@
-PROPOSED
 In [http://purl.org/dc/terms/coverage](http://dublincore.org/documents/2012/06/14/dcmi-terms/#terms-coverage), change
 
     Recommended best practice is to use a controlled vocabulary 
