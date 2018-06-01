@@ -1,13 +1,5 @@
-# Usage Board minutes
+# [Usage Board](http://dublincore.org/usage) agendas and minutes
 
-----------------------------------------------------------------------
-Links
-
-* [Usage Board process](https://github.com/dcmi/usage/blob/master/documents/process/index.md)
-* [Public dc-usage list](http://www.jiscmail.ac.uk/lists/dc-usage.html)
-* [Protected dc-usage-bc list](http://www.jiscmail.ac.uk/lists/dc-usage-bc.html)
-
-----------------------------------------------------------------------
 2018-05-30 UB Telecon #56
 * https://github.com/dcmi/usage/blob/master/minutes/2018/2018-05-30.dcub-telecon-agenda.md
 
