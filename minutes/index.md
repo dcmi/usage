@@ -2,10 +2,14 @@
 
 2018-05-30 UB Telecon #56
 * https://github.com/dcmi/usage/blob/master/minutes/2018/2018-05-30.dcub-telecon-agenda.md
+* https://github.com/dcmi/usage/blob/master/minutes/2018/2018-05-30.dcub-telecon-minutes.md
 
-2018-03-03 Move from http://dublincore.org/usage/
-* http://dublincore.org/usage/minutes/
-* http://dublincore.org/usage/meetings/
+2018-03-03 Move meeting records from main website to Github
+* Move http://dublincore.org/usage/minutes/ to https://github.com/dcmi/usage/blob/master/minutes
+* Move http://dublincore.org/usage/meetings/ to https://github.com/dcmi/usage/blob/master/meetings
+
+----------------------------------------------------------------------
+Usage Board activity through 2010
 
 2010-09-28 UB Telecon #55
 * https://github.com/dcmi/usage/blob/master/minutes/2010/2010-09-28.dcub-telecon-agenda.html
