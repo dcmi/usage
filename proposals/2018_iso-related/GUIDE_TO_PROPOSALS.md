@@ -58,9 +58,7 @@ Version: 2018-05-27
 --------------------------
 ## Problematic proposals
 
-* A [proposed note for the property
-  dct:license](https://github.com/dcmi/usage/blob/master/proposals/2018_iso-related/note_license.md) that
-  is wrong as proposed and would need to be re-worded.
+* A [proposed note for the property dct:license](https://github.com/dcmi/usage/blob/master/proposals/2018_iso-related/note_license.md) that is wrong as proposed and would need to be re-worded.
 * Change and narrow [definition of class dct:Standard](https://github.com/dcmi/usage/blob/master/proposals/2018_iso-related/definition_Standard.md) to align with ISO/IEC definitions of "standard".
 
 --------------------------

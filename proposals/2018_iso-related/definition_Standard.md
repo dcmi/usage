@@ -14,4 +14,6 @@ The draft ISO 15836-2 defines "Standard" as follows:
 
 See also discussion at https://github.com/dcmi/usage/issues/4
 
-Proposal: accept or reject?
+Note:
+* see discussion in Issue #5 https://github.com/dcmi/usage/issues/5 (May 2018), closed for now
+* see discussion in Issue #4 https://github.com/dcmi/usage/issues/4 (May 2018), closed for now

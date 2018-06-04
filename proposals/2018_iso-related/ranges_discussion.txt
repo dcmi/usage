@@ -1,8 +1,8 @@
----------------------------------------------------------------------- 
-2016-02-01 
-From: Steven Anderson <StevenCAnderson@hotmail.com> 
-To: DC-ARCHITECTURE@JISCMAIL.AC.UK 
-Subject: dcterms:extent, dcterms:format, and dcterms:created range questions: 
+----------------------------------------------------------------------   
+2016-02-01    
+From: Steven Anderson <StevenCAnderson@hotmail.com>    
+To: DC-ARCHITECTURE@JISCMAIL.AC.UK   
+Subject: dcterms:extent, dcterms:format, and dcterms:created range questions:   
 
 I'm writing as it seems the range of the above terms seem to differ in terms
 of official definition and actual practice. As such, I'd like to see if
@@ -10,7 +10,7 @@ there is any possibility of updating their range or general thoughts about
 how often the range is being broken in the current usage of these
 predicates?
 
-To start, 
+To start,   
 
 dcterms:extent
 
@@ -20,7 +20,7 @@ guidelines say this can not be a literal:
 http://wiki.dublincore.org/index.php/User_Guide/Publishing_Metadata#dcterms:
 extent. However, most major institutions are using this predicate with a simple
 string literal from what I can tell. Examples include DPLA[1].  Europeana[2],
-and most Fedora 4 Commons based systems I have seen. 
+and most Fedora 4 Commons based systems I have seen.   
 
 dcterms:format
 
@@ -67,9 +67,9 @@ Linked Data Friendly RDF Application Profile. Thank you for your time!
 
 ----------------------------------------------------------------------
 2016-02-08
-From:         Makx Dekkers <subs@MAKXDEKKERS.COM> 
-Subject: Re: dcterms:extent, dcterms:format, and dcterms:created range questions: 
-To:           DC-ARCHITECTURE@JISCMAIL.AC.UK 
+From:         Makx Dekkers <subs@MAKXDEKKERS.COM>   
+Subject: Re: dcterms:extent, dcterms:format, and dcterms:created range questions:   
+To:           DC-ARCHITECTURE@JISCMAIL.AC.UK   
 
 I think this is an important discussion to have.
 
@@ -79,11 +79,11 @@ at respecting the domain and range definitions because otherwise the whole
 idea of inferencing becomes impossible, and automatic processing of data
 becomes difficult. On the other hand, people can happily violate any of
 those definitions; there is not Semantic Web police and people do whatever
-they want. 
+they want.   
 
 In fact the statement 'Anyone can say anything about anything' is extended
 to 'Anyone can say anything about anything, and they will do this any way
-they want'. 
+they want'.   
 
 My take on this is that if you're mostly operating in a more or less closed
 environment, e.g. in a community that agrees on a common way of doing
@@ -92,7 +92,7 @@ members know what to do and what to expect, but if you want your stuff to
 make sense in a more open environment, you'd better do things the way they
 were supposed to be done.
 
----------------------------------------------------------------------- 
+----------------------------------------------------------------------   
 2016-02-12
 From:         Antoine Isaac <aisaac@FEW.VU.NL>
 Subject: Re: dcterms:extent, dcterms:format, and dcterms:created range questions:
@@ -119,6 +119,6 @@ at the level of the vocabulary/ontology may be counterproductive (in the
 Semantic Web community some use the notion of 'semantic overcommitment to refer
 to this issue).
 
-[1] see for example http://schema.org/dateCreated 
-[2] http://wiki.dublincore.org/index.php/RDF_Application_Profiles 
+[1] see for example http://schema.org/dateCreated   
+[2] http://wiki.dublincore.org/index.php/RDF_Application_Profiles   
 

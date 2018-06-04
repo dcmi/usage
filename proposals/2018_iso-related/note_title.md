@@ -1,30 +1,27 @@
-DCMI Metadata Terms defines the property [http://purl.org/dc/terms/title](http://dublincore.org/documents/2012/06/14/dcmi-terms/#terms-title) as follows:
+See [note_title.md](../blob/master/proposals/2018_iso-related/note_title.md)
 
-    A name given to the resource.
-
-The draft ISO 15836-2 proposes the following definition and note:
-
-    name given to the resource; usually a name by which the resource is formally known. 
-
-    NOTE 1 to entry: If in doubt about what constitutes the title, repeat the
-    Title element and include the variants in second and subsequent Title
-    iterations.
-
-Tom suggests that instead of changing the definition to introduce the notion of
-"formally known", we adapt a usage note used before 2006, which read:
+Add a comment for [http://purl.org/dc/terms/title](http://dublincore.org/documents/2012/06/14/dcmi-terms/#terms-title):
 
     Typically, a Title will be a name by which the resource is formally known.
 
-Accordingly:
+    If in doubt about what constitutes the title, repeat the Title element and
+    include the variants in second and subsequent Title iterations.
 
-    name given to the resource
+Note:
+* These would appear in ISO 15836-2 as "NOTE 1 to entry:" and "NOTE 2 to entry:".
 
-    NOTE 1 to entry: Typically, a title will be a name by which the resource is
-    formally known.
+Note that the ISO WG actually suggests changing the definition to read:
 
-    NOTE 2 to entry: If in doubt about what constitutes the title, repeat the
-    Title element and include the variants in second and subsequent Title
-    iterations.
+    A name given to the resource; usually a name by which the resource is
+    formally known. 
 
-Proposal: accept or reject?
+Older Usage Board members may vaguely recall discussions of this very point in
+the early 2000s involving somewhat inconclusive discussions about what might be
+considered "formal".  Before 2006, the comment for Title read:
+
+    Typically, a Title will be a name by which the resource is formally known.
+
+Exercising his judgement as Chair, Tom has edited this proposal into one for
+reinstating the earlier comment.
+
 

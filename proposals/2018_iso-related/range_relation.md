@@ -1,21 +1,8 @@
-DCMI Metadata Terms defines the property [http://purl.org/dc/terms/relation](http://dublincore.org/documents/2012/06/14/dcmi-terms/#terms-relation) as follows:
+See [Range of dct:relation](../blob/master/proposals/2018_iso-related/range_relation.md)
 
-    A related resource
+Add the following comments for [http://purl.org/dc/terms/relation](http://dublincore.org/documents/2012/06/14/dcmi-terms/#terms-relation):
 
-DCMI Metadata Terms notes, for "relation":
-
-    This term is intended to be used with non-literal values as defined in the
-    DCMI Abstract Model.  As of December 2007, the DCMI Usage Board is seeking
-    a way to express this intention with a formal range declaration.
-
-The draft ISO 15836-2 proposes a definition and usage notes as follows:
-
-    reference to a related resource
-
-    NOTE 1 to entry: Best practice is to identify the related resource by means
-    of an URI or a string conforming to a formal identification system.
-
-    NOTE 2 to entry: Relationships may be expressed reciprocally (if the
+    Relationships may be expressed reciprocally (if the
     resources on both ends of the relationship are being described) or in one
     direction only, even when there is a refinement available to allow
     reciprocity. If text strings are used instead of identifying numbers, the
@@ -23,10 +10,15 @@ The draft ISO 15836-2 proposes a definition and usage notes as follows:
     bibliographic citation might be used to point users to a particular
     resource.
 
-    NOTE 3 to entry: Dublin Core Usage guide  contains more information about
-    various relations and how they should be encoded 
+    Dublin Core Usage guide contains more information about various relations
+    and how they should be encoded.
 
     EXAMPLE  Title=”My Fair Lady (movie)”
              Title=”Pygmalion (play)”
              Relation described is IsBasedOn 
 
+Note:
+* In ISO 15836-2, the notes would be "NOTE x to entry:".
+* Resolution of this issue depends on resolution of two related issues:
+  * #28 (Definition of dct:related)
+  * #27 (Properties "intended to be used with non-literal values")

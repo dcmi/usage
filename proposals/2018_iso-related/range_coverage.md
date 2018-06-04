@@ -1,4 +1,6 @@
-The draft ISO 15836-2 proposes the following usage examples for the property [http://purl.org/dc/terms/coverage](http://dublincore.org/documents/2012/06/14/dcmi-terms/#terms-coverage):
+See [dct:coverage](../blob/master/proposals/2018_iso-related/range_coverage.md).
+
+Literal examples for [http://purl.org/dc/terms/coverage](http://dublincore.org/documents/2012/06/14/dcmi-terms/#terms-coverage):
 
     EXAMPLES    1700/1799
                 Boston, MA

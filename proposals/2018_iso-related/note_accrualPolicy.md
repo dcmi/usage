@@ -1,8 +1,18 @@
-The draft ISO 15836-2 proposes a usage note for the property [http://purl.org/dc/terms/accrualPeriodicity](http://dublincore.org/documents/2012/06/14/dcmi-terms/#terms-accrualPeriodicity) as follows:
+See [note_accrualPolicy.md](../blob/master/proposals/2018_iso-related/note_accrualPolicy.md)
 
-    Note 1 to entry: Recommended best practice is to use a value from the
-    [Collection Description Accrual Policy Vocabulary](http://dublincore.org/groups/collections/accrual-policy/2007-03-09/).
-    Where multiple policies apply, a separate statement should be used for 
-    each policy.  
+Add usage note for property [http://purl.org/dc/terms/accrualPolicy](http://dublincore.org/documents/2012/06/14/dcmi-terms/#terms-accrualPolicy):
 
-Proposal: accept or reject?
+    Recommended best practice is to use a value from the Collection Description
+    Accrual Policy Vocabulary [1].  Where multiple policies apply, a separate
+    statement should be used for each policy.  
+
+    [1] http://dublincore.org/groups/collections/accrual-policy/
+
+Rationale
+* Recommends use of a controlled vocabulary published by DCMI, [Accrual Policy Vocabulary](http://dublincore.org/groups/collections/accrual-policy/)
+
+Note
+* In ISO 15836-2, this would be published as "NOTE 1 to entry".
+* DCMI "owns" the Internet Archive PURL sub-domains for the [Accrual Policy Vocabulary](http://dublincore.org/groups/collections/accrual-policy/), http://purl.org/cld/terms and http://purl.org/cld/accpol/
+* See also Issue #12
+

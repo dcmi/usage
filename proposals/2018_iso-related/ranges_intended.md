@@ -1,4 +1,6 @@
-DCMI Metadata Terms noted, for:
+See [ranges_intended.md](../blob/master/proposals/2018_iso-related/ranges_intended.md)
+
+The following properties
 
 * http://purl.org/dc/terms/hasFormat
 * http://purl.org/dc/terms/hasPart
@@ -16,10 +18,9 @@ DCMI Metadata Terms noted, for:
 * http://purl.org/dc/terms/source
 * http://purl.org/dc/terms/subject
 
-The following
+have the following comment:
 
     This term is intended to be used with non-literal values as defined in the
     DCMI Abstract Model.  As of December 2007, the DCMI Usage Board is seeking
     a way to express this intention with a formal range declaration.
 
-Proposal: drop?
