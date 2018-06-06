@@ -5,7 +5,7 @@
 | 06-01  | xx-xx  | _      |   1  |   _  |   _  |   1  |   _  |   1  |   1  |   1  |   _  |   _  |   1  |   1  |   _  | ["Getty" Thesaurus](https://github.com/dcmi/usage/issues/7#issuecomment-393870463)
 | 06-01  | xx-xx  | _      |   _  |   _  |   _  |   1  |   _  |   1  |   1  |   1  |   _  |   _  |   _  |   1  |   _  | [Definition of dct:coverage](https://github.com/dcmi/usage/issues/9)
 | 06-01  | xx-xx  | _      |   _  |   _  |   _  |   1  |   _  |   1  |   -  |   1  |   _  |   _  |   _  |   1  |   _  | [Definition of dct:available](https://github.com/dcmi/usage/issues/8)
-| 06-06  | xx-xx  | _      |   _  |   _  |   _  |   _  |   _  |   _  |   _  |   _  |   _  |   _  |   _  |   _  |   _  | ["Intended to be used"](https://github.com/dcmi/usage/issues/27#issuecomment-394979379)
+| 06-06  | xx-xx  | _      |   _  |   _  |   _  |   1  |   _  |   _  |   _  |   1  |   _  |   _  |   1  |   1  |   _  | ["Intended to be used"](https://github.com/dcmi/usage/issues/27#issuecomment-394979379)
 
 
 ### FORMAL VOTES - CLOSED
