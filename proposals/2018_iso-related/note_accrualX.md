@@ -1,6 +1,9 @@
+** PLEASE VOTE WITH THUMBS-UP/DOWN **
+
 See [note_accrualX.md](../blob/master/proposals/2018_iso-related/note_accrualX.md).
 
 Note: 
+* Supersedes closed issues #11, #12, #13.
 * Revised comment avoids "recommending" a particular vocabulary as per 
   [Makx's comment](https://github.com/dcmi/usage/issues/12#issuecomment-394728694).
 * Drops ISO-WG-proposed suggestion that "Where multiple policies apply, a separate
@@ -28,7 +31,7 @@ Add comment for property [http://purl.org/dc/terms/accrualPeriodicity](http://du
 Add comment for property [http://purl.org/dc/terms/accrualPolicy](http://dublincore.org/documents/2012/06/14/dcmi-terms/#terms-accrualPolicy):
 
     Recommended practice is to use a value from a controlled vocabulary such as
-    the Collection Description Accrual Policy Vocabulary [1].
+    the Dublin Core Collection Description Accrual Policy Vocabulary [1].
 
     [1] http://dublincore.org/groups/collections/accrual-policy/
 
