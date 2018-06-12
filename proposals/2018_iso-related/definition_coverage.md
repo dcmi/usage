@@ -1,3 +1,5 @@
+APPROVED 2018-06-12 (9 votes for, 0 against)
+
 Change definition of [http://purl.org/dc/terms/coverage](http://dublincore.org/documents/2012/06/14/dcmi-terms/#terms-coverage):
 
     The spatial or temporal topic of the resource, the spatial
