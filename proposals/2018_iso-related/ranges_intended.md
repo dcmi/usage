@@ -1,9 +1,4 @@
-See [ranges_intended.md](../blob/master/proposals/2018_iso-related/ranges_intended.md) - see also Issue #28 ("Definition of dct:relation")
-
-Please vote by adding thumbs-up/down to this posting.
-
-----------------------------------------------------------------------
-**PROPOSED FOR FORMAL VOTE**
+APPROVED 2016-06-12 (9 votes in favor, 0 against)
 
 Change the existing comment:
 
@@ -43,8 +38,4 @@ Defining these properties as instances `owl:ObjectProperty` would express the
 same intention more formally and strictly, though at the cost of more strongly
 and explicitly conflicting with actual usage where literal values are often
 used.
-
-Open questions
-
-* Should "non-literal value" (and "value") be defined somewhere?
 
