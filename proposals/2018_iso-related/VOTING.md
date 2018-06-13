@@ -7,6 +7,17 @@
 | 06-13  | xx-xx  | _      |   _  |   _  |   _  |   _  |   _  |   _  |   _  |   _  |   _  |   _  |   _  |   1  |   _  | #18 [Examples for dct:identifier](https://github.com/dcmi/usage/blob/master/proposals/2018_iso-related/note_identifier.md)
 | 06-13  | xx-xx  | _      |   _  |   _  |   _  |   _  |   _  |   _  |   _  |   _  |   _  |   _  |   _  |   1  |   _  | #19 [Comment for dct:mediator](https://github.com/dcmi/usage/blob/master/proposals/2018_iso-related/note_mediator.md)
 
+Note: 1 (approve), 0 (abstain), -1 (reject)
+* AI and VC vote as one (Europeana)
+* JH and SH vote as one (DNB)
+* If 13 vote: at least 7 for; no more than 3 against
+* If 12 vote: at least 6 for; no more than 3 against
+* If 11 vote: at least 6 for; no more than 2 against
+* If 10 vote: at least 5 for; no more than 2 against
+* If  9 vote: at least 5 for; no more than 2 against
+* If  8 vote: at least 4 for; no more than 2 against
+* If  7 vote: at least 4 for; no more than 1 against
+* See [Usage Board Process (https://github.com/dcmi/usage/blob/master/documents/process/index.md)
 
 ### FORMAL VOTES - CLOSED
 
@@ -23,15 +34,3 @@
 | Opened | Closed | Result | AI   |  DB  |  JH  |  JN  |  JT  |  KE  |  KC  |  OS  |  SH  |  SR  |  SS  |  TB  |  VC  | Issue
 | ------ | ------ | ------ | ----:| ----:| ----:| ----:| ----:| ----:| ----:| ----:| ----:| ----:| ----:| ----:| ----:| ---------------------------------------
 | xx-xx  | xx-xx  | _      |   _  |   _  |   _  |   _  |   _  |   _  |   _  |   _  |   _  |   _  |   _  |   _  |   _  | [Template](https://github.com/dcmi/usage/issues/x)
-
-Note: 1 (approve), 0 (abstain), -1 (reject)
-* AI and VC vote as one (Europeana)
-* JH and SH vote as one (DNB)
-* If 13 vote: at least 7 for; no more than 3 against
-* If 12 vote: at least 6 for; no more than 3 against
-* If 11 vote: at least 6 for; no more than 2 against
-* If 10 vote: at least 5 for; no more than 2 against
-* If  9 vote: at least 5 for; no more than 2 against
-* If  8 vote: at least 4 for; no more than 2 against
-* If  7 vote: at least 4 for; no more than 1 against
-* See [Usage Board Process (https://github.com/dcmi/usage/blob/master/documents/process/index.md)
