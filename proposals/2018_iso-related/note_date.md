@@ -18,4 +18,9 @@ Proposed wording:
     Date ranges may be specified using ISO 8601 period of time specification in
     which start and end dates are separated by a “/” (slash) character. Either
     the start or end date may be missing. 
+    
+    Examples    2018
+                2016-03-04
+                1968/2015
+                2006
 
