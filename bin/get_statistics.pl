@@ -17,10 +17,11 @@ my $purl_file =
 "https://raw.githubusercontent.com/dcmi/purls/master/purls-handled-automatically-by-partial-redirects.txt";
 
 # endpoints for data stores
-my @stores   = qw/ LOD4ALL Openlink /;
+my @stores   = qw/ LOD4ALL Openlink LOV /;
 my %endpoint = (
   LOD4ALL  => 'http://lod4all.net/api/sparql',
   Openlink => 'http://lod.openlinksw.com/sparql/',
+  LOV      => 'http://lov.okfn.org/dataset/lov/sparql',
 );
 
 # configuration
@@ -114,6 +115,11 @@ sub get_count {
     my $response = $client->responseContent();
     if ( $response =~ m/timeout/ms ) {
       $term_ref->{$name}{count}{$store} = '"timeout"';
+      return;
+    }
+    # known problem with LOD4ALL and IMT
+    if ( $store eq 'LOD4ALL' && $client->responseCode() eq '500' ) {
+      $term_ref->{$name}{count}{$store} = '"syserr"';
       return;
     }
     die "Could not get $name count from $store: ", $client->responseCode(),
