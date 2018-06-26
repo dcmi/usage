@@ -181,9 +181,7 @@ sub save_as_csv {
 
   if ( $type eq 'property_value' ) {
     print $fh '"',
-      join( '","',
-      'value types (in %)',
-      "Total (in $value_type_store)", @value_types ),
+      join( '","', $type, "Total (in $value_type_store)", @value_types ),
       "\"\n";
   } else {
     print $fh '"', join( '","', $type, @stores ), "\"\n";
