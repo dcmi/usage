@@ -9,5 +9,5 @@ updated by different providers for different purposes.
 
 Store | Comment
 ----- | -------
-[LOD4ALL](https://lod4all.net/) | 17 bn triples, max. of 100,000 results, 60 s timeout
-[Openlink]() | "This service currently enforces a 20 second hard time limit for queries. Each query is first run with a 2 second timeout - if only a partial result or no results are received, the user is prompted to retry with double the previous time limit until the hard limit is reached." Currently, in the procedure which collects the results, no retry is executed.
+[LOD4ALL](https://lod4all.net/) | 17 bn triples, maximum of 100,000 results, 60 s timeout
+[Openlink](http://lod.openlinksw.com/sparql/) | "This service currently enforces a 20 second hard time limit for queries. Each query is first run with a 2 second timeout - if only a partial result or no results are received, the user is prompted to retry with double the previous time limit until the hard limit is reached." Currently the procedure which collects the results does not handle retries.
