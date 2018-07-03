@@ -1,4 +1,4 @@
-APPROVED 2016-06-12 (9 votes in favor, 0 against)
+APPROVED 2018-06-12 (9 votes in favor, 0 against)
 
 Change the existing comment:
 
