@@ -48,7 +48,6 @@ The Usage Board strives for consensus, justifying its decisions and interpretati
 
 * __DCMI Metadata Terms__.  DCMI Metadata Terms is an RDF vocabulary, so all decisions taken to add or change terms must be consistent with RDF principles.  In addition, all decisions must conform to the [DCMI Namespace Policy](http://dublincore.org/documents/dcmi-namespace), which articulates principles regarding semantic stability and backwards compatibility.  The Namespace Policy is a living document and may be changed or clarified on the initiative of the Usage Board and with the approval of the Directorate on behalf of the Governing Board.  On no account can a decision be approved that clearly violates the stated policy.  Were such a possibility to arise, the Namespace Policy would need first to be revised to account for the decision.
 
-
-#### LRMI Concept Schemes
+* __LRMI Concept Schemes__.
 
 
