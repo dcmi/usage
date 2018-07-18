@@ -5,21 +5,7 @@ Version: 2018-05-25
 
 ### About this document
 
-This document supersedes [DCMI Usage Board Administrative
-Processes](http://dublincore.org/usage/documents/2006/02/13/process/), a
-document first posted in 2001 and last revised in 2006, which covered the first
-period of Usage Board activity, from its first face-to-face meeting in 2001
-through a final face-to-face meeting in 2009 and teleconference in 2012.
-After a hiatus of six years, the Usage Board was revived in 2018 to review
-proposals for change submitted by the ISO committee responsible for the draft
-15836 Part 2, "DCMI Properties and Classes", and to re-assess DCMI Metadata
-Terms in light of accumulated practice and implementation experience.  
-This new Usage Board process must take into account the decline of travel
-budgets but also the steady improvement of facilities for holding
-teleconferences, collaboratively editing minutes and other documents, and
-tracking issues.  The document is starting small, with the bare minimum of 
-process needed to begin work, and may grow incrementally in response to 
-requirements arising.
+This document supersedes [DCMI Usage Board Administrative Processes](http://dublincore.org/usage/documents/2006/02/13/process/), a document first posted in 2001 and last revised in 2006, which covered the first period of Usage Board activity, from its first face-to-face meeting in 2001 through a final face-to-face meeting in 2009 and teleconference in 2012.  After a hiatus of six years, the Usage Board was revived in 2018 to review proposals for change submitted by the ISO committee responsible for the draft 15836 Part 2, "DCMI Properties and Classes", and to re-assess DCMI Metadata Terms in light of accumulated practice and implementation experience.  This new Usage Board process must take into account the decline of travel budgets but also the steady improvement of facilities for holding teleconferences, collaboratively editing minutes and other documents, and tracking issues.  The document is starting small, with the bare minimum of process needed to begin work, and may grow incrementally in response to requirements arising.
 
 ### Mission
 
