@@ -1,7 +1,7 @@
 # Usage Board process
 
-Tom Baker  
-Version: 2018-05-25  
+Tom Baker, Paul Walk
+Version: 2018-07-18  
 
 ### About this document
 
