@@ -24,13 +24,14 @@ requirements arising.
 ### Mission
 
 The Usage Board is responsible for ensuring an orderly evolution of metadata
-terms maintained by DCMI.  
+vocabularies maintained by DCMI.  
 
 ### Scope
 
 As of May 2018, the scope of the Usage Board is limited to DCMI Metadata Terms
-and derivative representations, notably ISO 15836.  This may change with the
-addition of other vocabularies maintained by DCMI, such as the [LRMI
+and derivative representations, notably ISO 15836.
+
+During 2018, this will change with the addition of other vocabularies maintained by DCMI, such as the [LRMI
 specifications](http://lrmi.dublincore.org/specifications). As its scope
 expands, the Usage Board may form distinct sub-committees.
 
