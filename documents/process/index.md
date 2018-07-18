@@ -20,6 +20,8 @@ During 2018, this will change with the addition of other vocabularies maintained
 ### Structure
 The Usage Board consists of a pool of invited experts which collectively takes responsibility for the stewardship of those vocabularies maintained by DCMI. Each of the vocabularies maintained by DCMI will be represented by a designated contact person with expertise in that vocabulary, in the Usage Board. It will be the responibility of DCMI to ensure that each of these vocabularies is represented in this way.
 
+Each of the vocabularies maintained by DCMI will be represented by a contact person. maintenance requests from the wider community to the Usage Board
+
 From time to time, the Usage Board will form a time and scope-limited task group to deal with issues arising with particular vocabularies.
 
 ### Principles
