@@ -18,11 +18,9 @@ As of May 2018, the scope of the Usage Board is limited to DCMI Metadata Terms a
 During 2018, this will change with the addition of other vocabularies maintained by DCMI, including the [LRMI concept schemes](http://lrmi.dublincore.org/specifications).
 
 ### Structure
-The Usage Board consists of a pool of invited experts which collectively takes responsibility for the stewardship of those vocabularies maintained by DCMI. Each of the vocabularies maintained by DCMI will be represented by a designated contact person with expertise in that vocabulary, in the Usage Board. It will be the responibility of DCMI to ensure that each of these vocabularies is represented in this way.
+The Usage Board consists of a pool of invited experts which collectively takes responsibility for the stewardship of those vocabularies maintained by DCMI. The Usage Board will include one or more rperesentatives for each of the vocabularies maintained by DCMI. These representatives will have an interest and a reaonsable level of expertise in the vocabulary which they represent. Their role will be primarily to raise, with the Usage Board, any maintenance requests coming from the wider community, which in their judgement, need to have the attention of DCMI. Responsibility for addressing such maintenance requests lies with the Usage Board as a group together with the DCMI Direcrtorate.
 
-Each of the vocabularies maintained by DCMI will be represented by a contact person. maintenance requests from the wider community to the Usage Board
-
-From time to time, the Usage Board will form a time and scope-limited task group to deal with issues arising with particular vocabularies.
+From time to time, the Usage Board may form a time and scope-limited task group to deal with issues arising with particular vocabularies.
 
 ### Principles
 
