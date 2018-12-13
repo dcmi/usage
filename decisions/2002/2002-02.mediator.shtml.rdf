@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	 xmlns:dc ="http://purl.org/dc/elements/1.1/">
+<rdf:Description rdf:about="http://dublincore.org/usage/decisions/2002/2002-02.mediator.shtml">
+   <dc:title>Decision on proposal for revision of term "mediator"</dc:title>
+   <dc:description>The decision documented here refers to a proposal
+               considered at the Usage Board meeting of May 2002
+               in Bath. </dc:description>
+   <dc:date>2002-07-13</dc:date>
+   <dc:creator>Tom Baker</dc:creator>
+   <dc:format>text/html</dc:format>
+   <dc:language>en</dc:language>
+   <dc:publisher>Dublin Core Metadata Initiative</dc:publisher>
+ </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,19 @@
+    These two constructs (DCAM-2, RDF-Turtle-2) are inconsistent with the
+    range of the property. One of the primary motivations for creating these
+    three dcterms:* properties - apart from the "why can't we just use one
+    namespace?" issue - was to try to achieve a consistent usage of these
+    properties, i.e. to declare/describe the properties in such a way that
+    implementers would use the forms DCAM-1 and RDF-Turtle-1, and the forms
+    DCAM-2 and RDF-Turtle-2 were not used.
+
+    In the DCAM case, it might be argued that a DCAM implementer should read
+    the phrase "the name ... should be used to indicate the entity" together
+    with the assertion of a non-literal range as implying that the usage
+    (DCAM-1), rather than (DCAM-2), is required, and on this basis, it might
+    be argued that there is no contradiction.
+
+    But in the RDF case, to an RDF implementer, the phrase "the name ...
+    should be used to indicate the entity" strongly implies the use of a
+    literal object. It is not clear how an RDF implementer can reconcile
+    this with the non-literal range, and the contradiction is rather more
+    stark.

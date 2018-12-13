@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>DCMI Usage Board - Overview of documentation for DCMI Metadata Terms</title>
+<!--#exec cgi="/cgi-bin/metawriter.cgi"-->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="meta" href="index.shtml.rdf" />
+<link rel="stylesheet" href="/css/default.css" type="text/css" />
+<script src="/js/default.js" type="text/javascript"></script>
+</head>
+<body>
+<!--#include virtual="/ssi/header.shtml" -->
+<h1>Overview of Documentation for DCMI Metadata Terms</h1>
+<table cellspacing="0" class="docinfo">
+<tr>
+<th>Creator:</th>
+<td><a href="mailto:dc-usage@jiscmail.ac.uk">DCMI Usage Board</a></td>
+</tr>
+<tr>
+<th>Identifier:</th>
+<td><a href="/usage/documents/overview">http://dublincore.org/usage/documents/overview</a></td>
+</tr>
+<tr>
+<th>Last updated:</th>
+<td>2006-12-18</td>
+</tr>
+<tr>
+<th>Description:</th>
+<td>This page provides an overview of official documentation of all DCMI metadata terms.</td>
+</tr>
+<tr>
+<th>Date Valid:</th>
+<td>2003-03-04</td>
+</tr>
+</table>
+
+<h2><a href="/documents/dcmi-terms/">DCMI Metadata Terms</a></h2>
+
+<p>This document includes the up-to-date specification
+of <strong>all metadata terms</strong> maintained by the
+Dublin Core Metadata Initiative, including elements; element
+refinements and encoding schemes (&quot;qualifiers&quot;);
+and controlled vocabulary terms (the DCMI type
+vocabulary). Additional links below lead to subsets of DCMI
+metadata terms that are maintained as separate documents
+for legacy purposes: <a href="/documents/dces/">Dublin
+Core Metadata Element Set, Version 1.1</a> and <a
+href="/documents/dcmi-type-vocabulary/">DCMI Type
+Vocabulary</a>.</p>
+
+<hr />
+
+<h2><a href="/documents/dces/">Dublin Core Metadata Element Set, Version 1.1</a></h2>
+
+<p><strong>All terms in this document are <em>also</em>
+described in the complete listing, &quot;DCMI Metadata
+Terms&quot; (above).</strong> This document provides updated
+ready-reference documentation for fifteen Dublin Core elements
+which have been endorsed in the international standards
+NISO Standard Z39.85-2001 and ISO Standard 15836-2003.</p>
+
+<hr />
+
+<h2><a href="/documents/dcmi-type-vocabulary/">DCMI Type Vocabulary</a></h2>
+<p><strong>All terms in this document are <em>also</em> described in the complete listing, &quot;DCMI Metadata Terms&quot; (above).</strong> This document describes a general, cross-domain list of approved terms that may be used as values for the Type element to identify the genre of a resource.</p>
+
+<hr />
+
+<h2>Additional historical information</h2>
+<p>Users with specialized needs will find complete information about past versions of DCMI metadata terms in the document  <a href="/usage/terms/history/">DCMI Metadata Terms: A complete historical record</a>.</p>
+<!--#include virtual="/ssi/footer.shtml" -->
+</body>
+</html>

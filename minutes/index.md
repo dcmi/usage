@@ -25,7 +25,6 @@
 
 2009-10-07 UB Telecon #53
 * https://github.com/dcmi/usage/blob/master/minutes/2009/2009-10-07.dcub-telecon-agenda.html
-* https://github.com/dcmi/usage/blob/master/minutes/2009/2009-10-07.dcub-telecon-report.html
 
 2009-09-16 UB Telecon #52
 * https://github.com/dcmi/usage/blob/master/minutes/2009/2009-09-16.dcub-telecon-agenda.html

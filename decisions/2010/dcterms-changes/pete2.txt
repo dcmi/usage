@@ -1,0 +1,16 @@
+->  These two constructs (DCAM-2, RDF-Turtle-2) are
+->  inconsistent with the intent that the property not be used
+->  with literal values.  One of the primary motivations for
+    creating these three dcterms:* properties - apart from
+    the "why can't we just use one namespace?" issue - was
+    to try to achieve a consistent usage of these properties,
+    i.e. to declare/describe the properties in such a way that
+    implementers would use the forms DCAM-1 and RDF-Turtle-1,
+    and the forms DCAM-2 and RDF-Turtle-2 were not used.
+
+->  [deleted]
+
+->  But in the RDF case, to an RDF implementer, the phrase
+->  "the name ...  should be used to indicate the entity"
+->  strongly implies strongly implies that the property be
+->  used with a literal object, which is not its intended use.

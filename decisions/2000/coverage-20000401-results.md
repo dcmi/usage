@@ -1,0 +1,2134 @@
+---
+title: DCMI Usage Board Decisions
+date: 2000-06-11
+description: Documentation of the first set of qualifiers approved by                      the
+  DCMI Usage Committee [1].
+draft: false
+creators: []
+contributors: []
+publisher: Dublin Core Metadata Initiative
+tags: []
+aliases:
+- "/usage/decisions/2000/coverage-20000401-results.htm"
+notes: 
+annotation: 
+---
+
+<center>
+<table bgcolor="#ffffcc" border="0" cellpadding="0" cellspacing="0" width="86%">
+  <tbody>
+  <tr bgcolor="#ffffcc">
+    <td bgcolor="#ffffcc">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+        <tr>
+          <td align="left" bgcolor="#000000" height="20" width="50%">  <font color="#ffffcc"><b>Votes 
+by</b></font>
+</td>
+            <td align="right" bgcolor="#000000" height="20" width="50%">
+<font color="#ffffcc">http://www.sztaki.hu/servlets/voting</font> </td>
+          </tr>
+</tbody>
+</table>
+
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+        <tr>
+          <td bgcolor="#669999" height="32" width="2%"> </td>
+            <td bgcolor="#669999" height="32" width="88%">
+<img alt="Dublin Core Metadata Initiative" border="0" height="32" src="images/dcmi_22.gif" width="460"> </td>
+          <td bgcolor="#669999" height="32" width="10%"> </td>
+</tr>
+        <tr>
+          <td bgcolor="#669999" width="2%"> </td>
+          <td bgcolor="#669999" width="88%">
+            <table align="right" border="0" cellpadding="3" cellspacing="0">
+              <tbody>
+              <tr>
+                  <td valign="top">
+<b><font color="#ffffff">Active Votes</font></b> <br>
+                    <a href="index.shtml"><b><font color="#ffffff">Closed Votes</font></b></a> </td>
+                  <td>
+<b><font color="#ffffff">Preferences</font></b> <br>
+                    <b><font color="#ffffff">Logout</font></b> <!-- block:selected--><!-- endb:selected-->
+</td> <td>
+<b><font color="#ffffff">Manual</font></b> <br>
+                    <b><font color="#ffffff">Policy</font></b> </td>
+                </tr>
+</tbody>
+</table></td>
+</tr>
+</tbody>
+</table></td>
+          <td bgcolor="#669999" width="10%"> </td>
+</tr>
+<!-- MENUSOR
+      <TR>
+        <TD HEIGHT="20" WIDTH="2%" BGCOLOR="#669999"> </TD>
+  <TD HEIGHT="20" ALIGN="LEFT" VALIGN="TOP" BGCOLOR="#669999">
+		<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="425">
+          <TR>
+            <TD>
+				<A HREF="../index.htm">
+				</A></TD>
+            <TD>
+				<A HREF="../search/index.htm">
+				</A></TD>
+            <TD>
+				<A HREF="../sitemap/index.htm">
+				</A></TD>
+          </TR>
+        </TABLE>
+        <P></TD>
+        <TD HEIGHT="20" BGCOLOR="#669999" WIDTH="2%"> </TD>
+      </TR>
+-->
+</tbody>
+</table>
+
+      <table border="0" cellpadding="3" cellspacing="0" width="100%">
+        <tbody>
+        <tr>
+          <td bgcolor="#99cccc" width="2%"> </td>
+          
+      <td bgcolor="#99cccc"><a href="coverage-20000401-index.htm"><font size="4"><b>Proposed Qualifiers: Coverage (2000-04-01) </b></font></a></td>
+          <td bgcolor="#99cccc" width="2%"> </td>
+</tr>
+</tbody>
+</table>
+
+<!--
+    <TABLE BORDER="0" WIDTH="100%" CELLSPACING="0" CELLPADDING="0">
+      <TR>
+        <TD WIDTH="2%" BGCOLOR="#FFFFCC"> </TD>
+        <TD WIDTH="96%" VALIGN="TOP" BGCOLOR="#FFFFCC"><BR>
+--><!-- header end -->
+      <p></p>
+      <h2>Result</h2>Result of the Vote "Proposed Qualifiers: Coverage 
+      (2000-04-01)", generated at 4/15/00 7:00 PM. <br>Number of votes cast: 24 
+      <hr>
+
+      <p>1. <b>Question: </b>Qualifier for 'Coverage': Place 
+      </p>
+<p>
+      </p>
+<table bgcolor="wheat" border="0" cellpadding="2" cellspacing="0" width="100%">
+        <tbody>
+        <tr valign="top">
+          <td></td>
+          <td><b>Label:</b></td>
+          <td>Place</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>Name: </b></td>
+          <td>place</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>Definition: </b></td>
+          <td>Spatial characteristics of the intellectual content of the 
+            resoure.</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>Type:</b></td>
+          <td>Element Refinement</td>
+</tr>
+</tbody>
+</table>
+
+      <p>type: single selection 
+      </p>
+<p>
+      </p>
+<table cellpadding="2">
+        <tbody>
+        <tr valign="top">
+          <td><b>Answer</b></td>
+          <td><b>Points</b></td>
+</tr>
+        <tr valign="top">
+          <td>Approve</td>
+          <td>24</td>
+          <td><img height="10" src="Proposed%20Qualifiers%20Coverage%20(2000-04-01)%20-%20Results_files/piros.gif" width="300"></td>
+</tr>
+        <tr valign="top">
+          <td>Reject</td>
+          <td>0</td>
+          <td><img height="10" src="Proposed%20Qualifiers%20Coverage%20(2000-04-01)%20-%20Results_files/piros.gif" width="0"></td>
+</tr>
+</tbody>
+</table>
+
+<br>Abstain: 0 
+      <p><b>Choice with highest score: </b>Approve 
+      </p>
+<p>
+      </p>
+<table border="1" cellpadding="2">
+        <tbody>
+        <tr valign="top">
+          <td><b>Voter</b></td>
+          <td><b>Vote</b></td>
+          <td><b>Voter's comment</b></td>
+</tr>
+        <tr valign="top">
+          <td>Simon Cox</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Renato Iannella</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Jon Mason</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>David Bearman</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Priscilla Caplan</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Traugott Koch</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Juha Hakala</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Diane Hillmann</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Stuart Weibel</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Andy Powell</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Makx Dekkers</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Leif Andresen</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Roland Schwaenzl</td>
+          <td>Approve</td>
+          <td>"intellectual" should be deleted from the definition</td>
+</tr>
+        <tr valign="top">
+          <td>Tom Baker</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Rebecca Guenther</td>
+          <td>Approve</td>
+          <td>Prefer the term "Spatial" for qualifier.</td>
+</tr>
+        <tr valign="top">
+          <td>Eric Childress</td>
+          <td>Approve</td>
+          <td>Prefer the label "spatial" </td>
+</tr>
+        <tr valign="top">
+          <td>Stuart Sutton</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Sigfrid Lundberg</td>
+          <td>Approve</td>
+          <td>I agree with the concept, but place is misleading. Should be 
+            spatial</td>
+</tr>
+        <tr valign="top">
+          <td>Warwick Cathro</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Erik Jul</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Rachel Heery</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Diann Rusch-Feja</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>eric miller</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Shigeo Sugimoto</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+</tbody>
+</table>
+
+      <p>
+      </p>
+<hr>
+
+      <p>2. <b>Question: </b>Encoding Scheme for 'Place': DCMI Point 
+      </p>
+<p>
+      </p>
+<table bgcolor="wheat" border="0" cellpadding="2" cellspacing="0" width="100%">
+        <tbody>
+        <tr valign="top">
+          <td></td>
+          <td><b>Label:</b></td>
+          <td>DCMI Point</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>Name: </b></td>
+          <td>Point</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>Definition: </b></td>
+          <td>The DCMI Point identifies a point in space using its geographic 
+            coordinates.</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>Comment: </b></td>
+          <td>A DCMI proposed encoding scheme</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>Type: </b></td>
+          <td>Encoding Scheme</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>See also: </b></td>
+          <td><a href="http://www.agcrc.csiro.au/projects/3018CO/metadata/dcpoint/" target="dc">http://www.agcrc.csiro.au/projects/3018CO/metadata/dcpoint/</a></td>
+</tr>
+</tbody>
+</table>
+
+      <p>type: single selection 
+      </p>
+<p>
+      </p>
+<table cellpadding="2">
+        <tbody>
+        <tr valign="top">
+          <td><b>Answer</b></td>
+          <td><b>Points</b></td>
+</tr>
+        <tr valign="top">
+          <td>Approve</td>
+          <td>18</td>
+          <td><img height="10" src="Proposed%20Qualifiers%20Coverage%20(2000-04-01)%20-%20Results_files/piros.gif" width="300"></td>
+</tr>
+        <tr valign="top">
+          <td>Reject</td>
+          <td>0</td>
+          <td><img height="10" src="Proposed%20Qualifiers%20Coverage%20(2000-04-01)%20-%20Results_files/piros.gif" width="0"></td>
+</tr>
+</tbody>
+</table>
+
+<br>Abstain: 6 
+      <p><b>Choice with highest score: </b>Approve 
+      </p>
+<p>
+      </p>
+<table border="1" cellpadding="2">
+        <tbody>
+        <tr valign="top">
+          <td><b>Voter</b></td>
+          <td><b>Vote</b></td>
+          <td><b>Voter's comment</b></td>
+</tr>
+        <tr valign="top">
+          <td>Simon Cox</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Renato Iannella</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Jon Mason</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>David Bearman</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Priscilla Caplan</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Traugott Koch</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Juha Hakala</td>
+          <td>abstain</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Diane Hillmann</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Stuart Weibel</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Andy Powell</td>
+          <td>abstain</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Makx Dekkers</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Leif Andresen</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Roland Schwaenzl</td>
+          <td>abstain</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Tom Baker</td>
+          <td>abstain</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Rebecca Guenther</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Eric Childress</td>
+          <td>abstain</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Stuart Sutton</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Sigfrid Lundberg</td>
+          <td>Approve</td>
+          <td>Should be an encoding scheme for coverage</td>
+</tr>
+        <tr valign="top">
+          <td>Warwick Cathro</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Erik Jul</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Rachel Heery</td>
+          <td>abstain</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Diann Rusch-Feja</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>eric miller</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Shigeo Sugimoto</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+</tbody>
+</table>
+
+      <p>
+      </p>
+<hr>
+
+      <p>3. <b>Question: </b>Encoding Scheme for 'Place': ISO3166 
+      </p>
+<p>
+      </p>
+<table bgcolor="wheat" border="0" cellpadding="2" cellspacing="0" width="100%">
+        <tbody>
+        <tr valign="top">
+          <td></td>
+          <td><b>Label:</b></td>
+          <td>ISO3166</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>Name: </b></td>
+          <td>ISO3166</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>Definition: </b></td>
+          <td>ISO3166 Codes for the representation of names of countries</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>Type: </b></td>
+          <td>Encoding Scheme</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>See also: </b></td>
+          <td><a href="ftp://dkuug.dk/i18n/ISO_3166" target="dc">ftp://dkuug.dk/i18n/ISO_3166</a></td>
+</tr>
+</tbody>
+</table>
+
+      <p>type: single selection 
+      </p>
+<p>
+      </p>
+<table cellpadding="2">
+        <tbody>
+        <tr valign="top">
+          <td><b>Answer</b></td>
+          <td><b>Points</b></td>
+</tr>
+        <tr valign="top">
+          <td>Approve</td>
+          <td>24</td>
+          <td><img height="10" src="Proposed%20Qualifiers%20Coverage%20(2000-04-01)%20-%20Results_files/piros.gif" width="300"></td>
+</tr>
+        <tr valign="top">
+          <td>Reject</td>
+          <td>0</td>
+          <td><img height="10" src="Proposed%20Qualifiers%20Coverage%20(2000-04-01)%20-%20Results_files/piros.gif" width="0"></td>
+</tr>
+</tbody>
+</table>
+
+<br>Abstain: 0 
+      <p><b>Choice with highest score: </b>Approve 
+      </p>
+<p>
+      </p>
+<table border="1" cellpadding="2">
+        <tbody>
+        <tr valign="top">
+          <td><b>Voter</b></td>
+          <td><b>Vote</b></td>
+          <td><b>Voter's comment</b></td>
+</tr>
+        <tr valign="top">
+          <td>Simon Cox</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Renato Iannella</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Jon Mason</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>David Bearman</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Priscilla Caplan</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Traugott Koch</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Juha Hakala</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Diane Hillmann</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Stuart Weibel</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Andy Powell</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Makx Dekkers</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Leif Andresen</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Roland Schwaenzl</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Tom Baker</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Rebecca Guenther</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Eric Childress</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Stuart Sutton</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Sigfrid Lundberg</td>
+          <td>Approve</td>
+          <td>Should be an encoding scheme for coverage</td>
+</tr>
+        <tr valign="top">
+          <td>Warwick Cathro</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Erik Jul</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Rachel Heery</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Diann Rusch-Feja</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>eric miller</td>
+          <td>Approve</td>
+          <td>I agree with this concept, however, Should this not be three 
+            different encoding schemes e.g. 
+            http://www.din.de/gremien/nas/nabd/iso3166ma/a3ptnorm.html </td>
+</tr>
+        <tr valign="top">
+          <td>Shigeo Sugimoto</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+</tbody>
+</table>
+
+      <p>
+      </p>
+<hr>
+
+      <p>4. <b>Question: </b>Encoding Scheme for 'Place': DCMI Box 
+      </p>
+<p>
+      </p>
+<table bgcolor="wheat" border="0" cellpadding="2" cellspacing="0" width="100%">
+        <tbody>
+        <tr valign="top">
+          <td></td>
+          <td><b>Label:</b></td>
+          <td>DCMI Box</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>Name: </b></td>
+          <td>Box</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>Definition: </b></td>
+          <td>The DCMI Box identifies a region of space using its geographic 
+            limits.</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>Comment: </b></td>
+          <td>A DCMI proposed encoding scheme</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>Type:</b></td>
+          <td>Encoding Scheme</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>See also: </b></td>
+          <td><a href="http://www.agcrc.csiro.au/projects/3018CO/metadata/dcbox/" target="dc">http://www.agcrc.csiro.au/projects/3018CO/metadata/dcbox/</a></td>
+</tr>
+</tbody>
+</table>
+
+      <p>type: single selection 
+      </p>
+<p>
+      </p>
+<table cellpadding="2">
+        <tbody>
+        <tr valign="top">
+          <td><b>Answer</b></td>
+          <td><b>Points</b></td>
+</tr>
+        <tr valign="top">
+          <td>Approve</td>
+          <td>18</td>
+          <td><img height="10" src="Proposed%20Qualifiers%20Coverage%20(2000-04-01)%20-%20Results_files/piros.gif" width="300"></td>
+</tr>
+        <tr valign="top">
+          <td>Reject</td>
+          <td>1</td>
+          <td><img height="10" src="Proposed%20Qualifiers%20Coverage%20(2000-04-01)%20-%20Results_files/piros.gif" width="16"></td>
+</tr>
+</tbody>
+</table>
+
+<br>Abstain: 5 
+      <p><b>Choice with highest score: </b>Approve 
+      </p>
+<p>
+      </p>
+<table border="1" cellpadding="2">
+        <tbody>
+        <tr valign="top">
+          <td><b>Voter</b></td>
+          <td><b>Vote</b></td>
+          <td><b>Voter's comment</b></td>
+</tr>
+        <tr valign="top">
+          <td>Simon Cox</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Renato Iannella</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Jon Mason</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>David Bearman</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Priscilla Caplan</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Traugott Koch</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Juha Hakala</td>
+          <td>abstain</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Diane Hillmann</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Stuart Weibel</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Andy Powell</td>
+          <td>abstain</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Makx Dekkers</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Leif Andresen</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Roland Schwaenzl</td>
+          <td>Reject</td>
+          <td>does not "identify"</td>
+</tr>
+        <tr valign="top">
+          <td>Tom Baker</td>
+          <td>abstain</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Rebecca Guenther</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Eric Childress</td>
+          <td>abstain</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Stuart Sutton</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Sigfrid Lundberg</td>
+          <td>Approve</td>
+          <td>Should be an encoding scheme for coverage</td>
+</tr>
+        <tr valign="top">
+          <td>Warwick Cathro</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Erik Jul</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Rachel Heery</td>
+          <td>abstain</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Diann Rusch-Feja</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>eric miller</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Shigeo Sugimoto</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+</tbody>
+</table>
+
+      <p>
+      </p>
+<hr>
+
+      <p>5. <b>Question: </b>Encoding Scheme for 'Place': Degrees, minutes, 
+      seconds 
+      </p>
+<p>
+      </p>
+<table bgcolor="wheat" border="0" cellpadding="2" cellspacing="0" width="100%">
+        <tbody>
+        <tr valign="top">
+          <td></td>
+          <td><b>Label:</b></td>
+          <td>Degrees, minutes, seconds</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>Name: </b></td>
+          <td>DMS</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>Definition: </b></td>
+          <td>A latitude and longitude expressed in degrees, minutes, 
+          seconds.</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>Comment: </b></td>
+          <td>Note: A DCMI proposed encoding scheme</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>Type:</b></td>
+          <td>Encoding Scheme</td>
+</tr>
+</tbody>
+</table>
+
+      <p>type: single selection 
+      </p>
+<p>
+      </p>
+<table cellpadding="2">
+        <tbody>
+        <tr valign="top">
+          <td><b>Answer</b></td>
+          <td><b>Points</b></td>
+</tr>
+        <tr valign="top">
+          <td>Reject</td>
+          <td>10</td>
+          <td><img height="10" src="Proposed%20Qualifiers%20Coverage%20(2000-04-01)%20-%20Results_files/piros.gif" width="300"></td>
+</tr>
+        <tr valign="top">
+          <td>Approve</td>
+          <td>6</td>
+          <td><img height="10" src="Proposed%20Qualifiers%20Coverage%20(2000-04-01)%20-%20Results_files/piros.gif" width="180"></td>
+</tr>
+</tbody>
+</table>
+
+<br>Abstain: 8 
+      <p><b>Choice with highest score: </b>Reject 
+      </p>
+<p>
+      </p>
+<table border="1" cellpadding="2">
+        <tbody>
+        <tr valign="top">
+          <td><b>Voter</b></td>
+          <td><b>Vote</b></td>
+          <td><b>Voter's comment</b></td>
+</tr>
+        <tr valign="top">
+          <td>Simon Cox</td>
+          <td>Reject</td>
+          <td>No definition provided. DMS per se only encodes a single number. 
+            Two numbers are required to specify a point in 2-D space (e.g. on 
+            the surface of the earth) and more if altitude, time are also 
+            required. Hence, this will not work. </td>
+</tr>
+        <tr valign="top">
+          <td>Renato Iannella</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Jon Mason</td>
+          <td>abstain</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>David Bearman</td>
+          <td>Reject</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Priscilla Caplan</td>
+          <td>abstain</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Traugott Koch</td>
+          <td>abstain</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Juha Hakala</td>
+          <td>abstain</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Diane Hillmann</td>
+          <td>Reject</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Stuart Weibel</td>
+          <td>Reject</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Andy Powell</td>
+          <td>abstain</td>
+          <td>What's the URL for this?</td>
+</tr>
+        <tr valign="top">
+          <td>Makx Dekkers</td>
+          <td>Reject</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Leif Andresen</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Roland Schwaenzl</td>
+          <td>Reject</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Tom Baker</td>
+          <td>Reject</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Rebecca Guenther</td>
+          <td>abstain</td>
+          <td>Needs to elaborate on the difference between this and DC 
+          Point.</td>
+</tr>
+        <tr valign="top">
+          <td>Eric Childress</td>
+          <td>abstain</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Stuart Sutton</td>
+          <td>Reject</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Sigfrid Lundberg</td>
+          <td>Reject</td>
+          <td>This is a single longitude or latitude, in the abscence of the 
+            structure given by DCMI Point, and you don't know which. Pretty 
+            useless.</td>
+</tr>
+        <tr valign="top">
+          <td>Warwick Cathro</td>
+          <td>abstain</td>
+          <td>Insufficient explanation or description of this scheme: even if 
+            a pair of numbers is allowed or implied, there is no description of 
+            how to determine which number is latitude and which is longitude. 
+            Different conventions have been used in different contexts.</td>
+</tr>
+        <tr valign="top">
+          <td>Erik Jul</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Rachel Heery</td>
+          <td>Reject</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Diann Rusch-Feja</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>eric miller</td>
+          <td>Approve</td>
+          <td>I agree with this concept, however, the specifications for 
+            encoding are required for *all* DCMI proposed encoding schemes.... 
+            if these are not provided, I'd reject this.</td>
+</tr>
+        <tr valign="top">
+          <td>Shigeo Sugimoto</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+</tbody>
+</table>
+
+      <p>
+      </p>
+<hr>
+
+      <p>6. <b>Question: </b>Encoding Scheme for 'Place': TGN 
+      </p>
+<p>
+      </p>
+<table bgcolor="wheat" border="0" cellpadding="2" cellspacing="0" width="100%">
+        <tbody>
+        <tr valign="top">
+          <td></td>
+          <td><b>Label:</b></td>
+          <td>TGN</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>Name: </b></td>
+          <td>TGN</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>Definition: </b></td>
+          <td>The Getty Thesaurus of Geographic Names</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>Type:</b></td>
+          <td>Encoding Scheme</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>See also: </b></td>
+          <td><a href="http://www.gii.getty.edu/vocabulary/tgn.html" target="dc">http://www.gii.getty.edu/vocabulary/tgn.html</a></td>
+</tr>
+</tbody>
+</table>
+
+      <p>type: single selection 
+      </p>
+<p>
+      </p>
+<table cellpadding="2">
+        <tbody>
+        <tr valign="top">
+          <td><b>Answer</b></td>
+          <td><b>Points</b></td>
+</tr>
+        <tr valign="top">
+          <td>Approve</td>
+          <td>23</td>
+          <td><img height="10" src="Proposed%20Qualifiers%20Coverage%20(2000-04-01)%20-%20Results_files/piros.gif" width="300"></td>
+</tr>
+        <tr valign="top">
+          <td>Reject</td>
+          <td>1</td>
+          <td><img height="10" src="Proposed%20Qualifiers%20Coverage%20(2000-04-01)%20-%20Results_files/piros.gif" width="13"></td>
+</tr>
+</tbody>
+</table>
+
+<br>Abstain: 0 
+      <p><b>Choice with highest score: </b>Approve 
+      </p>
+<p>
+      </p>
+<table border="1" cellpadding="2">
+        <tbody>
+        <tr valign="top">
+          <td><b>Voter</b></td>
+          <td><b>Vote</b></td>
+          <td><b>Voter's comment</b></td>
+</tr>
+        <tr valign="top">
+          <td>Simon Cox</td>
+          <td>Approve</td>
+          <td>http://shiva.pub.getty.edu/tgn_browser/ is the correct URL</td>
+</tr>
+        <tr valign="top">
+          <td>Renato Iannella</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Jon Mason</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>David Bearman</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Priscilla Caplan</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Traugott Koch</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Juha Hakala</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Diane Hillmann</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Stuart Weibel</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Andy Powell</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Makx Dekkers</td>
+          <td>Reject</td>
+          <td>Insufficient global applicability</td>
+</tr>
+        <tr valign="top">
+          <td>Leif Andresen</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Roland Schwaenzl</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Tom Baker</td>
+          <td>Approve</td>
+          <td>As with subject headings, if TGN is insufficiently applicable 
+            globally, we can recognize other thesauri of geographic names as 
+            well. Now that Simon has found the current URL, I'm changing my 
+          vote.</td>
+</tr>
+        <tr valign="top">
+          <td>Rebecca Guenther</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Eric Childress</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Stuart Sutton</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Sigfrid Lundberg</td>
+          <td>Approve</td>
+          <td>Should be an encoding scheme for coverage</td>
+</tr>
+        <tr valign="top">
+          <td>Warwick Cathro</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Erik Jul</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Rachel Heery</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Diann Rusch-Feja</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>eric miller</td>
+          <td>Approve</td>
+          <td>I agree with this concept, however, I think we should liason 
+            with the Getty for providing better access to this encoding 
+          scheme.</td>
+</tr>
+        <tr valign="top">
+          <td>Shigeo Sugimoto</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+</tbody>
+</table>
+
+      <p>
+      </p>
+<hr>
+
+      <p>7. <b>Question: </b>Encoding Scheme for 'Place': Decimal Degrees
+      </p>
+<p>
+      </p>
+<table bgcolor="wheat" border="0" cellpadding="2" cellspacing="0" width="100%">
+        <tbody>
+        <tr valign="top">
+          <td></td>
+          <td><b>Label:</b></td>
+          <td>Decimal Degrees</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>Name: </b></td>
+          <td>DD</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>Definition: </b></td>
+          <td>A latitude and longitude expressed in decimal degrees</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>Comment: </b></td>
+          <td>Note: A DCMI proposed encoding scheme</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>Type:</b></td>
+          <td>Encoding Scheme</td>
+</tr>
+</tbody>
+</table>
+
+      <p>type: single selection 
+      </p>
+<p>
+      </p>
+<table cellpadding="2">
+        <tbody>
+        <tr valign="top">
+          <td><b>Answer</b></td>
+          <td><b>Points</b></td>
+</tr>
+        <tr valign="top">
+          <td>Reject</td>
+          <td>10</td>
+          <td><img height="10" src="Proposed%20Qualifiers%20Coverage%20(2000-04-01)%20-%20Results_files/piros.gif" width="300"></td>
+</tr>
+        <tr valign="top">
+          <td>Approve</td>
+          <td>6</td>
+          <td><img height="10" src="Proposed%20Qualifiers%20Coverage%20(2000-04-01)%20-%20Results_files/piros.gif" width="180"></td>
+</tr>
+</tbody>
+</table>
+
+<br>Abstain: 8 
+      <p><b>Choice with highest score: </b>Reject 
+      </p>
+<p>
+      </p>
+<table border="1" cellpadding="2">
+        <tbody>
+        <tr valign="top">
+          <td><b>Voter</b></td>
+          <td><b>Vote</b></td>
+          <td><b>Voter's comment</b></td>
+</tr>
+        <tr valign="top">
+          <td>Simon Cox</td>
+          <td>Reject</td>
+          <td>No definition provided. DD per se only encodes a single number. 
+            Two numbers are required to specify a point in 2-D space (e.g. on 
+            the surface of the earth) and more if altitude, time are also 
+            required. Hence, this will not work. </td>
+</tr>
+        <tr valign="top">
+          <td>Renato Iannella</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Jon Mason</td>
+          <td>abstain</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>David Bearman</td>
+          <td>Reject</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Priscilla Caplan</td>
+          <td>abstain</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Traugott Koch</td>
+          <td>abstain</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Juha Hakala</td>
+          <td>abstain</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Diane Hillmann</td>
+          <td>Reject</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Stuart Weibel</td>
+          <td>Reject</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Andy Powell</td>
+          <td>abstain</td>
+          <td>What's the URL for this?</td>
+</tr>
+        <tr valign="top">
+          <td>Makx Dekkers</td>
+          <td>Reject</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Leif Andresen</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Roland Schwaenzl</td>
+          <td>Reject</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Tom Baker</td>
+          <td>Reject</td>
+          <td>No URL.</td>
+</tr>
+        <tr valign="top">
+          <td>Rebecca Guenther</td>
+          <td>abstain</td>
+          <td>Need to elaborate on difference between this and DC Point.</td>
+</tr>
+        <tr valign="top">
+          <td>Eric Childress</td>
+          <td>abstain</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Stuart Sutton</td>
+          <td>Reject</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Sigfrid Lundberg</td>
+          <td>Reject</td>
+          <td>As DMS</td>
+</tr>
+        <tr valign="top">
+          <td>Warwick Cathro</td>
+          <td>abstain</td>
+          <td>See comment on item 5.</td>
+</tr>
+        <tr valign="top">
+          <td>Erik Jul</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Rachel Heery</td>
+          <td>Reject</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Diann Rusch-Feja</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>eric miller</td>
+          <td>Approve</td>
+          <td>see previous comment on DCMI encoding schemes.</td>
+</tr>
+        <tr valign="top">
+          <td>Shigeo Sugimoto</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+</tbody>
+</table>
+
+      <p>
+      </p>
+<hr>
+
+      <p>8. <b>Question: </b>Qualifier for 'Coverage': Time 
+      </p>
+<p>
+      </p>
+<table bgcolor="wheat" border="0" cellpadding="2" cellspacing="0" width="100%">
+        <tbody>
+        <tr valign="top">
+          <td></td>
+          <td><b>Label:</b></td>
+          <td>Time</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>Name: </b></td>
+          <td>time</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>Definition: </b></td>
+          <td>Temporal characteristics of the intellectual content of the 
+            resource.</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>Type:</b></td>
+          <td>Element Refinement</td>
+</tr>
+</tbody>
+</table>
+
+      <p>type: single selection 
+      </p>
+<p>
+      </p>
+<table cellpadding="2">
+        <tbody>
+        <tr valign="top">
+          <td><b>Answer</b></td>
+          <td><b>Points</b></td>
+</tr>
+        <tr valign="top">
+          <td>Approve</td>
+          <td>24</td>
+          <td><img height="10" src="Proposed%20Qualifiers%20Coverage%20(2000-04-01)%20-%20Results_files/piros.gif" width="300"></td>
+</tr>
+        <tr valign="top">
+          <td>Reject</td>
+          <td>0</td>
+          <td><img height="10" src="Proposed%20Qualifiers%20Coverage%20(2000-04-01)%20-%20Results_files/piros.gif" width="0"></td>
+</tr>
+</tbody>
+</table>
+
+<br>Abstain: 0 
+      <p><b>Choice with highest score: </b>Approve 
+      </p>
+<p>
+      </p>
+<table border="1" cellpadding="2">
+        <tbody>
+        <tr valign="top">
+          <td><b>Voter</b></td>
+          <td><b>Vote</b></td>
+          <td><b>Voter's comment</b></td>
+</tr>
+        <tr valign="top">
+          <td>Simon Cox</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Renato Iannella</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Jon Mason</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>David Bearman</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Priscilla Caplan</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Traugott Koch</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Juha Hakala</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Diane Hillmann</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Stuart Weibel</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Andy Powell</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Makx Dekkers</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Leif Andresen</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Roland Schwaenzl</td>
+          <td>Approve</td>
+          <td>"intellectual" should be deleted from the definition. </td>
+</tr>
+        <tr valign="top">
+          <td>Tom Baker</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Rebecca Guenther</td>
+          <td>Approve</td>
+          <td>Prefer "Temporal" as qualifier.</td>
+</tr>
+        <tr valign="top">
+          <td>Eric Childress</td>
+          <td>Approve</td>
+          <td>Prefer the label "temporal"</td>
+</tr>
+        <tr valign="top">
+          <td>Stuart Sutton</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Sigfrid Lundberg</td>
+          <td>Approve</td>
+          <td>Should be temporal</td>
+</tr>
+        <tr valign="top">
+          <td>Warwick Cathro</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Erik Jul</td>
+          <td>Approve</td>
+          <td>Can this element contain free text?</td>
+</tr>
+        <tr valign="top">
+          <td>Rachel Heery</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Diann Rusch-Feja</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>eric miller</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Shigeo Sugimoto</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+</tbody>
+</table>
+
+      <p>
+      </p>
+<hr>
+
+      <p>9. <b>Question: </b>Encoding Scheme for 'Time':DCMI Period 
+      </p>
+<p>
+      </p>
+<table bgcolor="wheat" border="0" cellpadding="2" cellspacing="0" width="100%">
+        <tbody>
+        <tr valign="top">
+          <td></td>
+          <td><b>Label:</b></td>
+          <td>DCMI Period</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>Name: </b></td>
+          <td>Period</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>Definition: </b></td>
+          <td>A specification of the limits of a time interval.</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>Type:</b></td>
+          <td>Encoding Scheme</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>See also: </b></td>
+          <td><a href="http://www.agcrc.csiro.au/projects/3018CO/metadata/dcperiod/" target="dc">http://www.agcrc.csiro.au/projects/3018CO/metadata/dcperiod/</a></td>
+</tr>
+</tbody>
+</table>
+
+      <p>type: single selection 
+      </p>
+<p>
+      </p>
+<table cellpadding="2">
+        <tbody>
+        <tr valign="top">
+          <td><b>Answer</b></td>
+          <td><b>Points</b></td>
+</tr>
+        <tr valign="top">
+          <td>Approve</td>
+          <td>21</td>
+          <td><img height="10" src="Proposed%20Qualifiers%20Coverage%20(2000-04-01)%20-%20Results_files/piros.gif" width="300"></td>
+</tr>
+        <tr valign="top">
+          <td>Reject</td>
+          <td>1</td>
+          <td><img height="10" src="Proposed%20Qualifiers%20Coverage%20(2000-04-01)%20-%20Results_files/piros.gif" width="14"></td>
+</tr>
+</tbody>
+</table>
+
+<br>Abstain: 2 
+      <p><b>Choice with highest score: </b>Approve 
+      </p>
+<p>
+      </p>
+<table border="1" cellpadding="2">
+        <tbody>
+        <tr valign="top">
+          <td><b>Voter</b></td>
+          <td><b>Vote</b></td>
+          <td><b>Voter's comment</b></td>
+</tr>
+        <tr valign="top">
+          <td>Simon Cox</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Renato Iannella</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Jon Mason</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>David Bearman</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Priscilla Caplan</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Traugott Koch</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Juha Hakala</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Diane Hillmann</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Stuart Weibel</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Andy Powell</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Makx Dekkers</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Leif Andresen</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Roland Schwaenzl</td>
+          <td>abstain</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Tom Baker</td>
+          <td>abstain</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Rebecca Guenther</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Eric Childress</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Stuart Sutton</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Sigfrid Lundberg</td>
+          <td>Approve</td>
+          <td>Should be an encoding scheme for Coverage</td>
+</tr>
+        <tr valign="top">
+          <td>Warwick Cathro</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Erik Jul</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Rachel Heery</td>
+          <td>Reject</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Diann Rusch-Feja</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>eric miller</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Shigeo Sugimoto</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+</tbody>
+</table>
+
+      <p>
+      </p>
+<hr>
+
+      <p>10. <b>Question: </b>Encoding Scheme for 'Time':W3C-DTF 
+      </p>
+<p>
+      </p>
+<table bgcolor="wheat" border="0" cellpadding="2" cellspacing="0" width="100%">
+        <tbody>
+        <tr valign="top">
+          <td></td>
+          <td><b>Label:</b></td>
+          <td>W3C-DTF</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>Name: </b></td>
+          <td>W3CDTF</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>Definition: </b></td>
+          <td>W3C Encoding rules for dates and times - a profile based on 
+            ISO8601 </td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>Type:</b></td>
+          <td>Encoding Scheme</td>
+</tr>
+        <tr valign="top">
+          <td></td>
+          <td><b>See also: </b></td>
+          <td><a href="http://www.w3.org/TR/NOTE-datetime" target="dc">http://www.w3.org/TR/NOTE-datetime</a></td>
+</tr>
+</tbody>
+</table>
+
+      <p>type: single selection 
+      </p>
+<p>
+      </p>
+<table cellpadding="2">
+        <tbody>
+        <tr valign="top">
+          <td><b>Answer</b></td>
+          <td><b>Points</b></td>
+</tr>
+        <tr valign="top">
+          <td>Approve</td>
+          <td>24</td>
+          <td><img height="10" src="Proposed%20Qualifiers%20Coverage%20(2000-04-01)%20-%20Results_files/piros.gif" width="300"></td>
+</tr>
+        <tr valign="top">
+          <td>Reject</td>
+          <td>0</td>
+          <td><img height="10" src="Proposed%20Qualifiers%20Coverage%20(2000-04-01)%20-%20Results_files/piros.gif" width="0"></td>
+</tr>
+</tbody>
+</table>
+
+<br>Abstain: 0 
+      <p><b>Choice with highest score: </b>Approve 
+      </p>
+<p>
+      </p>
+<table border="1" cellpadding="2">
+        <tbody>
+        <tr valign="top">
+          <td><b>Voter</b></td>
+          <td><b>Vote</b></td>
+          <td><b>Voter's comment</b></td>
+</tr>
+        <tr valign="top">
+          <td>Simon Cox</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Renato Iannella</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Jon Mason</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>David Bearman</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Priscilla Caplan</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Traugott Koch</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Juha Hakala</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Diane Hillmann</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Stuart Weibel</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Andy Powell</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Makx Dekkers</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Leif Andresen</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Roland Schwaenzl</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Tom Baker</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Rebecca Guenther</td>
+          <td>Approve</td>
+          <td>Please clarify that the hyphens between year, month, day are 
+            optional, since ISO8601 allows for both expressions. If that is not 
+            correct, I'll change my vote.</td>
+</tr>
+        <tr valign="top">
+          <td>Eric Childress</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Stuart Sutton</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Sigfrid Lundberg</td>
+          <td>Approve</td>
+          <td>Should be an encoding scheme for Coverage</td>
+</tr>
+        <tr valign="top">
+          <td>Warwick Cathro</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Erik Jul</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Rachel Heery</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>Diann Rusch-Feja</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+        <tr valign="top">
+          <td>eric miller</td>
+          <td>Approve</td>
+          <td>Note W3C is working on data types for time in the XML Schemas 
+            Data Type Working Draft... the DCMI's endorsement of this concept 
+            should be deprecated in place of these new data types.</td>
+</tr>
+        <tr valign="top">
+          <td>Shigeo Sugimoto</td>
+          <td>Approve</td>
+          <td> </td>
+</tr>
+</tbody>
+</table>
+
+      <p>
+      </p>
+<hr>
+
+      <p>
+      
+  </p>
+<form action="/servlets/voting/dc/2dc2?t=27" method="post">
+    <input name="v" type="hidden" value="dc/2dc2">
+  </form>
+  <!-- footer starts -->
+  <tr>
+    <td>
+      <p> </p>
+      <font size="2">Contact András Micsik if you have problems with voting. </font>
+</td>
+  </tr>
+  <tr>
+    <td></td>
+</tr>
+  <tr>
+    <td>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+        <tr>
+          <td align="right" bgcolor="#000000" height="20" width="100%">
+<font color="#ffffcc"><i>© MTA SZTAKI DSD </i></font> </td>
+        </tr>
+</tbody>
+</table>
+
+      <p></p>
+</td>
+</tr>
+</center>
