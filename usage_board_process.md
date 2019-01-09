@@ -1,6 +1,8 @@
 # Usage Board process
 
-Tom Baker, Paul Walk
+https://github.com/dcmi/usage/blob/master/usage_board_process.md
+
+Tom Baker, Paul Walk<br />
 Version: 2018-07-18  
 
 ### About this document
