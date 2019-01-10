@@ -1,4 +1,4 @@
-# Usage Board process
+# [Usage Board](/groups/usage-board/) process
 
 https://github.com/dcmi/usage/blob/master/usage_board_process.md
 
