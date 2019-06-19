@@ -15,7 +15,7 @@ notes:
 annotation: 
 ---
 
-<!--#include virtual="/ssi/header.shtml" --><pre>
+<pre>
 Title: DCMI Grammatical Principles
 Creator: <a href="mailto:dc-usage@jiscmail.ac.uk">DCMI Usage Board</a>
 Identifier: <a href="/usage/documents/2002/10/06/principles/">http://dublincore.org/usage/documents/2002/10/06/principles/</a>
@@ -120,4 +120,4 @@ REFERENCES
 [2] <a href="/documents/dcmi-namespace/">http://dublincore.org/documents/dcmi-namespace/</a>
 [3] <a href="/usage/documents/profiles/">http://dublincore.org/usage/documents/profiles/</a>
 [4] <a href="/documents/usageguide/">http://dublincore.org/documents/usageguide/</a>
-</pre><!--#include virtual="/ssi/footer.shtml" -->
+</pre>
