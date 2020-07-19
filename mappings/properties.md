@@ -1,39 +1,4 @@
-[dcterms:abstract](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/abstract)
-
-[dcterms:accessRights](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/accessRights)
-* [schema_hasDigitalDocumentPermission](https://schema.org/hasDigitalDocumentPermission)  
-* [schema_permissiontype](https://schema.org/permissionType)  
-  * [schema_permissions](https://schema.org/permissions)
-    * [schema_accessibilitySummary](https://schema.org/accessibilitySummary)
-
-[dcterms:accrualMethod](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/accrualMethod)
-
-[dcterms:accrualPeriodicity](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/accrualPeriodicity)
-
-[dcterms:accrualPolicy](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/accrualPolicy)
-* [bibframe_frequency](http://id.loc.gov/ontologies/bibframe.html#p_frequency)
-
-[dcterms:alternative](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/alternative)
-* [schema_alternateName](https://schema.org/alternateName)
-  * [schema_alternativeHeadline](https://schema.org/alternativeHeadline)
-
-[dcterms:audience](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/audience)
-* [schema_audiencetype](https://schema.org/audienceType)
-  * [schema_typicalAgeRange](https://schema.org/typicalAgeRange)
-    * [bibframe_intendedaudience](http://id.loc.gov/ontologies/bibframe.html#p_intendedAudiencee)  
-    * [schema_educationalAlignment](https://schema.org/educationalAlignment)  
-    * [schema_educationalUse](https://schema.org/educationalUse)  
-    * [schema_InteractivityType](https://schema.org/educationalAlignment)  
-    * [schema_timeRequired](https://schema.org/interactivityType)  
-
-[dcterms:bibliographicCitation](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/bibliographicCitation)
-* [schema_citation](https://schema.org/citation)  
-* [wikidata_citeswork](https://www.wikidata.org/wiki/Property:P2860)  
-
-[dcterms:conformsTo](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/conformsTo)
-* [wikidata_complieswith](https://www.wikidata.org/wiki/Property:P5009)  
-* [wikidata_determinationmethod](https://www.wikidata.org/wiki/Property:P459)  
-
+----------------------------------------------------------
 [dcterms:contributor](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/contributor)
 * [bibframe_contribution](http://id.loc.gov/ontologies/bibframe.html#p_contribution)  
 * [wikidata_contributortothecreativeworkorsubject](https://www.wikidata.org/wiki/Property:P767)  
@@ -48,6 +13,7 @@
     * [bibo_contributorlist]()  
     * [wikidata_contributor](https://www.wikidata.org/wiki/Property:P767)  
 
+----------------------------------------------------------
 [dcterms:coverage](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/coverage)
 * [schema_about](https://schema.org/about)  
 * [schema_genre](https://schema.org/genre)  
@@ -59,33 +25,151 @@
     * [schema_mainEntity](https://schema.org/mainEntity)  
     * [schema_subjectOf](https://schema.org/subjectOf)  
 
+----------------------------------------------------------
 [dcterms:creator](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/creator)
 * [schema_author](https://schema.org/author)  
 * [schema_creator](https://schema.org/creator)  
 * [wikidata_author](https://www.wikidata.org/wiki/Property:P50)  
 * [wikidata_creator](https://www.wikidata.org/wiki/Property:P170)  
 
+----------------------------------------------------------
+[dcterms:date](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/date)
+* [bibframe_date](http://id.loc.gov/ontologies/bibframe.html#p_date)
+  * [schema_dateModified ](https://schema.org/dateModified)  
+  * [schema_datePublished](https://schema.org/datePublished)  
+  * [schema_endDate](https://schema.org/endDate)  
+  * [schema_expires](https://schema.org/expires)  
+  * [wikidata_discontinueddate](https://www.wikidata.org/wiki/Property:P2669)  
+  * [wikidata_inception](https://www.wikidata.org/wiki/Property:P571)  
+  * [wikidata_lastupdate](https://www.wikidata.org/wiki/Property:P5017)  
+  * [wikidata_publicationdate](https://www.wikidata.org/wiki/Property:P577)  
+  * [wikidata_startime](https://www.wikidata.org/wiki/Property:P580)  
+    * [schema_availabilityends](https://schema.org/availabilityEnds)  
+    * [schema_availabilitystarts](https://schema.org/availabilityStarts)  
+    * [schema_commentTime](https://schema.org/commentTime)  
+    * [schema_datedeleted](https://schema.org/dateDeleted)  
+    * [schema_datePosted](https://schema.org/datePosted)  
+    * [schema_datePublished](https://schema.org/datePublished)  
+    * [schema_dateread](https://schema.org/dateRead)  
+    * [schema_lastReviewed](https://schema.org/lastReviewed)  
+    * [schema_productionDate](https://schema.org/productionDate)  
+    * [schema_releasedate](https://schema.org/releaseDate)  
+    * [schema_uploaddate](https://schema.org/uploadDate)  
+    * [wikidata_productiondate](https://www.wikidata.org/wiki/Property:P2754)  
+
+[dcterms:created](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/created)
+* [schema_productionDate](https://schema.org/productionDate)  
+* [wikidata_inception](https://www.wikidata.org/wiki/Property:P571)  
+  * [wikidata_productiondate](https://www.wikidata.org/wiki/Property:P2754)
+    * [schema_datePosted](https://schema.org/datePosted)  
+    * [schema_datePublished](https://schema.org/datePublished)  
+    * [schema_releasedate](https://schema.org/releaseDate)  
+    * [schema_uploaddate](https://schema.org/uploadDate)  
+    * [wikidata_publicationdate](https://www.wikidata.org/wiki/Property:P577)  
+
+[dcterms:dateAccepted](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/dateAccepted)
+* [None]
+  * [bibframe_date](http://id.loc.gov/ontologies/bibframe.html#p_date)  
+  * [wikidata_publicationdate](https://www.wikidata.org/wiki/Property:P577)  
+    * [schema_datePublished](https://schema.org/datePublished)
+
+[dcterms:dateCopyrighted](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/dateCopyrighted)
+* [schema_copyrightyear](https://schema.org/copyrightYear)  
+  * [None]
+    * [wikidata_publicationdate](https://www.wikidata.org/wiki/Property:P577)
+
+[dcterms:dateSubmitted](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/dateSubmitted)
+* [None]
+  * [schema_uploaddate](https://schema.org/uploadDate)
+    * [schema_datesent](https://schema.org/dateSent)
+
+[dcterms:issued](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/issued)
+* [wikidata_publicationdate](https://www.wikidata.org/wiki/Property:P577)
+  * [schema_dateissued](https://schema.org/dateIssued)  
+  * [schema_datePublished](https://schema.org/datePublished)  
+  * [schema_startdate](https://schema.org/startDate)  
+  * [wikidata_dateofpublication](https://www.wikidata.org/wiki/Q1361758)  
+
+[dcterms:modified](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/modified)
+* [wikidata_lastupdate](https://www.wikidata.org/wiki/Property:P5017)
+  * [schema_dateModified ](https://schema.org/dateModified)
+
+[dcterms:valid](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/valid)
+
+----------------------------------------------------------
 [dcterms:description](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/description)
 * [schema_description](https://schema.org/description)  
 * [bibframe?]
 * [wikidata?]
 
-[dcterms:educationLevel](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/educationLevel)
-
-[dcterms:extent](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/extent)
-* [wikidata_duration](https://www.wikidata.org/wiki/Property:P2047)
-  * [bibframe_duration](http://id.loc.gov/ontologies/bibframe.html#p_duration)  
-  * [bibframe_scale](http://id.loc.gov/ontologies/bibframe.html#p_scale)  
-  * [schema_contentsize](https://schema.org/contentSize)  
-  * [schema_materialextent](https://schema.org/materialExtent)  
-    * [bibframe_extent](http://id.loc.gov/ontologies/bibframe.html#p_extent)
-
+----------------------------------------------------------
 [dcterms:format](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/format)
 * [schema_associatedMedia](https://schema.org/associatedMedia)  
 * [schema_encoding](https://bib.schema.org/encoding)  
 * [schema_fileformat](https://schema.org/fileFormat)  
 * [wikidata_fileformat](https://www.wikidata.org/wiki/Property:P2701)  
   * [wikidata_distributionformat](https://www.wikidata.org/wiki/Property:P437)
+
+----------------------------------------------------------
+[dcterms:identifier](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/identifier)
+* [bibframe_identifiedby](http://id.loc.gov/ontologies/bibframe.html#p_identifiedBy)
+  * [bibo_uri]()  
+  * [schema_isbn](https://schema.org/isbn)  
+  * [schema_url](https://schema.org/url)  
+  * [wikidata_doi](https://www.wikidata.org/wiki/Property:P356)  
+  * [wikidata_isbn_10](https://www.wikidata.org/wiki/Property:P957)  
+  * [wikidata_isbn-13](https://www.wikidata.org/wiki/Property:P212)  
+  * [wikidata_url](https://www.wikidata.org/wiki/Property:P2699)  
+    * [schema_citation](https://schema.org/citation)
+
+----------------------------------------------------------
+[dcterms:language](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/language)
+* [bibframe_language](http://id.loc.gov/ontologies/bibframe.html#p_languagee)  
+* [schema_inLanguage](https://schema.org/inLanguage)  
+* [wikidata_language](https://www.wikidata.org/wiki/Property:P407)  
+* [wikidata_languageofwork](https://www.wikidata.org/wiki/Property:P407)  
+  * [schema_available language](https://schema.org/availableLanguage)
+
+----------------------------------------------------------
+[dcterms:publisher](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/publisher)
+* [bibo_producer]()  
+* [schema_publisher](https://schema.org/publisher)  
+* [wikidata_publisher](https://www.wikidata.org/wiki/Property:P123)  
+  * [bibo_distributor]()  
+  * [schema_producer](https://schema.org/producer)  
+  * [schema_provider](https://schema.org/provider)  
+
+----------------------------------------------------------
+Relations and its subproperties
+
+[dcterms:relation](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/relation)
+* [bibframe_relation](http://id.loc.gov/ontologies/bibframe.html#p_relatedTo)  
+* [schema_affiliation](https://schema.org/affiliation)  
+* [schema_exampleofWork](https://schema.org/exampleOfWork)  
+* [schema_workExample ](https://schema.org/workExample)  
+  * [bibframe_relatedTo](http://id.loc.gov/ontologies/bibframe.html#p_relatedTo)  
+  * [bibo_citedby]()  
+  * [schema_exampleofWork](https://schema.org/exampleOfWork)  
+  * [schema_hasPart](https://schema.org/hasPart)  
+  * [schema_isbasedOnUrl](https://schema.org/isBasedOnUrl)  
+  * [schema_mentions](https://schema.org/mentions)  
+  * [schema_review](https://schema.org/reviews)  
+  * [schema_workExample ](https://schema.org/workExample)  
+  * [wikidata_citeswork](https://www.wikidata.org/wiki/Property:P2860)  
+  * [wikidata_haspart](https://www.wikidata.org/wiki/Property:P527)  
+  * [schema_affiliation](https://schema.org/affiliation)  
+  * [schema_citation](https://schema.org/citation)  
+  * [schema_hasPart](https://schema.org/hasPart)  
+    * [schema_isPartof](https://schema.org/isPartOf)  
+    * [schema_mentions](https://schema.org/mentions)  
+    * [schema_sameAs](https://schema.org/sameAs)  
+    * [wikidata_exactmatch](https://www.wikidata.org/wiki/Property:P2888)  
+    * [wikidata_part of](https://www.wikidata.org/wiki/Property:P361)  
+    * [wikidata_relation](https://www.wikidata.org/wiki/Property:P2309)  
+
+[dcterms:conformsTo](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/conformsTo)
+* [wikidata_complieswith](https://www.wikidata.org/wiki/Property:P5009)  
+* [wikidata_determinationmethod](https://www.wikidata.org/wiki/Property:P459)  
 
 [dcterms:hasFormat](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/hasFormat)
 
@@ -99,21 +183,6 @@
 * [schema_version](https://schema.org/version)
   * [None]
     * [bibframe_version](http://id.loc.gov/ontologies/bibframe.html#p_version)
-
-[dcterms:identifier](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/identifier)
-* [bibframe_identifiedby](http://id.loc.gov/ontologies/bibframe.html#p_identifiedBy)
-  * [bibo_uri]()  
-  * [schema_isbn](https://schema.org/isbn)  
-  * [schema_url](https://schema.org/url)  
-  * [wikidata_doi](https://www.wikidata.org/wiki/Property:P356)  
-  * [wikidata_isbn_10](https://www.wikidata.org/wiki/Property:P957)  
-  * [wikidata_isbn-13](https://www.wikidata.org/wiki/Property:P212)  
-  * [wikidata_url](https://www.wikidata.org/wiki/Property:P2699)  
-    * [schema_citation](https://schema.org/citation)
-
-[dcterms:instructionalMethod](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/instructionalMethod)
-* [None]
-  * [wikidata_teachingmethod](https://www.wikidata.org/wiki/Property:P2392)
 
 [dcterms:isFormatOf](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/isFormatOf)
 * [None]
@@ -150,12 +219,119 @@
     * [wikidata_edition](https://www.wikidata.org/wiki/Property:P747)  
     * [wikidata_versiontype](https://www.wikidata.org/wiki/Property:P548)  
 
-[dcterms:language](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/language)
-* [bibframe_language](http://id.loc.gov/ontologies/bibframe.html#p_languagee)  
-* [schema_inLanguage](https://schema.org/inLanguage)  
-* [wikidata_language](https://www.wikidata.org/wiki/Property:P407)  
-* [wikidata_languageofwork](https://www.wikidata.org/wiki/Property:P407)  
-  * [schema_available language](https://schema.org/availableLanguage)
+[dcterms:references](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/references)
+* [schema_citation](https://schema.org/citation)  
+* [wikidata_citeswork](https://www.wikidata.org/wiki/Property:P2860)  
+
+[dcterms:replaces](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/replaces)
+* [None]
+  * [schema_replacee](https://schema.org/replacee)  
+  * [schema_replacer](https://schema.org/replacer)  
+  * [wikidata_replaces](https://www.wikidata.org/wiki/Property:P4424)  
+
+[dcterms:requires](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/requires)
+* [None]
+  * [wikidata_mandates](https://www.wikidata.org/wiki/Property:P4424)
+
+----------------------------------------------------------
+[dcterms:rights](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/rights)
+* [None]
+  * [bibframe_responsibilityStatement](http://id.loc.gov/ontologies/bibframe.html#p_responsibilityStatementt)  
+  * [schema_accountablePerson](https://schema.org/accountablePerson)  
+  * [schema_copyrightHolder](https://schema.org/copyrightHolder)  
+  * [schema_license](https://schema.org/license)  
+  * [wikidata_license](https://www.wikidata.org/wiki/Q79719)  
+
+----------------------------------------------------------
+[dcterms:source](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/source)
+* [bibframe_source](http://id.loc.gov/ontologies/bibframe.html#p_source)  
+  * [schema_issueNumber](https://schema.org/issueNumber)  
+  * [schema_numberofpages](https://schema.org/numberOfPages)  
+  * [schema_volumeNumber](https://schema.org/volumeNumber)  
+
+----------------------------------------------------------
+[dcterms:subject](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/subject)
+* [bibframe_subject](http://id.loc.gov/ontologies/bibframe.html#p_subject)  
+* [schema_about](https://schema.org/about)  
+* [schema_genre](https://schema.org/genre)  
+* [schema_mainEntity](https://schema.org/mainEntity)  
+* [schema_subjectOf](https://schema.org/subjectOf)  
+* [wikidata_genre ](https://www.wikidata.org/wiki/Property:P136)  
+* [wikidata_mainsubject](https://www.wikidata.org/wiki/Property:P921)  
+  * [bibframe_subject](http://id.loc.gov/ontologies/bibframe.html#p_subject)  
+  * [schema_keywords](https://schema.org/keywords)  
+
+----------------------------------------------------------
+[dcterms:title](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/)
+* [bibframe_title ](http://id.loc.gov/ontologies/bibframe.html#p_title)
+  * [schema_alternativeHeading](https://schema.org/alternativeHeadline)  
+  * [schema_headline](https://pending.schema.org/headline)  
+  * [wikidata_title](https://www.wikidata.org/wiki/Property:P1476)  
+    * [schema_alternateName](https://schema.org/alternateName)
+
+----------------------------------------------------------
+[dcterms:type](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/type)
+* [schema_genre](https://schema.org/genre)  
+* [schema_learningResourceType](https://schema.org/learningResourceType)  
+[dcterms:available](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/available)
+* [schema_availabilitystarts](https://schema.org/availabilityStarts)  
+* [wikidata_publicationdate](https://www.wikidata.org/wiki/Property:P577)  
+  * [wikidata_retrieved](https://www.wikidata.org/wiki/Property:P813)
+    * [schema_availability](https://schema.org/availability)  
+    * [schema_availabilityends](https://schema.org/availabilityEnds)  
+
+
+
+
+
+
+
+==========================================================
+[dcterms:abstract](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/abstract)
+
+[dcterms:accessRights](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/accessRights)
+* [schema_hasDigitalDocumentPermission](https://schema.org/hasDigitalDocumentPermission)  
+* [schema_permissiontype](https://schema.org/permissionType)  
+  * [schema_permissions](https://schema.org/permissions)
+    * [schema_accessibilitySummary](https://schema.org/accessibilitySummary)
+
+[dcterms:accrualMethod](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/accrualMethod)
+
+[dcterms:accrualPeriodicity](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/accrualPeriodicity)
+
+[dcterms:accrualPolicy](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/accrualPolicy)
+* [bibframe_frequency](http://id.loc.gov/ontologies/bibframe.html#p_frequency)
+
+[dcterms:alternative](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/alternative)
+* [schema_alternateName](https://schema.org/alternateName)
+  * [schema_alternativeHeadline](https://schema.org/alternativeHeadline)
+
+[dcterms:audience](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/audience)
+* [schema_audiencetype](https://schema.org/audienceType)
+  * [schema_typicalAgeRange](https://schema.org/typicalAgeRange)
+    * [bibframe_intendedaudience](http://id.loc.gov/ontologies/bibframe.html#p_intendedAudiencee)  
+    * [schema_educationalAlignment](https://schema.org/educationalAlignment)  
+    * [schema_educationalUse](https://schema.org/educationalUse)  
+    * [schema_InteractivityType](https://schema.org/educationalAlignment)  
+    * [schema_timeRequired](https://schema.org/interactivityType)  
+
+[dcterms:bibliographicCitation](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/bibliographicCitation)
+* [schema_citation](https://schema.org/citation)  
+* [wikidata_citeswork](https://www.wikidata.org/wiki/Property:P2860)  
+
+[dcterms:educationLevel](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/educationLevel)
+
+[dcterms:extent](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/extent)
+* [wikidata_duration](https://www.wikidata.org/wiki/Property:P2047)
+  * [bibframe_duration](http://id.loc.gov/ontologies/bibframe.html#p_duration)  
+  * [bibframe_scale](http://id.loc.gov/ontologies/bibframe.html#p_scale)  
+  * [schema_contentsize](https://schema.org/contentSize)  
+  * [schema_materialextent](https://schema.org/materialExtent)  
+    * [bibframe_extent](http://id.loc.gov/ontologies/bibframe.html#p_extent)
+
+[dcterms:instructionalMethod](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/instructionalMethod)
+* [None]
+  * [wikidata_teachingmethod](https://www.wikidata.org/wiki/Property:P2392)
 
 [dcterms:license](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/license)
 * [schema_license](https://schema.org/license)  
@@ -177,86 +353,14 @@
 * [None]
   * [bibframe_provenance](http://id.loc.gov/ontologies/bibframe.html#p_provisionActivityStatement)
 
-[dcterms:publisher](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/publisher)
-* [bibo_producer]()  
-* [schema_publisher](https://schema.org/publisher)  
-* [wikidata_publisher](https://www.wikidata.org/wiki/Property:P123)  
-  * [bibo_distributor]()  
-  * [schema_producer](https://schema.org/producer)  
-  * [schema_provider](https://schema.org/provider)  
-
-[dcterms:references](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/references)
-* [schema_citation](https://schema.org/citation)  
-* [wikidata_citeswork](https://www.wikidata.org/wiki/Property:P2860)  
-
-[dcterms:relation](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/relation)
-* [bibframe_relation](http://id.loc.gov/ontologies/bibframe.html#p_relatedTo)  
-* [schema_affiliation](https://schema.org/affiliation)  
-* [schema_exampleofWork](https://schema.org/exampleOfWork)  
-* [schema_workExample ](https://schema.org/workExample)  
-  * [bibframe_relatedTo](http://id.loc.gov/ontologies/bibframe.html#p_relatedTo)  
-  * [bibo_citedby]()  
-  * [schema_exampleofWork](https://schema.org/exampleOfWork)  
-  * [schema_hasPart](https://schema.org/hasPart)  
-  * [schema_isbasedOnUrl](https://schema.org/isBasedOnUrl)  
-  * [schema_mentions](https://schema.org/mentions)  
-  * [schema_review](https://schema.org/reviews)  
-  * [schema_workExample ](https://schema.org/workExample)  
-  * [wikidata_citeswork](https://www.wikidata.org/wiki/Property:P2860)  
-  * [wikidata_haspart](https://www.wikidata.org/wiki/Property:P527)  
-  * [schema_affiliation](https://schema.org/affiliation)  
-  * [schema_citation](https://schema.org/citation)  
-  * [schema_hasPart](https://schema.org/hasPart)  
-    * [schema_isPartof](https://schema.org/isPartOf)  
-    * [schema_mentions](https://schema.org/mentions)  
-    * [schema_sameAs](https://schema.org/sameAs)  
-    * [wikidata_exactmatch](https://www.wikidata.org/wiki/Property:P2888)  
-    * [wikidata_part of](https://www.wikidata.org/wiki/Property:P361)  
-    * [wikidata_relation](https://www.wikidata.org/wiki/Property:P2309)  
-
-[dcterms:replaces](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/replaces)
-* [None]
-  * [schema_replacee](https://schema.org/replacee)  
-  * [schema_replacer](https://schema.org/replacer)  
-  * [wikidata_replaces](https://www.wikidata.org/wiki/Property:P4424)  
-
-[dcterms:requires](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/requires)
-* [None]
-  * [wikidata_mandates](https://www.wikidata.org/wiki/Property:P4424)
-
-[dcterms:rights](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/rights)
-* [None]
-  * [bibframe_responsibilityStatement](http://id.loc.gov/ontologies/bibframe.html#p_responsibilityStatementt)  
-  * [schema_accountablePerson](https://schema.org/accountablePerson)  
-  * [schema_copyrightHolder](https://schema.org/copyrightHolder)  
-  * [schema_license](https://schema.org/license)  
-  * [wikidata_license](https://www.wikidata.org/wiki/Q79719)  
-
 [dcterms:rightsHolder](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/rightsHolder)
 * [bibo_owner]()  
 * [schema_accountablePerson](https://schema.org/accountablePerson)  
 * [schema_copyrightHolder](https://schema.org/copyrightHolder)  
 * [wikidata_copyrightHolder]()  
 
-[dcterms:source](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/source)
-* [bibframe_source](http://id.loc.gov/ontologies/bibframe.html#p_source)  
-  * [schema_issueNumber](https://schema.org/issueNumber)  
-  * [schema_numberofpages](https://schema.org/numberOfPages)  
-  * [schema_volumeNumber](https://schema.org/volumeNumber)  
-
 [dcterms:spatial](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/spatial)
 * [schema_spatialcoverage](https://schema.org/spatialCoverage)
-
-[dcterms:subject](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/subject)
-* [bibframe_subject](http://id.loc.gov/ontologies/bibframe.html#p_subject)  
-* [schema_about](https://schema.org/about)  
-* [schema_genre](https://schema.org/genre)  
-* [schema_mainEntity](https://schema.org/mainEntity)  
-* [schema_subjectOf](https://schema.org/subjectOf)  
-* [wikidata_genre ](https://www.wikidata.org/wiki/Property:P136)  
-* [wikidata_mainsubject](https://www.wikidata.org/wiki/Property:P921)  
-  * [bibframe_subject](http://id.loc.gov/ontologies/bibframe.html#p_subject)  
-  * [schema_keywords](https://schema.org/keywords)  
 
 [dcterms:tableOfContents](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/tableOfContents)
 * [bibframe_tableOfContents](http://id.loc.gov/ontologies/bibframe.html#p_tableOfContents)
@@ -266,13 +370,4 @@
   * [bibframe_temporalcoverage](http://id.loc.gov/ontologies/bibframe.html#p_temporalCoverage)
     * [wikidata_datedepicted](https://www.wikidata.org/wiki/Property:P2913)
 
-[dcterms:title](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/)
-* [bibframe_title ](http://id.loc.gov/ontologies/bibframe.html#p_title)
-  * [schema_alternativeHeading](https://schema.org/alternativeHeadline)  
-  * [schema_headline](https://pending.schema.org/headline)  
-  * [wikidata_title](https://www.wikidata.org/wiki/Property:P1476)  
-    * [schema_alternateName](https://schema.org/alternateName)
 
-[dcterms:type](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/type)
-* [schema_genre](https://schema.org/genre)  
-* [schema_learningResourceType](https://schema.org/learningResourceType)  
