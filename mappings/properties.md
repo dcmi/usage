@@ -4,8 +4,7 @@
 
 ### Agent properties
 
-#### Contributor
-
+----------------------------------------------------------
 [dcterms:contributor](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/contributor)
 - __Close__ Bibframe: ["Contributor and role"](http://id.loc.gov/ontologies/bibframe.html#p_contribution)
 - __Close__ Wikidata: ["contributor to the creative work or subject"](https://www.wikidata.org/wiki/Property:P767)  
