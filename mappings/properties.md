@@ -4,8 +4,7 @@
 
 ### Agent properties
 
-----------------------------------------------------------
-[dcterms:contributor](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/contributor)
+__[dcterms:contributor](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/contributor)__
 - __Close__ Bibframe: ["Contributor and role"](http://id.loc.gov/ontologies/bibframe.html#p_contribution)
 - __Close__ Wikidata: ["contributor to the creative work or subject"](https://www.wikidata.org/wiki/Property:P767)  
 - __Close__ Wikidata: ["participant"](https://www.wikidata.org/wiki/Property:P710)  
@@ -16,25 +15,21 @@
   - __NT__ Schema.org: ["participant"](https://schema.org/participant)  
   - __NT__ Schema.org: ["translator"](https://schema.org/translator)  
 
-#### Creator
-
-[dcterms:creator](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/creator)
+__[dcterms:creator](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/creator)__
 - __Close__ Schema.org: ["author"](https://schema.org/author)  
 - __Close__ Schema.org: ["creator"](https://schema.org/creator)  
 - __Close__ Wikidata: ["author"](https://www.wikidata.org/wiki/Property:P50)  
 - __Close__ Wikidata: ["creator"](https://www.wikidata.org/wiki/Property:P170)  
 
-#### Publisher
-
-[dcterms:publisher](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/publisher)
+__[dcterms:publisher](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/publisher)__
 - __Close__ Schema.org: ["publisher"](https://schema.org/publisher)  
 - __Close__ Wikidata: ["publisher"](https://www.wikidata.org/wiki/Property:P123)  
   - __NT__ Schema.org: ["producer"](https://schema.org/producer)  
   - __NT__ Schema.org: ["provider"](https://schema.org/provider)  
 
-### Date and subproperties
+### Date and its subproperties
 
-[dcterms:date](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/date)
+__[dcterms:date](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/date)__
 - __Close__ Bibframe: ["date"](http://id.loc.gov/ontologies/bibframe.html#p_date)
   - __NT__ Schema.org: ["dateModified "](https://schema.org/dateModified)  
   - __NT__ Schema.org: ["datePublished"](https://schema.org/datePublished)  
@@ -104,12 +99,9 @@
 
 [dcterms:valid](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/valid)
 
+### Coverage and its subproperties
 
-### Other properties
-
-#### Coverage
-
-[dcterms:coverage](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/coverage)
+__[dcterms:coverage](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/coverage)__
 - __Close__ Schema.org: ["about"](https://schema.org/about)  
 - __Close__ Schema.org: ["genre"](https://schema.org/genre)  
 - __Close__ Schema.org: ["keywords"](https://schema.org/keywords)  
@@ -128,9 +120,9 @@
   - __NT__ Bibframe: ["temporalcoverage"](http://id.loc.gov/ontologies/bibframe.html#p_temporalCoverage)
     - __BT__ Wikidata: ["datedepicted"](https://www.wikidata.org/wiki/Property:P2913)
 
-#### Description
+### Description and its subproperties
 
-[dcterms:description](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/description)
+__[dcterms:description](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/description)__
 - __Close__ Schema.org: ["description"](https://schema.org/description)  
 - __Close__ [bibframe?"]
 - __Close__ [wikidata?"]
@@ -140,9 +132,9 @@
 [dcterms:tableOfContents](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/tableOfContents)
 - __Close__ Bibframe: ["tableOfContents"](http://id.loc.gov/ontologies/bibframe.html#p_tableOfContents)
 
-#### Format
+### Format and its subproperties
 
-[dcterms:format](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/format)
+__[dcterms:format](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/format)__
 - __Close__ Schema.org: ["associatedMedia"](https://schema.org/associatedMedia)  
 - __Close__ Schema.org: ["encoding"](https://bib.schema.org/encoding)  
 - __Close__ Schema.org: ["fileformat"](https://schema.org/fileFormat)  
@@ -162,9 +154,9 @@
   - __NT__ Bibframe: ["musicMedium"](http://id.loc.gov/ontologies/bibframe.html#p_musicMedium)  
   - __NT__ Schema.org: ["courseMode"](https://schema.org/courseMode)  
 
-#### Identifier
+### Identifier and its subproperty
 
-[dcterms:identifier](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/identifier)
+__[dcterms:identifier](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/identifier)__
 - __Close__ Bibframe: ["identifiedby"](http://id.loc.gov/ontologies/bibframe.html#p_identifiedBy)
   - __NT__ Schema.org: ["isbn"](https://schema.org/isbn)  
   - __NT__ Schema.org: ["url"](https://schema.org/url)  
@@ -178,18 +170,9 @@
 - __Close__ Schema.org: ["citation"](https://schema.org/citation)  
 - __Close__ Wikidata: ["citeswork"](https://www.wikidata.org/wiki/Property:P2860)  
 
-#### Language
+### Rights and its subproperties
 
-[dcterms:language](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/language)
-- __Close__ Bibframe: ["language"](http://id.loc.gov/ontologies/bibframe.html#p_languagee)  
-- __Close__ Schema.org: ["inLanguage"](https://schema.org/inLanguage)  
-- __Close__ Wikidata: ["language"](https://www.wikidata.org/wiki/Property:P407)  
-- __Close__ Wikidata: ["languageofwork"](https://www.wikidata.org/wiki/Property:P407)  
-  - __NT__ Schema.org: ["available language"](https://schema.org/availableLanguage)
-
-#### Rights
-
-[dcterms:rights](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/rights)
+__[dcterms:rights](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/rights)__
 - __Close__ [None]
   - __NT__ Bibframe: ["responsibilityStatement"](http://id.loc.gov/ontologies/bibframe.html#p_responsibilityStatementt)  
   - __NT__ Schema.org: ["accountablePerson"](https://schema.org/accountablePerson)  
@@ -212,28 +195,7 @@
     - __BT__ Schema.org: ["conditionsOfAccess"](https://schema.org/conditionsOfAccess)  
     - __BT__ Schema.org: ["copyrightHolder"](https://schema.org/copyrightHolder)  
 
-#### Source
-
-[dcterms:source](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/source)
-- __Close__ Bibframe: ["source"](http://id.loc.gov/ontologies/bibframe.html#p_source)  
-  - __NT__ Schema.org: ["issueNumber"](https://schema.org/issueNumber)  
-  - __NT__ Schema.org: ["numberofpages"](https://schema.org/numberOfPages)  
-  - __NT__ Schema.org: ["volumeNumber"](https://schema.org/volumeNumber)  
-
-#### Subject
-
-[dcterms:subject](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/subject)
-- __Close__ Bibframe: ["subject"](http://id.loc.gov/ontologies/bibframe.html#p_subject)  
-- __Close__ Schema.org: ["about"](https://schema.org/about)  
-- __Close__ Schema.org: ["genre"](https://schema.org/genre)  
-- __Close__ Schema.org: ["mainEntity"](https://schema.org/mainEntity)  
-- __Close__ Schema.org: ["subjectOf"](https://schema.org/subjectOf)  
-- __Close__ Wikidata: ["genre "](https://www.wikidata.org/wiki/Property:P136)  
-- __Close__ Wikidata: ["mainsubject"](https://www.wikidata.org/wiki/Property:P921)  
-  - __NT__ Bibframe: ["subject"](http://id.loc.gov/ontologies/bibframe.html#p_subject)  
-  - __NT__ Schema.org: ["keywords"](https://schema.org/keywords)  
-
-#### Title
+### Title and its subproperties
 
 [dcterms:title](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/)
 - __Close__ Bibframe: ["title "](http://id.loc.gov/ontologies/bibframe.html#p_title)
@@ -246,15 +208,40 @@
 - __Close__ Schema.org: ["alternateName"](https://schema.org/alternateName)
   - __NT__ Schema.org: ["alternativeHeadline"](https://schema.org/alternativeHeadline)
 
-#### Type
+### DC-15 properties without subproperties
 
-[dcterms:type](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/type)
+__[dcterms:language](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/language)__
+- __Close__ Bibframe: ["language"](http://id.loc.gov/ontologies/bibframe.html#p_languagee)  
+- __Close__ Schema.org: ["inLanguage"](https://schema.org/inLanguage)  
+- __Close__ Wikidata: ["language"](https://www.wikidata.org/wiki/Property:P407)  
+- __Close__ Wikidata: ["languageofwork"](https://www.wikidata.org/wiki/Property:P407)  
+  - __NT__ Schema.org: ["available language"](https://schema.org/availableLanguage)
+
+__[dcterms:source](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/source)__
+- __Close__ Bibframe: ["source"](http://id.loc.gov/ontologies/bibframe.html#p_source)  
+  - __NT__ Schema.org: ["issueNumber"](https://schema.org/issueNumber)  
+  - __NT__ Schema.org: ["numberofpages"](https://schema.org/numberOfPages)  
+  - __NT__ Schema.org: ["volumeNumber"](https://schema.org/volumeNumber)  
+
+__[dcterms:subject](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/subject)__
+- __Close__ Bibframe: ["subject"](http://id.loc.gov/ontologies/bibframe.html#p_subject)  
+- __Close__ Schema.org: ["about"](https://schema.org/about)  
+- __Close__ Schema.org: ["genre"](https://schema.org/genre)  
+- __Close__ Schema.org: ["mainEntity"](https://schema.org/mainEntity)  
+- __Close__ Schema.org: ["subjectOf"](https://schema.org/subjectOf)  
+- __Close__ Wikidata: ["genre "](https://www.wikidata.org/wiki/Property:P136)  
+- __Close__ Wikidata: ["mainsubject"](https://www.wikidata.org/wiki/Property:P921)  
+  - __NT__ Bibframe: ["subject"](http://id.loc.gov/ontologies/bibframe.html#p_subject)  
+  - __NT__ Schema.org: ["keywords"](https://schema.org/keywords)  
+
+__[dcterms:type](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/type)__
 - __Close__ Schema.org: ["genre"](https://schema.org/genre)  
 - __Close__ Schema.org: ["learningResourceType"](https://schema.org/learningResourceType)  
 
 ## Other properties
 
-#### Audience and subproperties
+#### Audience and its subproperties
+
 [dcterms:audience](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/audience)
 - __Close__ Schema.org: ["audiencetype"](https://schema.org/audienceType)
   - __NT__ Schema.org: ["typicalAgeRange"](https://schema.org/typicalAgeRange)
@@ -277,7 +264,7 @@
 [dcterms:accrualPolicy](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/accrualPolicy)
 - __Close__ Bibframe: ["frequency"](http://id.loc.gov/ontologies/bibframe.html#p_frequency)
 
-#### Other
+#### Other properties
 
 [dcterms:instructionalMethod](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/instructionalMethod)
 - __Close__ [None]
