@@ -1,0 +1,23 @@
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 13px;
+}
+
+table,tr {
+    border: 1px #cdcdcd solid;
+    width: 100%;
+}
+
+th {
+    background-color: #efefef;
+}
+
+th,td {
+    vertical-align: top;
+    padding: 5px;
+    border: 1px #efefef solid;
+}
+
+th {
+    font-weight: bold;
+}
