@@ -100,63 +100,103 @@ Actually, that's one of the questions I wanted to ask:
 - sees use for mapping to schema 
 - sees no use for wikidata mappings because much different 
 - dcmi uses bibleographic data while wikidata is full text with some kind of metadata around it 
+ 
 
-Phil Barker
--we need to be driven by use--> close matches to dc to schema seems the most useful 
+## Phil Barker
+- we need to be driven by use cases and close matches to dc to schema seem to have the most use cases  
 
-Stephanie: agrees, should focus on close matches to schema 
--start small and if we find out that there are people who want more
+## Stephanie: 
+- agree, driven by use cases should be a thing
+- should focus on close matches to schema 
+- start small and if we find out that there are people who want more
 
-karen: 
--1:1 matches 
--could see some value in including broader terms (from schema to Dc)
+## karen: 
+- should not only do close matches, but they should be 1:1 
+- could see some value in including broader terms from schema to Dc
 
-Stephanie: should do dc to schema, schema to dc already exists 
+## Stephanie: 
+- should do dc to schema, schema to dc already exists in the task group mappings 
 
-karen: that would probably have to be redone becasue schema has changed
--I think we should start with 1:1 schema to dc and only use cases 
+## karen: 
+- that would probably have to be redone becasue schema has changed
+-I think we should start with 1:1 dc to schema getting actual use cases  
 
-Antoine: 
--I think we shouldnt determine a property right now (exact match), we should wait to see if there are some before we determien what we use 
+## Antoine: 
+- agrees
+- I think we shouldnt determine a property right now (exact match), could be that we find some fairly useful equivalents that could be used for a bidirectional mapping
+- not pushing to get exact equivalents now but it would be a pity to spot them and not keep track of them 
 
-Phil:
--want to be able to take data in DC and translate it to schema
--this is why we should use close match 
 
-stuart: 
--test of whether the extensitons would fit
+## Phil:
+- agree that we should keep track of them but we should be more cirumspect about what we publish 
+- reason I said close match before is because we want to be able to take data in DC and translate it to schema and know that will still make sense 
+    - this doesn't necesarily have to be a one to one match 
+## Stephanie: 
+- There is never really a best match you can make 
 
-Joe: 
--fine with this, think we should try to be helpful as possible 
--we're always going to be revising,just a matter of how often we want to do this 
+## Stuart: 
+- yes they're all approximate 
+- test of whether the extensitons would fit makes sense in use cases where people want to do model interchange (want to take their data that is in schema and turn it into dc or vice versa) 
+- utility of the extenstion is whether that type of interchange is possible 
 
-karen: 
+## Joe: 
+- fine with this, think we should try to be helpful as possible 
+- path towards that doesn't matter to me 
+- we're always going to be revising, just a matter of how often we want to do this 
+
+## Karen: 
 -suggests that we to a small one-one 
 -we should do it on hack.md, which would allow us to comment (highlight and then can make a comment)
 - leave what's there but go through and select the one that we think is "the one"
 -could also do this for the classes
 
-tom: are the classes a priority?
+## Tom: are the classes a priority?
 
-karen: 
+## Karen: 
+- suggest that we do a small one to one
+- suggest that we do it on hackMD because it allows comments 
+- suggest that Grace and I, before our meeting tomororw go through and select the mapping that we think is "the one" 
+- i guess we'd have to do that with the classes too
 
-Tom: not that many class mappings 
+## Tom: 
+- are the classes a priority for everyone? 
 
-stephanie: we should start with the 15 elements tomorrow 
+## Karen: 
+- I think they can be second, it is easier to get an understanding of it by going through the properties 
 
-karen: we dont have the 15 but we could highlight those and do those first
+## Tom:
+- there are not that many mappings to classes 
 
-tom: go through hack md doc, take out non schema 
--highlight parts that work 
--other call tomorrow to go through hackmd 
+## Karen: 
+- would that be useful for people? to be able to look at a one to one tomorrow 
 
-stuart: need to consider old mappings 
+## Stephanie:
+- that would be a good idea but we should start with the 15 elements tomorrow and see how far we get 
 
-Tom: who is interested in continuing for an hour tomororw to discuss the schema.org properties?
+## Karen: 
+- we dont have the 15 but we could highlight those and do those first
+
+## Tom: 
+- go through hack md doc, take out non schema 
+- highlight parts that work 
+- other call tomorrow to go through hackmd 
+
+## Stuart: 
+- need to consider old mappings 
+
+## Tom: 
+- I will dig out the old mappings 
+
+## Karen: 
+- these go from schema to dc so we will first go through the dc to schema and then go back and look for anything glaringly off 
+
+## Tom:
+- who is interested in continuing for an hour tomororw to discuss the schema.org properties?
 any support for bibframe or wiki?
 
-stephanie: let's do schema.org first and then address bibframe
-I dont see any use for wikidata but there maybe are people who would want this 
+## Stephanie: 
+- let's do schema.org first and then address bibframe
+- I dont see any use for wikidata but there maybe are people who would want this 
 
 
 
