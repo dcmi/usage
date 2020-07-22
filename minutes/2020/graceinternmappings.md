@@ -1,13 +1,53 @@
-DCMI Usage Board - Telecon #67/68 - Tue and Wed! - 2020-07-21/22 - agenda
-    
-- This agenda: https://github.com/dcmi/usage/blob/master/minutes/2020/2020-07-21.dcub-telecon-agenda.md
-- Zoom: https://us02web.zoom.us/j/85261861549 - 16:00 Berlin
-- Doodle: https://doodle.com/poll/pd5x7sdkzkdkpk83
-- Expected on Tuesday: Tom, Stuart, Karen, Grace, Paul, Phil, Stefanie. Maybe: Antoine.
-- Expected on Wednesday: Tom, Stuart, Karen, Grace, Paul, Stefanie, Antoine. Maybe: Phil.
 
+Tom:-Explaining the work Grace has done as well as the format of the mappings page
 
-1. Introducing Grace Johnson and quick introductions (5 minutes)
+Karen: Why are we doing this/what is the purpose?
+
+Tom:
+-we should try to find terms that could be subsituted in various contexts, where you could merge data that is expressed using DCMI terms and data that is expressed using, for example wikidata 
+
+antoine: 
+-curious about the context of these mappings
+-we've had a small task group working on schema to dc mappings a while ago 
+-what is the status of these mappings?
+
+Tom: 
+-we did have a task group several years ago but schema.org evolves very quickly 
+-I would like to get some basic mappigns that we can publish along with DCMI metadata terms and or publish to our website 
+-antoine do you see a problem?
+
+Antoine:
+-Its not so much a problem of what we want to do but of finding the modivation
+-how official is this? Are we hoping to add this to the DC website or is this more of a side project?
+
+Tom: Actually, that's one of the questions I wanted to ask:
+- What do we want to do with these mappings? 
+- The reason the previous task group mappings never continued is we couldn't decide a way to present the mappings to the group in an efficient way--we never resolved how we would publish those mappings 
+- we now have a more efficient way to make/present the mappings, now being able to simply click on the word to get the definition
+-definetly an open question as to how officially we want to do this, how much time we want to put in 
+-there are ways to be more efficient
+    -only focus on mappings to the 15 elements 
+    -only focus on close matches 
+    -only mappings to properties not classes 
+-is this a useful exercise? Should we try to publish this in an official way? 
+-Should we publish saying "no garentees" or publish saying this has been vetted? 
+-Is it worth trying to maintain something like that? 
+-Is the usage board a good place to discuss or maintain mappings like these? 
+
+-Grace logs on, Introductions-
+
+Tom: 
+-Id like to know by the end of this call:
+    -how everyone would like to proceed with this
+    -is this something that we can handle as a group, if so how would we go about doing that?
+        -github issues and one or two teleconferences 
+    - do we want to focus only on close matches or are broad and narrow matches relevant?
+    - do we want to look at the type vocab/ other classes?
+    - do we want to publish the mappings on the dcmi website in rdf or as webpages
+    - do we want to include equivalence in dcmi metadata terms the way that we include foaf maker as an al equivalent property under DC terms creator 
+    - on wikidata there are some different options: 
+        - go to individual property pages and add an equivalent property to dcmi metadata terms and then those can be extracted via a sparql query
+        - another option would be to make a static table--would look more like an official position of dcmi in terms of what maps to what (functionally they would say the same thing)
 
 antoine: 
 -suggestion to put mappings on schema, 
@@ -95,53 +135,4 @@ stephanie: let's do schema.org first and then address bibframe
 I dont see any use for wikidata but there maybe are people who would want this 
 
 
-2. Mapping of properties - triage and priorities (20m on Tuesday, 50m on Wednesday)
-
-   See: https://github.com/dcmi/usage/blob/master/mappings/properties.md
-
-3. Mapping of classes (10m on Tuesday)
-
-   See https://github.com/dcmi/usage/blob/master/mappings/classes.md and 
-   https://github.com/dcmi/usage/blob/master/mappings/dcmitype.md
-
-   On Tuesday, discussion of the candidate mappings will be limited to half an hour total so that we have enough time to discuss issues around the review process, scope of mappings, and the like.
-
-4. Issues (25 minutes on Tuesday, 10 minutes on Wednesday)
-
-- Process
-  - Github issues with votes for the easy ones?
-  - Telecons for mappings that require more discussion?
-
-- Focus of mapping exercise
-  - Close matches only, or also broad and narrow matches?
-  - Include skos:broadMatch and skos:narrowMatch when available?
-
-- Scope of mapping exercise
-  - DCMI Type Vocabulary?
-  - Classes in the /terms/ namespace (mostly used for domains and ranges)?
-
-- Choice of mapping predicates for DCMI mappings
-  - rdfs:equivalentProperty?
-  - skos:closeMatch? skos:exactMatch?
-
-- Choice of mapping predicates for Wikidata mappings
-  - https://www.wikidata.org/wiki/Property:P1628 ("equivalent property")?
-    - "equivalent property in other ontologies (use in statements on properties, use property URI)"
-
-  - https://www.wikidata.org/wiki/Property:P2888 ("exact match")?
-    - "(URLs only) used to link two items, indicating a high degree of confidence that the concepts can be used interchangeably"
-
-- Publication of mappings
-  - On dublincore.org
-    - RDF representation (N-Triples, XML, Turtle?)
-    - Web pages
-      - Separate document about mappings?
-      - Include in DCMI Metadata Terms?
-
-  - On Wikidata
-    - Edit individual WD property pages for extraction via SPARQL query?
-      - See https://bit.ly/dcmimt_on_wikidata
-    - Static table?
-      - See https://www.wikidata.org/wiki/User:Gjohnson1110
-      - Would move to https://www.wikidata.org/wiki/Wikidata:Dublin_Core
 
