@@ -1,6 +1,6 @@
 # DC Mappings to Schema.org
 
-See also https://dcmi.github.io/schema.org/mappings.html
+See also [previous work from circa 2010](https://dcmi.github.io/schema.org/mappings.html) ([Github repo](https://github.com/dcmi/schema.org))
 
 ## Goals
 
