@@ -1,5 +1,7 @@
 # DC Mappings to Schema.org
 
+Copied from https://hackmd.io/_yBWOsCTQOiNxPzH-N3tpQ?view (last edited 2020-07-30)
+
 See also [previous work from circa 2010](https://dcmi.github.io/schema.org/mappings.html) ([Github repo](https://github.com/dcmi/schema.org))
 
 ## Goals
