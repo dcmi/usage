@@ -1,0 +1,14 @@
+From https://github.com/dcmi/usage/issues/100#issuecomment-844781561
+
+APPROVED
+
+To drop the range of rdfs:Class for dcterms:type.
+
+Rationales:
+
+- With the range of rdfs:Class, things never thought of as classes are inferred to be classes.
+- The property is already widely used with SKOS concepts as object.
+
+Approved by: Tom, Karen, Antoine, Osma, Phil, Stuart, Kai, Dan, Stefanie, Joachim.
+
+Approval is unanimous among UB members who voted, with no nay votes or abstentions.
