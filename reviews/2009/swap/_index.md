@@ -133,6 +133,7 @@ The terms used are part of the vocabularies:
 - MARC relator terms (in a Library of Congress namespace with base URI http://www.loc.gov/loc.terms/relators/) [15,16]
 - Terms from the FOAF Vocabulary Specification 0.91 (with base URI http://xmlns.com/foaf/0.1/)
 along with a Syntax Encoding Scheme info:ofi/fmt:kev:mtx:.
+
 ## A discrepancy between the DSP specification and the SWAP profile
 
 The reviewers found a discrepancy between the SWAP profile and the DSP specification with implications for "conformance".
