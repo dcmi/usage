@@ -1,27 +1,17 @@
 # Review Process for SRAP
 
-## Voting Process
-- Discussion happens in the GitHub issues
-- UB Chairs identify suitable points in the discussion at which to put proposed solutions to a vote via a formalized comment containing a call to vote
-- there are intermediate ("strawman") votes and final votes (need to be marked as that, respectively)
-- voting is done by "thumbs up"/"thumbs down"
-- recommendation: deadline is set to next review meeting
-- UB Chairs declare when a final decision has been taken
-- UB Chairs document the final decision
+## Voting process
+- Discussion happens in issues in the [SRAP repo issue tracker](https://github.com/dcmi/dc-srap/issues) as listed in the [SRAP review project board](https://github.com/orgs/dcmi/projects/4/views/1).
+- UB Chairs identify suitable points in the discussion at which to put proposed solutions to a vote.
+  - Vote is called with an issue comment marked in one of two ways:
+    - `PROPOSED FOR STRAWMAN VOTE:`
+    - `PROPOSED FOR FINAL VOTE:`
+  - Voting is done by "thumbs up"/"thumbs down".
+- Decisions voted on in a call are not finalized until the next review call in order to give all review members -- including members not in attendance on the call -- a chance to vote.
+  - Given that proposals are discussed in the issue tracker of the DCMI SRAP Working Group, members of that group will have the opportunity to object to proposed changes. 
+  - The absence of objections by WG members will be taken as assent.
+- UB Chairs declare when a final decision has been taken by changing `PROPOSED FOR FINAL VOTE:` to read: `DECISION:`.
 
-## Handling Changes to the Proposed Profile
-
-- for changes that where agreed upon by final vote in the DCMI UB review process and agreed upon by the SRAP WG
-- for isolated changes with no bigger design ramifications: WG members create PR for the change
-- preferred: all (or most) changes in bulk after the DCMI UB review process has been completed
-
-## Documentation Guidelines from the Point of View of DCMI UB
-
-- Does the documentation make sufficiently clear *why* SRAP is needed in the first place?
-- Is the documentation clearly written, well structured, easy to read (for humans)? adapted to the target group?
-- Does the documentation contain enough and clear enough examples for:
-  - the elements of SRAP itself?
-  - use cases?
-  - systems that are supposed to use SRAP? technical instructions for that?
-- Are the design decisions documented in a transparent way, and do they actually serve the *why* of SRAP?
-- Summing up: does the documentation serve its purpose, is it comprehensive enough, and is it ready for official publication?
+## Recording and implementation of decisions
+- Decisions are recorded by editing an [official record of decisions](https://github.com/dcmi/usage/blob/master/reviews/srap/decisions.md)
+- Decisions are implemented by editing the [SRAP specification document](https://dcmi.github.io/dc-srap/srap-profile)
