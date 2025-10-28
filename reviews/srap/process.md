@@ -15,4 +15,4 @@
 ## Recording and implementation of decisions
 - Decisions are: 
   - recorded in an [official record of decisions](https://github.com/dcmi/usage/blob/master/reviews/srap/decisions.md)
-  - implemented by editing the [SRAP specification document](https://dcmi.github.io/dc-srap/srap-profile)
+  - implemented by editing the [SRAP specification document](https://dcmi.github.io/dc-srap/srap-profile) and related documents.
