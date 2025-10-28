@@ -13,5 +13,6 @@
 - UB Chairs declare when a final decision has been taken by changing `PROPOSED FOR FINAL VOTE:` to read: `DECISION:`.
 
 ## Recording and implementation of decisions
-- Decisions are recorded by editing an [official record of decisions](https://github.com/dcmi/usage/blob/master/reviews/srap/decisions.md)
-- Decisions are implemented by editing the [SRAP specification document](https://dcmi.github.io/dc-srap/srap-profile)
+- Decisions are: 
+  - recorded in an [official record of decisions](https://github.com/dcmi/usage/blob/master/reviews/srap/decisions.md)
+  - implemented by editing the [SRAP specification document](https://dcmi.github.io/dc-srap/srap-profile)
