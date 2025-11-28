@@ -44,7 +44,7 @@ We approve the use of terms from FOAF -- `foaf:Organization`, `foaf:Person`, and
 ---------------------------------------------------------
 Notes to UB chairs
 
-__2025-11-25__: Fix bibo:isbn in BIBO by adding missing range of rdfs:Literal. Note in Decisions document.
+__2025-11-25__: Fix bibo:isbn in BIBO by adding missing range of rdfs:Literal.
 
 ---------------------------------------------------------
 Notes to SRAP editor
