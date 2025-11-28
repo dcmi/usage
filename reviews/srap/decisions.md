@@ -41,12 +41,12 @@ Resolved 2025-11-25: https://github.com/dcmi/dc-srap/issues/88 - Agent-related p
 
 We approve the use of terms from FOAF -- `foaf:Organization`, `foaf:Person`, and `foaf:name` -- in SRAP.
 
-=========================================================
+---------------------------------------------------------
 Notes to UB chairs
 
 __2025-11-25__: Fix bibo:isbn in BIBO by adding missing range of rdfs:Literal. Note in Decisions document.
 
-=========================================================
+---------------------------------------------------------
 Notes to SRAP editor
 
 __2025-11-25__: Add example for "person" to SRAP documentation.
