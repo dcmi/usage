@@ -3,14 +3,14 @@
 Project board: https://github.com/orgs/dcmi/projects/4/views/1
 
 ---------------------------------------------------------
-Resolved 2025-11-11: https://github.com/dcmi/dc-srap/issues/74 - BIBO terms in SRAP
+2025-11-11: https://github.com/dcmi/dc-srap/issues/74 - BIBO terms in SRAP
 
 We approve of SRAP's use of properties and classes from the BIBO namespace in the SRAP profile.
 
 These include, but are in principle not limited to, the terms `bibo:Book`, `bibo:eissn`, `bibo:isbn`, `bibo:issn`, `bibo:issue`, `bibo:Journal`, `bibo:pageEnd`, `bibo:pageStart`, `bibo:Periodical`, `bibo:presentedAt`, `bibo:volume`.
 
 ---------------------------------------------------------
-Resolved 2025-11-11: https://github.com/dcmi/dc-srap/issues/77 - bibo:funder and bibo:funding
+2025-11-11: https://github.com/dcmi/dc-srap/issues/77 - bibo:funder and bibo:funding
 
 - `bibo:funder` (owl:ObjectProperty): "A person or organization that supports an activity, project or entity through a financial or material contribution.
   - Range: `dcterms:Agent`.
@@ -21,12 +21,12 @@ Resolved 2025-11-11: https://github.com/dcmi/dc-srap/issues/77 - bibo:funder and
 - `bibo:Funding` (Class): "An instance of financial or material support provided by a person or organization to enable or sustain an activity, project, or entity."
 
 ---------------------------------------------------------
-Resolved 2025-11-11: https://github.com/dcmi/dc-srap/issues/72 - dcterms:Grant
+2025-11-11: https://github.com/dcmi/dc-srap/issues/72 - dcterms:Grant
 
 To drop proposal for `bibo:Grant` as redundant with `bibo:Funding`.
 
 ---------------------------------------------------------
-Resolved 2025-11-25: https://github.com/dcmi/dc-srap/issues/78 - `bibo:accessLink`
+2025-11-25: https://github.com/dcmi/dc-srap/issues/78 - `bibo:accessLink`
 
 ```
 bibo:accessLink a owl:DatatypeProperty ;
@@ -37,16 +37,16 @@ bibo:accessLink a owl:DatatypeProperty ;
 ```
 
 ---------------------------------------------------------
-Resolved 2025-11-25: https://github.com/dcmi/dc-srap/issues/88 - Agent-related properties and classes
+2025-11-25: https://github.com/dcmi/dc-srap/issues/88 - Agent-related properties and classes
 
 We approve the use of terms from FOAF -- `foaf:Organization`, `foaf:Person`, and `foaf:name` -- in SRAP.
 
 ---------------------------------------------------------
 Notes to UB chairs
 
-__2025-11-25__: Fix bibo:isbn in BIBO by adding missing range of rdfs:Literal.
+2025-11-25: Fix bibo:isbn in BIBO by adding missing range of rdfs:Literal.
 
 ---------------------------------------------------------
 Notes to SRAP editor
 
-__2025-11-25__: Add example for "person" to SRAP documentation.
+2025-11-25: Add example for "person" to SRAP documentation.
