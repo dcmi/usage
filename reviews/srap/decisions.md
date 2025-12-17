@@ -3,7 +3,7 @@
 Project board: https://github.com/orgs/dcmi/projects/4/views/1
 
 ---------------------------------------------------------
-2025-12-09 `bibo:dateRetracted`
+2025-12-09 https://github.com/dcmi/dc-srap/issues/80 - `bibo:dateRetracted`
 
 ```
 bibo:dateRetracted a owl:DatatypeProperty ; 
