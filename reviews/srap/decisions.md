@@ -3,6 +3,34 @@
 Project board: https://github.com/orgs/dcmi/projects/4/views/1
 
 ---------------------------------------------------------
+2026-01-13 https://github.com/dcmi/dc-srap/issues/79#issuecomment-3744960937 - `dcterms:accessibilityNote`
+
+The following was approved __for public comment__. Final version may differ.
+
+```
+dcterms:accessibilityNote a owl:DatatypeProperty ; 
+    rdfs:label "Accessibility Note"@en ;
+    rdfs:range rdfs:Literal ;
+    rdfs:isDefinedBy "http://purl.org/dc/terms/" .
+```
+
+---------------------------------------------------------
+2026-01-13 https://github.com/dcmi/dc-srap/issues/81#issuecomment-3745091474 - `bibo:embargoedBefore`
+
+```
+bibo:embargoedBefore  a owl:DatatypeProperty ; 
+    rdfs:label "Embargoed before"@en ;
+    rdfs:range rdfs:Literal ;
+    rdfs:isDefinedBy "http://purl.org/ontology/bibo/"^^xsd:anyURI .
+```
+
+For discussion:
+
+```
+    rdfs:subPropertyOf dcterms:available ;
+```
+
+---------------------------------------------------------
 2025-12-09 https://github.com/dcmi/dc-srap/issues/80 - `bibo:dateRetracted`
 
 ```
