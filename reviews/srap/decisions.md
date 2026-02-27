@@ -9,7 +9,7 @@ Project board: https://github.com/orgs/dcmi/projects/4/views/1
 ### Add :versionType to BIBO
 - https://github.com/dcmi/dc-srap/issues/85
 DECISION
-To bibo:status as is (in SRAP), no need for a new property.
+To use bibo:status as is (in SRAP), no need for a new property.
 
 ### bibo:organizationUnit
 See https://github.com/dcmi/dc-srap/issues/82#issuecomment-3952798398
