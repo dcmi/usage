@@ -3,6 +3,22 @@
 Project board: https://github.com/orgs/dcmi/projects/4/views/1
 
 ---------------------------------------------------------
+2026-02-24
+
+
+### Add :versionType to BIBO
+- https://github.com/dcmi/dc-srap/issues/85
+DECISION
+To bibo:status as is (in SRAP), no need for a new property.
+
+### bibo:organizationUnit
+See https://github.com/dcmi/dc-srap/issues/82#issuecomment-3952798398
+
+Definition: An institutional or organizational context for the work.
+
+Usage Note: Identifies a specific division or functional area within an organization (e.g., a laboratory, department, research group, faculty or school) where the creation, development, or production of a resource primarily occurred. This property facilitates the linking of resources to specific operational units within institutions, enabling more precise discovery and analysis of research and creative activities.
+
+---------------------------------------------------------
 2026-02-10 https://github.com/dcmi/dc-srap/issues/83#issuecomment-3884262407 – `bibo:projectID`
 
 The following has been approved:
