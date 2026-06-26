@@ -12,7 +12,7 @@ https://github.com/dcmi/dc-srap/issues/108#issuecomment-4780232901
 > Definition: The nature and context of an agent's intellectual contribution to a resource.
 > Comment:    Used for the role and affiliation of a given agent who contributed to creating the resource.
 
-https://github.com/dcmi/dc-srap/issues/107#issuecomment-4780254346
+https://github.com/dcmi/dc-srap/issues/107#issuecomment-4787802857
 
 > bibo:contributingAgent
 > 
