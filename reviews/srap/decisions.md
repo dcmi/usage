@@ -3,8 +3,40 @@
 Project board: https://github.com/orgs/dcmi/projects/4/views/1
 
 ---------------------------------------------------------
-2026-02-24
+2026-06-23
 
+https://github.com/dcmi/dc-srap/issues/108#issuecomment-4780232901
+
+> bibo:ContributionContext
+> 
+> Definition: The nature and context of an agent's intellectual contribution to a resource.
+> Comment:    Used for the role and affiliation of a given agent who contributed to creating the resource.
+
+https://github.com/dcmi/dc-srap/issues/107#issuecomment-4780254346
+
+> bibo:contributingAgent
+> 
+> Definition: The agent who made a contribution to the resource.
+> Domain:     bibo:ContributionContext
+> Range:      dcterms:Agent
+
+https://github.com/dcmi/dc-srap/issues/106#issuecomment-4780420910
+
+> bibo:contributorRole
+> Definition: The nature of the agent's contribution to the resource.
+> Domain:     bibo:ContributionContext
+> Range:      skos:Concept
+> Comment:    Values need not be formally defined as SKOS concepts; it is enough that they be inferrable as such.
+
+https://github.com/dcmi/dc-srap/issues/105#issuecomment-4780511293
+
+> bibo:contributorAffiliation
+> Definition: An institutional or group affiliation of the agent.
+> Domain:     bibo:ContributionContext
+> Range:      dcterms:Agent
+
+---------------------------------------------------------
+2026-02-24
 
 ### Add :versionType to BIBO
 - https://github.com/dcmi/dc-srap/issues/85
