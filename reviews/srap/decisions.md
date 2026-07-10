@@ -3,6 +3,17 @@
 Project board: https://github.com/orgs/dcmi/projects/4/views/1
 
 ---------------------------------------------------------
+2026-07-07
+
+https://github.com/dcmi/dc-srap/issues/104#issuecomment-4780652554
+
+> bibo:hasContribution
+
+> Definition:  An agent and the context of their contribution to the resource.
+> Domain:      dcterms:BibliographicResource
+> Range:       bibo:ContributionContext
+
+---------------------------------------------------------
 2026-06-23
 
 https://github.com/dcmi/dc-srap/issues/108#issuecomment-4780232901
