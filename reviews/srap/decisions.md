@@ -3,6 +3,24 @@
 Project board: https://github.com/orgs/dcmi/projects/4/views/1
 
 ---------------------------------------------------------
+2026-09-29
+
+https://github.com/dcmi/dc-srap/issues/73#issuecomment-5892400781
+
+> # The new class, matching the SRAP main shape:
+> bibo:ScholarlyResource a owl:Class ;
+>     rdfs:subClassOf dcterms:BibliographicResource ;
+>     rdfs:label "Scholarly Resource"@en ;
+>     rdfs:comment "A resource produced as a result of research or other scholarly activities."@en ;
+>     rdfs:isDefinedBy bibo: .
+> 
+> # AcademicArticle becomes a subclass of ScholarlyResource:
+> bibo:AcademicArticle rdfs:subClassOf bibo:ScholarlyResource .
+> 
+> # Thesis becomes a subclass of ScholarlyResource:
+> bibo:Thesis rdfs:subClassOf bibo:ScholarlyResource .
+
+---------------------------------------------------------
 2026-07-07
 
 https://github.com/dcmi/dc-srap/issues/104#issuecomment-4780652554
